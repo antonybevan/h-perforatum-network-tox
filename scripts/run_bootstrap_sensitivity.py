@@ -20,7 +20,7 @@ DATA_DIR = Path('data')
 RESULTS_DIR = Path('results')
 N_BOOTSTRAP = 100
 SAMPLE_SIZE = 9
-HYPERFORIN_OBSERVED = 0.070736  # From results/final_statistics.csv
+HYPERFORIN_OBSERVED = 0.083  # From results/final_statistics.csv (real data)
 
 def load_network():
     """Load network."""
@@ -28,8 +28,8 @@ def load_network():
     if net_path.exists():
         print(f"Loading network from {net_path}...")
         df = pd.read_parquet(net_path)
-        if 'gene1' in df.columns:
-            G = nx.from_pandas_edgelist(df, 'gene1', 'gene2')
+        if 'protein1' in df.columns:
+            G = nx.from_pandas_edgelist(df, 'protein1', 'protein2')
         else:
              G = nx.from_pandas_edgelist(df, 'source', 'target')
         return G
