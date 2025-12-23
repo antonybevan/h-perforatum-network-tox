@@ -3,7 +3,6 @@
 import networkx as nx
 import pandas as pd
 import gzip
-from pathlib import Path
 
 
 def load_string_network(threshold, links_file, info_file):

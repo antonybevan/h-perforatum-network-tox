@@ -4,7 +4,6 @@ Unit tests for core network operations.
 Run with: pytest tests/
 """
 
-import pytest
 import networkx as nx
 from network_tox.core import network
 

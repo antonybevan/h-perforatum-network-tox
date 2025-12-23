@@ -2,7 +2,6 @@
 Unit tests for proximity calculations.
 """
 
-import pytest
 import numpy as np
 import networkx as nx
 from network_tox.core import proximity
