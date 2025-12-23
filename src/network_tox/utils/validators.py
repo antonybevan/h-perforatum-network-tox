@@ -1,28 +1,23 @@
-"""Network validators."""
-
 import networkx as nx
+import warnings
 
 def validate_network(G):
     """
-    Validate network integrity.
-
-    Checks:
-    1. Not empty
-    2. Connected (single component)
+    Checks if a graph is not empty and warns if it has multiple connected components.
 
     Args:
-        G: NetworkX graph
-
-    Returns:
-        True if valid
+        G (networkx.Graph): The graph to validate.
 
     Raises:
-        ValueError if invalid
+        ValueError: If the graph is empty (no nodes).
     """
     if len(G) == 0:
-        raise ValueError("Network is empty")
+        raise ValueError("The network is empty (contains no nodes).")
 
     if not nx.is_connected(G):
-        raise ValueError("Network has disconnected components")
-
-    return True
+        num_components = nx.number_connected_components(G)
+        warnings.warn(
+            f"The network has {num_components} connected components. "
+            "Algorithms expecting a single connected component may fail or produce unexpected results.",
+            UserWarning
+        )
