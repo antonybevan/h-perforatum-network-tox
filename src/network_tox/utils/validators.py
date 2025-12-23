@@ -21,3 +21,5 @@ def validate_network(G):
             "Algorithms expecting a single connected component may fail or produce unexpected results.",
             UserWarning
         )
+    
+    return True

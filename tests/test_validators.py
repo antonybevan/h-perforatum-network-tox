@@ -7,14 +7,15 @@ from network_tox.utils import validators
 def test_validate_network_empty():
     """Test empty network validation."""
     G = nx.Graph()
-    with pytest.raises(ValueError, match="Network is empty"):
+    with pytest.raises(ValueError, match="The network is empty"):
         validators.validate_network(G)
 
 def test_validate_network_disconnected():
     """Test disconnected network validation."""
     G = nx.Graph()
     G.add_edges_from([('A', 'B'), ('C', 'D')])
-    with pytest.raises(ValueError, match="Network has disconnected components"):
+    # Expect a warning, not an error
+    with pytest.warns(UserWarning, match="The network has"):
         validators.validate_network(G)
 
 def test_validate_network_valid():

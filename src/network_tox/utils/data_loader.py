@@ -34,7 +34,7 @@ def load_liver_genes(gtex_path):
 
     # Calculate median across the liver columns
     # axis=1 operates on rows.
-    df_liver['median_tpm'] = df_liver[liver_cols].median(axis=1)
+    df_liver.loc[:, 'median_tpm'] = df_liver[liver_cols].median(axis=1)
 
     # Filter where Median TPM > 1
     expressed_genes = df_liver[df_liver['median_tpm'] > 1]['Description']
