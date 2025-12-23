@@ -43,7 +43,7 @@ def get_lcc(G, node_list):
     largest_component = components[0] # The "Module"
     
     # Reporting for the User (Audit Trail)
-    print(f"   🔍 Module Analysis:")
+    print("   🔍 Module Analysis:")
     print(f"      - Input Genes: {len(node_list)}")
     print(f"      - On Network:  {len(valid_nodes)}")
     print(f"      - LCC Size:    {len(largest_component)} (This is your final module)")
@@ -63,7 +63,7 @@ def calculate_proximity(G, module_nodes, drug_targets):
     # We need the average of: "Shortest path from Target T to ANY Module Node M"
     # Actually, Menche dc is: Average of (Shortest path from each s in S to closest t in T)
     
-    distances = []
+    # distances = []
     for target in drug_targets:
         if target in lengths:
             # Distance is 0 if target is IN the module (which is good!)

@@ -2,8 +2,6 @@
 Unit tests for permutation testing.
 """
 
-import pytest
-import numpy as np
 import networkx as nx
 from network_tox.core import permutation
 

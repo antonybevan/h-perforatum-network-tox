@@ -1,7 +1,5 @@
 # Logic for Degree-Matched Permutations
-import networkx as nx
 import random
-import numpy as np
 
 class NullModel:
     """
@@ -23,7 +21,7 @@ class NullModel:
         # This makes the 5,000 iterations lightning fast.
         self.bins = {}
         self._create_bins(bin_size)
-        print(f"   🎲 Null Model Initialized: Network binned by connectivity.")
+        print("   🎲 Null Model Initialized: Network binned by connectivity.")
 
     def _create_bins(self, bin_size):
         """
