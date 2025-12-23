@@ -37,8 +37,8 @@ Traditional approaches focus on individual targets. Network pharmacology capture
 
 | Compound | Source | Targets | In Network |
 |----------|--------|---------|------------|
-| **Hyperforin** | Literature curation | 14 | 8 (liver) |
-| **Quercetin** | ChEMBL API (IC50 ≤10µM) | 122 | 63 (liver) |
+| **Hyperforin** | Literature curation | 14 | 9 (liver, incl. PXR) |
+| **Quercetin** | ChEMBL API (IC50 ≤10µM) | 122 | 79 (liver) |
 
 **Hyperforin targets** (literature-curated with citations):
 - PXR (NR1I2) - master hepatic regulator
@@ -167,21 +167,21 @@ FDR correction: Benjamini-Hochberg
 
 | Compound | Network | Targets | d_c (Z) | d_c Sig | RWR (Z) | RWR Sig | Per-Target |
 |----------|---------|---------|---------|---------|---------|---------|------------|
-| Hyperforin | ≥900 | 8 | -0.99 | No | **+6.35** | **Yes*** | 0.0117 |
-| Hyperforin | ≥700 | 8 | -1.80 | No | **+5.43** | **Yes*** | 0.0115 |
-| Quercetin | ≥900 | 63 | **-5.13** | **Yes*** | +4.98 | Yes* | 0.0005 |
-| Quercetin | ≥700 | 63 | **-4.54** | **Yes*** | +4.26 | Yes* | 0.0004 |
+| Hyperforin | ≥900 | 9 | -1.34 | No | **+5.33** | **Yes*** | 0.0093 |
+| Hyperforin | ≥700 | 9 | -2.24 | Yes* | **+5.23** | **Yes*** | 0.0092 |
+| Quercetin | ≥900 | 79 | **-5.29** | **Yes*** | +5.10 | Yes* | 0.00038 |
+| Quercetin | ≥700 | 79 | **-4.52** | **Yes*** | +4.30 | Yes* | 0.00034 |
 
 *p < 0.05 after FDR correction
 
 ### 5.2 Key Finding
 
-**Hyperforin per-target influence: 26.1x higher than Quercetin**
+**Hyperforin per-target influence: 24.5x higher than Quercetin**
 
-Despite having 8x fewer targets, Hyperforin:
-- Exerts 3x more total influence on DILI genes
-- Shows higher Z-score (6.35 vs 4.98)
-- Engages regulatory bottlenecks more effectively
+Despite having 9x fewer targets, Hyperforin:
+- Exerts 2.8x more total influence on DILI genes
+- Shows comparable Z-score (5.33 vs 5.10)
+- Engages regulatory bottlenecks (including PXR/NR1I2) more effectively
 
 ---
 

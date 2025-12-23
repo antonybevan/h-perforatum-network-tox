@@ -20,7 +20,7 @@ DATA_DIR = Path('data')
 RESULTS_DIR = Path('results')
 N_BOOTSTRAP = 100
 SAMPLE_SIZE = 9
-HYPERFORIN_OBSERVED = 0.083  # From results/final_statistics.csv (real data)
+HYPERFORIN_OBSERVED = 0.0834  # From final_statistics.csv (corrected with NR1I2)
 
 def load_network():
     """Load network."""

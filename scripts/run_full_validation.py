@@ -30,19 +30,10 @@ RESULTS_DIR = Path('results')
 N_PERM = 1000
 
 def load_mapped_targets(compound_name):
-    """Load and map targets for a compound."""
-    targets_df = pd.read_csv(DATA_DIR / 'raw/targets_raw.csv')
-    mapping_df = pd.read_csv(DATA_DIR / 'external/uniprot_mapping.csv', header=None, comment='#', names=['protein_id', 'gene_name'])
-
+    """Load targets for a compound from processed file (includes NR1I2)."""
+    targets_df = pd.read_csv(DATA_DIR / 'processed/targets_900.csv')
     comp_targets = targets_df[targets_df['compound'] == compound_name]
-    mapping_dict = dict(zip(mapping_df['protein_id'], mapping_df['gene_name']))
-
-    genes = []
-    for pid in comp_targets['protein_id']:
-        if pid in mapping_dict:
-            genes.append(mapping_dict[pid])
-
-    return list(set(genes))
+    return list(set(comp_targets['gene_name']))
 
 def load_network_safe(liver_genes):
     """Load network or generate synthetic if missing."""
