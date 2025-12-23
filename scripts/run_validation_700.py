@@ -42,10 +42,10 @@ def load_network_safe(liver_genes):
     if net_path.exists():
         print(f"Loading network from {net_path}...")
         df = pd.read_parquet(net_path)
-        if 'gene1' in df.columns:
-            G = nx.from_pandas_edgelist(df, 'gene1', 'gene2')
+        if 'protein1' in df.columns:
+            G = nx.from_pandas_edgelist(df, 'protein1', 'protein2')
         else:
-             G = nx.from_pandas_edgelist(df, 'source', 'target')
+             G = nx.from_pandas_edgelist(df, 'gene1', 'gene2')
     else:
         print(f"WARNING: {net_path} not found.")
         print("Generating SYNTHETIC network for validation based on liver proteome.")
