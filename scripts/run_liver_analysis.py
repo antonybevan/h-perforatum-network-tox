@@ -50,7 +50,7 @@ def load_network(liver_genes):
         print(f"Loading network from {net_path}...")
         # Assuming parquet contains edgelist
         df = pd.read_parquet(net_path)
-        G = nx.from_pandas_edgelist(df, 'gene1', 'gene2')
+        G = nx.from_pandas_edgelist(df, 'protein1', 'protein2')
     else:
         print(f"WARNING: {net_path} not found.")
         print("Generating SYNTHETIC network for demonstration purposes based on liver proteome.")
