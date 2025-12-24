@@ -52,7 +52,7 @@ print("\n2. TARGET CSV FILES")
 print("-" * 80)
 
 for threshold in ['900', '700']:
-    tgt_path = DATA_DIR / f'processed/targets_{threshold}.csv'
+    tgt_path = DATA_DIR / 'processed/targets.csv'  # Same for both thresholds
     df = pd.read_csv(tgt_path)
     
     print(f"\nTargets {threshold}:")

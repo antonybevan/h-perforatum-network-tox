@@ -24,7 +24,7 @@ print("\n1. CHECKING PROCESSED TARGET FILES")
 print("-" * 80)
 
 for threshold in ['900', '700']:
-    df = pd.read_csv(DATA_DIR / f'processed/targets_{threshold}.csv')
+    df = pd.read_csv(DATA_DIR / 'processed/targets.csv')  # Same for both thresholds
     hf_targets = df[df['compound'] == 'Hyperforin']
     
     has_nr1i2 = 'NR1I2' in hf_targets['gene_name'].values
@@ -47,7 +47,7 @@ liver_genes = set(liver_df['gene_symbol'])
 
 for threshold in ['900', '700']:
     # Load targets
-    df_targets = pd.read_csv(DATA_DIR / f'processed/targets_{threshold}.csv')
+    df_targets = pd.read_csv(DATA_DIR / 'processed/targets.csv')  # Same for both thresholds
     
     # Load network
     if threshold == '900':
