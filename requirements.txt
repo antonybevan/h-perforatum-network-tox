@@ -1,33 +1,33 @@
 # Pinned package versions for reproducibility
 # Python 3.10+
-# Tested on: 2025-12-24
+# Updated: 2025-12-24 - Fixed to use valid PyPI versions
 
 # Core data science
-pandas==2.3.3
-numpy==2.4.0
-scipy==1.16.3
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0,<2.0.0
 
 # Network analysis
-networkx==3.6.1
+networkx>=3.0,<4.0
 
 # Statistical analysis
-statsmodels==0.14.6
+statsmodels>=0.14.0,<0.15.0
 
 # Data formats
-pyarrow==22.0.0
+pyarrow>=12.0.0,<23.0.0
 
 # Visualization
-matplotlib==3.10.8
+matplotlib>=3.7.0,<4.0.0
 
 # Testing
-pytest==9.0.2
-pytest-cov==4.1.0
+pytest>=7.0.0,<10.0.0
+pytest-cov>=4.0.0,<5.0.0
 
 # Code quality
-ruff==0.1.9
+ruff>=0.1.0,<0.2.0
 
 # CLI utilities
-tqdm==4.67.1
+tqdm>=4.65.0,<5.0.0
 
 
 # Data formats
