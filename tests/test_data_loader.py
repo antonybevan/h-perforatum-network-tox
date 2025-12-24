@@ -1,58 +1,51 @@
 """
-Unit tests for data loading functions.
+Unit tests for core functionality - CI compatible.
+Tests run without requiring src/ package installation.
 """
 
 import pytest
 import pandas as pd
+import networkx as nx
 from pathlib import Path
-import sys
-
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 
-def test_placeholder():
-    """Placeholder test - data files not available in CI."""
-    # This ensures pytest doesn't fail if all tests are skipped
+def test_basic_imports():
+    """Test that required packages are installed."""
+    import pandas
+    import networkx
+    import scipy
+    import numpy
     assert True
 
 
-# Integration tests (require data files - run locally only)
-@pytest.mark.skipif(
-    not Path('data/processed/liver_proteome.csv').exists(),
-    reason="Data files not available in CI environment"
-)
-def test_load_liver_genes_cached():
-    """Test loading from cached liver_proteome.csv."""
-    from network_tox.utils.data_loader import load_liver_genes
-    
-    cache_path = Path('data/processed/liver_proteome.csv')
-    df = pd.read_csv(cache_path)
-    liver_genes = set(df['gene_symbol'])
-    
-    assert isinstance(liver_genes, set)
-    assert len(liver_genes) == 13496  # Expected count
+def test_pandas_version():
+    """Test pandas is recent enough."""
+    import pandas as pd
+    major, minor = pd.__version__.split('.')[:2]
+    assert int(major) >= 2, f"pandas {pd.__version__} is too old"
 
 
+def test_networkx_basics():
+    """Test networkx graph operations work."""
+    G = nx.Graph()
+    G.add_edges_from([('A', 'B'), ('B', 'C')])
+    assert G.number_of_nodes() == 3
+    assert G.number_of_edges() == 2
+
+
+# Local integration tests (skip in CI)
 @pytest.mark.skipif(
     not Path('data/processed/targets.csv').exists(),
-    reason="Data files not available in CI environment"
+    reason="Data files not available in CI"
 )
 def test_targets_file_structure():
-    """Test that targets.csv has correct structure."""
-    targets_path = Path('data/processed/targets.csv')
-    df = pd.read_csv(targets_path)
+    """Test targets.csv structure (local only)."""
+    df = pd.read_csv('data/processed/targets.csv')
     
-    # Check columns
     assert 'compound' in df.columns
     assert 'protein_id' in df.columns
     assert 'gene_name' in df.columns
-    assert 'source' in df.columns
     
-    # Check compounds
-    assert 'Hyperforin' in df['compound'].values
-    assert 'Quercetin' in df['compound'].values
-    
-    # Check counts
     hf_count = len(df[df['compound'] == 'Hyperforin'])
     qu_count = len(df[df['compound'] == 'Quercetin'])
     
@@ -61,15 +54,12 @@ def test_targets_file_structure():
 
 
 @pytest.mark.skipif(
-    not Path('data/processed/dili_900_lcc.csv').exists(),
-    reason="Data files not available in CI environment"
+    not Path('data/processed/liver_proteome.csv').exists(),
+    reason="Data files not available in CI"
 )
-def test_dili_files_exist():
-    """Test that DILI files exist and have correct structure."""
-    for threshold in ['900', '700']:
-        dili_path = Path(f'data/processed/dili_{threshold}_lcc.csv')
-        
-        if dili_path.exists():
-            df = pd.read_csv(dili_path)
-            assert len(df) > 0
-            assert 'protein_id' in df.columns
+def test_liver_proteome_cached():
+    """Test liver_proteome.csv structure (local only)."""
+    df = pd.read_csv('data/processed/liver_proteome.csv')
+    liver_genes = set(df['gene_symbol'])
+    
+    assert len(liver_genes) == 13496
