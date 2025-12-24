@@ -45,7 +45,7 @@ Thumbs.db
 # Data (keep structure, ignore large files)
 data/external/*.txt.gz
 data/external/*.gz
-*.parquet
+# *.parquet  # Now tracked with Git LFS
 !data/processed/.gitkeep
 
 # Results (keep structure)
