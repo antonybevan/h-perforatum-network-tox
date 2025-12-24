@@ -30,14 +30,14 @@ def run_step(step_name, command, critical=True):
     elapsed = time.time() - start
     
     if result.returncode != 0:
-        print(f"\n✗ ERROR: {step_name} failed!")
+        print(f"\n[ERR] ERROR: {step_name} failed!")
         if critical:
             print("Pipeline stopped due to critical error.")
             sys.exit(1)
         else:
             print("Continuing despite error (non-critical step)...")
     else:
-        print(f"\n✓ {step_name} complete! ({elapsed:.1f}s)")
+        print(f"\n[OK] {step_name} complete! ({elapsed:.1f}s)")
     
     return result.returncode == 0
 
@@ -120,16 +120,16 @@ def main():
         print("PHASE 2: STATISTICAL VALIDATION")
         print("="*80)
         
-        # Step 5: Primary validation (≥900)
+        # Step 5: Primary validation (>=900)
         results['primary_validation'] = run_step(
-            "Primary Validation (≥900, 1000 permutations)",
+            "Primary Validation (>=900, 1000 permutations)",
             ['python', 'scripts/run_full_validation.py'],
             critical=True
         )
         
-        # Step 6: Robustness validation (≥700)
+        # Step 6: Robustness validation (>=700)
         results['robustness_validation'] = run_step(
-            "Robustness Validation (≥700, 1000 permutations)",
+            "Robustness Validation (>=700, 1000 permutations)",
             ['python', 'scripts/run_validation_700.py'],
             critical=True
         )
