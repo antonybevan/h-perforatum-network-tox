@@ -3,8 +3,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Python version
-  - python=3.10
+  # Python version (3.10+ required, tested on 3.13)
+  - python>=3.10
   
   # Core packages via conda (faster than pip)
   - pandas=2.1.4
