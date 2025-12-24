@@ -1,11 +1,47 @@
-pandas>=2.0.0
-numpy>=1.24.0
-networkx>=3.0
-scipy>=1.10.0
-statsmodels>=0.14.0
-pyarrow>=12.0.0
-matplotlib>=3.7.0
-pytest>=7.0.0
-pytest-cov>=4.0.0
-ruff>=0.1.0
-tqdm>=4.65.0
+# Pinned package versions for reproducibility
+# Python 3.10+
+# Tested on: 2025-12-24
+
+# Core data science
+pandas==2.3.3
+numpy==2.4.0
+scipy==1.16.3
+
+# Network analysis
+networkx==3.6.1
+
+# Statistical analysis
+statsmodels==0.14.6
+
+# Data formats
+pyarrow==22.0.0
+
+# Visualization
+matplotlib==3.10.8
+
+# Testing
+pytest==9.0.2
+pytest-cov==4.1.0
+
+# Code quality
+ruff==0.1.9
+
+# CLI utilities
+tqdm==4.67.1
+
+
+# Data formats
+pyarrow==14.0.2
+
+# Visualization
+matplotlib==3.8.2
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Code quality
+ruff==0.1.9
+
+# CLI utilities
+tqdm==4.66.1

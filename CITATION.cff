@@ -1,0 +1,83 @@
+cff-version: 1.2.0
+title: "Network Pharmacology Analysis of Hypericum perforatum Hepatotoxicity"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Bevan"
+    given-names: "Antony"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Replace with actual ORCID
+repository-code: "https://github.com/antonybevan/h-perforatum-network-tox"
+url: "https://github.com/antonybevan/h-perforatum-network-tox"
+abstract: >-
+  Production-ready network pharmacology pipeline demonstrating Hyperforin's
+  significantly higher per-target hepatotoxic influence compared to Quercetin
+  using tissue-specific protein-protein interaction networks, Random Walk with
+  Restart, and degree-aware permutation testing.
+keywords:
+  - network pharmacology
+  - hepatotoxicity
+  - Hypericum perforatum
+  - St. John's Wort
+  - hyperforin
+  - quercetin
+  - protein-protein interactions
+  - drug-induced liver injury
+  - DILI
+  - systems biology
+license: MIT
+version: "1.0.0"
+date-released: "2025-12-24"
+references:
+  - type: article
+    title: "Uncovering disease-disease relationships through the incomplete interactome"
+    authors:
+      - family-names: "Menche"
+        given-names: "Jörg"
+      - family-names: "Sharma"
+        given-names: "Amitabh"
+      - family-names: "Kitsak"
+        given-names: "Maksim"
+      - family-names: "Ghiassian"
+        given-names: "Susan Dina"
+      - family-names: "Vidal"
+        given-names: "Marc"
+      - family-names: "Loscalzo"
+        given-names: "Joseph"
+      - family-names: "Barabási"
+        given-names: "Albert-László"
+    journal: "Science"
+    year: 2015
+    volume: 347
+    issue: 6224
+    doi: "10.1126/science.1257601"
+  - type: article
+    title: "Network-based in silico drug efficacy screening"
+    authors:
+      - family-names: "Guney"
+        given-names: "Emre"
+      - family-names: "Menche"
+        given-names: "Jörg"
+      - family-names: "Vidal"
+        given-names: "Marc"
+      - family-names: "Barabási"
+        given-names: "Albert-László"
+    journal: "Nature Communications"
+    year: 2016
+    volume: 7
+    doi: "10.1038/ncomms10331"
+  - type: article
+    title: "Walking the interactome for prioritization of candidate disease genes"
+    authors:
+      - family-names: "Kohler"
+        given-names: "Sebastian"
+      - family-names: "Bauer"
+        given-names: "Sebastian"
+      - family-names: "Horn"
+        given-names: "Denise"
+      - family-names: "Robinson"
+        given-names: "Peter N."
+    journal: "American Journal of Human Genetics"
+    year: 2008
+    volume: 82
+    issue: 4
+    doi: "10.1016/j.ajhg.2008.02.013"
