@@ -15,7 +15,6 @@ from statsmodels.stats.multitest import multipletests
 # Add src to path
 sys.path.append('src')
 
-from network_tox.utils.data_loader import load_liver_genes
 from network_tox.core.network import filter_to_tissue
 from network_tox.analysis.rwr import run_rwr
 from network_tox.analysis.shortest_path import calculate_shortest_path

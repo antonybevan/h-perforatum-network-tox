@@ -8,7 +8,6 @@ Usage:
 import pandas as pd
 import networkx as nx
 import argparse
-from pathlib import Path
 import sys
 
 sys.path.append('src')

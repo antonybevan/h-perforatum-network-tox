@@ -69,11 +69,11 @@ def main():
     for threshold in [900, 700]:
         output = PROCESSED_DIR / f'network_{threshold}.parquet'
         
-       success = run_command(
+        success = run_command(
             ['python', 'scripts/extract_string_network.py',
              '--threshold', str(threshold),
              '--output', str(output)],
-            f"Extracting STRING network (≥{threshold})"
+            f"Extracting STRING network (>={threshold})"
         )
         
         if not success:

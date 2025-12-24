@@ -149,7 +149,7 @@ def curate_targets(raw_file, output_file):
     # Save
     print(f"\n6. Saving to {output_file}...")
     df[['compound', 'protein_id', 'source', 'gene_name']].to_csv(output_file, index=False)
-    print(f"   ✓ Saved!")
+    print("   ✓ Saved!")
     
     # Summary
     print("\n" + "="*80)
@@ -160,7 +160,7 @@ def curate_targets(raw_file, output_file):
     print(f"Unmapped:          {stats['unmapped']:>4} targets")
     print(f"Duplicates:        {stats['duplicates']:>4} targets")
     print(f"Output:            {len(df):>4} targets")
-    print(f"\nFinal counts:")
+    print("\nFinal counts:")
     print(f"  Hyperforin: {len(df[df['compound']=='Hyperforin'])}")
     print(f"  Quercetin:  {len(df[df['compound']=='Quercetin'])}")
     
@@ -177,7 +177,7 @@ def main():
     curate_targets(raw_file, output_file)
     
     print("\n✓ Target curation complete!")
-    print(f"\nNOTE: This is a simplified version. Full curation requires:")
+    print("\nNOTE: This is a simplified version. Full curation requires:")
     print("  - UniProt ID mapping service")
     print("  - STRING database validation")
     print("  - Manual review of ambiguous mappings")

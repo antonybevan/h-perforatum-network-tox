@@ -19,7 +19,7 @@ def load_string_info(info_file):
     protein_to_gene = {}
     with gzip.open(info_file, 'rt') as f:
         # Skip header
-        header = f.readline()
+        _ = f.readline()  # noqa: F841
         
         for line in tqdm(f, desc="  Parsing protein info"):
             parts = line.strip().split('\t')
@@ -41,7 +41,7 @@ def extract_network(links_file, protein_to_gene, threshold, output_file):
     
     with gzip.open(links_file, 'rt') as f:
         # Skip header
-        header = f.readline()
+        _ = f.readline()  # noqa: F841
         
         for line in tqdm(f, desc="  Parsing links"):
             parts = line.strip().split()
@@ -126,7 +126,7 @@ def main():
     protein_to_gene = load_string_info(info_file)
     
     # Extract network
-    df = extract_network(links_file, protein_to_gene, args.threshold, args.output)
+    extract_network(links_file, protein_to_gene, args.threshold, args.output)
     
     print("\n✓ Network extraction complete!")
 

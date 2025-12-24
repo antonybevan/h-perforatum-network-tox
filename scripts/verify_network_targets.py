@@ -87,10 +87,10 @@ for threshold in ['900', '700']:
     hf_in_liver = [g for g in hf['gene_name'] if g in G_liver]
     qu_in_liver = [g for g in qu['gene_name'] if g in G_liver]
     
-    print(f"\n  In liver network:")
+    print("\n  In liver network:")
     print(f"    Hyperforin: {len(hf)} total -> {len(hf_in_liver)} in liver")
     print(f"    Quercetin: {len(qu)} total -> {len(qu_in_liver)} in liver")
-    print(f"    Expected from validation: Hyperforin=9, Quercetin=63")
+    print("    Expected from validation: Hyperforin=9, Quercetin=63")
     print(f"    MATCH: {len(hf_in_liver)==9 and len(qu_in_liver)==63}")
 
 print("\n" + "="*80)

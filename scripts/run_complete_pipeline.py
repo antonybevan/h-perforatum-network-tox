@@ -13,7 +13,6 @@ Usage:
 
 import subprocess
 import sys
-from pathlib import Path
 import argparse
 import time
 
@@ -56,7 +55,7 @@ def main():
     print("COMPLETE ANALYSIS PIPELINE")
     print("H. perforatum Network Pharmacology")
     print("="*80)
-    print(f"\nConfiguration:")
+    print("\nConfiguration:")
     print(f"  Skip data regeneration: {args.skip_data}")
     print(f"  Skip validation: {args.skip_validation}")
     print(f"  Quick mode: {args.quick}")
