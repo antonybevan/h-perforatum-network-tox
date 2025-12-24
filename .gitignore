@@ -51,6 +51,8 @@ data/external/*.gz
 # Results (keep structure)
 results/plots/*.png
 results/plots/*.pdf
+!results/plots/sensitivity_final.png
+!results/plots/sensitivity_final.pdf
 !results/.gitkeep
 
 # Temporary
