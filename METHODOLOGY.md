@@ -165,23 +165,29 @@ FDR correction: Benjamini-Hochberg
 
 ### 5.1 Final Statistics
 
-| Compound | Network | Targets | d_c (Z) | d_c Sig | RWR (Z) | RWR Sig | Per-Target |
-|----------|---------|---------|---------|---------|---------|---------|------------|
-| Hyperforin | ≥900 | 9 | -1.34 | No | **+5.33** | **Yes*** | 0.0093 |
-| Hyperforin | ≥700 | 9 | -2.24 | Yes* | **+5.23** | **Yes*** | 0.0092 |
-| Quercetin | ≥900 | 63 | **-5.29** | **Yes*** | +5.10 | Yes* | 0.00038 |
-| Quercetin | ≥700 | 63 | **-4.52** | **Yes*** | +4.30 | Yes* | 0.00034 |
+| Compound | Network | Targets | DILI Genes | d_c (Z) | d_c Sig | RWR (Z) | RWR Sig | Per-Target |
+|----------|---------|---------|------------|---------|---------|---------|---------|------------|
+| Hyperforin | ≥900 | 9 | 82 | **-2.98** | **Yes**** | **+9.58** | **Yes*** | 0.0287 |
+| Hyperforin | ≥700 | 9 | 84 | **-5.09** | **Yes*** | **+6.59** | **Yes*** | 0.0299 |
+| Quercetin | ≥900 | 63 | 82 | **-5.29** | **Yes*** | +1.06 | No | 0.00036 |
+| Quercetin | ≥700 | 63 | 84 | **-5.40** | **Yes*** | +0.97 | No | 0.00040 |
 
 *p < 0.05 after FDR correction
 
-### 5.2 Key Finding
+### 5.2 Critical Finding
 
-**Hyperforin per-target influence: 24.5x higher than Quercetin**
+**Hyperforin per-target influence: 79.7x higher than Quercetin**
 
-Despite having 9x fewer targets (9 vs 63), Hyperforin:
-- Exerts 2.8x more total influence on DILI genes
-- Shows comparable Z-score (5.33 vs 5.10)
-- Engages regulatory bottlenecks (including PXR/NR1I2) more effectively
+With corrected DILI genes (Drug-Induced Liver Injury, not Colitis):
+- **Hyperforin RWR:** Z=+9.58 (p < 0.0001) — **HIGHLY significant**
+- **Quercetin RWR:** Z=+1.06 (p = 0.145) — **NOT significant**
+- Hyperforin demonstrates **direct mechanistic relevance** to hepatotoxicity
+- Quercetin shows **no significant** network influence on DILI genes
+
+**Bootstrap Validation:**
+- Quercetin 95% CI (9 targets sampled): [0.002, 0.086]
+- Hyperforin observed: 0.258 (far above CI)
+- Per-target advantage is **robust** and not due to target count bias
 
 ---
 
