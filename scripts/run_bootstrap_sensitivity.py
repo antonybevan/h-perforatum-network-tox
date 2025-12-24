@@ -38,7 +38,7 @@ def load_network():
 
 def load_quercetin_targets():
     """Load Quercetin targets."""
-    targets_path = DATA_DIR / 'processed/targets_900.csv'
+    targets_path = DATA_DIR / 'processed/targets.csv'  # Unfiltered targets
     if targets_path.exists():
         df = pd.read_csv(targets_path)
         return list(set(df[df['compound'] == 'Quercetin']['gene_name']))

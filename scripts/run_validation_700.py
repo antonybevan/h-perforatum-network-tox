@@ -31,7 +31,7 @@ N_PERM = 1000
 
 def load_mapped_targets(compound_name):
     """Load targets for a compound from processed file (includes NR1I2)."""
-    targets_df = pd.read_csv(DATA_DIR / 'processed/targets_700.csv')
+    targets_df = pd.read_csv(DATA_DIR / 'processed/targets.csv')  # Unfiltered targets
     comp_targets = targets_df[targets_df['compound'] == compound_name]
     return list(set(comp_targets['gene_name']))
 

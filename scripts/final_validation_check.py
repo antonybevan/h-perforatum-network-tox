@@ -118,7 +118,7 @@ expected_qu_900 = 63
 expected_hf_700 = 9
 expected_qu_700 = 63
 
-df_targets_900 = pd.read_csv(DATA_DIR / 'processed/targets_900.csv')
+df_targets_900 = pd.read_csv(DATA_DIR / 'processed/targets.csv')  # Same for both thresholds
 G_900 = nx.from_pandas_edgelist(pd.read_parquet(DATA_DIR / 'processed/network_900.parquet'), 'protein1', 'protein2')
 G_900_liver = filter_to_tissue(G_900, liver_genes)
 hf_900_in = [t for t in df_targets_900[df_targets_900['compound']=='Hyperforin']['gene_name'] if t in G_900_liver]

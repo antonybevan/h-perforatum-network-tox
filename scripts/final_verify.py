@@ -27,8 +27,7 @@ print(f'  700: {G700.number_of_nodes():,} nodes, {G700.number_of_edges():,} edge
 print(f'  Components: 900={nx.number_connected_components(G900)}, 700={nx.number_connected_components(G700)}')
 
 # Targets
-t900 = pd.read_csv(proc / 'targets_900.csv')
-t700 = pd.read_csv(proc / 'targets_700.csv')
+t = pd.read_csv(proc / 'targets.csv')  # Same targets for all thresholds
 t900_in = t900['gene_name'].isin(G900.nodes()).sum()
 t700_in = t700['gene_name'].isin(G700.nodes()).sum()
 print('\nTARGETS:')

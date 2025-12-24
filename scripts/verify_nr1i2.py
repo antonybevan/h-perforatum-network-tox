@@ -7,7 +7,7 @@ from network_tox.core.network import filter_to_tissue
 from pathlib import Path
 
 # Load processed targets
-df_targets = pd.read_csv('data/processed/targets_900.csv')
+df_targets = pd.read_csv('data/processed/targets.csv')  # Unfiltered targets
 hf_targets = df_targets[df_targets['compound']=='Hyperforin']['gene_name'].tolist()
 
 # Load liver network
