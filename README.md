@@ -3,6 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/antonybevan/h-perforatum-network-tox/workflows/Tests/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
+[![Coverage](https://img.shields.io/badge/coverage-84%25-brightgreen.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
 
 Network pharmacology pipeline demonstrating **Hyperforin's 80x higher per-target hepatotoxic influence** compared to Quercetin.
 
