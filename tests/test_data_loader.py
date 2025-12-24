@@ -9,6 +9,16 @@ import networkx as nx
 from pathlib import Path
 
 
+def is_lfs_pointer(filepath):
+    """Check if file is a Git LFS pointer."""
+    try:
+        with open(filepath, 'r') as f:
+            header = f.read(100)
+            return header.startswith('version https://git-lfs.github.com/spec/v1')
+    except Exception:
+        return False
+
+
 def test_basic_imports():
     """Test that required packages are installed."""
     import pandas
@@ -35,7 +45,7 @@ def test_networkx_basics():
 
 # Local integration tests (skip in CI)
 @pytest.mark.skipif(
-    not Path('data/processed/targets.csv').exists(),
+    not Path('data/processed/targets.csv').exists() or is_lfs_pointer('data/processed/targets.csv'),
     reason="Data files not available in CI"
 )
 def test_targets_file_structure():
@@ -54,7 +64,7 @@ def test_targets_file_structure():
 
 
 @pytest.mark.skipif(
-    not Path('data/processed/liver_proteome.csv').exists(),
+    not Path('data/processed/liver_proteome.csv').exists() or is_lfs_pointer('data/processed/liver_proteome.csv'),
     reason="Data files not available in CI"
 )
 def test_liver_proteome_cached():
