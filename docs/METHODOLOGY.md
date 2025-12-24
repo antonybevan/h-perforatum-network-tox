@@ -236,7 +236,7 @@ Both compounds contribute to hepatotoxicity, but through different mechanisms:
 - [x] **Statistical Rigor:** Degree-aware permutations (n=1000), FDR correction
 - [x] **Robustness:** Consistent results across STRING thresholds (700, 900)
 - [x] **Multiple Metrics:** Both d_c and RWR to capture different mechanisms
-- [x] **Reproducibility:** Complete pipeline script (master_pipeline.py)
+- [x] **Reproducibility:** Complete pipeline script (run_complete_pipeline.py)
 
 ---
 
@@ -263,8 +263,8 @@ h-perforatum-net-tox/
 │       ├── data_loader.py
 │       └── validators.py
 ├── scripts/
-│   ├── master_pipeline.py     # Main analysis script
-│   └── final_verify.py        # Data verification
+│   ├── run_complete_pipeline.py  # Main pipeline
+│   └── final_validation_check.py # Data verification
 ├── data/
 │   ├── raw/                   # Source data + documentation
 │   ├── processed/             # LCC-filtered networks
@@ -281,8 +281,7 @@ h-perforatum-net-tox/
 data/processed/
 ├── network_900.parquet         # STRING ≥900 LCC
 ├── network_700.parquet         # STRING ≥700 LCC
-├── targets_900.csv             # Targets in ≥900 network
-├── targets_700.csv             # Targets in ≥700 network
+├── targets.csv                 # Curated compound targets
 ├── dili_900_lcc.csv            # DILI genes in ≥900 LCC
 ├── dili_700_lcc.csv            # DILI genes in ≥700 LCC
 └── liver_proteome.csv          # GTEx liver genes
@@ -323,10 +322,10 @@ pip install -r requirements.txt
 
 ```bash
 # Complete pipeline
-python scripts/master_pipeline.py
+python scripts/run_complete_pipeline.py
 
 # Verify data integrity
-python scripts/final_verify.py
+python scripts/final_validation_check.py
 
 # Use as package
 python -c "from network_tox.core import network; print(network.__doc__)"

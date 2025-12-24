@@ -19,10 +19,10 @@ Production-ready network pharmacology pipeline demonstrating **Hyperforin's 26x 
 pip install -e .
 
 # Run analysis
-python scripts/master_pipeline.py
+python scripts/run_complete_pipeline.py
 
 # Verify data
-python scripts/final_verify.py
+python scripts/final_validation_check.py
 ```
 
 ## 📁 Project Structure

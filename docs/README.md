@@ -5,7 +5,7 @@ This directory contains additional documentation for the H. perforatum network t
 ## Available Documentation
 
 - **[README.md](../README.md)** - Quick start guide and project overview
-- **[METHODOLOGY.md](../METHODOLOGY.md)** - Complete methodology (what/how/why)
+- **[METHODOLOGY.md](METHODOLOGY.md)** - Complete methodology (what/how/why)
 - **[RESULTS_GUIDE.md](../results/RESULTS_GUIDE.md)** - How to interpret result tables
 
 ## API Documentation

@@ -1,123 +1,111 @@
-# Project Organization Verification
+# Project Organization
 
-**Date:** 2025-12-23  
-**Status:** ✅ VERIFIED
+**Date:** 2025-12-24  
+**Status:** ✅ VERIFIED (Industry-Aligned)
 
-## Industry Standards Compliance
-
-| Component | Status | Location |
-|-----------|--------|----------|
-| **Package Structure** | ✅ | `src/network_tox/` |
-| **Setup & Install** | ✅ | `setup.py`, `requirements.txt` |
-| **Version Control** | ✅ | `.gitignore` |
-| **License** | ✅ | `LICENSE` (MIT) |
-| **Documentation** | ✅ | `README.md`, `METHODOLOGY.md`, `docs/` |
-| **Tests** | ✅ | `tests/` (9 unit tests) |
-| **Scripts** | ✅ | `scripts/` (2 executable) |
-| **Data** | ✅ | `data/raw/`, `data/processed/`, `data/external/` |
-| **Results** | ✅ | `results/tables/` (8 CSVs) |
-
-## Project Structure
+## Directory Structure
 
 ```
-h-perforatum-net-tox/              [ROOT]
-├── .gitignore                     [Version control]
-├── LICENSE                        [MIT License]
-├── README.md                      [Quick start]
-├── METHODOLOGY.md                 [Complete methodology]
-├── setup.py                       [Package installation]
-├── requirements.txt               [Dependencies + testing]
+h-perforatum-net-tox/
+├── README.md                      # Quick start guide
+├── LICENSE                        # MIT License
+├── CITATION.cff                   # Academic citation
+├── metadata.json                  # Machine-readable provenance
+├── requirements.txt               # Python dependencies
+├── environment.yml                # Conda environment
+├── setup.py                       # Package installation
+├── .python-version                # Python version (3.10)
+├── runtime.txt                    # Deployment runtime
 │
-├── src/network_tox/              [PYTHON PACKAGE]
-│   ├── __init__.py
-│   ├── core/                     [Core algorithms]
-│   │   ├── __init__.py
-│   │   ├── network.py           [Network operations]
-│   │   ├── proximity.py         [Proximity metrics]
-│   │   └── permutation.py       [Permutation testing]
-│   ├── analysis/                [Analysis methods]
-│   │   └── __init__.py
-│   └── utils/                   [Utilities]
-│       └── __init__.py
-│
-├── scripts/                      [EXECUTABLE SCRIPTS]
-│   ├── master_pipeline.py       [Main analysis]
-│   └── final_verify.py          [Data verification]
-│
-├── data/                        [DATA FILES]
-│   ├── raw/                     [Source data + docs]
-│   │   ├── BIAS_MITIGATION.md
-│   │   ├── DATA_QUALITY.md
+├── data/
+│   ├── raw/                       # Source data (immutable)
 │   │   ├── targets_raw.csv
 │   │   ├── dili_genes_raw.csv
-│   │   ├── GTEx_Analysis....gct
-│   │   ├── curated_gene_disease_associations.tsv
+│   │   ├── GTEx_Analysis_*.gct
 │   │   └── hyperforin_targets_references.txt
-│   ├── processed/               [Filtered networks]
+│   ├── processed/                 # Pipeline outputs
 │   │   ├── network_900.parquet
 │   │   ├── network_700.parquet
-│   │   ├── targets_900.csv
-│   │   ├── targets_700.csv
+│   │   ├── targets.csv
+│   │   ├── liver_proteome.csv
 │   │   ├── dili_900_lcc.csv
-│   │   ├── dili_700_lcc.csv
-│   │   └── liver_proteome.csv
-│   └── external/                [STRING database]
+│   │   └── dili_700_lcc.csv
+│   └── external/                  # Third-party databases
 │       ├── string_info.txt.gz
-│       ├── string_links.txt.gz
-│       └── uniprot_mapping.csv
+│       └── string_links.txt.gz
 │
-├── results/                     [ANALYSIS RESULTS]
-│   ├── RESULTS_GUIDE.md        [How to read tables]
-│   ├── plots/
-│   │   └── sensitivity_final.png
-│   └── tables/                 [8 CSV files]
-│       ├── complete_results.csv
-│       ├── summary_results.csv
-│       ├── influence_comparison.csv
-│       ├── network_stats.csv
-│       ├── targets_summary.csv
-│       ├── dili_genes.csv
-│       ├── rwr_results_clean.csv
-│       └── shortest_path_results_clean.csv
+├── docs/                          # Documentation
+│   ├── METHODOLOGY.md             # Scientific methodology
+│   ├── NETWORK_GENERATION.md      # Network pipeline
+│   ├── TARGET_CURATION.md         # Target filtering
+│   ├── ORGANIZATION.md            # This file
+│   └── CONTRIBUTING.md            # Contribution guide
 │
-├── tests/                       [UNIT TESTS]
-│   ├── README.md               [Test documentation]
-│   ├── conftest.py            [Pytest config]
-│   ├── test_network.py        [Network tests]
-│   ├── test_proximity.py      [Proximity tests]
-│   └── test_permutation.py    [Permutation tests]
+├── scripts/                       # Executable scripts (12 total)
+│   ├── run_complete_pipeline.py   # Master entry point
+│   ├── run_full_validation.py     # Primary validation (≥900)
+│   ├── run_validation_700.py      # Robustness (≥700)
+│   ├── run_bootstrap_sensitivity.py
+│   ├── regenerate_networks.py     # Data regeneration
+│   ├── extract_string_network.py
+│   ├── filter_liver_network.py
+│   ├── regenerate_dili.py
+│   ├── regenerate_liver_proteome.py
+│   ├── curate_targets.py
+│   ├── final_validation_check.py  # Verification
+│   └── verify_network_targets.py
 │
-└── docs/                        [DOCUMENTATION]
-    └── README.md               [Documentation index]
+├── src/network_tox/               # Python package
+│   ├── __init__.py
+│   ├── core/                      # Core algorithms
+│   │   ├── network.py
+│   │   ├── proximity.py
+│   │   ├── rwr.py
+│   │   └── permutation.py
+│   ├── analysis/
+│   └── utils/
+│
+├── tests/                         # Pytest tests
+│   ├── conftest.py
+│   ├── test_data_loader.py
+│   ├── test_network.py
+│   └── test_rwr.py
+│
+├── results/                       # Analysis outputs
+│   ├── RESULTS_GUIDE.md
+│   ├── final_statistics.csv
+│   ├── final_statistics_700.csv
+│   └── bootstrap_sensitivity.csv
+│
+└── .github/workflows/             # CI/CD
+    └── tests.yml
 ```
 
-## File Counts
-
-- **Total files:** 47
-- **Python modules:** 8
-- **Test files:** 5
-- **Data files:** 17
-- **Result files:** 9
-- **Documentation:** 8
-
-## Installation
+## Quick Start
 
 ```bash
+# Install
 pip install -e .
+
+# Run full pipeline
+python scripts/run_complete_pipeline.py
+
+# Run validation only
+python scripts/run_full_validation.py
+
+# Run tests
+pytest tests/ -v
 ```
 
-## Run Tests
+## File Summary
 
-```bash
-pytest tests/
-```
-
-## Run Analysis
-
-```bash
-python scripts/master_pipeline.py
-```
+| Category | Count | Description |
+|----------|-------|-------------|
+| Scripts | 12 | Analysis and regeneration |
+| Documentation | 6 | Methodology and guides |
+| Data Files | 6 | Processed outputs |
+| Tests | 9 | Unit and integration tests |
 
 ---
 
-**Organization Status:** Production-ready, industry-standard Python package ✅
+**Status:** Production-ready, industry-standard ✅
