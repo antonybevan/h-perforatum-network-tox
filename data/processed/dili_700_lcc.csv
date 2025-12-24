@@ -1,51 +1,85 @@
-geneId,protein_id,geneName,diseaseId,diseaseName,score,NumberOfPubmeds,associationType,source
-3383,ICAM1,intercellular adhesion molecule 1,umls:C0009324,"Colitis, Ulcerative",0.324264393248251,14,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN, RGD"
-6364,CCL20,chemokine (C-C motif) ligand 20,umls:C0009324,"Colitis, Ulcerative",0.310850513710281,5,"Biomarker, Therapeutic","BeFree, CTD_human, RGD"
-64127,NOD2,nucleotide-binding oligomerization domain containing 2,umls:C0009324,"Colitis, Ulcerative",0.303875728080672,105,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-149233,IL23R,interleukin 23 receptor,umls:C0009324,"Colitis, Ulcerative",0.280166903993674,54,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-7124,TNF,tumor necrosis factor,umls:C0009324,"Colitis, Ulcerative",0.277077806326117,60,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-3586,IL10,interleukin 10,umls:C0009324,"Colitis, Ulcerative",0.260085326467755,44,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-3553,IL1B,"interleukin 1, beta",umls:C0009324,"Colitis, Ulcerative",0.235751668927792,32,"AlteredExpression, Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-9966,TNFSF15,"tumor necrosis factor (ligand) superfamily, member 15",umls:C0009324,"Colitis, Ulcerative",0.228076978642778,16,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-6774,STAT3,signal transducer and activator of transcription 3 (acute-phase response factor),umls:C0009324,"Colitis, Ulcerative",0.224576861884458,21,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-4485,MST1,macrophage stimulating 1 (hepatocyte growth factor-like),umls:C0009324,"Colitis, Ulcerative",0.223775379132775,12,"AlteredExpression, Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-3593,IL12B,interleukin 12B,umls:C0009324,"Colitis, Ulcerative",0.223208369992588,11,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-1811,SLC26A3,"solute carrier family 26 (anion exchanger), member 3",umls:C0009324,"Colitis, Ulcerative",0.221868842166831,6,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-3717,JAK2,Janus kinase 2,umls:C0009324,"Colitis, Ulcerative",0.220969297497952,11,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-64170,CARD9,"caspase recruitment domain family, member 9",umls:C0009324,"Colitis, Ulcerative",0.220118783787671,6,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-6556,SLC11A1,"solute carrier family 11 (proton-coupled divalent metal ion transporter), member 1",umls:C0009324,"Colitis, Ulcerative",0.220118783787671,5,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-8924,HERC2,HECT and RLD domain containing E3 ubiquitin protein ligase 2,umls:C0009324,"Colitis, Ulcerative",0.220040788762959,3,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-3576,CXCL8,chemokine (C-X-C motif) ligand 8,umls:C0009324,"Colitis, Ulcerative",0.219375717705576,17,"AlteredExpression, Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-5771,PTPN2,"protein tyrosine phosphatase, non-receptor type 2",umls:C0009324,"Colitis, Ulcerative",0.21914124409408,8,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-2212,FCGR2A,"Fc fragment of IgG, low affinity IIa, receptor (CD32)",umls:C0009324,"Colitis, Ulcerative",0.218085220838417,6,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-10109,ARPC2,"actin related protein 2/3 complex, subunit 2, 34kDa",umls:C0009324,"Colitis, Ulcerative",0.217723721243612,2,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD, LHGDN"
-3912,LAMB1,"laminin, beta 1",umls:C0009324,"Colitis, Ulcerative",0.217234707128136,4,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-3172,HNF4A,"hepatocyte nuclear factor 4, alpha",umls:C0009324,"Colitis, Ulcerative",0.216335162459257,7,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-8807,IL18RAP,interleukin 18 receptor accessory protein,umls:C0009324,"Colitis, Ulcerative",0.214917639608789,3,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-999,CDH1,"cadherin 1, type 1, E-cadherin (epithelial)",umls:C0009324,"Colitis, Ulcerative",0.214585104080097,8,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-345611,IRGM,"immunity-related GTPase family, M",umls:C0009324,"Colitis, Ulcerative",0.21401809493991,8,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-5970,RELA,v-rel avian reticuloendotheliosis viral oncogene homolog A,umls:C0009324,"Colitis, Ulcerative",0.213940099915198,7,"AlteredExpression, Biomarker","BeFree, CTD_human, LHGDN"
-4584,MUC3A,"mucin 3A, cell surface associated",umls:C0009324,"Colitis, Ulcerative",0.213167581229629,3,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-94103,ORMDL3,ORMDL sphingolipid biosynthesis regulator 3,umls:C0009324,"Colitis, Ulcerative",0.213167581229629,3,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-3579,CXCR2,chemokine (C-X-C motif) receptor 2,umls:C0009324,"Colitis, Ulcerative",0.212600572089441,2,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-2768,GNA12,guanine nucleotide binding protein (G protein) alpha 12,umls:C0009324,"Colitis, Ulcerative",0.212600572089441,2,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-23308,ICOSLG,inducible T-cell co-stimulator ligand,umls:C0009324,"Colitis, Ulcerative",0.212600572089441,2,"Biomarker, GeneticVariation","BeFree, CTD_human, GAD"
-1001,CDH3,"cadherin 3, type 1, P-cadherin (placental)",umls:C0009324,"Colitis, Ulcerative",0.212317067519348,1,"Biomarker, GeneticVariation","CTD_human, GAD"
-7850,IL1R2,"interleukin 1 receptor, type II",umls:C0009324,"Colitis, Ulcerative",0.212317067519348,1,"Biomarker, GeneticVariation","CTD_human, GAD"
-4046,LSP1,lymphocyte-specific protein 1,umls:C0009324,"Colitis, Ulcerative",0.212317067519348,1,"Biomarker, GeneticVariation","CTD_human, GAD"
-3663,IRF5,interferon regulatory factor 5,umls:C0009324,"Colitis, Ulcerative",0.211417522850468,6,"Biomarker, GeneticVariation","BeFree, CTD_human"
-1235,CCR6,chemokine (C-C motif) receptor 6,umls:C0009324,"Colitis, Ulcerative",0.210850513710281,4,Biomarker,"BeFree, CTD_human"
-4318,MMP9,"matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)",umls:C0009324,"Colitis, Ulcerative",0.210567009140187,3,Biomarker,"BeFree, CTD_human"
-4353,MPO,myeloperoxidase,umls:C0009324,"Colitis, Ulcerative",0.210567009140187,4,Biomarker,"BeFree, CTD_human"
-1670,DEFA5,"defensin, alpha 5, Paneth cell-specific",umls:C0009324,"Colitis, Ulcerative",0.210283504570094,2,Biomarker,"BeFree, CTD_human"
-8624,PSMG1,"proteasome (prosome, macropain) assembly chaperone 1",umls:C0009324,"Colitis, Ulcerative",0.210283504570094,2,Biomarker,"BeFree, CTD_human"
-8767,RIPK2,receptor-interacting serine-threonine kinase 2,umls:C0009324,"Colitis, Ulcerative",0.210283504570094,1,Biomarker,"BeFree, CTD_human"
-3577,CXCR1,chemokine (C-X-C motif) receptor 1,umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-1671,DEFA6,"defensin, alpha 6, Paneth cell-specific",umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-51738,GHRL,ghrelin/obestatin prepropeptide,umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-10320,IKZF1,IKAROS family zinc finger 1 (Ikaros),umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-3575,IL7R,interleukin 7 receptor,umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-4057,LTF,lactotransferrin,umls:C0009324,"Colitis, Ulcerative",0.21,1,Therapeutic,CTD_human
-10747,MASP2,mannan-binding lectin serine peptidase 2,umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-639,PRDM1,"PR domain containing 1, with ZNF domain",umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
-7412,VCAM1,vascular cell adhesion molecule 1,umls:C0009324,"Colitis, Ulcerative",0.21,1,Biomarker,CTD_human
+gene_name,geneId,score,protein_id,diseaseName,diseaseId
+GSTM1,2944,0.240121877751518,GSTM1,Drug-Induced Liver Injury,umls:C0860207
+NAT2,10,0.235487742712823,NAT2,Drug-Induced Liver Injury,umls:C0860207
+CYP2E1,1571,0.230853607674128,CYP2E1,Drug-Induced Liver Injury,umls:C0860207
+MTHFR,4524,0.221585337596738,MTHFR,Drug-Induced Liver Injury,umls:C0860207
+CYP2C9,1559,0.216951202558043,CYP2C9,Drug-Induced Liver Injury,umls:C0860207
+GSTP1,2950,0.216951202558043,GSTP1,Drug-Induced Liver Injury,umls:C0860207
+CYP2C19,1557,0.214634135038695,CYP2C19,Drug-Induced Liver Injury,umls:C0860207
+ABCB1,5243,0.212317067519348,ABCB1,Drug-Induced Liver Injury,umls:C0860207
+HLA-A,3105,0.212317067519348,HLA-A,Drug-Induced Liver Injury,umls:C0860207
+HLA-B,3106,0.212317067519348,HLA-B,Drug-Induced Liver Injury,umls:C0860207
+HLA-DQB1,3119,0.212317067519348,HLA-DQB1,Drug-Induced Liver Injury,umls:C0860207
+HLA-DRB1,3123,0.212317067519348,HLA-DRB1,Drug-Induced Liver Injury,umls:C0860207
+KRT18,3875,0.212317067519348,KRT18,Drug-Induced Liver Injury,umls:C0860207
+NR1I2,8856,0.212317067519348,NR1I2,Drug-Induced Liver Injury,umls:C0860207
+AHR,196,0.21,AHR,Drug-Induced Liver Injury,umls:C0860207
+ALB,213,0.21,ALB,Drug-Induced Liver Injury,umls:C0860207
+ALDOB,229,0.21,ALDOB,Drug-Induced Liver Injury,umls:C0860207
+AMBP,259,0.21,AMBP,Drug-Induced Liver Injury,umls:C0860207
+APOA1,335,0.21,APOA1,Drug-Induced Liver Injury,umls:C0860207
+APOE,348,0.21,APOE,Drug-Induced Liver Injury,umls:C0860207
+APOH,350,0.21,APOH,Drug-Induced Liver Injury,umls:C0860207
+ARG1,383,0.21,ARG1,Drug-Induced Liver Injury,umls:C0860207
+ARNT,405,0.21,ARNT,Drug-Induced Liver Injury,umls:C0860207
+ATG5,9474,0.21,ATG5,Drug-Induced Liver Injury,umls:C0860207
+BAX,581,0.21,BAX,Drug-Induced Liver Injury,umls:C0860207
+BTD,686,0.21,BTD,Drug-Induced Liver Injury,umls:C0860207
+C3,718,0.21,C3,Drug-Induced Liver Injury,umls:C0860207
+CAT,847,0.21,CAT,Drug-Induced Liver Injury,umls:C0860207
+CCL2,6347,0.21,CCL2,Drug-Induced Liver Injury,umls:C0860207
+CLU,1191,0.21,CLU,Drug-Induced Liver Injury,umls:C0860207
+COL3A1,1281,0.21,COL3A1,Drug-Induced Liver Injury,umls:C0860207
+CTNNB1,1499,0.21,CTNNB1,Drug-Induced Liver Injury,umls:C0860207
+CXCL1,2919,0.21,CXCL1,Drug-Induced Liver Injury,umls:C0860207
+CXCL10,3627,0.21,CXCL10,Drug-Induced Liver Injury,umls:C0860207
+CYP2A6,1548,0.21,CYP2A6,Drug-Induced Liver Injury,umls:C0860207
+DGAT2,84649,0.21,DGAT2,Drug-Induced Liver Injury,umls:C0860207
+ENO1,2023,0.21,ENO1,Drug-Induced Liver Injury,umls:C0860207
+FGA,2243,0.21,FGA,Drug-Induced Liver Injury,umls:C0860207
+FLT1,2321,0.21,FLT1,Drug-Induced Liver Injury,umls:C0860207
+FMO3,2328,0.21,FMO3,Drug-Induced Liver Injury,umls:C0860207
+GADD45A,1647,0.21,GADD45A,Drug-Induced Liver Injury,umls:C0860207
+GC,2638,0.21,GC,Drug-Induced Liver Injury,umls:C0860207
+GCLC,2729,0.21,GCLC,Drug-Induced Liver Injury,umls:C0860207
+GPT,2875,0.21,GPT,Drug-Induced Liver Injury,umls:C0860207
+GSN,2934,0.21,GSN,Drug-Induced Liver Injury,umls:C0860207
+GSTM2,2946,0.21,GSTM2,Drug-Induced Liver Injury,umls:C0860207
+HMGB1,3146,0.21,HMGB1,Drug-Induced Liver Injury,umls:C0860207
+HMOX1,3162,0.21,HMOX1,Drug-Induced Liver Injury,umls:C0860207
+HPD,3242,0.21,HPD,Drug-Induced Liver Injury,umls:C0860207
+HPX,3263,0.21,HPX,Drug-Induced Liver Injury,umls:C0860207
+IGF1,3479,0.21,IGF1,Drug-Induced Liver Injury,umls:C0860207
+IL18,3606,0.21,IL18,Drug-Induced Liver Injury,umls:C0860207
+IL1R2,7850,0.21,IL1R2,Drug-Induced Liver Injury,umls:C0860207
+LCN2,3934,0.21,LCN2,Drug-Induced Liver Injury,umls:C0860207
+LGALS3,3958,0.21,LGALS3,Drug-Induced Liver Injury,umls:C0860207
+MAP3K5,4217,0.21,MAP3K5,Drug-Induced Liver Injury,umls:C0860207
+MED1,5469,0.21,MED1,Drug-Induced Liver Injury,umls:C0860207
+MMP2,4313,0.21,MMP2,Drug-Induced Liver Injury,umls:C0860207
+NFE2L2,4780,0.21,NFE2L2,Drug-Induced Liver Injury,umls:C0860207
+NR1H3,10062,0.21,NR1H3,Drug-Induced Liver Injury,umls:C0860207
+NR1H4,9971,0.21,NR1H4,Drug-Induced Liver Injury,umls:C0860207
+NR1I3,9970,0.21,NR1I3,Drug-Induced Liver Injury,umls:C0860207
+PLAT,5327,0.21,PLAT,Drug-Induced Liver Injury,umls:C0860207
+PLG,5340,0.21,PLG,Drug-Induced Liver Injury,umls:C0860207
+PNP,4860,0.21,PNP,Drug-Induced Liver Injury,umls:C0860207
+POLG,5428,0.21,POLG,Drug-Induced Liver Injury,umls:C0860207
+PON1,5444,0.21,PON1,Drug-Induced Liver Injury,umls:C0860207
+PPARA,5465,0.21,PPARA,Drug-Induced Liver Injury,umls:C0860207
+PRKDC,5591,0.21,PRKDC,Drug-Induced Liver Injury,umls:C0860207
+PTGS2,5743,0.21,PTGS2,Drug-Induced Liver Injury,umls:C0860207
+PZP,5858,0.21,PZP,Drug-Induced Liver Injury,umls:C0860207
+RBP1,5947,0.21,RBP1,Drug-Induced Liver Injury,umls:C0860207
+SELENBP1,8991,0.21,SELENBP1,Drug-Induced Liver Injury,umls:C0860207
+SLPI,6590,0.21,SLPI,Drug-Induced Liver Injury,umls:C0860207
+SNX18,112574,0.21,SNX18,Drug-Induced Liver Injury,umls:C0860207
+SOD1,6647,0.21,SOD1,Drug-Induced Liver Injury,umls:C0860207
+SOD3,6649,0.21,SOD3,Drug-Induced Liver Injury,umls:C0860207
+SPP1,6696,0.21,SPP1,Drug-Induced Liver Injury,umls:C0860207
+TALDO1,6888,0.21,TALDO1,Drug-Induced Liver Injury,umls:C0860207
+TBXA2R,6915,0.21,TBXA2R,Drug-Induced Liver Injury,umls:C0860207
+TCTN1,79600,0.21,TCTN1,Drug-Induced Liver Injury,umls:C0860207
+TF,7018,0.21,TF,Drug-Induced Liver Injury,umls:C0860207
+TTR,7276,0.21,TTR,Drug-Induced Liver Injury,umls:C0860207
+UGT1A9,54600,0.21,UGT1A9,Drug-Induced Liver Injury,umls:C0860207
