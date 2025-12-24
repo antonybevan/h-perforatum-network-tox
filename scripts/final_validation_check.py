@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 sys.path.append('src')
-from network_tox.utils.data_loader import load_liver_genes
+# No longer need load_liver_genes - using cached CSV
 from network_tox.core.network import filter_to_tissue
 
 print("="*80)
@@ -41,8 +41,9 @@ for threshold in ['900', '700']:
 print("\n2. CHECKING LIVER NETWORK FILTERING")
 print("-" * 80)
 
-gtex_path = DATA_DIR / 'raw/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct'
-liver_genes = load_liver_genes(gtex_path)
+# Use cached liver proteome for efficiency
+liver_df = pd.read_csv(DATA_DIR / 'processed/liver_proteome.csv')
+liver_genes = set(liver_df['gene_symbol'])
 
 for threshold in ['900', '700']:
     # Load targets
@@ -137,7 +138,7 @@ df_boot = pd.read_csv(RESULTS_DIR / 'bootstrap_sensitivity.csv')
 print(f"Bootstrap iterations: {len(df_boot)}")
 ci_lower = df_boot['quercetin_sampled_influence'].quantile(0.025)
 ci_upper = df_boot['quercetin_sampled_influence'].quantile(0.975)
-hyperforin_obs = 0.0834
+hyperforin_obs = 0.2579  # Updated with corrected DILI data
 
 print(f"95% CI: [{ci_lower:.4f}, {ci_upper:.4f}]")
 print(f"Hyperforin observed: {hyperforin_obs:.4f}")

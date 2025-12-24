@@ -65,8 +65,9 @@ def main():
 
     # 1. Load Data
     print("Loading data...")
-    gtex_path = DATA_DIR / 'raw/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct'
-    liver_genes = load_liver_genes(gtex_path)
+    # Use cached liver proteome for efficiency (regenerated from GTEx)
+    liver_df = pd.read_csv(DATA_DIR / 'processed/liver_proteome.csv')
+    liver_genes = set(liver_df['gene_symbol'])
 
     G = load_network_safe(liver_genes)
     G_liver = filter_to_tissue(G, liver_genes)
