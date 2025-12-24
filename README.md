@@ -77,7 +77,7 @@ h-perforatum-net-tox/
   author = {Bevan, Antony},
   title = {Network Pharmacology Analysis of H. perforatum Hepatotoxicity},
   version = {1.0.0},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/antonybevan/h-perforatum-network-tox}
 }
 ```
