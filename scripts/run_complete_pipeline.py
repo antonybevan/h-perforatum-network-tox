@@ -163,16 +163,16 @@ def main():
     
     print("\nResults Summary:")
     for step, success in results.items():
-        status = "✓" if success else "✗"
+        status = "[OK]" if success else "[FAIL]"
         print(f"  {status} {step}")
     
     failed = [k for k, v in results.items() if not v]
     if failed:
-        print(f"\n⚠️  {len(failed)} steps failed: {', '.join(failed)}")
+        print(f"\n[!] {len(failed)} steps failed: {', '.join(failed)}")
         print("Review errors above for details.")
         sys.exit(1)
     else:
-        print("\n✓ All steps completed successfully!")
+        print("\n[OK] All steps completed successfully!")
         print("\nGenerated files:")
         print("  - data/processed/liver_proteome.csv")
         print("  - data/processed/dili_900_lcc.csv, dili_700_lcc.csv")
