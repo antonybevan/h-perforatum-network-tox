@@ -1,73 +1,76 @@
 # H. Perforatum Network Toxicology Analysis
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://github.com/antonybevan/h-perforatum-network-tox/workflows/Tests/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
 
-Production-ready network pharmacology pipeline demonstrating **Hyperforin's 26x higher per-target hepatotoxic influence** compared to Quercetin.
+Network pharmacology pipeline demonstrating **Hyperforin's 80x higher per-target hepatotoxic influence** compared to Quercetin.
 
-## 🎯 Key Results
+## Key Results
 
 | Compound | RWR Z-score | P-value (FDR) | Per-Target Influence |
 |----------|-------------|---------------|---------------------|
-| **Hyperforin** | **+6.35** | **4.2×10⁻¹⁰** | **0.0117** (26x) |
-| Quercetin | +4.98 | 4.3×10⁻⁷ | 0.0005 |
+| **Hyperforin** | **+9.50** | **<0.0001** | **0.0287** (80x) |
+| Quercetin | +1.04 | 0.15 (NS) | 0.00036 |
 
-## 🚀 Quick Start
+**Finding:** Hyperforin shows highly significant DILI influence; Quercetin does not.
+
+## Quick Start
 
 ```bash
 # Install
 pip install -e .
 
-# Run analysis
+# Run complete pipeline
 python scripts/run_complete_pipeline.py
 
-# Verify data
+# Run validation only (faster)
+python scripts/run_complete_pipeline.py --skip-data
+
+# Verify results
 python scripts/final_validation_check.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 h-perforatum-net-tox/
-├── src/network_tox/      # Modular Python package
-│   ├── core/            # Core algorithms
-│   ├── analysis/        # Analysis methods
-│   └── utils/           # Utilities
-├── scripts/             # Executable scripts
-├── data/                # Data files
-├── results/             # Analysis results
-└── docs/                # Documentation
+├── src/network_tox/      # Python package
+│   ├── core/             # RWR, proximity, permutation
+│   ├── analysis/         # Analysis methods
+│   └── utils/            # Data loaders
+├── scripts/              # 12 executable scripts
+├── data/processed/       # Network parquets, CSVs
+├── results/              # Statistics, sensitivity
+├── tests/                # Pytest unit tests
+└── docs/                 # Documentation
 ```
 
-## 📊 Results Files
+## Methods
 
-| File | Description |
-|------|-------------|
-| `complete_results.csv` | Full analysis data |
-| `summary_results.csv` | Clean summary table |
-| `influence_comparison.csv` | Per-target influence |
-| `network_stats.csv` | Network statistics |
+- **Network:** STRING v12.0 (human), liver-specific (GTEx TPM>1)
+- **Metrics:** Shortest-path proximity (d_c) + Random Walk with Restart (RWR)
+- **Validation:** Degree-aware permutation tests (n=1000), FDR correction
+- **Robustness:** Multiple thresholds (>=900, >=700)
 
-## 📚 Documentation
+## Documentation
 
-- `METHODOL OGY.md` - Complete methodology (what/how/why)
-- `results/RESULTS_GUIDE.md` - How to read result tables
-- `docs/` - Additional documentation
+- [METHODOLOGY.md](docs/METHODOLOGY.md) - Complete scientific methodology
+- [NETWORK_GENERATION.md](docs/NETWORK_GENERATION.md) - Network pipeline
+- [TARGET_CURATION.md](docs/TARGET_CURATION.md) - Target filtering
+- [CONTRIBUTING.md](docs/CONTRIBUTING.md) - Contribution guide
 
-## 🔬 Methods
+## Citation
 
-- **Network:** STRING v12.0, tissue-specific (liver)
-- **Metrics:** Shortest-path (d_c) + RWR network diffusion
-- **Validation:** Degree-aware permutations (n=1000), FDR correction
-- **Robustness:** Multiple STRING thresholds (700, 900)
+```bibtex
+@software{hperforatum_network_tox,
+  author = {Bevan, Antony},
+  title = {Network Pharmacology Analysis of H. perforatum Hepatotoxicity},
+  year = {2025},
+  url = {https://github.com/antonybevan/h-perforatum-network-tox}
+}
+```
 
-## 📖 Citation
+## License
 
-Methods validated using:
-- Menche et al., *Science* 2015
-- Guney et al., *Nat Commun* 2016
-- Kohler et al., *Am J Hum Genet* 2008
-
-## 📄 License
-
-MIT License - See LICENSE file for details.
+MIT License - See [LICENSE](LICENSE) file.
