@@ -14,13 +14,23 @@ Download from: https://string-db.org/cgi/download
 | `string_info.txt.gz` | [9606.protein.info.v12.0.txt.gz](https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.info.v12.0.txt.gz) |
 
 ```bash
-# Download commands
+# Download commands (Linux/macOS)
 curl -O https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz
 curl -O https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.info.v12.0.txt.gz
 
-# Rename to expected names
+# Rename to expected names (Linux/macOS)
 mv 9606.protein.links.v12.0.txt.gz string_links.txt.gz
 mv 9606.protein.info.v12.0.txt.gz string_info.txt.gz
+```
+
+```powershell
+# Download commands (Windows PowerShell)
+Invoke-WebRequest -Uri "https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz" -OutFile "9606.protein.links.v12.0.txt.gz"
+Invoke-WebRequest -Uri "https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.info.v12.0.txt.gz" -OutFile "9606.protein.info.v12.0.txt.gz"
+
+# Rename to expected names (Windows)
+Move-Item 9606.protein.links.v12.0.txt.gz string_links.txt.gz
+Move-Item 9606.protein.info.v12.0.txt.gz string_info.txt.gz
 ```
 
 ### DILIrank 2.0
