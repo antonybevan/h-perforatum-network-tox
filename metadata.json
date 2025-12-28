@@ -1,39 +1,21 @@
 {
     "project": {
         "name": "h-perforatum-network-tox",
-        "title": "Network Position Dominates Target Count in Hepatotoxic Influence",
-        "subtitle": "A Tiered Inference Framework Applied to Hypericum perforatum",
-        "version": "2.0.0",
+        "title": "Network Pharmacology of Hypericum perforatum Hepatotoxicity",
+        "description": "Reproducible analysis demonstrating that network position—not target count—determines hepatotoxic influence",
+        "version": "2.1.0",
         "created": "2025-12-24",
         "last_updated": "2025-12-28",
         "license": "MIT",
         "repository": "https://github.com/antonybevan/h-perforatum-network-tox"
     },
-    "methodology": {
-        "framework": "Tiered Inference",
-        "tiers": {
-            "tier_1": {
-                "name": "Shortest-Path Proximity (d_c)",
-                "role": "Context only, not inference"
-            },
-            "tier_2": {
-                "name": "Standard Random Walk Influence (RWI)",
-                "role": "Epistemic baseline - does signal exist?"
-            },
-            "tier_3": {
-                "name": "Expression-Weighted Influence (EWI)",
-                "role": "Biological validation - does signal persist?"
-            }
-        },
-        "derived_metric": {
-            "name": "Per-Target Network Influence (PTNI)",
-            "formula": "I / |T|",
-            "purpose": "Measures targeting efficiency across both influence metrics"
-        }
-    },
     "environment": {
         "python_version": "3.10+",
-        "os": "Windows/Linux/macOS",
+        "platforms": [
+            "Windows",
+            "Linux",
+            "macOS"
+        ],
         "random_seed": 42,
         "reproducibility": "Deterministic (sorted target lists, fixed seeds)"
     },
@@ -70,52 +52,54 @@
             "citation": "Zdrazil B, et al. (2024). Nucleic Acids Res 52(D1):D1180-D1192"
         }
     },
-    "processed_data": {
-        "networks": {
-            "network_900_liver_lcc": {
-                "file": "data/processed/network_900_liver_lcc.parquet",
-                "description": "Liver LCC network (STRING >= 900)"
-            },
-            "network_700_liver_lcc": {
-                "file": "data/processed/network_700_liver_lcc.parquet",
-                "description": "Liver LCC network (STRING >= 700)"
-            }
+    "compounds": {
+        "hyperforin": {
+            "chembl_id": "CHEMBL464",
+            "targets_raw": 12,
+            "targets_lcc": 9,
+            "mechanism": "PXR activation, CYP induction"
         },
-        "targets": {
-            "file": "data/processed/targets_lcc.csv",
-            "hyperforin": 9,
-            "quercetin": 62,
-            "filtering": "Liver LCC only"
+        "quercetin": {
+            "chembl_id": "CHEMBL50",
+            "targets_raw": 80,
+            "targets_lcc": 62,
+            "mechanism": "Broad kinase/enzyme inhibition"
         }
     },
-    "analysis_parameters": {
-        "permutations": 1000,
-        "restart_probability": 0.15,
-        "convergence_threshold": 1e-6,
-        "degree_matching_tolerance": 0.25,
-        "fdr_method": "Benjamini-Hochberg",
-        "fdr_alpha": 0.05
-    },
-    "results": {
-        "tier_2_rwi": {
-            "file": "results/tables/standard_rwr_lcc_permutation_results.csv",
-            "hyperforin_z": 8.83,
-            "quercetin_z": 4.42,
-            "ptni_ratio": 21.9
+    "analysis": {
+        "parameters": {
+            "permutations": 1000,
+            "restart_probability": 0.15,
+            "convergence_threshold": 1e-6,
+            "degree_matching_tolerance": 0.25,
+            "fdr_method": "Benjamini-Hochberg"
         },
-        "tier_3_ewi": {
-            "file": "results/tables/expression_weighted_rwr_permutation_results.csv",
-            "hyperforin_z": 7.99,
-            "quercetin_z": 5.56,
-            "ptni_ratio": 16.9
+        "results": {
+            "standard_rwr": {
+                "file": "results/tables/standard_rwr_lcc_permutation_results.csv",
+                "hyperforin_z": 8.83,
+                "quercetin_z": 4.42,
+                "ptni_ratio": 21.9
+            },
+            "expression_weighted": {
+                "file": "results/tables/expression_weighted_rwr_permutation_results.csv",
+                "hyperforin_z": 7.99,
+                "quercetin_z": 5.56,
+                "ptni_ratio": 16.9
+            }
         },
         "core_finding": "Hyperforin exhibits 17-22x higher per-target network influence than Quercetin"
     },
-    "pipeline_scripts": {
-        "step_1_data": "scripts/create_lcc_filtered_data.py",
-        "step_2_rwi": "scripts/run_standard_rwr_lcc_permutations.py",
-        "step_3_ewi": "scripts/run_expression_weighted_rwr_permutations.py",
-        "step_4_control": "scripts/run_chemical_similarity_control.py"
+    "pipeline": {
+        "step_1": "scripts/create_lcc_filtered_data.py",
+        "step_2": "scripts/run_standard_rwr_lcc_permutations.py",
+        "step_3": "scripts/run_expression_weighted_rwr_permutations.py",
+        "step_4": "scripts/run_chemical_similarity_control.py"
+    },
+    "tests": {
+        "total": 53,
+        "passed": 53,
+        "coverage": "src/network_tox"
     },
     "citations": {
         "methods": [
