@@ -3,29 +3,30 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Python version (3.10+ required, tested on 3.13)
+  # Python version
   - python>=3.10
   
-  # Core packages via conda (faster than pip)
-  - pandas=2.1.4
-  - numpy=1.26.2
-  - scipy=1.11.4
-  - networkx=3.2.1
-  - statsmodels=0.14.1
-  - matplotlib=3.8.2
-  - pyarrow=14.0.2
-  - tqdm=4.66.1
- 
-  # Development tools
-  - pytest=7.4.3
-  - pytest-cov=4.1.0
-  - ruff=0.1.9
+  # Core packages
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+  - networkx>=3.0
+  - statsmodels>=0.14.0
+  - matplotlib>=3.7.0
+  - pyarrow>=12.0.0
+  - tqdm>=4.60.0
   
-  # Jupyter (optional, for interactive analysis)
+  # Chemical similarity (RDKit for ECFP fingerprints)
+  - rdkit>=2023.03.1
+  
+  # Development tools
+  - pytest>=7.0.0
+  - pytest-cov>=4.0.0
+  - ruff>=0.1.0
+  
+  # Optional: Jupyter for interactive analysis
   - jupyter
   - ipykernel
   
-  # Pip packages (if needed)
+  # Pip packages
   - pip
-  - pip:
-    - gzip  # For compressed file handling

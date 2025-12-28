@@ -1,0 +1,9 @@
+name,class,smiles,similarity_hyperforin,similarity_quercetin,n_targets
+Aspirin,NSAID,,,,0
+Ibuprofen,NSAID,,,,0
+Acetaminophen,Analgesic,,,,0
+Metformin,Antidiabetic,,,,0
+Atorvastatin,Statin,,,,0
+Simvastatin,Statin,,,,0
+Lisinopril,ACE Inhibitor,,,,0
+Amlodipine,CCB,,,,0

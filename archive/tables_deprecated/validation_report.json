@@ -1,0 +1,91 @@
+{
+  "rdkit": {
+    "status": "PASS",
+    "version": "2025.09.3",
+    "message": "RDKit 2025.09.3 available"
+  },
+  "test_compounds": {
+    "Hyperforin": {
+      "status": "PASS",
+      "our_mw": 536.8,
+      "pubchem_mw": "536.8",
+      "our_formula": "C35H52O4",
+      "pubchem_formula": "C35H52O4",
+      "mw_match": true,
+      "message": "Molecular weight matches PubChem"
+    },
+    "Quercetin": {
+      "status": "PASS",
+      "our_mw": 302.24,
+      "pubchem_mw": "302.23",
+      "our_formula": "C15H10O7",
+      "pubchem_formula": "C15H10O7",
+      "mw_match": true,
+      "message": "Molecular weight matches PubChem"
+    }
+  },
+  "fingerprints": {
+    "status": "PASS",
+    "radius": 2,
+    "diameter": 4,
+    "bits": 2048,
+    "fp_type": "Morgan/ECFP4",
+    "reference": "Rogers & Hahn (2010) J Chem Inf Model 50:742-754",
+    "message": "ECFP4 parameters match industry standard"
+  },
+  "tanimoto": {
+    "status": "PASS",
+    "tests": {
+      "identical": {
+        "passed": true,
+        "value": 1.0,
+        "expected": 1.0
+      },
+      "similar": {
+        "passed": true,
+        "value": 0.273,
+        "expected": "0.15-0.9"
+      },
+      "different": {
+        "passed": true,
+        "value": 0.0,
+        "expected": "<0.2"
+      }
+    },
+    "message": "Tanimoto calculation validated"
+  },
+  "dilirank": {
+    "status": "PASS",
+    "n_drugs": 907,
+    "n_dili_positive": 542,
+    "n_dili_negative": 365,
+    "dilirank_classes": [
+      "vMOST-DILI-concern",
+      "vLess-DILI-concern",
+      "vMost-DILI-concern",
+      "vNo-DILI-concern",
+      "vNo-DILI-Concern"
+    ],
+    "positive_valid": true,
+    "negative_valid": true,
+    "message": "DILIrank classifications validated"
+  },
+  "ref_smiles": {
+    "status": "PASS",
+    "n_total": 907,
+    "n_valid": 907,
+    "n_invalid": 0,
+    "pct_valid": 100.0,
+    "invalid_examples": [],
+    "message": "907/907 (100.0%) SMILES are valid"
+  },
+  "reproducibility": {
+    "status": "PASS",
+    "checks": {
+      "summary_exists": true,
+      "results_exist": true,
+      "dilirank_downloaded": true
+    },
+    "message": "All output files present"
+  }
+}

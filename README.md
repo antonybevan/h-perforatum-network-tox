@@ -1,87 +1,86 @@
-# H. Perforatum Network Toxicology Analysis
+# H. perforatum Network Toxicology Pipeline
 
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/antonybevan/h-perforatum-network-tox/releases/tag/v1.0.0)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://github.com/antonybevan/h-perforatum-network-tox/workflows/Tests/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
-[![Coverage](https://img.shields.io/badge/coverage-84%25-brightgreen.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
-[![Security](https://img.shields.io/badge/security-no%20vulnerabilities-brightgreen.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
-
-Network pharmacology pipeline demonstrating **Hyperforin's 78× higher per-target hepatotoxic influence** compared to Quercetin in *Hypericum perforatum* (St. John's Wort).
-
-## Key Results
-
-| Compound | Targets | RWR Z-score | P-value (FDR) | Per-Target Influence |
-|----------|---------|-------------|---------------|---------------------|
-| **Hyperforin** | 9 | **+9.50** | **<0.0001** | **0.0287** |
-| Quercetin | 62 | +1.04 | 0.15 (NS) | 0.00037 |
-
-**Finding:** Hyperforin shows highly significant DILI influence (78× per target); Quercetin does not.
-
-📄 **[Read Full Research Summary](docs/RESEARCH_SUMMARY.md)** - Detailed methodology, statistics, and interpretation.
+> **Publication-ready network pharmacology analysis of DILI influence**
 
 ## Quick Start
 
 ```bash
-# Clone and install
-git clone https://github.com/antonybevan/h-perforatum-network-tox.git
-cd h-perforatum-network-tox
-pip install -e .
+# 1. Setup environment
+pip install -r requirements.txt
 
-# Run complete pipeline (includes data regeneration)
-python scripts/run_complete_pipeline.py
+# 2. Run complete pipeline
+python scripts/create_lcc_filtered_data.py
+python scripts/run_standard_rwr_lcc_permutations.py
+python scripts/run_expression_weighted_rwr_permutations.py
 
-# Run validation only (faster, uses existing data)
-python scripts/run_complete_pipeline.py --skip-data
-
-# Verify results
-python scripts/final_validation_check.py
+# 3. View results
+cat results/tables/standard_rwr_lcc_permutation_results.csv
+cat results/tables/expression_weighted_rwr_permutation_results.csv
 ```
 
 ## Project Structure
 
 ```
 h-perforatum-net-tox/
-├── src/network_tox/      # Python package (84% coverage)
-│   ├── core/             # RWR, proximity, permutation
-│   ├── analysis/         # Analysis methods
-│   └── utils/            # Data loaders
-├── scripts/              # 12 executable scripts
-├── data/processed/       # Network parquets, CSVs (Git LFS)
-├── results/              # Statistics, sensitivity analysis
-├── tests/                # 53 pytest tests
-└── docs/                 # Documentation
+├── scripts/                    # 8 essential pipeline scripts
+│   ├── create_lcc_filtered_data.py      # Data preprocessing (Step 1)
+│   ├── curate_targets.py                # Target curation
+│   ├── extract_string_network.py        # Network extraction
+│   ├── filter_liver_network.py          # Liver LCC filtering
+│   ├── run_standard_rwr_lcc_permutations.py   # Tier 2: RWI (Step 2)
+│   ├── run_expression_weighted_rwr_permutations.py  # Tier 3: EWI (Step 3)
+│   ├── run_expression_weighted_rwr.py   # Single-run EWI
+│   └── run_chemical_similarity_control.py  # Negative control
+│
+├── results/tables/             # 4 primary result files
+│   ├── standard_rwr_lcc_permutation_results.csv   # Tier 2 results
+│   ├── expression_weighted_rwr_permutation_results.csv  # Tier 3 results
+│   ├── chemical_similarity_summary.csv  # Structural analysis
+│   └── dilirank_reference_set.csv       # Reference data
+│
+├── docs/                       # 6 core documents
+│   ├── RESEARCH_SUMMARY.md     # Complete study overview
+│   ├── MANUSCRIPT_DRAFT.md     # Nature Comms-style draft
+│   ├── THESIS_DEFENSE_NARRATIVE.md  # 2-3 min oral defense
+│   ├── METHODOLOGY.md          # Technical methods
+│   └── CONTRIBUTING.md         # Development guidelines
+│
+├── data/                       # Input data
+│   ├── raw/                    # Original data sources
+│   └── processed/              # LCC-filtered data
+│
+├── src/                        # Core library
+│   └── network_tox/            # Python package
+│
+└── archive/                    # Deprecated files (reference only)
+    ├── scripts_deprecated/     # Old development scripts
+    ├── tables_deprecated/      # Intermediate results
+    └── docs_deprecated/        # Legacy documentation
 ```
 
-## Methods
+## Key Results
 
-- **Network:** STRING v12.0 (human), liver-specific (GTEx TPM>1)
-- **Metrics:** Shortest-path proximity (d_c) + Random Walk with Restart (RWR)
-- **Validation:** Degree-aware permutation tests (n=1000), FDR correction
-- **Robustness:** Multi-threshold (≥900, ≥700) + Bootstrap sensitivity
+| Metric | Hyperforin (9 targets) | Quercetin (62 targets) | Ratio |
+|--------|------------------------|------------------------|-------|
+| **RWI Z-score** | +8.83 | +4.42 | — |
+| **EWI Z-score** | +7.99 | +5.56 | — |
+| **PTNI (RWI)** | 0.01135 | 0.00052 | **21.9×** |
+| **PTNI (EWI)** | 0.0134 | 0.00080 | **16.9×** |
 
-## Documentation
+**Core finding:** Hyperforin exhibits 17–22× greater per-target network influence than Quercetin despite having 7× fewer targets.
 
-| Document | Description |
-|----------|-------------|
-| [RESEARCH_SUMMARY.md](docs/RESEARCH_SUMMARY.md) | **Nature-tier research summary with statistical analysis** |
-| [METHODOLOGY.md](docs/METHODOLOGY.md) | Complete scientific methodology |
-| [NETWORK_GENERATION.md](docs/NETWORK_GENERATION.md) | Network construction pipeline |
-| [TARGET_CURATION.md](docs/TARGET_CURATION.md) | Target filtering rationale |
-| [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Contribution guide |
+## Reproducibility
+
+- **Random seed:** 42 (fixed for all permutations)
+- **Python:** 3.13
+- **Dependencies:** See `requirements.txt`
+
+All scripts use sorted target lists to ensure deterministic results.
 
 ## Citation
 
-```bibtex
-@software{hperforatum_network_tox,
-  author = {Bevan, Antony},
-  title = {Network Pharmacology Analysis of H. perforatum Hepatotoxicity},
-  version = {1.0.0},
-  year = {2025},
-  url = {https://github.com/antonybevan/h-perforatum-network-tox}
-}
-```
+See `CITATION.cff` for citation information.
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) file.
+MIT License - see `LICENSE` file.

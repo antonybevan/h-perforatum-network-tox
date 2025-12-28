@@ -1,27 +1,41 @@
 {
     "project": {
         "name": "h-perforatum-network-tox",
-        "title": "Network Pharmacology Analysis of Hypericum perforatum Hepatotoxicity",
-        "version": "1.0.0",
+        "title": "Network Position Dominates Target Count in Hepatotoxic Influence",
+        "subtitle": "A Tiered Inference Framework Applied to Hypericum perforatum",
+        "version": "2.0.0",
         "created": "2025-12-24",
-        "last_updated": "2025-12-24",
+        "last_updated": "2025-12-28",
         "license": "MIT",
         "repository": "https://github.com/antonybevan/h-perforatum-network-tox"
+    },
+    "methodology": {
+        "framework": "Tiered Inference",
+        "tiers": {
+            "tier_1": {
+                "name": "Shortest-Path Proximity (d_c)",
+                "role": "Context only, not inference"
+            },
+            "tier_2": {
+                "name": "Standard Random Walk Influence (RWI)",
+                "role": "Epistemic baseline - does signal exist?"
+            },
+            "tier_3": {
+                "name": "Expression-Weighted Influence (EWI)",
+                "role": "Biological validation - does signal persist?"
+            }
+        },
+        "derived_metric": {
+            "name": "Per-Target Network Influence (PTNI)",
+            "formula": "I / |T|",
+            "purpose": "Measures targeting efficiency across both influence metrics"
+        }
     },
     "environment": {
         "python_version": "3.10+",
         "os": "Windows/Linux/macOS",
-        "dependencies": {
-            "pandas": "2.3.3",
-            "numpy": "2.4.0",
-            "networkx": "3.6.1",
-            "scipy": "1.16.3",
-            "statsmodels": "0.14.6",
-            "pyarrow": "22.0.0",
-            "matplotlib": "3.10.8",
-            "pytest": "9.0.2",
-            "tqdm": "4.67.1"
-        }
+        "random_seed": 42,
+        "reproducibility": "Deterministic (sorted target lists, fixed seeds)"
     },
     "data_sources": {
         "string": {
@@ -29,175 +43,85 @@
             "version": "12.0",
             "organism": "9606 (Homo sapiens)",
             "url": "https://string-db.org",
-            "files": [
-                "data/external/string_links.txt.gz",
-                "data/external/string_info.txt.gz"
+            "thresholds": [
+                700,
+                900
             ],
-            "access_date": "2024",
-            "citation": "Szklarczyk D, et al. (2021). Nucleic Acids Res 49(D1):D605-D612"
+            "citation": "Szklarczyk D, et al. (2023). Nucleic Acids Res 51(D1):D483-D489"
         },
         "gtex": {
             "name": "Genotype-Tissue Expression Project",
             "version": "v8",
-            "release_date": "2017-06-05",
             "tissue": "Liver",
             "url": "https://gtexportal.org",
-            "file": "data/raw/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct",
-            "filter_criterion": "TPM > 1",
-            "liver_genes_count": 13496,
+            "filter_criterion": "TPM >= 1",
             "citation": "GTEx Consortium (2020). Science 369(6509):1318-1330"
         },
-        "disgenet": {
-            "name": "DisGeNET Disease-Gene Association Database",
-            "version": "7.0",
-            "url": "https://disgenet.org",
-            "file": "data/raw/curated_gene_disease_associations.tsv",
-            "disease": "Drug-Induced Liver Injury",
-            "disease_id": "UMLS:C0860207",
-            "dili_genes_count": 127,
-            "citation": "Piñero J, et al. (2020). Nucleic Acids Res 48(D1):D845-D855"
+        "dilirank": {
+            "name": "DILIrank Drug-Induced Liver Injury Dataset",
+            "url": "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb",
+            "compounds": 907,
+            "citation": "Chen M, et al. (2016). Drug Discov Today 21(4):648-653"
         },
         "chembl": {
             "name": "ChEMBL Bioactivity Database",
-            "version": "29",
+            "version": "33",
             "url": "https://www.ebi.ac.uk/chembl/",
-            "compound": "Quercetin",
-            "targets_retrieved": 122,
-            "citation": "Gaulton A, et al. (2017). Nucleic Acids Res 45(D1):D945-D954"
-        },
-        "literature": {
-            "name": "Manually Curated Literature",
-            "compound": "Hyperforin",
-            "targets_count": 14,
-            "references_file": "data/raw/hyperforin_targets_references.txt"
+            "citation": "Zdrazil B, et al. (2024). Nucleic Acids Res 52(D1):D1180-D1192"
         }
     },
     "processed_data": {
         "networks": {
-            "network_900": {
-                "file": "data/processed/network_900.parquet",
-                "threshold": 900,
-                "nodes": 11693,
-                "edges": 100383,
-                "liver_nodes": 7677
+            "network_900_liver_lcc": {
+                "file": "data/processed/network_900_liver_lcc.parquet",
+                "description": "Liver LCC network (STRING >= 900)"
             },
-            "network_700": {
-                "file": "data/processed/network_700.parquet",
-                "threshold": 700,
-                "nodes": 15882,
-                "edges": 236712,
-                "liver_nodes": 9773
+            "network_700_liver_lcc": {
+                "file": "data/processed/network_700_liver_lcc.parquet",
+                "description": "Liver LCC network (STRING >= 700)"
             }
         },
         "targets": {
-            "file": "data/processed/targets.csv",
-            "hyperforin": 12,
-            "quercetin": 80,
-            "total": 92,
-            "filtered_from_raw": 136,
-            "filtering_criteria": [
-                "species (human only)",
-                "gene symbol mapping",
-                "remove unmapped"
-            ]
-        },
-        "dili_modules": {
-            "dili_900_lcc": {
-                "file": "data/processed/dili_900_lcc.csv",
-                "genes": 82,
-                "disease": "Drug-Induced Liver Injury",
-                "filters": [
-                    "liver expression",
-                    "STRING ≥900",
-                    "LCC"
-                ]
-            },
-            "dili_700_lcc": {
-                "file": "data/processed/dili_700_lcc.csv",
-                "genes": 84,
-                "disease": "Drug-Induced Liver Injury",
-                "filters": [
-                    "liver expression",
-                    "STRING ≥700",
-                    "LCC"
-                ]
-            }
-        },
-        "liver_proteome": {
-            "file": "data/processed/liver_proteome.csv",
-            "genes": 13496,
-            "source": "GTEx v8",
-            "criterion": "median TPM > 1"
+            "file": "data/processed/targets_lcc.csv",
+            "hyperforin": 9,
+            "quercetin": 62,
+            "filtering": "Liver LCC only"
         }
     },
     "analysis_parameters": {
-        "permutations": {
-            "primary_validation": 1000,
-            "robustness_validation": 1000,
-            "bootstrap_iterations": 100
-        },
-        "random_walk_restart": {
-            "restart_probability": 0.7,
-            "convergence_threshold": 1e-6
-        },
-        "degree_matching": {
-            "enabled": true,
-            "method": "degree-preserving sampling"
-        },
-        "fdr_correction": {
-            "method": "Benjamini-Hochberg",
-            "alpha": 0.05
-        },
-        "random_seeds": {
-            "permutation": "iteration index (i, i+10000)",
-            "synthetic_network_900": 900,
-            "synthetic_network_700": 700,
-            "barabasi_albert": 42
-        }
+        "permutations": 1000,
+        "restart_probability": 0.15,
+        "convergence_threshold": 1e-6,
+        "degree_matching_tolerance": 0.25,
+        "fdr_method": "Benjamini-Hochberg",
+        "fdr_alpha": 0.05
     },
     "results": {
-        "primary_900": {
-            "file": "results/final_statistics.csv",
-            "hyperforin_rwr_zscore": 9.58,
-            "hyperforin_rwr_pvalue": 0.0,
-            "quercetin_rwr_zscore": 1.06,
-            "quercetin_rwr_pvalue": 0.145,
-            "per_target_advantage": "79.7x"
+        "tier_2_rwi": {
+            "file": "results/tables/standard_rwr_lcc_permutation_results.csv",
+            "hyperforin_z": 8.83,
+            "quercetin_z": 4.42,
+            "ptni_ratio": 21.9
         },
-        "robustness_700": {
-            "file": "results/final_statistics_700.csv",
-            "hyperforin_rwr_zscore": 6.59,
-            "quercetin_rwr_zscore": 0.97
+        "tier_3_ewi": {
+            "file": "results/tables/expression_weighted_rwr_permutation_results.csv",
+            "hyperforin_z": 7.99,
+            "quercetin_z": 5.56,
+            "ptni_ratio": 16.9
         },
-        "bootstrap": {
-            "file": "results/bootstrap_sensitivity.csv",
-            "hyperforin_observed": 0.258,
-            "quercetin_95ci": [
-                0.002,
-                0.086
-            ],
-            "conclusion": "Hyperforin significantly above CI"
-        }
+        "core_finding": "Hyperforin exhibits 17-22x higher per-target network influence than Quercetin"
     },
-    "reproducibility": {
-        "deterministic": true,
-        "seeds_set": true,
-        "version_controlled": true,
-        "environment_specified": true,
-        "documentation_complete": true,
-        "regeneration_scripts": [
-            "scripts/run_complete_pipeline.py",
-            "scripts/regenerate_networks.py",
-            "scripts/regenerate_dili.py",
-            "scripts/regenerate_liver_proteome.py",
-            "scripts/curate_targets.py"
-        ]
+    "pipeline_scripts": {
+        "step_1_data": "scripts/create_lcc_filtered_data.py",
+        "step_2_rwi": "scripts/run_standard_rwr_lcc_permutations.py",
+        "step_3_ewi": "scripts/run_expression_weighted_rwr_permutations.py",
+        "step_4_control": "scripts/run_chemical_similarity_control.py"
     },
     "citations": {
         "methods": [
             "Menche J, et al. (2015). Science 347(6224). DOI: 10.1126/science.1257601",
             "Guney E, et al. (2016). Nat Commun 7. DOI: 10.1038/ncomms10331",
-            "Kohler S, et al. (2008). Am J Hum Genet 82(4). DOI: 10.1016/j.ajhg.2008.02.013"
+            "Vanunu O, et al. (2010). PLOS Comput Biol 6. DOI: 10.1371/journal.pcbi.1000641"
         ]
     }
 }

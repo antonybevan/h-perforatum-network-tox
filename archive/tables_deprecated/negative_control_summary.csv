@@ -1,0 +1,4 @@
+category,n_compounds,z_score_mean,z_score_std,interpretation
+Hyperforin (Test),1,9.59818936036208,0,SIGNIFICANT - Primary DILI driver
+Quercetin (Test),1,1.0443293684274977,0,Not significant - Minimal DILI influence
+Random Drug Controls,0,0.0,0,Baseline (max Z=0.00)

@@ -1,304 +1,172 @@
 # Complete Methodology: Network Pharmacology Analysis of H. perforatum Hepatotoxicity
 
-**Lead Scientist:** Antony Bevan  
-**Date:** 2025-12-23  
-**Target Journal:** Nature-tier (Nature Communications, Scientific Reports)
+**Target Journal:** Nature Communications (Q1)
+**Date:** 2025-12-28
 
 ---
 
 ## Executive Summary
 
-This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using network pharmacology approaches. We demonstrate that while both compounds show significant proximity to drug-induced liver injury (DILI) genes, **Hyperforin engages regulatory bottlenecks 26x more effectively per target**, suggesting it is the primary DILI culprit despite having fewer known targets.
+This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using a tiered inference framework. We demonstrate that **proximity does not imply influence**: Quercetin (62 targets) is closer to DILI genes but exerts **17–22× less per-target influence** than Hyperforin (9 targets).
 
 ---
 
-## 1. Scientific Background
+## 1. Scientific Problem
 
-### 1.1 The Problem
+### 1.1 The Target-Count Fallacy
 
-*H. perforatum* is associated with clinically significant drug-drug interactions and rare hepatotoxicity. However, the relative contribution of individual constituents (Hyperforin vs Quercetin) to DILI risk remains unclear.
+Network pharmacology typically assumes compounds with more targets pose greater risk. This conflates coverage with impact. We demonstrate that:
 
-### 1.2 Our Hypothesis
+- **Proximity ≠ Influence**
+- **Target count ≠ Toxicological impact**
+- **Network position dominates**
 
-Hyperforin, as a potent PXR (pregnane X receptor) agonist, may exert disproportionate hepatotoxic influence through regulatory cascade effects, even with fewer direct targets than Quercetin.
+### 1.2 Case Study
 
-### 1.3 Why Network Pharmacology?
-
-Traditional approaches focus on individual targets. Network pharmacology captures:
-- **Pathway context:** How targets connect to disease genes
-- **Regulatory cascades:** Effects propagating through master regulators
-- **Systems-level toxicity:** Cumulative network influence
-
----
-
-## 2. Data Sources
-
-### 2.1 Drug Targets
-
-| Compound | Source | Targets | In Network |
-|----------|--------|---------|------------|
-| **Hyperforin** | Literature curation | 14 | 9 (liver, incl. PXR) |
-| **Quercetin** | ChEMBL API (IC50 ≤10µM) | 122 | 63 (liver) |
-
-**Hyperforin targets** (literature-curated with citations):
-- PXR (NR1I2) - master hepatic regulator
-- TRPC6 - ion channel
-- CYP3A4, CYP2C9, CYP1A2 - drug metabolism
-- ABCB1, ABCC1 - drug transporters
-- PTGS1, PTGS2 - cyclooxygenases
-- 5-LOX - lipoxygenase
-- And others...
-
-**Why different sources?** Hyperforin (natural product) has sparse ChEMBL data; literature curation is more complete. Quercetin (flavonoid) is well-characterized in ChEMBL. We validated this asymmetry does not bias results (see Section 4.1).
-
-### 2.2 DILI Disease Module
-
-| Source | Disease | UMLS ID | Genes |
-|--------|---------|---------|-------|
-| DisGeNET | Drug-Induced Liver Injury | C0860207 | 57 → 50 (in LCC) |
-
-### 2.3 Protein-Protein Interaction Network
-
-| Database | Species | Confidence | Nodes | Edges |
-|----------|---------|------------|-------|-------|
-| STRING v12.0 | Human (9606) | ≥900 | 11,693 | 100,383 |
-| STRING v12.0 | Human (9606) | ≥700 | 15,882 | 236,712 |
-
-### 2.4 Tissue Expression
-
-| Source | Tissue | Threshold | Genes |
-|--------|--------|-----------|-------|
-| GTEx v8 | Liver | TPM > 1 | 13,358 |
+| Compound | Targets (LCC) | Primary Activity |
+|----------|---------------|------------------|
+| **Hyperforin** | 9 | PXR activation → CYP induction |
+| **Quercetin** | 62 | Broad kinase/enzyme inhibition |
 
 ---
 
-## 3. Methods
+## 2. Tiered Inference Framework
 
-### 3.1 Network Construction
+We employ three tiers to establish causality and rule out alternative explanations:
 
-```
-1. Download STRING v12.0 human PPI network
-2. Filter to confidence threshold (≥900 or ≥700)
-3. Extract Largest Connected Component (LCC)
-4. Filter to liver-expressed genes (GTEx TPM > 1)
-5. Re-extract LCC of liver-specific network
-```
-
-**Why liver-specific?** Universal networks include irrelevant tissue contexts. Liver-specific filtering reduces noise and focuses on hepatic biology.
-
-### 3.2 Metric 1: Shortest-Path Proximity (d_c)
+### Tier 1: Shortest-Path Proximity ($d_c$) — Context
 
 $$d_c = \frac{1}{|T|} \sum_{t \in T} \min_{d \in D} \text{dist}(t, d)$$
 
-Where:
-- $T$ = drug targets
-- $D$ = DILI genes
-- $\text{dist}(t,d)$ = shortest path length
+- **Purpose:** Descriptive context, not inference
+- **Limitation:** Compounds can be "close but powerless"
 
-**Interpretation:** Lower d_c = targets closer to DILI genes = higher hepatotoxic potential.
+### Tier 2: Standard Random Walk Influence (RWI) — Epistemic Baseline
 
-### 3.3 Metric 2: Random Walk with Restart (RWR)
+$$W_{ij} = \frac{A_{ij}}{\sum_k A_{kj}}$$
 
-$$\mathbf{p}^{(t+1)} = (1-\alpha) \mathbf{W} \mathbf{p}^{(t)} + \alpha \mathbf{r}$$
+- **Purpose:** "Does the signal exist without biology?"
+- **Role:** Core inference metric
 
-Where:
-- $\alpha = 0.7$ (restart probability)
-- $\mathbf{W}$ = column-normalized adjacency matrix
-- $\mathbf{r}$ = restart vector (uniform over drug targets)
+### Tier 3: Expression-Weighted Influence (EWI) — Biological Validation
 
-**DILI Influence:**
-$$I = \sum_{d \in D} p_d$$
+$$W'_{ij} = \frac{A_{ij} \cdot e_i}{\sum_k A_{kj} \cdot e_k}$$
 
-**Interpretation:** Higher influence = more information flow from targets to DILI genes = greater hepatotoxic potential.
+- **Purpose:** "Does the signal persist under biological constraint?"
+- **Role:** Validation refinement, not discovery
 
-**Why RWR?** Captures regulatory cascade effects (e.g., Hyperforin → PXR → CYPs → DILI) that shortest-path misses.
+### Derived Metric: Per-Target Network Influence (PTNI)
 
-### 3.4 Statistical Validation
+$$\text{PTNI} = \frac{I}{|T|}$$
 
-**Degree-Aware Permutation Testing:**
+- **Purpose:** Measures targeting efficiency across both influence metrics
+- **Interpretation:** High PTNI = master-regulator strategy; Low PTNI = diffuse polypharmacology
+
+---
+
+## 3. Data Sources
+
+| Dataset | Source | Filtering |
+|---------|--------|-----------|
+| Protein-Protein Interactions | STRING v12.0 | Combined score ≥900 (primary), ≥700 (robustness) |
+| DILI Genes | DILIrank, LiverTox | High-confidence associations |
+| Drug Targets | ChEMBL 33, Literature | Validated human targets |
+| Liver Expression | GTEx v8 | TPM ≥1 in liver tissue |
+
+---
+
+## 4. Network Construction
+
+1. Download STRING v12.0 human PPI network
+2. Filter to confidence threshold (≥900 or ≥700)
+3. Filter to liver-expressed genes (GTEx TPM ≥ 1)
+4. Extract Largest Connected Component (LCC)
+
+**Result:** 6,891 nodes (liver LCC)
+
+---
+
+## 5. Statistical Validation
+
+### Degree-Aware Permutation Testing (n=1000)
+
 ```
-For each permutation (n=1000):
-    1. Select random proteins matching target degree distribution
-    2. Calculate metric (d_c or RWR influence)
+For each permutation:
+    1. Sample random proteins matching target degree distribution (±25%)
+    2. Calculate influence (RWI or EWI)
     3. Build null distribution
 
 Z-score = (observed - null_mean) / null_std
-P-value = 2 × (1 - Φ(|Z|))  [two-tailed for d_c]
-         = 1 - Φ(Z)         [one-tailed for RWR]
-
+P-value = 1 - Φ(Z)  [one-tailed]
 FDR correction: Benjamini-Hochberg
 ```
 
-**Why degree-matching?** High-degree "hub" proteins are naturally closer to everything. Degree-matching ensures significance reflects biology, not topology.
+### Reproducibility
+
+- **Random seed:** 42 (fixed)
+- **Target list:** Sorted alphabetically before assignment to prevent hash randomization
 
 ---
 
-## 4. Bias Mitigation
+## 6. Results
 
-### 4.1 Target Count Asymmetry
+### 6.1 Final Statistics (LCC-filtered, reproducible)
 
-**Problem:** Hyperforin (8 targets) vs Quercetin (63 targets) may bias comparisons.
+| Tier | Compound | Targets | Z-score | p-value | PTNI | Ratio |
+|------|----------|---------|---------|---------|------|-------|
+| **RWI** | Hyperforin | 9 | **+8.83** | <10⁻¹⁶ | 0.01135 | **21.9×** |
+| **RWI** | Quercetin | 62 | +4.42 | <10⁻⁵ | 0.00052 | 1× |
+| **EWI** | Hyperforin | 9 | **+7.99** | 6.7×10⁻¹⁶ | 0.0134 | **16.9×** |
+| **EWI** | Quercetin | 62 | +5.56 | 1.4×10⁻⁸ | 0.00080 | 1× |
 
-**Solution:** Bootstrap sensitivity analysis (100 iterations) sampling Quercetin down to 8 targets.
+### 6.2 Critical Finding
 
-**Result:** Both compounds' observed values fall within 95% CI. **Bias is negligible.**
+**Hyperforin's PTNI is 17–22× higher than Quercetin's across both RWI and EWI.**
 
-### 4.2 Universal Hub Penalty
-
-**Problem:** Universal networks penalize liver-specific regulators (PXR, CYPs) by comparing against irrelevant tissue hubs.
-
-**Solution:** Filter network to liver-expressed genes (GTEx TPM > 1).
-
-**Result:** All analyses run on liver-specific networks.
-
-### 4.3 Network Density Dependence
-
-**Problem:** Results may be threshold-dependent.
-
-**Solution:** Run at both STRING ≥900 and ≥700 thresholds.
-
-**Result:** Rankings consistent across thresholds. **Results are robust.**
+The signal:
+1. **Exists** without biology (RWI: 21.9×)
+2. **Persists** under biological constraint (EWI: 16.9×)
+3. **Ranking is stable** across methods
 
 ---
 
-## 5. Results
+## 7. Interpretation
 
-### 5.1 Final Statistics
+### 7.1 The Proximity-Influence Paradox
 
-| Compound | Network | Targets | DILI Genes | d_c (Z) | d_c Sig | RWR (Z) | RWR Sig | Per-Target |
-|----------|---------|---------|------------|---------|---------|---------|---------|------------|
-| Hyperforin | ≥900 | 9 | 82 | **-2.98** | **Yes**** | **+9.58** | **Yes*** | 0.0287 |
-| Hyperforin | ≥700 | 9 | 84 | **-5.09** | **Yes*** | **+6.59** | **Yes*** | 0.0299 |
-| Quercetin | ≥900 | 63 | 82 | **-5.29** | **Yes*** | +1.06 | No | 0.00036 |
-| Quercetin | ≥700 | 63 | 84 | **-5.40** | **Yes*** | +0.97 | No | 0.00040 |
+| Property | Hyperforin | Quercetin |
+|----------|------------|-----------|
+| Proximity (d_c) | Z = −2.81 | Z = −5.16 (closer) |
+| Influence (RWI) | Z = +8.83 (**stronger**) | Z = +4.42 |
+| Per-target efficiency | **21.9×** | 1× |
 
-*p < 0.05 after FDR correction
+**Quercetin is closer but weaker. Hyperforin is farther but stronger.**
 
-### 5.2 Critical Finding
-
-**Hyperforin per-target influence: 79.7x higher than Quercetin**
-
-With corrected DILI genes (Drug-Induced Liver Injury, not Colitis):
-- **Hyperforin RWR:** Z=+9.58 (p < 0.0001) — **HIGHLY significant**
-- **Quercetin RWR:** Z=+1.06 (p = 0.145) — **NOT significant**
-- Hyperforin demonstrates **direct mechanistic relevance** to hepatotoxicity
-- Quercetin shows **no significant** network influence on DILI genes
-
-**Bootstrap Validation:**
-- Quercetin 95% CI (9 targets sampled): [0.002, 0.086]
-- Hyperforin observed: 0.258 (far above CI)
-- Per-target advantage is **robust** and not due to target count bias
-
----
-
-## 6. Interpretation
-
-### 6.1 Why Metrics Diverge
-
-| Metric | Hyperforin | Quercetin | Explanation |
-|--------|------------|-----------|-------------|
-| d_c (shortest-path) | Non-sig | Sig | Quercetin targets directly overlap DILI genes |
-| RWR (influence) | **Highly sig** | Sig | Hyperforin targets act as regulatory hubs |
-
-### 6.2 Mechanistic Model
+### 7.2 Mechanistic Model
 
 ```
 HYPERFORIN                      QUERCETIN
     │                               │
     ▼                               ▼
-   PXR                          Direct targets
-(master regulator)                  │
-    │                               ▼
-    ├──→ CYP3A4                 DILI genes
-    ├──→ CYP2B6                (local overlap)
-    ├──→ ABCB1
-    ▼
-DILI MODULE
-(regulatory cascade)
+   PXR (master regulator)       62 dispersed targets
+    │                               │
+    ├──→ CYP3A4                     ▼
+    ├──→ CYP2C9                  Low-leverage nodes
+    ├──→ ABCB1                      │
+    ▼                               ▼
+DILI MODULE (cascade)           Diffuse, weak influence
 ```
-
-**Hyperforin:** Activates master regulators that cascade through the network  
-**Quercetin:** Has direct pathway overlap with DILI genes
-
-### 6.3 Clinical Implication
-
-Both compounds contribute to hepatotoxicity, but through different mechanisms:
-- **Quercetin:** Direct hepatotoxic pathway involvement
-- **Hyperforin:** Regulatory cascade effects via PXR → CYP induction → drug interactions
 
 ---
 
-## 7. Scientific Rigor Checklist
+## 8. Pipeline Scripts
 
-- [x] **Data Quality:** Literature curation + API extraction with documented sources
-- [x] **Bias Mitigation:** Bootstrap sensitivity validates target count asymmetry
-- [x] **Tissue Specificity:** Liver-filtered networks reduce biological noise
-- [x] **Statistical Rigor:** Degree-aware permutations (n=1000), FDR correction
-- [x] **Robustness:** Consistent results across STRING thresholds (700, 900)
-- [x] **Multiple Metrics:** Both d_c and RWR to capture different mechanisms
-- [x] **Reproducibility:** Complete pipeline script (run_complete_pipeline.py)
-
----
-
-## 8. Files Generated
-
-### Package Structure
-```
-h-perforatum-net-tox/
-├── setup.py                    # Package installation
-├── requirements.txt            # Dependencies
-├── LICENSE                     # MIT License
-├── README.md                   # Quick start
-├── METHODOLOGY.md              # This document
-├── src/network_tox/           # Python package
-│   ├── __init__.py
-│   ├── core/                  # Core algorithms
-│   │   ├── network.py         # Network operations
-│   │   ├── proximity.py       # Proximity metrics
-│   │   └── permutation.py     # Permutation testing
-│   ├── analysis/              # Analysis methods
-│   │   ├── rwr.py            # Random walk with restart
-│   │   └── shortest_path.py  # Shortest-path analysis
-│   └── utils/                 # Utilities
-│       ├── data_loader.py
-│       └── validators.py
-├── scripts/
-│   ├── run_complete_pipeline.py  # Main pipeline
-│   └── final_validation_check.py # Data verification
-├── data/
-│   ├── raw/                   # Source data + documentation
-│   ├── processed/             # LCC-filtered networks
-│   └── external/              # STRING database
-├── results/
-│   ├── RESULTS_GUIDE.md       # How to read tables
-│   └── tables/                # 8 CSV result files
-├── docs/                      # Documentation
-└── tests/                     # Unit tests
-```
-
-### Data Files
-```
-data/processed/
-├── network_900.parquet         # STRING ≥900 LCC
-├── network_700.parquet         # STRING ≥700 LCC
-├── targets.csv                 # Curated compound targets
-├── dili_900_lcc.csv            # DILI genes in ≥900 LCC
-├── dili_700_lcc.csv            # DILI genes in ≥700 LCC
-└── liver_proteome.csv          # GTEx liver genes
-```
-
-### Results Files
-```
-results/tables/
-├── complete_results.csv        # Full analysis data
-├── summary_results.csv         # Clean summary
-├── influence_comparison.csv    # Per-target comparison
-├── network_stats.csv           # Network statistics
-├── targets_summary.csv         # Target counts
-├── dili_genes.csv             # DILI gene list
-├── rwr_results_clean.csv      # RWR-only results
-└── shortest_path_results_clean.csv  # d_c results
-```
+| Step | Script | Output |
+|------|--------|--------|
+| 1. Data Preprocessing | `create_lcc_filtered_data.py` | `targets_lcc.csv`, `network_*_liver_lcc.parquet` |
+| 2. Tier 2 Analysis | `run_standard_rwr_lcc_permutations.py` | `standard_rwr_lcc_permutation_results.csv` |
+| 3. Tier 3 Analysis | `run_expression_weighted_rwr_permutations.py` | `expression_weighted_rwr_permutation_results.csv` |
+| 4. Negative Control | `run_chemical_similarity_control.py` | `chemical_similarity_summary.csv` |
 
 ---
 
@@ -307,39 +175,17 @@ results/tables/
 ### Installation
 
 ```bash
-# Clone repository
 git clone <repository_url>
 cd h-perforatum-net-tox
-
-# Install package
-pip install -e .
-
-# Or install dependencies only
 pip install -r requirements.txt
 ```
 
 ### Run Analysis
 
 ```bash
-# Complete pipeline
-python scripts/run_complete_pipeline.py
-
-# Verify data integrity
-python scripts/final_validation_check.py
-
-# Use as package
-python -c "from network_tox.core import network; print(network.__doc__)"
-```
-
-### Requirements
-```
-pandas>=2.0.0
-numpy>=1.24.0
-networkx>=3.0
-scipy>=1.10.0
-statsmodels>=0.14.0
-pyarrow>=12.0.0
-matplotlib>=3.7.0
+python scripts/create_lcc_filtered_data.py
+python scripts/run_standard_rwr_lcc_permutations.py
+python scripts/run_expression_weighted_rwr_permutations.py
 ```
 
 ---
@@ -348,11 +194,10 @@ matplotlib>=3.7.0
 
 1. Menche J, et al. (2015) Uncovering disease-disease relationships through the incomplete interactome. *Science* 347:1257601
 2. Guney E, et al. (2016) Network-based in silico drug efficacy screening. *Nature Communications* 7:10331
-3. Kohler S, et al. (2008) Walking the interactome for prioritization of candidate disease genes. *Am J Hum Genet* 82:949-958
-4. Moore LB, et al. (2000) St. John's wort induces hepatic drug metabolism through activation of the pregnane X receptor. *PNAS* 97:7500-7502
+3. Vanunu O, et al. (2010) Associating genes and protein complexes with disease via network propagation. *PLOS Computational Biology* 6:e1000641
 
 ---
 
 **Analysis Status:** ✅ Complete  
-**Publication Readiness:** 🏆 Nature-tier  
-**Scientific Rigor:** ✅ Validated
+**PTNI Ratio:** 17–22× (Hyperforin : Quercetin)  
+**Reproducibility:** ✅ Fixed seed, sorted targets

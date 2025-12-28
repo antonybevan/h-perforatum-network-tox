@@ -1,0 +1,172 @@
+{
+  "timestamp": "2025-12-27T19:40:06.921583",
+  "project_root": "E:\\network_pharmacology\\h-perforatum-net-tox",
+  "overall_status": "PASS",
+  "validations": {
+    "python": {
+      "status": "PASS",
+      "version": "3.13.11",
+      "required": "3.10+",
+      "message": "Python 3.13.11 (recommended)"
+    },
+    "packages": {
+      "status": "PASS",
+      "versions": {
+        "pandas": "2.3.3",
+        "numpy": "2.4.0",
+        "scipy": "1.16.3",
+        "networkx": "3.6.1",
+        "rdkit": "2025.09.3",
+        "matplotlib": "3.10.8"
+      },
+      "missing": [],
+      "message": "6 packages found"
+    },
+    "data": {
+      "status": "PASS",
+      "sources": {
+        "dilirank": {
+          "exists": true,
+          "path": "data/external/DILIrank_2.0.xlsx",
+          "source": "FDA LTKB",
+          "reference": "Chen et al. (2016) Drug Discov Today 21:648-653",
+          "checksum": "a336e681ab162e60e139099a1c73635e"
+        },
+        "targets": {
+          "exists": true,
+          "path": "data/processed/targets.csv",
+          "source": "ChEMBL / Literature",
+          "reference": "Project curation",
+          "checksum": "9fbb4773c238ea756f3c10419aec0a82"
+        },
+        "liver_network": {
+          "exists": true,
+          "path": "data/processed/network_700.parquet",
+          "source": "STRING + Human Protein Atlas",
+          "reference": "Szklarczyk et al. (2023); Uhlen et al. (2015)",
+          "checksum": "d0d9c1e0ce59227add836fa65b828af6"
+        }
+      },
+      "message": "3/3 data sources present"
+    },
+    "seeds": {
+      "status": "PASS",
+      "scripts": {
+        "scripts/run_bootstrap_sensitivity.py": {
+          "exists": true,
+          "has_seed": true
+        }
+      },
+      "message": "Random seeds documented"
+    },
+    "outputs": {
+      "status": "PASS",
+      "outputs": {
+        "results/final_statistics.csv": {
+          "exists": true,
+          "size": 428
+        },
+        "results/chemical_similarity_control.csv": {
+          "exists": true,
+          "size": 157997
+        },
+        "results/tables/chemical_similarity_summary.csv": {
+          "exists": true,
+          "size": 477
+        },
+        "results/tables/dilirank_reference_set.csv": {
+          "exists": true,
+          "size": 116453
+        },
+        "results/tables/validation_report.json": {
+          "exists": true,
+          "size": 2220
+        }
+      },
+      "message": "5/5 output files present"
+    },
+    "docs": {
+      "status": "PASS",
+      "docs": {
+        "README.md": {
+          "exists": true,
+          "size": 3724
+        },
+        "METHODOLOGY.md": {
+          "exists": true,
+          "size": 12826
+        },
+        "CHEMICAL_SIMILARITY_DEFENSE.md": {
+          "exists": true,
+          "size": 5141
+        },
+        "requirements.txt": {
+          "exists": true,
+          "size": 806
+        },
+        "LICENSE": {
+          "exists": true,
+          "size": 1090
+        }
+      },
+      "message": "5/5 documentation files present"
+    },
+    "methodology": {
+      "status": "PASS",
+      "standards": {
+        "network_proximity": {
+          "method": "Shortest path + RWR",
+          "reference": "Guney et al. (2016) Nat Commun",
+          "validated": true
+        },
+        "permutation_testing": {
+          "method": "Degree-aware node permutation",
+          "reference": "Menche et al. (2015) Science",
+          "validated": true
+        },
+        "chemical_fingerprints": {
+          "method": "ECFP4 (Morgan radius=2)",
+          "reference": "Rogers & Hahn (2010) J Chem Inf Model",
+          "validated": true
+        },
+        "tanimoto_similarity": {
+          "method": "Jaccard/Tanimoto coefficient",
+          "reference": "Willett et al. (1998) J Chem Inf Comput Sci",
+          "validated": true
+        },
+        "dili_classification": {
+          "method": "DILIrank severity tiers",
+          "reference": "Chen et al. (2016) Drug Discov Today",
+          "validated": true
+        }
+      },
+      "message": "All methodologies follow published standards"
+    },
+    "fair": {
+      "status": "PASS",
+      "fair": {
+        "Findable": {
+          "data_documented": true,
+          "metadata_present": true,
+          "score": "Good"
+        },
+        "Accessible": {
+          "open_source": true,
+          "standard_protocols": true,
+          "score": "Good"
+        },
+        "Interoperable": {
+          "standard_formats": true,
+          "standard_vocabularies": true,
+          "score": "Good"
+        },
+        "Reusable": {
+          "clear_license": true,
+          "rich_metadata": true,
+          "score": "Good"
+        }
+      },
+      "message": "FAIR principles fully satisfied"
+    }
+  }
+}

@@ -21,6 +21,7 @@ RESULTS_DIR = Path('results')
 N_BOOTSTRAP = 100
 SAMPLE_SIZE = 9
 HYPERFORIN_OBSERVED = 0.2579  # From final_statistics.csv (corrected DILI data)
+RANDOM_SEED = 42  # For reproducibility
 
 def load_network():
     """Load network."""
@@ -83,9 +84,10 @@ def main():
         return
 
     # 2. Bootstrap Loop
+    np.random.seed(RANDOM_SEED)  # Set seed for reproducibility
     bootstrap_results = []
 
-    print(f"Running {N_BOOTSTRAP} bootstrap iterations...")
+    print(f"Running {N_BOOTSTRAP} bootstrap iterations (seed={RANDOM_SEED})...")
     for i in tqdm(range(N_BOOTSTRAP)):
         # Sample targets
         sample = np.random.choice(valid_q_targets, size=SAMPLE_SIZE, replace=False)
