@@ -3,6 +3,9 @@
 [![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey)](https://github.com/antonybevan/h-perforatum-network-tox)
+[![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
 
 Reproducible analysis demonstrating that network position—not target count—determines hepatotoxic influence in *Hypericum perforatum* (St. John's Wort).
 
