@@ -1,86 +1,110 @@
-# H. perforatum Network Toxicology Pipeline
+# Network Pharmacology of H. perforatum Hepatotoxicity
 
-> **Publication-ready network pharmacology analysis of DILI influence**
+[![Tests](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> **Network position dominates target count in determining hepatotoxic influence**
+
+This repository contains a reproducible analysis pipeline demonstrating that Hyperforin (9 targets) exhibits 17–22× greater per-target DILI influence than Quercetin (62 targets), challenging the assumption that more targets means greater toxicity risk.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/antonybevan/h-perforatum-network-tox.git
+cd h-perforatum-network-tox
+pip install -r requirements.txt
+```
 
 ## Quick Start
 
 ```bash
-# 1. Setup environment
-pip install -r requirements.txt
-
-# 2. Run complete pipeline
+# Run complete analysis pipeline
 python scripts/create_lcc_filtered_data.py
 python scripts/run_standard_rwr_lcc_permutations.py
 python scripts/run_expression_weighted_rwr_permutations.py
-
-# 3. View results
-cat results/tables/standard_rwr_lcc_permutation_results.csv
-cat results/tables/expression_weighted_rwr_permutation_results.csv
-```
-
-## Project Structure
-
-```
-h-perforatum-net-tox/
-├── scripts/                    # 8 essential pipeline scripts
-│   ├── create_lcc_filtered_data.py      # Data preprocessing (Step 1)
-│   ├── curate_targets.py                # Target curation
-│   ├── extract_string_network.py        # Network extraction
-│   ├── filter_liver_network.py          # Liver LCC filtering
-│   ├── run_standard_rwr_lcc_permutations.py   # Tier 2: RWI (Step 2)
-│   ├── run_expression_weighted_rwr_permutations.py  # Tier 3: EWI (Step 3)
-│   ├── run_expression_weighted_rwr.py   # Single-run EWI
-│   └── run_chemical_similarity_control.py  # Negative control
-│
-├── results/tables/             # 4 primary result files
-│   ├── standard_rwr_lcc_permutation_results.csv   # Tier 2 results
-│   ├── expression_weighted_rwr_permutation_results.csv  # Tier 3 results
-│   ├── chemical_similarity_summary.csv  # Structural analysis
-│   └── dilirank_reference_set.csv       # Reference data
-│
-├── docs/                       # 6 core documents
-│   ├── RESEARCH_SUMMARY.md     # Complete study overview
-│   ├── MANUSCRIPT_DRAFT.md     # Nature Comms-style draft
-│   ├── THESIS_DEFENSE_NARRATIVE.md  # 2-3 min oral defense
-│   ├── METHODOLOGY.md          # Technical methods
-│   └── CONTRIBUTING.md         # Development guidelines
-│
-├── data/                       # Input data
-│   ├── raw/                    # Original data sources
-│   └── processed/              # LCC-filtered data
-│
-├── src/                        # Core library
-│   └── network_tox/            # Python package
-│
-└── archive/                    # Deprecated files (reference only)
-    ├── scripts_deprecated/     # Old development scripts
-    ├── tables_deprecated/      # Intermediate results
-    └── docs_deprecated/        # Legacy documentation
 ```
 
 ## Key Results
 
-| Metric | Hyperforin (9 targets) | Quercetin (62 targets) | Ratio |
-|--------|------------------------|------------------------|-------|
-| **RWI Z-score** | +8.83 | +4.42 | — |
-| **EWI Z-score** | +7.99 | +5.56 | — |
-| **PTNI (RWI)** | 0.01135 | 0.00052 | **21.9×** |
-| **PTNI (EWI)** | 0.0134 | 0.00080 | **16.9×** |
+| Analysis | Hyperforin | Quercetin | Per-Target Ratio |
+|----------|------------|-----------|------------------|
+| **Network Influence (RWI)** | Z = +8.83*** | Z = +4.42*** | **21.9×** |
+| **Expression-Weighted (EWI)** | Z = +7.99*** | Z = +5.56*** | **16.9×** |
 
-**Core finding:** Hyperforin exhibits 17–22× greater per-target network influence than Quercetin despite having 7× fewer targets.
+*\*\*\* p < 0.0001*
+
+**Core finding:** Each Hyperforin target contributes 17–22× more DILI influence than each Quercetin target, despite Quercetin having 7× more targets.
+
+---
+
+## Project Structure
+
+```
+├── scripts/                    # Analysis pipeline
+│   ├── create_lcc_filtered_data.py
+│   ├── run_standard_rwr_lcc_permutations.py
+│   ├── run_expression_weighted_rwr_permutations.py
+│   └── run_chemical_similarity_control.py
+│
+├── src/network_tox/            # Core library
+│   ├── core/                   # Network operations
+│   └── analysis/               # RWR, proximity metrics
+│
+├── data/
+│   ├── raw/                    # Source data (STRING, GTEx, DILIrank)
+│   └── processed/              # LCC-filtered networks
+│
+├── results/tables/             # Output CSVs
+├── docs/                       # Documentation
+└── tests/                      # Unit tests
+```
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [RESEARCH_SUMMARY.md](docs/RESEARCH_SUMMARY.md) | Complete study overview |
+| [MANUSCRIPT_DRAFT.md](docs/MANUSCRIPT_DRAFT.md) | Publication draft |
+| [METHODOLOGY.md](docs/METHODOLOGY.md) | Technical methods |
+| [RESULTS_GUIDE.md](results/RESULTS_GUIDE.md) | How to interpret results |
+
+## Data Sources
+
+| Source | Version | Usage |
+|--------|---------|-------|
+| [STRING](https://string-db.org) | v12.0 | Protein-protein interactions |
+| [GTEx](https://gtexportal.org) | v8 | Liver expression data |
+| [DILIrank](https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb) | 2.0 | DILI gene associations |
+| [ChEMBL](https://www.ebi.ac.uk/chembl/) | 33 | Compound targets |
 
 ## Reproducibility
 
-- **Random seed:** 42 (fixed for all permutations)
-- **Python:** 3.13
-- **Dependencies:** See `requirements.txt`
-
-All scripts use sorted target lists to ensure deterministic results.
+- **Random seed:** 42 (fixed)
+- **Python:** 3.10+
+- **Deterministic ordering:** All target lists sorted
 
 ## Citation
 
-See `CITATION.cff` for citation information.
+```bibtex
+@software{bevan2025network,
+  title = {Network Position Dominates Target Count in Hepatotoxic Influence},
+  author = {Bevan, Antony},
+  year = {2025},
+  url = {https://github.com/antonybevan/h-perforatum-network-tox}
+}
+```
+
+See [CITATION.cff](CITATION.cff) for full citation information.
 
 ## License
 
-MIT License - see `LICENSE` file.
+MIT License - see [LICENSE](LICENSE) file.
+
+---
+
+<p align="center">
+  <sub>Built with NetworkX, NumPy, Pandas, and RDKit</sub>
+</p>

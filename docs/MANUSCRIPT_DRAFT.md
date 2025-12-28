@@ -1,34 +1,28 @@
-# Network Position Dominates Target Count in Determining Hepatotoxic Influence: A Tiered Inference Framework Applied to *Hypericum perforatum*
+# Network Position Dominates Target Count in Hepatotoxic Influence: Evidence from *Hypericum perforatum*
 
 ---
 
 ## Abstract
 
-The assumption that compounds with more molecular targets exert greater toxicological impact pervades network pharmacology, yet lacks formal justification. Here, we demonstrate that this "target-count fallacy" leads to systematic misattribution of hepatotoxicity risk. Using *Hypericum perforatum* as a model system, we compare Hyperforin (9 targets) and Quercetin (62 targets) for their network-level influence on drug-induced liver injury (DILI) genes.
+The assumption that compounds with more molecular targets exert greater toxicological impact pervades network pharmacology, yet lacks formal justification. Here, we demonstrate that this assumption leads to systematic misattribution of hepatotoxicity. Using *Hypericum perforatum* as a model system, we compare Hyperforin (9 targets) and Quercetin (62 targets) for their network-level influence on drug-induced liver injury (DILI) genes.
 
-We employ a tiered inference framework: (1) shortest-path proximity provides context; (2) standard random walk influence (RWI) establishes epistemic baseline; (3) expression-weighted influence (EWI) validates biological plausibility. Despite Quercetin exhibiting closer proximity to DILI genes (d_c Z = −5.16), Hyperforin demonstrates 17–22× greater per-target network influence (PTNI), consistent across both RWI (21.9×, p < 10⁻¹⁶) and EWI (16.9×, p < 10⁻¹⁵). Chemical similarity analysis confirms neither compound resembles known hepatotoxins, excluding structural confounding.
+We quantified network influence using random walk propagation on the human interactome, then evaluated whether associations persisted under biologically informed constraints using liver expression-weighted transition probabilities. Despite Quercetin exhibiting closer proximity to DILI genes, Hyperforin demonstrated 17–22× greater per-target influence, consistent across both unweighted (21.9×, p < 10⁻¹⁶) and expression-weighted (16.9×, p < 10⁻¹⁵) analyses. Chemical similarity analysis confirmed neither compound resembles known hepatotoxins, excluding structural confounding.
 
-Our findings establish that network position and propagation dynamics—not target count—determine toxicological influence. We propose PTNI as a minimal metric to resolve interpretive failures in polypharmacology assessment.
+Our findings establish that network position and propagation dynamics—not target count—determine toxicological influence. We propose per-target network influence (PTNI) as a minimal metric to resolve interpretive failures in polypharmacology assessment.
 
-**Keywords:** network pharmacology, drug-induced liver injury, random walk with restart, expression weighting, target-count fallacy
+**Keywords:** network pharmacology, drug-induced liver injury, random walk with restart, expression weighting, polypharmacology
 
 ---
 
 ## Introduction
 
-Network pharmacology has transformed our understanding of drug action by situating molecular targets within the broader context of cellular systems. However, the field operates under an implicit assumption: compounds with more targets pose greater risk. This "target-count fallacy" conflates coverage with impact, ignoring the fundamental distinction between local connectivity and global influence.
+Network pharmacology has transformed our understanding of drug action by situating molecular targets within the broader context of cellular systems. However, the field operates under an implicit assumption: compounds with more targets pose greater risk. This conflates coverage with impact, ignoring the fundamental distinction between local connectivity and global influence.
 
 Consider the analytical challenge posed by polypharmacological natural products. *Hypericum perforatum* (St. John's Wort) contains Quercetin, a promiscuous flavonoid targeting over 60 hepatic proteins, alongside Hyperforin, a prenylated phloroglucinol with fewer than 12 validated targets. A naïve interpretation suggests Quercetin poses the primary hepatotoxicity risk. Clinical evidence contradicts this: Hyperforin-mediated PXR activation drives the established drug-drug interactions and rare hepatic events.
 
 This paradox exposes a methodological gap. Proximity-based metrics—the dominant approach in network pharmacology—reward compounds that are close to disease genes without considering whether that proximity translates to mechanistic influence. A target may be one hop from a disease gene yet exert negligible propagation through the network. The distinction between "close" and "influential" is not semantic; it is the difference between correlation and mechanism.
 
-Here, we address this gap through a tiered inference framework:
-
-1. **Proximity (d_c):** Context, not inference
-2. **Standard Random Walk Influence (RWI):** Does the signal exist?
-3. **Expression-Weighted Influence (EWI):** Does the signal persist under biological constraint?
-
-By requiring the signal to exist in unweighted topology before validating under biological weighing, we prevent the discovery metric from manufacturing its own conclusions.
+Here, we address this gap by systematically separating proximity from influence. We first assess unconstrained network influence using standard random walk propagation on the human interactome. Because topology alone does not account for tissue relevance, we subsequently evaluate whether these associations persist under biologically informed constraints, using expression-weighted transition matrices derived from liver transcriptomic data. To account for differences in target set size, influence is additionally normalized per target.
 
 ---
 
@@ -40,9 +34,9 @@ We first quantified local network distance using shortest-path proximity (d_c) t
 
 This interpretation fails.
 
-### Standard RWI Reveals the True Signal
+### Network Influence Reveals the True Signal
 
-Using standard random walk with restart on the topology-only network (no biological weighting), we established the epistemic baseline. Hyperforin achieved Z = +8.83 (p < 10⁻¹⁶), while Quercetin achieved Z = +4.42 (p < 10⁻⁵). Both are significant, but the magnitudes differ by 2-fold in Z-score space.
+Using standard random walk with restart on the topology-only network, we quantified unconstrained network influence. Hyperforin achieved Z = +8.83 (p < 10⁻¹⁶), while Quercetin achieved Z = +4.42 (p < 10⁻⁵). Both are significant, but the magnitudes differ by 2-fold in Z-score space.
 
 The critical metric is per-target network influence (PTNI):
 
@@ -51,14 +45,14 @@ The critical metric is per-target network influence (PTNI):
 | Hyperforin | 0.102 | 9 | 0.01135 | **21.9×** |
 | Quercetin | 0.032 | 62 | 0.00052 | 1× |
 
-Each Hyperforin target contributes 21.9× more DILI influence than each Quercetin target. The signal exists without biology.
+Each Hyperforin target contributes 21.9× more DILI influence than each Quercetin target.
 
-### Expression-Weighted Validation Confirms Robustness
+### Biological Constraint Confirms Robustness
 
-To validate that this signal persists under biological constraint, we applied expression-weighted influence (EWI), constraining propagation to liver-expressed proteins (GTEx TPM ≥ 1). The transition matrix was weighted by source-node expression, then column-normalized.
+To evaluate whether this signal persists under biologically informed constraints, we repeated the analysis using expression-weighted transition probabilities, constraining propagation to liver-expressed proteins (GTEx TPM ≥ 1).
 
-| Compound | EWI Z-score | PTNI (EWI) | Ratio |
-|----------|-------------|------------|-------|
+| Compound | Z-score | PTNI | Ratio |
+|----------|---------|------|-------|
 | Hyperforin | +7.99 | 0.0134 | **16.9×** |
 | Quercetin | +5.56 | 0.00080 | 1× |
 
@@ -79,21 +73,31 @@ Neither compound resembles known hepatotoxins (threshold: 0.4). Notably, Quercet
 
 ## Discussion
 
-### The Target-Count Fallacy
+### Target Count Does Not Predict Influence
 
 Our findings challenge a foundational assumption in network pharmacology: that target count predicts toxicological impact. Quercetin—with 7× more targets than Hyperforin—achieves 22× less influence per target. The fallacy arises from conflating coverage (local connectivity) with influence (global propagation).
 
-### Why Tiered Inference Matters
+### Signal Existence Precedes Biological Validation
 
-By presenting standard RWI before expression-weighted EWI, we establish that the signal exists independent of biological weighting. This ordering is not arbitrary; it is epistemically required. Reviewers cannot attribute the finding to choice of weighting scheme when the unweighted analysis already shows the effect.
+By presenting unweighted analysis before expression-weighted analysis, we establish that the signal exists independent of biological weighting. This ordering is epistemically required: reviewers cannot attribute the finding to choice of weighting scheme when the unweighted analysis already shows the effect.
 
-### Methodological Implications
+### Per-Target Network Influence
 
-We propose PTNI as a minimal metric to resolve the target-count fallacy:
+We propose PTNI as a minimal metric to resolve the target-count problem:
 
 $$\text{PTNI} = \frac{I}{|T|}$$
 
 PTNI normalizes total network influence by target count, revealing targeting efficiency. Compounds with high PTNI exhibit master-regulator strategies; compounds with low PTNI exhibit diffuse polypharmacology.
+
+### Failure Modes of Conventional Metrics
+
+Our analysis exposes three predictable failure modes in single-metric network inference:
+
+1. **Target-count inflation:** Raw target count assumes linear contribution; PTNI reveals 17–22× efficiency differences masked by cardinality.
+
+2. **Proximity without propagation:** Shortest-path proximity measures reachability, not impact. Quercetin's superior d_c fails to predict its weaker influence, demonstrating that "close" does not imply "powerful."
+
+3. **Biology-free topology:** Unweighted propagation treats tissue-irrelevant nodes equally. Expression weighting constrains propagation appropriately; signal compression rather than amplification confirms biological validity.
 
 ### Limitations
 
@@ -110,9 +114,9 @@ Human protein-protein interactions were obtained from STRING v12.0 (combined sco
 Compound targets were curated from ChEMBL 33 and validated literature sources. Only targets present in the liver LCC were included: Hyperforin (9/12), Quercetin (62/80).
 
 ### Random Walk with Restart
-Standard RWR: column-normalized adjacency matrix, restart probability α = 0.15, uniform restart vector over targets, convergence threshold 10⁻⁶.
+Standard analysis: column-normalized adjacency matrix, restart probability α = 0.15, uniform restart vector over targets, convergence threshold 10⁻⁶.
 
-Expression-weighted RWR: transition matrix weighted by source-node expression (log-normalized TPM, floor 0.01), then column-normalized.
+Expression-weighted analysis: transition matrix weighted by source-node expression (log-normalized TPM, floor 0.01), then column-normalized.
 
 ### Permutation Testing
 1,000 degree-matched permutations per compound. For each permutation, targets with matching degree distribution (±25%) were randomly sampled. Z-scores and p-values computed from null distribution.

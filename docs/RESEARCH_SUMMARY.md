@@ -269,6 +269,36 @@ We introduce a rigorous, reproducible pipeline:
 3. Bootstrap sensitivity for target count asymmetry
 4. Multi-threshold robustness validation
 
+### 6.4 Limitations of Single-Metric Network Inference
+
+We observed that commonly used network pharmacology metrics fail under distinct and predictable conditions. Our tiered framework explicitly addresses these failure modes:
+
+#### Failure Mode 1: Target-Count Inflation
+
+> *"Target cardinality is an unreliable proxy for biological influence in protein interaction networks, as it fails to account for heterogeneity in node centrality and regulatory leverage."*
+
+**What fails:** Raw target count assumes linear contribution of targets.
+**Why it fails:** Targets are not exchangeable. Network position dominates.
+**Our evidence:** Quercetin (62 targets) achieves lower PTNI than Hyperforin (9 targets) by 17–22×.
+
+#### Failure Mode 2: Proximity Without Propagation
+
+> *"Shortest-path proximity captures local topological adjacency but does not model signal propagation or amplification, leading to false prioritization of highly connected yet functionally peripheral targets."*
+
+**What fails:** Shortest-path proximity ($d_c$) used as a standalone inferential metric.
+**Why it fails:** Proximity measures *reachability*, not *impact*. Nodes can be close yet lie on low-flow, redundant, or compensatory paths.
+**Our evidence:** Quercetin has more extreme $d_c$ Z-scores (−5.16) yet lower RWI/EWI influence than Hyperforin (−2.81).
+
+#### Failure Mode 3: Biology-Free Topology
+
+> *"Expression-weighted propagation constrains network influence to tissue-relevant nodes, reducing spurious amplification while preserving true regulatory signals."*
+
+**What fails:** Unweighted RWR assumes all nodes are equally biologically active.
+**Why it fails:** Tissue-irrelevant nodes distort propagation.
+**Our fix:** Expression-weighted transition matrix (EWI) constrains propagation to liver-expressed proteins. Signal persists (Z=7.99) but compresses appropriately—correct behavior.
+
+**Summary:** Our tiered framework separates contextual proximity ($d_c$), topological influence (RWI), and biologically constrained influence (EWI), enabling stable inference across compounds with asymmetric target profiles.
+
 ---
 
 ## 7. Supplementary Analysis
