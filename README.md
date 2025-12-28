@@ -1,110 +1,78 @@
-# Network Pharmacology of H. perforatum Hepatotoxicity
+# Network Pharmacology of *Hypericum perforatum* Hepatotoxicity
 
-[![Tests](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> **Network position dominates target count in determining hepatotoxic influence**
-
-This repository contains a reproducible analysis pipeline demonstrating that Hyperforin (9 targets) exhibits 17–22× greater per-target DILI influence than Quercetin (62 targets), challenging the assumption that more targets means greater toxicity risk.
+Reproducible analysis demonstrating that network position—not target count—determines hepatotoxic influence in *Hypericum perforatum* (St. John's Wort).
 
 ---
 
-## Installation
+## Overview
+
+This repository contains the complete analysis pipeline for our study of drug-induced liver injury (DILI) network influence. We compare two major *H. perforatum* constituents:
+
+| Compound | Hepatic Targets | Network Influence | Per-Target Efficiency |
+|----------|-----------------|-------------------|----------------------|
+| **Hyperforin** | 9 | Z = +8.83 | 0.0114 |
+| **Quercetin** | 62 | Z = +4.42 | 0.0005 |
+
+**Finding:** Despite having 7× fewer targets, Hyperforin exhibits 17–22× greater per-target influence on DILI genes.
+
+## Reproducing the Analysis
 
 ```bash
-git clone https://github.com/antonybevan/h-perforatum-network-tox.git
-cd h-perforatum-network-tox
+# Install dependencies
 pip install -r requirements.txt
-```
 
-## Quick Start
-
-```bash
-# Run complete analysis pipeline
+# Run pipeline
 python scripts/create_lcc_filtered_data.py
 python scripts/run_standard_rwr_lcc_permutations.py
 python scripts/run_expression_weighted_rwr_permutations.py
+
+# View results
+cat results/tables/standard_rwr_lcc_permutation_results.csv
 ```
 
-## Key Results
-
-| Analysis | Hyperforin | Quercetin | Per-Target Ratio |
-|----------|------------|-----------|------------------|
-| **Network Influence (RWI)** | Z = +8.83*** | Z = +4.42*** | **21.9×** |
-| **Expression-Weighted (EWI)** | Z = +7.99*** | Z = +5.56*** | **16.9×** |
-
-*\*\*\* p < 0.0001*
-
-**Core finding:** Each Hyperforin target contributes 17–22× more DILI influence than each Quercetin target, despite Quercetin having 7× more targets.
-
----
-
-## Project Structure
+## Repository Structure
 
 ```
-├── scripts/                    # Analysis pipeline
-│   ├── create_lcc_filtered_data.py
-│   ├── run_standard_rwr_lcc_permutations.py
-│   ├── run_expression_weighted_rwr_permutations.py
-│   └── run_chemical_similarity_control.py
-│
-├── src/network_tox/            # Core library
-│   ├── core/                   # Network operations
-│   └── analysis/               # RWR, proximity metrics
-│
+├── scripts/             # Analysis pipeline (8 scripts)
+├── src/network_tox/     # Core library
 ├── data/
-│   ├── raw/                    # Source data (STRING, GTEx, DILIrank)
-│   └── processed/              # LCC-filtered networks
-│
-├── results/tables/             # Output CSVs
-├── docs/                       # Documentation
-└── tests/                      # Unit tests
+│   ├── raw/             # Source data
+│   └── processed/       # LCC-filtered networks
+├── results/tables/      # Output CSVs
+├── docs/                # Documentation
+└── tests/               # Unit tests
 ```
-
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [RESEARCH_SUMMARY.md](docs/RESEARCH_SUMMARY.md) | Complete study overview |
-| [MANUSCRIPT_DRAFT.md](docs/MANUSCRIPT_DRAFT.md) | Publication draft |
-| [METHODOLOGY.md](docs/METHODOLOGY.md) | Technical methods |
-| [RESULTS_GUIDE.md](results/RESULTS_GUIDE.md) | How to interpret results |
 
 ## Data Sources
 
-| Source | Version | Usage |
-|--------|---------|-------|
-| [STRING](https://string-db.org) | v12.0 | Protein-protein interactions |
-| [GTEx](https://gtexportal.org) | v8 | Liver expression data |
-| [DILIrank](https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb) | 2.0 | DILI gene associations |
-| [ChEMBL](https://www.ebi.ac.uk/chembl/) | 33 | Compound targets |
+| Source | Version | Description |
+|--------|---------|-------------|
+| [STRING](https://string-db.org) | v12.0 | Protein interactions (score ≥900) |
+| [GTEx](https://gtexportal.org) | v8 | Liver expression (TPM ≥1) |
+| [DILIrank](https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb) | 2.0 | Hepatotoxicity associations |
+| [ChEMBL](https://www.ebi.ac.uk/chembl/) | 33 | Drug-target binding |
 
-## Reproducibility
+## Documentation
 
-- **Random seed:** 42 (fixed)
-- **Python:** 3.10+
-- **Deterministic ordering:** All target lists sorted
+- [Research Summary](docs/RESEARCH_SUMMARY.md) — Complete study overview
+- [Methodology](docs/METHODOLOGY.md) — Statistical methods
+- [Results Guide](results/RESULTS_GUIDE.md) — Interpreting outputs
 
 ## Citation
 
 ```bibtex
-@software{bevan2025network,
-  title = {Network Position Dominates Target Count in Hepatotoxic Influence},
-  author = {Bevan, Antony},
-  year = {2025},
-  url = {https://github.com/antonybevan/h-perforatum-network-tox}
+@article{bevan2025network,
+  title={Network Position Dominates Target Count in Hepatotoxic Influence},
+  author={Bevan, Antony},
+  year={2025},
+  journal={In preparation}
 }
 ```
 
-See [CITATION.cff](CITATION.cff) for full citation information.
-
 ## License
 
-MIT License - see [LICENSE](LICENSE) file.
-
----
-
-<p align="center">
-  <sub>Built with NetworkX, NumPy, Pandas, and RDKit</sub>
-</p>
+MIT License. See [LICENSE](LICENSE).

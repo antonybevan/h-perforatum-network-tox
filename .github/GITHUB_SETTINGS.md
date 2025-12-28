@@ -1,52 +1,27 @@
 # GitHub Repository Settings
 
-Apply these settings via GitHub web interface (Settings → General).
-
-## About Section
+## About Section (Settings → General → About)
 
 **Description:**
 ```
-Network position dominates target count in hepatotoxic influence • Hyperforin 17-22× more potent per-target than Quercetin
+Network pharmacology analysis of hepatotoxicity risk in Hypericum perforatum
 ```
 
-**Website:** (leave blank or add paper DOI when published)
-
-**Topics (Tags):**
+**Topics (click "Add topics"):**
 ```
 network-pharmacology
-drug-induced-liver-injury
-dili
-hypericum-perforatum
-systems-biology
-random-walk
-protein-interaction-networks
+systems-pharmacology
 hepatotoxicity
+drug-induced-liver-injury
+random-walk
+hypericum-perforatum
 computational-biology
-bioinformatics
+reproducible-research
 ```
 
-## Social Preview
+## Social Preview Image (1280×640)
 
-Upload a 1280×640 image with:
-- Title: "Network Pharmacology of H. perforatum"
-- Subtitle: "17-22× per-target influence difference"
-- Visual: Network diagram or influence heatmap
-
-## Features to Enable
-
-- [x] Issues
-- [x] Discussions (optional)
-- [ ] Sponsorships
-- [x] Preserve this repository (archive when ready)
-
-## Branch Protection (main)
-
-- [x] Require pull request reviews before merging
-- [x] Require status checks to pass (Tests workflow)
-- [ ] Require signed commits
-
-## Release Strategy
-
-Create releases with semantic versioning:
-- `v2.0.0` - Current tiered framework release
-- Tag with: `git tag -a v2.0.0 -m "Tiered inference framework release"`
+Consider creating an image with:
+- Network diagram showing drug targets → DILI genes
+- Title: "H. perforatum Hepatotoxicity"
+- Subtitle: "Network Pharmacology Analysis"
