@@ -2,10 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="h-perforatum-network-tox",
-    version="1.0.0",
+    version="2.0.0",
     description="Network pharmacology analysis of H. perforatum hepatotoxicity",
     author="Antony Bevan",
-    python_requires=">=3.9",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     python_requires='>=3.10',
