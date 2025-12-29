@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using a tiered inference framework. We demonstrate that **proximity does not imply influence**: Quercetin (62 targets) is closer to DILI genes but exerts **17–22× less per-target influence** than Hyperforin (9 targets).
+This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using a tiered inference framework. We demonstrate that **proximity does not imply influence**: Quercetin (62 targets) is closer to DILI genes but exerts **17–20× less per-target influence** than Hyperforin (10 targets).
 
 ---
 

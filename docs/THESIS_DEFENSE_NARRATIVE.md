@@ -15,13 +15,13 @@ I'm going to show you why, using St. John's Wort as my case study, and demonstra
 St. John's Wort contains two bioactive compounds:
 
 - **Quercetin**: 62 validated targets in the liver
-- **Hyperforin**: only 9 targets
+- **Hyperforin**: only 10 targets
 
 If target count predicted hepatotoxicity, Quercetin should dominate. But here's what the network analysis shows:
 
 When I measured *proximity* to drug-induced liver injury genes, Quercetin was indeed closer. But proximity is context, not inference.
 
-When I measured *influence*—how signals propagate through the network—Hyperforin showed **22× greater per-target impact**. Each of Hyperforin's 9 targets contributes more to hepatotoxicity than Quercetin's 62 targets combined.
+When I measured *influence*—how signals propagate through the network—Hyperforin showed **~20× greater per-target impact**. Each of Hyperforin's 10 targets contributes more to hepatotoxicity than Quercetin's 62 targets combined.
 
 This is the **Proximity-Influence Paradox**: close doesn't mean powerful.
 

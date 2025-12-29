@@ -16,7 +16,7 @@ This directory contains core documentation for the H. perforatum network toxicol
 
 ### Key Results
 
-| Metric | Hyperforin (9 targets) | Quercetin (62 targets) | Ratio |
+| Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
 |--------|------------------------|------------------------|-------|
 | **RWI Z** | +8.83 | +4.42 | — |
 | **EWI Z** | +7.99 | +5.56 | — |

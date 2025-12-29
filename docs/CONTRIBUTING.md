@@ -56,7 +56,7 @@ The following files are **READ-ONLY** unless explicitly instructed:
 
 ## Current Results (Verified 2025-12-28)
 
-| Metric | Hyperforin (9 targets) | Quercetin (62 targets) | Ratio |
+| Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
 |--------|------------------------|------------------------|-------|
 | **RWI Z-score** | +8.83 | +4.42 | — |
 | **EWI Z-score** | +7.99 | +5.56 | — |

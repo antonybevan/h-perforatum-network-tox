@@ -4,7 +4,7 @@
 
 ## Abstract
 
-The assumption that compounds with more molecular targets exert greater toxicological impact pervades network pharmacology, yet lacks formal justification. Here, we demonstrate that this assumption leads to systematic misattribution of hepatotoxicity. Using *Hypericum perforatum* as a model system, we compare Hyperforin (9 targets) and Quercetin (62 targets) for their network-level influence on drug-induced liver injury (DILI) genes.
+The assumption that compounds with more molecular targets exert greater toxicological impact pervades network pharmacology, yet lacks formal justification. Here, we demonstrate that this assumption leads to systematic misattribution of hepatotoxicity. Using *Hypericum perforatum* as a model system, we compare Hyperforin (10 targets) and Quercetin (62 targets) for their network-level influence on drug-induced liver injury (DILI) genes.
 
 We quantified network influence using random walk propagation on the human interactome, then evaluated whether associations persisted under biologically informed constraints using liver expression-weighted transition probabilities. Despite Quercetin exhibiting closer proximity to DILI genes, Hyperforin demonstrated 17–22× greater per-target influence, consistent across both unweighted (21.9×, p < 10⁻¹⁶) and expression-weighted (16.9×, p < 10⁻¹⁵) analyses. Chemical similarity analysis confirmed neither compound resembles known hepatotoxins, excluding structural confounding.
 

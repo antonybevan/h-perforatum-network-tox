@@ -9,7 +9,7 @@
 
 ### Primary Results (LCC-filtered, reproducible)
 
-| Metric | Hyperforin (9 targets) | Quercetin (62 targets) | Ratio |
+| Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
 |--------|------------------------|------------------------|-------|
 | **RWI Z-score** | **+8.83** | +4.42 | — |
 | **EWI Z-score** | **+7.99** | +5.56 | — |
@@ -114,7 +114,7 @@ python scripts/run_expression_weighted_rwr_permutations.py
 When citing these results:
 
 ```
-Using a tiered inference framework, Hyperforin (9 targets) demonstrates 
+Using a tiered inference framework, Hyperforin (10 targets) demonstrates 
 17–22× higher per-target network influence (PTNI) than Quercetin (62 targets) 
 across both standard RWI (Z=+8.83) and expression-weighted EWI (Z=+7.99), 
 confirming that network position dominates over target count in determining 
