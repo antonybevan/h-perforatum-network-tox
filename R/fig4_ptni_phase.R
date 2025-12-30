@@ -85,8 +85,7 @@ p <- ggplot() +
     aes(x = Targets, y = Influence, 
         label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
     size = 3.5, fontface = "bold", family = "Arial",
-    box.padding = 1.2, point.padding = 0.5,
-    force = 2, max.overlaps = Inf,
+    box.padding = 1.0, point.padding = 0.6,
     segment.color = "#666666", segment.size = 0.4,
     lineheight = 0.9
   ) +
@@ -98,13 +97,13 @@ p <- ggplot() +
   scale_x_continuous(
     limits = c(0, 70),
     breaks = seq(0, 70, 20),
-    expand = expansion(mult = c(0.02, 0.2)) # More space for right labels
+    expand = expansion(mult = c(0.02, 0.12))
   ) +
   
   scale_y_continuous(
-    limits = c(0, 0.12),
-    breaks = seq(0, 0.12, 0.04),
-    expand = expansion(mult = c(0.02, 0.1)) # More space for top labels
+    limits = c(0, 0.15),
+    breaks = seq(0, 0.15, 0.05),
+    expand = expansion(mult = c(0.02, 0.05))
   ) +
   
   labs(
@@ -113,7 +112,7 @@ p <- ggplot() +
     x = "Target count",
     y = "Total influence",
     caption = str_wrap(
-      "[EFFICIENCY NORMALIZATION] PTNI = influence / target count (derived metric, not formally tested). This reframes polypharmacology as an efficiency problem: Hyperforin achieves greater influence per target. PTNI ratio differences are consistent with the Influence Z-score hierarchy (Figs 1–3). Diagonal lines show iso-efficiency contours. Data: STRING v12.0 (≥900), n = 1,000 permutations.",
+      "[EFFICIENCY NORMALIZATION] PTNI = influence / target count (derived metric, not formally tested). This reframes polypharmacology as an efficiency problem: Hyperforin achieves greater influence per target. PTNI ratio differences are consistent with the Z-score hierarchy (Figs 1–3). Diagonal lines show iso-efficiency contours. Data: STRING v12.0 (≥900), n = 1,000 permutations.",
       width = 120
     )
   ) +
