@@ -34,6 +34,12 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 
+try:
+    from tqdm import tqdm
+    TQDM_AVAILABLE = True
+except ImportError:
+    TQDM_AVAILABLE = False
+
 # Configuration
 SCRIPTS_DIR = Path('scripts')
 RESULTS_DIR = Path('results')
@@ -217,16 +223,28 @@ def run_pipeline(start_step=1, only_step=None, validate_only=False):
     results = []
     start_time = time.time()
     
-    for step_info in PIPELINE_STEPS:
+    # Filter steps to run
+    steps_to_run = [s for s in PIPELINE_STEPS 
+                    if s['step'] >= start_step and (only_step is None or s['step'] == only_step)]
+    
+    # Create progress bar if tqdm available
+    if TQDM_AVAILABLE and len(steps_to_run) > 1:
+        pbar = tqdm(
+            steps_to_run,
+            desc="Pipeline Progress",
+            unit="step",
+            ncols=80,
+            bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}]'
+        )
+    else:
+        pbar = steps_to_run
+    
+    for step_info in pbar:
         step_num = step_info['step']
         
-        # Skip if before start_step
-        if step_num < start_step:
-            continue
-        
-        # Skip if only_step specified and not matching
-        if only_step and step_num != only_step:
-            continue
+        # Update progress bar description
+        if TQDM_AVAILABLE and hasattr(pbar, 'set_description'):
+            pbar.set_description(f"Step {step_num}: {step_info['name'][:25]}")
         
         print_step(step_info, 'RUNNING')
         step_start = time.time()
