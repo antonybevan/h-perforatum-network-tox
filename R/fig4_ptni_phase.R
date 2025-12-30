@@ -36,8 +36,10 @@ phase_data <- bind_rows(
 
 # --- Calculate Iso-PTNI Lines ---
 # PTNI = Influence / Targets
-# Efficiency contours that cut through the data range
-ptni_levels <- c(0.0005, 0.001, 0.002, 0.005, 0.01, 0.015)  
+# Therefore: Influence = PTNI × Targets
+# For diagonal reference lines
+
+ptni_levels <- c(0.001, 0.005, 0.01, 0.02, 0.05)  # Efficiency contours
 x_range <- seq(0, 70, length.out = 100)
 
 # Duplicate iso-lines for both facets
@@ -47,15 +49,11 @@ iso_lines <- expand_grid(
 ) %>%
   rowwise() %>%
   mutate(data = list(tibble(x = x_range, y = PTNI * x_range))) %>%
-  unnest(data) %>%
-  # Clip to plotting area
-  filter(y <= 0.15)
+  unnest(data)
 
-# Iso-line labels (at the point where they exit the plot area)
+# Iso-line labels (right edge only)
 iso_labels <- iso_lines %>%
-  group_by(Method, PTNI) %>%
   filter(x == max(x)) %>%
-  ungroup() %>%
   distinct(Method, PTNI, x, y)
 
 # --- Faceted Phase Plot ---
@@ -67,12 +65,11 @@ p <- ggplot() +
     color = "#D0D0D0", linewidth = 0.4, linetype = "dashed"
   ) +
   
-  # Iso-PTNI labels (at exit points)
+  # Iso-PTNI labels (at right edge)
   geom_text(
     data = iso_labels,
     aes(x = x, y = y, label = sprintf("%.3f", PTNI)),
-    hjust = -0.1, vjust = -0.2, size = 2.5, 
-    color = "#909090", family = "Arial", fontface = "italic"
+    hjust = -0.05, size = 2.5, color = "#808080", family = "Arial", fontface = "italic"
   ) +
   
   # Data points (compounds)
@@ -96,16 +93,17 @@ p <- ggplot() +
   # Facet by method
   facet_wrap(~ Method, ncol = 2) +
   
+  # Scales (identical for both panels)
   scale_x_continuous(
     limits = c(0, 70),
     breaks = seq(0, 70, 20),
-    expand = expansion(mult = c(0.02, 0.15)) # More space for right labels
+    expand = expansion(mult = c(0.02, 0.12))
   ) +
   
   scale_y_continuous(
-    limits = c(0, 0.155),
+    limits = c(0, 0.15),
     breaks = seq(0, 0.15, 0.05),
-    expand = expansion(mult = c(0.02, 0.1)) # More space for top labels
+    expand = expansion(mult = c(0.02, 0.05))
   ) +
   
   labs(
