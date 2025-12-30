@@ -85,7 +85,7 @@ p <- ggplot(data_wide, aes(y = Compound)) +
     x = "Z-score",
     y = NULL,
     caption = str_wrap(
-      "Lines connect each compound's proximity Z-score (shortest path to DILI genes) with its influence Z-score (random walk on PPI network). The rank reversal demonstrates that topological proximity does not predict functional influence. Data: STRING v12.0 (≥900), n = 1,000 permutations.",
+      "[CORE INFERENCE] The rank reversal demonstrates that topological proximity does not predict functional influence. Lines connect each compound's proximity Z-score (shortest path to DILI genes) with its influence Z-score (random walk with restart). Both metrics derived from degree-matched permutation null models (n = 1,000). Data: STRING v12.0 (≥900), human liver LCC.",
       width = 100
     )
   ) +

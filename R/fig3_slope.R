@@ -74,7 +74,7 @@ p <- ggplot(slope_data) +
     x = NULL,
     y = "Influence Z-score",
     caption = str_wrap(
-      "Slopegraph shows Z-scores for standard random walk (RWI, left) versus expression-weighted random walk (EWI, right). Parallel slopes indicate ranking stability. Hyperforin maintains higher influence under expression weighting. Data: STRING v12.0 (≥900), GTEx liver expression, n = 1,000 permutations per method.",
+      "[BIOLOGICAL VALIDATION] Expression weighting tests whether influence rankings are robust to tissue-specific constraints. Parallel slopes indicate ranking stability. Both methods use independent permutation null models (n = 1,000 each). GTEx liver expression (TPM ≥1) weights edge transitions in EWI. Data: STRING v12.0 (≥900).",
       width = 100
     )
   ) +

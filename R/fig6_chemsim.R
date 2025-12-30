@@ -78,7 +78,7 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
     x = NULL,
     y = "Maximum Tanimoto similarity",
     caption = str_wrap(
-      "Maximum structural similarity (Tanimoto coefficient) between study compounds and DILIrank reference drugs. Threshold of 0.4 is conservative for structural analog detection. Both compounds fall well below threshold, excluding confounding by chemical similarity to known hepatotoxins. Reference: DILIrank (n = 542 DILI-positive, 365 DILI-negative).",
+      "[ORTHOGONAL EXCLUSION] Excludes confounding by structural similarity to known hepatotoxins. Maximum Tanimoto coefficient between study compounds and DILIrank reference drugs. Threshold of 0.4 is conservative for structural analog detection. Both compounds fall well below threshold. This control is orthogonal to network-based inference. Reference: DILIrank (n = 542 DILI-positive, 365 DILI-negative).",
       width = 100
     )
   ) +
@@ -122,17 +122,18 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
 print(p)
 
 ggsave(
-  filename = here("figures", "main", "fig7_chemsim.pdf"),
+  filename = here("figures", "main", "fig6_chemsim.pdf"),
   plot = p,
   width = 160, height = 130, units = "mm",
   device = cairo_pdf
 )
 
 ggsave(
-  filename = here("figures", "main", "fig7_chemsim.tiff"),
+  filename = here("figures", "main", "fig6_chemsim.tiff"),
   plot = p,
   width = 160, height = 130, units = "mm",
   dpi = 300, compression = "lzw"
 )
 
-message("✓ Figure 7 (Chemical Similarity Control) saved - Defensive closure")
+message("✓ Figure 6 (Chemical Similarity Control) saved - Defensive closure")
+

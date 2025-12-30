@@ -83,7 +83,7 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
     x = "Bootstrap influence (RWI)",
     y = "Density",
     caption = str_wrap(
-      "Bootstrap distribution: 100 random samples of 10 targets from Quercetin's 62 targets, each scored by RWI. Shaded region shows 95% CI. Hyperforin's observed influence (solid line) exceeds the entire bootstrap distribution, confirming the effect is not a target-count artefact. Data: STRING v12.0 (≥900).",
+      "[ROBUSTNESS CONTROL] Tests whether Hyperforin's influence advantage is a target-count artefact. Bootstrap distribution: 100 random samples of 10 targets from Quercetin's 62 targets, each scored by RWI under identical permutation framework. Shaded region shows 95% CI. Hyperforin's observed influence (solid line) exceeds the entire bootstrap distribution. Data: STRING v12.0 (≥900).",
       width = 105
     )
   ) +

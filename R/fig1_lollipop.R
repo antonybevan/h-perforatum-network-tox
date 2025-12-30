@@ -121,7 +121,7 @@ p_lollipop <- pA + pB +
   plot_annotation(
     title = "Network context: target count and proximity to DILI genes",
     caption = str_wrap(
-      "Proximity Z-scores represent deviation from degree-matched random expectation (n = 1,000 permutations). Negative values indicate closer-than-random proximity. Data: STRING v12.0 (confidence ≥900), human liver proteome. These descriptive metrics provide network context and are not used for causal inference.",
+      "[DESCRIPTIVE CONTEXT] Target count and proximity provide network context but are not used for causal inference. Proximity Z-scores represent deviation from degree-matched random expectation (n = 1,000 permutations). Negative values indicate closer-than-random proximity. Data: STRING v12.0 (≥900), human liver LCC.",
       width = 110
     ),
     theme = theme(

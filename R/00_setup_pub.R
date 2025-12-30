@@ -1,29 +1,49 @@
 # ============================================================================
-# 00_setup_pub.R - Strict Lancet/Q1 Visualization Theme
+# 00_setup_pub.R - Strict Lancet/Q1 Visualization Setup
+# H. perforatum Network Toxicology Analysis
 # ============================================================================
 
-# --- Packages ---
+# --- Package Management ---
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(
-  ggplot2, ggpubr, ggsci, extrafont, 
-  grid, gridExtra, cowplot, 
-  tidyverse, here, scales
+  # Core visualization
+  ggplot2, ggpubr, ggsci, scales,
+  
+  # Text and labels
+  ggrepel, extrafont,
+  
+  # Layout and composition
+  grid, gridExtra, cowplot, patchwork,
+  
+  # Data wrangling
+  tidyverse, here, readr,
+  
+  # Tables
+  gt, kableExtra
 )
 
-# --- Fonts ---
-# Lancet uses Arial/Helvetica. On Windows, we need to register it.
-loadfonts(device = "win", quiet = TRUE)
+# --- Font Setup ---
+# Lancet uses Arial/Helvetica. Register system fonts on Windows.
+tryCatch({
+  loadfonts(device = "win", quiet = TRUE)
+}, error = function(e) {
+  message("Note: Font registration skipped (non-Windows or fonts already loaded)")
+})
 main_font <- "Arial"
 
-# --- Lancet Color Palette (ggsci) ---
-# True Lancet colors: Blue (#00468B), Red (#ED0000), Green (#42B540)
+# --- Lancet Color Palette ---
+# True Lancet colors from ggsci
 lancet_cols <- pal_lancet("lanonc")(9)
 cols <- c(
-  "Hyperforin" = lancet_cols[1],  # Deep Blue
-  "Quercetin"  = lancet_cols[2],  # Deep Red
-  "DILI"       = lancet_cols[3],  # Green
+  "Hyperforin" = lancet_cols[1],  # Deep Blue (#00468B)
+  "Quercetin"  = lancet_cols[2],  # Deep Red (#ED0000)
+  "DILI"       = lancet_cols[3],  # Green (#42B540)
   "Neutral"    = lancet_cols[9]   # Grey
 )
+
+# Scale functions for easy use
+scale_fill_lancet <- function(...) scale_fill_manual(values = cols, ...)
+scale_color_lancet <- function(...) scale_color_manual(values = cols, ...)
 
 # --- Publication Theme ---
 theme_lancet_pub <- function(base_size = 11, base_family = main_font) {
@@ -68,13 +88,16 @@ theme_lancet_pub <- function(base_size = 11, base_family = main_font) {
 }
 
 # --- Export Function (Publication Standard) ---
-save_pub_plot <- function(plot, filename, w=180, h=150) {
+save_pub_plot <- function(plot, filename, w = 180, h = 150) {
+  # Ensure output directory exists
+  dir.create(here("figures", "main"), showWarnings = FALSE, recursive = TRUE)
+  
   # 1. PDF (Vector high quality)
   ggsave(
     filename = here("figures", "main", paste0(filename, ".pdf")),
     plot = plot,
     width = w, height = h, units = "mm",
-    device = cairo_pdf  # Superior font handling
+    device = cairo_pdf
   )
   
   # 2. TIFF (300 DPI Raster for submission)
@@ -87,3 +110,9 @@ save_pub_plot <- function(plot, filename, w=180, h=150) {
   
   message(paste("✓ Saved", filename, "(PDF + 300dpi TIFF)"))
 }
+
+# --- Project Paths ---
+data_dir <- here("results", "tables")
+fig_dir <- here("figures", "main")
+
+message("✓ Setup complete (00_setup_pub.R)")
