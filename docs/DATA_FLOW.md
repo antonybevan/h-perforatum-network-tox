@@ -532,6 +532,70 @@ python scripts/run_expression_weighted_rwr_permutations.py
 
 ---
 
+## 6. Chemical Similarity Negative Control
+
+**Purpose:** Confirm network findings aren't due to structural similarity to hepatotoxins
+
+### Source Chain
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SOURCE: FDA DILIrank 2.0                                                    │
+│ File: data/external/DILIrank_2.0.xlsx                                       │
+│ Reference: Chen et al. (2016) Drug Discovery Today 21(4):648-653            │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FILTER: Severity Classification                                             │
+│ DILI+ = vMost-DILI-concern + vLess-DILI-concern                             │
+│ DILI- = vNo-DILI-concern                                                    │
+│ Excluded: Ambiguous classifications                                         │
+│ Result: 568 DILI+ candidates, 414 DILI- candidates                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SMILES RETRIEVAL: PubChem REST API                                          │
+│ Query: Drug name → Canonical SMILES                                         │
+│ Result: 542 DILI+ with SMILES, 365 DILI- with SMILES                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FINGERPRINT: ECFP4 (Extended Connectivity Fingerprints)                     │
+│ Library: RDKit MorganGenerator                                              │
+│ Parameters: radius=2, nBits=2048                                            │
+│ Compounds: Hyperforin (from PubChem CID 5281), Quercetin (from PubChem CID 5280343) │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SIMILARITY: Tanimoto Coefficient                                            │
+│ Formula: |A ∩ B| / |A ∪ B|                                                  │
+│ Threshold: > 0.4 = structural analog                                        │
+│ Output: results/tables/chemical_similarity_summary.csv                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Results
+
+| Compound | DILI+ Drugs | Max Sim | Mean Sim | Std | Analog? |
+|----------|-------------|---------|----------|-----|---------|
+| Hyperforin | 542 | 0.154 | 0.079 | 0.026 | NO |
+| Quercetin | 542 | 0.212 | 0.078 | 0.031 | NO |
+
+| Compound | DILI- Drugs | Max Sim | Mean Sim | Std | Analog? |
+|----------|-------------|---------|----------|-----|---------|
+| Hyperforin | 365 | 0.202 | 0.081 | 0.028 | NO |
+| Quercetin | 365 | 0.220 | 0.070 | 0.034 | NO |
+
+**Conclusion:** Neither compound resembles known hepatotoxins (Tanimoto < 0.4). Network findings reflect target biology, not structural confounding.
+
+**Script:** `scripts/run_chemical_similarity_control.py`
+
+---
+
 ## Validation Checksums
 
 | File | Rows | Hyperforin | Quercetin |
