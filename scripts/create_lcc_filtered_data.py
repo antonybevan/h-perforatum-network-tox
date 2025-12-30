@@ -4,7 +4,7 @@ Create Consistent LCC-Filtered Data Files
 
 Updates:
 1. liver_proteome.csv - Liver-expressed genes (TPM >= 1)
-2. targets_lcc.csv - Targets filtered to liver LCC (9 Hyperforin, 62 Quercetin)
+2. targets_lcc.csv - Targets filtered to liver LCC (10 Hyperforin, 62 Quercetin)
 3. network_liver_lcc.parquet - Liver LCC subnetwork
 
 This ensures consistency across all analyses.

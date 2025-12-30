@@ -8,7 +8,7 @@ Rigorous statistical validation using:
 - Degree-matched null distributions
 - FDR correction
 
-USES: targets_lcc.csv (9 Hyperforin, 62 Quercetin)
+USES: targets_lcc.csv (10 Hyperforin, 62 Quercetin)
 NETWORKS: network_700_liver_lcc.parquet, network_900_liver_lcc.parquet
 """
 
@@ -45,7 +45,7 @@ RANDOM_SEED = 42
 
 def load_targets(compound_name):
     """Load LCC-filtered targets for a compound."""
-    # Use targets_lcc.csv (9 Hyperforin, 62 Quercetin)
+    # Use targets_lcc.csv (10 Hyperforin, 62 Quercetin)
     targets_file = DATA_DIR / 'processed' / 'targets_lcc.csv'
     targets_df = pd.read_csv(targets_file)
     comp_targets = targets_df[targets_df['compound'] == compound_name]

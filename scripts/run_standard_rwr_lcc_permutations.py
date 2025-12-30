@@ -5,7 +5,7 @@ Standard (Unweighted) RWR Permutation Testing with LCC Targets
 This script runs standard RWR (no expression weighting) using the same
 LCC-filtered targets as the expression-weighted analysis for consistency.
 
-Target counts: Hyperforin (9), Quercetin (62)
+Target counts: Hyperforin (10), Quercetin (62)
 Networks: Liver LCC (700 and 900)
 
 This ensures all analyses use consistent data filtering.
