@@ -59,3 +59,4 @@ results/plots/*.pdf
 *.log
 *.tmp
 temp/
+.Rproj.user
