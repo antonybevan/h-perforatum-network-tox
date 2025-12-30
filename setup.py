@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="h-perforatum-network-tox",
-    version="2.0.0",
+    version="2.1.0",
     description="Network pharmacology analysis of H. perforatum hepatotoxicity",
     author="Antony Bevan",
     packages=find_packages(where="src"),
@@ -16,6 +16,9 @@ setup(
         "statsmodels>=0.14.0",
         "pyarrow>=12.0.0",
         "matplotlib>=3.7.0",
+        "tqdm>=4.65.0",
+        "requests>=2.28.0",
+        "rdkit>=2023.3.1",
     ],
     entry_points={
         "console_scripts": [
