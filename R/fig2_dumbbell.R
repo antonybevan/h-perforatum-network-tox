@@ -21,7 +21,7 @@ data_long <- tibble(
   )
 ) %>%
   mutate(
-    Compound = factor(Compound, levels = c("Quercetin", "Hyperforin")), # Quercetin on top
+    Compound = factor(Compound, levels = c("Hyperforin", "Quercetin")), # Consistent order: Hyperforin first
     Metric = factor(Metric, levels = c("Proximity", "Influence"))
   )
 
@@ -65,10 +65,10 @@ p <- ggplot(data_wide, aes(y = Compound)) +
   geom_vline(xintercept = 0, linetype = "dashed", color = "#AAAAAA", linewidth = 0.5) +
   
   # Column headers (with directional cues)
-  annotate("text", x = -5.5, y = 2.6, label = "Proximity\n(closer = negative Z)", 
+  annotate("text", x = -5.5, y = 2.6, label = "Shortest-path proximity\n(closer = negative Z)", 
            hjust = 0.5, vjust = 0, size = 3.8, fontface = "bold", 
            family = "Arial", color = "#4A4A4A") +
-  annotate("text", x = 9, y = 2.6, label = "Influence\n(stronger = positive Z)", 
+  annotate("text", x = 9, y = 2.6, label = "Influence Z-score\n(stronger = positive Z)", 
            hjust = 0.5, vjust = 0, size = 3.8, fontface = "bold", 
            family = "Arial", color = "#4A4A4A") +
   
@@ -85,7 +85,7 @@ p <- ggplot(data_wide, aes(y = Compound)) +
     x = "Z-score",
     y = NULL,
     caption = str_wrap(
-      "[CORE INFERENCE] The rank reversal demonstrates that topological proximity does not predict functional influence. Lines connect each compound's proximity Z-score (shortest path to DILI genes) with its influence Z-score (random walk with restart). Both metrics derived from degree-matched permutation null models (n = 1,000). Data: STRING v12.0 (≥900), human liver LCC.",
+      "[CORE INFERENCE] The rank reversal demonstrates that shortest-path proximity does not predict functional influence. Lines connect each compound's proximity Z-score with its influence Z-score (random walk with restart, RWI). Both metrics derived from degree-matched permutation null models (n = 1,000). Data: STRING v12.0 (≥900).",
       width = 100
     )
   ) +

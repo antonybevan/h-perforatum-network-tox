@@ -112,7 +112,7 @@ p <- ggplot() +
     x = "Target count",
     y = "Total influence",
     caption = str_wrap(
-      "[EFFICIENCY NORMALIZATION] PTNI = influence / target count (derived metric, not formally tested). This reframes polypharmacology as an efficiency problem: Hyperforin achieves greater influence per target. PTNI ratio differences are consistent with the Z-score hierarchy (Figs 1–3). Diagonal lines show iso-efficiency contours. Data: STRING v12.0 (≥900), n = 1,000 permutations.",
+      "[EFFICIENCY NORMALIZATION] Per-target network influence (PTNI) = influence / target count (derived metric, not formally tested). This reframes polypharmacology as an efficiency problem: Hyperforin achieves greater influence per target. PTNI ratio differences are consistent with the Influence Z-score hierarchy (Figs 1–3). Diagonal lines show iso-efficiency contours. Data: STRING v12.0 (≥900), n = 1,000 permutations.",
       width = 120
     )
   ) +

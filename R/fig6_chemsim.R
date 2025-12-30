@@ -1,5 +1,4 @@
-# ============================================================================
-# fig7_chemsim.R - Figure 7: Chemical Similarity Control
+# fig6_chemsim.R - Figure 6: Chemical similarity control
 # Defensive figure: Close the "maybe it's just chemistry" escape hatch
 # Simple threshold plot, intentionally boring
 # ============================================================================
@@ -80,7 +79,7 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
     x = NULL,
     y = "Maximum Tanimoto similarity",
     caption = str_wrap(
-      "[ORTHOGONAL EXCLUSION] Maximum Tanimoto similarity to DILIrank drugs. Threshold 0.4 is conservative for structural analog detection. Both compounds fall well below. Reference: DILIrank (542 DILI+, 365 DILI−).",
+      "[ORTHOGONAL EXCLUSION] Chemical similarity control: Maximum Tanimoto similarity to DILIrank drugs. Threshold 0.4 is conservative for structural analog detection. Both compounds fall well below. Reference: DILIrank (542 DILI+, 365 DILI−).",
       width = 85
     )
   ) +

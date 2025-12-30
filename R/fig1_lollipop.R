@@ -66,7 +66,7 @@ pA <- ggplot(panel_a_data, aes(x = Compound, y = Targets)) +
     panel.grid.major.y = element_blank()
   )
 
-# --- Panel B: Proximity Z-Score (Lollipop) ---
+# --- Panel B: Proximity Z-score (Lollipop) ---
 pB <- ggplot(panel_b_data, aes(x = Compound, y = Proximity_Z)) +
   # Subtle gridlines
   geom_hline(yintercept = seq(-6, 0, 2), color = "#EBEBEB", linewidth = 0.4) +
@@ -98,7 +98,7 @@ pB <- ggplot(panel_b_data, aes(x = Compound, y = Proximity_Z)) +
   labs(
     tag = "B",
     x = NULL,
-    y = "Proximity Z-score"
+    y = "Shortest-path proximity"
   ) +
   
   theme_classic(base_size = 11, base_family = "Arial") +
@@ -121,7 +121,7 @@ p_lollipop <- pA + pB +
   plot_annotation(
     title = "Network context: target count and proximity to DILI genes",
     caption = str_wrap(
-      "[DESCRIPTIVE CONTEXT] Target count and proximity provide network context but are not used for causal inference. Proximity Z-scores represent deviation from degree-matched random expectation (n = 1,000 permutations). Negative values indicate closer-than-random proximity. Data: STRING v12.0 (≥900), human liver LCC.",
+      "[DESCRIPTIVE CONTEXT] Target count and shortest-path proximity provide network context but are not used for causal inference. Proximity Z-scores represent deviation from degree-matched random expectation (n = 1,000 permutations). Negative values indicate closer-than-random proximity. Data: STRING v12.0 (≥900), human liver LCC.",
       width = 110
     ),
     theme = theme(
