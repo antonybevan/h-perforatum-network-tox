@@ -52,18 +52,19 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
     "text",
     x = hyperforin_observed, y = Inf,
     label = sprintf("Hyperforin\nobserved = %.3f", hyperforin_observed),
-    hjust = -0.1, vjust = 1.5,
+    hjust = 1.1, vjust = 1.5,
     size = 3.5, fontface = "bold", family = "Arial", color = "#2E3440",
     lineheight = 0.9
   ) +
   
-  # Label for 95% CI
+  # Label for 95% CI (at bottom of shaded region)
   annotate(
-    "text",
-    x = (ci_lower + ci_upper) / 2, y = 0,
+    "label",
+    x = ci_upper - 0.01, y = 2,
     label = "95% CI",
-    vjust = -0.5,
-    size = 3, fontface = "italic", family = "Arial", color = "#666666"
+    hjust = 0.5, vjust = 0,
+    size = 3, fontface = "bold", family = "Arial", color = "#505050",
+    fill = "white", label.size = 0
   ) +
   
   # Scales
@@ -83,8 +84,8 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
     x = "Bootstrap influence (RWI)",
     y = "Density",
     caption = str_wrap(
-      "[ROBUSTNESS CONTROL] Tests whether Hyperforin's influence advantage is a target-count artefact. Bootstrap distribution: 100 random samples of 10 targets from Quercetin's 62 targets, each scored by RWI under identical permutation framework. Shaded region shows 95% CI. Hyperforin's observed influence (solid line) exceeds the entire bootstrap distribution. Data: STRING v12.0 (≥900).",
-      width = 105
+      "[ROBUSTNESS CONTROL] Bootstrap: 100 random 10-target samples from Quercetin's pool, scored by RWI. Shaded = 95% CI. Hyperforin (solid line) exceeds entire distribution. Data: STRING v12.0 (≥900).",
+      width = 90
     )
   ) +
   
@@ -107,7 +108,7 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
     panel.grid.minor = element_blank(),
     
     # Margins
-    plot.margin = margin(15, 15, 15, 15)
+    plot.margin = margin(15, 15, 15, 25)
   )
 
 # --- Display & Save ---

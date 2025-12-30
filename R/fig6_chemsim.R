@@ -38,13 +38,15 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
     linetype = "dashed", color = "#888888", linewidth = 0.7
   ) +
   
-  # Threshold label
-  annotate(
-    "text",
-    x = Inf, y = similarity_threshold,
-    label = "Structural analog threshold (0.4)",
-    hjust = 1.05, vjust = -0.5,
-    size = 3, fontface = "italic", family = "Arial", color = "#666666"
+  # Threshold label (using geom_label for discrete x-axis)
+  geom_label(
+    data = data.frame(compound = "Hyperforin", y = similarity_threshold),
+    aes(x = compound, y = y),
+    label = "Threshold (0.4)",
+    inherit.aes = FALSE,
+    hjust = 0, vjust = -0.3, nudge_x = -0.3,
+    size = 2.8, fontface = "italic", family = "Arial", color = "#666666",
+    fill = "white", label.size = 0
   ) +
   
   # Bars
@@ -78,8 +80,8 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
     x = NULL,
     y = "Maximum Tanimoto similarity",
     caption = str_wrap(
-      "[ORTHOGONAL EXCLUSION] Excludes confounding by structural similarity to known hepatotoxins. Maximum Tanimoto coefficient between study compounds and DILIrank reference drugs. Threshold of 0.4 is conservative for structural analog detection. Both compounds fall well below threshold. This control is orthogonal to network-based inference. Reference: DILIrank (n = 542 DILI-positive, 365 DILI-negative).",
-      width = 100
+      "[ORTHOGONAL EXCLUSION] Maximum Tanimoto similarity to DILIrank drugs. Threshold 0.4 is conservative for structural analog detection. Both compounds fall well below. Reference: DILIrank (542 DILI+, 365 DILI−).",
+      width = 85
     )
   ) +
   
@@ -113,7 +115,7 @@ p <- ggplot(plot_data, aes(x = compound, y = Max_Tanimoto, fill = Reference)) +
     panel.grid.minor = element_blank(),
     
     # Margins
-    plot.margin = margin(15, 40, 15, 15)
+    plot.margin = margin(15, 20, 15, 25)
   ) +
   
   coord_cartesian(clip = "off")
