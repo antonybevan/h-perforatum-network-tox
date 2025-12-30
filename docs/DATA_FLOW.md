@@ -602,6 +602,27 @@ python scripts/run_expression_weighted_rwr_permutations.py
 
 ---
 
+## 8. Shortest Path Proximity Analysis
+
+**Purpose:** Measure network distance (d_c) from drug targets to DILI genes
+
+**Method:** Mean minimum shortest path with degree-matched permutation testing (1000 permutations)
+
+### Results
+
+| Threshold | Compound | d_c | Z-score | Interpretation |
+|-----------|----------|-----|---------|----------------|
+| ≥700 | Hyperforin | 0.60 | -6.04 | Significantly closer |
+| ≥700 | Quercetin | 1.34 | -5.46 | Significantly closer |
+| ≥900 | Hyperforin | 1.30 | -3.86 | Significantly closer |
+| ≥900 | Quercetin | 1.68 | -5.44 | Significantly closer |
+
+**Key Finding:** Hyperforin targets are CLOSER to DILI genes (d_c=0.60-1.30) than Quercetin (d_c=1.34-1.68).
+
+**Script:** `scripts/run_shortest_path_permutations.py`
+
+---
+
 ## Validation Checksums
 
 | File | Rows | Hyperforin | Quercetin |
