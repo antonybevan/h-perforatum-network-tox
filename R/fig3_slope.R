@@ -50,10 +50,10 @@ p <- ggplot(slope_data) +
   ) +
   
   # Column headers (higher position to avoid overlap)
-  annotate("text", x = 1, y = 11.8, label = "Random walk with restart\n(RWI)", 
+  annotate("text", x = 1, y = 11.8, label = "Standard\n(RWI)", 
            hjust = 0.5, size = 4, fontface = "bold", 
            family = "Arial", color = "#2E3440") +
-  annotate("text", x = 2, y = 11.8, label = "Expression-weighted influence\n(EWI)", 
+  annotate("text", x = 2, y = 11.8, label = "Expression-Weighted\n(EWI)", 
            hjust = 0.5, size = 4, fontface = "bold", 
            family = "Arial", color = "#2E3440") +
   
