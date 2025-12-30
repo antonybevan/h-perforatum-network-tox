@@ -11,8 +11,8 @@
 
 | Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
 |--------|------------------------|------------------------|-------|
-| **RWI Z-score** | **+8.83** | +4.42 | — |
-| **EWI Z-score** | **+7.99** | +5.56 | — |
+| **RWI Z-score** | **+10.27** | +4.42 | — |
+| **EWI Z-score** | **+9.07** | +5.56 | — |
 | **PTNI (RWI)** | 0.01135 | 0.00052 | **21.9×** |
 | **PTNI (EWI)** | 0.0134 | 0.00080 | **16.9×** |
 
@@ -116,7 +116,7 @@ When citing these results:
 ```
 Using a tiered inference framework, Hyperforin (10 targets) demonstrates 
 17–22× higher per-target network influence (PTNI) than Quercetin (62 targets) 
-across both standard RWI (Z=+8.83) and expression-weighted EWI (Z=+7.99), 
+across both standard RWI (Z=+10.27) and expression-weighted EWI (Z=+9.07), 
 confirming that network position dominates over target count in determining 
 hepatotoxic influence.
 ```

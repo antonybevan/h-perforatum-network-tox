@@ -58,8 +58,8 @@ The following files are **READ-ONLY** unless explicitly instructed:
 
 | Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
 |--------|------------------------|------------------------|-------|
-| **RWI Z-score** | +8.83 | +4.42 | — |
-| **EWI Z-score** | +7.99 | +5.56 | — |
+| **RWI Z-score** | +10.27 | +4.42 | — |
+| **EWI Z-score** | +9.07 | +5.56 | — |
 | **PTNI (RWI)** | 0.01135 | 0.00052 | **21.9×** |
 | **PTNI (EWI)** | 0.0134 | 0.00080 | **16.9×** |
 

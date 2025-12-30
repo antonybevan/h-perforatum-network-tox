@@ -17,7 +17,7 @@ This repository contains the complete analysis pipeline for our study of drug-in
 
 | Compound | Hepatic Targets | Network Influence | Per-Target Efficiency |
 |----------|-----------------|-------------------|----------------------|
-| **Hyperforin** | 9 | Z = +8.83 | 0.0114 |
+| **Hyperforin** | 10 | Z = +10.27 | 0.0121 |
 | **Quercetin** | 62 | Z = +4.42 | 0.0005 |
 
 **Finding:** Despite having 7× fewer targets, Hyperforin exhibits 17–22× greater per-target influence on DILI genes.

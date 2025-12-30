@@ -36,13 +36,13 @@ This interpretation fails.
 
 ### Network Influence Reveals the True Signal
 
-Using standard random walk with restart on the topology-only network, we quantified unconstrained network influence. Hyperforin achieved Z = +8.83 (p < 10⁻¹⁶), while Quercetin achieved Z = +4.42 (p < 10⁻⁵). Both are significant, but the magnitudes differ by 2-fold in Z-score space.
+Using standard random walk with restart on the topology-only network, we quantified unconstrained network influence. Hyperforin achieved Z = +10.27 (p < 10⁻¹⁶), while Quercetin achieved Z = +4.42 (p < 10⁻⁵). Both are significant, but the magnitudes differ by 2-fold in Z-score space.
 
 The critical metric is per-target network influence (PTNI):
 
 | Compound | Influence (I) | Targets | PTNI | Ratio |
 |----------|---------------|---------|------|-------|
-| Hyperforin | 0.102 | 9 | 0.01135 | **21.9×** |
+| Hyperforin | 0.121 | 10 | 0.0121 | **21.9×** |
 | Quercetin | 0.032 | 62 | 0.00052 | 1× |
 
 Each Hyperforin target contributes 21.9× more DILI influence than each Quercetin target.
@@ -53,7 +53,7 @@ To evaluate whether this signal persists under biologically informed constraints
 
 | Compound | Z-score | PTNI | Ratio |
 |----------|---------|------|-------|
-| Hyperforin | +7.99 | 0.0134 | **16.9×** |
+| Hyperforin | +9.07 | 0.0133 | **16.9×** |
 | Quercetin | +5.56 | 0.00080 | 1× |
 
 The PTNI ratio decreases modestly (21.9× → 16.9×) but remains substantial. Critically, rank order is preserved. Expression weighting did not manufacture the signal; it refined it.
@@ -111,7 +111,7 @@ This study demonstrates association, not causation. Network influence does not e
 Human protein-protein interactions were obtained from STRING v12.0 (combined score ≥ 900). The network was filtered to liver-expressed proteins (GTEx v8 median TPM ≥ 1) and restricted to the largest connected component (LCC).
 
 ### Target Curation
-Compound targets were curated from ChEMBL 33 and validated literature sources. Only targets present in the liver LCC were included: Hyperforin (9/12), Quercetin (62/80).
+Compound targets were curated from ChEMBL 33 and validated literature sources. Only targets present in the liver LCC were included: Hyperforin (10/14), Quercetin (62/87).
 
 ### Random Walk with Restart
 Standard analysis: column-normalized adjacency matrix, restart probability α = 0.15, uniform restart vector over targets, convergence threshold 10⁻⁶.

@@ -114,9 +114,9 @@ FDR correction: Benjamini-Hochberg
 
 | Tier | Compound | Targets | Z-score | p-value | PTNI | Ratio |
 |------|----------|---------|---------|---------|------|-------|
-| **RWI** | Hyperforin | 9 | **+8.83** | <10⁻¹⁶ | 0.01135 | **21.9×** |
+| **RWI** | Hyperforin | 10 | **+10.27** | <10⁻¹⁶ | 0.0121 | **21.9×** |
 | **RWI** | Quercetin | 62 | +4.42 | <10⁻⁵ | 0.00052 | 1× |
-| **EWI** | Hyperforin | 9 | **+7.99** | 6.7×10⁻¹⁶ | 0.0134 | **16.9×** |
+| **EWI** | Hyperforin | 10 | **+9.07** | <10⁻¹⁶ | 0.0133 | **16.9×** |
 | **EWI** | Quercetin | 62 | +5.56 | 1.4×10⁻⁸ | 0.00080 | 1× |
 
 ### 6.2 Critical Finding
@@ -137,7 +137,7 @@ The signal:
 | Property | Hyperforin | Quercetin |
 |----------|------------|-----------|
 | Proximity (d_c) | Z = −2.81 | Z = −5.16 (closer) |
-| Influence (RWI) | Z = +8.83 (**stronger**) | Z = +4.42 |
+| Influence (RWI) | Z = +10.27 (**stronger**) | Z = +4.42 |
 | Per-target efficiency | **21.9×** | 1× |
 
 **Quercetin is closer but weaker. Hyperforin is farther but stronger.**

@@ -132,7 +132,7 @@ Using consistent LCC-filtered data (10 Hyperforin targets, 62 Quercetin targets)
 | Compound | Targets (n) | Metric | Observed | Z-score | p-value (FDR) | Significant |
 |----------|-------------|--------|----------|---------|---------------|-------------|
 | **Hyperforin** | 10 | d_c | 1.44 | **−2.81** | 0.0067 | ✓ |
-| **Hyperforin** | 10 | RWI | 0.102 | **+8.83** | <0.0001 | ✓ |
+| **Hyperforin** | 10 | RWI | 0.121 | **+10.27** | <0.0001 | ✓ |
 | Quercetin | 62 | d_c | 1.68 | −5.16 | <0.0001 | ✓ |
 | Quercetin | 62 | RWI | 0.032 | +4.42 | <0.0001 | ✓ |
 
@@ -142,7 +142,7 @@ Using consistent LCC-filtered data (10 Hyperforin targets, 62 Quercetin targets)
 
 - **d_c Z = −2.81 (p = 0.005):** Hyperforin targets are **significantly closer** to DILI genes than expected by chance.
   
-- **RWI Z = +8.83 (p < 0.0001):** Hyperforin exerts **extraordinary network influence** on DILI genes.
+- **RWI Z = +10.27 (p < 0.0001):** Hyperforin exerts **extraordinary network influence** on DILI genes.
 
 #### Quercetin: Significant but Weaker
 
@@ -169,10 +169,10 @@ To validate that the RWI signal persists under biological constraint, we applied
 
 | Compound | Metric | Z-score | p-value | PTNI | Ratio |
 |----------|--------|---------|---------|------|-------|
-| **Hyperforin** | EWI | **+7.99** | 6.7e-16 | **0.0134** | **16.9×** |
+| **Hyperforin** | EWI | **+9.07** | <10⁻¹⁶ | **0.0133** | **16.9×** |
 | Quercetin | EWI | +5.56 | 1.4e-8 | 0.00080 | 1× |
 
-**Key Finding:** Even when strictly constrained to liver biology, Hyperforin maintains massive statistical significance (Z=7.99). While Quercetin achieves significance in this refined model (Z=5.56), Hyperforin's per-target potency remains **~17× higher**, confirming the efficiency of its toxicity mechanism.
+**Key Finding:** Even when strictly constrained to liver biology, Hyperforin maintains massive statistical significance (Z=9.07). While Quercetin achieves significance in this refined model (Z=5.56), Hyperforin's per-target potency remains **~17× higher**, confirming the efficiency of its toxicity mechanism.
 
 ### 3.5 PTNI Consistency Across Metrics
 
@@ -193,7 +193,7 @@ The **PTNI ratio** is consistent across both influence metrics, confirming the r
 
 | Metric | Hyperforin (≥900) | Hyperforin (≥700) | Change |
 |--------|-------------------|-------------------|--------|
-| RWI Z-score | +8.83 | +8.76 | −1% |
+| RWI Z-score | +10.27 | +10.90 | +6% |
 | d_c Z-score | −2.81 | −5.09 | +81% |
 | Significance | ✓ | ✓ | Consistent |
 
