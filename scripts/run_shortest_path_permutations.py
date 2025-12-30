@@ -11,6 +11,7 @@ import numpy as np
 import networkx as nx
 from pathlib import Path
 from tqdm import tqdm
+from statsmodels.stats.multitest import multipletests
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -180,6 +181,18 @@ def main():
     
     # Save results
     results_df = pd.DataFrame(results)
+    
+    # Add FDR correction
+    p_values = results_df['p_value'].values
+    # Replace 0 with smallest representable float for FDR calculation
+    p_values_adj = np.where(p_values == 0, 1e-16, p_values)
+    _, p_fdr, _, _ = multipletests(p_values_adj, method='fdr_bh')
+    results_df['p_fdr'] = p_fdr
+    
+    # Reorder columns for publication
+    results_df = results_df[['network_threshold', 'compound', 'n_targets', 'observed_dc', 
+                              'null_mean', 'null_std', 'z_score', 'p_value', 'p_fdr', 'significant']]
+    
     output_file = RESULTS_DIR / 'shortest_path_permutation_results.csv'
     results_df.to_csv(output_file, index=False)
     print(f"Results saved: {output_file}")

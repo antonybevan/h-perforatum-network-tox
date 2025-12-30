@@ -126,16 +126,19 @@ def main():
     print()
     print(f"Results saved to: {out_path}")
     
-    # Save summary
+    # Save summary with clear publication-ready column names
     summary = pd.DataFrame([{
-        'hyperforin_observed': hyp_influence,
-        'quercetin_bootstrap_mean': mean_influence,
-        'quercetin_bootstrap_std': std_influence,
-        'quercetin_ci_lower': ci_lower,
-        'quercetin_ci_upper': ci_upper,
+        'compound': 'Hyperforin',
+        'metric': 'RWI_bootstrap',
+        'observed_influence': hyp_influence,
+        'bootstrap_mean': mean_influence,
+        'bootstrap_std': std_influence,
+        'ci_95_lower': ci_lower,
+        'ci_95_upper': ci_upper,
         'sample_size': SAMPLE_SIZE,
-        'n_iterations': N_BOOTSTRAP,
-        'hyperforin_exceeds_ci': hyp_influence > ci_upper
+        'n_bootstrap': N_BOOTSTRAP,
+        'exceeds_ci': hyp_influence > ci_upper,
+        'fold_vs_mean': round(hyp_influence / mean_influence, 2)
     }])
     summary.to_csv(RESULTS_DIR / 'tables' / 'bootstrap_summary.csv', index=False)
     print(f"Summary saved to: results/tables/bootstrap_summary.csv")
