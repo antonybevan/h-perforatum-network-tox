@@ -85,7 +85,8 @@ p <- ggplot() +
     aes(x = Targets, y = Influence, 
         label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
     size = 3.5, fontface = "bold", family = "Arial",
-    box.padding = 1.0, point.padding = 0.6,
+    box.padding = 1.2, point.padding = 0.5,
+    force = 2, max.overlaps = Inf,
     segment.color = "#666666", segment.size = 0.4,
     lineheight = 0.9
   ) +
@@ -97,13 +98,13 @@ p <- ggplot() +
   scale_x_continuous(
     limits = c(0, 70),
     breaks = seq(0, 70, 20),
-    expand = expansion(mult = c(0.02, 0.12))
+    expand = expansion(mult = c(0.02, 0.2)) # More space for right labels
   ) +
   
   scale_y_continuous(
     limits = c(0, 0.12),
     breaks = seq(0, 0.12, 0.04),
-    expand = expansion(mult = c(0.02, 0.05))
+    expand = expansion(mult = c(0.02, 0.1)) # More space for top labels
   ) +
   
   labs(
