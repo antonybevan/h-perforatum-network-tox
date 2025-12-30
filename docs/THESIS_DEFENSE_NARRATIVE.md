@@ -19,9 +19,9 @@ St. John's Wort contains two bioactive compounds:
 
 If target count predicted hepatotoxicity, Quercetin should dominate. But here's what the network analysis shows:
 
-When I measured *proximity* to drug-induced liver injury genes, Quercetin was indeed closer. But proximity is context, not inference.
+When I measured *proximity* to drug-induced liver injury genes, Quercetin was indeed closer (Z = −5.44 vs −3.86). But proximity is context, not inference.
 
-When I measured *influence*—how signals propagate through the network—Hyperforin showed **~20× greater per-target impact**. Each of Hyperforin's 10 targets contributes more to hepatotoxicity than Quercetin's 62 targets combined.
+When I measured *influence*—how signals propagate through the network—Hyperforin showed **Z = +10.27** compared to Quercetin's **Z = +4.42**. Each of Hyperforin's 10 targets contributes **22× more** to hepatotoxicity than each of Quercetin's 62 targets.
 
 This is the **Proximity-Influence Paradox**: close doesn't mean powerful.
 
@@ -31,11 +31,13 @@ This is the **Proximity-Influence Paradox**: close doesn't mean powerful.
 
 To ensure this wasn't an artifact, I used a tiered inference framework:
 
-**First**, standard random walk on the raw network—no biological assumptions. The signal appears here. Hyperforin is significantly more influential.
+**First**, standard random walk on the raw network—no biological assumptions. Hyperforin: **Z = +10.27** (p < 10⁻¹⁶). The signal is unmistakable.
 
-**Second**, expression-weighted random walk constrained to liver-expressed proteins. The signal persists. The ratio drops slightly from 22× to 17×, but the ranking is unchanged.
+**Second**, expression-weighted random walk constrained to liver-expressed proteins. Hyperforin: **Z = +9.07** (p < 10⁻¹⁶). The PTNI ratio drops from 22× to 17×, but the ranking is unchanged.
 
-**Third**, chemical similarity analysis against 900 known drugs. Neither compound resembles hepatotoxins. The network effect cannot be explained by structure.
+**Third**, chemical similarity analysis against 907 known drugs. Neither compound resembles hepatotoxins (max Tanimoto < 0.22). The network effect cannot be explained by structure.
+
+**Fourth**, bootstrap analysis: sampling 10 random Quercetin targets 100 times yields a 95% CI of [0.016, 0.054]. Hyperforin's observed influence (0.114) is **3.7× the bootstrap mean**—far outside the CI.
 
 The key insight: expression weighting *validated* the signal, it didn't *create* it.
 
