@@ -63,6 +63,32 @@ $$\text{PTNI} = \frac{I}{|T|}$$
 - **Purpose:** Measures targeting efficiency across both influence metrics
 - **Interpretation:** High PTNI = master-regulator strategy; Low PTNI = diffuse polypharmacology
 
+### Tier 4: Bootstrap Sensitivity Analysis — Robustness Validation
+
+```
+For i = 1 to 100:
+    1. Randomly sample 10 targets from Quercetin (matching Hyperforin count)
+    2. Calculate RWI influence for sampled targets
+    3. Record influence value
+
+Compare Hyperforin observed influence against Quercetin bootstrap distribution
+```
+
+- **Purpose:** "Is Hyperforin's advantage due to fewer targets?"
+- **Metric:** fold_vs_mean = Hyperforin / bootstrap_mean
+- **Significance:** Hyperforin must exceed 95% CI of bootstrap distribution
+- **Result:** Hyperforin (0.114) is **3.7× the bootstrap mean** (0.031), far exceeding 95% CI [0.016, 0.054]
+
+### Tier 5: Chemical Similarity Control — Structural Confounding
+
+$$\text{Tanimoto}(A, B) = \frac{|A \cap B|}{|A \cup B|}$$
+
+Using ECFP4 fingerprints (1024 bits, radius 2) against DILIrank reference (907 drugs):
+
+- **Purpose:** "Is the network effect explained by structural similarity to known hepatotoxins?"
+- **Threshold:** Tanimoto > 0.4 indicates structural analog
+- **Result:** Neither compound resembles hepatotoxins (max Tanimoto < 0.22)
+
 ---
 
 ## 3. Data Sources
