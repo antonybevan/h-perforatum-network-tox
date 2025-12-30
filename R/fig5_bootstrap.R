@@ -81,7 +81,7 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
   labs(
     title = "Bootstrap sensitivity: target-count control",
     subtitle = "Hyperforin exceeds all random 10-target samples from Quercetin's target pool",
-    x = "Bootstrap sensitivity (RWI influence)",
+    x = "Bootstrap sensitivity",
     y = "Density",
     caption = str_wrap(
       "[ROBUSTNESS CONTROL] Bootstrap sensitivity: 100 random 10-target samples from Quercetin's pool, scored by random walk with restart (RWI). Shaded = 95% CI. Hyperforin (solid line) exceeds entire distribution. Data: STRING v12.0 (≥900).",
