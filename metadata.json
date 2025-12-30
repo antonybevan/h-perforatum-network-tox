@@ -5,7 +5,7 @@
         "description": "Reproducible analysis demonstrating that network position—not target count—determines hepatotoxic influence",
         "version": "2.1.0",
         "created": "2025-12-24",
-        "last_updated": "2025-12-28",
+        "last_updated": "2025-12-30",
         "license": "MIT",
         "repository": "https://github.com/antonybevan/h-perforatum-network-tox"
     },
@@ -55,13 +55,13 @@
     "compounds": {
         "hyperforin": {
             "chembl_id": "CHEMBL464",
-            "targets_raw": 12,
-            "targets_lcc": 9,
+            "targets_raw": 14,
+            "targets_lcc": 10,
             "mechanism": "PXR activation, CYP induction"
         },
         "quercetin": {
             "chembl_id": "CHEMBL50",
-            "targets_raw": 80,
+            "targets_raw": 87,
             "targets_lcc": 62,
             "mechanism": "Broad kinase/enzyme inhibition"
         }
@@ -77,13 +77,13 @@
         "results": {
             "standard_rwr": {
                 "file": "results/tables/standard_rwr_lcc_permutation_results.csv",
-                "hyperforin_z": 8.83,
+                "hyperforin_z": 10.27,
                 "quercetin_z": 4.42,
                 "ptni_ratio": 21.9
             },
             "expression_weighted": {
                 "file": "results/tables/expression_weighted_rwr_permutation_results.csv",
-                "hyperforin_z": 7.99,
+                "hyperforin_z": 9.07,
                 "quercetin_z": 5.56,
                 "ptni_ratio": 16.9
             }
@@ -91,14 +91,25 @@
         "core_finding": "Hyperforin exhibits 17-22x higher per-target network influence than Quercetin"
     },
     "pipeline": {
-        "step_1": "scripts/create_lcc_filtered_data.py",
-        "step_2": "scripts/run_standard_rwr_lcc_permutations.py",
-        "step_3": "scripts/run_expression_weighted_rwr_permutations.py",
-        "step_4": "scripts/run_chemical_similarity_control.py"
+        "master_script": "scripts/run_pipeline.py",
+        "total_steps": 11,
+        "steps": [
+            "Extract STRING networks",
+            "Regenerate targets",
+            "Regenerate DILI genes",
+            "Create LCC-filtered data",
+            "Validate data integrity",
+            "Standard RWR permutation",
+            "Expression-weighted RWR permutation",
+            "Shortest path permutation",
+            "Bootstrap sensitivity",
+            "Chemical similarity control",
+            "Generate documentation"
+        ]
     },
     "tests": {
-        "total": 53,
-        "passed": 53,
+        "total": 68,
+        "passed": 68,
         "coverage": "src/network_tox"
     },
     "citations": {
