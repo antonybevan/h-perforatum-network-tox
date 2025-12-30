@@ -580,6 +580,28 @@ python scripts/run_expression_weighted_rwr_permutations.py
 
 ---
 
+## 7. Bootstrap Sensitivity Analysis
+
+**Purpose:** Test if Hyperforin's advantage is due to target count asymmetry (10 vs 62)
+
+**Method:** Sample 10 random Quercetin targets (matching Hyperforin), compute RWR influence, repeat 100×
+
+### Results
+
+| Metric | Value |
+|--------|-------|
+| Hyperforin observed | 0.114 |
+| Quercetin bootstrap mean | 0.031 |
+| Quercetin 95% CI | [0.016, 0.054] |
+| Hyperforin / bootstrap mean | **3.7×** |
+| Hyperforin exceeds 95% CI | **YES** |
+
+**Conclusion:** Hyperforin's advantage is ROBUST - not explained by target count.
+
+**Script:** `scripts/run_bootstrap_sensitivity.py`
+
+---
+
 ## Validation Checksums
 
 | File | Rows | Hyperforin | Quercetin |
