@@ -1,0 +1,2 @@
+hyperforin_observed,quercetin_bootstrap_mean,quercetin_bootstrap_std,quercetin_ci_lower,quercetin_ci_upper,sample_size,n_iterations,hyperforin_exceeds_ci
+0.11380974516807538,0.030820114296436513,0.009961761575829429,0.016019370819211946,0.054157632716539575,10,100,True
