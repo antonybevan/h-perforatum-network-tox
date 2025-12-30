@@ -1,13 +1,14 @@
 # Complete Methodology: Network Pharmacology Analysis of H. perforatum Hepatotoxicity
 
 **Target Journal:** Nature Communications (Q1)
-**Date:** 2025-12-28
+**Date:** 2025-12-30
+**Version:** 4.0
 
 ---
 
 ## Executive Summary
 
-This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using a tiered inference framework. We demonstrate that **proximity does not imply influence**: Quercetin (62 targets) is closer to DILI genes but exerts **17–20× less per-target influence** than Hyperforin (10 targets).
+This analysis investigates the hepatotoxic potential of two major *Hypericum perforatum* (St. John's Wort) constituents—**Hyperforin** and **Quercetin**—using a tiered inference framework. We demonstrate that **proximity does not imply influence**: Quercetin (62 targets) is closer to DILI genes but exerts **17–22× less per-target influence** than Hyperforin (10 targets).
 
 ---
 
@@ -25,7 +26,7 @@ Network pharmacology typically assumes compounds with more targets pose greater 
 
 | Compound | Targets (LCC) | Primary Activity |
 |----------|---------------|------------------|
-| **Hyperforin** | 9 | PXR activation → CYP induction |
+| **Hyperforin** | 10 | PXR activation → CYP induction |
 | **Quercetin** | 62 | Broad kinase/enzyme inhibition |
 
 ---
@@ -82,7 +83,7 @@ $$\text{PTNI} = \frac{I}{|T|}$$
 3. Filter to liver-expressed genes (GTEx TPM ≥ 1)
 4. Extract Largest Connected Component (LCC)
 
-**Result:** 6,891 nodes (liver LCC)
+**Result:** 7,677 nodes (liver LCC, STRING ≥900)
 
 ---
 
@@ -136,7 +137,7 @@ The signal:
 
 | Property | Hyperforin | Quercetin |
 |----------|------------|-----------|
-| Proximity (d_c) | Z = −2.81 | Z = −5.16 (closer) |
+| Proximity (d_c) | Z = −3.86 | Z = −5.44 (closer) |
 | Influence (RWI) | Z = +10.27 (**stronger**) | Z = +4.42 |
 | Per-target efficiency | **21.9×** | 1× |
 
@@ -163,10 +164,17 @@ DILI MODULE (cascade)           Diffuse, weak influence
 
 | Step | Script | Output |
 |------|--------|--------|
-| 1. Data Preprocessing | `create_lcc_filtered_data.py` | `targets_lcc.csv`, `network_*_liver_lcc.parquet` |
-| 2. Tier 2 Analysis | `run_standard_rwr_lcc_permutations.py` | `standard_rwr_lcc_permutation_results.csv` |
-| 3. Tier 3 Analysis | `run_expression_weighted_rwr_permutations.py` | `expression_weighted_rwr_permutation_results.csv` |
-| 4. Negative Control | `run_chemical_similarity_control.py` | `chemical_similarity_summary.csv` |
+| 1. Extract Networks | `extract_string_network.py` | `network_700.parquet`, `network_900.parquet` |
+| 2. Regenerate Targets | `regenerate_targets.py` | `targets.csv` |
+| 3. Regenerate DILI | `regenerate_dili.py` | `dili_genes_raw.csv` |
+| 4. Create LCC Data | `create_lcc_filtered_data.py` | `targets_lcc.csv`, `network_*_liver_lcc.parquet` |
+| 5. Validate Data | `validate_data_integrity.py` | Integrity checks |
+| 6. Standard RWI | `run_standard_rwr_lcc_permutations.py` | `standard_rwr_lcc_permutation_results.csv` |
+| 7. Expression-Weighted | `run_expression_weighted_rwr_permutations.py` | `expression_weighted_rwr_permutation_results.csv` |
+| 8. Shortest Path | `run_shortest_path_permutations.py` | `shortest_path_permutation_results.csv` |
+| 9. Bootstrap | `run_bootstrap_sensitivity.py` | `bootstrap_summary.csv` |
+| 10. Chemical Similarity | `run_chemical_similarity_control.py` | `chemical_similarity_summary.csv` |
+| 11. Generate Docs | `generate_dataflow.py` | `DATA_FLOW.md` |
 
 ---
 
@@ -183,9 +191,13 @@ pip install -r requirements.txt
 ### Run Analysis
 
 ```bash
-python scripts/create_lcc_filtered_data.py
-python scripts/run_standard_rwr_lcc_permutations.py
-python scripts/run_expression_weighted_rwr_permutations.py
+# Run entire pipeline (recommended)
+python scripts/run_pipeline.py
+
+# Or run individual steps
+python scripts/run_pipeline.py --only 6  # Standard RWI only
+python scripts/run_pipeline.py --step 5  # Start from step 5
+python scripts/run_pipeline.py --list    # List all steps
 ```
 
 ---
