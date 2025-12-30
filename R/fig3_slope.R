@@ -49,12 +49,12 @@ p <- ggplot(slope_data) +
     hjust = -0.15, size = 3.5, fontface = "bold", family = "Arial", color = "#2E3440"
   ) +
   
-  # Column headers (higher position to avoid overlap)
-  annotate("text", x = 1, y = 11.8, label = "Standard\n(RWI)", 
-           hjust = 0.5, size = 4, fontface = "bold", 
+  # Column headers (elevated to avoid overlap)
+  annotate("text", x = 1, y = 13.5, label = "RWI", 
+           hjust = 0.5, size = 5, fontface = "bold", 
            family = "Arial", color = "#2E3440") +
-  annotate("text", x = 2, y = 11.8, label = "Expression-Weighted\n(EWI)", 
-           hjust = 0.5, size = 4, fontface = "bold", 
+  annotate("text", x = 2, y = 13.5, label = "EWI", 
+           hjust = 0.5, size = 5, fontface = "bold", 
            family = "Arial", color = "#2E3440") +
   
   # Scales
@@ -63,8 +63,8 @@ p <- ggplot(slope_data) +
     breaks = NULL
   ) +
   scale_y_continuous(
-    limits = c(3, 13),  # Extended upper limit for headers
-    breaks = seq(4, 12, 2),
+    limits = c(3, 15),  # Extended upper limit for headers
+    breaks = seq(4, 14, 2),
     expand = expansion(mult = c(0.02, 0.02))
   ) +
   
