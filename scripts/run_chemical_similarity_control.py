@@ -58,6 +58,9 @@ CONFIG = {
     'fingerprint_bits': 2048,
 }
 
+# Cache file for SMILES (avoids ~25 min of PubChem API calls on re-runs)
+SMILES_CACHE_FILE = project_root / 'data' / 'processed' / 'dilirank_smiles_cache.json'
+
 
 # =============================================================================
 # UTILITIES
@@ -144,19 +147,52 @@ def get_test_compounds() -> List[Dict[str, str]]:
 
 
 # =============================================================================
+# SMILES CACHE
+# =============================================================================
+
+def load_smiles_cache() -> Dict[str, str]:
+    """Load cached SMILES from disk."""
+    if SMILES_CACHE_FILE.exists():
+        try:
+            with open(SMILES_CACHE_FILE, 'r') as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_smiles_cache(cache: Dict[str, str]):
+    """Save SMILES cache to disk."""
+    SMILES_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(SMILES_CACHE_FILE, 'w') as f:
+        json.dump(cache, f)
+
+
+# Global cache (loaded once at startup)
+SMILES_CACHE = {}
+
+
+# =============================================================================
 # PUBCHEM API
 # =============================================================================
 
-def get_smiles_from_pubchem(compound_name: str) -> Optional[str]:
+def get_smiles_from_pubchem(compound_name: str, use_cache: bool = True) -> Optional[str]:
     """
-    Retrieve canonical SMILES from PubChem REST API.
+    Retrieve canonical SMILES from PubChem REST API with caching.
     
     Args:
         compound_name: Drug name to look up
+        use_cache: If True, check cache first and store results
         
     Returns:
         Canonical SMILES string or None if not found
     """
+    global SMILES_CACHE
+    
+    # Check cache first
+    if use_cache and compound_name in SMILES_CACHE:
+        return SMILES_CACHE[compound_name]
+    
     names_to_try = [compound_name, clean_drug_name(compound_name)]
     
     for name in names_to_try:
@@ -178,12 +214,19 @@ def get_smiles_from_pubchem(compound_name: str) -> Optional[str]:
                     props = data.get('PropertyTable', {}).get('Properties', [{}])[0]
                     smiles = props.get('CanonicalSMILES') or props.get('ConnectivitySMILES')
                     if smiles:
+                        # Store in cache
+                        if use_cache:
+                            SMILES_CACHE[compound_name] = smiles
                         return smiles
                         
             except Exception:
                 time.sleep(0.3)
         
         time.sleep(CONFIG['pubchem_delay'])
+    
+    # Cache the miss too (as empty string) to avoid retrying
+    if use_cache:
+        SMILES_CACHE[compound_name] = ''
     
     return None
 
@@ -281,37 +324,58 @@ def main():
     print(f"      DILI-negative: {len(dili_negative_df)} (vNo)")
     print(f"      Excluded: {ambig} (Ambiguous)")
     
+    # Load SMILES cache
+    global SMILES_CACHE
+    SMILES_CACHE = load_smiles_cache()
+    cache_hits = len(SMILES_CACHE)
+    
     # Retrieve SMILES for ALL drugs
     print("\n" + "-" * 40)
     print("[3/5] Retrieving SMILES from PubChem (ALL drugs)...")
     print("-" * 40)
-    print("      This will take approximately 15-20 minutes...")
+    
+    if cache_hits > 0:
+        print(f"      ✓ Loaded {cache_hits} SMILES from cache (fast mode)")
+    else:
+        print("      This will take approximately 15-20 minutes (first run)...")
+        print("      Subsequent runs will use cache (~30 seconds)")
     
     def process_drugs(df: pd.DataFrame, label: str) -> List[Dict[str, Any]]:
         """Process a set of drugs: retrieve SMILES and generate fingerprints."""
         results = []
         total = len(df)
+        cache_used = 0
         
         for i, (_, row) in enumerate(df.iterrows()):
-            smiles = get_smiles_from_pubchem(row['CompoundName'])
+            compound_name = row['CompoundName']
+            
+            # Check if already in cache
+            if compound_name in SMILES_CACHE:
+                smiles = SMILES_CACHE[compound_name] if SMILES_CACHE[compound_name] else None
+                cache_used += 1
+            else:
+                smiles = get_smiles_from_pubchem(compound_name)
             
             if smiles:
                 fp = calculate_fingerprint(smiles)
                 if fp is not None:
                     results.append({
-                        'name': row['CompoundName'],
+                        'name': compound_name,
                         'ltkbid': row['LTKBID'],
                         'dilirank': row['vDILI-Concern'],
                         'smiles': smiles,
                         'fingerprint': fp
                     })
             
-            # Progress update every 50 drugs
-            if (i + 1) % 50 == 0 or (i + 1) == total:
+            # Progress update every 50 drugs (or less frequently with cache)
+            interval = 200 if cache_used > total // 2 else 50
+            if (i + 1) % interval == 0 or (i + 1) == total:
                 pct = (i + 1) / total * 100
                 print(f"      {label}: {i+1}/{total} ({pct:.0f}%) - {len(results)} with SMILES")
             
-            time.sleep(CONFIG['pubchem_delay'])
+            # Only delay if not using cache
+            if compound_name not in SMILES_CACHE or not SMILES_CACHE.get(compound_name):
+                time.sleep(CONFIG['pubchem_delay'])
         
         return results
     
@@ -320,6 +384,10 @@ def main():
     
     print("\n      Processing DILI-negative drugs...")
     dili_negative_list = process_drugs(dili_negative_df, "DILI-")
+    
+    # Save cache for next run
+    save_smiles_cache(SMILES_CACHE)
+    print(f"\n      ✓ Cache saved ({len(SMILES_CACHE)} compounds)")
     
     print(f"\n      Final: {len(dili_positive_list)} DILI+, {len(dili_negative_list)} DILI-")
     
