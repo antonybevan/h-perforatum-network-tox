@@ -1,7 +1,7 @@
 # Results Guide
 
-> **Last Updated:** 2025-12-28  
-> **Version:** 3.0 (Tiered Inference Framework)
+> **Last Updated:** 2025-12-30  
+> **Version:** 4.0 (Complete Tiered Inference Framework)
 
 ---
 
@@ -13,10 +13,15 @@
 |--------|------------------------|------------------------|-------|
 | **RWI Z-score** | **+10.27** | +4.42 | — |
 | **EWI Z-score** | **+9.07** | +5.56 | — |
-| **PTNI (RWI)** | 0.01135 | 0.00052 | **21.9×** |
-| **PTNI (EWI)** | 0.0134 | 0.00080 | **16.9×** |
+| **Shortest Path Z** | **-3.86** | -5.44 | — |
+| **PTNI (RWI)** | 0.0114 | 0.00052 | **21.9×** |
+| **PTNI (EWI)** | 0.0133 | 0.00080 | **16.9×** |
+| **Bootstrap** | 0.114 | 0.031 (mean) | **3.7×** |
 
-**Key Finding:** Hyperforin shows **17–22× higher per-target DILI influence** than Quercetin across both RWI and EWI.
+**Key Findings:**
+- Hyperforin shows **17–22× higher per-target DILI influence** than Quercetin
+- Quercetin is **closer** to DILI genes (Z=-5.44) but **weaker** in influence
+- Bootstrap confirms signal is **robust** (exceeds 95% CI)
 
 ---
 
@@ -25,19 +30,42 @@
 ```
 results/
 ├── RESULTS_GUIDE.md                    # This file
-├── tables/                             # Primary result files
-│   ├── standard_rwr_lcc_permutation_results.csv    # Tier 2 (RWI)
-│   ├── expression_weighted_rwr_permutation_results.csv  # Tier 3 (EWI)
-│   ├── chemical_similarity_summary.csv  # Negative control
-│   └── dilirank_reference_set.csv       # Reference data
-└── plots/                              # Generated figures
+├── bootstrap_sensitivity.csv           # Detailed bootstrap iterations
+├── chemical_similarity_control.csv     # Full similarity matrix
+└── tables/                             # Summary result files
+    ├── standard_rwr_lcc_permutation_results.csv      # Tier 2 (RWI)
+    ├── expression_weighted_rwr_permutation_results.csv  # Tier 3 (EWI)
+    ├── shortest_path_permutation_results.csv  # Tier 1 (Proximity)
+    ├── bootstrap_summary.csv               # Bootstrap validation
+    ├── chemical_similarity_summary.csv     # Negative control
+    ├── consolidated_results.csv            # All metrics combined
+    └── dilirank_reference_set.csv          # Reference data
 ```
 
 ---
 
 ## Primary Result Files
 
-### 1. `standard_rwr_lcc_permutation_results.csv` ⭐ (Tier 2: RWI)
+### 1. `shortest_path_permutation_results.csv` ⭐ (Tier 1: Proximity)
+
+**Shortest Path Distance (d_c) to DILI genes**
+
+| Column | Description |
+|--------|-------------|
+| `network_threshold` | STRING confidence threshold (700 or 900) |
+| `compound` | Hyperforin or Quercetin |
+| `n_targets` | Number of targets in liver LCC |
+| `observed_dc` | Mean minimum distance to DILI genes |
+| `null_mean` | Expected distance from permutations |
+| `null_std` | Standard deviation of null distribution |
+| `z_score` | Negative = closer than expected |
+| `p_value` | One-tailed significance |
+| `p_fdr` | FDR-corrected p-value |
+| `significant` | True if p_fdr < 0.05 |
+
+**Interpretation:** Negative Z-score = targets are CLOSER to DILI genes than random.
+
+### 2. `standard_rwr_lcc_permutation_results.csv` ⭐ (Tier 2: RWI)
 
 **Standard Random Walk Influence on LCC-filtered network**
 
@@ -59,16 +87,34 @@ results/
 
 Same columns as above, but transition matrix is weighted by GTEx liver expression.
 
-### 3. `chemical_similarity_summary.csv` (Negative Control)
+### 4. `bootstrap_summary.csv` (Robustness Validation)
+
+| Column | Description |
+|--------|-------------|
+| `compound` | Hyperforin |
+| `observed_influence` | Hyperforin's actual RWI influence |
+| `bootstrap_mean` | Mean influence of 10 random Quercetin targets |
+| `bootstrap_std` | Standard deviation of bootstrap distribution |
+| `ci_95_lower/upper` | 95% confidence interval |
+| `exceeds_ci` | True if Hyperforin exceeds upper CI bound |
+| `fold_vs_mean` | Hyperforin / bootstrap mean ratio |
+
+**Result:** Hyperforin (0.114) is **3.7×** the bootstrap mean (0.031), far exceeding the 95% CI.
+
+### 5. `chemical_similarity_summary.csv` (Negative Control)
 
 | Column | Description |
 |--------|-------------|
 | `compound` | Hyperforin or Quercetin |
-| `max_tanimoto_dili_positive` | Max similarity to DILI+ drugs |
-| `max_tanimoto_dili_negative` | Max similarity to DILI− drugs |
-| `is_structural_analog` | True if Tanimoto > 0.4 |
+| `max_sim_DILI_positive` | Max similarity to DILI+ drugs |
+| `max_sim_DILI_negative` | Max similarity to DILI− drugs |
+| `structural_analog_to_hepatotoxins` | True if Tanimoto > 0.4 |
 
-**Result:** Neither compound resembles known hepatotoxins.
+**Result:** Neither compound resembles known hepatotoxins (max Tanimoto < 0.22).
+
+### 6. `consolidated_results.csv` (All Metrics Combined)
+
+A single table containing all key metrics from all analyses for easy reference.
 
 ---
 
