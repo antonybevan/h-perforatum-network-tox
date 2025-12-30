@@ -167,6 +167,9 @@ def main():
             print(f"    P-value:       {result['p_value']:.4e}")
             print()
             
+            # Replace p_value=0.0 with 1e-16 for precision
+            p_value_display = 1e-16 if result['p_value'] == 0.0 else result['p_value']
+            
             results.append({
                 'network_threshold': threshold,
                 'compound': compound,
@@ -175,8 +178,8 @@ def main():
                 'null_mean': result['null_mean'],
                 'null_std': result['null_std'],
                 'z_score': result['z_score'],
-                'p_value': result['p_value'],
-                'significant': result['p_value'] < 0.05
+                'p_value': p_value_display,
+                'significant': p_value_display < 0.05
             })
     
     # Save results

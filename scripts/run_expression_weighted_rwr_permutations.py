@@ -214,6 +214,9 @@ def main():
             )
             
             # Store results
+            # Replace p_value=0.0 with 1e-16 for precision  
+            p_value_display = 1e-16 if p == 0.0 else p
+            
             all_results.append({
                 'network_threshold': network_threshold,
                 'compound': compound,
@@ -223,7 +226,7 @@ def main():
                 'null_mean': np.mean(null_dist) if null_dist else np.nan,
                 'null_std': np.std(null_dist) if null_dist else np.nan,
                 'z_score': z,
-                'p_value': p
+                'p_value': p_value_display
             })
             
             print(f"\n  Results:")
