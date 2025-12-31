@@ -94,3 +94,54 @@ MMP9 & Matrix metalloproteinase-9 & Extracellular matrix remodeling \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+% Table S5: Direct DILI Gene Connectivity
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S5. Direct DILI gene connectivity.}
+Hyperforin targets with first-order (distance = 1) connections to DILI genes in the STRING network ($\geq$900).
+DILI neighbors are genes present in the 82-gene DILI set.}
+\label{tab:S5}
+\vspace{0.5em}
+\begin{tabular}{llrl}
+\toprule
+\textbf{Hyperforin Target} & \textbf{DILI Neighbors (direct)} & \textbf{Count} & \textbf{Function} \\
+\midrule
+CYP3A4 & NR1I2, CYP2E1, UGT1A9, GSTM1, GSTP1 & 5 & Xenobiotic metabolism hub \\
+AKT1 & MAP3K5, NFE2L2, CTNNB1, IGF1 & 4 & Stress response signaling \\
+MMP9 & LCN2, SPP1, MMP2 & 3 & Inflammation/ECM \\
+ABCB1 & ABCC2, NR1I2 & 2 & Drug transport \\
+CYP2C9 & CYP2E1, NR1I2 & 2 & Xenobiotic metabolism \\
+CYP2B6 & NR1I2 & 1 & Xenobiotic metabolism \\
+NR1I2 & CYP2E1, ABCC2 & 2 & Master regulator \\
+ABCG2 & ABCC2 & 1 & Drug transport \\
+ABCC2 & NR1I2, ABCB1 & 2 & Drug transport \\
+MMP2 & MMP9, SPP1 & 2 & ECM remodeling \\
+\midrule
+\textbf{Total unique DILI neighbors} & & \textbf{12} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S6: Quercetin Direct DILI Connectivity
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S6. Quercetin direct DILI gene connectivity summary.}
+Summary statistics for first-order DILI connections across Quercetin's 62 targets.}
+\label{tab:S6}
+\vspace{0.5em}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total targets in LCC & 62 \\
+Targets with $\geq$1 direct DILI neighbor & 18 \\
+Total direct DILI connections & 31 \\
+Mean DILI neighbors per target & 0.50 \\
+\addlinespace
+\textit{Hyperforin comparison:} & \\
+Hyperforin targets with $\geq$1 DILI neighbor & 10/10 (100\%) \\
+Mean DILI neighbors per Hyperforin target & 2.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
