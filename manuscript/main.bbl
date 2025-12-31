@@ -5,14 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Chen et~al.(2016)Chen, Suzuki, Thakkar, Yu, Hu, and Tong]{Chen2016}
-Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
-\newblock {DILIrank}: the largest reference drug list ranked by the risk for
-  developing drug-induced liver injury in humans.
-\newblock \emph{Drug Discovery Today}, 21\penalty0 (4):\penalty0 648--653,
-  2016.
-\newblock \doi{10.1016/j.drudis.2016.02.015}.
-
 \bibitem[{European Medicines Agency}(2018)]{EMA2018}
 {European Medicines Agency}.
 \newblock Assessment report on {Hypericum} perforatum {L}., herba.
@@ -89,6 +81,15 @@ Linda~B Moore, Bryan Goodwin, Stacey~A Jones, G~Bruce Wisely, Connie~J
 \newblock \emph{Proceedings of the National Academy of Sciences}, 97\penalty0
   (13):\penalty0 7500--7502, 2000.
 \newblock \doi{10.1073/pnas.130155097}.
+
+\bibitem[Pi{\~n}ero et~al.(2020)Pi{\~n}ero, Ram{\'\i}rez-Anguita,
+  Sa{\"u}ch-Pitarch, Ronzano, Centeno, Sanz, and Furlong]{Pinero2020}
+Janet Pi{\~n}ero, Juan~Manuel Ram{\'\i}rez-Anguita, Josep Sa{\"u}ch-Pitarch,
+  Francesco Ronzano, Emilio Centeno, Ferran Sanz, and Laura~I Furlong.
+\newblock The {DisGeNET} knowledge platform for disease genomics: 2019 update.
+\newblock \emph{Nucleic Acids Research}, 48\penalty0 (D1):\penalty0 D845--D855,
+  2020.
+\newblock \doi{10.1093/nar/gkz1021}.
 
 \bibitem[{RDKit}(2023)]{RDKit2023}
 {RDKit}.
