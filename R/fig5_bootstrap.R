@@ -80,7 +80,7 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
   
   labs(
     title = "Bootstrap sensitivity: target-count control",
-    subtitle = "Hyperforin exceeds all random 10-target samples from Quercetin's target pool",
+    subtitle = "Distribution of influence scores from random 10-target samples",
     x = "Bootstrap sensitivity",
     y = "Density",
     caption = str_wrap(
