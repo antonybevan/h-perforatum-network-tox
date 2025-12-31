@@ -17,7 +17,7 @@ phase_data <- bind_rows(
       rwr_900 %>% filter(compound == "Hyperforin") %>% pull(observed_influence),
       rwr_900 %>% filter(compound == "Quercetin") %>% pull(observed_influence)
     ),
-    Method = "Random walk\nwith restart (RWR)"
+    Method = "RWR"
   ),
   tibble(
     Compound = c("Hyperforin", "Quercetin"),
@@ -26,12 +26,12 @@ phase_data <- bind_rows(
       ewr_900 %>% filter(compound == "Hyperforin") %>% pull(observed_influence),
       ewr_900 %>% filter(compound == "Quercetin") %>% pull(observed_influence)
     ),
-    Method = "Expression-weighted\ninfluence (EWI)"
+    Method = "EWI"
   )
 ) %>%
   mutate(
     PTNI = Influence / Targets,
-    Method = factor(Method, levels = c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)"))
+    Method = factor(Method, levels = c("RWR", "EWI"))
   )
 
 # --- Calculate Iso-PTNI Lines ---
@@ -39,13 +39,12 @@ phase_data <- bind_rows(
 # Therefore: Influence = PTNI × Targets
 # For diagonal reference lines
 
-ptni_levels <- c(0.001, 0.005, 0.01, 0.02, 0.05)  # Efficiency contours
+ptni_levels <- c(0.002, 0.01, 0.05)  # Simplified: just 3 key contours
 x_range <- seq(0, 70, length.out = 100)
 
 # Duplicate iso-lines for both facets
 iso_lines <- expand_grid(
-  Method = factor(c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)"), 
-                  levels = c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)")),
+  Method = factor(c("RWR", "EWI"), levels = c("RWR", "EWI")),
   PTNI = ptni_levels
 ) %>%
   rowwise() %>%
@@ -80,16 +79,14 @@ p <- ggplot() +
     size = 5, color = "#2E3440", alpha = 0.95
   ) +
   
-  # Compound labels
+  # Compound labels (clean, just names)
   geom_text_repel(
     data = phase_data,
-    aes(x = Targets, y = Influence, 
-        label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
-    size = 3.5, fontface = "bold", family = "Arial",
-    box.padding = 1.5, point.padding = 0.8,
-    force = 5, max.overlaps = Inf, seed = 42,
-    segment.color = "#666666", segment.size = 0.4,
-    lineheight = 0.9
+    aes(x = Targets, y = Influence, label = Compound),
+    size = 4, fontface = "bold", family = "Arial",
+    box.padding = 1.0, point.padding = 0.5,
+    force = 3, max.overlaps = Inf, seed = 42,
+    segment.color = "#666666", segment.size = 0.4
   ) +
   
   # Facet by method
