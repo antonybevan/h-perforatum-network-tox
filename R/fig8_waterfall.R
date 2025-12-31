@@ -15,62 +15,67 @@ quer_ewi <- ewr_900 %>% filter(compound == "Quercetin") %>% pull(z_score)
 # --- Calculate Components ---
 rwr_gap <- hyp_rwr - quer_rwr  # Starting gap
 hyp_change <- hyp_ewi - hyp_rwr  # Hyperforin's change (negative = lost)
-quer_change <- quer_ewi - quer_rwr  # Quercetin's change (positive = gained)
+quer_change <- quer_ewi - quer_rwr  # Quercetin's change (positive = gained from expresison)
 ewi_gap <- hyp_ewi - quer_ewi  # Final gap
 
-# --- Waterfall Data ---
+# --- Waterfall Data (for geom_col approach) ---
 waterfall_data <- tibble(
-  Step = c(
-    "RWR advantage",
+  Step = factor(c(
+    "RWR\nadvantage",
     "Hyperforin\nexpression effect",
     "Quercetin\nexpression effect",
-    "EWI advantage"
-  ),
+    "EWI\nadvantage"
+  ), levels = c(
+    "RWR\nadvantage",
+    "Hyperforin\nexpression effect",
+    "Quercetin\nexpression effect",
+    "EWI\nadvantage"
+  )),
   Value = c(rwr_gap, hyp_change, -quer_change, ewi_gap),
-  Type = c("start", "change", "change", "end"),
-  # Calculate cumulative positions for waterfall
-  End = cumsum(c(rwr_gap, hyp_change, -quer_change, 0)),
-  Start = c(0, rwr_gap, rwr_gap + hyp_change, 0)
+  Type = c("total", "change", "change", "total"),
+  ymin = c(0, rwr_gap + hyp_change, rwr_gap + hyp_change - quer_change, 0),
+  ymax = c(rwr_gap, rwr_gap, rwr_gap + hyp_change, ewi_gap)
 )
 
-# Adjust the last bar to show final value from 0
-waterfall_data$Start[4] <- 0
-waterfall_data$End[4] <- ewi_gap
-
-# Set factor order
+# Recalculate for proper waterfall
 waterfall_data <- waterfall_data %>%
   mutate(
-    Step = factor(Step, levels = Step),
+    ymin = case_when(
+      Step == "RWR\nadvantage" ~ 0,
+      Step == "Hyperforin\nexpression effect" ~ rwr_gap + hyp_change,
+      Step == "Quercetin\nexpression effect" ~ rwr_gap + hyp_change,
+      Step == "EWI\nadvantage" ~ 0
+    ),
+    ymax = case_when(
+      Step == "RWR\nadvantage" ~ rwr_gap,
+      Step == "Hyperforin\nexpression effect" ~ rwr_gap,
+      Step == "Quercetin\nexpression effect" ~ rwr_gap + hyp_change - quer_change,
+      Step == "EWI\nadvantage" ~ ewi_gap
+    ),
     Fill = case_when(
-      Type == "start" ~ "Initial",
-      Type == "end" ~ "Final",
+      Type == "total" ~ "Total",
       Value < 0 ~ "Decrease",
       TRUE ~ "Increase"
+    ),
+    label_y = (ymin + ymax) / 2,
+    label_text = case_when(
+      Type == "total" ~ sprintf("+%.1f", ymax - ymin),
+      TRUE ~ sprintf("%+.1f", Value)
     )
   )
 
 # --- Waterfall Chart ---
 p <- ggplot(waterfall_data, aes(x = Step)) +
   
-  # Connecting lines between bars
-  geom_segment(
-    data = waterfall_data %>% filter(Type != "end"),
-    aes(x = as.numeric(Step) + 0.4, xend = as.numeric(Step) + 0.6,
-        y = End, yend = End),
-    color = "#888888", linewidth = 0.5, linetype = "dashed"
-  ) +
-  
-  # Bars
-  geom_rect(
-    aes(xmin = as.numeric(Step) - 0.4, xmax = as.numeric(Step) + 0.4,
-        ymin = Start, ymax = End, fill = Fill),
-    color = "#2E3440", linewidth = 0.4
+  # Bars using geom_crossbar for floating bars
+  geom_crossbar(
+    aes(y = (ymin + ymax) / 2, ymin = ymin, ymax = ymax, fill = Fill),
+    width = 0.6, color = "#2E3440", linewidth = 0.4, fatten = 0
   ) +
   
   # Value labels
   geom_text(
-    aes(y = (Start + End) / 2,
-        label = sprintf("%+.1f", ifelse(Type == "change", Value, End - Start))),
+    aes(y = label_y, label = label_text),
     size = 4, fontface = "bold", family = "Arial", color = "white"
   ) +
   
@@ -79,17 +84,16 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
   
   # Scales
   scale_y_continuous(
-    limits = c(-3, 7),
+    limits = c(-2, 7),
     breaks = seq(-2, 6, 2),
     expand = expansion(mult = c(0.05, 0.05))
   ) +
   
   scale_fill_manual(
     values = c(
-      "Initial" = "#2E3440",
-      "Final" = "#2E3440",
+      "Total" = "#2E3440",
       "Decrease" = "#D64545",  # Red for loss
-      "Increase" = "#45A845"   # Green for gain (but we subtract it, so it's a loss to gap)
+      "Increase" = "#45A845"   # Green for gain
     ),
     guide = "none"
   ) +
@@ -148,3 +152,4 @@ ggsave(
 )
 
 message("✓ Figure 8 (Waterfall Chart - Gap Decomposition) saved")
+
