@@ -1,24 +1,27 @@
 \section{Introduction}
 
-Herbal preparations contain multiple bioactive compounds. 
-When adverse effects occur, attribution to specific constituents is rarely straightforward. 
-This complicates mechanistic understanding and rational risk management.
+Herbal medicines present unique challenges for toxicological risk assessment.
+Unlike single-molecule pharmaceuticals, botanical preparations contain dozens to hundreds of bioactive constituents, each potentially interacting with multiple molecular targets \citep{Hopkins2008}.
+This polypharmacological complexity complicates attribution of observed adverse effects to specific compounds, hindering mechanistic understanding and rational risk mitigation.
 
-\textit{Hypericum perforatum} (St. John's Wort) is a widely used botanical with known drug--drug interaction liability mediated by Hyperforin via CYP3A4/PXR induction. 
-Hepatotoxicity has been reported but the responsible constituent remains unidentified. 
-The extract contains pharmacologically active naphthodianthrones, phloroglucinols, and flavonoids---each class with distinct target profiles.
+\textit{Hypericum perforatum} L.\ (St.\ John's Wort) exemplifies this challenge.
+Widely used for mild-to-moderate depression, it ranks among the most studied medicinal plants worldwide \citep{Linde2008}.
+The extract contains pharmacologically distinct compound classes: naphthodianthrones (hypericin, pseudohypericin), phloroglucinols (Hyperforin, adhyperforin), and flavonoids (Quercetin, Rutin, Hyperoside) \citep{Nahrstedt1997}.
+While Hyperforin is established as the primary mediator of CYP3A4 induction and drug--drug interactions via pregnane X receptor (PXR) activation \citep{Moore2000, Watkins2001}, the constituent(s) responsible for hepatotoxic potential remain undetermined.
 
-Network pharmacology offers a systematic framework for disentangling compound-specific contributions. 
-A common approach is to measure network proximity: how close are a compound's targets to disease-associated genes? 
-The intuition is that closer targets should mean greater functional connection.
+Hepatotoxicity reports associated with \textit{H.\ perforatum} are sporadic but clinically significant \citep{Hammerness2003, Bunchorntavakul2013}.
+The European Medicines Agency notes hepatotoxicity as a potential concern requiring further characterization \citep{EMA2018}.
+Mechanistic attribution is complicated by the fact that multiple constituents show \textit{in vitro} activity on hepatic targets: Hyperforin induces drug-metabolizing enzymes \citep{Moore2000}, while Quercetin inhibits multiple CYP isoforms and modulates hepatic transporters \citep{Williamson2006}.
 
-This intuition is incomplete. 
-Proximity counts shortest paths but does not weight them by network topology. 
+Network pharmacology offers a systematic framework for disentangling compound-specific contributions to complex phenotypes \citep{Hopkins2008, Barabasi2011}.
+By modeling drug--target--disease relationships within human interactome topology, influence propagation algorithms can quantify how strongly a compound's targets connect to disease-associated genes.
+Random walk with restart (RWR) has emerged as a robust method for such analyses, with demonstrated utility in drug efficacy screening \citep{Guney2016}, drug combination prediction \citep{Cheng2019}, and adverse event modeling \citep{Duran2021}.
+
+A common heuristic in network medicine is that closer targets should mean stronger functional connection---the ``network proximity'' hypothesis \citep{Menche2015}.
+However, this intuition may be incomplete: proximity counts shortest paths but does not weight them by network topology.
 Two compounds equidistant from disease genes may have very different functional influence depending on where their targets sit in the interactome.
 
-We test this systematically. 
-Using a human protein--protein interaction network constrained to liver-expressed genes, we compare two \textit{H. perforatum} constituents: Hyperforin (10 targets) and Quercetin (62 targets). 
-We quantify proximity, influence, expression-weighted influence, per-target efficiency, and bootstrap sensitivity. 
+Here we test this systematically by comparing two \textit{H.\ perforatum} constituents with contrasting pharmacological profiles: Hyperforin (10 validated liver-expressed targets) and Quercetin (62 targets).
+Using a human protein--protein interaction network constrained to liver-expressed genes, we quantify proximity, influence, expression-weighted influence, per-target efficiency, and bootstrap sensitivity.
 We also exclude structural analogy to known hepatotoxins.
-
 The analysis addresses one question: which compound shows greater network-based hepatotoxicity signal, and is that signal robust to methodological variation?

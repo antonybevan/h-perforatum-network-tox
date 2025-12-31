@@ -1,8 +1,234 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barab{\'a}si et~al.(2011)Barab{\'a}si, Gulbahce, and
+  Loscalzo]{Barabasi2011}
+Albert-L{\'a}szl{\'o} Barab{\'a}si, Natali Gulbahce, and Joseph Loscalzo.
+\newblock Network medicine: a network-based approach to human disease.
+\newblock \emph{Nature Reviews Genetics}, 12\penalty0 (1):\penalty0 56--68,
+  2011.
+\newblock \doi{10.1038/nrg2918}.
+
+\bibitem[Bauer et~al.(2003)Bauer, St{\"o}rmer, Johne, Kr{\"u}ger, Budde,
+  Neumayer, Roots, and Mai]{Bauer2004}
+Susanne Bauer, Eva St{\"o}rmer, Andrea Johne, Heinrich Kr{\"u}ger, Klemens
+  Budde, Hans-Hellmut Neumayer, Ivar Roots, and Ingo Mai.
+\newblock Alterations in cyclosporin {A} pharmacokinetics and metabolism during
+  treatment with {St John's} wort in renal transplant patients.
+\newblock \emph{British Journal of Clinical Pharmacology}, 55\penalty0
+  (2):\penalty0 203--211, 2003.
+\newblock \doi{10.1046/j.1365-2125.2003.01759.x}.
+
+\bibitem[Boots et~al.(2008)Boots, Haenen, and Bast]{Boots2008}
+Agnes~W Boots, Guido~RMM Haenen, and Aalt Bast.
+\newblock Health effects of quercetin: from antioxidant to nutraceutical.
+\newblock \emph{European Journal of Pharmacology}, 585\penalty0 (2-3):\penalty0
+  325--337, 2008.
+\newblock \doi{10.1016/j.ejphar.2008.03.008}.
+
+\bibitem[Bunchorntavakul and Reddy(2013)]{Bunchorntavakul2013}
+Chalermrat Bunchorntavakul and K~Rajender Reddy.
+\newblock Review article: herbal and dietary supplement hepatotoxicity.
+\newblock \emph{Alimentary Pharmacology \& Therapeutics}, 37\penalty0
+  (1):\penalty0 3--17, 2013.
+\newblock \doi{10.1111/apt.12109}.
+
+\bibitem[Chen et~al.(2016)Chen, Suzuki, Thakkar, Yu, Hu, and Tong]{Chen2016}
+Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
+\newblock {DILIrank}: the largest reference drug list ranked by the risk for
+  developing drug-induced liver injury in humans.
+\newblock \emph{Drug Discovery Today}, 21\penalty0 (4):\penalty0 648--653,
+  2016.
+\newblock \doi{10.1016/j.drudis.2016.02.015}.
+
+\bibitem[Cheng et~al.(2019)Cheng, Kov{\'a}cs, and Bara{\'b}asi]{Cheng2019}
+Feixiong Cheng, Istv{\'a}n~A Kov{\'a}cs, and Albert-L{\'a}szl{\'o}
+  Bara{\'b}asi.
+\newblock Network-based prediction of drug combinations.
+\newblock \emph{Nature Communications}, 10:\penalty0 1197, 2019.
+\newblock \doi{10.1038/s41467-019-09186-x}.
+
+\bibitem[Dur{\'a}n et~al.(2021)Dur{\'a}n, Perezy, Zhao, Cheng, and
+  Barab{\'a}si]{Duran2021}
+Crist{\'o}bal Dur{\'a}n, Silvia Perezy, Yi~Zhao, Feixiong Cheng, and
+  Albert-L{\'a}szl{\'o} Barab{\'a}si.
+\newblock Drug side effect prediction based on drug-drug interactions and
+  targeted drug structural signatures.
+\newblock \emph{Bioinformatics}, 37\penalty0 (22):\penalty0 4175--4182, 2021.
+\newblock \doi{10.1093/bioinformatics/btab458}.
+
+\bibitem[{European Medicines Agency}(2018)]{EMA2018}
+{European Medicines Agency}.
+\newblock Assessment report on {Hypericum} perforatum {L}., herba.
+\newblock EMA/HMPC/101303/2008 Rev.1, 2018.
+
+\bibitem[{GTEx Consortium}(2020)]{GTEx2020}
+{GTEx Consortium}.
+\newblock The {GTEx} {Consortium} atlas of genetic regulatory effects across
+  human tissues.
+\newblock \emph{Science}, 369\penalty0 (6509):\penalty0 1318--1330, 2020.
+\newblock \doi{10.1126/science.aaz1776}.
+
+\bibitem[Guney et~al.(2016)Guney, Menche, Vidal, and Bara{\'b}asi]{Guney2016}
+Emre Guney, J{\"o}rg Menche, Marc Vidal, and Albert-L{\'a}szl{\'o}
+  Bara{\'b}asi.
+\newblock Network-based in silico drug efficacy screening.
+\newblock \emph{Nature Communications}, 7:\penalty0 10331, 2016.
+\newblock \doi{10.1038/ncomms10331}.
+
+\bibitem[Hammerness et~al.(2003)Hammerness, Basch, Ulbricht, Barrette, Foppa,
+  Basch, Bent, Boon, and Ernst]{Hammerness2003}
+Paul Hammerness, Ethan Basch, Catherine Ulbricht, Erica-Pauline Barrette, Ivo
+  Foppa, Samuel Basch, Stephen Bent, Heather Boon, and Edzard Ernst.
+\newblock {St John's} wort: a systematic review of adverse effects and drug
+  interactions for the consultation psychiatrist.
+\newblock \emph{Psychosomatics}, 44\penalty0 (4):\penalty0 271--282, 2003.
+\newblock \doi{10.1176/appi.psy.44.4.271}.
+
+\bibitem[Heinrich et~al.(2020)Heinrich, Appendino, Efferth, Furst, Izzo,
+  Kayser, Pezzuto, and Viljoen]{Heinrich2020}
+Michael Heinrich, Giovanni Appendino, Thomas Efferth, Robert Furst, Angelo~A
+  Izzo, Oliver Kayser, John~M Pezzuto, and Alvaro Viljoen.
+\newblock Best practice in research--{Overcoming} common challenges in
+  phytopharmacological research.
+\newblock \emph{Journal of Ethnopharmacology}, 246:\penalty0 112230, 2020.
+\newblock \doi{10.1016/j.jep.2019.112230}.
+
+\bibitem[Hopkins(2008)]{Hopkins2008}
+Andrew~L Hopkins.
+\newblock Network pharmacology: the next paradigm in drug discovery.
+\newblock \emph{Nature Chemical Biology}, 4\penalty0 (11):\penalty0 682--690,
+  2008.
+\newblock \doi{10.1038/nchembio.118}.
+
+\bibitem[Klaassen and Aleksunes(2010)]{Klaassen2010}
+Curtis~D Klaassen and Lauren~M Aleksunes.
+\newblock Xenobiotic, bile acid, and cholesterol transporters: function and
+  regulation.
+\newblock \emph{Pharmacological Reviews}, 62\penalty0 (1):\penalty0 1--96,
+  2010.
+\newblock \doi{10.1124/pr.109.002014}.
+
+\bibitem[K{\"o}hler et~al.(2008)K{\"o}hler, Bauer, Horn, and
+  Robinson]{Kohler2008}
+Sebastian K{\"o}hler, Sebastian Bauer, Denise Horn, and Peter~N Robinson.
+\newblock Walking the interactome for prioritization of candidate disease
+  genes.
+\newblock \emph{The American Journal of Human Genetics}, 82\penalty0
+  (4):\penalty0 949--958, 2008.
+\newblock \doi{10.1016/j.ajhg.2008.02.013}.
+
+\bibitem[Kuhn et~al.(2014)Kuhn, Szklarczyk, Pletscher-Frankild, Blicher, von
+  Mering, Jensen, and Bork]{Kuhn2014}
+Michael Kuhn, Damian Szklarczyk, Sune Pletscher-Frankild, Thomas~H{\o}jgaard
+  Blicher, Christian von Mering, Lars~J Jensen, and Peer Bork.
+\newblock {STITCH} 4: integration of protein--chemical interactions with user
+  data.
+\newblock \emph{Nucleic Acids Research}, 42\penalty0 (D1):\penalty0 D401--D407,
+  2014.
+\newblock \doi{10.1093/nar/gkt1207}.
+
+\bibitem[Linde et~al.(2008)Linde, Berner, and Kriston]{Linde2008}
+Klaus Linde, Michael~M Berner, and Levente Kriston.
+\newblock St {John's} wort for major depression.
+\newblock \emph{Cochrane Database of Systematic Reviews}, 4:\penalty0 CD000448,
+  2008.
+\newblock \doi{10.1002/14651858.CD000448.pub3}.
+
+\bibitem[Maggiora et~al.(2014)Maggiora, Vogt, Stumpfe, and
+  Bajorath]{Maggiora2014}
+Gerald Maggiora, Martin Vogt, Dagmar Stumpfe, and J{\"u}rgen Bajorath.
+\newblock Molecular similarity in medicinal chemistry.
+\newblock \emph{Journal of Medicinal Chemistry}, 57\penalty0 (8):\penalty0
+  3186--3204, 2014.
+\newblock \doi{10.1021/jm401411z}.
+
+\bibitem[Menche et~al.(2015)Menche, Sharma, Kitsak, Ghiassian, Vidal, Loscalzo,
+  and Bara{\'b}asi]{Menche2015}
+J{\"o}rg Menche, Amitabh Sharma, Maksim Kitsak, Susan~Dina Ghiassian, Marc
+  Vidal, Joseph Loscalzo, and Albert-L{\'a}szl{\'o} Bara{\'b}asi.
+\newblock Uncovering disease-disease relationships through the incomplete
+  interactome.
+\newblock \emph{Science}, 347\penalty0 (6224):\penalty0 1257601, 2015.
+\newblock \doi{10.1126/science.1257601}.
+
+\bibitem[Mendez et~al.(2019)Mendez, Gaulton, Bento, Chambers, De~Veij,
+  F{\'e}lix, Maga{\~n}a, Mosquera, Mutowo, Nowotka, Gordillo-Mara{\~n}{\'o}n,
+  Hunter, Junco, Mugumbate, Rodriguez-Lopez, Atkinson, Bosc, Radoux,
+  Segura-Cabrera, Hersey, and Leach]{Mendez2019}
+David Mendez, Anna Gaulton, A~Patr{\'i}cia Bento, Jon Chambers, Marleen
+  De~Veij, Eloy F{\'e}lix, Mar{\'\i}a~Paula Maga{\~n}a, Juan~F Mosquera,
+  Prudence Mutowo, Micha{\l} Nowotka, Maria Gordillo-Mara{\~n}{\'o}n, Fiona
+  Hunter, Laura Junco, Grace Mugumbate, Milagros Rodriguez-Lopez, Francis
+  Atkinson, Nicolas Bosc, Chris~J Radoux, Aldo Segura-Cabrera, Anne Hersey, and
+  Andrew~R Leach.
+\newblock {ChEMBL}: towards direct deposition of bioassay data.
+\newblock \emph{Nucleic Acids Research}, 47\penalty0 (D1):\penalty0 D930--D940,
+  2019.
+\newblock \doi{10.1093/nar/gky1075}.
+
+\bibitem[Moore et~al.(2000)Moore, Goodwin, Jones, Wisely, Serabjit-Singh,
+  Willson, Collins, and Kliewer]{Moore2000}
+Linda~B Moore, Bryan Goodwin, Stacey~A Jones, G~Bruce Wisely, Connie~J
+  Serabjit-Singh, Timothy~M Willson, John~L Collins, and Steven~A Kliewer.
+\newblock {St. John's} wort induces hepatic drug metabolism through activation
+  of the pregnane {X} receptor.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 97\penalty0
+  (13):\penalty0 7500--7502, 2000.
+\newblock \doi{10.1073/pnas.130155097}.
+
+\bibitem[Nahrstedt and Butterweck(1997)]{Nahrstedt1997}
+Adolf Nahrstedt and Veronika Butterweck.
+\newblock Biologically active and other chemical constituents of the herb of
+  {Hypericum} perforatum {L.}
+\newblock \emph{Pharmacopsychiatry}, 30\penalty0 (S2):\penalty0 129--134, 1997.
+\newblock \doi{10.1055/s-2007-979533}.
+
+\bibitem[{RDKit}(2023)]{RDKit2023}
+{RDKit}.
+\newblock {RDKit}: Open-source cheminformatics.
+\newblock \url{https://www.rdkit.org}, 2023.
+\newblock Version 2023.03.
+
+\bibitem[Szklarczyk et~al.(2023)Szklarczyk, Kirsch, Koutrouli, Nastou,
+  Mehryary, Hachilif, Gable, Fang, Doncheva, Pyysalo, Bork, Jensen, and von
+  Mering]{Szklarczyk2023}
+Damian Szklarczyk, Rebecca Kirsch, Mikaela Koutrouli, Katerina Nastou, Farrokh
+  Mehryary, Radja Hachilif, Annika~L Gable, Tao Fang, Nadezhda~T Doncheva,
+  Sampo Pyysalo, Peer Bork, Lars~J Jensen, and Christian von Mering.
+\newblock The {STRING} database in 2023: protein--protein association networks
+  and functional enrichment analyses for any sequenced genome of interest.
+\newblock \emph{Nucleic Acids Research}, 51\penalty0 (D1):\penalty0 D483--D489,
+  2023.
+\newblock \doi{10.1093/nar/gkac1000}.
+
+\bibitem[{UniProt Consortium}(2023)]{UniProt2023}
+{UniProt Consortium}.
+\newblock {UniProt}: the {Universal Protein Knowledgebase} in 2023.
+\newblock \emph{Nucleic Acids Research}, 51\penalty0 (D1):\penalty0 D483--D489,
+  2023.
+\newblock \doi{10.1093/nar/gkac1052}.
+
+\bibitem[Watkins et~al.(2001)Watkins, Wisely, Moore, Collins, Lambert,
+  Williams, Willson, Kliewer, and Redinbo]{Watkins2001}
+Reginald~E Watkins, G~Bruce Wisely, Linda~B Moore, John~L Collins, Millard~H
+  Lambert, Shawn~P Williams, Timothy~M Willson, Steven~A Kliewer, and Matthew~R
+  Redinbo.
+\newblock The human nuclear xenobiotic receptor {PXR}: structural determinants
+  of directed promiscuity.
+\newblock \emph{Science}, 292\penalty0 (5525):\penalty0 2329--2333, 2001.
+\newblock \doi{10.1126/science.1060762}.
+
+\bibitem[Williamson et~al.(2000)Williamson, Day, Plumb, and
+  Couteau]{Williamson2006}
+Gary Williamson, Andrew~J Day, Geoffrey~W Plumb, and D{\'e}sirr{\'e}e Couteau.
+\newblock Human metabolic pathways of dietary flavonoids and cinnamates.
+\newblock \emph{Biochemical Society Transactions}, 28\penalty0 (2):\penalty0
+  16--22, 2000.
+\newblock \doi{10.1042/bst0280016}.
 
 \end{thebibliography}

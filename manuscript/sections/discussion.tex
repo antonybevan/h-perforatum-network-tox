@@ -1,55 +1,62 @@
 \section{Discussion}
 
-\subsection{What is ruled out}
+Our network pharmacology analysis provides convergent evidence that Hyperforin, not Quercetin, is the primary hepatotoxicity liability in \textit{Hypericum perforatum}.
+Despite having six-fold fewer targets, Hyperforin achieves dramatically greater influence on DILI pathways, demonstrates 22-fold higher per-target efficiency, and maintains its advantage under tissue-specific expression constraints.
+Critically, this superiority cannot be explained by target-count confounding, chance target selection, or structural analogy to known hepatotoxins.
 
-Chemical similarity analysis excludes structural analogy to known hepatotoxins as an explanation for the network signal. 
-Both compounds fall below standard analog thresholds. 
-The observed influence differences therefore arise from target engagement patterns, not chemical class effects.
+\subsection{The proximity paradox}
 
-\subsection{What alternative explanation is eliminated}
+The dissociation between proximity and influence represents a methodologically important finding with implications beyond the present case study.
+Shortest-path proximity---a widely used metric in network medicine \citep{Menche2015, Guney2016}---suggested Quercetin as the greater concern due to its targets' closer topological distance to DILI genes.
+However, proximity metrics count paths rather than weighting them by network structure.
 
-Bootstrap resampling excludes target count as a sufficient explanation. 
-No random 10-target sample from Quercetin's pool achieves Hyperforin's influence. 
-The advantage is not an artefact of having fewer, ``luckier'' targets.
+Random walk with restart captures the cumulative effect of multiple indirect paths, effectively measuring how much signal arrives at disease genes from compound targets after equilibrating through the network \citep{Kohler2008}.
+The rank reversal we observe (closer but weaker vs.\ farther but stronger) demonstrates that proximity and influence measure fundamentally different network properties.
+This finding argues for caution in interpreting proximity-based predictions without complementary influence analysis.
 
-\subsection{Why efficiency reframes polypharmacology}
+\subsection{Biological basis of mechanistic specificity}
 
-PTNI normalizes influence by target count, reframing the comparison as efficiency rather than magnitude. 
-Hyperforin achieves 22-fold higher influence per target. 
-This shifts the question from ``which compound has more influence?'' to ``which compound uses its targets more effectively?''
+The biological basis of Hyperforin's superior efficiency likely reflects its unique target profile.
+Hyperforin potently activates PXR (NR1I2), the master regulator of xenobiotic response, leading to coordinated induction of CYP3A4, CYP2C9, and ABC transporters \citep{Moore2000, Watkins2001}.
+These targets are not merely abundant in liver tissue but occupy topologically central positions connecting drug metabolism to broader cellular stress response pathways \citep{Klaassen2010}.
 
-Polypharmacology is often equated with liability. 
-These data indicate that target count is a poor proxy for risk. 
-A compound with few, strategically positioned targets may pose greater concern than a promiscuous compound with many peripheral targets.
+In contrast, Quercetin's 62 targets, while individually liver-expressed, are distributed across multiple functional modules: flavonoid biosynthesis, cell signaling, and antioxidant response \citep{Boots2008}.
+This dispersion dilutes the compound's influence on any single pathway, including DILI-relevant pathways.
+The 22-fold PTNI difference quantifies this distinction: Hyperforin's targets are ``focused'' on hepatotoxicity-relevant nodes, while Quercetin's are ``scattered.''
 
-\subsection{Why biology constrains but does not rescue proximity}
+\subsection{Expression weighting as biological constraint}
 
-Expression-weighted propagation tests whether topological findings persist under tissue-specific constraints. 
-The gap narrows but does not reverse. 
-Quercetin's high-expression targets (notably CFB) improve its signal propagation, but not enough to overcome Hyperforin's topological advantage.
+Expression-weighted influence propagation tests whether topological findings persist under biologically realistic constraints.
+By weighting edge transitions by liver gene expression, we preferentially route signal through tissue-relevant portions of the interactome.
+The observation that Hyperforin's advantage narrows ($\Delta$Z: +5.8 $\rightarrow$ +3.5) but does not reverse under this constraint is informative.
 
-This addresses a common objection: that network topology without expression context is biologically unrealistic. 
-The constraint was applied. The ranking held.
+The narrowing reflects the fact that some of Quercetin's targets (notably CFB at 1,115 TPM) are highly expressed in liver, boosting its signal propagation when expression is considered.
+However, Hyperforin's core advantage---deriving from topological position rather than expression level---remains robust.
+This addresses a common critique of network analyses: that topology without expression context is biologically unrealistic.
+The constraint was applied; the ranking held.
 
-\subsection{Why the field's intuition fails}
+\subsection{Implications for botanical safety assessment}
 
-Network proximity is intuitive: closer should mean more connected. 
-But proximity counts paths; it does not weight them by topology. 
-RWR captures cumulative influence across multiple indirect paths.
+These findings have practical implications for safety evaluation of complex botanical products.
+Current approaches often focus on enumerating pharmacologically active constituents without weighting their mechanistic contributions \citep{Heinrich2020}.
+Our results demonstrate that target count is a poor proxy for risk: a compound with few strategically positioned targets may pose greater liability than a promiscuous compound with many peripheral targets.
 
-Quercetin is closer but weaker. 
-Hyperforin is farther but stronger. 
-The dissociation demonstrates that shortest-path metrics---while widely used---do not predict functional influence.
+For \textit{H.\ perforatum} specifically, these data support prioritizing Hyperforin content in safety-oriented quality control.
+This is consistent with the observation that drug interaction liability correlates with Hyperforin content \citep{Bauer2004}.
+Formulations deliberately depleted of Hyperforin (e.g., Ze 117) may offer improved safety profiles, though this remains to be validated for hepatotoxicity specifically.
 
 \subsection{Limitations}
 
-Drug--target interactions from public databases may be incomplete. 
-The STRING interactome aggregates across cell types. 
-PTNI was not formally tested via permutation. 
-Network predictions require experimental validation.
+Several limitations warrant consideration.
+First, drug--target interactions from public databases (STITCH, ChEMBL) may be incomplete for less-studied compounds; novel targets could alter the analysis.
+Second, the STRING interactome aggregates interactions across cell types and conditions; a liver-specific interactome might yield different results.
+Third, PTNI is presented as a derived descriptive metric without independent statistical testing; it should be interpreted as a normalization rather than a formal test.
+Fourth, network predictions, while mechanistically grounded, require experimental validation in appropriate hepatotoxicity models.
+Fifth, our analysis focuses on two compounds; extension to other \textit{H.\ perforatum} constituents (hypericin, Rutin) would strengthen generalizability.
 
-\subsection{Conclusion}
+\subsection{Conclusions}
 
-Hyperforin, not Quercetin, drives the hepatotoxicity signal from \textit{Hypericum perforatum}.
-The evidence is: higher influence despite fewer targets, persistence under expression constraint, exclusion of target-count and structural-analog explanations.
-The mechanism is specificity, not promiscuity.
+We demonstrate that Hyperforin, through mechanistic specificity rather than target promiscuity, drives the network-based hepatotoxicity signal from \textit{Hypericum perforatum}.
+The evidence includes: (1) higher influence despite fewer and more distant targets; (2) persistence under expression-weighted constraint; (3) 22-fold efficiency advantage; (4) exclusion of target-count and structural-analog confounders.
+The combination of permutation-based inference, expression-weighted propagation, and multiple control analyses provides a rigorous framework applicable to other complex botanical products.
+These findings support the regulatory focus on Hyperforin content for safety evaluation of St.\ John's Wort preparations.
