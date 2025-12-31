@@ -104,7 +104,7 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
     x = NULL,
     y = "Z-score gap contribution",
     caption = str_wrap(
-      "[SENSITIVITY ANALYSIS] Decomposition of the Z-score differential under expression-weighted influence propagation. The RWR advantage (+5.8) is partitioned into: (1) Hyperforin's change under expression weighting (−1.2); (2) Quercetin's gain (+1.1, driven by CFB at 1115 TPM). Residual advantage (+3.5) remains significant (both p < 10⁻⁸). GTEx v8 liver expression (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations.",
+      "[BIOLOGICAL DECOMPOSITION] The RWR advantage (+5.8) is partitioned under expression-weighted influence propagation: (1) Hyperforin's change under expression weighting (−1.2); (2) Quercetin's gain (+1.1, driven by CFB at 1115 TPM). Residual advantage (+3.5) remains significant (both p < 10⁻⁸). GTEx v8 liver expression (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations.",
       width = 110
     )
   ) +
