@@ -64,13 +64,13 @@ p <- ggplot(data_wide, aes(y = Compound)) +
   # Reference line at zero
   geom_vline(xintercept = 0, linetype = "dashed", color = "#AAAAAA", linewidth = 0.5) +
   
-  # Column headers (with directional cues)
-  annotate("text", x = -5.5, y = 2.6, label = "Shortest-path proximity\n(closer = negative Z)", 
-           hjust = 0.5, vjust = 0, size = 3.8, fontface = "bold", 
-           family = "Arial", color = "#4A4A4A") +
-  annotate("text", x = 9, y = 2.6, label = "Influence Z-score\n(stronger = positive Z)", 
-           hjust = 0.5, vjust = 0, size = 3.8, fontface = "bold", 
-           family = "Arial", color = "#4A4A4A") +
+  # Column headers (with explicit directional cues)
+  annotate("text", x = -5.5, y = 2.6, label = "Proximity\n← more negative = closer", 
+           hjust = 0.5, vjust = 0, size = 3.5, fontface = "bold", 
+           family = "Arial", color = "#4A4A4A", lineheight = 0.9) +
+  annotate("text", x = 9, y = 2.6, label = "Influence\nmore positive = stronger →", 
+           hjust = 0.5, vjust = 0, size = 3.5, fontface = "bold", 
+           family = "Arial", color = "#4A4A4A", lineheight = 0.9) +
   
   # Scales
   scale_x_continuous(
