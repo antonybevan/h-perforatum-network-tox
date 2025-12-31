@@ -79,16 +79,16 @@ p <- ggplot() +
     size = 5, color = "#2E3440", alpha = 0.95
   ) +
   
-  # Compound labels with PTNI values
+  # Compound labels with PTNI values (small and neat)
   geom_text_repel(
     data = phase_data,
     aes(x = Targets, y = Influence, 
         label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
-    size = 3.8, fontface = "bold", family = "Arial",
-    box.padding = 1.2, point.padding = 0.6,
-    force = 4, max.overlaps = Inf, seed = 42,
-    segment.color = "#666666", segment.size = 0.4,
-    lineheight = 0.9
+    size = 3.0, fontface = "bold", family = "Arial",
+    box.padding = 0.8, point.padding = 0.4,
+    force = 3, max.overlaps = Inf, seed = 42,
+    segment.color = "#888888", segment.size = 0.3,
+    lineheight = 0.85
   ) +
   
   # Facet by method
