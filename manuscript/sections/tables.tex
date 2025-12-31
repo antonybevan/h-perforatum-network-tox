@@ -1,48 +1,127 @@
 \clearpage
 \section*{Tables}
 
+% Table 1: Main Results Summary
 \begin{table}[ht]
 \centering
-\caption{\textbf{Summary of results.} Z-scores from $n = 1{,}000$ degree-matched permutations.}
-\label{tab:summary}
+\caption{\textbf{Network pharmacology results.} Z-scores from $n = 1{,}000$ degree-matched permutations. PTNI = per-target normalized influence. STRING v12.0 (confidence $\geq$900), GTEx v8 liver expression.}
+\label{tab:main_results}
 \vspace{0.5em}
-\begin{tabular}{lccc}
+\small
+\begin{tabular}{llrrrrr}
 \toprule
-\textbf{Metric} & \textbf{Hyperforin} & \textbf{Quercetin} & \textbf{Ratio} \\
+\textbf{Analysis} & \textbf{Compound} & \textbf{Targets} & \textbf{Observed} & \textbf{Z-score} & \textbf{$p$-value} & \textbf{PTNI} \\
 \midrule
-Targets & 10 & 62 & 0.16$\times$ \\
+\multicolumn{7}{l}{\textit{Shortest-path proximity (descriptive)}} \\
 \addlinespace
-Proximity Z & $-$2.6 & $-$5.4 & --- \\
-Influence Z (RWR) & +10.3 & +4.4 & 2.3$\times$ \\
-Influence Z (EWI) & +9.1 & +5.6 & 1.6$\times$ \\
+& Hyperforin & 10 & $d_c = 1.30$ & $-$3.86 & $<10^{-16}$ & --- \\
+& Quercetin & 62 & $d_c = 1.68$ & $-$5.44 & $<10^{-16}$ & --- \\
 \addlinespace
-PTNI (RWR) & 0.0114 & 0.0005 & 22$\times$ \\
-PTNI (EWI) & 0.0133 & 0.0008 & 17$\times$ \\
+\multicolumn{7}{l}{\textit{Random walk influence (inferential)}} \\
 \addlinespace
-Chemical similarity & 0.18 & 0.21 & --- \\
+& Hyperforin & 10 & 0.114 & +10.27 & $<10^{-16}$ & 0.0114 \\
+& Quercetin & 62 & 0.032 & +4.42 & $4.9 \times 10^{-6}$ & 0.0005 \\
+\addlinespace
+\multicolumn{7}{l}{\textit{Expression-weighted influence (constraining)}} \\
+\addlinespace
+& Hyperforin & 10 & 0.133 & +9.07 & $<10^{-16}$ & 0.0133 \\
+& Quercetin & 62 & 0.049 & +5.56 & $1.4 \times 10^{-8}$ & 0.0008 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+% Table 2: PTNI Comparison
 \begin{table}[ht]
 \centering
-\caption{\textbf{Hyperforin targets.} Liver expression from GTEx v8.}
+\caption{\textbf{Per-target network influence (PTNI) comparison.} PTNI = total influence / target count. Ratio = Hyperforin PTNI / Quercetin PTNI.}
+\label{tab:ptni}
+\vspace{0.5em}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Hyperforin} & \textbf{Quercetin} & \textbf{Ratio} & \textbf{Interpretation} \\
+\midrule
+RWR & 0.0114 & 0.0005 & 22$\times$ & Higher efficiency \\
+EWI & 0.0133 & 0.0008 & 17$\times$ & Advantage persists \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 3: Bootstrap Sensitivity
+\begin{table}[ht]
+\centering
+\caption{\textbf{Bootstrap sensitivity analysis.} 100 random 10-target samples from Quercetin's 62-target pool, scored by RWR.}
+\label{tab:bootstrap}
+\vspace{0.5em}
+\begin{tabular}{lc}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Hyperforin observed influence & 0.114 \\
+Bootstrap mean (Quercetin 10-target samples) & 0.031 \\
+Bootstrap standard deviation & 0.010 \\
+95\% CI lower bound & 0.016 \\
+95\% CI upper bound & 0.054 \\
+Hyperforin / bootstrap mean & 3.7$\times$ \\
+Hyperforin exceeds 95\% CI & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 4: Chemical Similarity Control
+\begin{table}[ht]
+\centering
+\caption{\textbf{Chemical similarity to known hepatotoxins.} Morgan fingerprints (ECFP4, radius 2, 2048 bits). DILIrank reference set: 542 DILI-positive, 365 DILI-negative drugs. Analog threshold: Tanimoto $>$ 0.4.}
+\label{tab:chemsim}
+\vspace{0.5em}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Compound} & \textbf{Mean (DILI+)} & \textbf{Max (DILI+)} & \textbf{Mean (DILI$-$)} & \textbf{Max (DILI$-$)} & \textbf{Analog?} \\
+\midrule
+Hyperforin & 0.079 & 0.154 & 0.081 & 0.202 & No \\
+Quercetin & 0.078 & 0.212 & 0.070 & 0.220 & No \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 5: Hyperforin Target Genes
+\begin{table}[ht]
+\centering
+\caption{\textbf{Hyperforin target genes in the liver-expressed network.} Targets present in STRING v12.0 LCC (confidence $\geq$900) with liver expression $\geq$1 TPM (GTEx v8).}
 \label{tab:hyperforin_targets}
 \vspace{0.5em}
-\begin{tabular}{llr}
+\begin{tabular}{llrr}
 \toprule
-\textbf{Gene} & \textbf{Protein} & \textbf{TPM} \\
+\textbf{Gene} & \textbf{Protein} & \textbf{TPM} & \textbf{Degree} \\
 \midrule
-NR1I2 & PXR & 12 \\
-CYP3A4 & Cytochrome P450 3A4 & 335 \\
-CYP2C9 & Cytochrome P450 2C9 & 188 \\
-ABCB1 & P-glycoprotein & 9 \\
-ABCC2 & MRP2 & 42 \\
-SLC22A1 & OCT1 & 157 \\
-UGT1A1 & UGT1A1 & 89 \\
-SULT2A1 & SULT2A1 & 235 \\
-CYP2B6 & Cytochrome P450 2B6 & 45 \\
-CYP2C19 & Cytochrome P450 2C19 & 23 \\
+NR1I2 & Pregnane X receptor (PXR) & 43 & 28 \\
+CYP3A4 & Cytochrome P450 3A4 & 335 & 89 \\
+CYP2C9 & Cytochrome P450 2C9 & 434 & 76 \\
+CYP2B6 & Cytochrome P450 2B6 & 125 & 42 \\
+ABCB1 & P-glycoprotein & 7 & 53 \\
+ABCG2 & BCRP & 4 & 31 \\
+ABCC2 & MRP2 & 60 & 38 \\
+AKT1 & Protein kinase B & 33 & 312 \\
+MMP2 & Matrix metalloproteinase-2 & 5 & 87 \\
+MMP9 & Matrix metalloproteinase-9 & 1 & 94 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 6: Network Threshold Robustness
+\begin{table}[ht]
+\centering
+\caption{\textbf{Robustness across network confidence thresholds.} Results for STRING confidence $\geq$700 and $\geq$900.}
+\label{tab:threshold_robustness}
+\vspace{0.5em}
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Threshold} & \textbf{Compound} & \textbf{RWR Z} & \textbf{EWI Z} & \textbf{Proximity Z} & \textbf{Ranking} \\
+\midrule
+$\geq$700 & Hyperforin & +10.90 & +10.46 & $-$6.04 & 1 \\
+$\geq$700 & Quercetin & +5.16 & +6.65 & $-$5.46 & 2 \\
+\addlinespace
+$\geq$900 & Hyperforin & +10.27 & +9.07 & $-$3.86 & 1 \\
+$\geq$900 & Quercetin & +4.42 & +5.56 & $-$5.44 & 2 \\
 \bottomrule
 \end{tabular}
 \end{table}
