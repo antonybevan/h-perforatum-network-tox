@@ -1,23 +1,24 @@
 \section{Introduction}
 
-% Paragraph 1: The problem - polypharmacology and herb safety
-Herbal medicines present unique challenges for toxicological risk assessment due to their inherent chemical complexity. 
-Unlike single-molecule pharmaceuticals, botanical preparations contain dozens to hundreds of bioactive constituents, each potentially interacting with multiple molecular targets. 
-This polypharmacological nature complicates the attribution of observed adverse effects to specific compounds, hindering both mechanistic understanding and rational risk mitigation strategies.
+Herbal preparations contain multiple bioactive compounds. 
+When adverse effects occur, attribution to specific constituents is rarely straightforward. 
+This complicates mechanistic understanding and rational risk management.
 
-% Paragraph 2: The case study - H. perforatum
-\textit{Hypericum perforatum} (St. John's Wort) exemplifies this challenge. 
-Widely used globally for mild-to-moderate depression, it is associated with clinically significant drug interactions via CYP3A4/PXR induction and sporadic reports of hepatotoxicity \citep{WHO2004,EMA2018}. 
-The extract contains multiple pharmacologically active classes including naphthodianthrones (hypericin, pseudohypericin), phloroglucinols (Hyperforin), and flavonoids (Quercetin, Rutin). 
-While Hyperforin is recognized as the primary driver of drug interactions, the constituent(s) responsible for hepatotoxic potential remain undetermined.
+\textit{Hypericum perforatum} (St. John's Wort) is a widely used botanical with known drug--drug interaction liability mediated by Hyperforin via CYP3A4/PXR induction. 
+Hepatotoxicity has been reported but the responsible constituent remains unidentified. 
+The extract contains pharmacologically active naphthodianthrones, phloroglucinols, and flavonoids---each class with distinct target profiles.
 
-% Paragraph 3: The approach - network pharmacology
-Network pharmacology offers a systematic framework for disentangling compound-specific contributions to complex phenotypes. 
-By modeling drug--target--disease relationships within human interactome topology, influence propagation algorithms can quantify how strongly a compound's targets connect to disease-associated genes. 
-Random walk with restart (RWR) has emerged as a robust method for such analyses, with demonstrated utility in drug repositioning, adverse event prediction, and mechanism elucidation \citep{Guney2016,Cheng2018}.
+Network pharmacology offers a systematic framework for disentangling compound-specific contributions. 
+A common approach is to measure network proximity: how close are a compound's targets to disease-associated genes? 
+The intuition is that closer targets should mean greater functional connection.
 
-% Paragraph 4: The gap and the contribution
-Previous network analyses of \textit{H. perforatum} have catalogued target interactions but have not rigorously tested whether observed network proximity reflects functional influence exceeding random expectation. 
-Here, we address this gap by applying permutation-based inference with degree-matched null models. 
-We further extend the analysis with expression-weighted influence propagation using tissue-specific transcriptomic data to assess whether topological findings persist under biologically realistic constraints. 
-Our results establish Hyperforin, not Quercetin or other flavonoids, as the primary hepatotoxicity liability through mechanistic specificity rather than target promiscuity.
+This intuition is incomplete. 
+Proximity counts shortest paths but does not weight them by network topology. 
+Two compounds equidistant from disease genes may have very different functional influence depending on where their targets sit in the interactome.
+
+We test this systematically. 
+Using a human protein--protein interaction network constrained to liver-expressed genes, we compare two \textit{H. perforatum} constituents: Hyperforin (10 targets) and Quercetin (62 targets). 
+We quantify proximity, influence, expression-weighted influence, per-target efficiency, and bootstrap sensitivity. 
+We also exclude structural analogy to known hepatotoxins.
+
+The analysis addresses one question: which compound shows greater network-based hepatotoxicity signal, and is that signal robust to methodological variation?

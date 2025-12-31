@@ -1,14 +1,16 @@
 \section*{Abstract}
 
-Polypharmacology complicates the attribution of adverse effects to specific bioactive compounds in complex herbal extracts. 
-\textit{Hypericum perforatum} (St. John's Wort) contains multiple pharmacologically active constituents, yet its hepatotoxic potential remains incompletely characterized at the mechanistic level. 
-Here we apply network pharmacology with rigorous permutation-based inference to disentangle compound-specific contributions to hepatotoxicity risk. 
-Using a human protein--protein interaction network constrained to liver-expressed genes (GTEx v8), we quantify influence propagation from compound targets to established drug-induced liver injury (DILI) genes via random walk with restart. 
-Despite having six-fold fewer targets (10 vs.\ 62), Hyperforin achieves significantly greater influence on DILI pathways than Quercetin (Z = +10.3 vs.\ +4.4; $p < 10^{-16}$). 
-This advantage persists under expression-weighted propagation, with the gap narrowing (\(\Delta\)Z: +5.8 \(\rightarrow\) +3.5) but never reversing. 
-Per-target normalized influence (PTNI) reveals Hyperforin operates at 22-fold higher efficiency. 
-Bootstrap sensitivity analysis and chemical similarity controls exclude target-count confounding and structural analogy to known hepatotoxins. 
-These findings establish Hyperforin as the primary hepatotoxicity liability in \textit{H. perforatum} through mechanistic specificity rather than polypharmacological breadth.
+We compared two \textit{Hypericum perforatum} constituents for network-based hepatotoxicity signal: Hyperforin (10 targets) and Quercetin (62 targets).
 
-\vspace{1em}
-\noindent\textbf{Keywords:} Network pharmacology, hepatotoxicity, \textit{Hypericum perforatum}, Hyperforin, drug-induced liver injury, random walk with restart
+Quercetin's targets are closer to drug-induced liver injury (DILI) genes (Z = $-$5.4 vs.\ $-$2.6). 
+Despite this, Hyperforin achieves greater influence on DILI pathways via random walk with restart (Z = +10.3 vs.\ +4.4; $p < 10^{-16}$). 
+Expression-weighted propagation narrows the gap (+5.8 to +3.5) but does not reverse it. 
+Per-target normalized influence shows Hyperforin operates at 22-fold higher efficiency. 
+Bootstrap resampling confirms no random 10-target sample from Quercetin's pool matches Hyperforin's influence. 
+Chemical similarity analysis excludes structural analogy to known hepatotoxins.
+
+Hyperforin, not Quercetin, drives the network-based hepatotoxicity signal. 
+The mechanism is target specificity, not target count.
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} network pharmacology, hepatotoxicity, \textit{Hypericum perforatum}, Hyperforin, drug-induced liver injury
