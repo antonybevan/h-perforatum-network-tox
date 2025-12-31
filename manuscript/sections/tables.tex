@@ -110,18 +110,18 @@ MMP9 & Matrix metalloproteinase-9 & 1 & 94 \\
 % Table 6: Network Threshold Robustness
 \begin{table}[ht]
 \centering
-\caption{\textbf{Robustness across network confidence thresholds.} STRING $\geq$700: 11{,}693 nodes, 100{,}383 edges; $\geq$900: 7{,}677 nodes, 66{,}908 edges. All Z-scores from $n = 1{,}000$ degree-matched permutations.}
+\caption{\textbf{Robustness across network confidence thresholds.} STRING $\geq$700: 11{,}693 nodes, 100{,}383 edges; $\geq$900: 7{,}677 nodes, 66{,}908 edges. All Z-scores from $n = 1{,}000$ degree-matched permutations. $\Delta$Z = Hyperforin Z $-$ Quercetin Z.}
 \label{tab:threshold_robustness}
 \vspace{0.5em}
 \begin{tabular}{llrrrr}
 \toprule
-\textbf{Threshold} & \textbf{Compound} & \textbf{RWR Z} & \textbf{EWI Z} & \textbf{Proximity Z} & \textbf{Ranking} \\
+\textbf{Threshold} & \textbf{Compound} & \textbf{RWR Z} & \textbf{EWI Z} & \textbf{Proximity Z} & $\boldsymbol{\Delta}$\textbf{Z (RWR)} \\
 \midrule
-$\geq$700 & Hyperforin & +10.90 & +10.46 & $-$6.04 & 1 \\
-$\geq$700 & Quercetin & +5.16 & +6.65 & $-$5.46 & 2 \\
+$\geq$700 & Hyperforin & +10.90 & +10.46 & $-$6.04 & \multirow{2}{*}{+5.74} \\
+$\geq$700 & Quercetin & +5.16 & +6.65 & $-$5.46 & \\
 \addlinespace
-$\geq$900 & Hyperforin & +10.27 & +9.07 & $-$3.86 & 1 \\
-$\geq$900 & Quercetin & +4.42 & +5.56 & $-$5.44 & 2 \\
+$\geq$900 & Hyperforin & +10.27 & +9.07 & $-$3.86 & \multirow{2}{*}{+5.85} \\
+$\geq$900 & Quercetin & +4.42 & +5.56 & $-$5.44 & \\
 \bottomrule
 \end{tabular}
 \end{table}
