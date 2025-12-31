@@ -85,8 +85,8 @@ p <- ggplot() +
     aes(x = Targets, y = Influence, 
         label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
     size = 3.5, fontface = "bold", family = "Arial",
-    box.padding = 1.2, point.padding = 0.5,
-    force = 3, max.overlaps = Inf,
+    box.padding = 1.5, point.padding = 0.8,
+    force = 5, max.overlaps = Inf, seed = 42,
     segment.color = "#666666", segment.size = 0.4,
     lineheight = 0.9
   ) +
