@@ -1,18 +1,19 @@
 \section*{Abstract}
 
-Polypharmacology complicates attribution of adverse effects in complex herbal extracts.
-\textit{Hypericum perforatum} contains multiple bioactive compounds, but the constituent responsible for hepatotoxicity risk remains unidentified.
+Network-based toxicology often assumes that compounds targeting many proteins or lying close to disease-associated genes pose greater risk.
+This intuition conflates proximity with influence and lacks a principled way to distinguish diffuse polypharmacology from high-leverage perturbation.
+Here, we evaluate this assumption using two major \textit{Hypericum perforatum} constituents, Hyperforin and Quercetin, as a controlled case study in hepatotoxicity (DILI) risk.
 
-We compared Hyperforin (10 targets) and Quercetin (62 targets) using network pharmacology.
-Influence propagation from compound targets to 82 drug-induced liver injury genes was quantified via random walk with restart on a liver-expressed protein interaction network (STRING v12.0, $\geq$900; GTEx v8, TPM $\geq$1).
+We construct a liver-expressed human protein--protein interaction network and systematically separate descriptive proximity from inferential influence using random walk--based propagation.
+Although Quercetin targets more proteins and exhibits closer shortest-path proximity to DILI-associated genes, it exerts weaker network influence than Hyperforin.
+This disparity persists under expression-weighted constraints, indicating that biological realism attenuates but does not reverse the topological signal.
 
-Despite six-fold fewer targets, Hyperforin achieves greater influence than Quercetin (Z = +10.3 vs.\ +4.4; $p < 10^{-16}$).
-This advantage persists under expression-weighted propagation ($\Delta$Z: +5.8 $\rightarrow$ +3.5; $p < 10^{-8}$).
-Per-target efficiency is 22-fold higher for Hyperforin.
-Bootstrap resampling confirms no 10-target sample from Quercetin's pool matches this signal.
-Chemical similarity analysis excludes structural analogy to known hepatotoxins.
+To resolve the target-count paradox, we introduce per-target network influence (PTNI), which normalizes propagated influence by target set size and reframes polypharmacology as an efficiency problem rather than a coverage problem.
+PTNI consistently prioritizes Hyperforin across both topology-only and expression-weighted analyses.
+Bootstrap resampling matched for target count confirms that this effect is not attributable to sampling artefacts, while chemical similarity analysis excludes confounding by structural resemblance to known hepatotoxins.
 
-Hyperforin drives the hepatotoxicity signal through mechanistic specificity, not target count.
+Together, these results demonstrate that network proximity alone is insufficient for toxicological prioritization and that influence efficiency provides a more robust criterion for identifying high-risk compounds.
+This framework generalizes beyond \textit{H.\ perforatum} and offers a principled basis for integrating network topology, biological constraint, and robustness in computational safety assessment.
 
 \vspace{0.5em}
-\noindent\textbf{Keywords:} network pharmacology, hepatotoxicity, \textit{Hypericum perforatum}, Hyperforin, drug-induced liver injury
+\noindent\textbf{Keywords:} network pharmacology, hepatotoxicity, \textit{Hypericum perforatum}, Hyperforin, per-target network influence, drug-induced liver injury
