@@ -58,7 +58,7 @@ Final targets in LCC & 62 \\
 \begin{table}[ht]
 \centering
 \caption{\textbf{Table S3. DILI gene set curation.}
-Genes associated with drug-induced liver injury from DILIrank 2.0.}
+Genes associated with drug-induced liver injury from DisGeNET (UMLS C0860207).}
 \label{tab:S3}
 \vspace{0.5em}
 \begin{tabular}{lr}
@@ -142,6 +142,97 @@ Mean DILI neighbors per target & 0.50 \\
 \textit{Hyperforin comparison:} & \\
 Hyperforin targets with $\geq$1 DILI neighbor & 10/10 (100\%) \\
 Mean DILI neighbors per Hyperforin target & 2.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S7: Full Quercetin Target List
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S7. Quercetin target genes in the liver-expressed network.}
+All 62 Quercetin targets in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
+Sorted by descending liver expression.}
+\label{tab:S7}
+\vspace{0.5em}
+\scriptsize
+\begin{tabular}{lrlr|lrlr}
+\toprule
+\textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} \\
+\midrule
+CFB & 1115 & CYP3A4 & 335 & FN1 & 229 & ALDH2 & 183 \\
+ANPEP & 160 & PPIA & 112 & SERPINA5 & 104 & CYP1A2 & 72 \\
+CA2 & 64 & APP & 63 & PYGL & 55 & HDAC6 & 45 \\
+ESRRA & 42 & MAOA & 35 & AKR1C2 & 33 & AKT1 & 33 \\
+CTSH & 28 & XDH & 26 & CHRNA4 & 25 & PIK3R1 & 24 \\
+PIM1 & 24 & LDLR & 23 & EGFR & 17 & ELOVL1 & 18 \\
+PKN1 & 16 & GSK3A & 13 & YES1 & 13 & MET & 12 \\
+DAPK1 & 12 & BACE1 & 11 & CSNK2A1 & 10 & FSTL1 & 9 \\
+SIRT6 & 8 & GSK3B & 7 & CDK7 & 7 & CAV2 & 7 \\
+PTPN2 & 6 & CYP1A1 & 5 & PRMT7 & 5 & MMP2 & 5 \\
+AKR1B1 & 5 & PDE6D & 5 & PTK2 & 4 & ABCG2 & 4 \\
+IQGAP1 & 4 & ADRB2 & 3 & BRAF & 4 & KDR & 3 \\
+SRC & 3 & ALOX5 & 3 & CYP1B1 & 3 & TLR4 & 3 \\
+NUAK1 & 3 & AXL & 2 & ADA & 2 & LCK & 2 \\
+ABCC1 & 2 & PLK1 & 1 & ACHE & 1 & MMP9 & 1 \\
+SYK & 1 & PDZK1IP1 & 1 & & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S8: DILI Gene List
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S8. DILI gene set (82 genes).}
+Genes in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
+Source: DisGeNET (UMLS C0860207). Sorted alphabetically.}
+\label{tab:S8}
+\vspace{0.5em}
+\scriptsize
+\begin{tabular}{llll|llll}
+\toprule
+\multicolumn{8}{c}{\textbf{82 DILI-Associated Genes}} \\
+\midrule
+ABCB1 & AHR & ALB & ALDOB & AMBP & APOA1 & APOE & APOH \\
+ARG1 & ARNT & ATG5 & BAX & BTD & C3 & CAT & CCL2 \\
+CLU & COL3A1 & CTNNB1 & CXCL1 & CXCL10 & CYP2A6 & CYP2C19 & CYP2C9 \\
+CYP2E1 & DGAT2 & ENO1 & FGA & FLT1 & FMO3 & GADD45A & GC \\
+GCLC & GPT & GSN & GSTM1 & GSTM2 & GSTP1 & HLA-A & HLA-B \\
+HLA-DQB1 & HLA-DRB1 & HMGB1 & HMOX1 & HPD & HPX & IGF1 & IL18 \\
+IL1R2 & KRT18 & LCN2 & LGALS3 & MAP3K5 & MED1 & MMP2 & MTHFR \\
+NAT2 & NFE2L2 & NR1H3 & NR1H4 & NR1I2 & NR1I3 & PLAT & PLG \\
+PNP & POLG & PON1 & PPARA & PRKDC & PTGS2 & RBP1 & SLPI \\
+SNX18 & SOD1 & SOD3 & SPP1 & TALDO1 & TBXA2R & TCTN1 & TF \\
+TTR & UGT1A9 & & & & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S9: Permutation Test Summary
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S9. Permutation test summary statistics.}
+Null distribution parameters from $n = 1{,}000$ degree-matched permutations.
+Random seed: 42. FDR correction: Benjamini--Hochberg.}
+\label{tab:S9}
+\vspace{0.5em}
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Metric} & \textbf{Compound} & \textbf{$\mu_{null}$} & \textbf{$\sigma_{null}$} & \textbf{$x_{obs}$} & \textbf{Z-score} \\
+\midrule
+\multicolumn{6}{l}{\textit{Shortest-path proximity}} \\
+\addlinespace
+& Hyperforin & 1.78 & 0.124 & 1.30 & $-$3.86 \\
+& Quercetin & 2.04 & 0.066 & 1.68 & $-$5.44 \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Random walk influence (RWR)}} \\
+\addlinespace
+& Hyperforin & 0.042 & 0.0070 & 0.114 & +10.27 \\
+& Quercetin & 0.018 & 0.0032 & 0.032 & +4.42 \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Expression-weighted influence (EWI)}} \\
+\addlinespace
+& Hyperforin & 0.050 & 0.0092 & 0.133 & +9.07 \\
+& Quercetin & 0.024 & 0.0045 & 0.049 & +5.56 \\
 \bottomrule
 \end{tabular}
 \end{table}
