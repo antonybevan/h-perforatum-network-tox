@@ -109,7 +109,7 @@ p <- ggplot() +
   
   labs(
     title = "Per-target efficiency: coverage versus influence",
-    subtitle = "Hyperforin occupies a higher efficiency contour despite fewer targets",
+    subtitle = "Hyperforin achieves ~22× higher PTNI despite 10 vs 62 targets",
     x = "Target count",
     y = "Total influence",
     caption = str_wrap(
