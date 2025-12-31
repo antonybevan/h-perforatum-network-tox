@@ -98,8 +98,8 @@ p <- ggplot(comparison_data, aes(x = Method, y = Z_score, fill = Compound)) +
     x = NULL,
     y = "Influence Z-score",
     caption = str_wrap(
-      "[BIOLOGICAL VALIDATION] Expression-weighted influence (EWI) tests whether Hyperforin's advantage reflects liver-specific biology. The gap narrows from +5.8 (RWR) to +3.5 (EWI) as Quercetin's high-expression targets (e.g., CFB at 1115 TPM) channel signal more efficiently—but Hyperforin's lead persists. Data: STRING v12.0 (≥900), n = 1,000 permutations each.",
-      width = 100
+      "[BIOLOGICAL VALIDATION] Expression-weighted influence (EWI) tests whether Hyperforin's advantage reflects liver-specific biology or network topology alone. GTEx v8 liver expression (TPM ≥1) weights edge transitions, channeling signal preferentially through liver-expressed neighbors. The gap narrows from +5.8 (RWR) to +3.5 (EWI) as Quercetin's high-expression targets (e.g., CFB at 1115 TPM) improve its signal propagation—yet Hyperforin's lead persists. Data: STRING v12.0 (≥900), n = 1,000 degree-matched permutations per method.",
+      width = 105
     )
   ) +
   
