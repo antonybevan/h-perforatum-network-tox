@@ -4,11 +4,11 @@
 
 We first established network context by quantifying target count and shortest-path proximity to 82 DILI-associated genes (Figure~\ref{fig:fig1}).
 Quercetin engages 62 targets in the liver-expressed largest connected component; Hyperforin engages 10.
-Shortest-path proximity reveals that Quercetin targets are significantly closer to DILI genes than random expectation (Z = $-$5.4; $p < 10^{-6}$; $n = 1{,}000$ degree-matched permutations), while Hyperforin targets exhibit weaker proximity (Z = $-$2.6; $p = 0.005$).
+Shortest-path proximity reveals that Quercetin targets are significantly closer to DILI genes than degree-matched random expectation (Z = $-$5.4; one-tailed $p < 10^{-6}$; $n = 1{,}000$ permutations; FDR-corrected), while Hyperforin targets exhibit weaker proximity (Z = $-$2.6; $p = 0.005$; FDR-corrected).
 By conventional interpretation, Quercetin should pose greater hepatotoxicity risk.
 
 Random walk with restart (RWR) reverses this ranking (Figure~\ref{fig:fig2}).
-Hyperforin achieves influence Z = +10.3 ($p < 10^{-16}$); Quercetin achieves Z = +4.4 ($p < 10^{-6}$).
+Hyperforin achieves influence Z = +10.3 (one-tailed $p < 10^{-16}$; at permutation floor); Quercetin achieves Z = +4.4 ($p < 10^{-6}$).
 Both are significant; the magnitudes differ by a factor of 2.3 in Z-score space.
 Despite being topologically more distant from DILI genes, Hyperforin exerts substantially greater network influence.
 
@@ -21,7 +21,7 @@ To assess whether the RWR signal persists under tissue-specific biological const
 The Z-score differential narrows under expression weighting: $\Delta$Z = +5.8 (RWR) $\rightarrow$ +3.5 (EWI).
 Decomposition reveals the mechanism: Hyperforin loses 1.2 Z-score units due to attenuation of high-expression targets (CYP2C9, CYP3A4), while Quercetin gains 1.1 units, driven primarily by complement factor B (CFB) at 1{,}115 TPM.
 
-The residual gap remains significant: Hyperforin Z = +9.1 ($p < 10^{-16}$); Quercetin Z = +5.6 ($p < 10^{-8}$).
+The residual gap remains highly significant: Hyperforin Z = +9.1 (one-tailed $p < 10^{-16}$; at permutation floor); Quercetin Z = +5.6 ($p < 10^{-8}$; FDR-corrected).
 Expression weighting did not manufacture the signal; it refined it.
 Attenuation is expected when propagation is constrained to biologically active nodes; it does not constitute invalidation.
 
@@ -50,7 +50,7 @@ Its utility lies in normalizing for target count, not in providing additional in
 \subsection{Bootstrap resampling excludes target-count confounding}
 
 To rule out the possibility that Hyperforin's advantage arises from favorable target selection rather than strategic network positioning, we performed bootstrap sensitivity analysis (Figure~\ref{fig:fig5}).
-100 random 10-target subsets were sampled from Quercetin's 62-target pool and scored by RWR.
+100 random 10-target subsets were sampled without replacement from Quercetin's 62-target pool and scored by RWR (random seed 42 for reproducibility).
 
 Hyperforin's observed influence (0.114) exceeds the entire bootstrap distribution.
 The 95th percentile of the Quercetin bootstrap (0.054) falls below Hyperforin's score.
@@ -63,7 +63,7 @@ Bootstrap analysis is a robustness control; it strengthens confidence in the ran
 \subsection{Threshold robustness}
 
 The ranking is stable across network confidence thresholds (Table~\ref{tab:threshold_robustness}).
-At STRING confidence $\geq$700, Hyperforin achieves RWR Z = +10.9 and EWI Z = +10.5; at $\geq$900, Z = +10.3 and +9.1 respectively.
+At STRING confidence $\geq$700 (11{,}693 nodes, 100{,}383 edges), Hyperforin achieves RWR Z = +10.9 and EWI Z = +10.5; at $\geq$900 (7{,}677 nodes, 66{,}908 edges), Z = +10.3 and +9.1 respectively.
 Quercetin ranks second in all configurations.
 This confirms that the core finding is not sensitive to network construction parameters.
 
