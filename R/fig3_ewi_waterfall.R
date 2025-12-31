@@ -99,13 +99,13 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
   ) +
   
   labs(
-    title = "Sensitivity analysis: Expression weighting attenuates but does not eliminate the Z-score differential",
-    subtitle = expression(paste(Delta, "Z (RWR) = +5.8  ", symbol('\256'), "  ", Delta, "Z (EWI) = +3.5")),
+    title = "Expression weighting narrows but preserves the advantage",
+    subtitle = "Gap: +5.8 (RWR) → +3.5 (EWI)",
     x = NULL,
-    y = expression(paste("Contribution to ", Delta, "Z (Hyperforin − Quercetin)")),
+    y = "Z-score gap contribution",
     caption = str_wrap(
-      "[SENSITIVITY ANALYSIS] Decomposition of the Z-score differential under expression-weighted influence propagation. The topology-only advantage (ΔZ = +5.8, RWR) is partitioned into: (1) Hyperforin's change under expression weighting (−1.2, attributable to reduced relative advantage of high-expression targets CYP2C9/CYP3A4); (2) Quercetin's gain (+1.1, driven by high-expression target CFB at 1115 TPM). Residual advantage (ΔZ = +3.5) remains statistically significant (both p < 10⁻⁸). GTEx v8 liver expression weights edge transitions (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations per method.",
-      width = 115
+      "[SENSITIVITY ANALYSIS] Decomposition of the Z-score differential under expression-weighted influence propagation. The RWR advantage (+5.8) is partitioned into: (1) Hyperforin's change under expression weighting (−1.2); (2) Quercetin's gain (+1.1, driven by CFB at 1115 TPM). Residual advantage (+3.5) remains significant (both p < 10⁻⁸). GTEx v8 liver expression (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations.",
+      width = 110
     )
   ) +
   
