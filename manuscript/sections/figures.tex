@@ -4,9 +4,11 @@
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{figures/fig1_lollipop.pdf}
-\caption{\textbf{Network context: target count and proximity to DILI genes.}
-(\textbf{A}) Target count in the liver-expressed largest connected component. Quercetin engages 62 validated targets; Hyperforin engages 10.
-(\textbf{B}) Shortest-path proximity to 82 DILI genes. Z-scores represent deviation from degree-matched random expectation ($n = 1{,}000$ permutations). Negative values indicate closer-than-random proximity. Quercetin targets are significantly closer (Z = $-$5.4; $p < 10^{-6}$) than Hyperforin targets (Z = $-$2.6; $p = 0.005$). Network: STRING v12.0 (confidence $\geq$900), filtered to liver-expressed genes (GTEx v8, TPM $\geq$1).}
+\caption{\textbf{Network context.}
+Quercetin engages 62 targets; Hyperforin engages 10.
+Quercetin targets are closer to DILI genes (Z = $-$5.4) than Hyperforin targets (Z = $-$2.6).
+Negative Z indicates closer-than-random proximity.
+$n = 1{,}000$ degree-matched permutations.}
 \label{fig:fig1}
 \end{figure}
 
@@ -15,7 +17,10 @@
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig2_dumbbell.pdf}
 \caption{\textbf{Proximity does not predict influence.}
-Dumbbell plot showing the rank reversal between proximity (left) and influence (right). Quercetin is topologically closer to DILI genes but exerts weaker functional influence; Hyperforin is more distant but dramatically stronger. Influence quantified by random walk with restart (RWR; $\alpha = 0.15$). Both metrics derived from $n = 1{,}000$ degree-matched permutations. Hyperforin: proximity Z = $-$2.6, influence Z = +10.3; Quercetin: proximity Z = $-$5.4, influence Z = +4.4.}
+Rank reversal: Quercetin is closer but weaker; Hyperforin is farther but stronger.
+Hyperforin: proximity Z = $-$2.6, influence Z = +10.3.
+Quercetin: proximity Z = $-$5.4, influence Z = +4.4.
+$n = 1{,}000$ permutations.}
 \label{fig:fig2}
 \end{figure}
 
@@ -23,8 +28,10 @@ Dumbbell plot showing the rank reversal between proximity (left) and influence (
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\textwidth]{figures/fig3_ewi_waterfall.pdf}
-\caption{\textbf{Expression weighting narrows but preserves the advantage.}
-Waterfall decomposition of the Z-score differential under expression-weighted influence propagation (EWI). The RWR advantage ($\Delta$Z = +5.8) is partitioned into: (1) Hyperforin's change under expression weighting ($-$1.2); (2) Quercetin's gain (+1.1, driven by CFB at 1{,}115 TPM). Residual advantage ($\Delta$Z = +3.5) remains statistically significant ($p < 10^{-8}$ for both compounds). GTEx v8 liver expression weights edge transitions (TPM $\geq$1). STRING v12.0 (confidence $\geq$900), $n = 1{,}000$ degree-matched permutations.}
+\caption{\textbf{Expression weighting narrows but does not reverse the gap.}
+$\Delta$Z: +5.8 (RWR) $\rightarrow$ +3.5 (EWI).
+Hyperforin: $-$1.2; Quercetin: +1.1 (CFB at 1{,}115 TPM).
+Residual gap significant ($p < 10^{-8}$).}
 \label{fig:fig3}
 \end{figure}
 
@@ -32,8 +39,12 @@ Waterfall decomposition of the Z-score differential under expression-weighted in
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{figures/fig4_ptni_phase.pdf}
-\caption{\textbf{Per-target efficiency: coverage versus influence.}
-Phase plot showing per-target normalized influence (PTNI = total influence / target count). Hyperforin achieves $\sim$22$\times$ higher PTNI (0.0114 vs.\ 0.0005 for RWR; 0.0133 vs.\ 0.0008 for EWI) despite having 10 versus 62 targets. Diagonal lines show iso-efficiency contours. Left panel: RWR; right panel: EWI. PTNI is a derived descriptive metric (not independently permutation-tested). Data: STRING v12.0 (confidence $\geq$900), $n = 1{,}000$ permutations for underlying influence calculations.}
+\caption{\textbf{Per-target efficiency.}
+PTNI = influence / targets.
+Hyperforin: 0.0114 (RWR), 0.0133 (EWI).
+Quercetin: 0.0005 (RWR), 0.0008 (EWI).
+22-fold difference.
+PTNI is descriptive; no permutation test.}
 \label{fig:fig4}
 \end{figure}
 
@@ -41,8 +52,10 @@ Phase plot showing per-target normalized influence (PTNI = total influence / tar
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/fig5_bootstrap.pdf}
-\caption{\textbf{Bootstrap sensitivity analysis: target-count control.}
-Density distribution of RWR influence scores from 100 random 10-target samples drawn from Quercetin's 62-target pool. Shaded region indicates 95\% confidence interval. Vertical line marks Hyperforin's observed influence. Hyperforin exceeds the entire bootstrap distribution, confirming that no random 10-target subset matches its influence. This excludes target count as a sufficient explanation for Hyperforin's advantage. Data: STRING v12.0 (confidence $\geq$900).}
+\caption{\textbf{Bootstrap sensitivity.}
+100 random 10-target samples from Quercetin's pool.
+Hyperforin exceeds the entire distribution.
+Target count does not explain the signal.}
 \label{fig:fig5}
 \end{figure}
 
@@ -50,7 +63,9 @@ Density distribution of RWR influence scores from 100 random 10-target samples d
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.65\textwidth]{figures/fig6_chemsim.pdf}
-\caption{\textbf{Chemical similarity control.}
-Maximum Tanimoto similarity to DILIrank reference compounds (542 DILI-positive, 365 DILI-negative). Morgan fingerprints (radius 2, 2048 bits). Dashed line indicates the 0.4 threshold for structural analog detection. Both Hyperforin (0.18) and Quercetin (0.21) fall well below threshold, excluding structural analogy to known hepatotoxins as an explanation for the observed network signal.}
+\caption{\textbf{Chemical similarity.}
+Maximum Tanimoto similarity to DILIrank drugs: Hyperforin = 0.18, Quercetin = 0.21.
+Both below 0.4 analog threshold.
+Structural resemblance does not explain the signal.}
 \label{fig:fig6}
 \end{figure}
