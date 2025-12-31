@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -67,15 +67,6 @@ Gerald Maggiora, Martin Vogt, Dagmar Stumpfe, and J{\"u}rgen Bajorath.
 \newblock \emph{Journal of Medicinal Chemistry}, 57\penalty0 (8):\penalty0
   3186--3204, 2014.
 \newblock \doi{10.1021/jm401411z}.
-
-\bibitem[Menche et~al.(2015)Menche, Sharma, Kitsak, Ghiassian, Vidal, Loscalzo,
-  and Bara{\'b}asi]{Menche2015}
-J{\"o}rg Menche, Amitabh Sharma, Maksim Kitsak, Susan~Dina Ghiassian, Marc
-  Vidal, Joseph Loscalzo, and Albert-L{\'a}szl{\'o} Bara{\'b}asi.
-\newblock Uncovering disease-disease relationships through the incomplete
-  interactome.
-\newblock \emph{Science}, 347\penalty0 (6224):\penalty0 1257601, 2015.
-\newblock \doi{10.1126/science.1257601}.
 
 \bibitem[Mendez et~al.(2019)Mendez, Gaulton, Bento, Chambers, De~Veij,
   F{\'e}lix, Maga{\~n}a, Mosquera, Mutowo, Nowotka, Gordillo-Mara{\~n}{\'o}n,

@@ -1,47 +1,61 @@
 \section{Discussion}
 
-These results demonstrate that network proximity alone is insufficient for toxicological prioritization.
-Quercetin, despite more targets and closer proximity to DILI genes, exerts weaker influence than Hyperforin.
-Influence efficiency---not target count or path length---distinguishes high-risk compounds.
+\subsection{Chemical similarity control}
 
-\subsection{Proximity versus influence}
+Chemical similarity analysis excludes the possibility that either compound is a structural analog of known hepatotoxins.
+Maximum Tanimoto similarity to DILIrank reference drugs falls below the 0.4 threshold for both compounds.
+This rules out structural resemblance as an alternative explanation for the observed network signal.
+It does not imply that either compound is structurally inert.
 
-The rank reversal between proximity and influence is not a methodological artifact; it reflects a conceptual distinction.
-Proximity counts shortest paths.
-Influence weights them by network topology, capturing the cumulative effect of multiple indirect routes \citep{Kohler2008}.
-When these metrics diverge, proximity-based predictions may mislead \citep{Menche2015}.
+\subsection{Bootstrap robustness}
 
-\subsection{PTNI as a normalization principle}
+Bootstrap resampling eliminates target-count as a sufficient explanation for Hyperforin's ranking.
+No random 10-target subset from Quercetin's pool matches Hyperforin's observed influence.
+This strengthens confidence in the ranking without adding independent evidence.
+The bootstrap is a robustness control, not a confirmatory test.
 
-Per-target network influence (PTNI) resolves the target-count paradox by reframing polypharmacology as an efficiency problem.
-A compound with few, strategically positioned targets can achieve higher PTNI than one with many peripheral targets.
-The 22-fold PTNI difference between Hyperforin and Quercetin quantifies this distinction.
-PTNI is descriptive---it was not independently tested---but its consistency across topology-only and expression-weighted analyses supports its utility as a normalization principle.
+\subsection{Per-target network influence}
 
-\subsection{Biological constraint}
+PTNI reframes polypharmacology as an efficiency problem rather than a coverage problem.
+Compounds with fewer targets may exert higher per-target influence if those targets occupy topologically central positions.
+PTNI is a conceptual normalization; it was not subjected to permutation testing and should not be interpreted as a hypothesis test.
+Its utility lies in resolving the target-count paradox, not in providing additional inference.
 
-Expression weighting attenuates but does not reverse Hyperforin's advantage.
-Quercetin gains from high-expression targets (CFB); Hyperforin's topological position remains dominant.
-This addresses a common critique: that network topology without expression context lacks biological realism.
-The constraint was applied; the ranking held.
+\subsection{Expression-weighted influence}
+
+Expression weighting modulates but does not rescue proximity-based intuition.
+Quercetin gains influence under liver-specific expression constraints; Hyperforin's advantage narrows but persists.
+Attenuation is expected when expression reweights signal propagation.
+Attenuation does not constitute invalidation.
+
+\subsection{The proximity--influence paradox}
+
+Proximity counts shortest paths; influence weights them by topology.
+These are distinct properties.
+The rank reversal observed here---closer proximity, weaker influence---challenges a common heuristic in network medicine: that targets closer to disease genes are more relevant.
+This assumption is convenient but incomplete.
+Influence-based metrics, while computationally more demanding, are not reducible to distance.
 
 \subsection{Generalizability}
 
-This framework extends beyond \textit{H.\ perforatum}.
-Any polypharmacological comparison faces the same target-count confound.
-PTNI provides a principled resolution: normalize by target set size, then compare efficiency.
-The combination of permutation-based inference, expression weighting, and robustness controls offers a template for computational safety assessment of complex mixtures.
+The framework generalizes beyond this case study.
+Any polypharmacological comparison faces the same confounds: target count, proximity, and expression context.
+PTNI, expression weighting, and robustness controls address these systematically.
+The framework is a template, not a validation of Hyperforin hepatotoxicity.
+What generalizes: the analytical structure.
+What does not generalize: the specific ranking, which is contingent on data sources and network construction.
 
 \subsection{Limitations}
 
-Drug--target databases may be incomplete; novel targets could alter the analysis.
-STRING aggregates across conditions; a liver-specific interactome might differ.
-PTNI is a normalization, not a formal statistical test.
-Network predictions require experimental validation.
-Extension to other \textit{H.\ perforatum} constituents would strengthen generalizability.
+Drug--target databases may be incomplete; novel targets could alter the ranking.
+STRING aggregates interactions across cell types; a liver-specific interactome might differ.
+PTNI is a normalization, not a statistical test.
+Network-level prioritization supports but does not prove toxicological risk.
+Experimental validation remains necessary.
 
 \subsection{Conclusions}
 
-Hyperforin drives the hepatotoxicity signal from \textit{Hypericum perforatum} through mechanistic specificity, not target promiscuity.
-Influence efficiency, not target count or proximity, predicts risk.
-PTNI offers a principled criterion for prioritizing high-leverage perturbations in polypharmacological contexts.
+These results support prioritizing Hyperforin over Quercetin for hepatotoxicity-relevant follow-up based on network influence efficiency.
+The ranking is consistent with Hyperforin's established role in PXR-mediated drug interactions.
+PTNI provides a principled criterion for distinguishing high-leverage perturbation from diffuse polypharmacology.
+This framework is applicable to other complex botanical extracts where constituent-level attribution is required.
