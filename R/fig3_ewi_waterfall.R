@@ -138,18 +138,18 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
 print(p)
 
 ggsave(
-  filename = here("figures", "main", "fig8_waterfall.pdf"),
+  filename = here("figures", "main", "fig3_ewi_waterfall.pdf"),
   plot = p,
   width = 180, height = 130, units = "mm",
   device = cairo_pdf
 )
 
 ggsave(
-  filename = here("figures", "main", "fig8_waterfall.tiff"),
+  filename = here("figures", "main", "fig3_ewi_waterfall.tiff"),
   plot = p,
   width = 180, height = 130, units = "mm",
   dpi = 300, compression = "lzw"
 )
 
-message("✓ Figure 8 (Waterfall Chart - Gap Decomposition) saved")
+message("✓ Figure 3 (EWI Waterfall - Gap Decomposition) saved")
 
