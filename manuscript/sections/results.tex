@@ -1,47 +1,83 @@
 \section{Results}
 
-\subsection{Network context}
+\subsection{Quercetin targets are closer to DILI genes but exert weaker influence}
 
-Quercetin engages 62 targets in the liver-expressed largest connected component; Hyperforin engages 10 (Figure~\ref{fig:fig1}).
-Shortest-path proximity to 82 DILI genes: Quercetin Z = $-$5.4 ($p < 10^{-6}$); Hyperforin Z = $-$2.6 ($p = 0.005$).
-Negative Z-scores indicate closer-than-random proximity.
-Target count and proximity are descriptive; neither constitutes a test of functional influence.
+We first established network context by quantifying target count and shortest-path proximity to 82 DILI-associated genes (Figure~\ref{fig:fig1}).
+Quercetin engages 62 targets in the liver-expressed largest connected component; Hyperforin engages 10.
+Shortest-path proximity reveals that Quercetin targets are significantly closer to DILI genes than random expectation (Z = $-$5.4; $p < 10^{-6}$; $n = 1{,}000$ degree-matched permutations), while Hyperforin targets exhibit weaker proximity (Z = $-$2.6; $p = 0.005$).
+By conventional interpretation, Quercetin should pose greater hepatotoxicity risk.
 
-\subsection{Proximity does not predict influence}
+Random walk with restart (RWR) reverses this ranking (Figure~\ref{fig:fig2}).
+Hyperforin achieves influence Z = +10.3 ($p < 10^{-16}$); Quercetin achieves Z = +4.4 ($p < 10^{-6}$).
+Both are significant; the magnitudes differ by a factor of 2.3 in Z-score space.
+Despite being topologically more distant from DILI genes, Hyperforin exerts substantially greater network influence.
 
-Random walk with restart (RWR) quantifies influence propagation from compound targets to DILI genes (Figure~\ref{fig:fig2}).
-Hyperforin: Z = +10.3 ($p < 10^{-16}$).
-Quercetin: Z = +4.4 ($p < 10^{-6}$).
-$n = 1{,}000$ degree-matched permutations.
-Hyperforin exerts greater influence despite lower proximity.
-This rank reversal is the primary inferential result.
+This dissociation between proximity and influence---the proximity paradox---demonstrates that shortest-path distance is not a reliable surrogate for functional impact.
 
-\subsection{Expression weighting narrows the gap}
+\subsection{Expression weighting attenuates but does not reverse the advantage}
 
-Expression-weighted influence (EWI) incorporates liver-specific gene expression into propagation (Figure~\ref{fig:fig3}).
-The Z-score differential narrows: $\Delta$Z = +5.8 (RWR) $\rightarrow$ +3.5 (EWI).
-Hyperforin loses 1.2 units; Quercetin gains 1.1 units.
-The residual gap remains significant ($p < 10^{-8}$).
-Expression weighting attenuates but does not reverse the ranking.
+To assess whether the RWR signal persists under tissue-specific biological constraint, we applied expression-weighted influence propagation (EWI), weighting network transitions by liver gene expression (Figure~\ref{fig:fig3}).
 
-\subsection{Per-target efficiency}
+The Z-score differential narrows under expression weighting: $\Delta$Z = +5.8 (RWR) $\rightarrow$ +3.5 (EWI).
+Decomposition reveals the mechanism: Hyperforin loses 1.2 Z-score units due to attenuation of high-expression targets (CYP2C9, CYP3A4), while Quercetin gains 1.1 units, driven primarily by complement factor B (CFB) at 1{,}115 TPM.
 
-Per-target normalized influence (PTNI = total influence / target count) normalizes for target set size (Figure~\ref{fig:fig4}).
-Hyperforin: PTNI = 0.0114 (RWR), 0.0133 (EWI).
-Quercetin: PTNI = 0.0005 (RWR), 0.0008 (EWI).
-Ratio: 22-fold (RWR), 17-fold (EWI).
-PTNI is an effect-size normalization; no separate permutation test was performed.
+The residual gap remains significant: Hyperforin Z = +9.1 ($p < 10^{-16}$); Quercetin Z = +5.6 ($p < 10^{-8}$).
+Expression weighting did not manufacture the signal; it refined it.
+Attenuation is expected when propagation is constrained to biologically active nodes; it does not constitute invalidation.
 
-\subsection{Bootstrap sensitivity}
+\subsection{Per-target efficiency reveals a 22-fold disparity}
 
-100 random 10-target subsets were sampled from Quercetin's 62-target pool and scored by RWR (Figure~\ref{fig:fig5}).
-Hyperforin's observed influence exceeds the entire bootstrap distribution.
-This excludes target count as a sufficient explanation for the observed ranking.
-Bootstrap analysis is a robustness control, not additional evidence.
+To resolve the target-count paradox---where compounds with more targets may exert weaker functional effects---we computed per-target normalized influence (PTNI = total influence / target count), reframing polypharmacology as an efficiency problem rather than a coverage problem (Figure~\ref{fig:fig4}).
 
-\subsection{Chemical similarity}
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Compound} & \textbf{Targets} & \textbf{PTNI (RWR)} & \textbf{PTNI (EWI)} & \textbf{Ratio} \\
+\midrule
+Hyperforin & 10 & 0.0114 & 0.0133 & --- \\
+Quercetin & 62 & 0.0005 & 0.0008 & --- \\
+\textbf{Fold difference} & --- & 22$\times$ & 17$\times$ & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
 
-Maximum Tanimoto similarity to DILIrank reference drugs: Hyperforin = 0.18; Quercetin = 0.21 (Figure~\ref{fig:fig6}).
-Both fall below the 0.4 threshold for structural analog detection \citep{Maggiora2014}.
-This excludes structural resemblance to known hepatotoxins as an explanation for the network signal.
-Chemical similarity is an orthogonal exclusion criterion, not a risk predictor.
+Each Hyperforin target contributes 17--22$\times$ more DILI-directed influence than each Quercetin target.
+This disparity is consistent across both topology-only (RWR) and expression-weighted (EWI) analyses, indicating that the efficiency advantage is robust to biological constraint.
+
+PTNI is a derived descriptive metric; it was not subjected to independent permutation testing.
+Its utility lies in normalizing for target count, not in providing additional inference.
+
+\subsection{Bootstrap resampling excludes target-count confounding}
+
+To rule out the possibility that Hyperforin's advantage arises from favorable target selection rather than strategic network positioning, we performed bootstrap sensitivity analysis (Figure~\ref{fig:fig5}).
+100 random 10-target subsets were sampled from Quercetin's 62-target pool and scored by RWR.
+
+Hyperforin's observed influence (0.114) exceeds the entire bootstrap distribution.
+The 95th percentile of the Quercetin bootstrap (0.054) falls below Hyperforin's score.
+The fold difference between Hyperforin and the bootstrap mean is 3.7$\times$.
+
+This confirms that Hyperforin's advantage is not an artifact of target count.
+Even when sampling equalized subsets from Quercetin's pool, no configuration matches Hyperforin's influence.
+Bootstrap analysis is a robustness control; it strengthens confidence in the ranking without providing independent evidence.
+
+\subsection{Chemical similarity excludes structural confounding}
+
+To exclude the possibility that Hyperforin's network signal reflects structural similarity to known hepatotoxins, we performed chemical similarity analysis against the DILIrank reference set (Figure~\ref{fig:fig6}).
+Morgan fingerprints (ECFP4, radius 2, 2048 bits) were computed for Hyperforin and Quercetin, and maximum Tanimoto similarity to 542 DILI-positive and 365 DILI-negative drugs was determined.
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Compound} & \textbf{Max (DILI+)} & \textbf{Max (DILI$-$)} & \textbf{Analog?} \\
+\midrule
+Hyperforin & 0.15 & 0.20 & No \\
+Quercetin & 0.21 & 0.22 & No \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Neither compound exceeds the 0.4 threshold for structural analog detection \citep{Maggiora2014}.
+Notably, Quercetin exhibits higher structural similarity to DILI reference drugs yet lower network influence, reinforcing that the observed asymmetry is not driven by chemical features.
+
+Chemical similarity analysis is an orthogonal exclusion criterion, not a risk predictor.
+It rules out structural confounding; it does not establish causation.
