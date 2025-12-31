@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -32,6 +32,13 @@ Emre Guney, J{\"o}rg Menche, Marc Vidal, and Albert-L{\'a}szl{\'o}
 \newblock \emph{Nature Communications}, 7:\penalty0 10331, 2016.
 \newblock \doi{10.1038/ncomms10331}.
 
+\bibitem[Hagberg et~al.(2008)Hagberg, Schult, and Swart]{Hagberg2008}
+Aric~A Hagberg, Daniel~A Schult, and Pieter~J Swart.
+\newblock Exploring network structure, dynamics, and function using {NetworkX}.
+\newblock In Ga{\"e}l Varoquaux, Travis Vaught, and Jarrod Millman, editors,
+  \emph{Proceedings of the 7th Python in Science Conference (SciPy 2008)},
+  pages 11--15, 2008.
+
 \bibitem[Hammerness et~al.(2003)Hammerness, Basch, Ulbricht, Barrette, Foppa,
   Basch, Bent, Boon, and Ernst]{Hammerness2003}
 Paul Hammerness, Ethan Basch, Catherine Ulbricht, Erica-Pauline Barrette, Ivo
@@ -49,16 +56,6 @@ Sebastian K{\"o}hler, Sebastian Bauer, Denise Horn, and Peter~N Robinson.
 \newblock \emph{The American Journal of Human Genetics}, 82\penalty0
   (4):\penalty0 949--958, 2008.
 \newblock \doi{10.1016/j.ajhg.2008.02.013}.
-
-\bibitem[Kuhn et~al.(2014)Kuhn, Szklarczyk, Pletscher-Frankild, Blicher, von
-  Mering, Jensen, and Bork]{Kuhn2014}
-Michael Kuhn, Damian Szklarczyk, Sune Pletscher-Frankild, Thomas~H{\o}jgaard
-  Blicher, Christian von Mering, Lars~J Jensen, and Peer Bork.
-\newblock {STITCH} 4: integration of protein--chemical interactions with user
-  data.
-\newblock \emph{Nucleic Acids Research}, 42\penalty0 (D1):\penalty0 D401--D407,
-  2014.
-\newblock \doi{10.1093/nar/gkt1207}.
 
 \bibitem[Maggiora et~al.(2014)Maggiora, Vogt, Stumpfe, and
   Bajorath]{Maggiora2014}
@@ -82,6 +79,16 @@ David Mendez, Anna Gaulton, A~Patr{\'i}cia Bento, Jon Chambers, Marleen
 \newblock \emph{Nucleic Acids Research}, 47\penalty0 (D1):\penalty0 D930--D940,
   2019.
 \newblock \doi{10.1093/nar/gky1075}.
+
+\bibitem[Moore et~al.(2000)Moore, Goodwin, Jones, Wisely, Serabjit-Singh,
+  Willson, Collins, and Kliewer]{Moore2000}
+Linda~B Moore, Bryan Goodwin, Stacey~A Jones, G~Bruce Wisely, Connie~J
+  Serabjit-Singh, Timothy~M Willson, John~L Collins, and Steven~A Kliewer.
+\newblock {St. John's} wort induces hepatic drug metabolism through activation
+  of the pregnane {X} receptor.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 97\penalty0
+  (13):\penalty0 7500--7502, 2000.
+\newblock \doi{10.1073/pnas.130155097}.
 
 \bibitem[{RDKit}(2023)]{RDKit2023}
 {RDKit}.
@@ -107,5 +114,15 @@ Damian Szklarczyk, Rebecca Kirsch, Mikaela Koutrouli, Katerina Nastou, Farrokh
 \newblock \emph{Nucleic Acids Research}, 51\penalty0 (D1):\penalty0 D483--D489,
   2023.
 \newblock \doi{10.1093/nar/gkac1052}.
+
+\bibitem[Watkins et~al.(2001)Watkins, Wisely, Moore, Collins, Lambert,
+  Williams, Willson, Kliewer, and Redinbo]{Watkins2001}
+Reginald~E Watkins, G~Bruce Wisely, Linda~B Moore, John~L Collins, Millard~H
+  Lambert, Shawn~P Williams, Timothy~M Willson, Steven~A Kliewer, and Matthew~R
+  Redinbo.
+\newblock The human nuclear xenobiotic receptor {PXR}: structural determinants
+  of directed promiscuity.
+\newblock \emph{Science}, 292\penalty0 (5525):\penalty0 2329--2333, 2001.
+\newblock \doi{10.1126/science.1060762}.
 
 \end{thebibliography}

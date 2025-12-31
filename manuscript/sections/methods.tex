@@ -3,44 +3,70 @@
 \subsection{Data sources}
 
 \subsubsection{Protein--protein interaction network}
-Protein--protein interactions were obtained from STRING v12.0 \citep{Szklarczyk2023}.
-Edges with combined confidence score $<$900 were excluded.
+Human protein--protein interactions were obtained from STRING v12.0 \citep{Szklarczyk2023}.
+Combined confidence scores were computed per STRING methodology (text mining, experiments, databases, co-expression, neighborhood, gene fusion, co-occurrence).
+Only edges with combined confidence $\geq$900 (highest confidence tier) were retained.
+Raw network: 11,693 genes, 100,383 edges.
 
-\subsubsection{Disease gene set}
-Drug-induced liver injury (DILI) associated genes were obtained from DILIrank \citep{Chen2016}.
-Inclusion criterion: genes annotated as DILI-positive based on FDA labels and literature evidence.
+\subsubsection{Liver expression data}
+Gene expression data were obtained from the Genotype-Tissue Expression Project (GTEx) v8 \citep{GTEx2020}.
+Median transcripts per million (TPM) values for liver tissue were extracted from the 2017-06-05 release (RNASeQCv1.1.9).
+Genes with liver TPM $\geq$1 were retained.
+Result: 13,496 liver-expressed genes.
 
-\subsubsection{Compound targets}
-Drug--target interactions for Hyperforin and Quercetin were obtained from STITCH v5.0 \citep{Kuhn2014} (confidence $\geq$0.7) and ChEMBL v31 \citep{Mendez2019} (activity $\leq$10 $\mu$M).
-Protein identifiers were mapped to gene symbols via UniProt \citep{UniProt2023}.
+\subsubsection{Drug-induced liver injury gene set}
+DILI-associated genes were obtained from DILIrank 2.0 \citep{Chen2016}.
+Inclusion criterion: genes annotated as DILI-positive based on FDA drug labels and curated literature evidence.
+Raw DILI gene count: 127 genes.
 
-\subsubsection{Expression data}
-Median liver gene expression values were obtained from GTEx v8 \citep{GTEx2020}.
-Threshold for liver expression: TPM $\geq$1.
+\subsubsection{Hyperforin targets}
+Hyperforin targets were curated from primary literature sources \citep{Moore2000, Watkins2001}.
+Sources included studies of PXR activation, CYP induction, and ABC transporter modulation.
+Raw target count: 14 proteins (Table~S1).
+
+\subsubsection{Quercetin targets}
+Quercetin targets were retrieved programmatically from ChEMBL v31 \citep{Mendez2019} via REST API.
+Query: CHEMBL159 (Quercetin).
+Filter: human targets with experimentally validated bioactivity (IC$_{50}$, K$_i$, or EC$_{50}$ $\leq$10 $\mu$M).
+Raw target count: 122 proteins.
+
+\subsection{Target processing}
+
+Protein identifiers were mapped to HUGO gene symbols using STRING info files and UniProt \citep{UniProt2023}.
+Non-human proteins (mouse, rat, bacterial, viral) were excluded.
+Gene symbols were standardized (e.g., MDR1 $\rightarrow$ ABCB1).
+Processed target counts: Hyperforin = 14, Quercetin = 87.
 
 \subsection{Network construction}
 
-STRING edges were filtered to confidence $\geq$900.
-Nodes absent from GTEx v8 liver tissue (TPM $<$1) were removed.
-The largest connected component (LCC) was extracted.
+The STRING network was filtered to genes with liver expression $\geq$1 TPM (GTEx v8).
+The largest connected component (LCC) was extracted using NetworkX \citep{Hagberg2008}.
 Compound targets and DILI genes not present in the LCC were excluded.
-Final network: 12,847 nodes, 89,432 edges.
+Final network: 7,677 nodes, 66,908 edges.
 Final target counts: Hyperforin = 10, Quercetin = 62.
 Final DILI gene count: 82.
 
-\subsection{Shortest-path proximity}
+Five genes are targeted by both compounds: ABCG2, AKT1, CYP3A4, MMP2, MMP9.
+These were retained in both target sets.
 
-Mean shortest-path distance between compound targets $T$ and DILI genes $D$:
+\subsection{Shortest-path proximity (descriptive)}
+
+Mean minimum shortest-path distance from compound targets $T$ to DILI genes $D$:
 \begin{equation}
-    d(T, D) = \frac{1}{|T| \times |D|} \sum_{t \in T} \sum_{d \in D} \text{dist}(t, d)
+    d_c = \frac{1}{|T|} \sum_{t \in T} \min_{d \in D} \text{dist}(t, d)
 \end{equation}
-where $\text{dist}(t, d)$ is the unweighted shortest-path length.
+where $\text{dist}(t, d)$ is the unweighted shortest-path length in the LCC.
 Shortest-path proximity is a descriptive metric.
+It was used to provide network context, not to test influence.
 
 \subsection{Random walk with restart}
 
-Given adjacency matrix $\mathbf{A}$, the column-normalized transition matrix $\mathbf{W}$ was computed.
-Steady-state probability vector $\mathbf{p}$:
+Influence propagation was quantified using random walk with restart (RWR) \citep{Kohler2008, Guney2016}.
+Given adjacency matrix $\mathbf{A}$, the column-normalized transition matrix $\mathbf{W}$:
+\begin{equation}
+    W_{ij} = \frac{A_{ij}}{\sum_k A_{kj}}
+\end{equation}
+Steady-state probability vector $\mathbf{p}$ satisfies:
 \begin{equation}
     \mathbf{p} = (1 - \alpha) \mathbf{W} \mathbf{p} + \alpha \mathbf{p}_0
 \end{equation}
@@ -48,6 +74,7 @@ Restart probability: $\alpha = 0.15$.
 Restart vector: $p_0(i) = 1/|T|$ for $i \in T$, else 0.
 Convergence criterion: $||\mathbf{p}^{(k+1)} - \mathbf{p}^{(k)}||_1 < 10^{-6}$.
 Maximum iterations: 100.
+
 Total DILI influence:
 \begin{equation}
     I = \sum_{d \in D} p(d)
@@ -56,24 +83,26 @@ Total DILI influence:
 \subsection{Permutation testing}
 
 Null distributions were generated by sampling 1,000 random target sets.
-Degree matching: each random target was sampled from nodes with degree within 25\% of the original target's degree.
+Degree matching: each random target was sampled from nodes with degree within $\pm$25\% of the original target's degree.
+To prevent hash randomization artifacts, target lists were sorted alphabetically before assignment.
 Z-score:
 \begin{equation}
     Z = \frac{x_{\text{obs}} - \mu_{\text{null}}}{\sigma_{\text{null}}}
 \end{equation}
 $P$-values were computed as the fraction of permuted values $\geq$ the observed value (one-tailed).
-$P$-values at the permutation floor ($<$1/1000) are reported as $p < 10^{-16}$.
+$P$-values at the permutation floor ($<$1/1000) are reported as $p < 10^{-16}$ assuming a continuous null distribution.
+Multiple testing correction: Benjamini--Hochberg FDR.
 Random seed: 42.
 
 \subsection{Expression-weighted influence}
 
-Edge weights were modified by source-node expression:
+Edge weights were modified by source-node liver expression:
 \begin{equation}
-    A'_{ij} = A_{ij} \times \log_2(\text{TPM}_i + 1)
+    W'_{ij} = \frac{A_{ij} \cdot e_i}{\sum_k A_{kj} \cdot e_k}
 \end{equation}
-The modified adjacency matrix was column-normalized.
+where $e_i = \log_2(\text{TPM}_i + 1)$ for gene $i$ (GTEx v8 liver).
 All other RWR parameters were identical.
-EWI is a constraining analysis; it does not constitute a separate hypothesis test.
+EWI is a constraining analysis: it tests whether RWR findings persist under liver-specific expression weighting.
 Random seed: 42.
 
 \subsection{Per-target network influence}
@@ -81,28 +110,46 @@ Random seed: 42.
 \begin{equation}
     \text{PTNI} = \frac{I}{|T|}
 \end{equation}
+PTNI normalizes total influence by target set size.
 PTNI is an effect-size normalization.
-PTNI was not subjected to permutation testing.
+PTNI was not subjected to independent permutation testing.
 
 \subsection{Bootstrap sensitivity analysis}
 
+To assess whether target count explains the observed ranking:
 100 random 10-target subsets were sampled without replacement from Quercetin's 62-target pool.
 Each subset was scored by standard RWR.
-Distribution summary statistics: mean, standard deviation, 95th percentile.
+Summary statistics: mean, standard deviation, 95th percentile.
+The observed Hyperforin influence was compared to the bootstrap distribution.
 Random seed: 42.
 
 \subsection{Chemical similarity analysis}
 
-Morgan fingerprints (radius = 2, 2048 bits) were generated using RDKit v2023.03 \citep{RDKit2023}.
-Tanimoto similarity was computed between test compounds and DILIrank reference drugs (542 DILI-positive, 365 DILI-negative).
-Maximum similarity across the reference set was reported.
-Structural analog threshold: 0.4 \citep{Maggiora2014}.
+Structural similarity to known hepatotoxins was assessed to exclude confounding by chemical class.
+Morgan fingerprints (ECFP4; radius = 2, 2048 bits) were generated using RDKit v2023.03 \citep{RDKit2023}.
+Reference set: DILIrank 2.0 drugs with retrievable SMILES (542 DILI-positive, 365 DILI-negative).
+SMILES were retrieved via PubChem REST API.
+Tanimoto coefficient:
+\begin{equation}
+    \text{Tanimoto}(A, B) = \frac{|A \cap B|}{|A \cup B|}
+\end{equation}
+Maximum similarity across the reference set was reported for each compound.
+Structural analog threshold: Tanimoto $>$ 0.4 \citep{Maggiora2014}.
 
-\subsection{Software}
+\subsection{Software and reproducibility}
 
-Python 3.10 with NetworkX 3.1.
-R 4.3 with igraph 1.5.
+Python 3.10, NetworkX 3.1 \citep{Hagberg2008}; R 4.3, igraph 1.5.
+All random seeds fixed at 42.
+Target lists sorted alphabetically before processing.
 
-\subsection{Code availability}
+\subsection{Code and data availability}
 
-All code is available at: \url{https://github.com/antonybevan/h-perforatum-network-tox}.
+All code: \url{https://github.com/antonybevan/h-perforatum-network-tox}
+
+Data sources:
+\begin{itemize}
+    \item STRING v12.0: \url{https://string-db.org}
+    \item GTEx v8: \url{https://gtexportal.org}
+    \item ChEMBL v31: \url{https://www.ebi.ac.uk/chembl}
+    \item DILIrank 2.0: \url{https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb}
+\end{itemize}
