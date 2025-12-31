@@ -5,14 +5,14 @@ This intuition conflates proximity with influence and lacks a principled way to 
 Here, we evaluate this assumption using two major \textit{Hypericum perforatum} constituents, Hyperforin and Quercetin, as a controlled case study in hepatotoxicity (DILI) risk.
 
 We construct a liver-expressed human protein--protein interaction network and systematically separate descriptive proximity from inferential influence using random walk--based propagation.
-Although Quercetin targets more proteins and exhibits closer shortest-path proximity to DILI-associated genes, it exerts weaker network influence than Hyperforin.
+Although Quercetin targets more proteins and exhibits closer shortest-path proximity to DILI-associated genes at the primary threshold ($\geq$900), it exerts weaker network influence than Hyperforin.
 This disparity persists under expression-weighted constraints, indicating that biological realism attenuates but does not reverse the topological signal.
 
 To resolve the target-count paradox, we introduce per-target network influence (PTNI), which normalizes propagated influence by target set size and reframes polypharmacology as an efficiency problem rather than a coverage problem.
 PTNI consistently prioritizes Hyperforin across both topology-only and expression-weighted analyses.
 Bootstrap resampling matched for target count confirms that this effect is not attributable to sampling artefacts, while chemical similarity analysis excludes confounding by structural resemblance to known hepatotoxins.
 
-Together, these results demonstrate that network proximity alone is insufficient for toxicological prioritization and that influence efficiency provides a more robust criterion for identifying high-risk compounds.
+Together, these results demonstrate that network proximity is threshold-dependent and insufficient for toxicological prioritization, whereas influence rankings are robust and provide a more reliable criterion for identifying high-risk compounds.
 This framework generalizes beyond \textit{H.\ perforatum} and offers a principled basis for integrating network topology, biological constraint, and robustness in computational safety assessment.
 
 \vspace{0.5em}

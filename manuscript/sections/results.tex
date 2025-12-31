@@ -1,11 +1,12 @@
 \section{Results}
 
-\subsection{Quercetin targets are closer to DILI genes but exert weaker influence}
+\subsection{Proximity rankings are threshold-dependent; influence rankings are robust}
 
 We first established network context by quantifying target count and shortest-path proximity to 82 DILI-associated genes (Figure~\ref{fig:fig1}).
 Quercetin engages 62 targets in the liver-expressed largest connected component; Hyperforin engages 10.
-Shortest-path proximity reveals that Quercetin targets are significantly closer to DILI genes than degree-matched random expectation (Z = $-$5.4; one-tailed $p < 10^{-6}$; $n = 1{,}000$ permutations; FDR-corrected), while Hyperforin targets exhibit weaker proximity (Z = $-$2.6; $p = 0.005$; FDR-corrected).
-By conventional interpretation, Quercetin should pose greater hepatotoxicity risk.
+Shortest-path proximity reveals that at STRING confidence $\geq$900, Quercetin targets are significantly closer to DILI genes than degree-matched random expectation (Z = $-$5.4; one-tailed $p < 10^{-6}$; $n = 1{,}000$ permutations; FDR-corrected), while Hyperforin targets exhibit weaker proximity (Z = $-$3.9; $p < 0.001$; FDR-corrected).
+We note that this ranking reverses at lower thresholds (see Section~\ref{sec:threshold}).
+By conventional interpretation at this threshold, Quercetin should pose greater hepatotoxicity risk.
 
 Random walk with restart (RWR) reverses this ranking (Figure~\ref{fig:fig2}).
 Hyperforin achieves influence Z = +10.3 (one-tailed $p < 10^{-16}$; at permutation floor); Quercetin achieves Z = +4.4 ($p < 10^{-6}$).
@@ -61,6 +62,7 @@ Even when sampling equalized subsets from Quercetin's pool, no configuration mat
 Bootstrap analysis is a robustness control; it strengthens confidence in the ranking without providing independent evidence.
 
 \subsection{Threshold robustness}
+\label{sec:threshold}
 
 The influence ranking is stable across network confidence thresholds (Table~\ref{tab:threshold_robustness}).
 At STRING confidence $\geq$700 (11{,}693 nodes, 100{,}383 edges), Hyperforin achieves RWR Z = +10.9 and EWI Z = +10.5; at $\geq$900 (7{,}677 nodes, 66{,}908 edges), Z = +10.3 and +9.1 respectively.
