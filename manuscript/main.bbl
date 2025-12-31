@@ -1,34 +1,9 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Barab{\'a}si et~al.(2011)Barab{\'a}si, Gulbahce, and
-  Loscalzo]{Barabasi2011}
-Albert-L{\'a}szl{\'o} Barab{\'a}si, Natali Gulbahce, and Joseph Loscalzo.
-\newblock Network medicine: a network-based approach to human disease.
-\newblock \emph{Nature Reviews Genetics}, 12\penalty0 (1):\penalty0 56--68,
-  2011.
-\newblock \doi{10.1038/nrg2918}.
-
-\bibitem[Bauer et~al.(2003)Bauer, St{\"o}rmer, Johne, Kr{\"u}ger, Budde,
-  Neumayer, Roots, and Mai]{Bauer2004}
-Susanne Bauer, Eva St{\"o}rmer, Andrea Johne, Heinrich Kr{\"u}ger, Klemens
-  Budde, Hans-Hellmut Neumayer, Ivar Roots, and Ingo Mai.
-\newblock Alterations in cyclosporin {A} pharmacokinetics and metabolism during
-  treatment with {St John's} wort in renal transplant patients.
-\newblock \emph{British Journal of Clinical Pharmacology}, 55\penalty0
-  (2):\penalty0 203--211, 2003.
-\newblock \doi{10.1046/j.1365-2125.2003.01759.x}.
-
-\bibitem[Boots et~al.(2008)Boots, Haenen, and Bast]{Boots2008}
-Agnes~W Boots, Guido~RMM Haenen, and Aalt Bast.
-\newblock Health effects of quercetin: from antioxidant to nutraceutical.
-\newblock \emph{European Journal of Pharmacology}, 585\penalty0 (2-3):\penalty0
-  325--337, 2008.
-\newblock \doi{10.1016/j.ejphar.2008.03.008}.
 
 \bibitem[Chen et~al.(2016)Chen, Suzuki, Thakkar, Yu, Hu, and Tong]{Chen2016}
 Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
@@ -37,15 +12,6 @@ Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
 \newblock \emph{Drug Discovery Today}, 21\penalty0 (4):\penalty0 648--653,
   2016.
 \newblock \doi{10.1016/j.drudis.2016.02.015}.
-
-\bibitem[Dur{\'a}n et~al.(2021)Dur{\'a}n, Perezy, Zhao, Cheng, and
-  Barab{\'a}si]{Duran2021}
-Crist{\'o}bal Dur{\'a}n, Silvia Perezy, Yi~Zhao, Feixiong Cheng, and
-  Albert-L{\'a}szl{\'o} Barab{\'a}si.
-\newblock Drug side effect prediction based on drug-drug interactions and
-  targeted drug structural signatures.
-\newblock \emph{Bioinformatics}, 37\penalty0 (22):\penalty0 4175--4182, 2021.
-\newblock \doi{10.1093/bioinformatics/btab458}.
 
 \bibitem[{European Medicines Agency}(2018)]{EMA2018}
 {European Medicines Agency}.
@@ -74,30 +40,6 @@ Paul Hammerness, Ethan Basch, Catherine Ulbricht, Erica-Pauline Barrette, Ivo
   interactions for the consultation psychiatrist.
 \newblock \emph{Psychosomatics}, 44\penalty0 (4):\penalty0 271--282, 2003.
 \newblock \doi{10.1176/appi.psy.44.4.271}.
-
-\bibitem[Heinrich et~al.(2020)Heinrich, Appendino, Efferth, Furst, Izzo,
-  Kayser, Pezzuto, and Viljoen]{Heinrich2020}
-Michael Heinrich, Giovanni Appendino, Thomas Efferth, Robert Furst, Angelo~A
-  Izzo, Oliver Kayser, John~M Pezzuto, and Alvaro Viljoen.
-\newblock Best practice in research--{Overcoming} common challenges in
-  phytopharmacological research.
-\newblock \emph{Journal of Ethnopharmacology}, 246:\penalty0 112230, 2020.
-\newblock \doi{10.1016/j.jep.2019.112230}.
-
-\bibitem[Hopkins(2008)]{Hopkins2008}
-Andrew~L Hopkins.
-\newblock Network pharmacology: the next paradigm in drug discovery.
-\newblock \emph{Nature Chemical Biology}, 4\penalty0 (11):\penalty0 682--690,
-  2008.
-\newblock \doi{10.1038/nchembio.118}.
-
-\bibitem[Klaassen and Aleksunes(2010)]{Klaassen2010}
-Curtis~D Klaassen and Lauren~M Aleksunes.
-\newblock Xenobiotic, bile acid, and cholesterol transporters: function and
-  regulation.
-\newblock \emph{Pharmacological Reviews}, 62\penalty0 (1):\penalty0 1--96,
-  2010.
-\newblock \doi{10.1124/pr.109.002014}.
 
 \bibitem[K{\"o}hler et~al.(2008)K{\"o}hler, Bauer, Horn, and
   Robinson]{Kohler2008}
@@ -191,23 +133,5 @@ Damian Szklarczyk, Rebecca Kirsch, Mikaela Koutrouli, Katerina Nastou, Farrokh
 \newblock \emph{Nucleic Acids Research}, 51\penalty0 (D1):\penalty0 D483--D489,
   2023.
 \newblock \doi{10.1093/nar/gkac1052}.
-
-\bibitem[Watkins et~al.(2001)Watkins, Wisely, Moore, Collins, Lambert,
-  Williams, Willson, Kliewer, and Redinbo]{Watkins2001}
-Reginald~E Watkins, G~Bruce Wisely, Linda~B Moore, John~L Collins, Millard~H
-  Lambert, Shawn~P Williams, Timothy~M Willson, Steven~A Kliewer, and Matthew~R
-  Redinbo.
-\newblock The human nuclear xenobiotic receptor {PXR}: structural determinants
-  of directed promiscuity.
-\newblock \emph{Science}, 292\penalty0 (5525):\penalty0 2329--2333, 2001.
-\newblock \doi{10.1126/science.1060762}.
-
-\bibitem[Williamson et~al.(2000)Williamson, Day, Plumb, and
-  Couteau]{Williamson2006}
-Gary Williamson, Andrew~J Day, Geoffrey~W Plumb, and D{\'e}sirr{\'e}e Couteau.
-\newblock Human metabolic pathways of dietary flavonoids and cinnamates.
-\newblock \emph{Biochemical Society Transactions}, 28\penalty0 (2):\penalty0
-  16--22, 2000.
-\newblock \doi{10.1042/bst0280016}.
 
 \end{thebibliography}

@@ -1,43 +1,47 @@
 \section{Discussion}
 
-Hyperforin, not Quercetin, drives the hepatotoxicity signal from \textit{Hypericum perforatum}.
-The evidence is convergent: higher influence despite fewer targets, 22-fold greater per-target efficiency, persistence under expression weighting, and exclusion of target-count and structural-analog confounders.
+These results demonstrate that network proximity alone is insufficient for toxicological prioritization.
+Quercetin, despite more targets and closer proximity to DILI genes, exerts weaker influence than Hyperforin.
+Influence efficiency---not target count or path length---distinguishes high-risk compounds.
 
-\subsection{The proximity paradox}
+\subsection{Proximity versus influence}
 
-Proximity suggested Quercetin as the greater concern \citep{Menche2015}.
-Random walk with restart reversed the ranking.
-Proximity counts paths; influence weights them by topology \citep{Kohler2008}.
-The rank reversal demonstrates these are distinct properties.
+The rank reversal between proximity and influence is not a methodological artifact; it reflects a conceptual distinction.
+Proximity counts shortest paths.
+Influence weights them by network topology, capturing the cumulative effect of multiple indirect routes \citep{Kohler2008}.
+When these metrics diverge, proximity-based predictions may mislead \citep{Menche2015}.
 
-\subsection{Mechanistic basis}
+\subsection{PTNI as a normalization principle}
 
-Hyperforin activates PXR, inducing CYP3A4, CYP2C9, and ABC transporters \citep{Moore2000, Watkins2001}.
-These targets occupy topologically central positions in hepatic drug metabolism networks \citep{Klaassen2010}.
-Quercetin's 62 targets disperse across flavonoid biosynthesis, signaling, and antioxidant pathways \citep{Boots2008}.
-The 22-fold PTNI difference reflects focused versus scattered target profiles.
+Per-target network influence (PTNI) resolves the target-count paradox by reframing polypharmacology as an efficiency problem.
+A compound with few, strategically positioned targets can achieve higher PTNI than one with many peripheral targets.
+The 22-fold PTNI difference between Hyperforin and Quercetin quantifies this distinction.
+PTNI is descriptive---it was not independently tested---but its consistency across topology-only and expression-weighted analyses supports its utility as a normalization principle.
 
-\subsection{Expression constraint}
+\subsection{Biological constraint}
 
-Expression weighting narrows but does not reverse the gap.
-Quercetin gains from high-expression targets (CFB); Hyperforin's topological advantage persists.
+Expression weighting attenuates but does not reverse Hyperforin's advantage.
+Quercetin gains from high-expression targets (CFB); Hyperforin's topological position remains dominant.
+This addresses a common critique: that network topology without expression context lacks biological realism.
 The constraint was applied; the ranking held.
 
-\subsection{Implications}
+\subsection{Generalizability}
 
-Target count is a poor proxy for risk \citep{Heinrich2020}.
-Few strategically positioned targets may pose greater liability than many peripheral ones.
-These data support prioritizing Hyperforin content in safety-oriented quality control of \textit{H.\ perforatum} preparations \citep{Bauer2004}.
+This framework extends beyond \textit{H.\ perforatum}.
+Any polypharmacological comparison faces the same target-count confound.
+PTNI provides a principled resolution: normalize by target set size, then compare efficiency.
+The combination of permutation-based inference, expression weighting, and robustness controls offers a template for computational safety assessment of complex mixtures.
 
 \subsection{Limitations}
 
-Drug--target databases may be incomplete.
-STRING aggregates across conditions; liver-specific networks might differ.
-PTNI is descriptive, not formally tested.
+Drug--target databases may be incomplete; novel targets could alter the analysis.
+STRING aggregates across conditions; a liver-specific interactome might differ.
+PTNI is a normalization, not a formal statistical test.
 Network predictions require experimental validation.
-Extension to other constituents would strengthen generalizability.
+Extension to other \textit{H.\ perforatum} constituents would strengthen generalizability.
 
 \subsection{Conclusions}
 
-Mechanistic specificity, not target promiscuity, drives Hyperforin's hepatotoxicity signal.
-The combination of permutation-based inference, expression weighting, and control analyses provides a framework applicable to other complex botanicals.
+Hyperforin drives the hepatotoxicity signal from \textit{Hypericum perforatum} through mechanistic specificity, not target promiscuity.
+Influence efficiency, not target count or proximity, predicts risk.
+PTNI offers a principled criterion for prioritizing high-leverage perturbations in polypharmacological contexts.
