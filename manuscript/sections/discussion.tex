@@ -8,6 +8,13 @@ This instability challenges a common heuristic in network medicine---that target
 Proximity measures reachability; influence measures propagation.
 These are distinct topological properties, and conflating them leads to systematic misattribution.
 
+The proximity ranking reversal has a precise statistical explanation.
+Z-scores are computed relative to degree-matched null distributions, which differ in shape depending on target set size.
+Hyperforin's 10 targets yield a null distribution with standard deviation $\sigma_{null} \approx 0.16$ (700) or $0.24$ (900), whereas Quercetin's 62 targets yield tighter distributions ($\sigma_{null} \approx 0.07$ or $0.09$).
+A compound with more targets has a more constrained null (law of large numbers), so equivalent deviations in observed distance translate to different Z-scores.
+At 700, Hyperforin's raw distance (0.60 vs 1.34) is sufficiently smaller than Quercetin's to overcome this effect; at 900, the gap narrows (1.30 vs 1.68) and the denominator effect dominates.
+This confounding by target count is absent in influence-based metrics, where the signal derives from propagation dynamics rather than distance statistics.
+
 The paradox arises because shortest-path distance treats all paths equally, ignoring how signals amplify or attenuate through hub nodes.
 Hyperforin's targets, though fewer, occupy positions that enable efficient propagation to the DILI module.
 Quercetin's targets, though numerous and close, lie on peripheral or redundant paths.
