@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -91,23 +91,6 @@ David Mendez, Anna Gaulton, A~Patr{\'i}cia Bento, Jon Chambers, Marleen
 \newblock \emph{Nucleic Acids Research}, 47\penalty0 (D1):\penalty0 D930--D940,
   2019.
 \newblock \doi{10.1093/nar/gky1075}.
-
-\bibitem[Moore et~al.(2000)Moore, Goodwin, Jones, Wisely, Serabjit-Singh,
-  Willson, Collins, and Kliewer]{Moore2000}
-Linda~B Moore, Bryan Goodwin, Stacey~A Jones, G~Bruce Wisely, Connie~J
-  Serabjit-Singh, Timothy~M Willson, John~L Collins, and Steven~A Kliewer.
-\newblock {St. John's} wort induces hepatic drug metabolism through activation
-  of the pregnane {X} receptor.
-\newblock \emph{Proceedings of the National Academy of Sciences}, 97\penalty0
-  (13):\penalty0 7500--7502, 2000.
-\newblock \doi{10.1073/pnas.130155097}.
-
-\bibitem[Nahrstedt and Butterweck(1997)]{Nahrstedt1997}
-Adolf Nahrstedt and Veronika Butterweck.
-\newblock Biologically active and other chemical constituents of the herb of
-  {Hypericum} perforatum {L.}
-\newblock \emph{Pharmacopsychiatry}, 30\penalty0 (S2):\penalty0 129--134, 1997.
-\newblock \doi{10.1055/s-2007-979533}.
 
 \bibitem[{RDKit}(2023)]{RDKit2023}
 {RDKit}.
