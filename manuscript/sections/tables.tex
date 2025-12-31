@@ -1,0 +1,52 @@
+\clearpage
+\section*{Tables}
+
+\begin{table}[ht]
+\centering
+\caption{\textbf{Summary of network pharmacology results comparing Hyperforin and Quercetin.} All Z-scores derived from $n = 1{,}000$ degree-matched permutations. RWR = random walk with restart; EWI = expression-weighted influence; PTNI = per-target normalized influence.}
+\label{tab:summary}
+\vspace{0.5em}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Metric} & \textbf{Hyperforin} & \textbf{Quercetin} & \textbf{Difference} & \textbf{Interpretation} \\
+\midrule
+Target count & 10 & 62 & 6.2$\times$ fewer & --- \\
+\addlinespace
+Proximity Z-score & $-$2.6 & $-$5.4 & +2.8 & Quercetin closer \\
+Proximity $p$-value & 0.005 & $<10^{-6}$ & --- & Both significant \\
+\addlinespace
+Influence Z-score (RWR) & +10.3 & +4.4 & +5.9 & \textbf{Hyperforin stronger} \\
+Influence $p$-value & $<10^{-16}$ & $<10^{-6}$ & --- & Both significant \\
+\addlinespace
+Influence Z-score (EWI) & +9.1 & +5.6 & +3.5 & Hyperforin still stronger \\
+\addlinespace
+PTNI (RWR) & 0.0114 & 0.0005 & 22$\times$ & \textbf{Higher efficiency} \\
+PTNI (EWI) & 0.0133 & 0.0008 & 17$\times$ & \textbf{Higher efficiency} \\
+\addlinespace
+Chemical similarity (max) & 0.18 & 0.21 & --- & Both $<$0.4 threshold \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{\textbf{Hyperforin target genes and their liver expression.} Targets identified from STITCH v5.0 and ChEMBL v31, filtered to those present in the liver-expressed STRING LCC. Expression values are median TPM from GTEx v8 liver tissue.}
+\label{tab:hyperforin_targets}
+\vspace{0.5em}
+\begin{tabular}{llr}
+\toprule
+\textbf{Gene Symbol} & \textbf{Protein Name} & \textbf{Liver TPM} \\
+\midrule
+NR1I2 & Pregnane X receptor (PXR) & 12.4 \\
+CYP3A4 & Cytochrome P450 3A4 & 335.3 \\
+CYP2C9 & Cytochrome P450 2C9 & 187.6 \\
+ABCB1 & P-glycoprotein (MDR1) & 8.7 \\
+ABCC2 & Multidrug resistance protein 2 & 42.1 \\
+SLC22A1 & Organic cation transporter 1 & 156.8 \\
+UGT1A1 & UDP-glucuronosyltransferase 1A1 & 89.4 \\
+SULT2A1 & Sulfotransferase 2A1 & 234.5 \\
+CYP2B6 & Cytochrome P450 2B6 & 45.2 \\
+CYP2C19 & Cytochrome P450 2C19 & 23.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
