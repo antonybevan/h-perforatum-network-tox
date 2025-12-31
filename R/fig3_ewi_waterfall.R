@@ -1,6 +1,6 @@
 # ============================================================================
-# fig8_waterfall.R - Figure 8: Waterfall Chart - Gap Decomposition
-# Shows WHY the gap narrows: expression effect on each compound
+# fig3_ewi_waterfall.R - Figure 3: Expression-Weighting Sensitivity Analysis
+# Decomposition of Z-score advantage under tissue-constrained influence propagation
 # ============================================================================
 
 source("R/00_setup_pub.R")
@@ -99,13 +99,13 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
   ) +
   
   labs(
-    title = "Decomposition: Why does the gap narrow under EWI?",
-    subtitle = "Hyperforin loses slightly; Quercetin gains—but the lead persists",
+    title = "Sensitivity analysis: Expression weighting attenuates but does not eliminate the Z-score differential",
+    subtitle = expression(paste(Delta, "Z (RWR) = +5.8  ", symbol('\256'), "  ", Delta, "Z (EWI) = +3.5")),
     x = NULL,
-    y = "Contribution to Z-score gap",
+    y = expression(paste("Contribution to ", Delta, "Z (Hyperforin − Quercetin)")),
     caption = str_wrap(
-      "[MECHANISTIC INSIGHT] The RWR advantage (+5.8) decomposes under expression weighting: Hyperforin's high-expression targets (CYP2C9, CYP3A4) provide less relative advantage when the entire network is expression-weighted. Quercetin's CFB (1115 TPM) boosts its signal. Net effect: gap narrows to +3.5 but never closes. GTEx v8 liver expression (TPM ≥1). Data: STRING v12.0 (≥900).",
-      width = 105
+      "[SENSITIVITY ANALYSIS] Decomposition of the Z-score differential under expression-weighted influence propagation. The topology-only advantage (ΔZ = +5.8, RWR) is partitioned into: (1) Hyperforin's change under expression weighting (−1.2, attributable to reduced relative advantage of high-expression targets CYP2C9/CYP3A4); (2) Quercetin's gain (+1.1, driven by high-expression target CFB at 1115 TPM). Residual advantage (ΔZ = +3.5) remains statistically significant (both p < 10⁻⁸). GTEx v8 liver expression weights edge transitions (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations per method.",
+      width = 115
     )
   ) +
   
