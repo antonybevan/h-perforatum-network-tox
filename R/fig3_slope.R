@@ -49,11 +49,11 @@ p <- ggplot(slope_data) +
     hjust = -0.15, size = 3.5, fontface = "bold", family = "Arial", color = "#2E3440"
   ) +
   
-  # Column headers (full form, small and aligned)
-  annotate("text", x = 1, y = 13.5, label = "Random walk\nwith restart", 
+  # Column headers (full form with abbreviations, small and aligned)
+  annotate("text", x = 1, y = 13.5, label = "Random walk\nwith restart (RWR)", 
            hjust = 0.5, size = 3.5, fontface = "bold", 
            family = "Arial", color = "#2E3440", lineheight = 0.9) +
-  annotate("text", x = 2, y = 13.5, label = "Expression-weighted\ninfluence", 
+  annotate("text", x = 2, y = 13.5, label = "Expression-weighted\ninfluence (EWI)", 
            hjust = 0.5, size = 3.5, fontface = "bold", 
            family = "Arial", color = "#2E3440", lineheight = 0.9) +
   

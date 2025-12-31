@@ -17,7 +17,7 @@ phase_data <- bind_rows(
       rwr_900 %>% filter(compound == "Hyperforin") %>% pull(observed_influence),
       rwr_900 %>% filter(compound == "Quercetin") %>% pull(observed_influence)
     ),
-    Method = "RWI"
+    Method = "Random walk\nwith restart (RWR)"
   ),
   tibble(
     Compound = c("Hyperforin", "Quercetin"),
@@ -26,12 +26,12 @@ phase_data <- bind_rows(
       ewr_900 %>% filter(compound == "Hyperforin") %>% pull(observed_influence),
       ewr_900 %>% filter(compound == "Quercetin") %>% pull(observed_influence)
     ),
-    Method = "EWI"
+    Method = "Expression-weighted\ninfluence (EWI)"
   )
 ) %>%
   mutate(
     PTNI = Influence / Targets,
-    Method = factor(Method, levels = c("RWI", "EWI"))
+    Method = factor(Method, levels = c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)"))
   )
 
 # --- Calculate Iso-PTNI Lines ---
@@ -44,7 +44,8 @@ x_range <- seq(0, 70, length.out = 100)
 
 # Duplicate iso-lines for both facets
 iso_lines <- expand_grid(
-  Method = factor(c("RWI", "EWI"), levels = c("RWI", "EWI")),
+  Method = factor(c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)"), 
+                  levels = c("Random walk\nwith restart (RWR)", "Expression-weighted\ninfluence (EWI)")),
   PTNI = ptni_levels
 ) %>%
   rowwise() %>%
