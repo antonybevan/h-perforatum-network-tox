@@ -4,7 +4,7 @@
 % Table 1: Main Results Summary
 \begin{table}[ht]
 \centering
-\caption{\textbf{Network pharmacology results.} Z-scores from $n = 1{,}000$ degree-matched permutations. PTNI = per-target normalized influence. STRING v12.0 (confidence $\geq$900), GTEx v8 liver expression.}
+\caption{\textbf{Network pharmacology results.} Z-scores from $n = 1{,}000$ degree-matched permutations (one-tailed, FDR-corrected). PTNI = per-target normalized influence (Eq.~7). STRING v12.0 (confidence $\geq$900; 7{,}677 nodes, 66{,}908 edges), GTEx v8 liver expression (TPM $\geq$1). Random seed: 42.}
 \label{tab:main_results}
 \vspace{0.5em}
 \small
@@ -49,7 +49,7 @@ EWI & 0.0133 & 0.0008 & 17$\times$ & Advantage persists \\
 % Table 3: Bootstrap Sensitivity
 \begin{table}[ht]
 \centering
-\caption{\textbf{Bootstrap sensitivity analysis.} 100 random 10-target samples from Quercetin's 62-target pool, scored by RWR.}
+\caption{\textbf{Bootstrap sensitivity analysis.} 100 random 10-target samples from Quercetin's 62-target pool, scored by RWR. Sampling without replacement, random seed 42. 95\% CI = empirical 2.5th--97.5th percentile.}
 \label{tab:bootstrap}
 \vspace{0.5em}
 \begin{tabular}{lc}
@@ -110,7 +110,7 @@ MMP9 & Matrix metalloproteinase-9 & 1 & 94 \\
 % Table 6: Network Threshold Robustness
 \begin{table}[ht]
 \centering
-\caption{\textbf{Robustness across network confidence thresholds.} Results for STRING confidence $\geq$700 and $\geq$900.}
+\caption{\textbf{Robustness across network confidence thresholds.} STRING $\geq$700: 11{,}693 nodes, 100{,}383 edges; $\geq$900: 7{,}677 nodes, 66{,}908 edges. All Z-scores from $n = 1{,}000$ degree-matched permutations.}
 \label{tab:threshold_robustness}
 \vspace{0.5em}
 \begin{tabular}{llrrrr}
