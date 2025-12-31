@@ -39,7 +39,7 @@ phase_data <- bind_rows(
 # Therefore: Influence = PTNI × Targets
 # For diagonal reference lines
 
-ptni_levels <- c(0.002, 0.01, 0.05)  # Simplified: just 3 key contours
+ptni_levels <- c(0.001, 0.005, 0.01, 0.02, 0.05)  # Efficiency contours
 x_range <- seq(0, 70, length.out = 100)
 
 # Duplicate iso-lines for both facets
@@ -79,14 +79,16 @@ p <- ggplot() +
     size = 5, color = "#2E3440", alpha = 0.95
   ) +
   
-  # Compound labels (clean, just names)
+  # Compound labels with PTNI values
   geom_text_repel(
     data = phase_data,
-    aes(x = Targets, y = Influence, label = Compound),
-    size = 4, fontface = "bold", family = "Arial",
-    box.padding = 1.0, point.padding = 0.5,
-    force = 3, max.overlaps = Inf, seed = 42,
-    segment.color = "#666666", segment.size = 0.4
+    aes(x = Targets, y = Influence, 
+        label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
+    size = 3.8, fontface = "bold", family = "Arial",
+    box.padding = 1.2, point.padding = 0.6,
+    force = 4, max.overlaps = Inf, seed = 42,
+    segment.color = "#666666", segment.size = 0.4,
+    lineheight = 0.9
   ) +
   
   # Facet by method
