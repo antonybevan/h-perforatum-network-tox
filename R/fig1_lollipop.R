@@ -92,7 +92,7 @@ pB <- ggplot(panel_b_data, aes(x = Compound, y = Proximity_Z)) +
   scale_y_continuous(
     limits = c(-6.5, 0.8),
     breaks = seq(-6, 0, 2),
-    expand = expansion(mult = c(0.02, 0.05))
+    expand = expansion(mult = c(0.08, 0.05))  # Increased bottom expansion for label
   ) +
   
   labs(
