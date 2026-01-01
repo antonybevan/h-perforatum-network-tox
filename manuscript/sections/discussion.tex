@@ -89,9 +89,9 @@ Network-level prioritization supports but does not prove toxicological risk; exp
 
 \subsection{Conclusions}
 
-These results support prioritizing Hyperforin over Quercetin for hepatotoxicity-relevant follow-up based on network influence efficiency.
-The ranking is consistent with Hyperforin's established role in PXR-mediated drug interactions.
-PTNI provides a principled criterion for distinguishing high-leverage perturbation from diffuse polypharmacology.
+Proximity provides valid descriptive context for network topology, but yields threshold-dependent rankings that are confounded by target-count-dependent null distributions.
+When treated inferentially, proximity conflates reachability with functional influence and fails to distinguish diffuse polypharmacology from high-leverage perturbation.
 
-Beyond the specific case study, our results clarify the appropriate role of proximity: it provides valid descriptive context for network topology, but is threshold-dependent, confounded by null distribution shape, and yields unstable rankings when used for inference.
-By restricting proximity to descriptive use and basing inference on influence metrics that survive bias checks, we provide a methodological template for computational toxicology that generalizes beyond \textit{H.~perforatum} to any setting where constituent-level attribution is required.
+Influence-based propagation provides a more stable framework for comparative network toxicology.
+By restricting proximity to descriptive use and basing inference on influence metrics that survive robustness checks, we provide a methodological template that generalizes beyond any single case study to any setting where constituent-level risk attribution is required.
+

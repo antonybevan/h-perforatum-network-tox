@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,16 +12,6 @@ Albert-L{\'a}szl{\'o} Barab{\'a}si, Natali Gulbahce, and Joseph Loscalzo.
 \newblock \emph{Nature Reviews Genetics}, 12\penalty0 (1):\penalty0 56--68,
   2011.
 \newblock \doi{10.1038/nrg2918}.
-
-\bibitem[Bauer et~al.(2003)Bauer, St{\"o}rmer, Johne, Kr{\"u}ger, Budde,
-  Neumayer, Roots, and Mai]{Bauer2004}
-Susanne Bauer, Eva St{\"o}rmer, Andrea Johne, Heinrich Kr{\"u}ger, Klemens
-  Budde, Hans-Hellmut Neumayer, Ivar Roots, and Ingo Mai.
-\newblock Alterations in cyclosporin {A} pharmacokinetics and metabolism during
-  treatment with {St John's} wort in renal transplant patients.
-\newblock \emph{British Journal of Clinical Pharmacology}, 55\penalty0
-  (2):\penalty0 203--211, 2003.
-\newblock \doi{10.1046/j.1365-2125.2003.01759.x}.
 
 \bibitem[Boots et~al.(2008)Boots, Haenen, and Bast]{Boots2008}
 Agnes~W Boots, Guido~RMM Haenen, and Aalt Bast.
@@ -48,11 +38,6 @@ Siyu Chen, Xue Wang, Xinran Ye, Qinqin Wang, Xin Sun, Chunyan Ma, Zhidong Yuan,
   2022.
 \newblock \doi{10.1093/toxsci/kfac098}.
 
-\bibitem[{European Medicines Agency}(2018)]{EMA2018}
-{European Medicines Agency}.
-\newblock Assessment report on \textit{{Hypericum perforatum}} {L.}
-\newblock EMA/HMPC/101303/2008 Rev.1, 2018.
-
 \bibitem[{GTEx Consortium}(2020)]{GTEx2020}
 {GTEx Consortium}.
 \newblock The {GTEx} {Consortium} atlas of genetic regulatory effects across
@@ -73,15 +58,6 @@ Aric~A Hagberg, Daniel~A Schult, and Pieter~J Swart.
 \newblock In Ga{\"e}l Varoquaux, Travis Vaught, and Jarrod Millman, editors,
   \emph{Proceedings of the 7th Python in Science Conference (SciPy 2008)},
   pages 11--15, 2008.
-
-\bibitem[Hammerness et~al.(2003)Hammerness, Basch, Ulbricht, Barrette, Foppa,
-  Basch, Bent, Boon, and Ernst]{Hammerness2003}
-Paul Hammerness, Ethan Basch, Catherine Ulbricht, Erica-Pauline Barrette, Ivo
-  Foppa, Samuel Basch, Stephen Bent, Heather Boon, and Edzard Ernst.
-\newblock {St John's} wort: a systematic review of adverse effects and drug
-  interactions for the consultation psychiatrist.
-\newblock \emph{Psychosomatics}, 44\penalty0 (4):\penalty0 271--282, 2003.
-\newblock \doi{10.1176/appi.psy.44.4.271}.
 
 \bibitem[Hopkins(2008)]{Hopkins2008}
 Andrew~L Hopkins.

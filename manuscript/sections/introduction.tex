@@ -1,26 +1,21 @@
 \section{Introduction}
 
-Network-based approaches to drug safety use proximity to disease-associated genes as an implicit prioritization criterion, assuming that compounds interacting with many proteins or lying closer in network space pose greater toxicological risk \citep{Hopkins2008, Barabasi2011, Guney2016, Menche2015}.
-Proximity is a descriptive metric that provides useful network context; however, when used for prioritization it conflates topological reachability with functional influence and provides no principled way to distinguish diffuse polypharmacology from high-leverage perturbation.
-Whether this descriptive metric is appropriate for inferential prioritization---or whether it is confounded when used beyond description---remains an open and testable question.
+% Paragraph 1: What proximity means, why it's attractive, why it's incomplete
+Network-based drug safety assessment commonly uses proximity to disease-associated genes as a prioritization criterion, assuming that compounds with more targets or closer network position pose greater risk \citep{Hopkins2008, Barabasi2011, Guney2016, Menche2015}.
+This intuition is attractive: proximity is cheap to compute, interpretable, and widely available.
+However, proximity is a descriptive metric---it quantifies topological reachability, not functional influence.
+When treated inferentially, it conflates distance with downstream perturbation and provides no principled way to distinguish diffuse polypharmacology from high-leverage modulation of regulatory hubs.
+Whether proximity-based rankings are stable across network construction parameters, or whether they are confounded by target set size, remains an open question with direct implications for toxicological prioritization.
 
-\textit{Hypericum perforatum} (St.\ John's Wort) provides a controlled system to test this assumption.
-The extract contains bioactive constituents with contrasting profiles, notably the phloroglucinol Hyperforin and the flavonoid Quercetin \citep{Nahrstedt1997}.
-Hyperforin interacts with few targets yet potently activates the pregnane X receptor (PXR), a master regulator of xenobiotic metabolism \citep{Moore2000}.
-Quercetin exhibits broad polypharmacology across dozens of proteins \citep{Boots2008}.
-Both compounds exhibit hepatic activity, yet the constituent responsible for hepatotoxicity risk remains unresolved, with regulatory assessments and clinical reports offering incomplete attribution \citep{Hammerness2003, Bauer2004, EMA2018}.
+% Paragraph 2: Why toxicology is a sharp stress test, why H. perforatum is the minimal example
+Toxicology provides a sharp stress test for this question because risk attribution demands constituent-level inference, not aggregate description.
+\textit{Hypericum perforatum} (St.\ John's Wort) offers a controlled comparison: the extract contains two bioactive constituents with contrasting pharmacological profiles---Hyperforin (10 validated targets, potent PXR activator) and Quercetin (62 targets, broad polypharmacology) \citep{Nahrstedt1997, Moore2000, Boots2008}.
+Both exhibit hepatic activity, yet conventional network analysis would predict greater risk for Quercetin based on target count and proximity alone.
+This system therefore tests whether proximity-based intuition holds under minimal, well-characterized conditions.
 
-Conventional network analysis would predict greater risk for Quercetin based on its larger target set and closer proximity to liver injury--associated genes.
-However, such predictions assume that all targets contribute equally and that shortest-path distance adequately captures downstream perturbation.
-These assumptions ignore the topology of signal propagation, where influence depends not only on distance but also on traversal through highly connected regulatory nodes.
-
-We explicitly separate descriptive proximity from inferential influence using random walk--based network propagation on a liver-expressed human protein--protein interaction network \citep{Kohler2008, Guney2016}.
-Random walk with restart (RWR) quantifies the extent to which perturbations originating at compound targets diffuse to a defined disease module, providing an influence metric not reducible to shortest-path distance.
-Expression weighting further constrains propagation to liver-active genes.
-
-To resolve the target-count paradox---where compounds with more targets may exert weaker functional effects---we apply a per-target normalization of influence scores (PTNI = total influence / target count).
-PTNI reframes polypharmacology as an efficiency problem: distinguishing compounds that weakly perturb many nodes from those that exert high leverage through few targets.
-
-We apply this framework to compare Hyperforin (10 targets) and Quercetin (62 targets) across multiple tiers: proximity, influence, expression-weighted influence, PTNI, bootstrap sensitivity, and chemical similarity.
-This design tests whether proximity is appropriate for inferential prioritization, and whether influence efficiency provides a more robust criterion.
-
+% Paragraph 3: What we do differently, what principle we enforce
+We explicitly separate descriptive proximity from inferential influence.
+Shortest-path proximity is retained for contextual description; functional influence is quantified via random walk--based propagation, which integrates over all paths weighted by transition probability and captures signal amplification through regulatory hubs \citep{Kohler2008}.
+To resolve the target-count paradox, we introduce per-target network influence (PTNI), a normalization that reframes polypharmacology as an efficiency problem rather than a coverage problem.
+Bootstrap resampling and chemical similarity controls exclude target-count and structural confounding.
+This design tests a specific hypothesis: that proximity metrics are inappropriate for inferential prioritization, and that influence-based propagation provides a more stable framework for comparative network toxicology.
