@@ -80,8 +80,8 @@ p <- ggplot(data_wide, aes(y = Compound)) +
   ) +
   
   labs(
-    title = "Proximity ≠ Influence",
-    subtitle = "Quercetin is closer but weaker; Hyperforin is farther but stronger",
+    title = "Proximity does not predict influence",
+    subtitle = "Proximity ranking is threshold-dependent; influence ranking is stable",
     x = "Z-score",
     y = NULL,
     caption = str_wrap(

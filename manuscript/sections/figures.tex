@@ -19,7 +19,7 @@ Network: STRING v12.0 (confidence $\geq$900), GTEx v8 (liver TPM $\geq$1).}
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig2_dumbbell.pdf}
-\caption{\textbf{Proximity does not predict influence: the rank reversal.}
+\caption{\textbf{Proximity does not predict influence.}
 Dumbbell plot showing the dissociation between shortest-path proximity (left) and random walk influence (right) at STRING confidence $\geq$900.
 At this threshold, Quercetin exhibits closer proximity but weaker influence; Hyperforin exhibits greater influence despite more distant topology (note: proximity ranking reverses at $\geq$700).
 Hyperforin: proximity Z = $-$3.9, influence Z = +10.3 ($p < 10^{-16}$).
@@ -48,7 +48,7 @@ Expression weighting from GTEx v8 liver tissue.}
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{figures/fig4_ptni_phase.pdf}
-\caption{\textbf{Per-target network influence (PTNI) quantifies efficiency disparity.}
+\caption{\textbf{Per-target efficiency: coverage versus influence.}
 Phase plot of total influence versus target count.
 Diagonal lines represent iso-efficiency contours (PTNI = constant).
 Hyperforin occupies a higher efficiency region despite fewer targets.
@@ -62,7 +62,7 @@ PTNI is an effect-size normalization (influence / targets); no independent permu
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/fig5_bootstrap.pdf}
-\caption{\textbf{Bootstrap sensitivity analysis excludes target-count confounding.}
+\caption{\textbf{Bootstrap sensitivity: target-count control.}
 Density distribution of RWR influence scores from 100 random 10-target samples drawn from Quercetin's 62-target pool.
 Shaded region: 95\% confidence interval (0.016--0.054).
 Vertical line: Hyperforin observed influence (0.114).

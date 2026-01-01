@@ -98,7 +98,7 @@ pB <- ggplot(panel_b_data, aes(x = Compound, y = Proximity_Z)) +
   labs(
     tag = "B",
     x = NULL,
-    y = "Shortest-path proximity"
+    y = "Proximity Z-score"
   ) +
   
   theme_classic(base_size = 11, base_family = "Arial") +
