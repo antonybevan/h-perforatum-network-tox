@@ -79,7 +79,7 @@ p <- ggplot(bootstrap_iter, aes(x = quercetin_sampled_influence)) +
   ) +
   
   labs(
-    title = "Bootstrap sensitivity: target-count control",
+    title = "Bootstrap sensitivity analysis excludes target-count confounding",
     subtitle = "Distribution of influence scores from random 10-target samples",
     x = "Influence score (RWR)",
     y = "Density",

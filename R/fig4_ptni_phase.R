@@ -108,7 +108,7 @@ p <- ggplot() +
   ) +
   
   labs(
-    title = "Per-target efficiency: coverage versus influence",
+    title = "Per-target network influence (PTNI) quantifies efficiency disparity",
     subtitle = "PTNI reframes polypharmacology as efficiency, not coverage",
     x = "Target count",
     y = "Total influence",
