@@ -1,68 +1,81 @@
-# ECNP Closed-Form: Theoretical Foundations (Revised)
+# ECNP Closed-Form: Theoretical Foundations (Final)
 
-## Critical Discovery
-The independence assumption **fails catastrophically** in biological networks.
+## 1. The Three Mathematical Objects
 
-**Empirical evidence:**
-- Closed-form Z (independence): Hyperforin = 100, Quercetin = 244
-- Monte Carlo Z: Hyperforin = 10.27, Quercetin = 4.42
-- Variance underestimated by ~100x
-
-**Root cause:** Biological targets cluster in network neighborhoods, creating positive covariance through shared downstream paths.
+1. **Linear operator**: $M = \alpha(I - (1-\alpha)W)^{-1}$
+2. **Disease projection**: $m_j = \sum_{i \in D} M_{ij}$
+3. **Target set**: $T = \{j_1, \ldots, j_k\}$
 
 ---
 
-## 1. The Failed Approximation
+## 2. What is Mathematically Exact
 
-Original variance formula (independence assumption):
-$$\sigma_T^2 \approx \frac{1}{k} \cdot s_{\mathcal{P}}^2$$
+### Linearity
+$$I(T) = \sum_{j \in T} m_j$$
 
-This assumes:
-$$\mathrm{Var}\Big(\sum_{j\in T} m_j\Big) \approx k \cdot \mathrm{Var}(m)$$
-
-But the true variance is:
-$$\mathrm{Var}\Big(\sum_{j\in T} m_j\Big) = k \cdot \mathrm{Var}(m) + \sum_{i\neq j} \mathrm{Cov}(m_i,m_j)$$
-
-The covariance term is **dominant**, not negligible.
+### Variance Identity
+$$\text{Var}(I(T)) = \sum_j \text{Var}(m_j) + \sum_{i \neq j} \text{Cov}(m_i, m_j)$$
 
 ---
 
-## 2. The Corrected Model
+## 3. The Approximation
 
-### Key Insight
-Covariance between targets (i,j) is driven by **shared downstream influence**:
-$$\mathrm{Cov}(m_i, m_j) \propto \sum_{v \in D} M_{vi} M_{vj} = \langle M_{\cdot i}, M_{\cdot j} \rangle_D$$
+### Covariance Structure
+$$\text{Cov}(m_i, m_j) \propto \langle M_{\cdot i}, M_{\cdot j} \rangle_D$$
 
-Two targets covary if they propagate signal through overlapping paths into the disease module.
-
-### Corrected Variance Formula
-$$\sigma_T^2 \approx \frac{1}{k^2} \left[ k \cdot \sigma_m^2 + \lambda \sum_{i \neq j \in T} \langle M_{\cdot i}, M_{\cdot j} \rangle_D \right]$$
-
-Where:
-- $\langle \cdot, \cdot \rangle_D$ = inner product restricted to disease nodes
-- $\lambda$ = scalar calibration parameter (learned once per network)
-
-### What This Captures
-1. **Clustering penalty**: Redundant targets inflate variance
-2. **Path overlap**: Shared downstream routes create covariance
-3. **Biology-aware math**: σ_T grows with coherence, not just |T|
+### Cosine Redundancy
+$$\rho_{ij} = \frac{\langle M_{\cdot i}, M_{\cdot j} \rangle_D}{|M_{\cdot i}| |M_{\cdot j}|}$$
 
 ---
 
-## 3. Calibration Strategy
+## 4. The Selection Bias Discovery
 
-1. Compute path-overlap matrix: $O_{ij} = \langle M_{\cdot i}, M_{\cdot j} \rangle_D$ for all pairs
-2. For Monte Carlo runs, fit λ to minimize Z-score error
-3. Validate on held-out compounds
+The independence assumption failed because:
+$$\mathbb{E}[m_j | j \in T] \neq \mathbb{E}[m_j | \text{deg}(j)]$$
+
+Drug targets are NOT random samples. They are conditional samples from high-influence strata.
+
+**Fix**: Percentile-rank matching conditions on the correct σ-algebra:
+$$j \sim \mathcal{N} \iff \text{deg}(j) \approx \text{deg}(T) \land \text{rank}(m_j) \approx \text{rank}(m_T)$$
 
 ---
 
-## 4. Why This Matters
+## 5. Final Algorithm
 
-We can now say truthfully:
-- Independence assumptions fail in biological networks
-- Failure arises from **path overlap**, not degree alone
-- We correct this by explicitly modeling downstream covariance
-- The corrected closed-form matches Monte Carlo within tolerance
+```
+μ_T = k × E[m | deg, rank]
+σ² = var(pool)/k + λ × mean_ρ
+Z = (I_T - μ_T) / σ
+```
 
-This is a **real algorithmic contribution**, not a heuristic patch.
+Parameters:
+- λ = 0.0195 (calibrated)
+- Degree tolerance: ±20%
+- Percentile window: ±10%
+
+---
+
+## 6. Stress Test Proof
+
+**Rank scrambling test**: Scrambling ranks causes Z to explode from 10 to 95.
+
+This proves percentile matching is doing real work, not placebo.
+
+---
+
+## 7. What the Algorithm Measures
+
+Z measures the **target-pool influence gap**, not disease-compound alignment directly.
+
+High Z means: "Targets propagate to disease module more than percentile-matched alternatives."
+
+The biological interpretation requires the disease module to be biologically valid.
+
+---
+
+## 8. Documented Limitations
+
+1. **Extreme targets**: >50% above 99th percentile → refuse
+2. **λ sensitivity**: 15x Z swing across λ range
+3. **Disease corruption**: Z inflates (not decays) with corruption
+4. **Large k**: Variance inflation for k > 50
