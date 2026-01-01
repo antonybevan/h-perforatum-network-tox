@@ -20,7 +20,7 @@ Network: STRING v12.0 LCC (confidence $\geq$900; 7{,}677 nodes, 66{,}908 edges) 
 \multicolumn{7}{@{}l}{\textit{Tier 1: Shortest-path proximity (descriptive)}} \\[0.3em]
 & Hyperforin & 10 & $d_c = 1.30$ & $-$3.86 & $<10^{-16}$$^\dagger$ & --- \\
 & Quercetin & 62 & $d_c = 1.68$ & $-$5.44 & $<10^{-16}$$^\dagger$ & --- \\
-& \multicolumn{5}{r}{\textit{At $\geq$900: More targets $\rightarrow$ closer proximity (reverses at $\geq$700)}} \\[0.5em]
+& \multicolumn{5}{r}{\textit{Proximity ranking is threshold-dependent (reverses at $\geq$700)}} \\[0.5em]
 \multicolumn{7}{@{}l}{\textit{Tier 2: Random walk influence (inferential)}} \\[0.3em]
 & Hyperforin & 10 & 0.114 & \textbf{+10.27} & $<10^{-16}$$^\dagger$ & 0.0114 \\
 & Quercetin & 62 & 0.032 & +4.42 & $4.9 \times 10^{-6}$ & 0.0005 \\
@@ -128,7 +128,7 @@ $^*$Analog threshold: Tanimoto $>$ 0.4 (Maggiora et al., 2014). Morgan fingerpri
 % ============================================================================
 \begin{table}[ht]
 \centering
-\caption{\textbf{Hyperforin targets occupy regulatory hubs.}
+\caption{\textbf{Hyperforin targets include regulatory hubs.}
 All 10 Hyperforin targets in the liver-expressed LCC, with liver expression (GTEx v8) and network degree.
 PXR (NR1I2) is the master regulator; CYP enzymes are downstream effectors.}
 \label{tab:hyperforin_targets}
@@ -153,7 +153,7 @@ MMP9 & MMP9 & 1 & 94 & ECM remodeling & Indirect \\
 \vspace{0.3em}
 \begin{minipage}{\linewidth}
 \footnotesize
-AKT1 is the highest-degree target (312 neighbors). Four of 10 targets (NR1I2, CYP3A4, CYP2C9, ABCB1, ABCC2) directly regulate DILI genes.
+AKT1 is the highest-degree target (312 neighbors). Four of 10 targets (NR1I2, CYP3A4, CYP2C9, ABCB1, ABCC2) are directly connected to DILI genes.
 \end{minipage}
 \end{table}
 
