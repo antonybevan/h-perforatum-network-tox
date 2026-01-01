@@ -1,0 +1,3 @@
+lambda_optimal = 0.0930763366
+hyperforin_error_pct = 9.66
+quercetin_error_pct = 34.70
