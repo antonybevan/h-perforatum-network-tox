@@ -6,7 +6,7 @@ The central finding of this study is a dissociation between network metrics: pro
 At the primary threshold ($\geq$900), Quercetin exhibits closer proximity to DILI genes yet weaker network influence than Hyperforin; at lower thresholds ($\geq$700), this proximity ranking reverses, while influence rankings remain stable.
 This instability indicates that proximity-based rankings are sensitive to network construction parameters.
 Proximity measures reachability; influence measures propagation.
-These are distinct topological properties, and treating proximity as a surrogate for influence conflates descriptive with inferential inference.
+These are distinct topological properties; proximity is appropriate for establishing network context, but treating it as an inferential surrogate for functional impact conflates description with inference.
 
 The proximity ranking reversal has a precise statistical explanation.
 Z-scores are computed relative to degree-matched null distributions, which differ in shape depending on target set size.
@@ -20,9 +20,16 @@ A wider denominator makes it \textit{harder} to achieve large Z-scores, not easi
 Hyperforin's Z = +10.27 is therefore a conservative estimate; if null distribution widths were equalized, the advantage would be even larger.
 This asymmetry---where proximity Z-scores are confounded by target count but influence Z-scores are not---indicates that influence metrics are less susceptible to sample-size artifacts.
 
-The paradox arises because shortest-path distance treats all paths equally, ignoring how signals amplify or attenuate through hub nodes.
-Hyperforin's targets, though fewer, occupy positions that enable efficient propagation to the DILI module.
-Quercetin's targets, though numerous and close, lie on peripheral or redundant paths.
+The mechanistic explanation is equally important.
+Shortest-path distance measures only minimum reachability: it returns the length of the single shortest path between a target and a disease gene, ignoring all other paths and treating all edges equally.
+Random walk with restart, by contrast, integrates over \textit{all} paths weighted by transition probability, capturing how perturbation signals propagate, amplify through hubs, and attenuate through bottlenecks.
+Hyperforin's targets---though fewer and more distant by shortest-path---occupy positions (PXR, CYPs, AKT1) that enable efficient propagation to the DILI module.
+Quercetin's targets, though numerous and close by shortest-path, lie on peripheral or redundant paths that dilute propagated influence.
+
+In summary, proximity was never designed as an inferential metric---it describes network topology.
+However, in practice it is widely used for prioritization, implicitly treating closer proximity as higher risk.
+Our results demonstrate why this use is problematic: (1) statistically, proximity Z-scores are confounded by target-count-dependent null distributions; (2) mechanistically, proximity measures reachability rather than propagation magnitude.
+Influence-based methods such as RWR are designed for inference and avoid both pitfalls.
 
 \subsection{Expression weighting refines but does not rescue proximity}
 
@@ -44,6 +51,7 @@ The 17--22-fold PTNI differential between Hyperforin and Quercetin quantifies th
 PTNI is a normalization, not a statistical test.
 It was not subjected to independent permutation testing.
 Its utility lies in resolving the target-count paradox by highlighting that influence per target, not total target count, is the salient quantity.
+The bootstrap analysis (Section 2.4) serves as the statistical test for this efficiency claim: Hyperforin's influence exceeds the 95\% CI of target count--matched Quercetin subsets.
 
 Taken together, the robustness analyses provide two orthogonal protections against target-count confounding.
 First, bootstrap resampling demonstrates that Hyperforin's influence exceeds the 95\% CI of target count--matched Quercetin subsets---showing the effect survives explicit size matching.
@@ -73,17 +81,7 @@ What does not generalize is the specific ranking, which is contingent on data so
 
 Drug--target databases may be incomplete; novel targets could alter the ranking.
 STRING aggregates interactions across cell types; a liver-specific interactome might differ.
-PTNI is a normalization, not a statistical test.
-Network-level prioritization supports but does not prove toxicological risk.
-Experimental validation in relevant model systems remains necessary.
-
-\subsection{Exclusion controls}
-
-Bootstrap resampling eliminates target count as a sufficient explanation for the ranking.
-No random 10-target subset from Quercetin's pool matches Hyperforin's observed influence.
-Chemical similarity analysis excludes structural resemblance to known hepatotoxins as a confound.
-Both compounds fall below the 0.4 Tanimoto threshold.
-These controls strengthen confidence in the ranking without adding independent evidence.
+Network-level prioritization supports but does not prove toxicological risk; experimental validation in relevant model systems remains necessary.
 
 \subsection{Conclusions}
 
@@ -91,6 +89,5 @@ These results support prioritizing Hyperforin over Quercetin for hepatotoxicity-
 The ranking is consistent with Hyperforin's established role in PXR-mediated drug interactions.
 PTNI provides a principled criterion for distinguishing high-leverage perturbation from diffuse polypharmacology.
 
-Beyond the specific case study, our results demonstrate the cost of using proximity as an implicit prioritization criterion.
-We show that proximity is threshold-dependent, confounded by null distribution shape, and yields unstable rankings.
-By restricting proximity to descriptive use, demonstrating its instability empirically, and basing inference on influence metrics that survive bias checks, we provide a methodological template for computational toxicology that generalizes beyond \textit{H.~perforatum} to any setting where constituent-level attribution is required.
+Beyond the specific case study, our results clarify the appropriate role of proximity: it provides valid descriptive context for network topology, but is threshold-dependent, confounded by null distribution shape, and yields unstable rankings when used for inference.
+By restricting proximity to descriptive use and basing inference on influence metrics that survive bias checks, we provide a methodological template for computational toxicology that generalizes beyond \textit{H.~perforatum} to any setting where constituent-level attribution is required.

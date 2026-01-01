@@ -13,11 +13,11 @@ Hyperforin achieves influence Z = +10.3 (one-tailed $p < 10^{-16}$; at permutati
 Both are significant; the magnitudes differ by a factor of 2.3 in Z-score space.
 Despite being topologically more distant from DILI genes, Hyperforin exerts substantially greater network influence.
 
-This dissociation between proximity and influence---the proximity paradox---demonstrates that shortest-path distance is not a reliable surrogate for functional impact.
+This dissociation---the proximity paradox---demonstrates that shortest-path distance is not a reliable proxy for functional impact.
 
 \subsection{Expression weighting attenuates but does not reverse the advantage}
 
-To assess whether the RWR signal persists under tissue-specific biological constraint, we applied expression-weighted influence propagation (EWI), weighting network transitions by liver gene expression (Figure~\ref{fig:fig3}).
+To assess whether the RWR signal persists under tissue-specific constraint, we applied expression-weighted influence propagation (EWI), weighting transitions by liver gene expression (Figure~\ref{fig:fig3}).
 
 The Z-score differential narrows under expression weighting: $\Delta$Z = +5.8 (RWR) $\rightarrow$ +3.5 (EWI).
 Decomposition reveals the mechanism: Hyperforin loses 1.2 Z-score units due to attenuation of high-expression targets (CYP2C9, CYP3A4), while Quercetin gains 1.1 units, driven primarily by complement factor B (CFB) at 1{,}115 TPM.
@@ -45,8 +45,8 @@ Quercetin & 62 & 0.0005 & 0.0008 & --- \\
 Each Hyperforin target contributes 17--22$\times$ more DILI-directed influence than each Quercetin target.
 This disparity is consistent across both topology-only (RWR) and expression-weighted (EWI) analyses, indicating that the efficiency advantage is robust to biological constraint.
 
-PTNI is a derived descriptive metric; it was not subjected to independent permutation testing.
-Its utility lies in normalizing for target count, not in providing additional inference.
+PTNI is a derived normalization; it was not subjected to independent permutation testing.
+Its utility lies in quantifying efficiency rather than adding inference.
 
 \subsection{Bootstrap resampling excludes target-count confounding}
 
@@ -73,7 +73,7 @@ This instability in proximity rankings---while influence rankings remain stable-
 
 \subsection{Chemical similarity excludes structural confounding}
 
-To exclude the possibility that Hyperforin's network signal reflects structural similarity to known hepatotoxins, we performed chemical similarity analysis against the DILIrank reference set \\citep{Chen2016} (Figure~\\ref{fig:fig6}).
+To exclude the possibility that Hyperforin's network signal reflects structural similarity to known hepatotoxins, we performed chemical similarity analysis against the DILIrank reference set \citep{Chen2016} (Figure~\ref{fig:fig6}).
 Morgan fingerprints (ECFP4, radius 2, 2048 bits) were computed for Hyperforin and Quercetin, and maximum Tanimoto similarity to 542 DILI-positive and 365 DILI-negative drugs was determined.
 
 \begin{center}

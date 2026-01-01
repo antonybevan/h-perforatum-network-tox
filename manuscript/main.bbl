@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,9 +30,17 @@ Agnes~W Boots, Guido~RMM Haenen, and Aalt Bast.
   325--337, 2008.
 \newblock \doi{10.1016/j.ejphar.2008.03.008}.
 
+\bibitem[Chen et~al.(2016)Chen, Suzuki, Thakkar, Yu, Hu, and Tong]{Chen2016}
+Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
+\newblock {DILIrank}: the largest reference drug list ranked by the risk for
+  developing drug-induced liver injury in humans.
+\newblock \emph{Drug Discovery Today}, 21\penalty0 (4):\penalty0 648--653,
+  2016.
+\newblock \doi{10.1016/j.drudis.2016.02.015}.
+
 \bibitem[{European Medicines Agency}(2018)]{EMA2018}
 {European Medicines Agency}.
-\newblock Assessment report on {Hypericum} perforatum {L}., herba.
+\newblock Assessment report on \textit{{Hypericum perforatum}} {L.}
 \newblock EMA/HMPC/101303/2008 Rev.1, 2018.
 
 \bibitem[{GTEx Consortium}(2020)]{GTEx2020}
@@ -88,6 +96,15 @@ Gerald Maggiora, Martin Vogt, Dagmar Stumpfe, and J{\"u}rgen Bajorath.
 \newblock \emph{Journal of Medicinal Chemistry}, 57\penalty0 (8):\penalty0
   3186--3204, 2014.
 \newblock \doi{10.1021/jm401411z}.
+
+\bibitem[Menche et~al.(2015)Menche, Sharma, Kitsak, Ghiassian, Vidal, Loscalzo,
+  and Bara{\'b}asi]{Menche2015}
+J{\"o}rg Menche, Amitabh Sharma, Maksim Kitsak, Susan~Dina Ghiassian, Marc
+  Vidal, Joseph Loscalzo, and Albert-L{\'a}szl{\'o} Bara{\'b}asi.
+\newblock Uncovering disease-disease relationships through the incomplete
+  interactome.
+\newblock \emph{Science}, 347\penalty0 (6224):\penalty0 1257601, 2015.
+\newblock \doi{10.1126/science.1257601}.
 
 \bibitem[Mendez et~al.(2019)Mendez, Gaulton, Bento, Chambers, De~Veij,
   F{\'e}lix, Maga{\~n}a, Mosquera, Mutowo, Nowotka, Gordillo-Mara{\~n}{\'o}n,
