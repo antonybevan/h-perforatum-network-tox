@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -37,6 +37,16 @@ Minjun Chen, Ayako Suzuki, Shraddha Thakkar, Ke~Yu, Chao Hu, and Weida Tong.
 \newblock \emph{Drug Discovery Today}, 21\penalty0 (4):\penalty0 648--653,
   2016.
 \newblock \doi{10.1016/j.drudis.2016.02.015}.
+
+\bibitem[Chen et~al.(2022)Chen, Wang, Ye, Wang, Sun, Ma, Yuan, and
+  Yu]{Chen2022}
+Siyu Chen, Xue Wang, Xinran Ye, Qinqin Wang, Xin Sun, Chunyan Ma, Zhidong Yuan,
+  and Yang Yu.
+\newblock {St. John's} wort exacerbates acetaminophen-induced liver injury
+  through pxr and cyp-mediated bioactivation.
+\newblock \emph{Toxicological Sciences}, 190\penalty0 (1):\penalty0 68--80,
+  2022.
+\newblock \doi{10.1093/toxsci/kfac098}.
 
 \bibitem[{European Medicines Agency}(2018)]{EMA2018}
 {European Medicines Agency}.

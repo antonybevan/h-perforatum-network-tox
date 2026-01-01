@@ -1,20 +1,18 @@
 \section*{Abstract}
 
-Network-based toxicology uses proximity to disease-associated genes as an implicit prioritization criterion, assuming that compounds with more targets or closer network position pose greater risk.
-Proximity is a descriptive metric, yet its use for prioritization conflates topological reachability with functional influence and provides no principled criterion for distinguishing diffuse polypharmacology from high-leverage perturbation.
+Network proximity is widely used to contextualize relationships between compounds and disease-associated genes, yet it is often interpreted as a prioritization signal despite its sensitivity to target set size, network density, and null variance.
+This conflation of descriptive proximity with functional influence complicates risk assessment in polypharmacological systems.
 
-We test this assumption using two \textit{Hypericum perforatum} constituents---Hyperforin (10 targets) and Quercetin (62 targets)---as a controlled comparison for hepatotoxicity risk.
-On a liver-expressed human protein--protein interaction network, we separate descriptive proximity from inferential influence using random walk--based propagation.
-Although Quercetin exhibits closer shortest-path proximity to DILI genes at STRING confidence $\geq$900, Hyperforin exerts 2.3-fold greater network influence (Z = +10.3 vs.\ +4.4; $p < 10^{-16}$).
-This ranking persists under expression-weighted constraints.
+Here, we systematically separate descriptive and inferential roles of network metrics using a liver-expressed human protein--protein interaction network.
+Shortest-path proximity is evaluated as contextual information, while functional influence is quantified via random walk--based propagation and assessed against degree-matched null models.
+Using two constituents of \textit{Hypericum perforatum} as a controlled stress test, we show that proximity-based rankings are unstable across interaction confidence thresholds and null specifications, whereas influence-based rankings remain consistent.
 
-To resolve the target-count paradox, we apply per-target network influence (PTNI), a normalization that quantifies influence efficiency rather than raw coverage.
-Hyperforin achieves 22-fold higher PTNI than Quercetin.
-Bootstrap resampling (Hyperforin exceeds 95\% CI of target-matched Quercetin subsets; 3.7$\times$ fold over mean) and chemical similarity analysis (neither compound resembles known hepatotoxins) exclude target-count and structural confounding.
+Although quercetin targets more proteins and exhibits greater proximity surprise relative to its compound-specific null, it exerts substantially weaker propagated influence than hyperforin across both topology-only and expression-weighted analyses.
+To account for differences in target set size, we apply a per-target normalization of propagated influence, reframing polypharmacology as an efficiency problem rather than a coverage problem.
+This normalization consistently prioritizes high-leverage perturbations and remains robust under bootstrap resampling and chemical similarity controls.
 
-These results demonstrate that proximity provides useful descriptive context but yields threshold-dependent rankings that are insufficient for inferential prioritization; influence-based metrics are more robust.
-The framework---combining influence propagation, expression weighting, PTNI normalization, and orthogonal controls---generalizes to any polypharmacological comparison requiring constituent-level risk attribution.
+Together, these results demonstrate that proximity metrics are ill-suited for prioritization when treated inferentially, and that influence-based propagation provides a more stable framework for comparative network toxicology.
+More broadly, this work clarifies how distinct network metrics should be interpreted and applied when reasoning about compound-associated risk in complex biological systems.
 
 \vspace{0.5em}
-\noindent\textbf{Keywords:} per-target network influence, drug-induced liver injury, network pharmacology, random walk with restart, \textit{Hypericum perforatum}, Hyperforin, polypharmacology
-
+\noindent\textbf{Keywords:} network propagation, proximity metrics, drug-induced liver injury, polypharmacology risk assessment, random walk with restart, per-target influence normalization
