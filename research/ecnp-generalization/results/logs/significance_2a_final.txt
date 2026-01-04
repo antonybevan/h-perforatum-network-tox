@@ -1,0 +1,23 @@
+Loading Tier 2a Expanded data...
+N = 456
+Regenerating features...
+Running Cross-Validation...
+Base AUC: 0.6468
+Full AUC: 0.6484
+Lift:     0.0016
+
+Running Bootstrap Test (n=1000)...
+p-value: 0.3330
+95% CI: [-0.0058, 0.0084]
+
+--- RESCUED DRUGS (False Negative -> True Positive) ---
+Total Rescued (FN -> TP): 2
+dilirank_name      I_T  network_fraction  pred_chem  pred_full
+  Lamotrigine 0.025738          0.111111          0          1
+  Risperidone 0.040141          0.250000          0          1
+
+--- SAVED DRUGS (False Positive -> True Negative) ---
+Total Saved (FP -> TN): 2
+        dilirank_name      I_T  network_fraction  pred_chem  pred_full
+    Fluciclovine f-18 0.046785             0.125          1          0
+Phentolamine mesylate 0.013215             0.250          1          0

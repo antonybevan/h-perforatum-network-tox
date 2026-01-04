@@ -1,0 +1,50 @@
+Loading data...
+Compounds: 207, Scores: 202
+Labeled compounds: 202
+
+Layer 0: Computing exposure features...
+Layer 1: Computing regime probabilities...
+Layer 2: Computing regime-specific scores...
+Layer 3: Aggregating risk with regime weights...
+
+============================================================
+VALIDATION: REGIME-SPECIFIC AUC
+============================================================
+ECNP Z-score alone: AUC = 0.624
+LogP alone: AUC = 0.735
+Weighted regime score: AUC = 0.704
+Max-risk score: AUC = 0.698
+
+----------------------------------------
+REGIME-SPECIFIC AUC (Primary Metrics)
+----------------------------------------
+
+Network regime (ECNP eligible, n=54):
+  AUC = 0.578
+  DILI+: 47, DILI-: 7
+
+----------------------------------------
+AUC BY TRIGGERED REGIME
+----------------------------------------
+network: n=75, AUC = 0.675
+reactive: n=127, AUC = 0.657
+cholestatic: n=0, skipped (< 10)
+
+============================================================
+PIPELINE SUMMARY
+============================================================
+
+Compounds modeled: 202
+ECNP eligible: 54
+
+Regime distribution:
+triggered_regime
+reactive    127
+network      75
+Name: count, dtype: int64
+
+Best single score: ('LogP alone', 0.7348484848484849)
+
+Target: Network-regime AUC >= 0.75
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\pipeline_results.csv

@@ -1,0 +1,41 @@
+drugbank_id,drug_name,targets,n_targets,name_normalized,dili_label
+DB00005,Etanercept,"['FCGR2A', 'FCGR2B', 'FCGR3A', 'FCGR3B', 'C1QA']",5,etanercept,Most-DILI
+DB00197,Troglitazone,"['PPARG', 'ESRRA', 'PPARD', 'PPARA', 'GSTP1', 'ACSL4', 'SERPINE1']",7,troglitazone,Most-DILI
+DB00227,Lovastatin,"['HMGCR', 'ITGAL', 'HDAC2']",3,lovastatin,Most-DILI
+DB00252,Phenytoin,"['SCN8A', 'NR1I2', 'SCN1B']",3,phenytoin,Most-DILI
+DB00313,Valproic acid,"['ABAT', 'GSK3A', 'ACADSB', 'OGDH', 'ALDH5A1', 'HDAC2', 'PPARA', 'PPARD', 'PPARG', 'HDAC1', 'CDKN1A', 'HGF', 'ODC1']",13,valproicacid,Most-DILI
+DB00316,Acetaminophen,"['PTGS2', 'PTGES3', 'TRPV1']",3,acetaminophen,Most-DILI
+DB00328,Indomethacin,"['PTGS2', 'PLA2G2A', 'PPARG', 'GLO1', 'PPARA', 'AKR1C3', 'EIF2AK2']",7,indomethacin,Less-DILI
+DB00331,Metformin,"['ACACB', 'ETFDH', 'PRKAB1', 'GPD1']",4,metformin,No-DILI
+DB00390,Digoxin,"['ATP1B1', 'ATP1B2', 'ATP1B3', 'ATP1A1']",4,digoxin,No-DILI
+DB00412,Rosiglitazone,"['PPARG', 'ACSL4', 'PPARA', 'PPARD', 'RXRA', 'RXRB']",6,rosiglitazone,Most-DILI
+DB00421,Spironolactone,"['NR3C2', 'NR3C1', 'AR', 'ESR1', 'NR1I2']",5,spironolactone,No-DILI
+DB00451,Levothyroxine,"['ITGAV', 'THRA', 'THRB']",3,levothyroxine,No-DILI
+DB00457,Prazosin,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRA1A']",4,prazosin,Less-DILI
+DB00477,Chlorpromazine,"['ADRA1A', 'ADRA1B', 'ADRA1A', 'SMPD1', 'ORM1', 'CALM1']",6,chlorpromazine,Most-DILI
+DB00482,Celecoxib,"['PTGS2', 'STAT3', 'NEU1', 'CA2', 'PDPK1']",5,celecoxib,Less-DILI
+DB00499,Flutamide,"['AR', 'AHR', 'NR1I2']",3,flutamide,Most-DILI
+DB00563,Methotrexate,"['TYMS', 'SLC19A1', 'ATIC', 'DHFR']",4,methotrexate,Most-DILI
+DB00605,Sulindac,"['PTGS2', 'AKR1B1', 'MAPK3', 'PPARD', 'AKR1B10']",5,sulindac,Most-DILI
+DB00627,Niacin,"['DGAT2', 'QPRT', 'NNMT']",3,niacin,Most-DILI
+DB00641,Simvastatin,"['HMGCR', 'ITGAL', 'HDAC2']",3,simvastatin,Most-DILI
+DB00661,Verapamil,"['CACNA1H', 'ADRA1A', 'ADRA1B', 'ABCB1']",4,verapamil,Less-DILI
+DB00675,Tamoxifen,"['ESR1', 'PRKCA', 'SHBG', 'EBP', 'AR', 'NR1I2', 'MAPK8']",7,tamoxifen,Most-DILI
+DB00687,Fludrocortisone,"['AR', 'NR3C2', 'NR3C1']",3,fludrocortisone,No-DILI
+DB00822,Disulfiram,"['DBH', 'ALDH3A2', 'ALDH2']",3,disulfiram,Less-DILI
+DB00951,Isoniazid,"['CYP2C8', 'CYP1A2', 'CYP3A4', 'CYP2C19']",4,isoniazid,Most-DILI
+DB01016,Glyburide,"['ABCC9', 'ABCB11', 'ABCA1', 'CPT1A', 'TRPM4']",5,glyburide,No-DILI
+DB01017,Minocycline,"['ALOX5', 'MMP9', 'CASP1', 'CASP3', 'CYCS', 'MAPK1']",6,minocycline,Most-DILI
+DB01026,Ketoconazole,"['CYP17A1', 'AR', 'CYP21A2', 'NR1I2', 'NR1I3']",5,ketoconazole,Most-DILI
+DB01033,Mercaptopurine,"['HPRT1', 'IMPDH1', 'PPAT', 'IMPDH1']",4,mercaptopurine,Most-DILI
+DB01050,Ibuprofen,"['PTGS2', 'CXCL8', 'CXCR1', 'THBD', 'PPARG', 'PPARA']",6,ibuprofen,Most-DILI
+DB01076,Atorvastatin,"['HMGCR', 'DPP4', 'AHR', 'HDAC2', 'NR1I3']",5,atorvastatin,Most-DILI
+DB01097,Leflunomide,"['DHODH', 'AHR', 'PTK2B']",3,leflunomide,Most-DILI
+DB01109,Heparin,"['SERPINC1', 'F10', 'FGFR4', 'FGFR1', 'FGFR2', 'HGF']",6,heparin,No-DILI
+DB01115,Nifedipine,"['NR1I2', 'KCND3', 'CALM1']",3,nifedipine,Less-DILI
+DB01118,Amiodarone,"['THRA', 'PPARG', 'PPARA']",3,amiodarone,Most-DILI
+DB01159,Halothane,"['ATP2B1', 'KCNMA1', 'MT-ND1', 'GNG2']",4,halothane,Most-DILI
+DB01225,Enoxaparin,"['SERPINC1', 'F10', 'F2']",3,enoxaparin,No-DILI
+DB01234,Dexamethasone,"['NR3C1', 'ANXA1', 'NR1I2']",3,dexamethasone,No-DILI
+DB01275,Hydralazine,"['AOC3', 'HIF1A', 'P4HA1']",3,hydralazine,Less-DILI
+DB01406,Danazol,"['ESR1', 'AR', 'CCL2']",3,danazol,Most-DILI

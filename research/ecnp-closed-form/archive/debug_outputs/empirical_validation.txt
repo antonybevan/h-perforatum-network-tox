@@ -1,0 +1,45 @@
+EMPIRICAL VARIANCE VALIDATION
+============================================================
+
+Hyperforin:
+  k = 10
+  n_resamples = 200
+
+  Algorithm mu_T:     0.5779
+  Empirical mean:     0.6452
+
+  Closed-form sigma:  0.0557
+  Empirical sigma:    0.1760
+  Ratio (emp/CF):     3.16x
+
+  I_T:                1.1381
+  Z_raw (CF):         10.06
+  Z_adj (VIF):        6.79
+  Z_empirical (gold): 2.80
+
+  Correct VIF = (emp/CF)^2 = 9.99
+  Current VIF = 2.20
+
+Quercetin:
+  k = 62
+  n_resamples = 180
+
+  Algorithm mu_T:     1.6264
+  Empirical mean:     2.1185
+
+  Closed-form sigma:  0.0769
+  Empirical sigma:    0.2921
+  Ratio (emp/CF):     3.80x
+
+  I_T:                1.9946
+  Z_raw (CF):         4.79
+  Z_adj (VIF):        1.10
+  Z_empirical (gold): -0.42
+
+  Correct VIF = (emp/CF)^2 = 14.45
+  Current VIF = 19.03
+
+============================================================
+CONCLUSION:
+  Z_empirical is the ground truth.
+  Correct VIF should make Z_adj = Z_empirical

@@ -1,0 +1,64 @@
+Compounds with all data: 202
+Labeled: 202 (DILI+: 132, DILI-: 70)
+
+Computing features...
+Valid SMILES: 202/202
+
+Valid samples for modeling: 202
+
+============================================================
+INDIVIDUAL FEATURE PERFORMANCE
+============================================================
+z_score        : AUC = 0.624
+n_targets      : AUC = 0.549
+I_T            : AUC = 0.583
+mw             : AUC = 0.536
+logp           : AUC = 0.735
+hbd            : AUC = 0.648
+hba            : AUC = 0.592
+tpsa           : AUC = 0.632
+rotatable      : AUC = 0.506
+
+============================================================
+COMBINED MODEL PERFORMANCE
+============================================================
+
+5-Fold CV AUC: 0.710 (+/- 0.020)
+Individual folds: ['0.677', '0.725', '0.695', '0.720', '0.731']
+
+Feature importance (coefficients):
+  hbd            : -0.718
+  mw             : +0.522
+  logp           : +0.463
+  z_score        : +0.359
+  hba            : +0.353
+  n_targets      : -0.304
+  tpsa           : -0.266
+  I_T            : +0.247
+  rotatable      : -0.066
+
+Full model AUC (resubstitution): 0.738
+
+============================================================
+ABLATION: WHAT MATTERS?
+============================================================
+Without z_score        : AUC = 0.700 (delta = +0.010)
+Without n_targets      : AUC = 0.698 (delta = +0.011)
+Without I_T            : AUC = 0.707 (delta = +0.003)
+Without mw             : AUC = 0.720 (delta = -0.011)
+Without logp           : AUC = 0.697 (delta = +0.013)
+Without hbd            : AUC = 0.714 (delta = -0.004)
+Without hba            : AUC = 0.719 (delta = -0.010)
+Without tpsa           : AUC = 0.708 (delta = +0.001)
+Without rotatable      : AUC = 0.714 (delta = -0.005)
+
+Chemistry only: AUC = 0.690
+Network only: AUC = 0.652
+
+============================================================
+SUMMARY
+============================================================
+ECNP alone:       AUC = 0.624
+Network features: AUC = 0.652
+Chemistry only:   AUC = 0.690
+Combined model:   AUC = 0.710

@@ -1,0 +1,6 @@
+metric,value
+auc_without_ecnp,0.5125806451612902
+auc_with_ecnp,0.5776555614313414
+delta,0.06507491627005124
+p_value,0.002
+significant,True

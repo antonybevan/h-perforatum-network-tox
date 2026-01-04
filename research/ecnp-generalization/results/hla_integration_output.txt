@@ -1,0 +1,63 @@
+Loading data...
+Compounds: 202
+HLA associations: 23
+Unique HLA-risk drugs: 21
+
+Drugs matched with HLA risk: 8/202
+
+HLA-risk drugs found:
+  Cyclosporine: DILI+, pred=0.33
+  Acetaminophen: DILI+, pred=0.85
+  Methotrexate: DILI+, pred=0.38
+  Isoniazid: DILI+, pred=0.73
+  Minocycline: DILI+, pred=0.42
+  Fenofibrate: DILI+, pred=0.87
+  Lapatinib: DILI+, pred=0.73
+  Pazopanib: DILI+, pred=0.82
+
+============================================================
+FALSE NEGATIVE ANALYSIS WITH HLA RISK
+============================================================
+
+False negatives: 9
+FN with HLA risk: 3
+
+False negatives that have HLA risk (can now flag):
+  Cyclosporine: pred=0.33
+  Methotrexate: pred=0.38
+  Minocycline: pred=0.42
+
+============================================================
+MODEL WITH HLA RISK FLAG
+============================================================
+AUC with HLA flag: 0.827
+Previous AUC: 0.884
+Change: -0.057
+
+False negatives with HLA model: 19 (was 9)
+
+============================================================
+HYBRID APPROACH: MODEL + HLA OVERRIDE
+============================================================
+AUC with HLA override: 0.837
+False negatives: 17
+False positives: 25
+
+============================================================
+SUMMARY: HLA INTEGRATION IMPACT
+============================================================
+
+HLA-DILI associations loaded: 23
+Drugs matched in dataset: 8
+
+Model Performance:
+  Previous AUC:       0.884
+  With HLA flag:      0.827
+  With HLA override:  0.837
+
+False Negatives:
+  Before: 9
+  With HLA model: 19
+  With HLA override: 17
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\hla_enhanced_results.csv

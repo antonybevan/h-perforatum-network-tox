@@ -1,0 +1,859 @@
+dilirank_name,norm_name,is_dili
+Abacavir sulfate,abacavir,0
+Abaloparatide,abaloparatide,0
+Abatacept,abatacept,1
+Abciximab,abciximab,0
+Abemaciclib,abemaciclib,1
+Abiraterone acetate,abiraterone,1
+Acamprosate calcium,acamprosate calcium,1
+Acarbose,acarbose,1
+Acebutolol hydrochloride,acebutolol,1
+Aceclofenac,aceclofenac,1
+Acetazolamide,acetazolamide,1
+Acetylcholine chloride,acetylcholine,0
+Acyclovir,acyclovir,1
+Adalimumab,adalimumab,1
+Adefovir dipivoxil,adefovir dipivoxil,1
+Agalsidase beta,agalsidase beta,0
+Alaproclate,alaproclate,1
+Alatrofloxacin mesylate,alatrofloxacin,1
+Albendazole,albendazole,1
+Albuterol,albuterol,0
+Alclofenac,alclofenac,1
+Alemtuzumab,alemtuzumab,1
+Alendronate sodium,alendronate,1
+Alfentanil hydrochloride,alfentanil,0
+Alglucosidase alfa,alglucosidase alfa,0
+Aliskiren hemifumarate,aliskiren hemifumarate,1
+Allopurinol,allopurinol,1
+Almotriptan malate,almotriptan malate,0
+Alosetron hydrochloride,alosetron,1
+Alpelisib,alpelisib,1
+Alpidem,alpidem,1
+Alprazolam,alprazolam,1
+Alteplase,alteplase,0
+Alvimopan,alvimopan,0
+Ambenonium chloride,ambenonium,0
+Amifampridine,amifampridine,0
+Amifostine,amifostine,0
+Amikacin sulfate,amikacin,0
+Amineptine,amineptine,1
+Aminocaproic acid,aminocaproic acid,0
+Aminohippurate sodium,aminohippurate,0
+Aminophylline,aminophylline,0
+Amisulpride,amisulpride,1
+Amlodipine besylate,amlodipine besylate,1
+Ammonium chloride,ammonium,0
+Amoxicillin,amoxicillin,1
+Amphotericin B,amphotericin b,1
+Ampicillin sodium,ampicillin,1
+Anakinra,anakinra,1
+Anastrozole,anastrozole,1
+Angiotensin ii acetate,angiotensin ii,0
+Anidulafungin,anidulafungin,1
+Apalutamide,apalutamide,0
+Apixaban,apixaban,1
+Aplaviroc,aplaviroc,1
+Apomorphine hydrochloride,apomorphine,0
+Apremilast,apremilast,0
+Argatroban,argatroban,0
+Argipressin,argipressin,0
+Asparaginase,asparaginase,1
+Aspirin,aspirin,1
+Atazanavir sulfate,atazanavir,1
+Atenolol,atenolol,1
+Atomoxetine hydrochloride,atomoxetine,1
+Atorvastatin calcium,atorvastatin calcium,1
+Atracurium,atracurium,0
+Atropine,atropine,0
+Avanafil,avanafil,0
+Avatrombopag maleate,avatrombopag,0
+Azathioprine,azathioprine,1
+Azilsartan kamedoxomil,azilsartan kamedoxomil,0
+Azithromycin,azithromycin,1
+Bacitracin,bacitracin,0
+Baclofen,baclofen,1
+Baloxavir marboxil,baloxavir marboxil,0
+Basiliximab,basiliximab,0
+Benazepril hydrochloride,benazepril,1
+Bendamustine hydrochloride,bendamustine,0
+Bendazac,bendazac,1
+Bendroflumethiazide,bendroflumethiazide,1
+Benoxaprofen,benoxaprofen,1
+Benzarone,benzarone,1
+Benzbromarone,benzbromarone,1
+Benziodarone,benziodarone,1
+Benzonatate,benzonatate,1
+Benzphetamine hydrochloride,benzphetamine,0
+Benztropine mesylate,benztropine,0
+Benzylpenicilloyl polylysine,benzylpenicilloyl polylysine,0
+Betaine,betaine,0
+Bethanechol chloride,bethanechol,0
+Betrixaban,betrixaban,0
+Bevacizumab,bevacizumab,0
+Bexarotene,bexarotene,1
+Bicalutamide,bicalutamide,1
+Biperiden hydrochloride,biperiden,0
+Bisacodyl,bisacodyl,0
+Bivalirudin,bivalirudin,0
+Bosentan,bosentan,1
+Bosutinib monohydrate,bosutinib,1
+Botulinum toxin type a,botulinum toxin type a,0
+Botulinum toxin type b,botulinum toxin type b,0
+Brexanolone,brexanolone,0
+Brexpiprazole,brexpiprazole,0
+Brilliant blue g,brilliant blue g,0
+Brivaracetam,brivaracetam,0
+Bromfenac sodium,bromfenac,1
+Bromocriptine mesylate,bromocriptine,1
+Brompheniramine maleate,brompheniramine,0
+Budesonide,budesonide,0
+Bupropion hydrochloride,bupropion,1
+Busulfan,busulfan,1
+Butorphanol tartrate,butorphanol,0
+Calcitonin salmon,calcitonin salmon,0
+Calcitriol,calcitriol,0
+Canagliflozin,canagliflozin,1
+Canakinumab,canakinumab,1
+Candesartan cilexetil,candesartan cilexetil,1
+Cangrelor,cangrelor,0
+Capecitabine,capecitabine,1
+Capmatinib hydrochloride,capmatinib,1
+Carbamazepine,carbamazepine,1
+Carbenicillin disodium,carbenicillin disodium,1
+Carbinoxamine maleate,carbinoxamine,0
+Carboplatin,carboplatin,1
+Carboprost tromethamine,carboprost tromethamine,0
+Carglumic acid,carglumic acid,0
+Carisoprodol,carisoprodol,0
+Casimersen,casimersen,0
+Cefaclor,cefaclor,1
+Cefadroxil hemihydrate,cefadroxil hemihydrate,1
+Cefazolin sodium,cefazolin,1
+Cefdinir,cefdinir,1
+Cefditoren pivoxil,cefditoren pivoxil,1
+Cefepime hydrochloride,cefepime,1
+Cefixime,cefixime,1
+Cefoperazone sodium,cefoperazone,1
+Cefotaxime sodium,cefotaxime,1
+Cefprozil,cefprozil,1
+Ceftaroline fosamil,ceftaroline fosamil,1
+Ceftazidime,ceftazidime,1
+Ceftriaxone sodium,ceftriaxone,1
+Cefuroxime sodium,cefuroxime,1
+Cephalexin,cephalexin,1
+Ceritinib,ceritinib,1
+Certolizumab pegol,certolizumab pegol,1
+Cetirizine hydrochloride,cetirizine,1
+Cetuximab,cetuximab,0
+Chlorambucil,chlorambucil,1
+Chloramphenicol,chloramphenicol,0
+Chlorcyclizine hydrochloride,chlorcyclizine,1
+Chlordiazepoxide hydrochloride,chlordiazepoxide,1
+Chlormezanone,chlormezanone,1
+Chloroquine phosphate,chloroquine,1
+Chlorothiazide,chlorothiazide,1
+Chlorpheniramine maleate,chlorpheniramine,0
+Chlorpropamide,chlorpropamide,1
+Chlorzoxazone,chlorzoxazone,1
+Choline c-11,choline c-11,0
+Cimetidine,cimetidine,1
+Cinacalcet hydrochloride,cinacalcet,0
+Cinchophen,cinchophen,1
+Ciprofloxacin hydrochloride,ciprofloxacin,1
+Cisatracurium besylate,cisatracurium besylate,0
+Citalopram hydrobromide,citalopram hydrobromide,1
+Clarithromycin,clarithromycin,1
+Clemastine fumarate,clemastine,0
+Clevidipine,clevidipine,0
+Clindamycin hydrochloride,clindamycin,1
+Clindamycin phosphate,clindamycin,1
+Clofibrate,clofibrate,1
+Clomacran,clomacran,1
+Clometacin,clometacin,1
+Clomiphene citrate,clomiphene,1
+Clomipramine hydrochloride,clomipramine,1
+Clonazepam,clonazepam,1
+Clopidogrel bisulfate,clopidogrel bisulfate,1
+Clotrimazole,clotrimazole,1
+Cloxacillin sodium,cloxacillin,1
+Codeine sulfate,codeine,0
+Colestipol hydrochloride,colestipol,1
+Colistimethate sodium,colistimethate,0
+Conivaptan hydrochloride,conivaptan,0
+Copanlisib dihydrochloride,copanlisib dihydrochloride,0
+Copper cu-64 dotatate,copper cu-64 dotatate,0
+Corticorelin ovine triflutate,corticorelin ovine triflutate,0
+Corticotropin,corticotropin,0
+Cosyntropin,cosyntropin,0
+Crizotinib,crizotinib,1
+Cromoglicate,cromoglicate,1
+Cupric chloride,cupric,0
+Cyclobenzaprine hydrochloride,cyclobenzaprine,1
+Cyclofenil,cyclofenil,1
+Cyclophosphamide,cyclophosphamide,1
+Cyproheptadine hydrochloride,cyproheptadine,1
+Cytarabine,cytarabine,1
+Dabigatran etexilate mesylate,dabigatran etexilate,1
+Dacarbazine,dacarbazine,1
+Dacomitinib,dacomitinib,1
+Dactinomycin,dactinomycin,1
+Dalfampridine,dalfampridine,0
+Dalteparin sodium,dalteparin,1
+Dantrolene sodium,dantrolene,1
+Dapagliflozin,dapagliflozin,0
+Dapsone,dapsone,1
+Daptomycin,daptomycin,1
+Darbepoetin alfa,darbepoetin alfa,1
+Darifenacin hydrobromide,darifenacin hydrobromide,0
+Darunavir,darunavir,1
+Dasiglucagon hydrochloride,dasiglucagon,0
+Daunorubicin hydrochloride,daunorubicin,0
+Deferasirox,deferasirox,1
+Deferoxamine mesylate,deferoxamine,1
+Defibrotide sodium,defibrotide,0
+Deflazacort,deflazacort,0
+Dermatan,dermatan,1
+Desloratadine,desloratadine,1
+Desvenlafaxine succinate,desvenlafaxine,1
+Deutetrabenazine,deutetrabenazine,0
+Dexbrompheniramine maleate,dexbrompheniramine,0
+Dexchlorpheniramine maleate,dexchlorpheniramine,0
+Dexlansoprazole,dexlansoprazole,1
+Dexmethylphenidate hydrochloride,dexmethylphenidate,1
+Dexpanthenol,dexpanthenol,0
+Dextroamphetamine sulfate,dextroamphetamine,0
+Dextromethorphan polistirex,dextromethorphan polistirex,0
+Dextrose,dextrose,0
+Diatrizoate sodium,diatrizoate,0
+Diazepam,diazepam,1
+Dichlorphenamide,dichlorphenamide,0
+Diclofenac sodium,diclofenac,1
+Dicloxacillin sodium,dicloxacillin,1
+Dicyclomine hydrochloride,dicyclomine,0
+Didanosine,didanosine,1
+Diethylpropion hydrochloride,diethylpropion,0
+Difelikefalin acetate,difelikefalin,0
+Diflunisal,diflunisal,1
+Dihydroergotamine mesylate,dihydroergotamine,0
+Diltiazem hydrochloride,diltiazem,1
+Dimenhydrinate,dimenhydrinate,0
+Dimercaprol,dimercaprol,0
+Dimethyl fumarate,dimethyl,1
+Diphenhydramine hydrochloride,diphenhydramine,0
+Diphenoxylate,diphenoxylate,0
+Disopyramide phosphate,disopyramide,1
+Divalproex sodium,divalproex,1
+Docetaxel,docetaxel,1
+Dofetilide,dofetilide,1
+Dolutegravir sodium,dolutegravir,1
+Dopamine hydrochloride,dopamine,0
+Doxapram hydrochloride,doxapram,0
+Doxazosin mesylate,doxazosin,1
+Doxepin hydrochloride,doxepin,1
+Doxycycline,doxycycline,1
+Doxylamine succinate,doxylamine,0
+Droperidol,droperidol,0
+Droxicam,droxicam,1
+Duloxetine hydrochloride,duloxetine,1
+Ebrotidine,ebrotidine,1
+Ecallantide,ecallantide,0
+Eculizumab,eculizumab,1
+Edaravone,edaravone,0
+Edrophonium chloride,edrophonium,0
+Efavirenz,efavirenz,1
+Eliglustat tartrate,eliglustat,0
+Eltrombopag olamine,eltrombopag olamine,1
+Empagliflozin,empagliflozin,0
+Enalapril maleate,enalapril,1
+Entacapone,entacapone,1
+Enzalutamide,enzalutamide,0
+Ephedrine sulfate,ephedrine,0
+Eplerenone,eplerenone,1
+Epoetin alfa,epoetin alfa,0
+Eptifibatide,eptifibatide,0
+Ergocalciferol,ergocalciferol,0
+Erlotinib hydrochloride,erlotinib,1
+Ertugliflozin,ertugliflozin,0
+Erythromycin estolate,erythromycin estolate,1
+Erythropoietin,erythropoietin,0
+Escitalopram oxalate,escitalopram oxalate,1
+Esmolol hydrochloride,esmolol,0
+Esomeprazole sodium,esomeprazole,1
+Estazolam,estazolam,0
+Estramustine phosphate sodium,estramustine,1
+Eszopiclone,eszopiclone,1
+Etanercept,etanercept,1
+Etelcalcetide,etelcalcetide,0
+Eteplirsen,eteplirsen,0
+Ethambutol hydrochloride,ethambutol,1
+Ethanolamine oleate,ethanolamine oleate,0
+Ethionamide,ethionamide,1
+Etidronate disodium,etidronate disodium,0
+Etodolac,etodolac,1
+Etomidate,etomidate,0
+Etoposide,etoposide,1
+Etravirine,etravirine,1
+Everolimus,everolimus,1
+Exemestane,exemestane,1
+Exenatide synthetic,exenatide synthetic,0
+Exifone,exifone,1
+Falnidamol,falnidamol,1
+Famotidine,famotidine,1
+Febuxostat,febuxostat,1
+Felbamate,felbamate,1
+Fenclozic acid,fenclozic acid,1
+Fenoldopam mesylate,fenoldopam,0
+Fenoprofen calcium,fenoprofen calcium,1
+Ferric maltol,ferric maltol,0
+Ferumoxides,ferumoxides,0
+Ferumoxsil,ferumoxsil,0
+Ferumoxytol,ferumoxytol,0
+Fesoterodine fumarate,fesoterodine,0
+Fexofenadine hydrochloride,fexofenadine,0
+Fialuridine,fialuridine,1
+Fiduxosin,fiduxosin,1
+Filgrastim,filgrastim,1
+Finerenone,finerenone,0
+Fipexide,fipexide,1
+Flavoxate hydrochloride,flavoxate,1
+Flecainide acetate,flecainide,1
+Flibanserin,flibanserin,0
+Florbetaben f-18,florbetaben f-18,0
+Florbetapir f-18,florbetapir f-18,0
+Flortaucipir f-18,flortaucipir f-18,0
+Fluciclovine f-18,fluciclovine f-18,0
+Fluconazole,fluconazole,1
+Flumazenil,flumazenil,0
+Fluorescein sodium,fluorescein,0
+Fluorodopa f-18,fluorodopa f-18,0
+Fluoroestradiol f-18,fluoroestradiol f-18,0
+Fluorouracil,fluorouracil,1
+Fluoxetine hydrochloride,fluoxetine,1
+Flurazepam hydrochloride,flurazepam,1
+Flurbiprofen sodium,flurbiprofen,1
+Flutamide,flutamide,1
+Flutemetamol f-18,flutemetamol f-18,0
+Fluvastatin sodium,fluvastatin,1
+Folic acid,folic acid,0
+Fondaparinux sodium,fondaparinux,1
+Fosdenopterin hydrobromide,fosdenopterin hydrobromide,0
+Fosfomycin tromethamine,fosfomycin tromethamine,1
+Fosinopril sodium,fosinopril,1
+Fosphenytoin sodium,fosphenytoin,1
+Fospropofol disodium,fospropofol disodium,1
+Frovatriptan succinate,frovatriptan,0
+Gabapentin,gabapentin,1
+Gabapentin enacarbil,gabapentin enacarbil,0
+Gadobenate dimeglumine,gadobenate dimeglumine,0
+Gadobutrol,gadobutrol,0
+Gadofosveset trisodium,gadofosveset trisodium,0
+Gadopentetate dimeglumine,gadopentetate dimeglumine,0
+Gadoterate meglumine,gadoterate meglumine,0
+Gadoteridol,gadoteridol,0
+Gadoversetamide,gadoversetamide,0
+Gadoxetate disodium,gadoxetate disodium,0
+Gallium dotatate ga-68,gallium dotatate ga-68,0
+Gallium ga-68 edotreotide,gallium ga-68 edotreotide,0
+Gallium ga-68 gozetotide,gallium ga-68 gozetotide,0
+Galsulfase,galsulfase,0
+Ganirelix acetate,ganirelix,0
+Gefitinib,gefitinib,1
+Gemifloxacin mesylate,gemifloxacin,1
+Gemtuzumab ozogamicin,gemtuzumab ozogamicin,1
+Givosiran sodium,givosiran,1
+Glafenine,glafenine,1
+Glatiramer acetate,glatiramer,1
+Glimepiride,glimepiride,1
+Glipizide,glipizide,1
+Glycopyrrolate,glycopyrrolate,0
+Golodirsen,golodirsen,0
+Griseofulvin,griseofulvin,1
+Guaifenesin,guaifenesin,0
+Guanethidine monosulfate,guanethidine monosulfate,0
+Haloperidol decanoate,haloperidol decanoate,1
+Haloperidol lactate,haloperidol lactate,1
+Hetastarch,hetastarch,0
+Histamine phosphate,histamine,0
+Hyaluronidase,hyaluronidase,0
+Hyaluronidase recombinant human,hyaluronidase recombinant human,0
+Hydrochlorothiazide,hydrochlorothiazide,1
+Hydroxychloroquine sulfate,hydroxychloroquine,1
+Hydroxyurea,hydroxyurea,1
+Hydroxyzine hydrochloride,hydroxyzine,0
+Ibandronate sodium,ibandronate,1
+Ibritumomab tiuxetan,ibritumomab tiuxetan,0
+Ibrutinib,ibrutinib,1
+Ibufenac,ibufenac,1
+Ibutilide fumarate,ibutilide,0
+Idelalisib,idelalisib,1
+Idursulfase,idursulfase,0
+Ifosfamide,ifosfamide,1
+Imatinib mesylate,imatinib,1
+Imiglucerase,imiglucerase,0
+Inclisiran sodium,inclisiran,1
+Indocyanine green,indocyanine green,0
+Infliximab,infliximab,1
+"Interferon alfa-2a, recombinant","interferon alfa-2a, recombinant",1
+Interferon alfa-2b,interferon alfa-2b,1
+Interferon alfacon-1,interferon alfacon-1,1
+Interferon beta-1a,interferon beta-1a,1
+Interferon beta-1b,interferon beta-1b,1
+Iodipamide sodium,iodipamide,0
+Ioflupane i-123,ioflupane i-123,0
+Iothalamate meglumine,iothalamate meglumine,0
+Ioversol,ioversol,0
+Iproniazid,iproniazid,1
+Irbesartan,irbesartan,1
+Irinotecan hydrochloride,irinotecan,1
+Isaxonine,isaxonine,1
+Isoproterenol hydrochloride,isoproterenol,0
+Isosorbide dinitrate,isosorbide dinitrate,0
+Isotretinoin,isotretinoin,1
+Isoxsuprine hydrochloride,isoxsuprine,0
+Isradipine,isradipine,1
+Istradefylline,istradefylline,0
+Itraconazole,itraconazole,1
+Ivabradine hydrochloride,ivabradine,0
+Ivacaftor,ivacaftor,1
+Ivermectin,ivermectin,1
+Kanamycin,kanamycin,0
+Ketamine hydrochloride,ketamine,1
+Ketoprofen,ketoprofen,1
+Ketorolac tromethamine,ketorolac tromethamine,1
+Labetalol hydrochloride,labetalol,1
+Lactitol,lactitol,0
+Lactulose,lactulose,0
+Lamivudine,lamivudine,1
+Lamotrigine,lamotrigine,1
+Lansoprazole,lansoprazole,1
+Lanthanum carbonate,lanthanum carbonate,0
+Lapatinib ditosylate,lapatinib ditosylate,1
+Lasmiditan succinate,lasmiditan,0
+Lemborexant,lemborexant,0
+Letermovir,letermovir,1
+Letrozole,letrozole,1
+Leucovorin calcium,leucovorin calcium,0
+Leuprolide acetate,leuprolide,1
+Levetiracetam,levetiracetam,1
+Levocetirizine dihydrochloride,levocetirizine dihydrochloride,1
+Levofloxacin,levofloxacin,1
+Levoleucovorin,levoleucovorin,0
+Levomefolate calcium,levomefolate calcium,0
+Levorphanol tartrate,levorphanol,0
+Linaclotide,linaclotide,0
+Linagliptin,linagliptin,1
+Linezolid,linezolid,1
+Liraglutide,liraglutide,1
+Lisinopril,lisinopril,1
+Lofexidine hydrochloride,lofexidine,0
+Lomitapide mesylate,lomitapide,1
+Lomustine,lomustine,1
+Loperamide hydrochloride,loperamide,0
+Loracarbef,loracarbef,1
+Loratadine,loratadine,0
+Lorazepam,lorazepam,1
+Losartan potassium,losartan,1
+Lubiprostone,lubiprostone,0
+Lumasiran sodium,lumasiran,0
+Lumiracoxib,lumiracoxib,1
+Lurasidone hydrochloride,lurasidone,0
+Lusutrombopag,lusutrombopag,0
+Macimorelin acetate,macimorelin,0
+Macitentan,macitentan,1
+Mannitol,mannitol,0
+Maraviroc,maraviroc,1
+Maribavir,maribavir,0
+Mebanazine,mebanazine,1
+Mebendazole,mebendazole,1
+Mecamylamine hydrochloride,mecamylamine,0
+Meclizine hydrochloride,meclizine,0
+Mefenamic acid,mefenamic acid,1
+Mefloquine hydrochloride,mefloquine,1
+Meloxicam,meloxicam,1
+Melphalan,melphalan,1
+Memantine hydrochloride,memantine,1
+Mepazine,mepazine,1
+Mepenzolate bromide,mepenzolate,0
+Meperidine hydrochloride,meperidine,0
+Mepivacaine hydrochloride,mepivacaine,1
+Meprobamate,meprobamate,0
+Meropenem,meropenem,1
+Mesalamine,mesalamine,1
+Metaproterenol sulfate,metaproterenol,0
+Metaxalone,metaxalone,1
+Methamphetamine hydrochloride,methamphetamine,0
+Methazolamide,methazolamide,1
+Methimazole,methimazole,1
+Methoxsalen,methoxsalen,1
+Methscopolamine bromide,methscopolamine,0
+Methsuximide,methsuximide,0
+Methyldopa,methyldopa,1
+Methylergonovine maleate,methylergonovine,0
+Methylnaltrexone bromide,methylnaltrexone,0
+Methylphenidate hydrochloride,methylphenidate,1
+Methylprednisolone,methylprednisolone,1
+Methyltestosterone,methyltestosterone,1
+Methysergide maleate,methysergide,0
+Metoclopramide hydrochloride,metoclopramide,1
+Metoprolol tartrate,metoprolol,1
+Metronidazole,metronidazole,1
+Metyrapone,metyrapone,0
+Metyrosine,metyrosine,0
+Mexiletine hydrochloride,mexiletine,1
+Micafungin sodium,micafungin,1
+Midazolam hydrochloride,midazolam,0
+Midodrine hydrochloride,midodrine,0
+Mifepristone,mifepristone,1
+Migalastat hydrochloride,migalastat,0
+Miglustat,miglustat,0
+Milnacipran hydrochloride,milnacipran,1
+Minoxidil,minoxidil,0
+Mirtazapine,mirtazapine,1
+Mitomycin,mitomycin,1
+Mitoxantrone hydrochloride,mitoxantrone,1
+Mivacurium chloride,mivacurium,0
+Modafinil,modafinil,1
+Montelukast sodium,montelukast,1
+Morphine sulfate,morphine,0
+Moxifloxacin hydrochloride,moxifloxacin,1
+Moxisylyte,moxisylyte,1
+Nabilone,nabilone,0
+Nafcillin sodium,nafcillin,1
+Nalbuphine hydrochloride,nalbuphine,0
+Naldemedine tosylate,naldemedine tosylate,0
+Naloxegol oxalate,naloxegol oxalate,0
+Nandrolone phenpropionate,nandrolone phenpropionate,1
+Naproxen,naproxen,1
+Natalizumab,natalizumab,1
+Nefazodone hydrochloride,nefazodone,1
+Nelfinavir mesylate,nelfinavir,1
+Neomycin sulfate,neomycin,0
+Nevirapine,nevirapine,1
+Nifurtimox,nifurtimox,0
+Nilotinib hydrochloride,nilotinib,1
+Nilutamide,nilutamide,1
+Nimesulide,nimesulide,1
+Nintedanib esylate,nintedanib esylate,1
+Niperotidine,niperotidine,1
+Nitazoxanide,nitazoxanide,0
+Nitrefazole,nitrefazole,1
+Nitrofurantoin,nitrofurantoin,1
+Nitroglycerin,nitroglycerin,0
+Nizatidine,nizatidine,1
+Nomifensine,nomifensine,1
+Norepinephrine bitartrate,norepinephrine bitartrate,0
+Norethindrone acetate,norethindrone,0
+Norfloxacin,norfloxacin,1
+Nusinersen sodium,nusinersen,0
+Nystatin,nystatin,0
+Obeticholic acid,obeticholic acid,1
+Octreotide acetate,octreotide,1
+Ofatumumab,ofatumumab,0
+Ofloxacin,ofloxacin,1
+Olanzapine,olanzapine,1
+Olmesartan medoxomil,olmesartan medoxomil,1
+Olsalazine sodium,olsalazine,1
+Omalizumab,omalizumab,0
+Omeprazole,omeprazole,1
+Ondansetron hydrochloride,ondansetron,1
+Opicapone,opicapone,0
+Oprelvekin,oprelvekin,0
+Orphenadrine hydrochloride,orphenadrine,0
+Oseltamivir phosphate,oseltamivir,1
+Osimertinib mesylate,osimertinib,1
+Ospemifene,ospemifene,0
+Oxacillin sodium,oxacillin,1
+Oxaliplatin,oxaliplatin,1
+Oxandrolone,oxandrolone,1
+Oxaprozin,oxaprozin,1
+Oxcarbazepine,oxcarbazepine,1
+Oxybutynin chloride,oxybutynin,1
+Oxycodone hydrochloride,oxycodone,1
+Oxymetholone,oxymetholone,1
+Oxymorphone hydrochloride,oxymorphone,0
+Oxyphenisatin,oxyphenisatin,1
+Oxytocin,oxytocin,0
+Paclitaxel,paclitaxel,1
+Pafolacianine sodium,pafolacianine,0
+Pafuraidine,pafuraidine,1
+Palbociclib,palbociclib,1
+Palifermin,palifermin,0
+Palivizumab,palivizumab,0
+Pamabrom,pamabrom,0
+Pancrelipase,pancrelipase,0
+Pancuronium bromide,pancuronium,0
+Panitumumab,panitumumab,0
+Pantoprazole sodium,pantoprazole,1
+Papaverine hydrochloride,papaverine,1
+Paromomycin sulfate,paromomycin,0
+Paroxetine hydrochloride,paroxetine,1
+Patiromer sorbitex calcium,patiromer sorbitex calcium,0
+Patisiran sodium,patisiran,0
+Pegademase bovine,pegademase bovine,0
+Pegaspargase,pegaspargase,1
+Pegcetacoplan,pegcetacoplan,0
+Pegfilgrastim,pegfilgrastim,0
+Peginterferon alfa-2b,peginterferon alfa-2b,1
+Pemoline,pemoline,1
+Penbutolol sulfate,penbutolol,0
+Penicillamine,penicillamine,1
+Penicillin g benzathine,penicillin g benzathine,1
+Penicillin v potassium,penicillin v,0
+Pentagastrin,pentagastrin,0
+Pentamidine isethionate,pentamidine isethionate,1
+Pentazocine lactate,pentazocine lactate,0
+Pentetate calcium trisodium yb-169,pentetate calcium trisodium yb-169,0
+Pentostatin,pentostatin,1
+Perampanel,perampanel,0
+Perflutren,perflutren,0
+Perphenazine,perphenazine,1
+Pexidartinib hydrochloride,pexidartinib,1
+Phendimetrazine tartrate,phendimetrazine,0
+Phenobarbital sodium,phenobarbital,1
+Phenoxypropazine,phenoxypropazine,1
+Phentermine resin complex,phentermine resin complex,1
+Phentolamine mesylate,phentolamine,0
+Physostigmine salicylate,physostigmine salicylate,0
+Phytonadione,phytonadione,0
+Piflufolastat f-18,piflufolastat f-18,0
+Pimavanserin tartrate,pimavanserin,0
+Pimozide,pimozide,0
+Pindolol,pindolol,0
+Pioglitazone hydrochloride,pioglitazone,1
+Pipamazine,pipamazine,1
+Pirfenidone,pirfenidone,1
+Piroxicam,piroxicam,1
+Pirprofen,pirprofen,1
+Pitolisant hydrochloride,pitolisant,0
+Plerixafor,plerixafor,0
+Polidocanol,polidocanol,0
+Polyethylene glycol 3350,polyethylene glycol 3350,0
+Polymyxin b sulfate,polymyxin b,0
+Pomalidomide,pomalidomide,1
+Porfimer sodium,porfimer,0
+Posaconazole,posaconazole,1
+Pralnacasan,pralnacasan,1
+Prasugrel hydrochloride,prasugrel,1
+Pravastatin sodium,pravastatin,1
+Prednisolone,prednisolone,1
+Prednisone,prednisone,1
+Pregabalin,pregabalin,1
+Primaquine phosphate,primaquine,0
+Primidone,primidone,0
+Procainamide hydrochloride,procainamide,1
+Procarbazine hydrochloride,procarbazine,1
+Prochlorperazine maleate,prochlorperazine,1
+Procyclidine hydrochloride,procyclidine,0
+Promethazine hydrochloride,promethazine,1
+Propafenone hydrochloride,propafenone,1
+Propantheline bromide,propantheline,0
+Propofol,propofol,1
+Propoxyphene hydrochloride,propoxyphene,1
+Propylthiouracil,propylthiouracil,1
+Protamine sulfate,protamine,0
+Protirelin,protirelin,0
+Protriptyline hydrochloride,protriptyline,0
+Prucalopride succinate,prucalopride,0
+Pyrantel pamoate,pyrantel pamoate,0
+Pyrazinamide,pyrazinamide,1
+Pyridoxine hydrochloride,pyridoxine,0
+Pyrimethamine,pyrimethamine,1
+Quazepam,quazepam,0
+Quetiapine fumarate,quetiapine,1
+Quinapril hydrochloride,quinapril,1
+Quinidine gluconate,quinidine gluconate,1
+Quinine sulfate,quinine,1
+Rabeprazole sodium,rabeprazole,1
+Radium ra-223 dichloride,radium ra-223 dichloride,0
+Raloxifene hydrochloride,raloxifene,1
+Raltegravir potassium,raltegravir,1
+Ramelteon,ramelteon,0
+Ramipril,ramipril,1
+Ranitidine hydrochloride,ranitidine,1
+Ranolazine,ranolazine,0
+Rasburicase,rasburicase,0
+Regadenoson,regadenoson,0
+Remdesivir,remdesivir,1
+Remifentanil hydrochloride,remifentanil,1
+Remimazolam besylate,remimazolam besylate,0
+Repaglinide,repaglinide,1
+Reserpine,reserpine,0
+Reteplase,reteplase,0
+Ribavirin,ribavirin,1
+Ribociclib succinate,ribociclib,1
+Riboflavin 5'-phosphate,riboflavin 5'-phosphate,0
+Rifabutin,rifabutin,1
+Rifampin,rifampicin,1
+Rifamycin sodium,rifamycin,0
+Rilonacept,rilonacept,0
+Rilpivirine hydrochloride,rilpivirine,1
+Riluzole,riluzole,1
+Rimantadine hydrochloride,rimantadine,0
+Rimegepant sulfate,rimegepant,0
+Riociguat,riociguat,0
+Risdiplam,risdiplam,0
+Ritonavir,ritonavir,1
+Rivaroxaban,rivaroxaban,1
+Rivastigmine tartrate,rivastigmine,1
+Rizatriptan benzoate,rizatriptan benzoate,1
+Rocuronium bromide,rocuronium,0
+Roflumilast,roflumilast,0
+Rolapitant hydrochloride,rolapitant,0
+Romiplostim,romiplostim,0
+Ropinirole hydrochloride,ropinirole,1
+Rosuvastatin calcium,rosuvastatin calcium,1
+Rubidium chloride rb-82,rubidium rb-82,0
+Safinamide mesylate,safinamide,0
+Salsalate,salsalate,1
+Sapropterin dihydrochloride,sapropterin dihydrochloride,0
+Saquinavir mesylate,saquinavir,1
+Sarecycline hydrochloride,sarecycline,0
+Sargramostim,sargramostim,0
+Saxagliptin hydrochloride,saxagliptin,1
+Scopolamine,scopolamine,0
+Secretin synthetic human,secretin synthetic human,0
+Selegiline hydrochloride,selegiline,0
+Selexipag,selexipag,0
+Semaglutide,semaglutide,1
+Sertraline hydrochloride,sertraline,1
+Setmelanotide acetate,setmelanotide,0
+Sevelamer hydrochloride,sevelamer,0
+Sibutramine hydrochloride,sibutramine,1
+Sildenafil citrate,sildenafil,1
+Simethicone-cellulose,simethicone-cellulose,0
+Sincalide,sincalide,0
+Sirolimus,sirolimus,1
+Sitagliptin phosphate,sitagliptin,1
+Sitaxsentan,sitaxsentan,1
+Sodium bicarbonate,sodium bicarbonate,0
+Sodium fluoride f-18,sodium fluoride f-18,0
+Sodium lactate,sodium lactate,0
+Sodium nitroprusside,sodium nitroprusside,0
+Sodium oxybate,sodium oxybate,0
+Sodium polystyrene sulfonate,sodium polystyrene sulfonate,0
+Sodium thiosulfate,sodium thiosulfate,0
+Sodium zirconium cyclosilicate,sodium zirconium cyclosilicate,0
+Sofosbuvir,sofosbuvir,0
+Solifenacin succinate,solifenacin,1
+Solriamfetol hydrochloride,solriamfetol,0
+Somatropin,somatropin,0
+Sorafenib tosylate,sorafenib tosylate,1
+Sorbitol,sorbitol,0
+Stavudine,stavudine,1
+Sterile water,sterile water,0
+Stiripentol,stiripentol,0
+Streptomycin sulfate,streptomycin,0
+Succimer,succimer,1
+Succinylcholine chloride,succinylcholine,0
+Sucralfate,sucralfate,0
+Sufentanil citrate,sufentanil,0
+Sugammadex sodium,sugammadex,0
+suloctidil,suloctidil,1
+Sulfacarbamide,sulfacarbamide,1
+Sulfadiazine,sulfadiazine,1
+Sulfamethizole,sulfamethizole,1
+Sulfathiazole,sulfathiazole,1
+Sunitinib malate,sunitinib malate,1
+Suvorexant,suvorexant,0
+Tacrolimus,tacrolimus,1
+Tadalafil,tadalafil,1
+Tafamidis meglumine,tafamidis meglumine,0
+Tamsulosin hydrochloride,tamsulosin,1
+Tapentadol hydrochloride,tapentadol,0
+Tasosartan,tasosartan,1
+Technetium tc-99m exametazime kit,technetium tc-99m exametazime kit,0
+Tecovirimat,tecovirimat,0
+Telithromycin,telithromycin,1
+Telmisartan,telmisartan,1
+Temozolomide,temozolomide,1
+Temsirolimus,temsirolimus,0
+Tenapanor hydrochloride,tenapanor,0
+Tenecteplase,tenecteplase,0
+Teniposide,teniposide,1
+Tenofovir disoproxil fumarate,tenofovir disoproxil,1
+Terbinafine hydrochloride,terbinafine,1
+Terbutaline sulfate,terbutaline,1
+Teriflunomide,teriflunomide,1
+Teriparatide acetate,teriparatide,1
+Tetrabamate,tetrabamate,1
+Tetracycline phosphate complex,tetracycline complex,1
+Thalidomide,thalidomide,1
+Theophylline sodium glycinate,theophylline glycinate,0
+Thiabendazole,thiabendazole,1
+Thiamine hydrochloride,thiamine,0
+Thioguanine,thioguanine,1
+Thioridazine hydrochloride,thioridazine,1
+Thiotepa,thiotepa,1
+Thyrotropin alfa,thyrotropin alfa,0
+Ticagrelor,ticagrelor,0
+Ticlopidine hydrochloride,ticlopidine,1
+Ticrynafen,ticrynafen,1
+Tigecycline,tigecycline,1
+Tilbroquinol,tilbroquinol,1
+Tiludronate disodium,tiludronate disodium,0
+Tinidazole,tinidazole,1
+Tipranavir,tipranavir,1
+Tirofiban hydrochloride,tirofiban,0
+Tizanidine hydrochloride,tizanidine,1
+Tolazamide,tolazamide,1
+Tolcapone,tolcapone,1
+Tolmetin sodium,tolmetin,1
+Tolterodine tartrate,tolterodine,1
+Tolvaptan,tolvaptan,1
+Topiramate,topiramate,1
+Topotecan hydrochloride,topotecan,0
+Tramadol hydrochloride,tramadol,1
+Trametinib dimethyl sulfoxide,trametinib dimethyl sulfoxide,1
+Trandolapril,trandolapril,1
+Tranexamic acid,tranexamic acid,0
+Tranylcypromine sulfate,tranylcypromine,1
+Trastuzumab,trastuzumab,1
+Trazodone hydrochloride,trazodone,1
+Triacetyldiphenolisatin,triacetyldiphenolisatin,1
+Triamterene,triamterene,1
+Trientine hydrochloride,trientine,0
+Triheptanoin,triheptanoin,0
+Trihexyphenidyl hydrochloride,trihexyphenidyl,0
+Trimethoprim,trimethoprim,1
+Triprolidine hydrochloride,triprolidine,0
+Triptorelin pamoate,triptorelin pamoate,1
+Trospium chloride,trospium,0
+Trovafloxacin mesylate,trovafloxacin,1
+Tyramine,tyramine,0
+Ubrogepant,ubrogepant,0
+Ulipristal acetate,ulipristal,1
+Umeclidinium bromide,umeclidinium,0
+Uridine triacetate,uridine triacetate,0
+Urofollitropin,urofollitropin,0
+Ustekinumab,ustekinumab,1
+Valaciclovir,valaciclovir,1
+Valdecoxib,valdecoxib,1
+Valsartan,valsartan,1
+Vancomycin hydrochloride,vancomycin,1
+Varenicline tartrate,varenicline,1
+Vecuronium bromide,vecuronium,0
+Vemurafenib,vemurafenib,1
+Venetoclax,venetoclax,1
+Venlafaxine hydrochloride,venlafaxine,1
+Vericiguat,vericiguat,0
+Vibegron,vibegron,0
+Vilazodone hydrochloride,vilazodone,0
+Viltolarsen,viltolarsen,0
+Vincristine sulfate,vincristine,1
+Vitamin A palmitate,vitamin a palmitate,1
+Vitamin C,vitamin c,0
+Vorapaxar sulfate,vorapaxar,0
+Voriconazole,voriconazole,1
+Vortioxetine hydrobromide,vortioxetine hydrobromide,1
+Vosoritide,vosoritide,0
+Voxelotor,voxelotor,0
+Warfarin sodium,warfarin,1
+Xenazoic acid,xenazoic acid,1
+Ximelagatran,ximelagatran,1
+Zafirlukast,zafirlukast,1
+Zaleplon,zaleplon,0
+Zidovudine,zidovudine,1
+Zileuton,zileuton,1
+Zimelidine,zimelidine,1
+Zoledronic acid,zoledronic acid,1

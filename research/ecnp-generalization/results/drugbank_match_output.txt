@@ -1,0 +1,45 @@
+======================================================================
+MATCHING DILIRANK TO DRUGBANK
+======================================================================
+
+--- Loading DILIrank ---
+Total: 1336
+Non-ambiguous: 982
+
+--- Loading DrugBank Data ---
+DrugBank compounds: 202
+Columns: ['drugbank_id', 'drug_name', 'dilirank_name', 'n_targets', 'dilirank', 'is_dili', 'Z', 'I_T', 'mu_T', 'pool_size', 'smiles', 'targets', 'target_list', 'logp', 'mw', 'hbd', 'hba', 'tpsa', 'rotatable', 'k', 'n_dili_hits', 'n_cyp_hits', 'n_tf_hits', 'n_transporter_hits', 'n_network_hits', 'network_fraction', 'dili_fraction', 'has_network_targets', 'has_transporter_targets', 'high_logp', 'ecnp_z', 'ecnp_eligible', 'y_pred_full', 'n_alerts', 'alert_names', 'y_pred_updated', 'y_pred_ecfp', 'y_pred_combined']
+
+--- Matching Names ---
+Unique DrugBank names: 199
+Matched: 124
+Not matched: 858
+
+======================================================================
+EXPANDED DATASET
+======================================================================
+With valid SMILES: 124
+
+Label distribution:
+  DILI+: 86
+  DILI-: 38
+
+Dataset                   Drugs      Coverage of DILIrank
+-------------------------------------------------------
+Original subset           202        15%                 
+Expanded (matched)        124        12.6%
+
+Saved matched: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\dilirank_drugbank_matched.csv
+Saved not matched: dilirank_not_matched.csv
+
+======================================================================
+SUMMARY
+======================================================================
+
+DILIrank total: 1336
+Non-ambiguous: 982
+Matched to DrugBank: 124
+Coverage: 12.6%
+
+Not matched: 858 (would need PubChem lookup)
+

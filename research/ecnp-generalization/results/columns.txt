@@ -1,0 +1,1 @@
+['dilirank_name', 'drugbank_id', 'is_dili', 'network_coverage', 'n_targets_log', 'k_log', 'I_T', 'ecnp_mu_T', 'ecnp_sigma_T', 'ecnp_z', 'smiles']

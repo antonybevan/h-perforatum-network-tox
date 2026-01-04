@@ -1,0 +1,40 @@
+============================================================
+ChEMBL BSEP Data Download
+============================================================
+
+Fetching BSEP activities from ChEMBL...
+Target: CHEMBL5407
+  Fetched 1000 activities...
+  Fetched 2000 activities...
+  Fetched 3000 activities...
+  Fetched 3754 activities...
+Total activities fetched: 3754
+
+Processed activities: 3729
+Unique compounds: 106
+
+BSEP inhibitor classification:
+bsep_class
+potent_inhibitor      55
+moderate_inhibitor    50
+weak_inhibitor         1
+Name: count, dtype: int64
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\data\curated\bsep_inhibitors.csv
+
+============================================================
+INTEGRATING WITH DILI PREDICTIONS
+============================================================
+Our compounds: 202
+Matched with BSEP data: 7/202
+
+BSEP data matches:
+  Sorafenib: IC50=10.0 uM, DILI+
+  Leflunomide: IC50=20.6 uM, DILI+
+  Canertinib: IC50=10.0 uM, DILI+
+  Pazopanib: IC50=10.0 uM, DILI+
+  Lapatinib: IC50=7.9 uM, DILI+
+  Harmine: IC50=4.3 uM, DILI-
+  Dasatinib: IC50=7.9 uM, DILI+
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\predictions_with_bsep.csv

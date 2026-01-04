@@ -1,0 +1,97 @@
+======================================================================
+Traceback (most recent call last):
+ECNP vs NAIVE COUNTING: CRITICAL DISCRIMINATION TEST
+======================================================================
+
+Network: 7677 nodes
+DILI genes: 82
+Non-DILI genes: 7595
+
+Hyperforin: 10 targets, 4 direct DILI hits
+Quercetin: 62 targets, 1 direct DILI hits
+
+======================================================================
+TEST 1: SYNTHETIC COMPOUNDS WITH VARYING DIRECT HITS
+======================================================================
+
+Correlation(direct_hits, Z): r = 0.897, p = 3.00e-22
+
+| Direct Hits | Mean Z | Std Z | n |
+|-------------|--------|-------|---|
+| 0 | +0.44 | 1.24 | 10 |
+| 1 | +1.89 | 0.60 | 10 |
+| 2 | +5.06 | 1.27 | 10 |
+| 3 | +7.78 | 2.01 | 10 |
+| 4 | +11.19 | 2.98 | 10 |
+| 5 | +18.65 | 5.02 | 10 |
+
+======================================================================
+TEST 2: ZERO DIRECT HITS (CRITICAL RWR TEST)
+======================================================================
+
+Compounds with ZERO direct DILI hits:
+  Mean Z: +0.44
+  Std Z: 1.24
+  Range: [-0.28, 3.80]
+
+  FINDING: Compounds with NO direct hits still get positive Z-scores!
+  This suggests RWR captures pathway proximity effects.
+
+======================================================================
+TEST 3: IDENTIFY HIGH-INFLUENCE NON-DILI NODES
+======================================================================
+
+Top 10 non-DILI genes by DILI influence:
+| Gene | DILI Influence | Percentile |
+|------|----------------|------------|
+| ITIH3 | 0.2817 | 99.8% |
+| ITIH1 | 0.2817 | 99.8% |
+| SLC25A18 | 0.2665 | 99.8% |
+| PON3 | 0.2593 | 99.7% |
+| ABCA7 | 0.2478 | 99.7% |
+| RBP4 | 0.2336 | 99.6% |
+| CLEC3B | 0.2329 | 99.5% |
+| PLGRKT | 0.2329 | 99.5% |
+| KRT8 | 0.2253 | 99.5% |
+| KRT19 | 0.2253 | 99.4% |
+
+"Pathway Hub" compound (top 10 non-DILI by influence):
+  Z-score: nan
+  Direct DILI hits: 0
+
+Random non-DILI compound:
+  Z-score: -0.48
+  Direct DILI hits: 0
+
+======================================================================
+TEST 4: ECNP vs NAIVE COUNTING DISCRIMINATION
+======================================================================
+
+Correlation with direct hit count:
+  ECNP Z vs direct_hits: r = 0.897
+  Naive score = direct_hits (by definition)
+
+Variance analysis:
+  R▓ of Z ~ direct_hits: 0.804
+  Unexplained variance: 19.6%
+  FINDING: 19.6% of Z variance NOT explained by direct hits
+  This is the RWR "pathway effect" contribution.
+
+======================================================================
+SUMMARY: DOES ECNP ADD VALUE BEYOND COUNTING?
+======================================================================
+
+Key Metrics:
+  - Correlation(Z, direct_hits) = 0.90
+  - R▓ of Z ~ direct_hits = 0.80
+  - Mean Z for 0 direct hits = +0.44
+  - "Pathway Hub" Z (0 hits) = nan
+  
+Interpretation:
+
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\test_ecnp_vs_counting.py", line 239, in <module>
+    print('  \u26a0\ufe0f ECNP partially captures pathway effects')
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-3: character maps to <undefined>

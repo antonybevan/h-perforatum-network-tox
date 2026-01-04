@@ -1,0 +1,14 @@
+Testing PubChem API:
+------------------------------------------------------------
+FAIL: Acetaminophen -> {'status': 'ok', 'smiles': None, 'mw': '151.16'}
+FAIL: Methotrexate -> {'status': 'ok', 'smiles': None, 'mw': '454.4'}
+FAIL: Abacavir -> {'status': 'ok', 'smiles': None, 'mw': '286.33'}
+FAIL: Ibuprofen -> {'status': 'ok', 'smiles': None, 'mw': '206.28'}
+FAIL: Amoxicillin -> {'status': 'ok', 'smiles': None, 'mw': '365.4'}
+FAIL: Cyclosporine -> {'status': 'ok', 'smiles': None, 'mw': '1202.6'}
+FAIL: Rifampicin -> {'status': 'ok', 'smiles': None, 'mw': '822.9'}
+FAIL: Isoniazid -> {'status': 'ok', 'smiles': None, 'mw': '137.14'}
+FAIL: Valproic acid -> {'status': 'ok', 'smiles': None, 'mw': '144.21'}
+FAIL: Carbamazepine -> {'status': 'ok', 'smiles': None, 'mw': '236.27'}
+
+Success: 0/10 (0%)

@@ -1,0 +1,72 @@
+======================================================================
+DIAGNOSTIC: SMALL TEST vs LARGE SCALE
+======================================================================
+
+1. DIRECT DILI HITS ANALYSIS
+--------------------------------------------------
+Hyperforin: 4/10 targets are DILI genes (40%)
+Quercetin: 1/62 targets are DILI genes (2%)
+
+Large-scale compounds:
+  Mean direct DILI hits: 0.39
+  Max direct DILI hits: 3
+  % with 0 direct hits: 69%
+
+2. CORRELATION: Z-SCORE vs DIRECT HITS
+--------------------------------------------------
+Pearson r: 0.846 (p=1.48e-56)
+Spearman rho: 0.728 (p=1.11e-34)
+
+3. Z-SCORE BY DILI STATUS AND DIRECT HITS
+--------------------------------------------------
+
+DILI+ compounds (n=132):
+  Mean direct hits: 0.49
+  Mean Z: 0.90
+    0 direct hits: n=80, mean Z=0.01
+    1 direct hits: n=41, mean Z=1.60
+    2 direct hits: n=9, mean Z=4.16
+
+DILI- compounds (n=70):
+  Mean direct hits: 0.19
+  Mean Z: 0.25
+    0 direct hits: n=59, mean Z=-0.04
+    1 direct hits: n=9, mean Z=1.12
+    2 direct hits: n=2, mean Z=4.72
+
+4. TARGET COUNT DISTRIBUTION
+--------------------------------------------------
+Hyperforin: 10 targets
+Quercetin: 62 targets
+Large-scale mean: 5.0 targets
+Large-scale median: 4 targets
+Large-scale min-max: 3-31
+
+5. KEY DIAGNOSTIC: DIRECT HIT DIFFERENTIAL
+--------------------------------------------------
+DILI+ compounds: 0.49 mean direct hits
+DILI- compounds: 0.19 mean direct hits
+Difference: 0.31
+
+6. WHAT MADE HYPERFORIN SPECIAL?
+--------------------------------------------------
+Compounds with k=8-12 and >=3 direct hits: 0
+
+======================================================================
+DIAGNOSIS
+======================================================================
+
+The small test (Hyperforin vs Quercetin) worked because:
+
+1. Hyperforin had 40% direct DILI gene hits (4/10 targets)
+2. Quercetin had only 2% direct hits (1/62 targets)
+3. This massive difference in direct hit rate drove the Z-score difference
+
+At large scale:
+- Most compounds have 0-1 direct DILI hits
+- DILI+ and DILI- compounds have similar hit rates
+- There's no direct-hit differential for ECNP to exploit
+
+The algorithm IS working correctly - it's just that the SIGNAL doesn't exist
+in the general compound population the way it did in the cherry-picked example.
+

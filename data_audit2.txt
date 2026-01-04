@@ -1,0 +1,57 @@
+============================================================
+PARSING RAW DILIRANK 2.0 CORRECTLY
+============================================================
+Rows: 1336
+Columns: ['LTKBID', 'CompoundName', 'SeverityClass', 'LabelSection', 'vDILI-Concern', 'Comment']
+
+First 3 rows:
+    LTKBID      CompoundName  ...       vDILI-Concern    Comment
+0  LT00040  Abacavir sulfate  ...  vMOST-DILI-concern  Unchanged
+1  LT03618     Abaloparatide  ...    vNo-DILI-concern        New
+2  LT01402         Abatacept  ...  vLess-DILI-concern  Unchanged
+
+[3 rows x 6 columns]
+
+LTKBID: 1336 unique values
+
+CompoundName: 1336 unique values
+
+SeverityClass: 9 unique values
+SeverityClass
+0    466
+3    402
+8    178
+4     96
+5     70
+7     66
+2     48
+6      6
+1      4
+Name: count, dtype: int64
+
+LabelSection: 6 unique values
+LabelSection
+No match                  467
+Adverse reactions         435
+Warnings & precautions    333
+Withdrawn                  54
+Box warning                39
+Discontinued                8
+Name: count, dtype: int64
+
+vDILI-Concern: 6 unique values
+vDILI-Concern
+vNo-DILI-concern          413
+Ambiguous-DILI-concern    354
+vLess-DILI-concern        351
+vMost-DILI-concern        215
+vMOST-DILI-concern          2
+vNo-DILI-Concern            1
+Name: count, dtype: int64
+
+Comment: 3 unique values
+Comment
+Unchanged    987
+New          300
+Revised       49
+Name: count, dtype: int64

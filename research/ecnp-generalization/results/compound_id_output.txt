@@ -1,0 +1,44 @@
+============================================================
+Compound Identification System
+============================================================
+
+Loading predictions...
+Compounds: 202
+
+Registering compounds...
+Registered: 202
+
+Checking for duplicates...
+No duplicates found
+
+============================================================
+Cross-Dataset Matching Test
+============================================================
+
+Name normalization test:
+  ciclosporin                    -> cyclosporine
+  cyclosporine                   -> cyclosporine
+  paracetamol                    -> acetaminophen
+  acetaminophen                  -> acetaminophen
+  rifampin                       -> rifampicin
+  rifampicin                     -> rifampicin
+  metformin hydrochloride        -> metformin
+  metformin                      -> metformin
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\predictions_with_compound_ids.csv
+
+============================================================
+COMPOUND IDENTIFICATION SUMMARY
+============================================================
+
+Compounds processed: 202
+Unique IDs generated: 202
+Duplicates found: 0
+
+ID Types:
+  DrugBank-based (DB:): 202
+  Structure-based (IK:): 0
+  Name-based (NM:): 0
+
+Name synonyms in database: 51
+

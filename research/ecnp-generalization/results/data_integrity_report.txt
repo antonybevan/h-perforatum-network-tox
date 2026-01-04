@@ -1,0 +1,76 @@
+======================================================================
+DATA PATH AND INTEGRITY VERIFICATION
+======================================================================
+
+------------------------------------------------------------
+1. DATA FILE EXISTENCE CHECK
+------------------------------------------------------------
+  [MISSING] DILIrank raw: v:\new\h-perforatum-network-tox\data\raw\DILIrank\DILIrank-2.0.xlsx
+  [OK] DrugBank XML: 1,619,697,173 bytes
+  [OK] DILI genes: 5,316 bytes
+  [MISSING] Influence matrix: v:\new\h-perforatum-network-tox\data\processed\S_matrix_liver_lcc.npz
+  [OK] Labeled compounds: 40,097 bytes
+  [OK] PK data: 371,847 bytes
+  [OK] ECNP scores: 24,919 bytes
+  [OK] ML pipeline results: 86,982 bytes
+  [OK] ECFP results: 94,650 bytes
+
+------------------------------------------------------------
+2. DILI LABEL INTEGRITY
+------------------------------------------------------------
+Labeled compounds: 207
+DILIrank values: {'vLess-DILI-concern': 75, 'vNo-DILI-concern': 72, 'vMost-DILI-concern': 58, 'vMOST-DILI-concern': 2}
+Could not read raw DILIrank: [Errno 2] No such file or directory: 'v:\\new\\h-perforatum-network-tox\\data\\raw\\DILIrank\\DILIrank-2.0.xlsx'
+
+------------------------------------------------------------
+3. COMPOUND MATCHING INTEGRITY
+------------------------------------------------------------
+ECNP scores: 202
+  [OK] DrugBank IDs unique: 202
+  DILI labels: DILI+=132, DILI-=70
+
+------------------------------------------------------------
+4. FEATURE CONSISTENCY
+------------------------------------------------------------
+ML pipeline results: 202
+  [OK] logp: 202/202 non-null
+  [OK] mw: 202/202 non-null
+  [OK] ecnp_z: 202/202 non-null
+  [OK] is_dili: 202/202 non-null
+  [OK] n_targets: 202/202 non-null
+  [OK] smiles: 202/202 non-null
+  is_dili unique values: [np.int64(0), np.int64(1)]
+
+------------------------------------------------------------
+5. DATA LEAKAGE CHECK
+------------------------------------------------------------
+DILI gene list: 82 genes
+  Sample genes: ['GSTM1', 'NAT2', 'CYP2E1', 'MTHFR', 'CYP2C9', 'GSTP1', 'CYP2C19', 'ABCB1', 'HLA-A', 'HLA-B']
+  LogP-DILI correlation: 0.292
+
+------------------------------------------------------------
+6. ECFP MODEL RESULTS VERIFICATION
+------------------------------------------------------------
+ECFP results: 202
+  Predictions range: [0.090, 0.929]
+
+------------------------------------------------------------
+7. CROSS-FILE CONSISTENCY
+------------------------------------------------------------
+  labeled_compounds: 207 rows
+  scores: 202 rows
+  ml_results: 202 rows
+  ecfp_results: 202 rows
+  DrugBank ID overlap: 202/207
+
+======================================================================
+VERIFICATION SUMMARY
+======================================================================
+
+Errors: 2
+  [ERROR] Missing file: DILIrank raw
+  [ERROR] Missing file: Influence matrix
+
+Warnings: 0
+
+*** CRITICAL ERRORS FOUND - REVIEW REQUIRED ***

@@ -1,0 +1,36 @@
+======================================================================
+PUBCHEM SMILES FETCHING FOR DILIRANK
+======================================================================
+
+--- Loading DILIrank ---
+Total drugs: 1336
+Non-ambiguous: 982
+
+--- Fetching SMILES from PubChem ---
+  Processed: 10/50
+  Processed: 20/50
+  Processed: 30/50
+  Processed: 40/50
+  Processed: 50/50
+
+Results:
+  Found: 0
+  Not found: 7
+  Errors: 43
+
+--- Validating Matches ---
+
+======================================================================
+SUMMARY
+======================================================================
+
+Batch size: 50
+Found with valid SMILES: 0 (0.0%)
+Not found: 7 (14.0%)
+Errors: 43
+
+Name match quality:
+  Exact: 0
+  Partial: 0
+  REVIEW: 0
+

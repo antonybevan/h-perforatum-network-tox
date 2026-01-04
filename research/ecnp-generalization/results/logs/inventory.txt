@@ -1,0 +1,12 @@
+============================================================
+INVENTORY: WHAT CAN WE MODEL WITH?
+============================================================
+
+Labeled compounds: 207
+Columns: ['drugbank_id', 'drug_name', 'dilirank_name', 'n_targets', 'targets', 'match_score', 'ltkbid', 'category', 'dilirank', 'smiles']
+Have SMILES: 207/207
+
+Scored compounds: 202
+Score columns: ['drugbank_id', 'drug_name', 'dilirank_name', 'n_targets', 'dilirank', 'is_dili', 'Z', 'I_T', 'mu_T', 'pool_size']
+
+DrugBank columns: ['drugbank_id', 'drug_name', 'targets', 'n_targets']

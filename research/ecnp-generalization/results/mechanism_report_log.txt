@@ -1,0 +1,7 @@
+==================================================
+PHASE 11: MECHANISM DECLARATION (LOGIC LAYER)
+==================================================
+
+--- EXAMPLE DECLARATIONS ---
+
+Saved Final Mechanism Reports to v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\final_mechanism_reports.csv

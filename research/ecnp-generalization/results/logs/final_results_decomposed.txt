@@ -1,0 +1,40 @@
+======================================================================
+FINAL PUBLICATION DILI MODEL TRAINING
+======================================================================
+
+--- Loading Datasets ---
+Tier 1 (Full): 901 drugs
+Tier 2a (Expanded): 456 drugs with valid ECNP
+Tier 2b (Curated): 202 drugs (Gold Standard)
+
+--------------------------------------------------
+1. Training Tier 1 (901 drugs)...
+Computing features for 901 compounds...
+  AUC: 0.726
+
+--------------------------------------------------
+2. Training Tier 2a (456 Expanded) - Decomposed ECNP...
+  Generating features...
+  [Chemistry Only] AUC: 0.635
+  [+ Decomposed]   AUC: 0.636
+  [Lift]           +0.000
+
+--------------------------------------------------
+3. Training Tier 2b (202 Curated) - Decomposed ECNP...
+  Generating features...
+  [Chemistry Only] AUC: 0.871
+  [+ Decomposed]   AUC: 0.874
+  [Lift]           +0.004
+
+======================================================================
+FINAL PUBLICATION RESULTS (Decomposed ECNP)
+======================================================================
+             Model   N               Features      AUC   PR-AUC     Lift
+      Tier 1 (All) 901              Chemistry 0.725684 0.763712 0.000000
+Tier 2a (Expanded) 456              Chemistry 0.635436 0.769049 0.000000
+Tier 2a (Expanded) 456 Chem + Decomposed ECNP 0.635675 0.774131 0.000239
+ Tier 2b (Curated) 202              Chemistry 0.870563 0.897071 0.000000
+ Tier 2b (Curated) 202 Chem + Decomposed ECNP 0.874134 0.901911 0.003571
+
+Saved to: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\final_model_results.csv
+Done.

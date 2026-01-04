@@ -1,0 +1,46 @@
+Loading DisGeNET curated associations...
+Total associations: 26522
+
+DILI-related associations: 1144
+Unique DILI genes: 787
+
+Diseases included:
+diseaseName
+Carcinoma, Hepatocellular               214
+Drug-Induced Liver Injury               127
+Liver Neoplasms                         112
+Liver Cirrhosis, Experimental           109
+Liver Neoplasms, Experimental            91
+                                       ... 
+HYPERBILIVERDINEMIA                       1
+childhood hepatocellular carcinoma        1
+HEPATITIS C VIRUS, SUSCEPTIBILITY TO      1
+ADAMS-OLIVER SYNDROME 2                   1
+RENAL-HEPATIC-PANCREATIC DYSPLASIA 2      1
+Name: count, Length: 80, dtype: int64
+
+Total unique DILI genes: 787
+
+Loading Liver LCC network...
+Network genes: 7677
+DILI genes in network: 506
+
+Old DILI module: 82 genes
+New DILI module: 506 genes
+New vs old: 6.2x more genes
+
+Computing new DILI influence vector...
+DILI genes with influence vectors: 506
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-closed-form\data\dili_influence_vector_900_full.csv
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-closed-form\data\dili_genes_full.csv
+
+============================================================
+SUMMARY
+============================================================
+Old DILI module: 82 genes
+New DILI module: 506 genes
+Improvement: 6.2x more coverage
+
+New files created:
+  - dili_influence_vector_900_full.csv
+  - dili_genes_full.csv

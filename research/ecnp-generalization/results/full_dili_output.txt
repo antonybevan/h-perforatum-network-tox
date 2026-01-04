@@ -1,0 +1,32 @@
+Loading data with FULL DILI module (506 genes)...
+DILI module: 506 genes
+Compounds to score: 207
+
+Scoring compounds with 506-gene DILI module...
+Scored: 207
+
+============================================================
+DIRECT HIT ANALYSIS (506-gene module)
+============================================================
+
+Mean direct hits: 1.54
+Max direct hits: 8
+
+DILI+ (n=135):
+  Mean direct hits: 1.74
+  Mean Z: 3.18
+
+DILI- (n=72):
+  Mean direct hits: 1.17
+  Mean Z: 2.40
+
+============================================================
+ROC/AUC ANALYSIS
+============================================================
+Positive: 135, Negative: 72
+
+AUC: 0.578
+
+Old AUC (82 genes): 0.624
+New AUC (506 genes): 0.578
+Improvement: -0.046

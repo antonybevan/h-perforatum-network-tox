@@ -1,0 +1,43 @@
+Loaded: 202 scored compounds
+
+Mechanism distribution:
+primary_mechanism
+unknown           185
+hepatocellular      5
+cholestatic         5
+metabolic           4
+immune              3
+Name: count, dtype: int64
+
+============================================================
+STRATIFIED AUC ANALYSIS
+============================================================
+
+METABOLIC: Skipped (n=7 < 10)
+
+HEPATOCELLULAR: Skipped (n=5 < 10)
+
+CHOLESTATIC: Skipped (n=6 < 10)
+
+IMMUNE: Skipped (n=6 < 10)
+
+UNKNOWN (n=185, pos=115, neg=70):
+  AUC: 0.610
+  Mean Z (DILI+): 0.83
+  Mean Z (DILI-): 0.25
+
+
+UNKNOWN MECHANISM (n=185):
+  AUC: 0.610
+  Mean Z (DILI+): 0.83
+  Mean Z (DILI-): 0.25
+
+============================================================
+SUMMARY: AUC BY MECHANISM
+============================================================
+mechanism   n  n_pos  n_neg      auc
+  unknown 185    115     70 0.609814
+  unknown 185    115     70 0.609814
+
+Best stratum: UNKNOWN with AUC = 0.610
+Target NOT met: Best AUC = 0.610 < 0.75

@@ -1,0 +1,35 @@
+EXACT COVARIANCE VARIANCE TEST
+============================================================
+Method: Var[I_T] = pool_var * sum(rho_ij)
+Reference: Picart-Armada et al., Bioinformatics 2020
+
+
+Hyperforin:
+  k = 10
+  sum(rho_ij) = 21.96
+  mean_rho = 0.1329
+  pool_var = 0.004575
+
+  CF sigma:    0.0557
+  Exact sigma: 0.3170
+  Emp sigma:   ~0.176 (Hyp), ~0.292 (Que)
+
+  I_T = 1.1381, mu_T = 0.5779
+  Z_raw (CF):  10.06
+  Z_exact:     1.77
+  Z_emp:       ~2.80 (Hyp), ~-0.42 (Que)
+
+Quercetin:
+  k = 62
+  sum(rho_ij) = 1180.15
+  mean_rho = 0.2957
+  pool_var = 0.001464
+
+  CF sigma:    0.0769
+  Exact sigma: 1.3143
+  Emp sigma:   ~0.176 (Hyp), ~0.292 (Que)
+
+  I_T = 1.9946, mu_T = 1.6264
+  Z_raw (CF):  4.79
+  Z_exact:     0.28
+  Z_emp:       ~2.80 (Hyp), ~-0.42 (Que)

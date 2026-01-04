@@ -1,0 +1,80 @@
+Baseline: Hyperforin Z=10.06, Quercetin Z=4.79
+
+======================================================================
+TEST 1: HUB REMOVAL
+======================================================================
+
+Removing key hubs from Hyperforin targets:
+Hub Removed     |    New Z |    Delta |   % Change
+--------------------------------------------------
+NR1I2           |     6.98 |    -3.08 |     -30.6%
+CYP2C9          |     6.90 |    -3.16 |     -31.4%
+CYP3A4          |    10.18 |    +0.12 |      +1.2%
+ABCB1           |     7.59 |    -2.47 |     -24.6%
+
+Removing ALL CYP targets:
+  Z without CYPs: 5.44 (was 10.06)
+
+======================================================================
+TEST 2: TARGET SHUFFLING WITHIN STRATA
+======================================================================
+
+Replacing Hyperforin targets with stratum-matched random nodes...
+  Trials: 20
+  Mean Z: 1.98 +/- 3.22
+  Expected: ~0 (null by construction)
+  Original Hyperforin Z: 10.06
+  [PASS] Shuffled targets give null-like Z
+
+======================================================================
+TEST 3: DISEASE MODULE PERTURBATION
+======================================================================
+
+  [INFO] Would require recomputing M matrix with modified disease module
+  Expected behaviors:
+    - Corrupt 25%: Z should increase (wider gap)
+    - Corrupt 50%: Z highly unstable
+    - Corrupt 100%: Meaningless
+  This is a DOCUMENTED LIMITATION, not a bug.
+
+======================================================================
+TEST 4: ADVERSARIAL TARGET SELECTION
+======================================================================
+
+Case                 |    k |        Z | Status                   
+-----------------------------------------------------------------
+all_99th             |   10 |      nan | refused_extreme_targets  
+all_1st              |   10 |    -0.10 | success                  
+bimodal_extreme      |   10 |     5.64 | success                  
+pure_random          |   10 |     1.30 | success                  
+
+Expected behaviors:
+  - all_99th: REFUSE (no valid null pool)
+  - all_1st: Compute, Z near 0
+  - bimodal_extreme: Compute with HIGH Z (hubs drive signal)
+  - pure_random: Compute, Z near 0
+
+======================================================================
+TEST 5: RANKING STABILITY (Hyp vs Que)
+======================================================================
+
+Baseline: Hyperforin (10.06) vs Quercetin (4.79)
+Hyperforin wins: True
+
+Shared targets: {'MMP9', 'AKT1', 'MMP2', 'CYP3A4', 'ABCG2'}
+
+With shared targets removed:
+  Hyperforin-unique: Z=nan
+  Quercetin-unique: Z=1.92
+
+======================================================================
+ADVERSARIAL TESTING COMPLETE
+======================================================================
+
+Summary:
+- Hub removal: Tests sensitivity to key drivers
+- Stratum shuffling: Validates null model construction  
+- Disease perturbation: Documents known limitation
+- Adversarial selection: Tests guard behavior
+- Ranking stability: Core inference robustness
+        

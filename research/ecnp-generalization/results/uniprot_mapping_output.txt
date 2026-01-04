@@ -1,0 +1,43 @@
+======================================================================
+MAPPING UNIPROT TO GENE SYMBOLS
+======================================================================
+
+--- Loading Targets ---
+Unique UniProt IDs: 1018
+Existing mappings: 109
+
+--- Fetching from UniProt API ---
+Need to fetch: 968
+  Progress: 100/968 | Found: 98
+  Progress: 200/968 | Found: 194
+  Progress: 300/968 | Found: 290
+  Progress: 400/968 | Found: 388
+  Progress: 500/968 | Found: 487
+  Progress: 600/968 | Found: 582
+  Progress: 700/968 | Found: 681
+  Progress: 800/968 | Found: 780
+  Progress: 900/968 | Found: 877
+
+Fetched: 941 new mappings
+Errors: 27
+
+--- Saving Combined Mapping ---
+Total mappings: 1050
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\uniprot_to_gene.csv
+
+--- Checking Network Overlap ---
+Mapped genes: 1002
+In network: 483
+Overlap: 48.2%
+
+======================================================================
+SUMMARY
+======================================================================
+
+Unique UniProt IDs: 1018
+Existing mappings: 109
+New mappings fetched: 941
+Total mappings: 1050
+
+Coverage: 103.1%
+

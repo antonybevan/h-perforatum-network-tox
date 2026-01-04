@@ -1,0 +1,21 @@
+Initializing Conformal Integrity Protocol...
+Generating Features...
+
+Running Cross-Conformal Validation...
+
+==================================================
+CONFORMAL VALIDATION RESULTS
+==================================================
+Global Validity (Target 90%): 94.93%
+
+--- Efficiency by Regime ---
+Efficiency = % of Singleton Sets (Size 1). Higher is better (more precise).
+Hypothesis: Noisy Data should have Low/Zero Efficiency (Sets of size 2).
+          set_size       is_correct      
+              mean count       mean count
+is_noisy                                 
+False     1.767705   353   0.949008   353
+True      1.500000     2   1.000000     2
+
+Efficiency on NOISY (Tier 2a): 50.00%
+Efficiency on CLEAN (Tier 2b): 23.23%

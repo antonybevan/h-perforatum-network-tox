@@ -1,0 +1,19 @@
+Loading Gold Standard data...
+Regenerating features...
+Running Cross-Validation...
+Base AUC: 0.8689
+Full AUC: 0.8738
+Lift:     0.0049
+
+Running Bootstrap Test (n=1000)...
+p-value: 0.0250
+95% CI: [0.0000, 0.0108]
+
+--- RESCUED DRUGS (False Negative -> True Positive) ---
+Total Rescued (FN -> TP): 2
+    drug_name      I_T  network_fraction  pred_chem  pred_full
+Acetaminophen 0.281793          0.333333          0          1
+    Cisplatin 0.542062          0.333333          0          1
+
+--- SAVED DRUGS (False Positive -> True Negative) ---
+Total Saved (FP -> TN): 0

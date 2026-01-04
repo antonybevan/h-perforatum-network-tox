@@ -1,0 +1,208 @@
+drugbank_id,drug_name,dilirank_name,n_targets,targets,match_score,ltkbid,category,dilirank,smiles
+DB00013,Urokinase,Urokinase,6,"['PLG', 'PLAUR', 'SERPINE1', 'SERPINA5', 'ST14', 'NID1']",1.0,LT01229,DILI_negative,vNo-DILI-concern,CC(C)OC(=O)NC1=CC2=C(C=C1)N=C(N2)C3=CSC=N3
+DB00091,Cyclosporine,Cyclosporine,4,"['CAMLG', 'PPP3CA', 'PPIA', 'PPIF']",1.0,LT00380,DILI_positive,vMost-DILI-concern,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+DB00115,Cyanocobalamin,Cyanocobalamin,5,"['MTR', 'MTRR', 'MMAA', 'MMACHC', 'MTHFR']",1.0,LT02002,DILI_negative,vNo-DILI-concern,CC1=CC2=C(C=C1C)[N+](=CN2)C3C(C(C(O3)CO)OP(=O)(O)OC(C)CNC(=O)CCC4(C(C5C6(C(C(C(=N6)C(=C7C(C(C(=CC8=NC(=C(C4=N5)C)C(C8(C)C)CCC(=N)[O-])N7)CCC(=N)[O-])(C)CC(=O)N)C)CCC(=N)[O-])(C)CC(=O)N)C)CC(=O)N)C)O.[C]#N.[Co+2]
+DB00118,Ademetionine,Methionine,5,"['COMT', 'GNMT', 'MAT2A', 'CBS', 'MAT1A']",0.8181818181818182,LT01468,DILI_negative,vNo-DILI-concern,CSCCC(C(=O)O)N
+DB00122,Choline,Choline c-11,5,"['ACHE', 'PCYT1A', 'PLD2', 'BCHE', 'PLD1']",0.8235294117647058,LT03899,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CCO
+DB00125,Arginine,Arginine hydrochloride,3,"['ASL', 'ASS1', 'NOS3']",1.0,LT02077,DILI_negative,vNo-DILI-concern,C(CC(C(=O)O)N)CN=C(N)N.Cl
+DB00131,Adenosine phosphate,Adenosine,11,"['PRKAA1', 'ADK', 'PRKAB1', 'ACSS2', 'PRKAA1', 'ADCY1', 'ACSL1', 'CREB1', 'PDE4B', 'PYGL', 'FBP1']",1.0,LT01047,DILI_negative,vNo-DILI-concern,C1=NC(=C2C(=N1)N(C=N2)C3C(C(C(O3)CO)O)O)N
+DB00133,Serine,Reserpine,6,"['CBS', 'SDS', 'SRR', 'SPTLC2', 'SPTLC1', 'AGXT']",0.8,LT01729,DILI_negative,vNo-DILI-concern,COC1C(CC2CN3CCC4=C(C3CC2C1C(=O)OC)NC5=C4C=CC(=C5)OC)OC(=O)C6=CC(=C(C(=C6)OC)OC)OC
+DB00134,Methionine,Methionine,5,"['MTRR', 'MTR', 'METAP2', 'BHMT', 'BHMT2']",1.0,LT01468,DILI_negative,vNo-DILI-concern,CSCCC(C(=O)O)N
+DB00142,Glutamic acid,Carglumic acid,31,"['OPLAH', 'PFAS', 'BCAT2', 'GLS', 'GOT2', 'ASNS', 'GLUL', 'GOT1', 'TAT', 'GPT', 'GGCX', 'GCLC', 'GLUD2', 'GMPS', 'ABAT', 'FPGS', 'ENPEP', 'EARS2', 'NADSYN1', 'NAGS', 'AADAT', 'GPT2', 'AASS', 'GLS2', 'PSAT1', 'GLUD1', 'GCLM', 'FOLH1', 'FTCD', 'ALDH18A1', 'GOT1']",0.8,LT00675,DILI_negative,vNo-DILI-concern,C(CC(=O)O)C(C(=O)O)NC(=O)N
+DB00162,Vitamin A,Vitamin C,11,"['APOD', 'PTGDS', 'RDH12', 'RDH5', 'ALDH1A2', 'ALDH1A1', 'LRAT', 'DHRS3', 'RETSAT', 'RDH11', 'DHRS4']",0.875,LT02009,DILI_negative,vNo-DILI-concern,C(C(C1C(=C(C(=O)O1)O)O)O)O
+DB00163,Vitamin E,Vitamin E,5,"['NR1I2', 'ALOX5', 'PRKCA', 'PPP2CB', 'PPP2CA']",1.0,LT01516,DILI_negative,vNo-DILI-concern,CC1=C(C2=C(CCC(O2)(C)CCCC(C)CCCC(C)CCCC(C)C)C(=C1O)C)C
+DB00166,Lipoic acid,Valproic acid,3,"['LIPT1', 'SLC5A6', 'LIAS']",0.8181818181818182,LT00160,DILI_positive,vMost-DILI-concern,CCCC(CCC)C(=O)O
+DB00172,Proline,Pemoline,14,"['PPIB', 'PPIA', 'PYCR1', 'PYCR2', 'P4HA2', 'PRODH', 'PPIH', 'P4HA1', 'PPIF', 'PPIG', 'P3H1', 'PARS2', 'P3H3', 'L3HYPDH']",0.8,LT00246,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2C(=O)N=C(O2)N
+DB00173,Adenine,Adenosine,4,"['APRT', 'MTAP', 'ACACB', 'SRPK2']",0.875,LT01047,DILI_negative,vNo-DILI-concern,C1=NC(=C2C(=N1)N(C=N2)C3C(C(C(O3)CO)O)O)N
+DB00182,Amphetamine,Amphetamine sulfate,3,"['MAOA', 'ADRA1A', 'MAOB']",1.0,LT02100,DILI_positive,vLess-DILI-concern,CC(CC1=CC=CC=C1)N.CC(CC1=CC=CC=C1)N.OS(=O)(=O)O
+DB00188,Bortezomib,Bortezomib,3,"['PSMB5', 'PRSS1', 'PSMB1']",1.0,LT01202,DILI_positive,vMost-DILI-concern,B(C(CC(C)C)NC(=O)C(CC1=CC=CC=C1)NC(=O)C2=NC=CN=C2)(O)O
+DB00197,Troglitazone,Troglitazone,7,"['PPARG', 'ESRRA', 'PPARD', 'PPARA', 'GSTP1', 'ACSL4', 'SERPINE1']",1.0,LT00168,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(CCC(O2)(C)COC3=CC=C(C=C3)CC4C(=O)NC(=O)S4)C(=C1O)C)C
+DB00201,Caffeine,Caffeine citrate,10,"['NT5E', 'ADORA2A', 'PDE4B', 'PDE4A', 'PRKDC', 'PIK3CD', 'PIK3CA', 'PIK3CB', 'ITPR1', 'ATM']",1.0,LT01888,DILI_negative,vNo-DILI-concern,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+DB00227,Lovastatin,Lovastatin,3,"['HMGCR', 'ITGAL', 'HDAC2']",1.0,LT00576,DILI_positive,vLess-DILI-concern,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C
+DB00233,Aminosalicylic acid,Aminosalicylic acid ,4,"['DHFR', 'PTGS2', 'CHUK', 'ALOX5']",1.0,LT00505,DILI_positive,vMOST-DILI-concern,C1=CC(=C(C=C1N)O)C(=O)O
+DB00242,Cladribine,Cladribine,10,"['RRM1', 'ADA', 'RRM2B', 'POLA1', 'POLE', 'POLE2', 'POLE3', 'POLE4', 'PNP', 'PARP1']",1.0,LT01224,DILI_positive,vLess-DILI-concern,C1C(C(OC1N2C=NC3=C(N=C(N=C32)Cl)N)CO)O
+DB00244,Mesalazine,Mesalamine,5,"['PTGS2', 'ALOX5', 'PPARG', 'CHUK', 'IKBKB']",0.9,LT00414,DILI_positive,vLess-DILI-concern,C1=CC(=C(C=C1N)C(=O)O)O
+DB00246,Ziprasidone,Ziprasidone hydrochloride,3,"['ADRA1A', 'ADRA1B', 'ADRA2B']",1.0,LT01017,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCC2=C(C=C3C(=C2)CC(=O)N3)Cl)C4=NSC5=CC=CC=C54.Cl
+DB00248,Cabergoline,Cabergoline,4,"['ADRA2B', 'ADRA1A', 'ADRA1B', 'ADRB2']",1.0,LT01152,DILI_negative,vNo-DILI-concern,CCNC(=O)N(CCCN(C)C)C(=O)C1CC2C(CC3=CNC4=CC=CC2=C34)N(C1)CC=C
+DB00252,Phenytoin,Phenytoin,3,"['SCN8A', 'NR1I2', 'SCN1B']",1.0,LT00032,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2(C(=O)NC(=O)N2)C3=CC=CC=C3
+DB00279,Liothyronine,Liothyronine sodium,3,"['THRA', 'THRB', 'PCNA']",1.0,LT00783,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(C(=O)[O-])N)I)I)O.[Na+]
+DB00281,Lidocaine,Lidocaine,4,"['SCN9A', 'EGFR', 'ORM1', 'ORM2']",1.0,LT01905,DILI_negative,vNo-DILI-concern,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+DB00313,Valproic acid,Valproic acid,13,"['ABAT', 'GSK3A', 'ACADSB', 'OGDH', 'ALDH5A1', 'HDAC2', 'PPARA', 'PPARD', 'PPARG', 'HDAC1', 'CDKN1A', 'HGF', 'ODC1']",1.0,LT00160,DILI_positive,vMost-DILI-concern,CCCC(CCC)C(=O)O
+DB00316,Acetaminophen,Acetaminophen,3,"['PTGS2', 'PTGES3', 'TRPV1']",1.0,LT00004,DILI_positive,vMost-DILI-concern,CC(=O)NC1=CC=C(C=C1)O
+DB00321,Amitriptyline,Amitriptyline hydrochloride,3,"['ADRA1A', 'SIGMAR1', 'ADRA1B']",1.0,LT00047,DILI_positive,vLess-DILI-concern,CN(C)CCC=C1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+DB00328,Indomethacin,Indomethacin,7,"['PTGS2', 'PLA2G2A', 'PPARG', 'GLO1', 'PPARA', 'AKR1C3', 'EIF2AK2']",1.0,LT00022,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(N1C(=O)C3=CC=C(C=C3)Cl)C=CC(=C2)OC)CC(=O)O
+DB00331,Metformin,Metformin hydrochloride,4,"['ACACB', 'ETFDH', 'PRKAB1', 'GPD1']",1.0,LT00119,DILI_positive,vLess-DILI-concern,CN(C)C(=N)N=C(N)N.Cl
+DB00346,Alfuzosin,Alfuzosin hydrochloride,3,"['ADRA1A', 'ADRA1A', 'ADRA1B']",1.0,LT01107,DILI_positive,vLess-DILI-concern,CN(CCCNC(=O)C1CCCO1)C2=NC3=CC(=C(C=C3C(=N2)N)OC)OC.Cl
+DB00363,Clozapine,Clozapine,5,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'GSTP1', 'GABBR1']",1.0,LT00287,DILI_positive,vMost-DILI-concern,CN1CCN(CC1)C2=NC3=C(C=CC(=C3)Cl)NC4=CC=CC=C42
+DB00367,Levonorgestrel,Levonorgestrel,5,"['SRD5A1', 'ESR1', 'AR', 'SHBG', 'NR3C1']",1.0,LT01489,DILI_negative,vNo-DILI-concern,CCC12CCC3C(C1CCC2(C#C)O)CCC4=CC(=O)CCC34
+DB00368,Norepinephrine,Norepinephrine bitartrate,5,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2', 'PAH']",0.9333333333333333,LT00738,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1C(CN)O)O)O.C(C(C(=O)O)O)(C(=O)O)O.O
+DB00390,Digoxin,Digoxin,4,"['ATP1B1', 'ATP1B2', 'ATP1B3', 'ATP1A1']",1.0,LT00292,DILI_negative,vNo-DILI-concern,CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CC(C7(C6(CCC7C8=CC(=O)OC8)O)C)O)C)C)C)O)O
+DB00396,Progesterone,Progesterone,7,"['NR3C2', 'ESR1', 'CYP17A1', 'ORM1', 'NR3C1', 'AR', 'SHBG']",1.0,LT00192,DILI_positive,vLess-DILI-concern,CC(=O)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C
+DB00398,Sorafenib,Regorafenib,8,"['BRAF', 'EGFR', 'RAF1', 'FLT4', 'KDR', 'FLT1', 'PDGFRB', 'FGFR1']",0.8,LT02433,DILI_positive,vMost-DILI-concern,CNC(=O)C1=NC=CC(=C1)OC2=CC(=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)F
+DB00408,Loxapine,Clozapine,3,"['ADRA1A', 'ADRA1B', 'ADRA2B']",0.8235294117647058,LT00287,DILI_positive,vMost-DILI-concern,CN1CCN(CC1)C2=NC3=C(C=CC(=C3)Cl)NC4=CC=CC=C42
+DB00412,Rosiglitazone,Rosiglitazone maleate,6,"['PPARG', 'ACSL4', 'PPARA', 'PPARD', 'RXRA', 'RXRB']",1.0,LT00140,DILI_positive,vLess-DILI-concern,CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=CC(=O)O)C(=O)O
+DB00421,Spironolactone,Spironolactone,5,"['NR3C2', 'NR3C1', 'AR', 'ESR1', 'NR1I2']",1.0,LT00143,DILI_positive,vLess-DILI-concern,CC(=O)SC1CC2=CC(=O)CCC2(C3C1C4CCC5(C4(CC3)C)CCC(=O)O5)C
+DB00441,Gemcitabine,Gemcitabine hydrochloride,3,"['RRM1', 'TYMS', 'CMPK1']",1.0,LT01407,DILI_positive,vMost-DILI-concern,C1=CN(C(=O)N=C1N)C2C(C(C(O2)CO)O)(F)F.Cl
+DB00451,Levothyroxine,Levothyroxine sodium,3,"['ITGAV', 'THRA', 'THRB']",1.0,LT01072,DILI_positive,vLess-DILI-concern,C1=C(C=C(C(=C1I)OC2=CC(=C(C(=C2)I)O)I)I)CC(C(=O)[O-])N.[Na+]
+DB00457,Prazosin,Terazosin hydrochloride,4,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRA1A']",0.8235294117647058,LT01787,DILI_negative,vNo-DILI-concern,COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCN(CC3)C(=O)C4CCCO4)N)OC.O.O.Cl
+DB00458,Imipramine,Imipramine hydrochloride,4,"['ADRA1A', 'KCND3', 'ADRA1B', 'ORM2']",1.0,LT00108,DILI_positive,vLess-DILI-concern,CN(C)CCCN1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+DB00459,Acitretin,Acitretin,7,"['RXRA', 'STAT3', 'RARA', 'RARB', 'RARG', 'RXRB', 'RBP1']",1.0,LT01042,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C(=C1C=CC(=CC=CC(=CC(=O)O)C)C)C)C)OC
+DB00477,Chlorpromazine,Chlorpromazine hydrochloride,6,"['ADRA1A', 'ADRA1B', 'ADRA1A', 'SMPD1', 'ORM1', 'CALM1']",1.0,LT00068,DILI_positive,vLess-DILI-concern,CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl.Cl
+DB00480,Lenalidomide,Lenalidomide,3,"['CRBN', 'CDH5', 'PTGS2']",1.0,LT01238,DILI_positive,vLess-DILI-concern,C1CC(=O)NC(=O)C1N2CC3=C(C2=O)C=CC=C3N
+DB00482,Celecoxib,Celecoxib,5,"['PTGS2', 'STAT3', 'NEU1', 'CA2', 'PDPK1']",1.0,LT00252,DILI_positive,vLess-DILI-concern,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+DB00491,Miglitol,Miglitol,3,"['GAA', 'GANAB', 'GANC']",1.0,LT00992,DILI_negative,vNo-DILI-concern,C1C(C(C(C(N1CCO)CO)O)O)O
+DB00499,Flutamide,Flutamide,3,"['AR', 'AHR', 'NR1I2']",1.0,LT00101,DILI_positive,vMost-DILI-concern,CC(C)C(=O)NC1=CC(=C(C=C1)[N+](=O)[O-])C(F)(F)F
+DB00513,Aminocaproic acid,Aminocaproic acid,3,"['PLG', 'PLAT', 'LPA']",1.0,LT01071,DILI_negative,vNo-DILI-concern,C(CCC(=O)O)CCN
+DB00515,Cisplatin,Cisplatin,3,"['A2M', 'TF', 'ATOX1']",1.0,LT00071,DILI_positive,vLess-DILI-concern,N.N.Cl[Pt]Cl
+DB00523,Alitretinoin,Tretinoin,6,"['RARA', 'RXRA', 'RARB', 'RXRB', 'RARG', 'IGFBP3']",0.8571428571428571,LT00338,DILI_positive,vLess-DILI-concern,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C
+DB00540,Nortriptyline,Nortriptyline hydrochloride,3,"['ADRA1A', 'ADRA1B', 'PGRMC1']",1.0,LT01615,DILI_positive,vMost-DILI-concern,CNCCC=C1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+DB00545,Pyridostigmine,Pyridostigmine bromide,3,"['F10', 'BCHE', 'ACHE']",0.8,LT02081,DILI_positive,vLess-DILI-concern,C[N+]1=CC=CC(=C1)OC(=O)N(C)C.[Br-]
+DB00563,Methotrexate,Methotrexate sodium,4,"['TYMS', 'SLC19A1', 'ATIC', 'DHFR']",1.0,LT00026,DILI_positive,vMost-DILI-concern,CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)[O-])C(=O)[O-].[Na+].[Na+]
+DB00570,Vinblastine,Vinblastine sulfate,5,"['TUBB2A', 'TUBA1A', 'TUBB', 'TUBG1', 'JUN']",1.0,LT00177,DILI_positive,vLess-DILI-concern,CCC1(CC2CC(C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)C78CCN9C7C(C=CC9)(C(C(C8N6C)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O.OS(=O)(=O)O
+DB00573,Fenoprofen,Benoxaprofen,3,"['PTGS2', 'PPARA', 'PPARG']",0.8181818181818182,LT00513,DILI_positive,vMost-DILI-concern,CC(C1=CC2=C(C=C1)OC(=N2)C3=CC=C(C=C3)Cl)C(=O)O
+DB00575,Clonidine,Ticlopidine hydrochloride,4,"['AOC3', 'ADRA2B', 'ADRA1A', 'ADRA1B']",0.8,LT00227,DILI_positive,vMost-DILI-concern,C1CN(CC2=C1SC=C2)CC3=CC=CC=C3Cl.Cl
+DB00583,Levocarnitine,Levocarnitine,8,"['CPT1B', 'XDH', 'CES1', 'CPT1A', 'CRAT', 'SLC25A29', 'SLC25A20', 'CPT2']",1.0,LT01486,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CC(CC(=O)[O-])O
+DB00594,Amiloride,Amiloride hydrochloride,4,"['SCNN1A', 'AOC1', 'SLC9A1', 'PLAU']",1.0,LT02070,DILI_positive,vLess-DILI-concern,C1(=C(N=C(C(=N1)Cl)N)N)C(=O)N=C(N)N.O.O.Cl
+DB00605,Sulindac,Sulindac,5,"['PTGS2', 'AKR1B1', 'MAPK3', 'PPARD', 'AKR1B10']",1.0,LT00148,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(C1=CC3=CC=C(C=C3)S(=O)C)C=CC(=C2)F)CC(=O)O
+DB00608,Chloroquine,Chloroquine phosphate,3,"['GSTA2', 'HMGB1', 'GSTM1']",1.0,LT01207,DILI_positive,vLess-DILI-concern,CCN(CC)CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl.OP(=O)(O)O.OP(=O)(O)O
+DB00624,Testosterone,Methyltestosterone,3,"['AR', 'ESR1', 'NR3C2']",0.8,LT00222,DILI_positive,vLess-DILI-concern,CC12CCC(=O)C=C1CCC3C2CCC4(C3CCC4(C)O)C
+DB00627,Niacin,Niacin,3,"['DGAT2', 'QPRT', 'NNMT']",1.0,LT00312,DILI_positive,vMost-DILI-concern,C1=CC(=CN=C1)C(=O)O
+DB00630,Alendronic acid,Zoledronic acid,3,"['FDPS', 'PTPRS', 'ATP6V1A']",0.8571428571428571,LT01088,DILI_positive,vLess-DILI-concern,C1=CN(C=N1)CC(O)(P(=O)(O)O)P(=O)(O)O
+DB00641,Simvastatin,Simvastatin,3,"['HMGCR', 'ITGAL', 'HDAC2']",1.0,LT00142,DILI_positive,vLess-DILI-concern,CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C
+DB00648,Mitotane,Mitotane,3,"['ESR1', 'AR', 'FDX1']",1.0,LT01564,DILI_negative,vNo-DILI-concern,C1=CC=C(C(=C1)C(C2=CC=C(C=C2)Cl)C(Cl)Cl)Cl
+DB00651,Dyphylline,Dyphylline,4,"['PDE4B', 'NT5E', 'PDE4A', 'ADORA2A']",1.0,LT00740,DILI_negative,vNo-DILI-concern,CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(CO)O
+DB00661,Verapamil,Verapamil hydrochloride,4,"['CACNA1H', 'ADRA1A', 'ADRA1B', 'ABCB1']",1.0,LT00332,DILI_positive,vLess-DILI-concern,CC(C)C(CCCN(C)CCC1=CC(=C(C=C1)OC)OC)(C#N)C2=CC(=C(C=C2)OC)OC.Cl
+DB00668,Epinephrine,Epinephrine,4,"['ADRA1A', 'ADRA1B', 'ADRB2', 'ADRA2B']",1.0,LT00742,DILI_negative,vNo-DILI-concern,CNCC(C1=CC(=C(C=C1)O)O)O
+DB00675,Tamoxifen,Tamoxifen citrate,7,"['ESR1', 'PRKCA', 'SHBG', 'EBP', 'AR', 'NR1I2', 'MAPK8']",1.0,LT00152,DILI_positive,vMost-DILI-concern,CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+DB00687,Fludrocortisone,Fludrocortisone acetate,3,"['AR', 'NR3C2', 'NR3C1']",1.0,LT00399,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(C3(C2CCC4=CC(=O)CCC43C)F)O)C)O
+DB00688,Mycophenolate mofetil,Mycophenolate mofetil,3,"['IMPDH1', 'IMPDH2', 'PTS']",1.0,LT01288,DILI_positive,vLess-DILI-concern,CC1=C2COC(=O)C2=C(C(=C1OC)CC=C(C)CCC(=O)OCCN3CCOCC3)O
+DB00720,Clodronic acid,Zoledronic acid,3,"['SLC25A4', 'SLC25A5', 'SLC25A6']",0.8148148148148148,LT01088,DILI_positive,vLess-DILI-concern,C1=CN(C=N1)CC(O)(P(=O)(O)O)P(=O)(O)O
+DB00721,Procaine,Procainamide hydrochloride,5,"['KCNMA1', 'ASPG', 'MAOA', 'DNMT1', 'DNMT3A']",0.8,LT01699,DILI_positive,vLess-DILI-concern,CCN(CC)CCNC(=O)C1=CC=C(C=C1)N.Cl
+DB00726,Trimipramine,Imipramine hydrochloride,3,"['ADRA1A', 'ADRA1B', 'ADRA2B']",0.9090909090909091,LT00108,DILI_positive,vLess-DILI-concern,CN(C)CCCN1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+DB00734,Risperidone,Risperidone,3,"['ADRA1B', 'ADRA2B', 'ADRA1A']",1.0,LT01735,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCCC2=N1)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+DB00755,Tretinoin,Tretinoin,9,"['RARA', 'RARB', 'RARG', 'RXRB', 'RXRA', 'ALDH1A1', 'ALDH1A2', 'RBP4', 'PDK4']",1.0,LT00338,DILI_positive,vLess-DILI-concern,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C
+DB00774,Hydroflumethiazide,Bendroflumethiazide,3,"['ATP1A1', 'KCNMA1', 'CA2']",0.8648648648648649,LT00825,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)CC2NC3=C(C=C(C(=C3)C(F)(F)F)S(=O)(=O)N)S(=O)(=O)N2
+DB00780,Phenelzine,Phenelzine sulfate,6,"['MAOA', 'MAOB', 'AOC3', 'ABAT', 'GPT', 'GPT2']",1.0,LT01657,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)CCNN.OS(=O)(=O)O
+DB00795,Sulfasalazine,Sulfasalazine,12,"['ABCG2', 'RELB', 'RELA', 'REL', 'ALOX5', 'PTGS2', 'ACAT1', 'IKBKB', 'NFKB1', 'NFKB2', 'CHUK', 'PPARG']",1.0,LT00147,DILI_positive,vMost-DILI-concern,C1=CC=NC(=C1)NS(=O)(=O)C2=CC=C(C=C2)N=NC3=CC(=C(C=C3)O)C(=O)O
+DB00822,Disulfiram,Disulfiram,3,"['DBH', 'ALDH3A2', 'ALDH2']",1.0,LT00295,DILI_positive,vMost-DILI-concern,CCN(CC)C(=S)SSC(=S)N(CC)CC
+DB00831,Trifluoperazine,Trifluoperazine hydrochloride,7,"['CALM1', 'CALM3', 'CALM2', 'ADRA1A', 'TNNC1', 'S100A4', 'CALM1']",1.0,LT00457,DILI_positive,vLess-DILI-concern,CN1CCN(CC1)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)C(F)(F)F.Cl.Cl
+DB00841,Dobutamine,Dobutamine hydrochloride,3,"['ADRA1A', 'ADRB2', 'ESR1']",1.0,LT01308,DILI_negative,vNo-DILI-concern,CC(CCC1=CC=C(C=C1)O)NCCC2=CC(=C(C=C2)O)O.Cl
+DB00843,Donepezil,Donepezil hydrochloride,3,"['ACHE', 'BCHE', 'NFKB2']",1.0,LT00052,DILI_positive,vLess-DILI-concern,COC1=C(C=C2C(=C1)CC(C2=O)CC3CCN(CC3)CC4=CC=CC=C4)OC.Cl
+DB00852,Pseudoephedrine,Pseudoephedrine hydrochloride,4,"['ADRA1A', 'ADRB2', 'NFKB1', 'ATF1']",1.0,LT00137,DILI_negative,vNo-DILI-concern,CC(C(C1=CC=CC=C1)O)NC.Cl
+DB00909,Zonisamide,Zonisamide,6,"['SCN9A', 'SCN1B', 'CACNA1H', 'CA2', 'MAOB', 'MAOA']",1.0,LT00165,DILI_positive,vLess-DILI-concern,C1=CC=C2C(=C1)C(=NO2)CS(=O)(=O)N
+DB00925,Phenoxybenzamine,Phenoxybenzamine hydrochloride,5,"['ADRA1A', 'ADRA2B', 'ADRB2', 'ADRA1B', 'CALM1']",1.0,LT02082,DILI_negative,vNo-DILI-concern,CC(COC1=CC=CC=C1)N(CCCl)CC2=CC=CC=C2.Cl
+DB00935,Oxymetazoline,Oxymetholone,3,"['ADRA1A', 'ADRA2B', 'ADRA1B']",0.8,LT00235,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2(C)O)CCC4C3(CC(=CO)C(=O)C4)C
+DB00936,Salicylic acid,Aminosalicylic acid ,3,"['CA2', 'PTGS2', 'AKR1C1']",0.8387096774193549,LT00505,DILI_positive,vMOST-DILI-concern,C1=CC(=C(C=C1N)O)C(=O)O
+DB00951,Isoniazid,Isoniazid,4,"['CYP2C8', 'CYP1A2', 'CYP3A4', 'CYP2C19']",1.0,LT00306,DILI_positive,vMost-DILI-concern,C1=CN=CC=C1C(=O)NN
+DB00973,Ezetimibe,Ezetimibe,3,"['NPC1L1', 'SOAT1', 'ANPEP']",1.0,LT01153,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1C2C(C(=O)N2C3=CC=C(C=C3)F)CCC(C4=CC=C(C=C4)F)O)O
+DB00995,Auranofin,Auranofin,3,"['ESRRA', 'PRDX5', 'IKBKB']",1.0,LT02166,DILI_positive,vLess-DILI-concern,CCP(CC)CC.CC(=O)OCC1C(C(C(C(O1)[S-])OC(=O)C)OC(=O)C)OC(=O)C.[Au+]
+DB00997,Doxorubicin,Doxorubicin hydrochloride,3,"['TOP1', 'TOP2B', 'NOLC1']",1.0,LT00335,DILI_positive,vLess-DILI-concern,CC1C(C(CC(O1)OC2CC(CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(C(=O)CO)O)N)O.Cl
+DB01016,Glyburide,Glyburide,5,"['ABCC9', 'ABCB11', 'ABCA1', 'CPT1A', 'TRPM4']",1.0,LT00302,DILI_positive,vLess-DILI-concern,COC1=C(C=C(C=C1)Cl)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCCCC3
+DB01017,Minocycline,Minocycline hydrochloride,6,"['ALOX5', 'MMP9', 'CASP1', 'CASP3', 'CYCS', 'MAPK1']",1.0,LT00416,DILI_positive,vMost-DILI-concern,CN(C)C1C2CC3CC4=C(C=CC(=C4C(=C3C(=O)C2(C(=C(C1=O)C(=O)N)O)O)O)O)N(C)C.Cl
+DB01023,Felodipine,Felodipine,4,"['CACNA1H', 'NR3C2', 'TNNC1', 'CALM1']",1.0,LT00397,DILI_positive,vLess-DILI-concern,CCOC(=O)C1=C(NC(=C(C1C2=C(C(=CC=C2)Cl)Cl)C(=O)OC)C)C
+DB01026,Ketoconazole,Ketoconazole,5,"['CYP17A1', 'AR', 'CYP21A2', 'NR1I2', 'NR1I3']",1.0,LT00111,DILI_positive,vMost-DILI-concern,CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OCC3COC(O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl
+DB01033,Mercaptopurine,Mercaptopurine,4,"['HPRT1', 'IMPDH1', 'PPAT', 'IMPDH1']",1.0,LT00003,DILI_positive,vMost-DILI-concern,C1=NC2=C(N1)C(=S)N=CN2
+DB01039,Fenofibrate,Fenofibrate,3,"['PPARA', 'NR1I2', 'MMP25']",1.0,LT00098,DILI_positive,vLess-DILI-concern,CC(C)OC(=O)C(C)(C)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl
+DB01050,Ibuprofen,Ibuprofen,6,"['PTGS2', 'CXCL8', 'CXCR1', 'THBD', 'PPARG', 'PPARA']",1.0,LT00199,DILI_positive,vLess-DILI-concern,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+DB01073,Fludarabine,Fludarabine phosphate,4,"['ADA', 'DCK', 'POLA1', 'RRM1']",1.0,LT01382,DILI_negative,vNo-DILI-concern,C1=NC2=C(N=C(N=C2N1C3C(C(C(O3)COP(=O)(O)O)O)O)F)N
+DB01074,Perhexiline,Perhexiline,3,"['CPT1A', 'CPT1B', 'CPT2']",1.0,LT00131,DILI_positive,vMost-DILI-concern,C1CCC(CC1)C(CC2CCCCN2)C3CCCCC3
+DB01076,Atorvastatin,Lovastatin,5,"['HMGCR', 'DPP4', 'AHR', 'HDAC2', 'NR1I3']",0.8181818181818182,LT00576,DILI_positive,vLess-DILI-concern,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C
+DB01077,Etidronic acid,Zoledronic acid,5,"['PTPRS', 'ATP6V1A', 'SLC25A4', 'SLC25A5', 'SLC25A6']",0.8148148148148148,LT01088,DILI_positive,vLess-DILI-concern,C1=CN(C=N1)CC(O)(P(=O)(O)O)P(=O)(O)O
+DB01083,Orlistat,Orlistat,3,"['PNLIP', 'LIPF', 'FASN']",1.0,LT02216,DILI_positive,vMost-DILI-concern,CCCCCCCCCCCC(CC1C(C(=O)O1)CCCCCC)OC(=O)C(CC(C)C)NC=O
+DB01097,Leflunomide,Leflunomide,3,"['DHODH', 'AHR', 'PTK2B']",1.0,LT00113,DILI_positive,vMost-DILI-concern,CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F
+DB01109,Heparin,Heparin sodium,6,"['SERPINC1', 'F10', 'FGFR4', 'FGFR1', 'FGFR2', 'HGF']",1.0,LT01426,DILI_positive,vLess-DILI-concern,CC(=O)NC1C(C(C(OC1O)COS(=O)(=O)O)OC2C(C(C(C(O2)C(=O)O)OC3C(C(C(C(O3)CO)OC4C(C(C(C(O4)C(=O)O)O)O)OS(=O)(=O)O)OS(=O)(=O)O)NS(=O)(=O)O)O)OS(=O)(=O)O)O.[Na+]
+DB01110,Miconazole,Itraconazole,3,"['NOS3', 'NR1I2', 'KCNMA1']",0.8181818181818182,LT00182,DILI_positive,vMost-DILI-concern,CCC(C)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OCC5COC(O5)(CN6C=NC=N6)C7=C(C=C(C=C7)Cl)Cl
+DB01115,Nifedipine,Nifedipine,3,"['NR1I2', 'KCND3', 'CALM1']",1.0,LT00313,DILI_positive,vLess-DILI-concern,CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC
+DB01118,Amiodarone,Amiodarone hydrochloride,3,"['THRA', 'PPARG', 'PPARA']",1.0,LT00046,DILI_positive,vMost-DILI-concern,CCCCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)I)OCCN(CC)CC)I.Cl
+DB01126,Dutasteride,Dutasteride,3,"['SRD5A1', 'SRD5A3', 'SRD5A2']",1.0,LT01112,DILI_negative,vNo-DILI-concern,CC12CCC3C(C1CCC2C(=O)NC4=C(C=CC(=C4)C(F)(F)F)C(F)(F)F)CCC5C3(C=CC(=O)N5)C
+DB01136,Carvedilol,Carvedilol,11,"['ADRA1A', 'ADRA1A', 'NDUFC2', 'ADRB2', 'GJA1', 'VCAM1', 'ADRA1B', 'ADRA2B', 'SELE', 'HIF1A', 'KCNJ4']",1.0,LT00207,DILI_positive,vLess-DILI-concern,COC1=CC=CC=C1OCCNCC(COC2=CC=CC3=C2C4=CC=CC=C4N3)O
+DB01162,Terazosin,Terazosin hydrochloride,3,"['ADRA1A', 'ADRA1B', 'TGFB1']",1.0,LT01787,DILI_negative,vNo-DILI-concern,COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCN(CC3)C(=O)C4CCCO4)N)OC.O.O.Cl
+DB01183,Naloxone,Naloxone hydrochloride,4,"['CREB1', 'ESR1', 'TLR4', 'CES1']",1.0,LT00592,DILI_negative,vNo-DILI-concern,C=CCN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O.Cl
+DB01197,Captopril,Captopril,3,"['MMP2', 'MMP9', 'LTA4H']",1.0,LT00059,DILI_positive,vLess-DILI-concern,CC(CS)C(=O)N1CCCC1C(=O)O
+DB01213,Fomepizole,Omeprazole,4,"['ADH1A', 'ADH1B', 'ADH1C', 'CAT']",0.8,LT00206,DILI_positive,vLess-DILI-concern,CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC
+DB01216,Finasteride,Finasteride,4,"['SRD5A2', 'SRD5A3', 'SRD5A1', 'AKR1D1']",1.0,LT00167,DILI_positive,vLess-DILI-concern,CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C
+DB01225,Enoxaparin,Enoxaparin sodium,3,"['SERPINC1', 'F10', 'F2']",1.0,LT00954,DILI_positive,vLess-DILI-concern,CC1C(C(OC(C1OC2CC(C(C(C2O)O)OC3C(C(C(C(O3)COS(=O)(=O)O)OC4C(C(C=C(O4)C(=O)[O-])O)O)O)NC(=O)C)C(=O)[O-])CO)OC5C(C(C(OC5C(=O)[O-])OC6C7COC(O7)C(C6O)NS(=O)(=O)[O-])O)O)NC(=O)C.[Na+].[Na+].[Na+].[Na+]
+DB01238,Aripiprazole,Aripiprazole,4,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2']",1.0,LT01143,DILI_positive,vLess-DILI-concern,C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl
+DB01241,Gemfibrozil,Gemfibrozil,3,"['PPARA', 'SLCO1B1', 'SLCO1B3']",1.0,LT00020,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1)C)OCCCC(C)(C)C(=O)O
+DB01254,Dasatinib,Dasatinib,19,"['ABL1', 'SRC', 'EPHA2', 'LCK', 'YES1', 'PDGFRB', 'FYN', 'BCR', 'STAT5B', 'ABL2', 'CSK', 'EPHB4', 'FGR', 'FRK', 'HSPA8', 'LYN', 'MAP3K20', 'MAPK14', 'PPAT']",1.0,LT01248,DILI_positive,vLess-DILI-concern,CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=CC(=NC(=N3)C)N4CCN(CC4)CCO
+DB01259,Lapatinib,Capmatinib hydrochloride,3,"['EGFR', 'EEF2K', 'ERBB2']",0.8421052631578947,LT03646,DILI_positive,vLess-DILI-concern,CNC(=O)C1=C(C=C(C=C1)C2=NN3C(=CN=C3N=C2)CC4=CC5=C(C=C4)N=CC=C5)F.O.Cl.Cl
+DB01262,Decitabine,Gemcitabine hydrochloride,3,"['DNMT1', 'DNMT3A', 'HDAC1']",0.8571428571428571,LT01407,DILI_positive,vMost-DILI-concern,C1=CN(C(=O)N=C1N)C2C(C(C(O2)CO)O)(F)F.Cl
+DB01267,Paliperidone,Paliperidone,3,"['ADRA1A', 'ADRA1B', 'ADRA2B']",1.0,LT01252,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCC(C2=N1)O)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+DB01275,Hydralazine,Hydralazine hydrochloride,3,"['AOC3', 'HIF1A', 'P4HA1']",1.0,LT00559,DILI_positive,vLess-DILI-concern,C1=CC=C2C(=C1)C=NN=C2NN.Cl
+DB01278,Pramlintide,Pramlintide acetate,3,"['RAMP1', 'RAMP2', 'RAMP3']",1.0,LT00492,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CC(C)C)C(=O)N1CCCC1C(=O)N2CCCC2C(=O)NC(C(C)O)C(=O)NC(CC(=O)N)C(=O)NC(C(C)C)C(=O)NCC(=O)NC(CO)C(=O)NC(CC(=O)N)C(=O)NC(C(C)O)C(=O)NC(CC3=CC=C(C=C3)O)C(=O)N)NC(=O)C4CCCN4C(=O)CNC(=O)C(CC5=CC=CC=C5)NC(=O)C(CC(=O)N)NC(=O)C(CC(=O)N)NC(=O)C(CO)NC(=O)C(CO)NC(=O)C(CC6=CNC=N6)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)NC(=O)C(CC7=CC=CC=C7)NC(=O)C(CC(=O)N)NC(=O)C(C)NC(=O)C(CC(C)C)NC(=O)C(CCCNC(=N)N)NC(=O)C(CCC(=O)N)NC(=O)C(C(C)O)NC(=O)C(C)NC(=O)C8CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N8)C(C)O)C)C(C)O)CC(=O)N)NC(=O)C(CCCCN)N.CC(=O)O
+DB01280,Nelarabine,Nelarabine,4,"['POLA1', 'LIG1', 'PRIM1', 'RRM1']",1.0,LT01233,DILI_positive,vLess-DILI-concern,COC1=NC(=NC2=C1N=CN2C3C(C(C(O3)CO)O)O)N
+DB01373,Calcium,Calcium acetate,12,"['TNNC1', 'SPTBN1', 'CAST', 'AOC1', 'S100A13', 'S100A8', 'S100A9', 'CP', 'BMP4', 'MGP', 'PDCD6', 'CALM1']",1.0,LT00947,DILI_negative,vNo-DILI-concern,CC(=O)[O-].CC(=O)[O-].[Ca+2]
+DB01380,Cortisone acetate,Cortisone acetate,3,"['NR3C1', 'ESRRA', 'ANXA1']",1.0,LT00734,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(=O)C3C2CCC4=CC(=O)CCC34C)C)O
+DB01396,Digitoxin,Digoxin,4,"['ATP1B2', 'ATP1B3', 'ATP1A1', 'ATP1B1']",0.875,LT00292,DILI_negative,vNo-DILI-concern,CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CC(C7(C6(CCC7C8=CC(=O)OC8)O)C)O)C)C)C)O)O
+DB01406,Danazol,Danazol,3,"['ESR1', 'AR', 'CCL2']",1.0,LT00539,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2(C#C)O)CCC4=CC5=C(CC34C)C=NO5
+DB01429,Aprindine,Arginine hydrochloride,4,"['CALM2', 'CALM1', 'CALM3', 'CALM1']",0.8235294117647058,LT02077,DILI_negative,vNo-DILI-concern,C(CC(C(=O)O)N)CN=C(N)N.Cl
+DB01472,4-Methoxyamphetamine,Methamphetamine hydrochloride,3,"['ADRA1A', 'MAOA', 'MAOB']",0.8823529411764706,LT00716,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)NC.Cl
+DB01577,Metamfetamine,Methamphetamine hydrochloride,4,"['ADRA1B', 'ADRA2B', 'MAOA', 'MAOB']",0.8571428571428571,LT00716,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)NC.Cl
+DB01586,Ursodeoxycholic acid,Deoxycholic acid,3,"['AKR1C2', 'BLVRA', 'NR1H4']",0.8823529411764706,LT03657,DILI_negative,vNo-DILI-concern,CC(CCC(=O)O)C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C
+DB01708,Prasterone,Progesterone,7,"['G6PD', 'ESR1', 'AR', 'PPARA', 'SIGMAR1', 'NR1I2', 'NR1I3']",0.8181818181818182,LT00192,DILI_positive,vLess-DILI-concern,CC(=O)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C
+DB01812,"Adenosine 3',5'-diphosphate",Adenosine,3,"['RNASE1', 'SULT2A1', 'SULT1E1']",0.8181818181818182,LT01047,DILI_negative,vNo-DILI-concern,C1=NC(=C2C(=N1)N(C=N2)C3C(C(C(O3)CO)O)O)N
+DB01942,Formic acid,Folic acid,9,"['ALAD', 'CA2', 'HMOX1', 'RNASE1', 'CTBP1', 'CASK', 'ACYP2', 'GPHN', 'CYTH2']",0.8421052631578947,LT01580,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N
+DB02266,Flufenamic acid,Mefenamic acid,5,"['AR', 'PTGS2', 'AKR1C3', 'PPARA', 'PPARG']",0.8148148148148148,LT00116,DILI_positive,vMost-DILI-concern,CC1=C(C(=CC=C1)NC2=CC=CC=C2C(=O)O)C
+DB02383,Tolrestat,Tolrestat,4,"['SIGMAR1', 'AKR1B1', 'AKR1A1', 'AKR1B10']",1.0,LT01822,DILI_positive,vMost-DILI-concern,CN(CC(=O)O)C(=S)C1=CC=CC2=C1C=CC(=C2C(F)(F)F)OC
+DB02546,Vorinostat,Vorinostat,6,"['HDAC1', 'HDAC2', 'HDAC3', 'HDAC6', 'HDAC8', 'HDAC1']",1.0,LT00462,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)NC(=O)CCCCCCC(=O)NO
+DB02659,Cholic Acid,Folic acid,17,"['FECH', 'CES1', 'ADH1C', 'COX4I1', 'MT-CO1', 'MT-CO2', 'MT-CO3', 'COX5A', 'COX5B', 'COX6C', 'COX7B', 'COX7C', 'COX8A', 'COX6A2', 'COX6B1', 'COX7A1', 'NR1H4']",0.8421052631578947,LT01580,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N
+DB03366,Imidazole,Tinidazole,5,"['AK2', 'PIM1', 'LTA4H', 'GPHN', 'CYCS']",0.8421052631578947,LT00637,DILI_positive,vLess-DILI-concern,CCS(=O)(=O)CCN1C(=NC=C1[N+](=O)[O-])C
+DB03435,Uridine-5'-Diphosphate,Uridine triacetate,8,"['GALT', 'B3GAT1', 'CMPK1', 'GALE', 'B3GAT3', 'GALE', 'GYG1', 'GPR17']",0.8,LT03784,DILI_negative,vNo-DILI-concern,CC(=O)OCC1C(C(C(O1)N2C=CC(=O)NC2=O)OC(=O)C)OC(=O)C
+DB03600,Capric acid,Valproic acid,3,"['FURIN', 'GLTP', 'PPARG']",0.8181818181818182,LT00160,DILI_positive,vMost-DILI-concern,CCCC(CCC)C(=O)O
+DB03619,Deoxycholic acid,Deoxycholic acid,5,"['PCNA', 'EFL1', 'NR1H4', 'GSTP1', 'GSTA1']",1.0,LT03657,DILI_negative,vNo-DILI-concern,CC(CCC(=O)O)C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C
+DB04005,Uridine 5'-triphosphate,Uridine triacetate,3,"['P2RY2', 'P2RY11', 'UCK2']",0.9523809523809523,LT03784,DILI_negative,vNo-DILI-concern,CC(=O)OCC1C(C(C(O1)N2C=CC(=O)NC2=O)OC(=O)C)OC(=O)C
+DB04224,Oleic Acid,Folic acid,6,"['FABP4', 'FABP1', 'PPARA', 'PPARD', 'RXRA', 'PPARG']",0.8888888888888888,LT01580,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N
+DB04465,Lactose,Lactulose,3,"['LGALS3', 'GLB1', 'GLTP']",0.875,LT00886,DILI_negative,vNo-DILI-concern,C(C1C(C(C(C(O1)OC2C(OC(C2O)(CO)O)CO)O)O)O)O
+DB04468,Afimoxifene,Tamoxifen citrate,4,"['ESR1', 'ESRRA', 'NR1I2', 'SHBG']",0.8,LT00152,DILI_positive,vMost-DILI-concern,CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+DB04652,Corticosterone,Corticotropin,4,"['HSD11B1', 'NR3C1', 'NCOA1', 'NR3C2']",0.8148148148148148,LT00077,DILI_negative,vNo-DILI-concern,CC(C)CC(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CC=CC=C1)C(=O)O)NC(=O)C2CCCN2C(=O)C(CC3=CC=CC=C3)NC(=O)C(C)NC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)C(CO)NC(=O)C(CCC(=O)O)NC(=O)C(CC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)CNC(=O)C(CC(=O)N)NC(=O)C4CCCN4C(=O)C(CC5=CC=C(C=C5)O)NC(=O)C(C(C)C)NC(=O)C(CCCCN)NC(=O)C(C(C)C)NC(=O)C6CCCN6C(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCCN)NC(=O)C(CCCCN)NC(=O)CNC(=O)C(C(C)C)NC(=O)C7CCCN7C(=O)C(CCCCN)NC(=O)CNC(=O)C(CC8=CNC9=CC=CC=C98)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC1=CC=CC=C1)NC(=O)C(CC1=CN=CN1)NC(=O)C(CCC(=O)O)NC(=O)C(CCSC)NC(=O)C(CO)NC(=O)C(CC1=CC=C(C=C1)O)NC(=O)C(CO)N
+DB04820,Nialamide,Nialamide,3,"['MAOB', 'MAOA', 'COMT']",1.0,LT01594,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)CNC(=O)CCNNC(=O)C2=CC=NC=C2
+DB04855,Dronedarone,Dronedarone hydrochloride,5,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'KCND3', 'THRA']",1.0,LT00671,DILI_positive,vMost-DILI-concern,CCCCC1=C(C2=C(O1)C=CC(=C2)NS(=O)(=O)C)C(=O)C3=CC=C(C=C3)OCCCN(CCCC)CCCC.Cl
+DB04892,Phenserine,Phenelzine sulfate,3,"['ACHE', 'BCHE', 'APP']",0.8,LT01657,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)CCNN.OS(=O)(=O)O
+DB04899,Nesiritide,Nesiritide,3,"['NPR1', 'NPR2', 'NPR3']",1.0,LT00465,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NCC(=O)NC(CSSCC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCNC(=N)N)CC(=O)O)CCSC)CCCCN)CCCNC(=N)N)CC2=CC=CC=C2)NC(=O)CNC(=O)C(CO)NC(=O)CNC(=O)C(CCC(=O)N)NC(=O)C(C(C)C)NC(=O)C(CCSC)NC(=O)C(CCCCN)NC(=O)C3CCCN3C(=O)C(CO)N)C(=O)NC(CCCCN)C(=O)NC(C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC4=CNC=N4)C(=O)O)CC(C)C)CO)CO)CO)CO
+DB04946,Iloperidone,Risperidone,3,"['ADRA1A', 'ADRA2B', 'ADRB2']",0.8181818181818182,LT01735,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCCC2=N1)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+DB05424,Canertinib,Ceritinib,3,"['ERBB2', 'AKT1', 'EGFR']",0.8421052631578947,LT03596,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1C2CCNCC2)OC(C)C)NC3=NC=C(C(=N3)NC4=CC=CC=C4S(=O)(=O)C(C)C)Cl
+DB05667,Levoketoconazole,Ketoconazole,3,"['CYP17A1', 'CYP11A1', 'CYP51A1']",0.8571428571428571,LT00111,DILI_positive,vMost-DILI-concern,CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OCC3COC(O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl
+DB06151,Acetylcysteine,Acetylcysteine,4,"['GSS', 'ACY1', 'IKBKB', 'CHUK']",1.0,LT01041,DILI_negative,vNo-DILI-concern,CC(=O)NC(CS)C(=O)O
+DB06176,Romidepsin,Romidepsin,6,"['HDAC1', 'HDAC2', 'HDAC4', 'HDAC6', 'ABCC1', 'HDAC1']",1.0,LT00669,DILI_negative,vNo-DILI-concern,CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C
+DB06255,Incadronic acid,Aminocaproic acid,4,"['FDPS', 'CASP3', 'CASP4', 'CASP7']",0.8,LT01071,DILI_negative,vNo-DILI-concern,C(CCC(=O)O)CCN
+DB06262,Droxidopa,Droxidopa,5,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2', 'PAH']",1.0,LT01788,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1C(C(C(=O)O)N)O)O)O
+DB06408,Taribavirin,Ribavirin,3,"['IMPDH1', 'ENPP1', 'NT5C2']",0.9,LT01730,DILI_positive,vLess-DILI-concern,C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N
+DB06423,Endostatin,Pentostatin,4,"['MMP2', 'MMP9', 'PTK2', 'SELE']",0.8571428571428571,LT01651,DILI_positive,vMost-DILI-concern,C1C(C(OC1N2C=NC3=C2NC=NCC3O)CO)O
+DB06461,Squalamine,Mesalamine,3,"['VEGFC', 'PDGFA', 'VEGFB']",0.8,LT00414,DILI_positive,vLess-DILI-concern,C1=CC(=C(C=C1N)C(=O)O)O
+DB06589,Pazopanib,Pazopanib hydrochloride,7,"['FLT1', 'KDR', 'FLT4', 'PDGFRA', 'PDGFRB', 'FGFR3', 'SH2B3']",1.0,LT00672,DILI_positive,vMost-DILI-concern,CC1=C(C=C(C=C1)NC2=NC=CC(=N2)N(C)C3=CC4=NN(C(=C4C=C3)C)C)S(=O)(=O)N.Cl
+DB06777,Chenodeoxycholic acid,Deoxycholic acid,3,"['NR1H4', 'NR1I2', 'AKR1C2']",0.8571428571428571,LT03657,DILI_negative,vNo-DILI-concern,CC(CCC(=O)O)C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C
+DB07374,Anisomycin,Vancomycin hydrochloride,12,"['RPL13A', 'RPL23', 'RPL15', 'RPL19', 'RPL23A', 'RSL24D1', 'RPL26L1', 'RPL8', 'RPL37', 'RPL3', 'RPL11', 'SNU13']",0.8,LT00161,DILI_positive,vLess-DILI-concern,CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)(C)N)O.Cl
+DB07919,Harmine,Thiamine hydrochloride,3,"['DYRK2', 'DYRK1A', 'MAOA']",0.8,LT01981,DILI_negative,vNo-DILI-concern,CC1=C(SC=[N+]1CC2=CN=C(N=C2N)C)CCO.Cl.[Cl-]
+DB08437,Puromycin,Paromomycin sulfate,11,"['RPL13A', 'RPL23', 'RPL15', 'RPL19', 'RPL23A', 'RSL24D1', 'RPL26L1', 'RPL8', 'RPL37', 'RPL3', 'RPL11']",0.8,LT02061,DILI_negative,vNo-DILI-concern,C1C(C(C(C(C1N)OC2C(C(C(C(O2)CO)O)O)N)OC3C(C(C(O3)CO)OC4C(C(C(C(O4)CN)O)O)N)O)O)N.OS(=O)(=O)O
+DB08868,Fingolimod,Fingolimod hydrochloride,3,"['S1PR1', 'S1PR3', 'HDAC1']",1.0,LT02342,DILI_positive,vMost-DILI-concern,CCCCCCCCC1=CC=C(C=C1)CCC(CO)(CO)N.Cl
+DB08889,Carfilzomib,Carfilzomib,6,"['PSMB5', 'PSMB8', 'PSMB1', 'PSMB9', 'PSMB2', 'PSMB10']",1.0,LT02395,DILI_positive,vMost-DILI-concern,CC(C)CC(C(=O)C1(CO1)C)NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CC(C)C)NC(=O)C(CCC3=CC=CC=C3)NC(=O)CN4CCOCC4
+DB08896,Regorafenib,Regorafenib,14,"['FLT1', 'KDR', 'FLT4', 'PDGFRA', 'PDGFRB', 'FGFR1', 'FGFR2', 'TEK', 'EPHA2', 'RAF1', 'BRAF', 'MAPK11', 'FRK', 'ABL1']",1.0,LT02433,DILI_positive,vMost-DILI-concern,CNC(=O)C1=NC=CC(=C1)OC2=CC(=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)F
+DB09006,Clinofibrate,Clofibrate,3,"['PPARA', 'PPARG', 'PPARD']",0.9090909090909091,LT00011,DILI_positive,vLess-DILI-concern,CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl
+DB09074,Olaparib,Olaparib,4,"['PARP1', 'PARP2', 'PARP3', 'AKR1C3']",1.0,LT03722,DILI_positive,vLess-DILI-concern,C1CC1C(=O)N2CCN(CC2)C(=O)C3=C(C=CC(=C3)CC4=NNC(=O)C5=CC=CC=C54)F
+DB09185,Viloxazine,Viloxazine hydrochloride,4,"['ADRA1B', 'ADRB2', 'MAOA', 'MAOB']",1.0,LT01861,DILI_negative,vNo-DILI-concern,CCOC1=CC=CC=C1OCC2CNCCO2.Cl
+DB09213,Dexibuprofen,Ibuprofen,5,"['PTGS2', 'THBD', 'PLAT', 'PPARG', 'PPARA']",0.8571428571428571,LT00199,DILI_positive,vLess-DILI-concern,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+DB11093,Calcium citrate,Calcium acetate,16,"['CALR', 'CIB1', 'PDCD6', 'SRI', 'CHP1', 'SPARC', 'CANX', 'RGN', 'PEF1', 'S100A6', 'TPT1', 'S100A13', 'CALM2', 'CALM3', 'NCS1', 'CALM1']",1.0,LT00947,DILI_negative,vNo-DILI-concern,CC(=O)[O-].CC(=O)[O-].[Ca+2]
+DB11124,Racepinephrine,Epinephrine,4,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2']",0.88,LT00742,DILI_negative,vNo-DILI-concern,CNCC(C1=CC(=C(C=C1)O)O)O
+DB11348,Calcium Phosphate,Calcium acetate,16,"['CALR', 'CIB1', 'PDCD6', 'SRI', 'CHP1', 'SPARC', 'CANX', 'RGN', 'PEF1', 'S100A6', 'TPT1', 'S100A13', 'CALM2', 'CALM3', 'NCS1', 'CALM1']",1.0,LT00947,DILI_negative,vNo-DILI-concern,CC(=O)[O-].CC(=O)[O-].[Ca+2]
+DB11693,Voclosporin,Voclosporin,3,"['CAMLG', 'PPP3CA', 'PPP3R1']",1.0,LT03563,DILI_negative,vNo-DILI-concern,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC=C)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+DB11718,Encorafenib,Regorafenib,9,"['BRAF', 'CCND1', 'RAF1', 'MAPK8', 'MAPK9', 'LIMK1', 'LIMK2', 'MAP2K4', 'STK36']",0.8181818181818182,LT02433,DILI_positive,vMost-DILI-concern,CNC(=O)C1=NC=CC(=C1)OC2=CC(=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)F
+DB11741,Famitinib,Dacomitinib,5,"['PDGFRA', 'PDGFRB', 'FLT1', 'FLT4', 'KDR']",0.8,LT03652,DILI_positive,vLess-DILI-concern,COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)NC(=O)C=CCN4CCCCC4
+DB11763,Momelotinib,Erlotinib hydrochloride,5,"['JAK1', 'JAK2', 'JAK3', 'TYK2', 'ACVR1']",0.8,LT01214,DILI_positive,vMost-DILI-concern,COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC.Cl
+DB12025,Triptolide,Triprolidine hydrochloride,5,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL']",0.8181818181818182,LT00798,DILI_negative,vNo-DILI-concern,CC1=CC=C(C=C1)C(=CCN2CCCC2)C3=CC=CC=N3.Cl
+DB12147,Erdafitinib,Ceritinib,8,"['FGFR1', 'FGFR2', 'FGFR3', 'FGFR4', 'CSF1R', 'PDGFRA', 'PDGFRB', 'KDR']",0.8,LT03596,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1C2CCNCC2)OC(C)C)NC3=NC=C(C(=N3)NC4=CC=CC=C4S(=O)(=O)C(C)C)Cl
+DB12319,Benzbromarone,Benzbromarone,3,"['ABCC1', 'CYP2C9', 'CYP2C19']",1.0,LT00278,DILI_positive,vMost-DILI-concern,CCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)Br)O)Br
+DB12483,Copanlisib,Copanlisib dihydrochloride,3,"['PIK3CA', 'PIK3CD', 'PIK3CB']",0.9090909090909091,LT03651,DILI_negative,vNo-DILI-concern,COC1=C(C=CC2=C3NCCN3C(=NC(=O)C4=CN=C(N=C4)N)N=C21)OCCCN5CCOCC5.Cl.Cl
+DB12582,Piperine,Paliperidone,3,"['MAOA', 'MAOB', 'NR1I2']",0.8,LT01252,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCC(C2=N1)O)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+DB12645,Givinostat,Vorinostat,3,"['HDAC1', 'JAK2', 'HDAC1']",0.8,LT00462,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)NC(=O)CCCCCCC(=O)NO
+DB13616,Melagatran,Ximelagatran,4,"['F2', 'PLG', 'PRSS1', 'F10']",0.9090909090909091,LT02033,DILI_positive,vMost-DILI-concern,CCOC(=O)CNC(C1CCCCC1)C(=O)N2CCC2C(=O)NCC3=CC=C(C=C3)C(=NO)N
+DB13873,Fenofibric acid,Fenofibric acid,6,"['PPARA', 'FABP1', 'MMP25', 'PPARG', 'PPARD', 'NR1I2']",1.0,LT00670,DILI_positive,vLess-DILI-concern,CC(C)(C(=O)O)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl
+DB13944,Testosterone enanthate,Testosterone enanthate,3,"['AR', 'ESR1', 'NR3C2']",1.0,LT00223,DILI_positive,vMost-DILI-concern,CCCCCCC(=O)OC1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C
+DB13956,Estradiol valerate,Estradiol valerate,8,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",1.0,LT00016,DILI_positive,vLess-DILI-concern,CCCCC(=O)OC1CCC2C1(CCC3C2CCC4=C3C=CC(=C4)O)C
+DB14185,Aripiprazole lauroxil,Aripiprazole lauroxil,3,"['ADRA1A', 'ADRA1B', 'ADRA2B']",1.0,LT03624,DILI_positive,vLess-DILI-concern,CCCCCCCCCCCC(=O)OCN1C(=O)CCC2=C1C=C(C=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl
+DB14509,Lithium carbonate,Lanthanum carbonate,3,"['IMPA2', 'IMPA1', 'GSK3B']",0.8235294117647058,LT00493,DILI_negative,vNo-DILI-concern,C(=O)([O-])[O-].C(=O)([O-])[O-].C(=O)([O-])[O-].[La+3].[La+3]
+DB14539,Hydrocortisone acetate,Hydrocortisone acetate,3,"['ANXA1', 'NR3C1', 'HSD11B2']",1.0,LT00188,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(C3C2CCC4=CC(=O)CCC34C)O)C)O
+DB14542,Hydrocortisone phosphate,Hydrocortisone acetate,3,"['ANXA1', 'NR3C1', 'HSD11B2']",1.0,LT00188,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(C3C2CCC4=CC(=O)CCC34C)O)C)O
+DB15035,Zanubrutinib,Zanubrutinib,10,"['EGFR', 'ERBB2', 'JAK2', 'TEC', 'JAK3', 'PTK6', 'FGR', 'FRK', 'LCK', 'TXK']",1.0,LT03600,DILI_positive,vMost-DILI-concern,C=CC(=O)N1CCC(CC1)C2CCNC3=C(C(=NN23)C4=CC=C(C=C4)OC5=CC=CC=C5)C(=O)N
+DB15588,Ursolic acid,Folic acid,3,"['HSD11B1', 'PTPN1', 'HRAS']",0.8,LT01580,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N
+DB16159,Esflurbiprofen,Flurbiprofen sodium,7,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1', 'PSEN2', 'PTGS2']",0.9230769230769231,LT00298,DILI_positive,vLess-DILI-concern,CC(C1=CC(=C(C=C1)C2=CC=CC=C2)F)C(=O)[O-].[Na+]
+DB16407,Azvudine,Stavudine,3,"['ABCG2', 'ABCC2', 'ABCB1']",0.8235294117647058,LT00144,DILI_positive,vMost-DILI-concern,CC1=CN(C(=O)NC1=O)C2C=CC(O2)CO

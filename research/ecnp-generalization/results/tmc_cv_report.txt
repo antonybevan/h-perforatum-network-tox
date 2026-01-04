@@ -1,0 +1,28 @@
+Loading data for Integrity Validation (5-Fold CV)...
+Generating Features...
+
+Starting Cross-Validation...
+  Fold 1/5...
+  Fold 2/5...
+  Fold 3/5...
+  Fold 4/5...
+  Fold 5/5...
+
+==================================================
+INTEGRITY VALIDATION RESULTS (5-Fold CV)
+==================================================
+Global Validation AUC:    0.6838
+Global Validation PR-AUC: 0.7510
+
+Stratified Performance by k_log:
+  Q1 (Low) Targets: AUC = 0.6846
+  Q2 Targets: AUC = 0.6974
+  Q3 Targets: AUC = 0.6605
+  Q4 (High) Targets: AUC = 0.6680
+
+Regime Detection Integrity check (CV Predictions):
+              cv_uncertainty
+coverage_bin                
+Low                 0.506463
+Medium              0.566650
+High                0.569519

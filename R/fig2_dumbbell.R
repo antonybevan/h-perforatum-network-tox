@@ -105,7 +105,7 @@ p <- ggplot(data_wide, aes(y = Compound)) +
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5, 
                               margin = margin(b = 5)),
     plot.subtitle = element_text(size = 11, hjust = 0.5, color = "#4A4A4A", 
-                                  margin = margin(b = 15)),
+                                 margin = margin(b = 15)),
     plot.caption = element_text(size = 8.5, hjust = 0, color = "#5A5A5A", 
                                 lineheight = 1.3, margin = margin(t = 12)),
     

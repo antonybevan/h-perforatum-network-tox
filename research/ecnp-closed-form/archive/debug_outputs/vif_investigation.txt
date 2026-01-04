@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+======================================================================
+THEORETICAL INVESTIGATION: WHY VIF ~ 10?
+======================================================================
+
+Hyperforin: k = 10 targets
+Pool: N = 552 nodes
+
+--- POOL STATISTICS ---
+Pool mean:  0.0578
+Pool sigma: 0.0676
+Pool var:   0.004575
+
+--- CLOSED-FORM VARIANCE ---
+pool_var / k:  0.000458
+lambda * rho:  0.002644
+sigma▓_CF:     0.003101
+sigma_CF:      0.0557
+
+--- EXACT VARIANCE (equi-correlated formula) ---
+Pool rho_avg:  0.1720
+sigma▓_exact = k * pool_var * [1 + (k-1)*rho]
+            = 10 * 0.004575 * [1 + 9*0.1720]
+            = 0.116592
+sigma_exact:   0.3415
+
+--- COMPARISON ---
+sigma_CF:      0.0557
+sigma_exact:   0.3415
+sigma_emp:     ~0.176 (from 200 resamples)
+Ratio exact/CF: 6.13x
+
+======================================================================
+THE KEY INSIGHT
+======================================================================
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\scripts\investigate_vif.py", line 186, in <module>
+    investigate_vif()
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\scripts\investigate_vif.py", line 145, in investigate_vif
+    print("""
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u03c3' in position 35: character maps to <undefined>

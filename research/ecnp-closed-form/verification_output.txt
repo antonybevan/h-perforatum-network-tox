@@ -1,0 +1,43 @@
+======================================================================
+ECNP ALGORITHM VERIFICATION
+======================================================================
+
+Loaded: 7677 nodes, 82 DILI genes
+Hyperforin: 10 targets
+Quercetin: 62 targets
+
+==================================================
+TEST 1: LAYER 1 CLOSED-FORM vs BRUTE FORCE
+==================================================
+Hyperforin: BF I(T)=1.138096, CF I(T)=1.138096 => PASS
+Quercetin: BF I(T)=1.994615, CF I(T)=1.994615 => PASS
+
+==================================================
+TEST 2: Z-SCORE vs MONTE CARLO REFERENCE
+==================================================
+Hyperforin: Z=10.06 (ref=10.27), Error=2.1% => PASS
+Quercetin: Z=4.79 (ref=4.42), Error=8.4% => PASS
+
+==================================================
+TEST 3: LAYER 2 PERMUTATION TEST
+==================================================
+Hyperforin: p=0.0108 => SIGNIFICANT
+Quercetin: p=0.6207 => NOT significant
+Hyperforin should be significant: PASS
+Quercetin should NOT be significant: PASS
+
+==================================================
+TEST 4: LAYER 1 vs LAYER 2 I(T) CONSISTENCY
+==================================================
+Hyperforin: L1 I(T)=1.1381, L2 I(T)=1.1381 => PASS
+Quercetin: L1 I(T)=1.9946, L2 I(T)=1.9946 => PASS
+
+======================================================================
+SUMMARY
+======================================================================
+TESTS PASSED: 8/8
+OVERALL: ALL PASS
+
+Layer 1 Z-scores: Hyperforin=10.06, Quercetin=4.79
+Layer 2 p-values: Hyperforin=0.0108, Quercetin=0.6207
+======================================================================

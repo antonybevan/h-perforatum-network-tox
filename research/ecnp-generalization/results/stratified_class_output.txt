@@ -1,0 +1,73 @@
+Loaded: 202 scored compounds
+
+Drug class distribution:
+drug_class
+other             166
+antifungal          6
+nsaid               6
+statin              4
+antidiabetic        4
+antineoplastic      4
+antibiotic          4
+antipsychotic       3
+antiepileptic       2
+cardiovascular      2
+antidepressant      1
+Name: count, dtype: int64
+
+============================================================
+STRATIFIED AUC ANALYSIS BY DRUG CLASS
+============================================================
+
+OTHER (n=166, pos=97, neg=69):
+  AUC: 0.591
+  Mean Z (DILI+): 0.64
+  Mean Z (DILI-): 0.25
+
+ANTIDIABETIC: Skipped (n=4 < 10)
+
+STATIN: Skipped (n=4 < 10)
+
+ANTIEPILEPTIC: Skipped (n=2 < 10)
+
+ANTIDEPRESSANT: Skipped (n=1 < 10)
+
+NSAID: Skipped (n=6 < 10)
+
+ANTIPSYCHOTIC: Skipped (n=3 < 10)
+
+ANTINEOPLASTIC: Skipped (n=4 < 10)
+
+ANTIBIOTIC: Skipped (n=4 < 10)
+
+ANTIFUNGAL: Skipped (n=6 < 10)
+
+CARDIOVASCULAR: Skipped (n=2 < 10)
+
+============================================================
+STRATIFIED AUC ANALYSIS BY TARGET COUNT
+============================================================
+
+1-5 targets (n=152, pos=99, neg=53):
+  AUC: 0.609
+
+6-10 targets (n=35, pos=26, neg=9):
+  AUC: 0.620
+
+11-20 targets (n=14, pos=7, neg=7):
+  AUC: 0.592
+
+21+ targets: Skipped (n=1)
+
+============================================================
+SUMMARY: AUC BY STRATUM
+============================================================
+  class   n  n_pos  n_neg      auc
+ k=6-10  35     26      9 0.619658
+  k=1-5 152     99     53 0.609110
+k=11-20  14      7      7 0.591837
+  other 166     97     69 0.591289
+
+Best stratum: K=6-10 with AUC = 0.620
+
+Target NOT met: Best AUC = 0.620 < 0.75

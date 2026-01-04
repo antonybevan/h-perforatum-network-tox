@@ -1,0 +1,54 @@
+Loading ECNP...
+Loaded: 7677 nodes, 82 DILI genes
+
+Loading labeled compounds...
+Compounds to score: 207
+Columns: ['drugbank_id', 'drug_name', 'dilirank_name', 'n_targets', 'targets', 'match_score', 'ltkbid', 'category', 'dilirank', 'smiles']
+
+DILIrank distribution:
+dilirank
+vLess-DILI-concern    75
+vNo-DILI-concern      72
+vMost-DILI-concern    58
+vMOST-DILI-concern     2
+Name: count, dtype: int64
+
+After binary labeling:
+  Total: 207
+  DILI+: 135
+  DILI-: 72
+
+Scoring compounds with ECNP...
+  Progress: 50 scored...
+  Progress: 97 scored...
+  Progress: 147 scored...
+  Progress: 195 scored...
+Successfully scored: 202
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\phase2\ecnp_scores_improved.csv
+
+============================================================
+ROC/AUC ANALYSIS
+============================================================
+Positive (DILI+): 132
+Negative (DILI-): 70
+
+AUC: 0.624
+Optimal threshold: Z = 0.35
+At threshold:
+  Sensitivity: 0.485
+  Specificity: 0.786
+
+Confusion Matrix:
+  TP: 64, FP: 15
+  FN: 68, TN: 55
+
+============================================================
+Z-SCORE BY DILI CATEGORY
+============================================================
+
+============================================================
+PHASE 2 SUMMARY (IMPROVED)
+============================================================
+Compounds scored: 202
+AUC: 0.624
+Target n>=150: YES (202)

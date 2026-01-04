@@ -1,0 +1,25 @@
+CAMERA-STYLE VIF CORRECTION TEST
+============================================================
+Reference: Wu & Smyth, NAR 2012 (CAMERA method)
+VIF = 1 + (k-1) * rho
+
+Hyperforin:
+  k = 10, mean_rho = 0.133
+  VIF = 1 + (10-1) * 0.133 = 2.20
+  Z_raw (matches MC) = 10.06
+  Z_adj (proper stat) = 6.79
+  sqrt(VIF) = 1.48
+
+Quercetin:
+  k = 62, mean_rho = 0.296
+  VIF = 1 + (62-1) * 0.296 = 19.03
+  Z_raw (matches MC) = 4.79
+  Z_adj (proper stat) = 1.10
+  sqrt(VIF) = 4.36
+
+Ranking preserved: True
+
+INTERPRETATION:
+  Z_raw: Matches Monte Carlo reference (for validation)
+  Z_adj: Proper test statistic (corrected for inter-target correlation)
+  Use Z_adj for inference, Z_raw for MC comparison

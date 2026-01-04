@@ -1,0 +1,49 @@
+Total DILI genes in LCC: 82
+
+============================================================
+DILI GENE EVIDENCE AUDIT
+============================================================
+
+Gene classification summary:
+category
+MECHANISM      66
+GWAS           14
+DRUG_LINKED     2
+Name: count, dtype: int64
+
+Action summary:
+action
+SAFE       80
+EXCLUDE     2
+Name: count, dtype: int64
+
+SAFE genes to keep: 80
+EXCLUDE (drug-linked): 2
+Genes to exclude:
+  - IL18: May be derived from drug studies
+  - IL1R2: May be derived from drug studies
+
+NEED REVIEW: 0
+
+Saved audit: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\dili_gene_audit.csv
+
+Clean gene list: 80 genes (excluding 2 drug-linked)
+Saved clean list: v:\new\h-perforatum-network-tox\data\processed\dili_genes_clean.csv
+
+============================================================
+RECOMMENDATION
+============================================================
+
+ORIGINAL: 82 genes
+EXCLUDED: 2 genes (drug-linked evidence)
+CLEAN:    80 genes
+
+ACTION: Retrain ECNP with clean gene list to eliminate potential circularity.
+
+Excluded genes are primarily:
+  - Cytokines (IL1B, IL6, TNF) - often measured as drug toxicity markers
+  - miRNAs (MIR122, etc.) - biomarkers identified in drug toxicity studies
+  
+These may be discovered BECAUSE of drug hepatotoxicity studies,
+creating potential circular logic with DILIrank.
+

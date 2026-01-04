@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+======================================================================
+REVERSE ENGINEERING: LOGICAL DOWNSIDE ANALYSIS
+======================================================================
+Compounds: 202
+
+------------------------------------------------------------
+1. DATA LEAKAGE CHECK
+------------------------------------------------------------
+  n_dili_hits correlation with label: 0.229
+
+------------------------------------------------------------
+2. CIRCULAR LOGIC CHECK
+------------------------------------------------------------
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\reverse_engineer_model.py", line 70, in <module>
+    print("""
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 60: character maps to <undefined>

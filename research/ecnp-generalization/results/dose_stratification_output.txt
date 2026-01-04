@@ -1,0 +1,87 @@
+Loading data...
+Compounds: 202
+PK data rows: 9380
+Unique PK drugs: 207
+Merged rows: 202
+
+PK coverage:
+  Half-life: 202/202
+  Dose: 167/202
+  High dose: 167/202
+
+============================================================
+NON-ELIGIBLE REGIME: DOSE STRATIFICATION
+============================================================
+Non-eligible compounds: 137
+
+High dose distribution:
+high_dose
+1.0    89
+0.0    48
+Name: count, dtype: int64
+
+Half-life distribution:
+half_life_bin
+unknown    71
+medium     27
+long       24
+short      15
+Name: count, dtype: int64
+
+DILI by dose:
+  High dose: 58/89 (65%)
+  Low dose: 20/48 (42%)
+
+============================================================
+DOSE-AWARE MODEL FOR NON-ELIGIBLE
+============================================================
+Feature availability:
+  logp: 137/137
+  mw: 137/137
+  hbd: 137/137
+  hba: 137/137
+  tpsa: 137/137
+  k: 137/137
+  n_alerts: 137/137
+  dose_mg: 137/137
+  high_dose: 137/137
+
+Valid for dose-aware model: 137
+
+Dose-aware model AUC: 0.732
+Previous non-eligible AUC: 0.739
+Improvement: -0.007
+
+Error rate: 29.9% (was 30.7%)
+
+Feature importance:
+  logp        : 0.225
+  hba         : 0.159
+  dose_mg     : 0.138
+  n_alerts    : 0.107
+  tpsa        : 0.104
+  mw          : 0.095
+  k           : 0.079
+  hbd         : 0.056
+  high_dose   : 0.038
+
+============================================================
+FULL PIPELINE WITH DOSE FEATURES
+============================================================
+Valid for full model: 202
+
+Full pipeline with dose AUC: 0.788
+Previous (no dose): 0.802
+Improvement: -0.014
+
+ECNP-eligible:
+  AUC = 0.808
+  Error rate = 16.9%
+
+Non-eligible:
+  AUC = 0.744
+  Error rate = 32.1%
+
+============================================================
+DOSE STRATIFICATION SUMMARY
+============================================================

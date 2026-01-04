@@ -1,0 +1,58 @@
+============================================================
+LiverTox External Validation
+============================================================
+
+Loading predictions...
+Our compounds: 202
+Matched with LiverTox: 31/202
+
+============================================================
+VALIDATION BY LIVERTOX CATEGORY
+============================================================
+
+Validation set: 31 compounds
+
+LiverTox category distribution:
+livertox_category
+A     9
+B    11
+C     5
+D     1
+E     5
+Name: count, dtype: int64
+
+*** AUC on LiverTox validation: 0.727 ***
+AUC on DILIrank (same compounds): 0.726
+
+============================================================
+PREDICTION BY LIVERTOX CATEGORY
+============================================================
+
+Category   n     Mean Score   >=0.5    Description
+------------------------------------------------------------
+A          9     0.779        8/9     Well-known hepatotoxin
+Traceback (most recent call last):
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\livertox_validation.py", line 250, in <module>
+B          11    0.712        9/11    Known hepatotoxin
+C          5     0.809        5/5     Probable hepatotoxin
+D          1     0.885        1/1     Possible hepatotoxin
+E          5     0.547        2/5     Unlikely hepatotoxin
+
+============================================================
+LABEL AGREEMENT: LiverTox vs DILIrank
+============================================================
+
+Agreement rate: 90.3%
+Disagreements: 3
+
+Disagreements (LiverTox vs DILIrank):
+  Ibuprofen: LiverTox=Safe (D), DILIrank=DILI
+  Heparin: LiverTox=Safe (E), DILIrank=DILI
+  Levothyroxine: LiverTox=Safe (E), DILIrank=DILI
+
+============================================================
+EXTERNAL VALIDATION SUMMARY
+============================================================
+    AUC on LiverTox: {auc_livertox:.3f if auc_livertox else 'N/A'}
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid format specifier '.3f if auc_livertox else 'N/A'' for object of type 'float'

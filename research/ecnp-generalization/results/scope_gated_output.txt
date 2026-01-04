@@ -1,0 +1,43 @@
+DILI module: 82 genes
+Network-mediated gene set: 122 genes
+
+Total compounds scored: 202
+
+============================================================
+SCOPE-GATED ANALYSIS
+============================================================
+
+IN SCOPE (network-mediated): 67 compounds
+OUT OF SCOPE: 135 compounds
+
+IN SCOPE:
+  DILI+: 56
+  DILI-: 11
+
+OUT OF SCOPE:
+  DILI+: 76
+  DILI-: 59
+
+============================================================
+AUC: IN-SCOPE vs ALL
+============================================================
+
+ALL compounds (n=202): AUC = 0.624
+IN-SCOPE only (n=67): AUC = 0.560
+
+Improvement: -0.064
+
+IN-SCOPE breakdown:
+  Mean Z (DILI+): 2.13
+  Mean Z (DILI-): 1.77
+  Mean DILI hits (DILI+): 1.16
+  Mean DILI hits (DILI-): 1.18
+
+OUT-OF-SCOPE (n=135): AUC = 0.501
+  (Expected to be poor - ECNP doesn't apply here)
+
+============================================================
+AUC BY DILI HIT COUNT
+============================================================
+>=  0 DILI hits (n=202, pos=132, neg=70): AUC = 0.624
+>=  1 DILI hits (n=63, pos=52, neg=11): AUC = 0.586

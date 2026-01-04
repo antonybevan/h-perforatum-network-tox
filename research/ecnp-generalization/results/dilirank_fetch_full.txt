@@ -1,0 +1,44 @@
+[20:29:25] WARNING: not removing hydrogen atom without neighbors
+======================================================================
+FETCHING SMILES FOR FULL DILIRANK
+======================================================================
+
+--- Loading DILIrank ---
+Total: 1336
+Non-ambiguous: 982
+
+--- Fetching SMILES ---
+  Processed: 100/982 | Found: 91 | Not found: 9 | Errors: 0
+  Processed: 200/982 | Found: 184 | Not found: 16 | Errors: 0
+  Processed: 300/982 | Found: 281 | Not found: 19 | Errors: 0
+  Processed: 400/982 | Found: 375 | Not found: 25 | Errors: 0
+  Processed: 500/982 | Found: 458 | Not found: 40 | Errors: 2
+  Processed: 600/982 | Found: 557 | Not found: 41 | Errors: 2
+  Processed: 700/982 | Found: 641 | Not found: 57 | Errors: 2
+  Processed: 800/982 | Found: 732 | Not found: 66 | Errors: 2
+  Processed: 900/982 | Found: 821 | Not found: 77 | Errors: 2
+
+Final:
+  Found: 901
+  Not found: 79
+  Errors: 2
+  With valid SMILES (RDKit): 901
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\dilirank_full_smiles.csv
+
+Label distribution:
+  DILI+: 537
+  DILI-: 364
+
+======================================================================
+SUMMARY
+======================================================================
+
+DILIrank non-ambiguous: 982
+SMILES found: 901
+Coverage: 91.8%
+
+This gives us 901 drugs for Tier 1 (chemistry-only) model!
+
+Not found drugs saved to: dilirank_not_found_pubchem.csv
+

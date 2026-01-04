@@ -1,0 +1,57 @@
+============================================================
+LiverTox External Validation (Improved Matching)
+============================================================
+
+Loading predictions...
+Compounds: 202
+Matched with LiverTox: 40/202 (19.8%)
+
+Category distribution:
+livertox_category
+A    10
+B    13
+C     7
+D     1
+E     9
+Name: count, dtype: int64
+
+============================================================
+EXTERNAL VALIDATION RESULTS
+============================================================
+
+Validation set: 40 compounds
+
+*** AUC on LiverTox (external): 0.763 ***
+AUC on DILIrank (same compounds): 0.711
+
+Category   n     Mean Score   Pred DILI 
+---------------------------------------------
+A          10    0.792        9/10
+B          13    0.721        11/13
+C          7     0.818        7/7
+D          1     0.885        1/1
+E          9     0.611        6/9
+
+Label agreement (LiverTox vs DILIrank): 90.0%
+Disagreements: 4
+  Ibuprofen: LiverTox=Safe(D), DILIrank=DILI
+  Enoxaparin: LiverTox=Safe(E), DILIrank=DILI
+  Heparin: LiverTox=Safe(E), DILIrank=DILI
+  Levothyroxine: LiverTox=Safe(E), DILIrank=DILI
+
+============================================================
+VALIDATION SUMMARY
+============================================================
+
+Matching (with normalization): 40/202 (19.8%)
+Previous matching: 31/202 (15%)
+Improvement: +9 compounds
+
+External Validation:
+  LiverTox AUC: 0.763
+  DILIrank AUC: 0.711
+  Agreement: 90.0%
+
+Model generalizes to external dataset.
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\livertox_validation_improved.csv

@@ -1,0 +1,33 @@
+Target drugs to extract PK for: 207
+
+Parsing DrugBank XML...
+Matched: 9380/207
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\data\curated\pk_data.csv
+
+============================================================
+PK DATA SUMMARY
+============================================================
+Total drugs matched: 9380
+
+Half-life bins:
+half_life_bin
+unknown    9243
+medium       57
+long         44
+short        36
+Name: count, dtype: int64
+
+Route:
+route
+unknown    9207
+oral        143
+iv           30
+Name: count, dtype: int64
+Traceback (most recent call last):
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\step1_extract_pk.py", line 153, in <module>
+    print(f"\nHigh dose (\u2265100mg):")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2265' in position 13: character maps to <undefined>

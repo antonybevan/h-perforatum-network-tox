@@ -1,0 +1,82 @@
+Loading data...
+Compounds: 202
+
+Adding clinical risk flags...
+Classifying regimes...
+Regime distribution:
+regime
+unknown          84
+network          61
+intrinsic        49
+network+HLA       4
+intrinsic+HLA     2
+unknown+HLA       2
+Name: count, dtype: int64
+
+Classifying risk tiers...
+Risk tier distribution:
+risk_tier
+MODERATE_RISK    96
+HIGH_RISK        59
+LOW_RISK         47
+Name: count, dtype: int64
+
+============================================================
+FINAL MODEL VALIDATION
+============================================================
+AUC: 0.884
+
+DILI rate by risk tier:
+  HIGH_RISK: 56/59 (95%)
+  MODERATE_RISK: 70/96 (73%)
+  LOW_RISK: 6/47 (13%)
+
+False negatives: 9
+  With HLA warning: 3 (now flagged)
+  Without HLA info: 6 (irreducible)
+
+============================================================
+EXAMPLE PREDICTIONS
+============================================================
+
+HIGH RISK examples:
+  Clinofibrate: 0.95 (HIGH_RISK, network)
+  Clozapine: 0.95 (HIGH_RISK, network)
+  Ketoconazole: 0.94 (HIGH_RISK, network)
+  Fenofibric acid: 0.93 (HIGH_RISK, network)
+  Aripiprazole: 0.93 (HIGH_RISK, intrinsic)
+
+HLA-FLAGGED drugs:
+  Cyclosporine: 0.33 (MODERATE_RISK) -> HLA screening recommended: CYP3A5-3
+  Acetaminophen: 0.85 (HIGH_RISK) -> HLA screening recommended: CYP2E1-high
+  Methotrexate: 0.38 (MODERATE_RISK) -> HLA screening recommended: MTHFR-C677T
+  Isoniazid: 0.73 (HIGH_RISK) -> HLA screening recommended: NAT2-slow
+  Minocycline: 0.42 (MODERATE_RISK) -> HLA screening recommended: HLA-B*35:02
+  Fenofibrate: 0.87 (HIGH_RISK) -> HLA screening recommended: HLA-A*33:01
+  Lapatinib: 0.73 (HIGH_RISK) -> HLA screening recommended: HLA-DRB1*07:01
+  Pazopanib: 0.82 (HIGH_RISK) -> HLA screening recommended: HLA-B*57:01
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\final_dili_predictions.csv
+
+============================================================
+FINAL MODEL SUMMARY
+============================================================
+
+Model: ECFP4 + Tabular Features + ECNP Network Score
+AUC: 0.884
+
+Risk Tiers:
+  HIGH_RISK: score >= 0.8 OR (score >= 0.5 AND HLA risk)
+  MODERATE_RISK: score 0.5-0.8 OR (score < 0.5 AND HLA risk)
+  LOW_RISK: score < 0.5 AND no HLA risk
+
+Clinical Flags:
+  HLA genetic risk warnings for 8 drugs
+  3 false negatives rescued by HLA overlay
+
+Regime Classification:
+  network: ECNP-eligible (targets DILI genes)
+  intrinsic: High lipophilicity (LogP >= 3)
+  unknown: Neither (may be idiosyncratic)
+  +HLA: Has known genetic risk factor
+

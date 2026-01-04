@@ -1,0 +1,42 @@
+======================================================================
+Traceback (most recent call last):
+DIAGNOSTIC: 706 vs 202 DRUG MODEL PERFORMANCE GAP
+======================================================================
+
+--- Loading Datasets ---
+
+706-Drug Dataset:
+  Total: 706
+  Valid ECNP: 456
+
+202-Drug Dataset (from curated):
+  Total: 207
+
+======================================================================
+1. CLASS BALANCE
+======================================================================
+
+706-Drug Dataset (valid ECNP):
+  DILI+: 305 (66.9%)
+  DILI-: 151 (33.1%)
+  File "C:\Users\allan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'label'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\diagnose_gap.py", line 64, in <module>
+    dili_rate_202 = df_202[label_col].mean()
+                    ~~~~~~^^^^^^^^^^^
+  File "C:\Users\allan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\allan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'label'

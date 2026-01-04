@@ -1,0 +1,35 @@
+Initializing Conformal Integrity Protocol...
+Generating Features...
+Defining Noisy Regime: k_log <= 0.6931 (Bottom 25%)
+
+Running Cross-Conformal Validation...
+
+============================================================
+ADVANCED CONFORMAL VALIDATION RESULTS (Angelopoulos Standards)
+============================================================
+
+[Global] Validity:      93.52%  (Target: 90%)
+[Global] Mean Set Size: 1.74    (Lower is Better)
+
+[Distribution] Set Size Histogram:
+  Size 1:   94 ( 26.5%) | #############
+  Size 2:  261 ( 73.5%) | ####################################
+
+[Metric] Size-Stratified Coverage (SSC):
+  *Checking if validity holds across different uncertainty levels*
+          Coverage  Count
+set_size                 
+1         0.755319     94
+2         1.000000    261
+
+[Metric] Label-Conditional Validity:
+  *Checking if validity holds for both Toxic (1) and Safe (0)*
+           Coverage  Count
+Safe (0)   0.898551    138
+Toxic (1)  0.958525    217
+
+[Metric] Regime-Conditional Efficiency:
+  *Do we produce tighter sets for High-Quality data?*
+                      MSS  Valid %         N
+Clean (Tier 2b)  1.733607      244  0.942623
+Noisy (Tier 2a)  1.738739      111  0.918919

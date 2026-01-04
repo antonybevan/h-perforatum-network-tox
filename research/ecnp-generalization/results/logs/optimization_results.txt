@@ -1,0 +1,20 @@
+Loading data...
+Generating features...
+
+RESULTS (5-Fold CV AUC):
+----------------------------------------
+Chemistry Only:        0.8791
+Standard ECNP (+Z):    0.8807 (Lift: +0.0016)
+Decomposed ECNP:       0.8860 (Lift: +0.0069)
+
+--- Non-Linear Check (Random Forest) ---
+RF Chem Only:          0.7922
+RF Decomposed ECNP:    0.8070 (Lift: +0.0148)
+
+--- Feature Importance (LR Coefficients from Full Model) ---
+ecnp_z              : -0.1619
+I_T                 : +0.5148
+mu_T                : -0.5639
+k                   : -0.1573
+network_fraction    : +0.7955
+pool_size           : +0.1090

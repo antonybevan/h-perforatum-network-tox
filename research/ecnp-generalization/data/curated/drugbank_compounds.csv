@@ -1,0 +1,770 @@
+drugbank_id,drug_name,targets,n_targets
+DB00002,Cetuximab,"['EGFR', 'FCGR3B', 'C1QA', 'C1QB', 'C1QC', 'FCGR3A', 'FCGR2A']",7
+DB00005,Etanercept,"['FCGR2A', 'FCGR2B', 'FCGR3A', 'FCGR3B', 'C1QA']",5
+DB00009,Alteplase,"['PLG', 'FGA', 'FGG', 'SERPINE1']",4
+DB00013,Urokinase,"['PLG', 'PLAUR', 'SERPINE1', 'SERPINA5', 'ST14', 'NID1']",6
+DB00015,Reteplase,"['PLG', 'FGA', 'SERPINE1']",3
+DB00025,"Antihemophilic factor, human recombinant","['F10', 'F9', 'VWF', 'PHYH', 'HSPA5', 'CALR', 'CANX', 'LMAN1', 'LRP1', 'MCFD2']",10
+DB00028,Human immunoglobulin G,"['FCGR2A', 'FCGR2B', 'FCGR3A', 'FCGR3B', 'C3', 'C4A', 'C4B', 'C5']",8
+DB00029,Anistreplase,"['PLG', 'FGA', 'SERPINE1']",3
+DB00030,Insulin human,"['INSR', 'CPE', 'IGFBP7']",3
+DB00039,Palifermin,"['FGFR2', 'FGFR1', 'HSPG2']",3
+DB00054,Abciximab,"['FCGR2A', 'FCGR2B', 'VTN']",3
+DB00055,Drotrecogin alfa,"['F8', 'F5', 'SERPINE1', 'THBD', 'PROS1', 'F2', 'SERPINA5', 'SERPINB6', 'PROCR']",9
+DB00075,Muromonab,"['CD3D', 'CD3E', 'CD247', 'FCGR3B']",4
+DB00087,Alemtuzumab,"['CD52', 'FCGR3B', 'FCGR3A', 'FCGR2A', 'FCGR2B']",5
+DB00091,Cyclosporine,"['CAMLG', 'PPP3CA', 'PPIA', 'PPIF']",4
+DB00092,Alefacept,"['CD2', 'FCGR3A', 'FCGR3B']",3
+DB00098,Antithymocyte immunoglobulin (rabbit),"['MR1', 'ITGAL', 'FCGR2B', 'CD4', 'ITGB1', 'ITGAV']",6
+DB00100,Coagulation Factor IX (Recombinant),"['F10', 'F11', 'F7', 'F8', 'F2', 'LRP1', 'GGCX']",7
+DB00102,Becaplermin,"['PDGFRB', 'PDGFRA', 'A2M']",3
+DB00110,Palivizumab,"['FCGR3B', 'C1R', 'C1QA', 'C1QB', 'C1QC', 'FCGR3A', 'FCGR2B']",7
+DB00111,Daclizumab,"['IL2RB', 'FCGR3B', 'C1R', 'C1QA', 'C1QB', 'C1QC', 'FCGR3A', 'FCGR2A', 'FCGR2B']",9
+DB00112,Bevacizumab,"['C1QA', 'C1QB', 'C1QC', 'FCGR3A', 'FCGR2A', 'FCGR2B']",6
+DB00114,Pyridoxal phosphate,"['ABAT', 'F2', 'AGXT2', 'CBS', 'KYNU', 'SHMT1', 'NFS1', 'GOT1', 'OAT', 'ODC1', 'AADAT', 'PNPO', 'SGPL1', 'TAT', 'KYAT1', 'PYGL', 'SPTLC2', 'CSAD', 'SDS', 'GLDC', 'GPT', 'PSAT1', 'ALAS1', 'AGXT', 'PDXP', 'SPTLC1', 'CTH', 'BCAT2', 'GOT2', 'PYGB', 'DDC', 'KYAT3', 'SCLY', 'PHYKPL', 'SHMT2', 'GPT2', 'MOCOS', 'SDSL', 'SRR', 'SEPSECS', 'SPTLC3', 'GOT1']",42
+DB00115,Cyanocobalamin,"['MTR', 'MTRR', 'MMAA', 'MMACHC', 'MTHFR']",5
+DB00116,Tetrahydrofolic acid,"['MTHFD1', 'MTHFD2', 'AMT', 'ALDH1L1', 'MTR', 'FTCD', 'ATIC', 'SHMT1', 'SHMT2', 'MTHFR', 'MTFMT']",11
+DB00118,Ademetionine,"['COMT', 'GNMT', 'MAT2A', 'CBS', 'MAT1A']",5
+DB00119,Pyruvic acid,"['ABAT', 'SLC16A3', 'AGXT2', 'PKLR', 'SLC16A7', 'PDHB', 'PKM', 'SLC16A4', 'SLC16A1', 'PC']",10
+DB00120,Phenylalanine,"['TAT', 'SLC7A8', 'FARSA', 'PAH', 'FARS2', 'FARSB']",6
+DB00121,Biotin,"['PCCB', 'HLCS', 'MCCC2', 'ACACB', 'MCCC1', 'PC', 'PCCA', 'ACACA']",8
+DB00122,Choline,"['ACHE', 'PCYT1A', 'PLD2', 'BCHE', 'PLD1']",5
+DB00125,Arginine,"['ASL', 'ASS1', 'NOS3']",3
+DB00126,Ascorbic acid,"['PLOD2', 'PHYH', 'PLOD3', 'BBOX1', 'DBH', 'PAM', 'P3H1', 'P3H3', 'P4HA1', 'ALKBH2', 'ALKBH3', 'KDM5D', 'PLOD1', 'EGLN1', 'EGLN2']",15
+DB00127,Spermine,"['SMS', 'ODC1', 'ADRB2']",3
+DB00128,Aspartic acid,"['SLC25A13', 'GOT1', 'ASPA', 'ASNS', 'ASS1', 'ACY1', 'GOT2', 'SLC25A12', 'ASPH', 'PAICS', 'DARS2', 'ASRGL1', 'RNASE1']",13
+DB00129,Ornithine,"['OAT', 'OTC', 'ARG1', 'OAZ1', 'SLC25A15', 'GATM']",6
+DB00130,L-Glutamine,"['CTPS1', 'PPAT', 'GLUL']",3
+DB00131,Adenosine phosphate,"['PRKAA1', 'ADK', 'PRKAB1', 'ACSS2', 'PRKAA1', 'ADCY1', 'ACSL1', 'CREB1', 'PDE4B', 'PYGL', 'FBP1']",11
+DB00132,alpha-Linolenic acid,"['PTGS2', 'FADS1', 'FADS2', 'TRPV1', 'PPARA', 'NR1H4', 'PPARD', 'PPARG', 'RXRA', 'ELOVL2']",10
+DB00133,Serine,"['CBS', 'SDS', 'SRR', 'SPTLC2', 'SPTLC1', 'AGXT']",6
+DB00134,Methionine,"['MTRR', 'MTR', 'METAP2', 'BHMT', 'BHMT2']",5
+DB00141,N-Acetylglucosamine,"['B4GALT1', 'B4GALT4', 'NAGK', 'NAGLU', 'RENBP']",5
+DB00142,Glutamic acid,"['OPLAH', 'PFAS', 'BCAT2', 'GLS', 'GOT2', 'ASNS', 'GLUL', 'GOT1', 'TAT', 'GPT', 'GGCX', 'GCLC', 'GLUD2', 'GMPS', 'ABAT', 'FPGS', 'ENPEP', 'EARS2', 'NADSYN1', 'NAGS', 'AADAT', 'GPT2', 'AASS', 'GLS2', 'PSAT1', 'GLUD1', 'GCLM', 'FOLH1', 'FTCD', 'ALDH18A1', 'GOT1']",31
+DB00143,Glutathione,"['AKR1B1', 'MMP9', 'CYP3A4', 'GSR', 'GSS', 'GSTM1', 'GSTM3', 'GSTA4', 'GSTM4', 'GSTP1', 'GSTO1', 'GPX2', 'GSTZ1', 'GPX3', 'GLO1', 'MGST3', 'GSTA1', 'GSTA2', 'MGST1', 'ESD', 'GGT1', 'GSTM2', 'GLRX', 'GPX4', 'HAGH', 'GPX7', 'MGST2']",27
+DB00144,Phosphatidyl serine,"['PISD', 'SCARB1', 'PRKCA', 'PTDSS1', 'PTDSS2', 'SMPD4', 'SMPD3']",7
+DB00145,Glycine,"['ALAS1', 'BAAT', 'GSS', 'SHMT2', 'GLYATL1', 'AGXT2', 'PIPOX', 'AGXT', 'SHMT1', 'GNMT', 'GATM']",11
+DB00148,Creatine,"['CKM', 'CKB', 'SLC6A8', 'GAMT']",4
+DB00149,Leucine,"['LARS2', 'LCMT2', 'LCMT1', 'BCAT2']",4
+DB00151,Cysteine,"['GCLM', 'GCLC', 'GOT1', 'GOT2', 'CTH', 'CBS', 'MGMT', 'GSS', 'CARS2', 'CSAD', 'NFS1', 'CDO1']",12
+DB00155,Citrulline,"['NOS3', 'ASS1', 'OTC']",3
+DB00157,NADH,"['MT-ND3', 'UGDH', 'ADH1A', 'SORD', 'ADH4', 'ADH1C', 'ADH1B', 'GPD1', 'ADH5', 'AKR1B1', 'HSD17B10', 'MDH2', 'LDHA', 'ME2', 'HSD17B4', 'EHHADH', 'HADH', 'ME3', 'BDH1', 'HIBADH', 'HSD17B3', 'HMGCR', 'ME1', 'PHGDH', 'HSD17B7', 'IDH3G', 'IDH3B', 'IDH3A', 'HSD17B2', 'RDH5', 'H6PD', 'HSD17B8', 'AKR1C4', 'IMPDH2', 'AKR1C3', 'AKR1C1', 'HSD11B1', 'IMPDH1', 'HADHA', 'ALDH2', 'HSD11B2', 'AKR1C2', 'NSDHL', 'ALDH6A1', 'ALDH1A1', 'ALDH9A1', 'ALDH1B1', 'ALDH3B1', 'GAPDH', 'ALDH1A2', 'ALDH3A2', 'ALDH5A1', 'ALDH7A1', 'BLVRB', 'PYCR2', 'PYCR1', 'GLUD1', 'PDHB', 'PDHA1', 'BLVRA', 'ACADS', 'DHFR', 'OGDH', 'GLUD2', 'DHCR7', 'MT-ND2', 'AASS', 'NDUFS7', 'MTHFD1', 'MTHFD2', 'ALDH4A1', 'CYB5R3', 'NDUFA11', 'MT-ND4', 'QDPR', 'MT-ND1', 'NNT', 'NDUFA5', 'NDUFA9', 'MT-ND4L', 'NDUFA10', 'NDUFA7', 'NDUFA1', 'MT-ND6', 'MT-ND5', 'NDUFA4', 'NDUFA6', 'NDUFAB1', 'NDUFA2', 'NDUFA8', 'NDUFA3', 'NDUFB8', 'NDUFC2', 'NDUFB1', 'NDUFS1', 'NDUFB10', 'NDUFB4', 'NDUFB3', 'NDUFB2', 'NDUFB7', 'NDUFB9', 'NDUFS2', 'NDUFB5', 'NDUFC1', 'NDUFB6', 'NDUFV3', 'DLD', 'NDUFS3', 'GSR', 'NDUFA12', 'NDUFS5', 'NDUFS4', 'NDUFV1', 'NDUFV2', 'NDUFA13', 'CDO1', 'NDUFS6', 'NDUFA4L2', 'NDUFS8', 'CYP4A11', 'DLAT', 'AMT', 'MSMO1', 'HMOX1', 'HMOX2', 'CYP17A1']",126
+DB00159,Icosapent,"['PTGS2', 'PPARG', 'PPARD', 'FADS1', 'ACSL4', 'TRPV1', 'PPARA', 'ALOX5']",8
+DB00160,Alanine,"['ABAT', 'AGXT', 'GPT', 'NFS1', 'SLC36A1', 'SLC7A8', 'AGXT2', 'KYNU', 'AARS2', 'PHYKPL', 'GPT2']",11
+DB00162,Vitamin A,"['APOD', 'PTGDS', 'RDH12', 'RDH5', 'ALDH1A2', 'ALDH1A1', 'LRAT', 'DHRS3', 'RETSAT', 'RDH11', 'DHRS4']",11
+DB00163,Vitamin E,"['NR1I2', 'ALOX5', 'PRKCA', 'PPP2CB', 'PPP2CA']",5
+DB00166,Lipoic acid,"['LIPT1', 'SLC5A6', 'LIAS']",3
+DB00167,Isoleucine,"['ACADSB', 'BCAT2', 'IARS2']",3
+DB00170,Menadione,"['AOX1', 'GGCX', 'VKORC1', 'VKORC1L1', 'F2', 'F9', 'PROC', 'PROS1', 'BGLAP']",9
+DB00171,ATP,"['ABL1', 'ABCC6', 'ABCC1', 'PIK3CA', 'CSNK2A1', 'CSNK2B', 'P2RY11', 'PPP5C', 'ABL2', 'ABCA1', 'ACSS2', 'NAE1', 'PRKAA1', 'ARAF', 'ACVRL1', 'ACSL1', 'NT5C2', 'ABCC9', 'AKT1', 'GRK2', 'APAF1', 'ACSS1', 'ACVR1B', 'ACVR1', 'ABCB11', 'ASNS', 'SLC25A4', 'ASS1', 'AFG3L2', 'TNK2', 'ADCY1', 'ABCB1', 'ABCG1', 'ABCC2']",34
+DB00172,Proline,"['PPIB', 'PPIA', 'PYCR1', 'PYCR2', 'P4HA2', 'PRODH', 'PPIH', 'P4HA1', 'PPIF', 'PPIG', 'P3H1', 'PARS2', 'P3H3', 'L3HYPDH']",14
+DB00173,Adenine,"['APRT', 'MTAP', 'ACACB', 'SRPK2']",4
+DB00174,Asparagine,"['ASNS', 'ASRGL1', 'NARS2']",3
+DB00179,Masoprocol,"['ALOX5', 'ERBB2', 'TRPM7', 'SHBG']",4
+DB00182,Amphetamine,"['MAOA', 'ADRA1A', 'MAOB']",3
+DB00188,Bortezomib,"['PSMB5', 'PRSS1', 'PSMB1']",3
+DB00197,Troglitazone,"['PPARG', 'ESRRA', 'PPARD', 'PPARA', 'GSTP1', 'ACSL4', 'SERPINE1']",7
+DB00200,Hydroxocobalamin,"['MTR', 'MMAA', 'MMACHC']",3
+DB00201,Caffeine,"['NT5E', 'ADORA2A', 'PDE4B', 'PDE4A', 'PRKDC', 'PIK3CD', 'PIK3CA', 'PIK3CB', 'ITPR1', 'ATM']",10
+DB00210,Adapalene,"['RARB', 'RARG', 'RXRB', 'RXRA', 'JUN', 'TLR2', 'RARA', 'GOT1']",8
+DB00227,Lovastatin,"['HMGCR', 'ITGAL', 'HDAC2']",3
+DB00233,Aminosalicylic acid,"['DHFR', 'PTGS2', 'CHUK', 'ALOX5']",4
+DB00242,Cladribine,"['RRM1', 'ADA', 'RRM2B', 'POLA1', 'POLE', 'POLE2', 'POLE3', 'POLE4', 'PNP', 'PARP1']",10
+DB00244,Mesalazine,"['PTGS2', 'ALOX5', 'PPARG', 'CHUK', 'IKBKB']",5
+DB00246,Ziprasidone,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB00248,Cabergoline,"['ADRA2B', 'ADRA1A', 'ADRA1B', 'ADRB2']",4
+DB00252,Phenytoin,"['SCN8A', 'NR1I2', 'SCN1B']",3
+DB00255,Diethylstilbestrol,"['ESR1', 'ESRRA', 'NCOA2', 'NR1I2', 'AR', 'SHBG']",6
+DB00276,Amsacrine,"['TOP2B', 'ORM1', 'ALB']",3
+DB00277,Theophylline,"['NT5E', 'ADORA2A', 'PDE4B', 'PDE4A', 'HDAC2', 'HM13', 'NOMO1', 'PARP1']",8
+DB00279,Liothyronine,"['THRA', 'THRB', 'PCNA']",3
+DB00281,Lidocaine,"['SCN9A', 'EGFR', 'ORM1', 'ORM2']",4
+DB00282,Pamidronic acid,"['FDPS', 'GGPS1', 'CASP3', 'CASP9']",4
+DB00288,Amcinonide,"['ESRRA', 'NR3C1', 'ANXA1']",3
+DB00313,Valproic acid,"['ABAT', 'GSK3A', 'ACADSB', 'OGDH', 'ALDH5A1', 'HDAC2', 'PPARA', 'PPARD', 'PPARG', 'HDAC1', 'CDKN1A', 'HGF', 'ODC1']",13
+DB00316,Acetaminophen,"['PTGS2', 'PTGES3', 'TRPV1']",3
+DB00321,Amitriptyline,"['ADRA1A', 'SIGMAR1', 'ADRA1B']",3
+DB00328,Indomethacin,"['PTGS2', 'PLA2G2A', 'PPARG', 'GLO1', 'PPARA', 'AKR1C3', 'EIF2AK2']",7
+DB00331,Metformin,"['ACACB', 'ETFDH', 'PRKAB1', 'GPD1']",4
+DB00337,Pimecrolimus,"['PPP3CA', 'MTOR', 'FKBP1A']",3
+DB00346,Alfuzosin,"['ADRA1A', 'ADRA1A', 'ADRA1B']",3
+DB00363,Clozapine,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'GSTP1', 'GABBR1']",5
+DB00367,Levonorgestrel,"['SRD5A1', 'ESR1', 'AR', 'SHBG', 'NR3C1']",5
+DB00368,Norepinephrine,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2', 'PAH']",5
+DB00382,Tacrine,"['BCHE', 'ACHE', 'CES1']",3
+DB00390,Digoxin,"['ATP1B1', 'ATP1B2', 'ATP1B3', 'ATP1A1']",4
+DB00396,Progesterone,"['NR3C2', 'ESR1', 'CYP17A1', 'ORM1', 'NR3C1', 'AR', 'SHBG']",7
+DB00398,Sorafenib,"['BRAF', 'EGFR', 'RAF1', 'FLT4', 'KDR', 'FLT1', 'PDGFRB', 'FGFR1']",8
+DB00408,Loxapine,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB00412,Rosiglitazone,"['PPARG', 'ACSL4', 'PPARA', 'PPARD', 'RXRA', 'RXRB']",6
+DB00421,Spironolactone,"['NR3C2', 'NR3C1', 'AR', 'ESR1', 'NR1I2']",5
+DB00441,Gemcitabine,"['RRM1', 'TYMS', 'CMPK1']",3
+DB00449,Dipivefrin,"['ADRA1A', 'ADRB2', 'BCHE', 'ACHE']",4
+DB00451,Levothyroxine,"['ITGAV', 'THRA', 'THRB']",3
+DB00457,Prazosin,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRA1A']",4
+DB00458,Imipramine,"['ADRA1A', 'KCND3', 'ADRA1B', 'ORM2']",4
+DB00459,Acitretin,"['RXRA', 'STAT3', 'RARA', 'RARB', 'RARG', 'RXRB', 'RBP1']",7
+DB00477,Chlorpromazine,"['ADRA1A', 'ADRA1B', 'ADRA1A', 'SMPD1', 'ORM1', 'CALM1']",6
+DB00480,Lenalidomide,"['CRBN', 'CDH5', 'PTGS2']",3
+DB00482,Celecoxib,"['PTGS2', 'STAT3', 'NEU1', 'CA2', 'PDPK1']",5
+DB00491,Miglitol,"['GAA', 'GANAB', 'GANC']",3
+DB00499,Flutamide,"['AR', 'AHR', 'NR1I2']",3
+DB00502,Haloperidol,"['SIGMAR1', 'ADRA1A', 'ADRA2B']",3
+DB00513,Aminocaproic acid,"['PLG', 'PLAT', 'LPA']",3
+DB00514,Dextromethorphan,"['SIGMAR1', 'PGRMC1', 'CHRNA4', 'CYBB']",4
+DB00515,Cisplatin,"['A2M', 'TF', 'ATOX1']",3
+DB00523,Alitretinoin,"['RARA', 'RXRA', 'RARB', 'RXRB', 'RARG', 'IGFBP3']",6
+DB00536,Guanidine,"['ALDH2', 'RNASE1', 'DLG4', 'GAMT']",4
+DB00540,Nortriptyline,"['ADRA1A', 'ADRA1B', 'PGRMC1']",3
+DB00545,Pyridostigmine,"['F10', 'BCHE', 'ACHE']",3
+DB00548,Azelaic acid,"['SRD5A3', 'SRD5A1', 'AKR1D1', 'SRD5A2']",4
+DB00563,Methotrexate,"['TYMS', 'SLC19A1', 'ATIC', 'DHFR']",4
+DB00570,Vinblastine,"['TUBB2A', 'TUBA1A', 'TUBB', 'TUBG1', 'JUN']",5
+DB00573,Fenoprofen,"['PTGS2', 'PPARA', 'PPARG']",3
+DB00575,Clonidine,"['AOC3', 'ADRA2B', 'ADRA1A', 'ADRA1B']",4
+DB00583,Levocarnitine,"['CPT1B', 'XDH', 'CES1', 'CPT1A', 'CRAT', 'SLC25A29', 'SLC25A20', 'CPT2']",8
+DB00591,Fluocinolone acetonide,"['NR3C1', 'ANXA1', 'ANXA2', 'ANXA5']",4
+DB00594,Amiloride,"['SCNN1A', 'AOC1', 'SLC9A1', 'PLAU']",4
+DB00605,Sulindac,"['PTGS2', 'AKR1B1', 'MAPK3', 'PPARD', 'AKR1B10']",5
+DB00608,Chloroquine,"['GSTA2', 'HMGB1', 'GSTM1']",3
+DB00619,Imatinib,"['BCR', 'MCL1', 'PDGFRA', 'ABL1', 'PDGFRB', 'CSF1R']",6
+DB00622,Nicardipine,"['ADRA1A', 'ADRA1B', 'CACNA1H', 'CALM1']",4
+DB00624,Testosterone,"['AR', 'ESR1', 'NR3C2']",3
+DB00627,Niacin,"['DGAT2', 'QPRT', 'NNMT']",3
+DB00630,Alendronic acid,"['FDPS', 'PTPRS', 'ATP6V1A']",3
+DB00631,Clofarabine,"['RRM2B', 'POLA1', 'RRM1']",3
+DB00641,Simvastatin,"['HMGCR', 'ITGAL', 'HDAC2']",3
+DB00642,Pemetrexed,"['TYMS', 'ATIC', 'DHFR', 'GART']",4
+DB00648,Mitotane,"['ESR1', 'AR', 'FDX1']",3
+DB00651,Dyphylline,"['PDE4B', 'NT5E', 'PDE4A', 'ADORA2A']",4
+DB00655,Estrone,"['ESR1', 'AR', 'SHBG']",3
+DB00661,Verapamil,"['CACNA1H', 'ADRA1A', 'ADRA1B', 'ABCB1']",4
+DB00668,Epinephrine,"['ADRA1A', 'ADRA1B', 'ADRB2', 'ADRA2B']",4
+DB00675,Tamoxifen,"['ESR1', 'PRKCA', 'SHBG', 'EBP', 'AR', 'NR1I2', 'MAPK8']",7
+DB00677,Isoflurophate,"['ACHE', 'BCHE', 'TF']",3
+DB00687,Fludrocortisone,"['AR', 'NR3C2', 'NR3C1']",3
+DB00688,Mycophenolate mofetil,"['IMPDH1', 'IMPDH2', 'PTS']",3
+DB00720,Clodronic acid,"['SLC25A4', 'SLC25A5', 'SLC25A6']",3
+DB00721,Procaine,"['KCNMA1', 'ASPG', 'MAOA', 'DNMT1', 'DNMT3A']",5
+DB00726,Trimipramine,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB00734,Risperidone,"['ADRA1B', 'ADRA2B', 'ADRA1A']",3
+DB00755,Tretinoin,"['RARA', 'RARB', 'RARG', 'RXRB', 'RXRA', 'ALDH1A1', 'ALDH1A2', 'RBP4', 'PDK4']",9
+DB00756,Hexachlorophene,"['DLD', 'SDHD', 'GLUD1', 'ESR1']",4
+DB00774,Hydroflumethiazide,"['ATP1A1', 'KCNMA1', 'CA2']",3
+DB00780,Phenelzine,"['MAOA', 'MAOB', 'AOC3', 'ABAT', 'GPT', 'GPT2']",6
+DB00783,Estradiol,"['ESR1', 'NR1I2', 'CHRNA4', 'GPER1', 'MT-ATP6', 'BECN1']",6
+DB00786,Marimastat,"['MMP2', 'MMP9', 'MMP14', 'MMP15', 'MMP25']",5
+DB00795,Sulfasalazine,"['ABCG2', 'RELB', 'RELA', 'REL', 'ALOX5', 'PTGS2', 'ACAT1', 'IKBKB', 'NFKB1', 'NFKB2', 'CHUK', 'PPARG']",12
+DB00799,Tazarotene,"['RARA', 'RXRB', 'RARG', 'RARB']",4
+DB00800,Fenoldopam,"['ADRA1B', 'ADRA1A', 'ADRA2B']",3
+DB00822,Disulfiram,"['DBH', 'ALDH3A2', 'ALDH2']",3
+DB00824,Enprofylline,"['PDE4B', 'NT5E', 'PDE4A', 'ADORA2A']",4
+DB00831,Trifluoperazine,"['CALM1', 'CALM3', 'CALM2', 'ADRA1A', 'TNNC1', 'S100A4', 'CALM1']",7
+DB00841,Dobutamine,"['ADRA1A', 'ADRB2', 'ESR1']",3
+DB00843,Donepezil,"['ACHE', 'BCHE', 'NFKB2']",3
+DB00852,Pseudoephedrine,"['ADRA1A', 'ADRB2', 'NFKB1', 'ATF1']",4
+DB00867,Ritodrine,"['ADRB2', 'KCNMA1', 'MYLK']",3
+DB00893,Iron Dextran,"['HBB', 'HBA1', 'FTH1', 'FTL']",4
+DB00898,Ethanol,"['CHRNA4', 'VCAM1', 'GABRE', 'ACHE']",4
+DB00909,Zonisamide,"['SCN9A', 'SCN1B', 'CACNA1H', 'CA2', 'MAOB', 'MAOA']",6
+DB00914,Phenformin,"['PRKAA1', 'PRKAG1', 'PRKAB1', 'KCNJ8']",4
+DB00925,Phenoxybenzamine,"['ADRA1A', 'ADRA2B', 'ADRB2', 'ADRA1B', 'CALM1']",5
+DB00926,Etretinate,"['RARA', 'RXRA', 'RARB', 'RXRB', 'RARG']",5
+DB00935,Oxymetazoline,"['ADRA1A', 'ADRA2B', 'ADRA1B']",3
+DB00936,Salicylic acid,"['CA2', 'PTGS2', 'AKR1C1']",3
+DB00945,Acetylsalicylic acid,"['HMGCR', 'PTGS2', 'AKR1C1', 'PRKAA1', 'EDNRA', 'TP53', 'HSPA5', 'RPS6KA3', 'NFKBIA', 'CASP1', 'CASP3', 'IKBKB', 'MAPK1', 'CCND1', 'MYC', 'PCNA', 'NEU1']",17
+DB00951,Isoniazid,"['CYP2C8', 'CYP1A2', 'CYP3A4', 'CYP2C19']",4
+DB00973,Ezetimibe,"['NPC1L1', 'SOAT1', 'ANPEP']",3
+DB00975,Dipyridamole,"['PDE4A', 'ADA', 'RCAN1', 'ORM1']",4
+DB00995,Auranofin,"['ESRRA', 'PRDX5', 'IKBKB']",3
+DB00997,Doxorubicin,"['TOP1', 'TOP2B', 'NOLC1']",3
+DB01013,Clobetasol propionate,"['NR3C1', 'ANXA1', 'NR3C2']",3
+DB01014,Balsalazide,"['PPARG', 'PTGS2', 'ALOX5']",3
+DB01016,Glyburide,"['ABCC9', 'ABCB11', 'ABCA1', 'CPT1A', 'TRPM4']",5
+DB01017,Minocycline,"['ALOX5', 'MMP9', 'CASP1', 'CASP3', 'CYCS', 'MAPK1']",6
+DB01023,Felodipine,"['CACNA1H', 'NR3C2', 'TNNC1', 'CALM1']",4
+DB01025,Amlexanox,"['HSP90AA1', 'S100A12', 'S100A13']",3
+DB01026,Ketoconazole,"['CYP17A1', 'AR', 'CYP21A2', 'NR1I2', 'NR1I3']",5
+DB01033,Mercaptopurine,"['HPRT1', 'IMPDH1', 'PPAT', 'IMPDH1']",4
+DB01039,Fenofibrate,"['PPARA', 'NR1I2', 'MMP25']",3
+DB01047,Fluocinonide,"['ESRRA', 'NR3C1', 'SMO']",3
+DB01050,Ibuprofen,"['PTGS2', 'CXCL8', 'CXCR1', 'THBD', 'PPARG', 'PPARA']",6
+DB01065,Melatonin,"['ESR1', 'CALR', 'CALM1']",3
+DB01073,Fludarabine,"['ADA', 'DCK', 'POLA1', 'RRM1']",4
+DB01074,Perhexiline,"['CPT1A', 'CPT1B', 'CPT2']",3
+DB01076,Atorvastatin,"['HMGCR', 'DPP4', 'AHR', 'HDAC2', 'NR1I3']",5
+DB01077,Etidronic acid,"['PTPRS', 'ATP6V1A', 'SLC25A4', 'SLC25A5', 'SLC25A6']",5
+DB01083,Orlistat,"['PNLIP', 'LIPF', 'FASN']",3
+DB01088,Iloprost,"['PTGIR', 'PDE4A', 'PDE4B', 'PLAT']",4
+DB01094,Hesperetin,"['DGAT1', 'MTTP', 'SOAT1', 'SHBG', 'SOAT2']",5
+DB01097,Leflunomide,"['DHODH', 'AHR', 'PTK2B']",3
+DB01109,Heparin,"['SERPINC1', 'F10', 'FGFR4', 'FGFR1', 'FGFR2', 'HGF']",6
+DB01110,Miconazole,"['NOS3', 'NR1I2', 'KCNMA1']",3
+DB01115,Nifedipine,"['NR1I2', 'KCND3', 'CALM1']",3
+DB01118,Amiodarone,"['THRA', 'PPARG', 'PPARA']",3
+DB01126,Dutasteride,"['SRD5A1', 'SRD5A3', 'SRD5A2']",3
+DB01133,Tiludronic acid,"['PTPN12', 'PTPN6', 'ATP6V0A1']",3
+DB01136,Carvedilol,"['ADRA1A', 'ADRA1A', 'NDUFC2', 'ADRB2', 'GJA1', 'VCAM1', 'ADRA1B', 'ADRA2B', 'SELE', 'HIF1A', 'KCNJ4']",11
+DB01138,Sulfinpyrazone,"['ABCC1', 'ABCC2', 'NR1I2']",3
+DB01151,Desipramine,"['ADRB2', 'SMPD1', 'ADRA1A']",3
+DB01159,Halothane,"['ATP2B1', 'KCNMA1', 'MT-ND1', 'GNG2']",4
+DB01162,Terazosin,"['ADRA1A', 'ADRA1B', 'TGFB1']",3
+DB01169,Arsenic trioxide,"['IKBKB', 'TXNRD1', 'JUN', 'CCND1', 'MAPK3', 'MAPK1', 'AKT1', 'CDKN1A', 'HDAC1', 'PML']",10
+DB01171,Moclobemide,"['MAOA', 'MAOA', 'MAOB']",3
+DB01179,Podofilox,"['TOP2B', 'TUBA4A', 'TUBB']",3
+DB01183,Naloxone,"['CREB1', 'ESR1', 'TLR4', 'CES1']",4
+DB01185,Fluoxymesterone,"['AR', 'ESR1', 'NR3C1', 'HSD11B2']",4
+DB01197,Captopril,"['MMP2', 'MMP9', 'LTA4H']",3
+DB01200,Bromocriptine,"['ADRA2B', 'ADRA1A', 'ADRA1B']",3
+DB01213,Fomepizole,"['ADH1A', 'ADH1B', 'ADH1C', 'CAT']",4
+DB01216,Finasteride,"['SRD5A2', 'SRD5A3', 'SRD5A1', 'AKR1D1']",4
+DB01218,Halofantrine,"['CALM1', 'CALM3', 'CALM2']",3
+DB01225,Enoxaparin,"['SERPINC1', 'F10', 'F2']",3
+DB01234,Dexamethasone,"['NR3C1', 'ANXA1', 'NR1I2']",3
+DB01238,Aripiprazole,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2']",4
+DB01241,Gemfibrozil,"['PPARA', 'SLCO1B1', 'SLCO1B3']",3
+DB01244,Bepridil,"['CACNA1H', 'ATP1A1', 'TNNC1', 'CALM1']",4
+DB01254,Dasatinib,"['ABL1', 'SRC', 'EPHA2', 'LCK', 'YES1', 'PDGFRB', 'FYN', 'BCR', 'STAT5B', 'ABL2', 'CSK', 'EPHB4', 'FGR', 'FRK', 'HSPA8', 'LYN', 'MAP3K20', 'MAPK14', 'PPAT']",19
+DB01259,Lapatinib,"['EGFR', 'EEF2K', 'ERBB2']",3
+DB01262,Decitabine,"['DNMT1', 'DNMT3A', 'HDAC1']",3
+DB01267,Paliperidone,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB01268,Sunitinib,"['PDGFRB', 'FLT1', 'KDR', 'FLT4', 'CSF1R', 'PDGFRA', 'MET']",7
+DB01275,Hydralazine,"['AOC3', 'HIF1A', 'P4HA1']",3
+DB01277,Mecasermin,"['IGFBP3', 'INSR', 'IGF2R']",3
+DB01278,Pramlintide,"['RAMP1', 'RAMP2', 'RAMP3']",3
+DB01280,Nelarabine,"['POLA1', 'LIG1', 'PRIM1', 'RRM1']",4
+DB01303,Oxtriphylline,"['PDE4A', 'ADORA2A', 'HDAC2']",3
+DB01356,Lithium cation,"['GSK3B', 'IMPA1', 'IMPA2']",3
+DB01363,Ephedra sinica root,"['ADRA2B', 'MAOA', 'MAOB', 'ADRB2']",4
+DB01370,Aluminium,"['ATP1A1', 'APP', 'TF']",3
+DB01373,Calcium,"['TNNC1', 'SPTBN1', 'CAST', 'AOC1', 'S100A13', 'S100A8', 'S100A9', 'CP', 'BMP4', 'MGP', 'PDCD6', 'CALM1']",12
+DB01375,Aluminium monostearate,"['TNNC1', 'VDAC1', 'VDAC2', 'VDAC3']",4
+DB01380,Cortisone acetate,"['NR3C1', 'ESRRA', 'ANXA1']",3
+DB01393,Bezafibrate,"['PPARD', 'PPARG', 'PPARA', 'NR1I2', 'RXRA', 'RXRB']",6
+DB01395,Drospirenone,"['NR3C2', 'AR', 'NR3C1']",3
+DB01396,Digitoxin,"['ATP1B2', 'ATP1B3', 'ATP1A1', 'ATP1B1']",4
+DB01403,Methotrimeprazine,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB01406,Danazol,"['ESR1', 'AR', 'CCL2']",3
+DB01412,Theobromine,"['NT5E', 'ADORA2A', 'PDE4B']",3
+DB01429,Aprindine,"['CALM2', 'CALM1', 'CALM3', 'CALM1']",4
+DB01472,4-Methoxyamphetamine,"['ADRA1A', 'MAOA', 'MAOB']",3
+DB01577,Metamfetamine,"['ADRA1B', 'ADRA2B', 'MAOA', 'MAOB']",4
+DB01586,Ursodeoxycholic acid,"['AKR1C2', 'BLVRA', 'NR1H4']",3
+DB01592,Iron,"['HBA1', 'TFRC', 'EGLN1', 'HDAC8', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB01593,Zinc,"['MGMT', 'ALDOA', 'EEF1A1', 'ENO1', 'NME1', 'P4HB', 'PDIA3', 'PRDX1', 'PSPH', 'TPI1', 'TUFM', 'ESR1', 'CCS', 'HDAC1', 'HDAC4', 'SOD1', 'HDAC8', 'SIVA1', 'MDM2', 'UTRN', 'ASPA', 'S100A8', 'S100A9', 'MMP9', 'TP53', 'PDCD6', 'A1BG', 'A2M', 'AGT', 'AHSG', 'APCS', 'APOA1', 'APOA2', 'APOA4', 'APOBR', 'APOE', 'APOL1', 'C1QB', 'C1QC', 'C1R', 'C1S', 'C3', 'C4B', 'C4BPA', 'C4BPB', 'C5', 'BRCC3', 'C8A', 'C8B', 'C8G', 'CFB', 'CFH', 'CFI', 'CLU', 'CP', 'DSP', 'F12', 'F13B', 'F2', 'FCN3', 'FGA', 'FN1', 'GSN', 'HBA1', 'HBB', 'HPR', 'IGFALS', 'ITIH1', 'ITIH2', 'ITIH3', 'ITIH4', 'JCHAIN', 'JUP', 'KLKB1', 'KNG1', 'KRT1', 'KRT10', 'KRT5', 'KRT6A', 'ORM2', 'PON1', 'SELENOP', 'SERPINA1', 'SERPINA3', 'SERPINA6', 'SERPIND1', 'SHBG', 'TF', 'TTR', 'VTN', 'APLP2', 'APP', 'PARP1']",93
+DB01632,5-O-phosphono-alpha-D-ribofuranosyl diphosphate,"['HPRT1', 'UCKL1', 'APRT']",3
+DB01643,Thymidine monophosphate,"['TK1', 'DTYMK', 'TYMS']",3
+DB01645,Genistein,"['NCOA1', 'ESR1', 'NCOA2', 'ESRRA', 'NR1I2', 'AKT1', 'GPER1', 'CYP1B1', 'SHBG', 'PTK2B']",10
+DB01694,D-tartaric acid,"['B3GAT1', 'DDX6', 'HIF1AN', 'ATP6V1C1']",4
+DB01708,Prasterone,"['G6PD', 'ESR1', 'AR', 'PPARA', 'SIGMAR1', 'NR1I2', 'NR1I3']",7
+DB01717,Bis(Adenosine)-5'-Pentaphosphate,"['ADK', 'ADK', 'ADK', 'AK2', 'ADK', 'AK1']",6
+DB01725,"2-{2-hydroxy-[1,1'-biphenyl]-3-yl}-1H-1,3-benzodiazole-5-carboximidamide","['F2', 'PLAU', 'PRSS1']",3
+DB01727,Isocitric Acid,"['ACO2', 'IDH2', 'IDH1']",3
+DB01752,S-adenosyl-L-homocysteine,"['HNMT', 'GAMT', 'PRMT3', 'GNMT', 'PRMT1', 'SETD7', 'DPH5']",7
+DB01782,Pyrazolanthrone,"['MAPK9', 'MAPK8', 'MAPK8IP1']",3
+DB01805,Monoisopropylphosphorylserine,"['PRSS2', 'PRSS1', 'ACHE']",3
+DB01812,"Adenosine 3',5'-diphosphate","['RNASE1', 'SULT2A1', 'SULT1E1']",3
+DB01822,"(4R,5R)-1,2-dithiane-4,5-diol","['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL']",5
+DB01841,"4,6-Dideoxyglucose","['GAA', 'GANAB', 'GANC']",3
+DB01852,Kaempherol,"['ALOX5', 'AKR1B1', 'GLO1', 'CYP1B1', 'AR', 'UGT3A1']",6
+DB01861,Uridine diphosphate glucose,"['GALT', 'GALE', 'GALE', 'GYG1', 'GPR17']",5
+DB01863,"Inositol 1,3,4,5-Tetrakisphosphate","['AKT1', 'CYTH2', 'CYTH3', 'PDPK1']",4
+DB01873,Epothilone D,"['TUBB', 'TUBB4B', 'TUBA4A', 'TUBA1C', 'TUBA1B', 'TUBA1A']",6
+DB01915,S-Hydroxycysteine,"['PTPN1', 'CDC25B', 'SRC', 'C3', 'GSTP1', 'ACAT2', 'GSTA1']",7
+DB01942,Formic acid,"['ALAD', 'CA2', 'HMOX1', 'RNASE1', 'CTBP1', 'CASK', 'ACYP2', 'GPHN', 'CYTH2']",9
+DB01954,Rolipram,"['PDE4A', 'PDE4A', 'PDE4B']",3
+DB01972,Guanosine-5'-Monophosphate,"['DLG4', 'GUK1', 'GMPR', 'ATIC', 'GPT']",5
+DB01992,Coenzyme A,"['HMGCR', 'CRAT', 'KAT5', 'ACAT2', 'CS', 'DBI', 'KAT2A', 'KAT2B']",8
+DB02007,alpha-D-glucose 6-phosphate,"['AKR1B1', 'HK1', 'GPI']",3
+DB02010,Staurosporine,"['IKBKB', 'LCK', 'PIM1', 'SYK', 'MAPKAPK2', 'GSK3B', 'CSK', 'CDK2', 'PDPK1', 'ZAP70', 'PRKCA']",11
+DB02052,Indirubin-3'-monoxime,"['CDK2', 'AHR', 'GSK3B', 'CDK5']",4
+DB02059,Adenosine-5-Diphosphoribose,"['SIRT5', 'EEF2', 'GAPDH', 'SIRT3']",4
+DB02078,Triglyme,"['FYN', 'PFN2', 'PPIF']",3
+DB02116,Olomoucine,"['CDK2', 'CDK5', 'MAPK1']",3
+DB02153,3-sulfino-L-alanine,"['GSR', 'PAPOLA', 'PRDX2']",3
+DB02255,Ilomastat,"['MMP14', 'MMP2', 'MMP9']",3
+DB02266,Flufenamic acid,"['AR', 'PTGS2', 'AKR1C3', 'PPARA', 'PPARG']",5
+DB02287,2-(2-hydroxy-phenyl)-3H-benzoimidazole-5-carboxamidine,"['F2', 'PRSS1', 'PLAU']",3
+DB02325,Isopropyl alcohol,"['NOS3', 'NR1H2', 'HMOX1', 'GCH1', 'PLA2G2A']",5
+DB02333,Deoxyuridine-5'-Triphosphate,"['MAF', 'DUT', 'DUT']",3
+DB02338,NADPH,"['TXNRD1', 'DPYD', 'AASS']",3
+DB02342,2-Methoxyestradiol,"['HIF1A', 'COMT', 'CYP1A1', 'CYP1B1']",4
+DB02377,Guanine,"['GCH1', 'PNP', 'GPT']",3
+DB02379,Beta-D-Glucose,"['GANAB', 'GANC', 'GAA', 'HK1', 'AMY2B', 'PYGL', 'GNPDA1', 'NUDT9', 'SMARCA5', 'ASPA', 'GALM']",11
+DB02383,Tolrestat,"['SIGMAR1', 'AKR1B1', 'AKR1A1', 'AKR1B10']",4
+DB02424,Geldanamycin,"['HSP90AA1', 'HSP90B1', 'HSP90AB1']",3
+DB02463,2-(2-Hydroxy-Phenyl)-1h-Indole-5-Carboxamidine,"['F2', 'PLG', 'PLAU', 'PLAT', 'PRSS1']",5
+DB02482,Phosphonothreonine,"['AURKA', 'CDK7', 'MAPK1', 'PRKACA', 'PRKACB', 'S100A11']",6
+DB02494,(S)-3-phenyllactic acid,"['RPL13A', 'RPL23', 'RPL15', 'RPL19', 'RPL23A', 'RSL24D1', 'RPL26L1', 'RPL8', 'RPL37', 'RPL3', 'RPL11', 'SNU13', 'CPA1']",13
+DB02506,"2,6,8-Trimethyl-3-Amino-9-Benzyl-9-Methoxynonanoic Acid","['PPP1CA', 'PPP2R1A', 'PPP2CA', 'PPP2R5C', 'PPP2R2A']",5
+DB02527,Cyclic adenosine monophosphate,"['PRKAR1A', 'PRKAR2B', 'CRP']",3
+DB02530,gamma-Aminobutyric acid,"['SLC6A1', 'GABBR1', 'GATM']",3
+DB02546,Vorinostat,"['HDAC1', 'HDAC2', 'HDAC3', 'HDAC6', 'HDAC8', 'HDAC1']",6
+DB02567,PD173955,"['PDGFRA', 'LCK', 'SRC', 'FGFR1', 'PDGFRB']",5
+DB02587,Colforsin,"['ADCY1', 'GNAS', 'ADCY5', 'KCNMA1', 'CREBBP', 'MAPK1', 'SERPINE1']",7
+DB02594,2'-Deoxycytidine,"['TK1', 'TK2', 'DCK']",3
+DB02659,Cholic Acid,"['FECH', 'CES1', 'ADH1C', 'COX4I1', 'MT-CO1', 'MT-CO2', 'MT-CO3', 'COX5A', 'COX5B', 'COX6C', 'COX7B', 'COX7C', 'COX8A', 'COX6A2', 'COX6B1', 'COX7A1', 'NR1H4']",17
+DB02701,Nicotinamide,"['BST1', 'PARP1', 'SIRT5', 'LDHA']",4
+DB02709,Resveratrol,"['SIRT1', 'CSNK2A1', 'PTGS2', 'ALOX5', 'AHR', 'PI4K2B', 'ITGA5', 'APP', 'ESR1', 'CLEC14A', 'NR1I2', 'NR1I3', 'SLC2A1', 'CBR1', 'PPARA', 'PPARG', 'AKT1', 'KHSRP']",18
+DB02721,4-Iodopyrazole,"['ADH1C', 'ADH1B', 'ADH1A']",3
+DB02726,2-Phosphoglycolic Acid,"['ENO3', 'PKLR', 'TPI1', 'PKM', 'ENO2']",5
+DB02733,Purvalanol,"['CDK5', 'CDK2', 'SRPK2', 'CDK4', 'MAPK1', 'MAPK3']",6
+DB02746,Phthalic Acid,"['ESR1', 'PPARA', 'PPARD', 'PPARG', 'RXRA', 'RXRB']",6
+DB02772,Sucrose,"['ACTA1', 'ATOX1', 'RTCB']",3
+DB02901,Stanolone,"['AR', 'ESR1', 'NR3C2']",3
+DB02910,Octanoyl-Coenzyme A,"['ECHS1', 'ECI1', 'ACADM']",3
+DB02930,Adenosine 5'-[gamma-thio]triphosphate,"['BST1', 'BCKDK', 'PFKFB1', 'PMS2']",4
+DB02998,Metribolone,"['AR', 'NCOA2', 'NR3C2']",3
+DB03003,Glutathione sulfonic acid,"['GSTM4', 'GSTA1', 'GSTP1']",3
+DB03010,Patupilone,"['TUBB', 'TUBB4B', 'TUBA4A', 'TUBA1C', 'TUBA1B', 'TUBA1A']",6
+DB03017,Lauric acid,"['TLR4', 'PLA2G2A', 'HNF4A', 'GLTP', 'C8G', 'LY96', 'PPARA', 'GM2A', 'ADH5']",9
+DB03023,"1-Tert-Butyl-3-(4-Chloro-Phenyl)-1h-Pyrazolo[3,4-D]Pyrimidin-4-Ylamine","['LYN', 'SRC', 'LCK']",3
+DB03059,Acetoacetyl-CoA,"['HADH', 'ACADS', 'ECHS1']",3
+DB03083,IC261,"['CSNK1A1', 'CSNK1E', 'CSNK1G2']",3
+DB03127,Benzamidine,"['PRSS1', 'PLAU', 'ST14', 'CSNK2A1', 'PRSS2', 'PRSS3', 'ATOX1', 'ECI1']",8
+DB03136,4-Iodobenzo[B]Thiophene-2-Carboxamidine,"['F2', 'F9', 'PLAU', 'PRSS1']",4
+DB03147,Flavin adenine dinucleotide,"['DPYD', 'XDH', 'GSR', 'MAOA', 'TXNRD1', 'MAOB', 'NDUFA9', 'ERO1B', 'CYB5R3', 'TPR', 'IVD', 'DLD', 'ACAD8', 'AIFM1', 'POR', 'GCDH', 'ACADM', 'DAO', 'ACADS', 'DLD', 'CYB5R1', 'FDXR', 'ACOX1', 'GFER']",24
+DB03159,CRA_8696,"['F2', 'PLAU', 'PRSS1']",3
+DB03206,Duvoglustat,"['GAA', 'GANAB', 'GANC', 'MAN1B1']",4
+DB03227,Nicotinamide Mononucleotide,"['BST1', 'NMNAT1', 'NMNAT3']",3
+DB03247,Flavin mononucleotide,"['BLVRB', 'HAO1', 'PNPO', 'RFK', 'DPYD', 'DHODH', 'SGK1', 'RPS6KA4', 'HAO2', 'POR', 'PPCDC']",11
+DB03310,Glutathione disulfide,"['MGST1', 'GSTA1', 'GSTM2', 'GSR']",4
+DB03316,"1,4-Dioxane","['TNFSF13B', 'EPN1', 'TGFB3']",3
+DB03345,Mercaptoethanol,"['GLO1', 'CDC25B', 'CA2', 'ALAD', 'PDF', 'SERPINA1', 'PNPO', 'LGALS1', 'SCMH1']",9
+DB03366,Imidazole,"['AK2', 'PIM1', 'LTA4H', 'GPHN', 'CYCS']",5
+DB03397,Uridine-Diphosphate-N-Acetylglucosamine,"['UAP1', 'GALE', 'GALE', 'MGAT1']",4
+DB03401,"1D-myo-inositol 1,4,5-trisphosphate","['ITPR1', 'ITPR3', 'ITPR2', 'CYTH2', 'EPN1', 'PLCD1', 'RDX', 'SPTBN1']",8
+DB03413,Deoxyuridine-5'-Diphosphate,"['DUT', 'DUT', 'DUT']",3
+DB03419,Uracil,"['DPYD', 'UCKL1', 'UNG']",3
+DB03435,Uridine-5'-Diphosphate,"['GALT', 'B3GAT1', 'CMPK1', 'GALE', 'B3GAT3', 'GALE', 'GYG1', 'GPR17']",8
+DB03461,Nicotinamide adenine dinucleotide phosphate,"['AKR1B1', 'AKR1C2', 'NNT', 'HSD11B1', 'SPR', 'DCXR', 'IDH1', 'AKR1C1', 'G6PD', 'DHFR', 'MTHFD1', 'AKR1C3', 'BLVRB', 'HMGCR', 'ADH1B', 'POR', 'ME1', 'DHRS11', 'HSD17B8', 'AKR1A1', 'FDXR', 'AKR1B10']",22
+DB03467,Naringenin,"['ESR1', 'AKR1C1', 'CYP1B1', 'KANSL3', 'SHBG']",5
+DB03496,Alvocidib,"['CDK9', 'PYGB', 'PYGL', 'CDK7', 'CDK5', 'CDK6', 'EGFR', 'CDK4', 'CDK8', 'CDK2']",10
+DB03501,Galactose-uridine-5'-diphosphate,"['GALE', 'B4GALT1', 'GPR17']",3
+DB03516,Eniluracil,"['DPYD', 'AOX1', 'XDH']",3
+DB03600,Capric acid,"['FURIN', 'GLTP', 'PPARG']",3
+DB03608,Diminazene,"['PRSS1', 'AOC1', 'PRDX5']",3
+DB03619,Deoxycholic acid,"['PCNA', 'EFL1', 'NR1H4', 'GSTP1', 'GSTA1']",5
+DB03661,L-cysteic acid,"['CDC25B', 'PTPN1', 'CTSL']",3
+DB03685,Uridine monophosphate,"['UCKL1', 'GALT', 'LSM6', 'B4GALT1']",4
+DB03721,N-acetyl-alpha-neuraminic acid,"['SELE', 'CES1', 'MBL2', 'REG1A']",4
+DB03756,Doconexent,"['PPARA', 'PTGS2', 'PPARG', 'RXRA', 'RXRB', 'SREBF1', 'MYC']",7
+DB03758,Radicicol,"['HSP90AA1', 'HSP90AB1', 'HSP90B1', 'DLAT', 'PDK3']",5
+DB03760,Dihydrolipoic Acid,"['GCSH', 'DLAT', 'PDK3']",3
+DB03777,Bisindolylmaleimide I,"['MAPK8', 'GSK3B', 'MAPK14', 'MAPK11', 'LCK', 'AKT1', 'MAPK1', 'SGK1', 'PRKCZ', 'ROCK1', 'PDPK1', 'PRKCI', 'PIM1']",13
+DB03796,Palmitic Acid,"['FABP4', 'FABP5', 'PPARA', 'PPT1', 'HNF4G', 'CYP2C8', 'TRAPPC3']",7
+DB03800,Deoxyuridine monophosphate,"['DUT', 'TYMS', 'DUT']",3
+DB03814,2-(N-morpholino)ethanesulfonic acid,"['HSD11B1', 'PDF', 'ACHE', 'BCHE', 'GSTP1', 'B4GALT1', 'QDPR', 'ASL', 'ARL3', 'L3MBTL1', 'PRDX6']",11
+DB03847,gamma-carboxy-L-glutamic acid,"['F2', 'F9', 'F10', 'BGLAP']",4
+DB03865,6-Chloro-2-(2-Hydroxy-Biphenyl-3-Yl)-1h-Indole-5-Carboxamidine,"['F2', 'PRSS1', 'PLAU']",3
+DB03886,Biopterin,"['PDF', 'SPR', 'PTS', 'DHFR']",4
+DB03900,tert-butanol,"['CALM2', 'CALM1', 'CALM3', 'METAP2', 'RNASE1', 'TPI1', 'CALM1']",7
+DB03904,Urea,"['DHFR', 'ARG1', 'CA2', 'CTNNB1']",4
+DB03909,"Adenosine-5'-[Beta, Gamma-Methylene]Triphosphate","['INSR', 'PDXK', 'PGK1']",3
+DB03948,"6-Chloropurine Riboside, 5'-Monophosphate","['PPAT', 'IMPDH2', 'IMPDH1']",3
+DB03963,S-(Dimethylarsenic)Cysteine,"['TLR2', 'NOS3', 'COPG1', 'XRCC4', 'MSRA']",5
+DB03976,Phosphorylisopropane,"['PRSS2', 'CTRB1', 'PRSS1']",3
+DB03977,Trimethyllysine,"['CALM2', 'CALM1', 'CALM3', 'CYCS', 'CALM1']",5
+DB04005,Uridine 5'-triphosphate,"['P2RY2', 'P2RY11', 'UCK2']",3
+DB04014,Alsterpaullone,"['CDK2', 'CDK5', 'GSK3B']",3
+DB04083,N(6)-(pyridoxal phosphate)-L-lysine,"['KYAT1', 'ODC1', 'AGXT']",3
+DB04132,S-Hexylglutathione,"['GLO1', 'GSTM4', 'GSTP1', 'GSTA1']",4
+DB04137,Guanosine-5'-Triphosphate,"['GCH1', 'UCKL1', 'HRAS', 'RND3', 'RHEB', 'PFKFB1', 'RAB5A', 'ARF1', 'GLUD1', 'RAP2A']",10
+DB04141,"2-Hexyloxy-6-Hydroxymethyl-Tetrahydro-Pyran-3,4,5-Triol","['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCRB', 'UQCR10', 'SDHA', 'SDHB', 'SDHD', 'ETFDH', 'SDHC']",14
+DB04147,Dodecyldimethylamine N-oxide,"['DSTN', 'NFE2L1', 'CFL1', 'DHODH', 'MAOB']",5
+DB04209,Dequalinium,"['KCNN2', 'XIAP', 'CNGA1', 'KCNMA1', 'PRKCA', 'CALM1']",6
+DB04216,Quercetin,"['STAT3', 'LPCAT1', 'UGT3A1', 'PIM1', 'HIBCH', 'ESR1', 'AHR', 'CYP1B1', 'ACTB', 'CSNK2A1', 'CSNK2B', 'EIF3F', 'HSP90AA1', 'HSPA2', 'RUVBL2', 'SF3B3', 'UBA1', 'SHBG', 'CBR1', 'CEBPB', 'NR1I2', 'HCK']",22
+DB04224,Oleic Acid,"['FABP4', 'FABP1', 'PPARA', 'PPARD', 'RXRA', 'PPARG']",6
+DB04272,Citric acid,"['TRPV4', 'AKR1B1', 'CS', 'SRC', 'RNASE1', 'CTDSP1', 'HGS', 'MDH2', 'CPB1', 'RTCA', 'LSM6', 'C8G', 'APRT', 'RPIA', 'ITPA']",15
+DB04297,Trichostatin A,"['HDAC7', 'HDAC8', 'CASP8']",3
+DB04315,Guanosine-5'-Diphosphate,"['TGM2', 'RAB9A', 'HRAS', 'RHOA', 'RAB11A', 'PURA', 'RAB8B', 'ARF6', 'TUFM', 'EIF2S3', 'GNAI1', 'NME1', 'RHEB', 'CDC42', 'ARF1', 'EEF2', 'RELA', 'RAP2A', 'EFL1', 'ARL1', 'RAN', 'RAB7A', 'GSPT1', 'RAB5A', 'EEF1A1', 'ARF4', 'GMDS', 'RALA', 'ARL5B', 'ARL3', 'NME2', 'RAC1', 'SAR1B']",33
+DB04326,Dihydroxyacetone phosphate,"['ALDOA', 'TPI1', 'ALDOB']",3
+DB04339,Carbocisteine,"['KEAP1', 'NFE2L2', 'ST3GAL5']",3
+DB04367,Debromohymenialdisine,"['CHEK2', 'MAP2K1', 'MAPK1', 'RAF1', 'TNK2', 'CLK1']",6
+DB04395,Phosphoaminophosphonic Acid-Adenylate Ester,"['GSK3B', 'DTYMK', 'PIM1', 'HK1', 'LCK', 'CSNK2A1', 'EPHA2', 'TOP2B', 'GSS', 'DAPK1', 'ARSA', 'ACTA1', 'VCP', 'TRPM7', 'CCT3', 'SRPK2', 'CLPB', 'GALK1']",18
+DB04444,Tetrafluoroaluminate Ion,"['MYH14', 'GNAI1', 'CMPK1', 'MYH11']",4
+DB04447,"1,4-Dithiothreitol","['TPI1', 'GSTZ1', 'HMGCR', 'LGALS1', 'ALDH1A1', 'TRPM7', 'MSRA', 'AXIN1', 'PPIB']",9
+DB04462,Tetrabromo-2-Benzotriazole,"['MAPK8', 'GSK3B', 'ROCK1', 'RPS6KB1', 'PRKAA1', 'PRKAB1', 'PRKAG1', 'SGK1', 'MAPK1', 'MAPK14', 'MAPK11', 'MAP2K1', 'LCK', 'AKT1', 'PRKCA', 'CSNK2A1']",16
+DB04464,N-Formylmethionine,"['MT-ND3', 'SERPINC1', 'RABGGTA', 'RABGGTB', 'B2M', 'MT-ND1', 'HLA-B', 'COX4I1', 'MT-CO1', 'MT-CO2', 'MT-CO3', 'COX5A', 'COX5B', 'COX6C', 'COX7B', 'COX7C', 'COX8A', 'COX6A2', 'COX6B1', 'COX7A1', 'UBC', 'RNASE1', 'CLPP']",23
+DB04465,Lactose,"['LGALS3', 'GLB1', 'GLTP']",3
+DB04468,Afimoxifene,"['ESR1', 'ESRRA', 'NR1I2', 'SHBG']",4
+DB04493,Fructose-6-phosphate,"['FBP1', 'PFKFB1', 'GPI']",3
+DB04522,Dexfosfoserine,"['PDPK1', 'PIM1', 'PYGL', 'PRKACA', 'TAOK2', 'REG1A', 'SMAD2']",7
+DB04530,"S,S-(2-Hydroxyethyl)Thiocysteine","['ALAD', 'PDE4B', 'TYMS', 'PRKACA', 'PIM1', 'ARG1', 'SNX3', 'CYTH2']",8
+DB04557,Arachidonic Acid,"['PPARA', 'NR1H4', 'RXRA']",3
+DB04566,Inosinic Acid,"['IMPDH1', 'IMPDH2', 'PURA', 'PURA']",4
+DB04631,Atpenin A5,"['SDHB', 'SDHC', 'SDHD', 'SDHA']",4
+DB04652,Corticosterone,"['HSD11B1', 'NR3C1', 'NCOA1', 'NR3C2']",4
+DB04707,Hydroxyfasudil,"['CLCN2', 'ROCK1', 'PRKACA']",3
+DB04716,"2-tert-butyl-9-fluoro-1,6-dihydrobenzo[h]imidazo[4,5-f]isoquinolin-7-one","['JAK2', 'JAK3', 'TYK2', 'DAPK3', 'JAK1']",5
+DB04719,"DIMETHYL-(4,5,6,7-TETRABROMO-1H-BENZOIMIDAZOL-2-YL)-AMINE","['DYRK1A', 'DYRK2', 'CSNK2A1']",3
+DB04751,Purvalanol A,"['CDK2', 'CSNK1G3', 'RPS6KA1', 'SRC']",4
+DB04786,Suramin,"['P2RY2', 'SIRT5', 'F2', 'PLA2G2A']",4
+DB04799,"6-Hydroxy-5-undecyl-4,7-benzothiazoledione","['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB04813,Bithionol,"['ESR1', 'CAPN2', 'MCL1']",3
+DB04820,Nialamide,"['MAOB', 'MAOA', 'COMT']",3
+DB04824,Phenolphthalein,"['UGT1A9', 'NR1I2', 'NR1I3', 'ESR1', 'SHBG']",5
+DB04851,Biricodar,"['ABCB1', 'ABCC1', 'ABCG2']",3
+DB04855,Dronedarone,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'KCND3', 'THRA']",5
+DB04862,Merimepodib,"['IMPDH1', 'ERBB2', 'EGFR']",3
+DB04879,Vatalanib,"['EGFR', 'FLT4', 'KDR', 'FLT1']",4
+DB04892,Phenserine,"['ACHE', 'BCHE', 'APP']",3
+DB04899,Nesiritide,"['NPR1', 'NPR2', 'NPR3']",3
+DB04944,Acadesine,"['PRKAA1', 'PRKAB1', 'PRKAG1']",3
+DB04946,Iloperidone,"['ADRA1A', 'ADRA2B', 'ADRB2']",3
+DB04960,Tipifarnib,"['FDPS', 'FNTA', 'FNTB']",3
+DB04967,Lucanthone,"['TOP2B', 'APEX1', 'TOP1']",3
+DB05014,XL999,"['FGFR3', 'FGFR1', 'KDR', 'PDGFRB']",4
+DB05036,Grn163l,"['SMG6', 'SCYL1', 'PTGES3']",3
+DB05075,TG-100801,"['VEGFC', 'VEGFB', 'FLT1', 'KDR', 'FLT4', 'CSK']",6
+DB05146,XL820,"['KDR', 'PDGFRA', 'PDGFRB']",3
+DB05147,CYT997,"['TUBA1A', 'TUBA1B', 'TUBA1C', 'TUBA4A', 'TUBB2A', 'TUBB4B', 'TUBB', 'TUBB6']",8
+DB05157,KC706,"['MAPK14', 'MAPK11', 'MAPK13']",3
+DB05171,E-2012,"['APH1B', 'NCSTN', 'PSEN1', 'APH1A', 'PSENEN']",5
+DB05184,XL228,"['SRC', 'ABL1', 'ABL2']",3
+DB05187,Elafibranor,"['PPARA', 'PPARD', 'PPARG']",3
+DB05210,SF1126,"['PIK3R1', 'PIK3R2', 'PIK3R3', 'PRKDC', 'MTOR']",5
+DB05223,Pracinostat,"['HDAC1', 'HDAC2', 'HDAC3', 'HDAC6']",4
+DB05241,XL765,"['PIK3CA', 'PIK3CD', 'PIK3CB', 'MTOR']",4
+DB05289,Tarenflurbil,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1', 'PSEN2', 'IKBKG']",7
+DB05294,Vandetanib,"['KDR', 'EGFR', 'PTK6', 'TEK']",4
+DB05361,SR-123781A,"['F10', 'F2', 'SERPINC1', 'F2R']",4
+DB05383,Pimagedine,"['AOC1', 'AKR1B1', 'TIMP3']",3
+DB05408,Emricasan,"['CASP1', 'CASP3', 'CASP7']",3
+DB05424,Canertinib,"['ERBB2', 'AKT1', 'EGFR']",3
+DB05428,Motexafin gadolinium,"['PRDX5', 'TXNRD1', 'TXNRD2']",3
+DB05434,ABT-510,"['THBS1', 'HGF', 'CXCL8']",3
+DB05475,Golotimod,"['STAT3', 'TLR2', 'TLR4']",3
+DB05487,Custirsen,"['CLU', 'ESR1', 'NFKB2', 'NFKB1']",4
+DB05492,Epicept NP-1,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB05667,Levoketoconazole,"['CYP17A1', 'CYP11A1', 'CYP51A1']",3
+DB05785,LGD-1550,"['RARA', 'RARB', 'RARG', 'JUN']",4
+DB05961,PPL-100,"['SERPING1', 'SERPINA5', 'SERPINA1']",3
+DB05969,SNS-032,"['CDK9', 'CDK2', 'CDK7']",3
+DB06037,PR-15,"['COL1A1', 'COL1A2', 'COL3A1']",3
+DB06080,Linifanib,"['FLT4', 'FLT1', 'KDR', 'CSF1R']",4
+DB06101,IMC-1C11,"['FLT1', 'KDR', 'FLT4']",3
+DB06151,Acetylcysteine,"['GSS', 'ACY1', 'IKBKB', 'CHUK']",4
+DB06153,Pizotifen,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB06157,Istaroxime,"['ATP1A1', 'ATP1B1', 'ATP1B2', 'ATP1B3', 'ATP2A2']",5
+DB06176,Romidepsin,"['HDAC1', 'HDAC2', 'HDAC4', 'HDAC6', 'ABCC1', 'HDAC1']",6
+DB06195,Seliciclib,"['CDK2', 'CDK7', 'MAPK3', 'MAPK1', 'CDK9', 'CSNK1E']",6
+DB06216,Asenapine,"['ADRA1A', 'ADRA2B', 'ADRB2']",3
+DB06229,Ocaperidone,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB06235,Vadimezan,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL']",5
+DB06245,Lanoteplase,"['PLAUR', 'FGA', 'LAMA5', 'F10', 'FN1', 'CLEC3B', 'KRT8', 'ANXA2', 'LAMB1', 'LAMC1', 'CALR', 'CANX', 'LRP1']",13
+DB06246,Exisulind,"['GSTP1', 'AKR1B1', 'AKR1B10', 'PDE2A']",4
+DB06255,Incadronic acid,"['FDPS', 'CASP3', 'CASP4', 'CASP7']",4
+DB06258,Bimoclomol,"['HSPA1B', 'HSPA1A', 'HSF1']",3
+DB06262,Droxidopa,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2', 'PAH']",5
+DB06404,Human C1-esterase inhibitor,"['C1R', 'C1S', 'KLKB1', 'F12', 'F11', 'PLAT', 'F2']",7
+DB06408,Taribavirin,"['IMPDH1', 'ENPP1', 'NT5C2']",3
+DB06423,Endostatin,"['MMP2', 'MMP9', 'PTK2', 'SELE']",4
+DB06436,Semaxanib,"['AHR', 'PDGFRB', 'FLT1', 'FGFR1', 'PDGFRA', 'KDR']",6
+DB06439,Tyloxapol,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL']",5
+DB06461,Squalamine,"['VEGFC', 'PDGFA', 'VEGFB']",3
+DB06486,Enzastaurin,"['AKT1', 'AURKA', 'CHEK2', 'PIK3R1']",4
+DB06521,Ertiprotafib,"['PTPN1', 'IKBKB', 'PPARA', 'PPARG']",4
+DB06552,Anpocogin,"['F7', 'F3', 'F10']",3
+DB06586,Cetilistat,"['LIPG', 'LIPF', 'PNLIP']",3
+DB06589,Pazopanib,"['FLT1', 'KDR', 'FLT4', 'PDGFRA', 'PDGFRB', 'FGFR3', 'SH2B3']",7
+DB06595,Midostaurin,"['PRKCA', 'KDR', 'PDGFRA', 'PDGFRB']",4
+DB06607,Catumaxomab,"['FCGR2A', 'FCGR3A', 'FCGR3B', 'CD3E', 'EPCAM']",5
+DB06616,Bosutinib,"['ABL1', 'LYN', 'SRC', 'MAP2K1', 'MAP2K2', 'MAP3K2', 'CAMK2G', 'FGR', 'HCK', 'TEC', 'SLK']",11
+DB06626,Axitinib,"['ABL1', 'FLT1', 'KDR', 'FLT4']",4
+DB06641,Perifosine,"['AKT1', 'MAPK1', 'PRKCA']",3
+DB06645,Anamorelin,"['GAA', 'GANAB', 'GANC']",3
+DB06685,Laquinimod,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL', 'CXCL2']",6
+DB06692,Aprotinin,"['PRSS1', 'CTRB1', 'PLG']",3
+DB06694,Xylometazoline,"['ADRA2B', 'ADRA1A', 'ADRA1B']",3
+DB06732,beta-Naphthoflavone,"['ESR1', 'ESRRA', 'AHR', 'CYP1B1']",4
+DB06757,Manganese cation,"['IDH3A', 'IDH3G', 'TAB1', 'ARG1', 'SOD2', 'GLUL', 'PCK2', 'PPP1CC']",8
+DB06777,Chenodeoxycholic acid,"['NR1H4', 'NR1I2', 'AKR1C2']",3
+DB06813,Pralatrexate,"['DHFR', 'PDF', 'FPGS', 'TYMS']",4
+DB06819,Phenylbutyric acid,"['HDAC1', 'PRKCA', 'HDAC1']",3
+DB06905,"(2S,3S,4E,6E,8S,9S)-3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic acid","['PPP2R5C', 'PPP2CA', 'PPP2R1A']",3
+DB07080,TO-901317,"['NR1H2', 'NCOA2', 'RXRB', 'NR1H3', 'NCOA1', 'NR1I2']",6
+DB07126,O6-CYCLOHEXYLMETHOXY-2-(4'-SULPHAMOYLANILINO) PURINE,"['GSK3B', 'CDK4', 'CDK2', 'CCNA2']",4
+DB07145,(2R)-N-HYDROXY-2-[(3S)-3-METHYL-3-{4-[(2-METHYLQUINOLIN-4-YL)METHOXY]PHENYL}-2-OXOPYRROLIDIN-1-YL]PROPANAMIDE,"['MMP14', 'MMP9', 'MMP2', 'ADAM17']",4
+DB07149,"(7S)-2-(2-aminopyrimidin-4-yl)-7-(2-fluoroethyl)-1,5,6,7-tetrahydro-4H-pyrrolo[3,2-c]pyridin-4-one","['CDK2', 'CDK9', 'GSK3B']",3
+DB07227,L-778123,"['FNTA', 'FNTB', 'PGGT1B']",3
+DB07352,Apigenin,"['CSNK2A1', 'AKR1B1', 'CYP1B1', 'AR', 'CDK6']",5
+DB07374,Anisomycin,"['RPL13A', 'RPL23', 'RPL15', 'RPL19', 'RPL23A', 'RSL24D1', 'RPL26L1', 'RPL8', 'RPL37', 'RPL3', 'RPL11', 'SNU13']",12
+DB07401,Azoxystrobin,"['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB07553,"9,9,9-TRIFLUORO-8-OXO-N-PHENYLNONANAMIDE","['HDAC8', 'HDAC4', 'HDAC1', 'HDAC6', 'HDAC2', 'HDAC10']",6
+DB07556,CGS-27023,"['MMP2', 'MMP14', 'CA2', 'MMP9']",4
+DB07557,"3,20-Pregnanedione","['RXRA', 'NR1I3', 'NCOA1', 'AKR1D1']",4
+DB07574,"2-MERCAPTO-N-[1,2,3,10-TETRAMETHOXY-9-OXO-5,6,7,9-TETRAHYDRO-BENZO[A]HEPTALEN-7-YL]ACETAMIDE","['TUBA1A', 'TUBA1C', 'TUBA1B']",3
+DB07636,"5-Heptyl-6-hydroxy-1,3-benzothiazole-4,7-dione","['MT-CYB', 'UQCRFS1', 'CYC1', 'UQCRB', 'UQCR10']",5
+DB07662,PD-168393,"['EGFR', 'ERBB2', 'SRC']",3
+DB07664,K-00546,"['FLT1', 'CDK2', 'CSNK1G3', 'SLK', 'ABL2']",5
+DB07671,"2-[1-METHYLHEXYL]-4,6-DINITROPHENOL","['SDHA', 'SDHB', 'SDHC', 'SDHD']",4
+DB07724,Indeglitazar,"['PPARA', 'PPARG', 'PPARD', 'NCOA1']",4
+DB07763,"(5S)-3-ANILINO-5-(2,4-DIFLUOROPHENYL)-5-METHYL-1,3-OXAZOLIDINE-2,4-DIONE","['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB07771,"[(3,7,11-TRIMETHYL-DODECA-2,6,10-TRIENYLOXYCARBAMOYL)-METHYL]-PHOSPHONIC ACID","['KRAS', 'FNTA', 'FNTB']",3
+DB07776,Flavone,"['AR', 'ESRRA', 'CYP1B1']",3
+DB07778,(S)-famoxadone,"['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB07780,Farnesyl diphosphate,"['FDFT1', 'FNTA', 'FNTB', 'KRAS', 'FDPS', 'GGPS1', 'RABGGTA', 'RABGGTB']",8
+DB07841,Geranylgeranyl diphosphate,"['FDPS', 'FNTA', 'FNTB', 'PGGT1B', 'GGPS1', 'RABGGTA', 'RABGGTB']",7
+DB07853,"2-[4-[4-[(5-cyclopropyl-1H-pyrazol-3-yl)amino]quinazolin-2-yl]iminocyclohexa-2,5-dien-1-yl]acetonitrile","['SLK', 'CAMK2D', 'STK26']",3
+DB07859,4-(4-CHLOROPHENYL)-4-[4-(1H-PYRAZOL-4-YL)PHENYL]PIPERIDINE,"['PRKACA', 'AKT2', 'GSK3B']",3
+DB07863,2-chloro-5-nitro-N-phenylbenzamide,"['RXRA', 'PPARG', 'NCOA2']",3
+DB07919,Harmine,"['DYRK2', 'DYRK1A', 'MAOA']",3
+DB07931,Hexestrol,"['AKR1C1', 'ESR1', 'NR1I2', 'NR1I3']",4
+DB07947,ISOQUINOLINE-5-SULFONIC ACID (2-(2-(4-CHLOROBENZYLOXY)ETHYLAMINO)ETHYL)AMIDE,"['PRKACA', 'AKT2', 'GSK3B']",3
+DB07954,3-isobutyl-1-methyl-7H-xanthine,"['ADORA2A', 'PDE4B', 'PDE4A', 'PDE2A', 'PDE3B', 'PDE7A', 'PDE9A', 'PDE8A']",8
+DB08009,SU-11652,"['PDGFRB', 'PDGFRA', 'FLT1', 'KDR']",4
+DB08039,"(3Z)-N,N-DIMETHYL-2-OXO-3-(4,5,6,7-TETRAHYDRO-1H-INDOL-2-YLMETHYLIDENE)-2,3-DIHYDRO-1H-INDOLE-5-SULFONAMIDE","['AURKC', 'SRC', 'LCK', 'PRKAA1', 'PRKAB1', 'PRKAG1', 'CAMK2D', 'CALM1']",8
+DB08040,Kelatorphan,"['ANPEP', 'ENPEP', 'LTA4H']",3
+DB08052,PP-121,"['EGFR', 'PRKDC', 'KDR', 'PDGFRA', 'ABL1', 'HCK', 'PIK3CB', 'MTOR', 'SRC']",9
+DB08059,Wortmannin,"['PIK3CD', 'PLK1', 'PIK3R1', 'PIK3CA']",4
+DB08073,(2S)-1-(1H-INDOL-3-YL)-3-{[5-(3-METHYL-1H-INDAZOL-5-YL)PYRIDIN-3-YL]OXY}PROPAN-2-AMINE,"['AKT1', 'AKT2', 'GSK3B', 'PRKACA']",4
+DB08094,RO-4584820,"['CDK4', 'CDK7', 'CDK2']",3
+DB08162,Fasudil,"['ROCK1', 'PRKACA', 'ROCK2']",3
+DB08168,Coumarin 120,"['PPIA', 'PPIA', 'PPIF', 'HDAC8']",4
+DB08175,"(2E,4E)-11-METHOXY-3,7,11-TRIMETHYLDODECA-2,4-DIENOIC ACID","['NCOA2', 'RXRB', 'NR1H3']",3
+DB08178,"4-(4-methoxy-1H-pyrrolo[2,3-b]pyridin-3-yl)pyrimidin-2-amine","['CDK9', 'CDK2', 'CCNA2']",3
+DB08180,2-[METHYL-(5-GERANYL-4-METHYL-PENT-3-ENYL)-AMINO]-ETHYL-DIPHOSPHATE,"['FDPS', 'FNTA', 'PGGT1B']",3
+DB08182,"4-(4-propoxy-1H-pyrrolo[2,3-b]pyridin-3-yl)pyrimidin-2-amine","['CDK9', 'CDK2', 'CCNA2']",3
+DB08231,Myristic acid,"['ABL1', 'CALM1', 'CALM3', 'CALM2', 'TLR4', 'FKBP1A', 'PRKACA', 'ECI2', 'HNF4A', 'NCOA1', 'PPP3R1', 'PPP3CA', 'TRAPPC3', 'GM2A', 'ARF6', 'LY96', 'ARF1', 'PVR', 'PPARA', 'CALM1']",20
+DB08235,N-[2-(2-methyl-1H-indol-3-yl)ethyl]thiophene-2-carboxamide,"['ARPC1B', 'ACTR2', 'ACTR3', 'ARPC2', 'ARPC3', 'ARPC4', 'ARPC5']",7
+DB08236,"(2S)-2-(3-bromophenyl)-3-(5-chloro-2-hydroxyphenyl)-1,3-thiazolidin-4-one","['ARPC1B', 'ACTR2', 'ACTR3', 'ARPC2', 'ARPC3', 'ARPC4', 'ARPC5']",7
+DB08330,METHYL (2Z)-3-METHOXY-2-{2-[(E)-2-PHENYLVINYL]PHENYL}ACRYLATE,"['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB08339,PD-166326,"['MAPK14', 'LCK', 'FGFR1', 'PDGFRB', 'EGFR', 'PDGFRA', 'SRC', 'ABL1']",8
+DB08342,S-palmitoyl-L-cysteine,"['TRAPPC6A', 'TRAPPC3', 'TRAPPC6B', 'TRAPPC5', 'TRAPPC4', 'TRAPPC1']",6
+DB08348,"N~2~,N~2~-DIMETHYL-N~1~-(6-OXO-5,6-DIHYDROPHENANTHRIDIN-2-YL)GLYCINAMIDE","['PARP1', 'EEF2', 'PARP3', 'PARP15']",4
+DB08358,"2-(2-QUINOLIN-3-YLPYRIDIN-4-YL)-1,5,6,7-TETRAHYDRO-4H-PYRROLO[3,2-C]PYRIDIN-4-ONE","['MAPKAPK5', 'MAPKAPK2', 'MAPKAPK3']",3
+DB08402,"2-[(2,4-DICHLOROBENZOYL)AMINO]-5-(PYRIMIDIN-2-YLOXY)BENZOIC ACID","['PPARG', 'NCOA2', 'RXRA']",3
+DB08437,Puromycin,"['RPL13A', 'RPL23', 'RPL15', 'RPL19', 'RPL23A', 'RSL24D1', 'RPL26L1', 'RPL8', 'RPL37', 'RPL3', 'RPL11']",11
+DB08453,2-Nonyl-4-quinolinol 1-oxide,"['CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",10
+DB08454,N-(5-METHYL-1H-PYRAZOL-3-YL)-2-PHENYLQUINAZOLIN-4-AMINE,"['AURKC', 'GSK3B', 'SRC', 'CAMK1D']",4
+DB08513,[4-({5-(AMINOCARBONYL)-4-[(3-METHYLPHENYL)AMINO]PYRIMIDIN-2-YL}AMINO)PHENYL]ACETIC ACID,"['MAPK1', 'INSR', 'IRS1']",3
+DB08515,"(3AR,6R,6AS)-6-((S)-((S)-CYCLOHEX-2-ENYL)(HYDROXY)METHYL)-6A-METHYL-4-OXO-HEXAHYDRO-2H-FURO[3,2-C]PYRROLE-6-CARBALDEHYDE","['PSMA1', 'PSMA2', 'PSMA3', 'PSMA4', 'PSMA5', 'PSMA6', 'PSMA7', 'PSMB1', 'PSMB2', 'PSMB3', 'PSMB4', 'PSMB5', 'PSMB6', 'PSMB7']",14
+DB08597,Dorsomorphin,"['PRKAA1', 'PRKAB1', 'PRKAG1', 'ACVR1', 'FKBP1A']",5
+DB08604,Triclosan,"['NR1I2', 'AR', 'NR1I3', 'PPARG']",4
+DB08689,Ubiquinone Q1,"['SDHA', 'SDHB', 'SDHD', 'SDHC']",4
+DB08690,Ubiquinone Q2,"['SDHA', 'SDHB', 'SDHC', 'SDHD', 'CYC1', 'MT-CYB', 'UQCRC1', 'UQCRC2', 'UQCRH', 'UQCRQ', 'UQCRFS1', 'UQCR11', 'UQCRB', 'UQCR10']",14
+DB08756,Y-27632,"['F2', 'PRKACA', 'ROCK1', 'ROCK2']",4
+DB08813,Nadroparin,"['SERPINC1', 'FOS', 'MYC']",3
+DB08818,Hyaluronic acid,"['CD44', 'ICAM1', 'LYVE1', 'C1QBP', 'HABP4']",5
+DB08846,Ellagic acid,"['HSPA1A', 'HSPA1B', 'GSK3B', 'CA2', 'SYK', 'SQLE', 'CSNK2A1', 'PRKACA', 'PRKCA']",9
+DB08868,Fingolimod,"['S1PR1', 'S1PR3', 'HDAC1']",3
+DB08877,Ruxolitinib,"['PLAUR', 'JAK2', 'JAK1', 'JAK3', 'TYK2']",5
+DB08888,Ocriplasmin,"['FN1', 'A2M', 'SERPINF2']",3
+DB08889,Carfilzomib,"['PSMB5', 'PSMB8', 'PSMB1', 'PSMB9', 'PSMB2', 'PSMB10']",6
+DB08895,Tofacitinib,"['JAK1', 'JAK2', 'JAK3', 'TYK2']",4
+DB08896,Regorafenib,"['FLT1', 'KDR', 'FLT4', 'PDGFRA', 'PDGFRB', 'FGFR1', 'FGFR2', 'TEK', 'EPHA2', 'RAF1', 'BRAF', 'MAPK11', 'FRK', 'ABL1']",14
+DB08901,Ponatinib,"['ABL1', 'BCR', 'TEK', 'FGFR1', 'FGFR2', 'FGFR3', 'FGFR4', 'LCK', 'SRC', 'LYN', 'KDR', 'PDGFRA']",12
+DB08912,Dabrafenib,"['BRAF', 'RAF1', 'LIMK1']",3
+DB08915,Aleglitazar,"['PPARA', 'PPARG', 'NCOA1']",3
+DB08951,Indoprofen,"['CXCR1', 'PTGS2', 'FABP1', 'PKM']",4
+DB09006,Clinofibrate,"['PPARA', 'PPARG', 'PPARD']",3
+DB09061,Cannabidiol,"['PPARG', 'TRPV1', 'CACNA1H', 'TRPM8', 'TRPV2', 'TRPV4', 'VDAC1', 'PTGS2', 'ACAT1', 'CYP17A1', 'HMGCR', 'GSR', 'CAT', 'SOD1']",14
+DB09065,Cobicistat,"['CYP3A4', 'CYP3A5', 'CYP3A7']",3
+DB09074,Olaparib,"['PARP1', 'PARP2', 'PARP3', 'AKR1C3']",4
+DB09078,Lenvatinib,"['FLT1', 'KDR', 'FLT4', 'FGFR1', 'FGFR2', 'FGFR3', 'FGFR4', 'PDGFRA']",8
+DB09079,Nintedanib,"['FLT1', 'KDR', 'FLT4', 'PDGFRA', 'PDGFRB', 'FGFR1', 'FGFR2', 'FGFR3', 'LCK', 'LYN', 'SRC']",11
+DB09086,Eugenol,"['MAOB', 'ESR1', 'AR']",3
+DB09092,Xanthinol,"['NNT', 'GAPDH', 'IDH3A', 'OGDH', 'MDH2', 'RPL3']",6
+DB09096,Benzoyl peroxide,"['CAT', 'PRKCA', 'SOD3']",3
+DB09109,Turoctocog alfa,"['F9', 'F10', 'F2']",3
+DB09116,Calcium carbimide,"['ALDH2', 'ALDH1B1', 'ALDH1A1']",3
+DB09130,Copper,"['APP', 'AHCY', 'GAPDH', 'NME1', 'PRDX1', 'S100A8', 'RPSA', 'ACTG1', 'ENO1', 'EEF1A1', 'KRT8', 'P4HB', 'PDIA3', 'HSPD1', 'HSPA13', 'HSPA5', 'HSP90B1', 'TF', 'LYAR', 'RPS2', 'SRSF1', 'HNRNPA2B1', 'HNRNPH1', 'HNRNPH3', 'HNRNPL', 'SFPQ', 'SF3A2', 'RACK1', 'ACTN1', 'ACY1', 'ANXA5', 'CALR', 'PKM', 'AKR1A1', 'CYB5R3', 'GSR', 'TKT', 'PRDX2', 'PRDX6', 'PPIA', 'HSPA8', 'HSP90AA1', 'PTGES3', 'STIP1', 'EIF6', 'EIF4A1', 'GPI', 'LDHA', 'PGK1', 'TUBB', 'CFL1', 'YWHAB', 'GOT1', 'GSS', 'HDGF', 'IDH3A', 'PSME1', 'PEBP1', 'PGAM1', 'RANBP1', 'UGDH', 'B2M', 'SCO1', 'PRNP', 'HTT', 'NEIL1', 'NEIL2', 'SERPINE1', 'S100A4', 'PARK7', 'A1BG', 'AGT', 'AHSG', 'APCS', 'APOA1', 'APOA2', 'APOA4', 'APOBR', 'APOC2', 'APOC3', 'APOD', 'APOE', 'APOH', 'C1QC', 'C1S', 'C3', 'C4B', 'C4BPA', 'C5', 'C8B', 'C9', 'CFH', 'CFI', 'CLEC3B', 'CLU', 'F2', 'C1QBP', 'GSN', 'HBA1', 'HBB', 'CBX5', 'HPR', 'IGFALS', 'ITIH2', 'KNG1', 'KRT1', 'KRT10', 'LRG1', 'LUM', 'PLG', 'PON1', 'PPBP', 'SERPINA1', 'SERPINA6', 'SERPINA7', 'SERPINC1', 'SERPIND1', 'SERPINF1', 'SERPINF2', 'SERPING1', 'TTR', 'VTN']",122
+DB09147,Ferric pyrophosphate,"['FTL', 'HBA1', 'HBB']",3
+DB09185,Viloxazine,"['ADRA1B', 'ADRB2', 'MAOA', 'MAOB']",4
+DB09213,Dexibuprofen,"['PTGS2', 'THBD', 'PLAT', 'PPARG', 'PPARA']",5
+DB09221,Polaprezinc,"['FLT1', 'NGF', 'PDGFRB', 'HSP90AA1', 'HSP90AB1']",5
+DB09228,Conestat alfa,"['C1R', 'C1S', 'KLKB1', 'F12', 'F2', 'F11', 'PLAT']",7
+DB09258,Bemiparin,"['F10', 'SERPINC1', 'SERPIND1']",3
+DB09273,Doxofylline,"['ADRB2', 'PDE2A', 'ADORA2A']",3
+DB09283,Trapidil,"['FGFR3', 'PDE4A', 'PDGFRB']",3
+DB09285,Morniflumate,"['PTGS2', 'ALOX5', 'LTB4R', 'TBXA2R']",4
+DB09332,Kappadione,"['F2', 'F7', 'F9', 'F10', 'PROC', 'GGCX', 'PROS1']",7
+DB09371,Norethynodrel,"['ESR1', 'AR', 'SHBG']",3
+DB09462,Glycerin,"['PPARD', 'ISYNA1', 'ADH1B', 'ITPR1', 'NAGA', 'ARF1', 'PAPSS1', 'GSTZ1']",8
+DB09517,Sodium ferric gluconate complex,"['FTL', 'HBB', 'HBA1']",3
+DB09568,Omega-3-carboxylic acids,"['DGAT2', 'HSD17B10', 'ECHS1', 'HADH']",4
+DB10770,Foreskin fibroblast (neonatal),"['FLT1', 'IL1R1', 'TGFBR2', 'FGFR2', 'PDGFRB', 'TGFB1']",6
+DB10772,Foreskin keratinocyte (neonatal),"['EGFR', 'PDGFRA', 'TGFBR2', 'TGFB1', 'FGFR2']",5
+DB11093,Calcium citrate,"['CALR', 'CIB1', 'PDCD6', 'SRI', 'CHP1', 'SPARC', 'CANX', 'RGN', 'PEF1', 'S100A6', 'TPT1', 'S100A13', 'CALM2', 'CALM3', 'NCS1', 'CALM1']",16
+DB11124,Racepinephrine,"['ADRA1A', 'ADRA1B', 'ADRA2B', 'ADRB2']",4
+DB11133,Omega-3 fatty acids,"['PPARG', 'PPARA', 'SREBF1']",3
+DB11294,Coccidioides immitis spherule,"['HLA-DRA', 'HLA-A', 'HLA-B']",3
+DB11300,Thrombin,"['F11', 'F13B', 'FGA', 'FGB', 'FGG', 'F5', 'F8', 'F2R']",8
+DB11311,Prothrombin,"['FGA', 'FGB', 'CPB2']",3
+DB11338,Clove oil,"['VCAM1', 'CXCL10', 'COL1A1']",3
+DB11348,Calcium Phosphate,"['CALR', 'CIB1', 'PDCD6', 'SRI', 'CHP1', 'SPARC', 'CANX', 'RGN', 'PEF1', 'S100A6', 'TPT1', 'S100A13', 'CALM2', 'CALM3', 'NCS1', 'CALM1']",16
+DB11428,Medetomidine,"['ADRA1B', 'ADRA2B', 'ADRA1A']",3
+DB11571,Human thrombin,"['F5', 'F8', 'F11', 'F13B', 'FGA', 'FGB', 'FGG']",7
+DB11572,Thrombin alfa,"['F5', 'F8', 'FGA', 'FGB', 'FGG']",5
+DB11605,Myrrh,"['NR1H4', 'NR1I2', 'PPARA']",3
+DB11619,Gestrinone,"['NR3C1', 'AR', 'ESR1', 'SHBG']",4
+DB11629,Laropiprant,"['HMGCR', 'TBXA2R', 'PTGIR']",3
+DB11638,Artenimol,"['ACTG1', 'ALDH7A1', 'ANXA2', 'CAST', 'CCT3', 'CFL1', 'DPYSL2', 'DSP', 'EEF1A1', 'ENO1', 'FLNA', 'FTO', 'G6PD', 'GPI', 'HNRNPA2B1', 'HNRNPD', 'HNRNPK', 'HSPB1', 'IQGAP1', 'KHSRP', 'LDHA', 'LGALS1', 'PFN1', 'PGK1', 'PKM', 'PPIA', 'PRDX1', 'RPL10', 'RPL14', 'RPL18', 'RPL23A', 'RPL35', 'RPL4', 'RPS13', 'RPS17', 'RPS18', 'RPS19', 'RPS28', 'RPS5', 'RPS6', 'RPS8', 'RPS9', 'SF1', 'SFPQ', 'SNRPD2', 'SRP14', 'SRSF4', 'TAGLN', 'TPI1', 'TPM1', 'TUBA1A', 'VIM', 'ZYX', 'HSPA8', 'TUBB6', 'TUBB', 'ALDOA', 'GAPDH', 'CYCS', 'PGAM1', 'MYH9', 'P4HB', 'DDX5', 'SHMT2', 'DDX39B', 'NPM1', 'OAT', 'GAPDH', 'VAPA', 'ALB']",70
+DB11665,BMS-690514,"['KDR', 'EGFR', 'ERBB2']",3
+DB11666,Buparlisib,"['PIK3CD', 'PIK3CB', 'PIK3CA']",3
+DB11672,Curcumin,"['CYP3A4', 'XDH', 'MMP9', 'PTGS2', 'APP', 'CA2', 'PPARG', 'ABCC5', 'CBR1', 'GSTP1']",10
+DB11679,Fruquintinib,"['FLT1', 'KDR', 'FLT4']",3
+DB11693,Voclosporin,"['CAMLG', 'PPP3CA', 'PPP3R1']",3
+DB11718,Encorafenib,"['BRAF', 'CCND1', 'RAF1', 'MAPK8', 'MAPK9', 'LIMK1', 'LIMK2', 'MAP2K4', 'STK36']",9
+DB11741,Famitinib,"['PDGFRA', 'PDGFRB', 'FLT1', 'FLT4', 'KDR']",5
+DB11752,Bryostatin 1,"['PRKCE', 'PRKCA', 'CASP8', 'PTGS2', 'CCND1', 'UNC13B']",6
+DB11759,Pevonedistat,"['UBA3', 'NEDD8', 'NAE1']",3
+DB11763,Momelotinib,"['JAK1', 'JAK2', 'JAK3', 'TYK2', 'ACVR1']",5
+DB11767,Sarilumab,"['IL6R', 'FCGR2A', 'FCGR2B', 'FCGR3A', 'FCGR3B']",5
+DB11800,Tivozanib,"['FLT1', 'KDR', 'FLT4', 'PDGFRB', 'PDGFRA', 'PTK6', 'TEK', 'FGFR1', 'MET']",9
+DB11817,Baricitinib,"['JAK1', 'JAK2', 'JAK3', 'TYK2']",4
+DB11828,Neratinib,"['KDR', 'ERBB2', 'EGFR']",3
+DB11830,Mocetinostat,"['HDAC1', 'HDAC3', 'HDAC2']",3
+DB11845,Lucitanib,"['FGFR1', 'FGFR2', 'KDR', 'PDGFRA', 'FGFR3', 'FLT4', 'PDGFRB', 'FLT1']",8
+DB11870,RG-4733,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1']",5
+DB11886,Infigratinib,"['FGFR1', 'FGFR2', 'FGFR3', 'FGFR4']",4
+DB11893,Avagacestat,"['APH1A', 'NCSTN', 'APH1B', 'PSENEN', 'PSEN1']",5
+DB11994,Diacerein,"['NR1H3', 'NR1H2', 'ALOX5', 'CYP1A2', 'CYP3A4', 'CYP2E1', 'CYP2C9', 'CYP2D6']",8
+DB12005,Nirogacestat,"['APH1B', 'NCSTN', 'PSEN1', 'PSENEN', 'APH1A', 'PSEN2']",6
+DB12010,Fostamatinib,"['SYK', 'FAAH', 'UGT1A1', 'ALOX5', 'CTSS', 'CTSL', 'ABL1', 'TYK2', 'COQ8A', 'JAK1', 'MET', 'STK26', 'PRKACA', 'STK24', 'STK3', 'TEC', 'STK35', 'STK36', 'STK38', 'STK38L', 'TAOK1', 'TAOK2', 'TAOK3', 'TBK1', 'TEK', 'TESK1', 'TGFBR1', 'TGFBR2', 'TLK1', 'TLK2', 'TNIK', 'TNK2', 'TXK', 'ULK1', 'ULK2', 'ULK3', 'WEE1', 'YES1', 'MAP3K20', 'ZAP70', 'AAK1', 'ABL2', 'ACVR1', 'ACVR1B', 'COQ8B', 'AURKA', 'AURKC', 'AXL', 'BMPR2', 'BRAF', 'CAMK1', 'CAMK1D', 'CAMK2B', 'CAMK2D', 'CAMK2G', 'CAMKK2', 'CASK', 'CDK4', 'CHEK2', 'CLK1', 'CLK4', 'CSF1R', 'CSK', 'CSNK1A1', 'CSNK2A1', 'CSNK2A2', 'DAPK1', 'DAPK3', 'DYRK1A', 'DYRK1B', 'EGFR', 'EIF2AK1', 'EIF2AK2', 'EIF2AK4', 'EPHA1', 'EPHA2', 'EPHB4', 'EPHB6', 'ERBB2', 'ERN1', 'FES', 'FGFR1', 'FGFR2', 'FGFR3', 'FGR', 'FLT1', 'FLT4', 'MTOR', 'FRK', 'FYN', 'GAK', 'GSK3A', 'GSK3B', 'HCK', 'HIPK2', 'HIPK3', 'IKBKB', 'INSR', 'IRAK1', 'IRAK3', 'IRAK4', 'JAK2', 'JAK3', 'KDR', 'LATS1', 'LCK', 'LIMK1', 'LIMK2', 'LRRK2', 'LYN', 'MAP2K2', 'MAP2K3', 'MAP2K5', 'MAP3K1', 'MAP3K10', 'MAP3K11', 'MAP3K12', 'MAP3K13', 'MAP3K2', 'MAP3K3', 'MAP3K4', 'MAP3K6', 'MAP4K1', 'MAP4K2', 'MAP4K3', 'MAP4K4', 'MAP4K5', 'MAPK13', 'MAPK14', 'MAPK7', 'MAPK9', 'MAPKAPK5', 'MARK3', 'MARK4', 'CLASP1', 'MERTK', 'MINK1', 'MKNK1', 'MKNK2', 'MYLK', 'NEK1', 'NEK9', 'NUAK1', 'OXSR1', 'PAK1', 'PAK2', 'PAK4', 'PDGFRA', 'PDGFRB', 'PDPK1', 'PI4KB', 'PIK3C2B', 'PIK3C2G', 'PIK3CD', 'PIM1', 'PIP4K2B', 'PIP4K2C', 'PKN1', 'PKN2', 'PLK1', 'PLK2', 'PLK3', 'PRKAA1', 'PRKAA1', 'PRKACB', 'PRKCD', 'PRKCE', 'PRKCI', 'PTK2', 'PTK2B', 'PTK6', 'RAF1', 'RIOK1', 'RIOK2', 'RIOK3', 'RIPK1', 'RIPK2', 'RIPK4', 'ROCK2', 'RPS6KA1', 'RPS6KA3', 'SGK3', 'SIK2', 'SLK', 'SRC']",185
+DB12025,Triptolide,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL']",5
+DB12058,Recoflavone,"['NFKB1', 'RELB', 'NFKB2', 'RELA', 'REL']",5
+DB12072,Orantinib,"['KDR', 'AURKA', 'FGFR1', 'PPARG']",4
+DB12085,LCL-161,"['XIAP', 'BIRC2', 'BIRC3']",3
+DB12116,Epigallocatechin gallate,"['FASN', 'STAT3', 'MMP14', 'MMP2', 'SQLE', 'TGM2', 'AHR', 'DNMT1', 'DHFR2']",9
+DB12147,Erdafitinib,"['FGFR1', 'FGFR2', 'FGFR3', 'FGFR4', 'CSF1R', 'PDGFRA', 'PDGFRB', 'KDR']",8
+DB12151,Brincidofovir,"['POLD4', 'POLD1', 'POLB', 'POLG2', 'POLG', 'POLE2']",6
+DB12218,Capivasertib,"['AKT1', 'AKT2', 'AKT3']",3
+DB12255,Vadadustat,"['EGLN1', 'EGLN2', 'HIF1A', 'EPAS1']",4
+DB12263,Begacestat,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1']",5
+DB12267,Brigatinib,"['EGFR', 'ABL1', 'INSR', 'MET', 'ERBB2']",5
+DB12307,Foretinib,"['MET', 'KDR', 'HGF']",3
+DB12319,Benzbromarone,"['ABCC1', 'CYP2C9', 'CYP2C19']",3
+DB12332,Rucaparib,"['PARP1', 'PARP2', 'PARP3']",3
+DB12340,Navitoclax,"['BCL2L1', 'CCND1', 'BCL2L2', 'BAD']",4
+DB12350,Rostafuroxin,"['ATP1B1', 'ATP1B2', 'ATP1B3', 'ATP1A1']",4
+DB12429,CI-1040,"['MAP3K1', 'MAP3K2', 'SGK1', 'MAPK1', 'RPS6KB1', 'ROCK1', 'MAPK8', 'PRKCA', 'MAPK11', 'MAPK14', 'LCK', 'GSK3B', 'AKT1']",13
+DB12463,Semagacestat,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1']",5
+DB12483,Copanlisib,"['PIK3CA', 'PIK3CD', 'PIK3CB']",3
+DB12509,Imeglimin,"['PRKAA1', 'PRKAB1', 'PRKAG1']",3
+DB12571,Rimacalib,"['CAMK2B', 'CAMK2D', 'CAMK2G']",3
+DB12582,Piperine,"['MAOA', 'MAOB', 'NR1I2']",3
+DB12598,Nafamostat,"['F2', 'F10', 'F12', 'PRSS1', 'ICAM1']",5
+DB12610,Ebselen,"['ALB', 'KDM4A', 'EPHX2']",3
+DB12645,Givinostat,"['HDAC1', 'JAK2', 'HDAC1']",3
+DB12695,Phenethyl Isothiocyanate,"['ACTA2', 'ACTB', 'CYB5B', 'DIABLO', 'HNRNPF', 'HNRNPK', 'HSPA4', 'HSPB1', 'HSPE1', 'HSPH1', 'MT-ND1', 'NUDC', 'PSMA3', 'PSMC3', 'RANBP1', 'S100A10', 'SF3A3', 'SMARCE1', 'SUCLG2', 'TPM1', 'TPM3', 'TPM4', 'TUBA1A', 'TUBA4A', 'TUBB2A', 'TUBB4B', 'TXN', 'USP14', 'VCP', 'VIM', 'YWHAB', 'YWHAE', 'YWHAH', 'YWHAQ', 'YWHAZ']",35
+DB12808,Trifarotene,"['RARG', 'RARB', 'RARA']",3
+DB12816,Terpinen-4-ol,"['ACHE', 'XIAP', 'NFKB2']",3
+DB12819,GSI-136,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1']",5
+DB12831,Gabexate,"['KLKB1', 'F2', 'PLG']",3
+DB12843,Oleandrin,"['ATP1A1', 'ATP1B1', 'ATP1B2', 'ATP1B3', 'MMP9', 'MMP2', 'NGF', 'CASP3', 'CASP8', 'CXCL8', 'MTOR', 'NFKB2']",12
+DB12852,MK-0752,"['PSENEN', 'NCSTN', 'APH1B', 'PSEN1', 'APH1A']",5
+DB12893,Sacituzumab govitecan,"['TACSTD2', 'TOP1', 'FUBP1']",3
+DB12903,DEBIO-1347,"['FGFR1', 'FGFR2', 'FGFR3']",3
+DB12961,Leukotriene B4,"['LTB4R', 'LTB4R2', 'PPARA']",3
+DB12965,Silver,"['CP', 'ALB', 'A2M']",3
+DB13051,CH-5132799,"['PIK3CB', 'PIK3CD', 'PIK3CA']",3
+DB13063,Parthenolide,"['REL', 'RELB', 'IKBKB', 'NFKB1', 'NFKB2', 'RELA']",6
+DB13133,Von Willebrand factor human,"['F8', 'COL1A1', 'LRP1']",3
+DB13149,Protein S human,"['F5', 'F10', 'PROC']",3
+DB13150,Coagulation factor VII human,"['F3', 'F10', 'F9']",3
+DB13151,Anti-inhibitor coagulant complex,"['F10', 'F2', 'FGA', 'FGB', 'F5', 'F8', 'F7']",7
+DB13152,Coagulation Factor IX Human,"['F10', 'F11', 'F7', 'F8', 'F2', 'LRP1', 'GGCX']",7
+DB13174,Rhein,"['HSP90AA1', 'NR1H3', 'NR1H2', 'ALOX5']",4
+DB13182,Daidzein,"['ESRRA', 'ESR1', 'AKR1B1']",3
+DB13191,Phosphocreatine,"['GAMT', 'SLC6A8', 'CKM', 'CKB']",4
+DB13346,Bufexamac,"['PTGS2', 'HDAC6', 'HDAC10']",3
+DB13616,Melagatran,"['F2', 'PLG', 'PRSS1', 'F10']",4
+DB13729,Camostat,"['PRSS1', 'TMPRSS2', 'ST14']",3
+DB13751,Glycyrrhizic acid,"['HSD11B1', 'CASP3', 'NFKB2']",3
+DB13873,Fenofibric acid,"['PPARA', 'FABP1', 'MMP25', 'PPARG', 'PPARD', 'NR1I2']",6
+DB13874,Enasidenib,"['IDH1', 'IDH3A', 'IDH3B', 'IDH3G', 'IDH2']",5
+DB13933,Nonacog beta pegol,"['F7', 'F8', 'F10']",3
+DB13943,Testosterone cypionate,"['AR', 'ESR1', 'NR3C2']",3
+DB13944,Testosterone enanthate,"['AR', 'ESR1', 'NR3C2']",3
+DB13951,Stanolone acetate,"['AR', 'ESR1', 'NR3C2']",3
+DB13952,Estradiol acetate,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",8
+DB13953,Estradiol benzoate,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",8
+DB13954,Estradiol cypionate,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",8
+DB13955,Estradiol dienanthate,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",8
+DB13956,Estradiol valerate,"['ESR1', 'NR1I2', 'CHRNA4', 'NCOA2', 'GPER1', 'MT-ATP6', 'BECN1', 'HSD17B2']",8
+DB13961,Fish oil,"['DGAT2', 'PTGS2', 'NFKB2', 'SREBF1', 'PPARA', 'PPARG', 'PPARD']",7
+DB13995,Ferric pyrophosphate citrate,"['FTL', 'FTH1', 'HBA1', 'HBB']",4
+DB13998,Lonoctocog alfa,"['F10', 'F9', 'VWF', 'PHYH', 'HSPA5', 'CALR', 'CANX', 'LMAN1', 'LRP1', 'MCFD2']",10
+DB13999,Moroctocog alfa,"['F10', 'F9', 'VWF', 'PHYH', 'HSPA5', 'CALR', 'CANX', 'LMAN1', 'LRP1', 'MCFD2']",10
+DB14001,alpha-Tocopherol succinate,"['NR1I2', 'ALOX5', 'PRKCA']",3
+DB14002,D-alpha-Tocopherol acetate,"['NR1I2', 'ALOX5', 'PRKCA']",3
+DB14006,Choline salicylate,"['ACHE', 'PCYT1A', 'PLD2', 'BCHE', 'PLD1']",5
+DB14009,Medical Cannabis,"['PPARG', 'TRPV1', 'CACNA1H', 'TRPM8', 'TRPV2', 'TRPV4', 'VDAC1', 'NAPEPLD', 'SOD1', 'FAAH', 'CAT', 'SMPD1', 'GSR', 'HMGCR', 'PTGS2', 'CYP17A1', 'ACAT1']",17
+DB14011,Nabiximols,"['PPARG', 'TRPV1', 'CACNA1H', 'TRPM8', 'TRPV2', 'TRPV4', 'VDAC1', 'PTGS2', 'ACAT1', 'CYP17A1', 'HMGCR', 'GSR', 'CYP1B1', 'CYP3A5', 'CYP2D6', 'CYP1A2', 'CYP1A1', 'CYP3A7', 'CAT', 'FAAH', 'SOD1']",21
+DB14059,SC-236,"['PTGS2', 'PTGS2', 'NFKB2']",3
+DB14128,Nadide,"['GAA', 'GANAB', 'GANC', 'BLVRA', 'ALDH2', 'HMGCR', 'GSR', 'IMPDH2']",8
+DB14185,Aripiprazole lauroxil,"['ADRA1A', 'ADRA1B', 'ADRA2B']",3
+DB14481,Calcium phosphate dihydrate,"['CALR', 'CIB1', 'PDCD6', 'SRI', 'CHP1', 'SPARC', 'CANX', 'RGN', 'PEF1', 'S100A6', 'TPT1', 'S100A13', 'CALM2', 'CALM3', 'NCS1', 'CALM1']",16
+DB14487,Zinc acetate,"['MGMT', 'ALDOA', 'EEF1A1', 'ENO1', 'NME1', 'P4HB', 'PDIA3', 'PRDX1', 'PSPH', 'TPI1', 'TUFM', 'ESR1', 'CCS', 'HDAC1', 'HDAC4', 'SOD1', 'HDAC8', 'SIVA1', 'MDM2', 'UTRN', 'ASPA', 'S100A8', 'S100A9', 'MMP9', 'TP53', 'PDCD6', 'A1BG', 'A2M', 'AGT', 'AHSG', 'APCS', 'APOA1', 'APOA2', 'APOA4', 'APOBR', 'APOE', 'APOL1', 'C1QB', 'C1QC', 'C1R', 'C1S', 'C3', 'C4B', 'C4BPA', 'C4BPB', 'C5', 'BRCC3', 'C8A', 'C8B', 'C8G', 'CFB', 'CFH', 'CFI', 'CLU', 'CP', 'DSP', 'F12', 'F13B', 'F2', 'FCN3', 'FGA', 'FN1', 'GSN', 'HBA1', 'HBB', 'HPR', 'IGFALS', 'ITIH1', 'ITIH2', 'ITIH3', 'ITIH4', 'JCHAIN', 'JUP', 'KLKB1', 'KNG1', 'KRT1', 'KRT10', 'KRT5', 'KRT6A', 'ORM2', 'PON1', 'SELENOP', 'SERPINA1', 'SERPINA3', 'SERPINA6', 'SERPIND1', 'SHBG', 'TF', 'TTR', 'VTN', 'APLP2', 'APP', 'PARP1']",93
+DB14488,Ferrous gluconate,"['TFRC', 'EGLN1', 'HDAC8', 'HBA1', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB14489,Ferrous succinate,"['TFRC', 'EGLN1', 'HDAC8', 'HBA1', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB14490,Ferrous ascorbate,"['TFRC', 'EGLN1', 'HDAC8', 'HBA1', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB14491,Ferrous fumarate,"['TFRC', 'EGLN1', 'HDAC8', 'HBA1', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB14501,Ferrous glycine sulfate,"['TFRC', 'EGLN1', 'HDAC8', 'HBA1', 'FXN', 'FTH1', 'FEN1', 'NEIL1', 'NEIL2', 'POLB', 'CP', 'TF']",12
+DB14507,Lithium citrate,"['IMPA2', 'IMPA1', 'GSK3B']",3
+DB14508,Lithium succinate,"['IMPA2', 'IMPA1', 'GSK3B']",3
+DB14509,Lithium carbonate,"['IMPA2', 'IMPA1', 'GSK3B']",3
+DB14511,Acetate,"['CALM1', 'SOD1', 'ABAT', 'PTPN1', 'HPD', 'NOS3', 'TXN', 'CA2', 'LTA4H', 'CALM2', 'CALM3', 'AKR1C3']",12
+DB14517,Aluminium phosphate,"['TF', 'ATP1A1', 'APP']",3
+DB14518,Aluminum acetate,"['TF', 'ATP1A1', 'APP']",3
+DB14533,Zinc chloride,"['MGMT', 'ALDOA', 'EEF1A1', 'ENO1', 'NME1', 'P4HB', 'PDIA3', 'PRDX1', 'PSPH', 'TPI1', 'TUFM', 'ESR1', 'CCS', 'HDAC1', 'HDAC4', 'SOD1', 'HDAC8', 'SIVA1', 'MDM2', 'UTRN', 'ASPA', 'S100A8', 'S100A9', 'MMP9', 'TP53', 'A2M', 'AHSG', 'APOA1', 'APOBR', 'APOE', 'APOL1', 'C1QB', 'C1QC', 'C1R', 'C1S', 'C3', 'C4B', 'C4BPA', 'C4BPB', 'C5', 'BRCC3', 'CFH', 'CLU', 'CP', 'FGA', 'FN1', 'HBA1', 'HBB', 'HP', 'IGFALS', 'ITIH1', 'ITIH2', 'ITIH3', 'ITIH4', 'JCHAIN', 'KLKB1', 'KNG1', 'ORM2', 'PON1', 'SELENOP', 'SERPINA1', 'SERPINA3', 'SERPINA6', 'SERPIND1', 'SHBG', 'TF', 'TTR', 'VTN', 'APLP2', 'APP', 'PARP1', 'APOB', 'HPX', 'HRG', 'F11']",75
+DB14538,Hydrocortisone aceponate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14539,Hydrocortisone acetate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14540,Hydrocortisone butyrate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14541,Hydrocortisone cypionate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14542,Hydrocortisone phosphate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14543,Hydrocortisone probutate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14544,Hydrocortisone valerate,"['ANXA1', 'NR3C1', 'HSD11B2']",3
+DB14548,"Zinc sulfate, unspecified form","['MGMT', 'ALDOA', 'EEF1A1', 'ENO1', 'NME1', 'P4HB', 'PDIA3', 'PRDX1', 'PSPH', 'TPI1', 'TUFM', 'ESR1', 'CCS', 'HDAC1', 'HDAC4', 'SOD1', 'HDAC8', 'SIVA1', 'MDM2', 'UTRN', 'ASPA', 'S100A8', 'S100A9', 'MMP9', 'TP53', 'A2M', 'AHSG', 'APOA1', 'APOBR', 'APOE', 'APOL1', 'C1QB', 'C1QC', 'C1R', 'C1S', 'C3', 'C4B', 'C4BPA', 'C4BPB', 'C5', 'BRCC3', 'CFH', 'CLU', 'CP', 'FGA', 'FN1', 'HBA1', 'HBB', 'HP', 'IGFALS', 'ITIH1', 'ITIH2', 'ITIH3', 'ITIH4', 'JCHAIN', 'KLKB1', 'KNG1', 'ORM2', 'PON1', 'SELENOP', 'SERPINA1', 'SERPINA3', 'SERPINA6', 'SERPIND1', 'SHBG', 'TF', 'TTR', 'VTN', 'APLP2', 'APP', 'PARP1', 'APOB', 'HPX', 'HRG', 'F11']",75
+DB14635,Curcumin sulfate,"['PPARG', 'ABCC5', 'CBR1', 'GSTP1']",4
+DB14649,Dexamethasone acetate,"['NR3C1', 'ANXA1', 'NR1I2']",3
+DB14738,Turoctocog alfa pegol,"['F9', 'F10', 'F2', 'VWF']",4
+DB14801,Lanifibranor,"['PPARA', 'PPARD', 'PPARG']",3
+DB14840,Ripretinib,"['PDGFRB', 'TEK', 'KDR', 'BRAF', 'PDGFRA']",5
+DB14924,Ritlecitinib,"['JAK3', 'TEC', 'TXK']",3
+DB14973,Abrocitinib,"['JAK1', 'JAK2', 'JAK3', 'TYK2']",4
+DB14979,Martinostat,"['HDAC7', 'HDAC8', 'HDAC4', 'HDAC5', 'HDAC6', 'HDAC2', 'HDAC3', 'HDAC1']",8
+DB14989,Umbralisib,"['CSNK1E', 'PIK3CD', 'ABL1']",3
+DB15010,Edasalonexent,"['NFKB1', 'RELB', 'NFKB2', 'RELA', 'REL']",5
+DB15035,Zanubrutinib,"['EGFR', 'ERBB2', 'JAK2', 'TEC', 'JAK3', 'PTK6', 'FGR', 'FRK', 'LCK', 'TXK']",10
+DB15036,Sitravatinib,"['MET', 'FLT4', 'KDR']",3
+DB15102,Pemigatinib,"['FGFR1', 'FGFR2', 'FGFR3', 'FGFR4']",4
+DB15106,Surufatinib,"['FGFR1', 'KDR', 'FLT4', 'CSF1R', 'FLT1']",5
+DB15149,Futibatinib,"['FGFR1', 'FGFR2', 'FGFR3', 'FGFR4']",4
+DB15254,Avutometinib,"['ARAF', 'BRAF', 'RAF1']",3
+DB15266,Tovorafenib,"['RAF1', 'ARAF', 'BRAF']",3
+DB15431,M-2698,"['AKT1', 'AKT3', 'RPS6KB1']",3
+DB15442,Trilaciclib,"['CDK4', 'CDK6', 'CDK9', 'CDK2', 'CDK5', 'CDK7']",6
+DB15493,Cambinol,"['SIRT1', 'SIRT2', 'SIRT5']",3
+DB15495,Rocaglamide,"['RELB', 'NFKB2', 'RELA', 'REL', 'NFKB1', 'PHB2']",6
+DB15499,Cerdulatinib,"['JAK3', 'JAK2', 'SYK', 'JAK1']",4
+DB15581,Chrysin,"['AKR1B1', 'CYP1B1', 'CDK6']",3
+DB15584,Luteolin,"['STAT3', 'LPCAT1', 'TOP1']",3
+DB15588,Ursolic acid,"['HSD11B1', 'PTPN1', 'HRAS']",3
+DB15685,Selpercatinib,"['FLT1', 'FLT4', 'FGFR1', 'FGFR2', 'FGFR3']",5
+DB15822,Pralsetinib,"['JAK1', 'JAK2', 'KDR', 'PDGFRB', 'FGFR1', 'FGFR2']",6
+DB16063,2X-121,"['PARP1', 'TNKS', 'TNKS2', 'PARP2']",4
+DB16095,APG-1387,"['XIAP', 'BIRC2', 'BIRC3']",3
+DB16101,Baicalein,"['GLO1', 'XDH', 'SELL', 'PREP', 'ALOX5']",5
+DB16133,Delgocitinib,"['JAK1', 'JAK2', 'JAK3', 'TYK2']",4
+DB16159,Esflurbiprofen,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1', 'PSEN2', 'PTGS2']",7
+DB16213,Ladostigil,"['MAOB', 'MAOA', 'ACHE']",3
+DB16305,Xevinapant,"['XIAP', 'BIRC2', 'BIRC3']",3
+DB16332,Sodelglitazar,"['PPARD', 'PPARG', 'PPARA']",3
+DB16407,Azvudine,"['ABCG2', 'ABCC2', 'ABCB1']",3
+DB16656,Zotiraciclib,"['CDK2', 'CDK9', 'FYN', 'LCK']",4
+DB16662,Efanesoctocog alfa,"['F9', 'F10', 'HSPG2']",3
+DB16695,Amivantamab,"['EGFR', 'MET', 'FCGR3A']",3
+DB16825,Itanapraced,"['APH1B', 'NCSTN', 'APH1A', 'PSENEN', 'PSEN1']",5
+DB17029,Go-6976,"['RELB', 'NFKB1', 'NFKB2', 'RELA', 'REL', 'PRKCZ']",6
+DB17041,PD-173952,"['PDGFRA', 'SRC', 'LCK', 'PDGFRB', 'FGFR1']",5
+DB17097,Vorasidenib,"['IDH3A', 'IDH3B', 'IDH3G', 'IDH1', 'IDH2']",5
+DB17191,Altiratinib,"['KDR', 'TEK', 'MET']",3
+DB17383,FN-1501,"['CDK2', 'CDK4', 'CDK6']",3
+DB17490,NT-219,"['IRS2', 'IRS1', 'STAT3']",3
+DB18267,Ferroheme,"['HMOX1', 'PTGS2', 'CBS', 'ALOX5', 'NOS3', 'HBA1', 'CYP3A4']",7
+DB18804,Tepilamide fumarate,"['NFKB1', 'RELB', 'NFKB2', 'RELA', 'REL']",5
+DB18847,Deuruxolitinib,"['JAK2', 'JAK1', 'TYK2']",3
+DB19199,ABBV-744,"['BRD3', 'BRD2', 'BRD4']",3

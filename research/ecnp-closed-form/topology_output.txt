@@ -1,0 +1,23 @@
+SAME DIRECT HITS, DIFFERENT TOPOLOGY
+==================================================
+| Direct | Non-DILI Type | Z-score |
+|--------|---------------|---------|
+| 0 | High-influence | +12.76 |
+| 0 | Low-influence  | -0.07 |
+| 0 | DIFFERENCE     | +12.83 |
+|--------|---------------|---------|
+| 1 | High-influence | +10.30 |
+| 1 | Low-influence  | +1.31 |
+| 1 | DIFFERENCE     | +8.99 |
+|--------|---------------|---------|
+| 2 | High-influence | +12.66 |
+| 2 | Low-influence  | +0.68 |
+| 2 | DIFFERENCE     | +11.98 |
+|--------|---------------|---------|
+| 3 | High-influence | +13.90 |
+| 3 | Low-influence  | +8.02 |
+| 3 | DIFFERENCE     | +5.88 |
+|--------|---------------|---------|
+
+If ECNP captures topology, high-influence should score HIGHER
+than low-influence with SAME direct hit count.

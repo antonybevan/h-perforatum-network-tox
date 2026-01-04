@@ -1,0 +1,20 @@
+============================================================
+FORENSIC DATA INTEGRITY AUDIT
+============================================================
+Dataset Size: 706 rows
+
+[1] Missing Value Check:
+    PASS: No missing values found.
+
+[2] Control Spot Checks (Row Alignment):
+    ACETAMINOPHEN: Label=1 (Exp: 1) | k_log=1.95 (Appx Targets=6.0) [OK] 
+    AMOXICILLIN: Label=1 (Exp: 1) | k_log=0.69 (Appx Targets=1.0) [OK] 
+    IBUPROFEN: Label=1 (Exp: 1) | k_log=2.64 (Appx Targets=13.0) [OK] 
+    PASS: Known drugs are aligned with labels.
+
+[3] Feature Distribution Check:
+    Network Coverage range: [0.0000, 1.0000]
+    PASS: Coverage is valid.
+    Labels present: [0 1]
+
+Audit Complete.

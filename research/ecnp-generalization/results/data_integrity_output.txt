@@ -1,0 +1,123 @@
+======================================================================
+DATA INTEGRITY REVALIDATION
+======================================================================
+
+--- Loading Datasets ---
+Tier 1 (PubChem): 901 drugs
+Tier 2 (DrugBank): 202 drugs
+Original DILIrank: 1336 drugs
+
+======================================================================
+CHECK 1: COLUMN STRUCTURE
+======================================================================
+
+Tier 1 columns: ['dilirank_name', 'smiles', 'is_dili', 'dili_concern', 'ltkb_id']
+
+Tier 2 columns (first 15): ['drugbank_id', 'drug_name', 'dilirank_name', 'n_targets', 'dilirank', 'is_dili', 'Z', 'I_T', 'mu_T', 'pool_size', 'smiles', 'targets', 'target_list', 'logp', 'mw']...
+
+======================================================================
+CHECK 2: OVERLAP ANALYSIS
+======================================================================
+Tier 1 unique names: 901
+Tier 2 unique names (drug_name): 202
+Tier 2 unique names (dilirank_name): 164
+Overlap (drug_name): 81
+Overlap (dilirank_name): 164
+
+Matched drugs with both labels: 202
+
+======================================================================
+CHECK 3: LABEL CONSISTENCY
+======================================================================
+Labels match: 200
+Labels mismatch: 2
+
+[!] LABEL MISMATCHES:
+  aminosalicylic acid: Tier1=0, Tier2=1
+  aminosalicylic acid: Tier1=0, Tier2=1
+
+======================================================================
+CHECK 4: SMILES CONSISTENCY
+======================================================================
+SMILES match (canonical): 202
+SMILES mismatch: 0
+
+======================================================================
+CHECK 5: CLASS BALANCE COMPARISON
+======================================================================
+
+Tier 1 (901 drugs):
+  DILI+: 537 (59.6%)
+  DILI-: 364 (40.4%)
+
+Tier 2 (202 drugs):
+  DILI+: 132 (65.3%)
+  DILI-: 70 (34.7%)
+
+
+======================================================================
+CHECK 6: ORIGINAL DILIRANK LABEL DISTRIBUTION
+======================================================================
+vDILI-Concern
+vNo-DILI-concern          413
+Ambiguous-DILI-concern    354
+vLess-DILI-concern        351
+vMost-DILI-concern        215
+vMOST-DILI-concern          2
+vNo-DILI-Concern            1
+Name: count, dtype: int64
+
+[Verifying binary conversion logic:]
+DILI+ = vMost-DILI-concern OR vLess-DILI-concern
+DILI- = vNo-DILI-concern
+Excluded = Ambiguous-DILI-concern
+
+======================================================================
+CHECK 7: TIER 2 DATA SOURCE
+======================================================================
+Tier 2 has 'dilirank' column with values:
+dilirank
+vLess-DILI-concern    74
+vNo-DILI-concern      70
+vMost-DILI-concern    56
+vMOST-DILI-concern     2
+Name: count, dtype: int64
+
+Checking is_dili vs dilirank consistency:
+  dilirank='vNo-DILI-concern': is_dili values = [0]
+  dilirank='vMost-DILI-concern': is_dili values = [1]
+  dilirank='vLess-DILI-concern': is_dili values = [1]
+  dilirank='vMOST-DILI-concern': is_dili values = [1]
+
+======================================================================
+CHECK 8: POTENTIAL CAUSES OF AUC DISCREPANCY
+======================================================================
+
+Tier 1 AUC: 0.758 (901 drugs)
+Tier 2 AUC: 0.870 (202 drugs)
+
+Potential causes:
+1. Label noise in larger dataset
+2. Different drug populations (different mechanisms)
+3. Selection bias in 202-drug subset
+4. SMILES quality differences
+5. Class balance differences
+
+
+Drugs in Tier 2 but NOT in Tier 1: 0
+
+Drugs in Tier 1 but NOT in Tier 2: 737
+Examples: ['flecainide acetate', 'dimethyl fumarate', 'flurazepam hydrochloride', 'nitazoxanide', 'regadenoson', 'fluconazole', 'midazolam hydrochloride', 'prasugrel hydrochloride', 'argipressin', 'benzarone']
+
+======================================================================
+INTEGRITY SUMMARY
+======================================================================
+
+Overlap: 202 drugs in both datasets
+Label matches: 200
+Label mismatches: 2
+SMILES matches: 202
+
+Tier 1 class balance: 59.6% DILI+
+Tier 2 class balance: 65.3% DILI+
+

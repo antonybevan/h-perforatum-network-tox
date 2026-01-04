@@ -1,0 +1,39 @@
+SPECTRAL VARIANCE TEST
+============================================================
+Reference: Picart-Armada et al., Bioinformatics 2020
+
+
+Hyperforin:
+  k = 10, pool N = 552
+  Pool sigma = 0.0676
+  Pool rho_avg = 0.1708
+  FPC = 0.9837
+
+  Closed-form sigma_T: 0.0557
+  Exact sigma_exact:   0.3379
+  Ratio: 6.07x
+
+  I_T = 1.1381, mu_T = 0.5779
+  Z_raw (CF): 10.06
+  Z_adj (VIF): 6.79
+  Z_exact (spectral): 1.66
+
+Quercetin:
+  k = 62, pool N = 3606
+  Pool sigma = 0.0383
+  Pool rho_avg = 0.2390
+  FPC = 0.9831
+
+  Closed-form sigma_T: 0.0769
+  Exact sigma_exact:   1.1789
+  Ratio: 15.34x
+
+  I_T = 1.9946, mu_T = 1.6264
+  Z_raw (CF): 4.79
+  Z_adj (VIF): 1.10
+  Z_exact (spectral): 0.31
+
+============================================================
+INTERPRETATION:
+  Z_exact uses the full covariance structure
+  This should match the empirical variance from resampling

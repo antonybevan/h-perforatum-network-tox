@@ -1,0 +1,30 @@
+==================================================
+PHASE 10: ADVERSARIAL STRESS TEST (THE 6 PROBES)
+==================================================
+Generating Baseline Features...
+  Target Q1 Threshold: 0.6931
+  Train: 451, Cal: 113, Test: 142
+  Training Base Models (Blind)...
+
+[PROBE 1] Conformal Leakage (Scaffold Split)
+  Baseline Random Split Validity: 94.37%
+
+[PROBE 2] Adversarial Noise (Target Injection)
+  Attacking 41 Noisy Samples...
+    Original Set Size (Gate Closed): 1.71 (Should be ~2)
+    Attacked Set Size (Gate Forced Open): 1.71
+    RESULT: Model robust. Network view itself has low evidence.
+
+[PROBE 3] Null Collapse (Frankenstein Drugs)
+    Frankenstein Refusal Rate: 74.00%
+    FAIL: Model hallucinates specific classes on random noise.
+
+[PROBE 5] Utility Audit (Risk-Coverage)
+    Singleton Coverage: 30.28% (Drugs with confident predictions)
+    Accuracy on Singletons: 81.40%
+    PASS: Good balance of Coverage and Accuracy.
+
+[PROBE 6] Decision Theoretic Stress
+    SymbolicMMC Cost (FN=10, FP=1): 72
+    Baseline Cost (Chem Only):      102
+    PASS: SymbolicMMC reduces/matches Expected Cost.

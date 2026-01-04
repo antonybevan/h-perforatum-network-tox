@@ -1,0 +1,82 @@
+Loading data...
+Compounds: 202
+
+Creating mechanistic features...
+Rule-of-Two satisfied: 66/202
+CYP targets present: 1/202
+Bioactivation risk: 0/202
+
+Regime distribution:
+regime
+unknown      100
+intrinsic     66
+network       36
+Name: count, dtype: int64
+
+============================================================
+NEW FEATURE ANALYSIS
+============================================================
+rule_of_two = No: 73/136 (54%)
+rule_of_two = Yes: 59/66 (89%)
+
+bioactivation_risk = No: 132/202 (65%)
+
+intrinsic_regime = No: 73/136 (54%)
+intrinsic_regime = Yes: 59/66 (89%)
+
+============================================================
+ENHANCED MODEL WITH RO2 + CYP
+============================================================
+
+Valid samples: 202
+
+Enhanced model AUC: 0.800
+Previous model AUC: 0.802
+Improvement: -0.002
+
+============================================================
+FEATURE IMPORTANCE
+============================================================
+Traceback (most recent call last):
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\enhanced_model.py", line 236, in <module>
+  has_network_targets : 0.150
+  rule_of_two         : 0.142
+  dili_fraction       : 0.121
+  logp                : 0.121
+  k                   : 0.088
+  tpsa                : 0.080
+  n_alerts            : 0.079
+  hba                 : 0.060
+  ecnp_z              : 0.058
+  hbd                 : 0.054
+  mw                  : 0.046
+  n_dili_hits         : 0.000
+  bioactivation_risk  : 0.000
+  intrinsic_regime    : 0.000
+  has_cyp_targets     : 0.000
+  high_logp           : 0.000
+
+============================================================
+REGIME-SPECIFIC AUC
+============================================================
+
+INTRINSIC regime (n=66, 59:7):
+  AUC = 0.705
+  Error rate = 10.6%
+
+NETWORK regime (n=36, 28:8):
+  AUC = 0.862
+  Error rate = 16.7%
+
+UNKNOWN regime (n=100, 45:55):
+  AUC = 0.685
+  Error rate = 37.0%
+
+============================================================
+SUMMARY
+============================================================
+    print(f"""
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2265' in position 45: character maps to <undefined>

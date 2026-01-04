@@ -1,0 +1,24 @@
+Stratifying by k_log...
+            net_uncertainty  net_evidence  tmc_prob   is_dili
+target_bin                                                   
+Q1 (Low)           0.597541      1.352531  0.436292  0.507317
+Q2                 0.581854      1.450689  0.505330  0.655405
+Q3                 0.571343      1.532017  0.519946  0.680952
+Q4 (High)          0.513708      1.968458  0.600568  0.650350
+
+Correlation (k_log vs Uncertainty):
+                    k_log  net_uncertainty
+k_log            1.000000        -0.534827
+net_uncertainty -0.534827         1.000000
+
+==================================================
+PERFORMANCE METRICS (AUC)
+==================================================
+Global AUC (All 706 drugs): 0.7645
+Global PR-AUC:              0.8272
+
+Stratified Performance by Target Count:
+  Q1 (Low) Targets (N=205): AUC = 0.7626
+  Q2 Targets (N=148): AUC = 0.8021
+  Q3 Targets (N=210): AUC = 0.7565
+  Q4 (High) Targets (N=143): AUC = 0.7637

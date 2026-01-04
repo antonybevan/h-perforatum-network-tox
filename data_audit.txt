@@ -1,0 +1,46 @@
+============================================================
+RAW DILIRANK 2.0 Excel FILE AUDIT
+============================================================
+Rows: 1337
+Columns: ['Drug Induced Liver Injury Rank (DILIrank) Dataset Ver 2.0 | FDA', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+First 5 rows:
+  Drug Induced Liver Injury Rank (DILIrank) Dataset Ver 2.0 | FDA  ... Unnamed: 5
+0                                             LTKBID               ...    Comment
+1                                            LT00040               ...  Unchanged
+2                                            LT03618               ...        New
+3                                            LT01402               ...  Unchanged
+4                                            LT01330               ...  Unchanged
+
+[5 rows x 6 columns]
+
+DILI class distribution (if exists):
+  Drug Induced Liver Injury Rank (DILIrank) Dataset Ver 2.0 | FDA:
+Drug Induced Liver Injury Rank (DILIrank) Dataset Ver 2.0 | FDA
+LTKBID     1
+LT00040    1
+LT03618    1
+LT01402    1
+LT01330    1
+          ..
+LT01017    1
+LT01088    1
+LT01010    1
+LT00164    1
+LT00165    1
+Name: count, Length: 1337, dtype: int64
+
+============================================================
+PROCESSED DILIRANK REFERENCE SET
+============================================================
+Rows: 907
+Columns: ['name', 'ltkbid', 'category', 'dilirank', 'smiles']
+
+dilirank values:
+dilirank
+vNo-DILI-concern      364
+vLess-DILI-concern    336
+vMost-DILI-concern    204
+vMOST-DILI-concern      2
+vNo-DILI-Concern        1
+Name: count, dtype: int64

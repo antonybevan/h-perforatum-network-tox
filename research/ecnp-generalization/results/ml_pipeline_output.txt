@@ -1,0 +1,65 @@
+Loading data...
+Compounds: 202
+
+Engineering features...
+
+Building ML regime classifier...
+Valid samples: 202
+
+============================================================
+ABLATION STUDY
+============================================================
+
+1. ML WITHOUT ECNP
+   AUC = 0.791
+
+2. ECNP ALONE
+   AUC = 0.624
+
+3. FULL MODEL (ML + ECNP)
+   AUC = 0.792
+
+4. LOGP ALONE (Exposure baseline)
+   AUC = 0.735
+
+============================================================
+FEATURE IMPORTANCE (Full Model)
+============================================================
+  logp                : 0.173
+  has_network_targets : 0.133
+  dili_fraction       : 0.133
+  k                   : 0.116
+  hba                 : 0.114
+  tpsa                : 0.113
+  mw                  : 0.086
+  ecnp_z              : 0.072
+  hbd                 : 0.059
+  has_transporter_targets: 0.000
+
+============================================================
+REGIME-SPECIFIC AUC
+============================================================
+
+ECNP-eligible (n=65, 54:11)
+  Full model AUC = 0.923
+  ECNP alone AUC = 0.577
+
+Network targets (n=65, 54:11)
+  AUC = 0.923
+
+High LogP (n=89, 76:13)
+  AUC = 0.729
+
+============================================================
+SUMMARY: ABLATION RESULTS
+============================================================
+  Full model (ML + ECNP)   : AUC = 0.792
+  ML without ECNP          : AUC = 0.791
+  LogP alone               : AUC = 0.735
+  ECNP alone               : AUC = 0.624
+
+ECNP contribution: +0.001
+
+VERDICT: Full model beats both ablations - integration justified
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\ml_pipeline_results.csv

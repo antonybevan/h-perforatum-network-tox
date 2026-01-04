@@ -1,0 +1,13 @@
+Loading DILIrank 2.0...
+Traceback (most recent call last):
+DILIrank entries: 907
+Columns: ['name', 'ltkbid', 'category', 'dilirank', 'smiles']
+Label columns: ['dilirank']
+
+Loading DrugBank compounds...
+  File "V:\new\h-perforatum-network-tox\research\ecnp-generalization\scripts\phase1_data\integrate_dilirank_improved.py", line 32, in <module>
+    print(f"DrugBank compounds with \u22653 targets: {len(drugbank)}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2265' in position 24: character maps to <undefined>

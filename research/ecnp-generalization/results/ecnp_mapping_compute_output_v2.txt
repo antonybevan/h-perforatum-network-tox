@@ -1,0 +1,40 @@
+======================================================================
+COMPUTING ECNP WITH GENE SYMBOL MAPPING
+======================================================================
+Loaded RobustECNP engine
+
+--- Loading UniProt->Gene Mapping ---
+Loaded 1050 mappings
+
+--- Loading Drug Targets ---
+Drugs: 706
+
+--- Computing ECNP ---
+  Processed 100/706
+  Processed 200/706
+  Processed 300/706
+  Processed 400/706
+  Processed 500/706
+  Processed 600/706
+  Processed 700/706
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\dilirank_706_with_ecnp.csv
+
+======================================================================
+SUMMARY
+======================================================================
+
+Total drugs: 706
+With valid ECNP: 456
+Coverage: 64.6%
+
+ECNP Z-score stats (valid only):
+  Mean: 0.612
+  Std:  1.539
+  Min:  -2.238
+  Max:  8.448
+
+Label distribution (with valid ECNP):
+  DILI+: 305
+  DILI-: 151
+

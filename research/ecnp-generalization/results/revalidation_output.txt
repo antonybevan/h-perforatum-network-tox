@@ -1,0 +1,97 @@
+Loaded: 202 compounds
+DILI+: 132, DILI-: 70
+
+============================================================
+1. DATA LEAKAGE CHECK
+============================================================
+  WARNING: logp has high correlation with target: r=0.387
+  hbd: r=-0.249 (moderate)
+  hba: r=-0.152 (moderate)
+  tpsa: r=-0.218 (moderate)
+  n_dili_hits: r=0.243 (moderate)
+  n_network_hits: r=0.253 (moderate)
+  ecnp_z: r=0.205 (moderate)
+  dili_fraction: r=0.261 (moderate)
+  network_fraction: r=0.270 (moderate)
+
+n_dili_hits correlation with is_dili: 0.243
+  (This is expected - but verify it's from network, not labels)
+
+============================================================
+2. HOLDOUT VALIDATION (20% test)
+============================================================
+  Split 42: Test AUC = 0.820
+  Split 123: Test AUC = 0.839
+  Split 456: Test AUC = 0.892
+  Split 789: Test AUC = 0.815
+  Split 101112: Test AUC = 0.828
+
+Mean test AUC: 0.839 (+/- 0.028)
+
+============================================================
+3. CLASS IMBALANCE EFFECTS
+============================================================
+ROC-AUC: 0.792
+AUPRC: 0.855 (baseline = 0.653)
+AUPRC lift: 1.31x over random
+
+============================================================
+4. FAILURE MODE ANALYSIS
+============================================================
+
+False positives: 25
+False negatives: 21
+
+Top false negatives (missed DILI drugs):
+  Anisomycin: pred=0.48, Z=0.06, n_targets=12
+  Lipoic acid: pred=0.45, Z=0.00, n_targets=3
+  Progesterone: pred=0.39, Z=1.73, n_targets=7
+  Finasteride: pred=0.36, Z=-0.33, n_targets=4
+  Isoniazid: pred=0.35, Z=1.13, n_targets=4
+  Carfilzomib: pred=0.33, Z=0.02, n_targets=6
+  Capric acid: pred=0.32, Z=-0.05, n_targets=3
+  Procaine: pred=0.31, Z=-0.34, n_targets=5
+  Cyclosporine: pred=0.27, Z=-0.16, n_targets=4
+  Heparin: pred=0.26, Z=0.45, n_targets=6
+
+Top false positives:
+  Dutasteride: pred=1.00, Z=-0.24, n_targets=3
+  Romidepsin: pred=1.00, Z=0.02, n_targets=6
+  Levonorgestrel: pred=0.99, Z=1.23, n_targets=5
+  Viloxazine: pred=0.99, Z=0.18, n_targets=4
+  Copanlisib: pred=0.99, Z=-0.03, n_targets=3
+  Serine: pred=0.99, Z=-0.50, n_targets=6
+  Urokinase: pred=0.98, Z=2.59, n_targets=6
+  Liothyronine: pred=0.98, Z=-0.36, n_targets=3
+  Lidocaine: pred=0.97, Z=1.02, n_targets=4
+  Incadronic acid: pred=0.97, Z=0.42, n_targets=4
+
+============================================================
+5. REGIME-SPECIFIC GAP ANALYSIS
+============================================================
+
+Non-eligible (n=137):
+  Errors: 40 (29.2%)
+  FN: 20, FP: 20
+
+ECNP-eligible (n=65):
+  Errors: 6 (9.2%)
+  FN: 1, FP: 5
+
+k=3-4 (n=124): AUC = 0.783
+
+k=5-7 (n=52): AUC = 0.724
+
+k=8-15 (n=21): AUC = 0.904
+
+============================================================
+REVALIDATION SUMMARY
+============================================================
+
+Cross-validation AUC:  0.904
+Mean holdout AUC:      0.839 (+/- 0.028)
+AUPRC:                 0.855 (1.3x baseline)
+
+IDENTIFIED GAPS:
+
+- No major gaps identified

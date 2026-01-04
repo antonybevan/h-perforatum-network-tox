@@ -1,0 +1,16 @@
+
+--- Analyzing Tier 2a (Noisy/Automated) ---
+Mean Targets per Drug: 5.23
+Corr(I_T, DILI):       0.1646
+Corr(Fraction, DILI):  -0.0063
+False Alarm Rate (Safe drugs w/ High Impact): 11.3%
+
+--- Analyzing Tier 2b (Clean/Curated) ---
+Mean Targets per Drug: 5.05
+Corr(I_T, DILI):       0.1198
+Corr(Fraction, DILI):  0.2684
+False Alarm Rate (Safe drugs w/ High Impact): 14.3%
+
+--- COMPARISON EXPLANATION ---
+If Corr(I_T, DILI) is lower in Tier 2a, the 'Impact' signal is diluted.
+If False Alarm Rate is higher in Tier 2a, random targets are 'lying' to the model.

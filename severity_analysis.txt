@@ -1,0 +1,22 @@
+SeverityClass meaning by DILI-Concern:
+SeverityClass             0  1   2    3   4   5  6   7    8
+vDILI-Concern                                              
+Ambiguous-DILI-concern    1  2  23  222  45  26  4  17   14
+vLess-DILI-concern       52  1  25  174  36  32  1  24    6
+vMOST-DILI-concern        0  0   0    0   0   1  0   0    1
+vMost-DILI-concern        0  0   0    6  15  11  1  25  157
+vNo-DILI-Concern          1  0   0    0   0   0  0   0    0
+vNo-DILI-concern        412  1   0    0   0   0  0   0    0
+
+
+LabelSection by DILI-Concern:
+LabelSection            Adverse reactions  ...  Withdrawn
+vDILI-Concern                              ...           
+Ambiguous-DILI-concern                227  ...          0
+vLess-DILI-concern                    206  ...          0
+vMOST-DILI-concern                      0  ...          0
+vMost-DILI-concern                      2  ...         54
+vNo-DILI-Concern                        0  ...          0
+vNo-DILI-concern                        0  ...          0
+
+[6 rows x 6 columns]

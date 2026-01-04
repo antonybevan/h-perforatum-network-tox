@@ -1,0 +1,52 @@
+======================================================================
+COMPUTING ECNP FOR 706 DRUGS
+======================================================================
+Loaded RobustECNP engine
+
+--- Loading Data ---
+Drugs with targets: 706
+Expanded target rows: 2945
+SMILES data: 901
+LCC file not found, skipping LCC filtering
+
+--- Computing ECNP ---
+  Processed 100/706
+  Processed 200/706
+  Processed 300/706
+  Processed 400/706
+  Processed 500/706
+  Processed 600/706
+  Processed 700/706
+
+Computed ECNP for 706 drugs
+
+--- Merging with SMILES ---
+With valid SMILES: 706
+With non-zero ECNP: 706
+
+--- Saving Results ---
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\dilirank_expanded_ecnp.csv
+
+======================================================================
+SUMMARY
+======================================================================
+
+Total drugs: 706
+With non-zero ECNP: 706
+With targets in LCC: 706
+
+Label distribution:
+  DILI+: 437
+  DILI-: 269
+
+ECNP statistics:
+  Mean Z: nan
+  Std Z:  nan
+  Min Z:  nan
+  Max Z:  nan
+
+
+Comparison to Original 202-drug subset:
+  Original: 202 drugs
+  Expanded: 706 drugs
+  Increase: +504

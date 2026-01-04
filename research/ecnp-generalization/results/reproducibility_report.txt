@@ -1,0 +1,22 @@
+Initializing Conformal Integrity Protocol...
+Generating Features...
+Defining Noisy Regime: k_log <= 0.6931 (Bottom 25%)
+
+Running Cross-Conformal Validation...
+
+==================================================
+CONFORMAL VALIDATION RESULTS
+==================================================
+Global Validity (Target 90%): 93.52%
+
+--- Efficiency by Regime ---
+Efficiency = % of Singleton Sets (Size 1). Higher is better (more precise).
+Hypothesis: Noisy Data should have Low/Zero Efficiency (Sets of size 2).
+          set_size       is_correct      
+              mean count       mean count
+is_noisy                                 
+False     1.764228   246   0.934959   246
+True      1.715596   109   0.935780   109
+
+Efficiency on NOISY (Tier 2a): 28.44%
+Efficiency on CLEAN (Tier 2b): 23.58%

@@ -1,0 +1,18 @@
+VARIANCE INFLATION CORRECTION TEST
+==================================================
+
+Hyperforin:
+  Z_raw (uncorrected) = 10.06
+  Z_eff (corrected)   = 3.35
+  kappa = 9.0
+  MC reference = 10.27
+  Error = 67.4%
+
+Quercetin:
+  Z_raw (uncorrected) = 4.79
+  Z_eff (corrected)   = 1.60
+  kappa = 9.0
+  MC reference = 4.42
+  Error = 63.9%
+
+Ranking preserved: True

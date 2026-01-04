@@ -1,0 +1,46 @@
+============================================================
+LAMBDA RECALIBRATION FOR VARIANCE MATCH
+============================================================
+
+1. GENERATING STRATUM SAMPLES
+----------------------------------------
+  Generating samples for k=5...
+  Generating samples for k=10...
+  Generating samples for k=15...
+  Generating samples for k=20...
+  Generating samples for k=30...
+   Generated 150 samples
+
+2. COMPUTING EMPIRICAL VARIANCES
+----------------------------------------
+
+Computing empirical variances...
+  Processing sample 1/150...
+  Processing sample 21/150...
+  Processing sample 41/150...
+  Processing sample 61/150...
+  Processing sample 81/150...
+  Processing sample 101/150...
+  Processing sample 121/150...
+  Processing sample 141/150...
+   Computed variances for 150 samples
+
+3. SOLVING FOR lambda*
+----------------------------------------
+
+Calibration Results:
+  E[emp_var]:    0.005570
+  E[pool_var/k]: 0.000060
+  E[rho]:        0.3221
+Traceback (most recent call last):
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\scripts\calibrate_lambda.py", line 288, in <module>
+    main()
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\scripts\calibrate_lambda.py", line 266, in main
+    lambda_star, kappa = solve_for_lambda(results)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "V:\new\h-perforatum-network-tox\research\ecnp-closed-form\scripts\calibrate_lambda.py", line 203, in solve_for_lambda
+    print(f"  \u03bb* solved:     {lambda_star:.4f}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u03bb' in position 2: character maps to <undefined>

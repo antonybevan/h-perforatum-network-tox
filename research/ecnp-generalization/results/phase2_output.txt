@@ -1,0 +1,86 @@
+Loading ECNP...
+Loaded: 7677 nodes, 82 DILI genes
+
+Loading labeled compounds...
+Compounds to score: 40
+
+Scoring compounds with ECNP...
+  Scored 10/40...
+  Scored 20/40...
+  Scored 30/40...
+  Scored 40/40...
+Successfully scored: 39
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\phase2\ecnp_scores.csv
+
+==================================================
+ROC/AUC ANALYSIS
+==================================================
+Positive (DILI): 30
+Negative (No-DILI): 9
+
+AUC: 0.619
+Optimal threshold: Z = 0.93
+At threshold:
+  Sensitivity: 0.567
+  Specificity: 0.778
+
+Confusion Matrix (at Z >= 0.93):
+  TP: 17, FP: 2
+  FN: 13, TN: 7
+
+==================================================
+COMPOUND RANKING
+==================================================
+
+Top 10 by Z-score:
+    drug_name dili_label        Z  n_targets
+    Ibuprofen  Most-DILI 4.996766          6
+ Indomethacin  Less-DILI 4.917098          7
+ Ketoconazole  Most-DILI 4.504296          5
+ Atorvastatin  Most-DILI 4.412143          5
+    Tamoxifen  Most-DILI 3.852493          7
+ Troglitazone  Most-DILI 3.552926          7
+   Nifedipine  Less-DILI 3.166322          3
+  Leflunomide  Most-DILI 3.161756          3
+Dexamethasone    No-DILI 2.954788          3
+    Phenytoin  Most-DILI 2.114784          3
+
+Bottom 10 by Z-score:
+      drug_name dili_label         Z  n_targets
+    Minocycline  Most-DILI -1.959020          6
+     Etanercept  Most-DILI -0.586193          5
+  Levothyroxine    No-DILI -0.462923          3
+  Valproic acid  Most-DILI -0.361327         13
+    Hydralazine  Less-DILI -0.304230          3
+Fludrocortisone    No-DILI -0.153902          3
+     Disulfiram  Less-DILI -0.143579          3
+     Lovastatin  Most-DILI -0.081322          3
+    Simvastatin  Most-DILI -0.081322          3
+   Methotrexate  Most-DILI -0.037393          4
+
+==================================================
+Z-SCORE BY DILI LABEL
+==================================================
+
+Most-DILI (n=23):
+  Mean Z: 1.38
+  Std Z: 1.87
+  Range: [-1.96, 5.00]
+
+Less-DILI (n=7):
+  Mean Z: 1.61
+  Std Z: 1.95
+  Range: [-0.30, 4.92]
+
+No-DILI (n=9):
+  Mean Z: 0.63
+  Std Z: 1.06
+  Range: [-0.46, 2.95]
+
+==================================================
+PHASE 2 SUMMARY
+==================================================
+Compounds scored: 39
+AUC: 0.619
+Mean Z (DILI+): 1.44
+Mean Z (DILI-): 0.63

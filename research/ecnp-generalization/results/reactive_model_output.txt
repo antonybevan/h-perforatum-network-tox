@@ -1,0 +1,64 @@
+Loading data...
+Computing structural alerts...
+Compounds with alerts: 165/202
+
+============================================================
+NON-ELIGIBLE REGIME ANALYSIS
+============================================================
+Non-eligible compounds: 137
+DILI+: 78, DILI-: 59
+
+Structural alerts in non-eligible:
+  Mean alerts: 3.74
+  With any alert: 108
+
+  DILI+ mean alerts: 2.86
+  DILI- mean alerts: 4.90
+
+============================================================
+BUILDING IMPROVED REACTIVE MODEL
+============================================================
+Valid non-eligible: 137
+
+Non-eligible regime AUC: 0.701
+
+============================================================
+FEATURE IMPORTANCE (Reactive Model)
+============================================================
+  logp           : 0.227
+  hba            : 0.164
+  n_alerts       : 0.143
+  tpsa           : 0.140
+  k              : 0.126
+  mw             : 0.117
+  hbd            : 0.083
+
+============================================================
+UPDATED FULL PIPELINE
+============================================================
+Previous full model AUC: 0.792
+Updated with alerts AUC: 0.802
+Improvement: +0.010
+
+ECNP-eligible AUC: 0.904
+Non-eligible AUC: 0.739
+
+Non-eligible error rate: 30.7% (was 29.2%)
+
+============================================================
+SUMMARY: REACTIVE MODEL IMPROVEMENT
+============================================================
+
+Structural alerts added: 16 patterns
+Compounds with alerts: 165/202
+
+Non-eligible regime:
+  Previous AUC: ~0.78
+  Updated AUC:  0.739
+  Error rate:   30.7% (was 29.2%)
+
+Full pipeline:
+  Previous AUC: 0.792
+  Updated AUC:  0.802
+
+Saved: v:\new\h-perforatum-network-tox\research\ecnp-generalization\results\ml_pipeline_with_alerts.csv
