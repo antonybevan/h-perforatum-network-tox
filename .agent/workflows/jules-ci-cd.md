@@ -1,57 +1,95 @@
-# Jules Workflow: CI/CD and Testing
+---
+description: Jules workflow for handling CI/CD failures and test issues
+---
 
-This document guides Jules (or any AI agent) on handling CI/CD issues.
+# Jules CI/CD Troubleshooting Workflow
 
-## Trigger Conditions
+## When to Use
+- GitHub Actions CI fails
+- pytest tests fail
+- Dependency issues occur
 
-Jules should be assigned when:
-1. GitHub Actions CI fails
-2. pytest tests fail
-3. Dependency issues occur
-
-## Common Fixes
-
-### 1. CI Dependency Failures
+## Step 1: Check Test Output
+// turbo
 ```bash
-# Check requirements.txt for invalid versions
-# Use version ranges, not exact pins
-# Example: pandas>=2.0.0,<3.0.0 (not pandas==2.3.3)
+pytest tests/ -v --tb=short
 ```
 
-### 2. Git LFS Issues
+## Step 2: Common Fix Categories
+
+### A. Dependency Failures
+```bash
+# Check requirements.txt for invalid versions
+# Use version ranges: pandas>=2.0.0 (not ==2.3.3)
+```
+
+Fix location: `requirements.txt`
+
+### B. Git LFS Issues
+Ensure checkout has LFS enabled in `.github/workflows/tests.yml`:
 ```yaml
-# Ensure checkout has lfs: true
 - uses: actions/checkout@v4
   with:
     lfs: true
 ```
 
-### 3. Unicode Encoding Errors (Windows)
-- Replace `≥` with `>=`
-- Replace `✓` with `[OK]`
-- Replace `✗` with `[ERR]`
-- Replace `⚠️` with `[WARN]`
+### C. Unicode Encoding Errors (Windows)
+Replace special characters in output strings:
+- `≥` → `>=`
+- `✓` → `PASS`
+- `✗` → `FAIL`
+- `×` → `x`
 
-### 4. Test File Not Found
-- Check if data files are tracked with Git LFS
-- Verify paths use `Path()` not hardcoded strings
-- Use `pytest.mark.skipif` for optional data files
+### D. Missing Data Files
+Data files should be in:
+- `data/processed/` for LCC networks and targets
+- `results/tables/` for result CSVs
 
-## Test Commands
+Key files needed for tests:
+- `data/processed/targets_lcc.csv`
+- `data/processed/network_900_liver_lcc.parquet`
 
+### E. Deprecated Script References
+After project cleanup, these scripts are archived:
+- `run_complete_pipeline.py` → archived
+- `final_validation_check.py` → archived
+
+Current pipeline scripts (in `scripts/`):
+1. `create_lcc_filtered_data.py`
+2. `run_standard_rwr_lcc_permutations.py`
+3. `run_expression_weighted_rwr_permutations.py`
+4. `run_chemical_similarity_control.py`
+
+## Step 3: Run Tests
+// turbo
 ```bash
-# Run all tests
 pytest tests/ -v
+```
 
-# Run with coverage
+## Step 4: Verify CI Locally
+// turbo
+```bash
+pip install -r requirements.txt
 pytest tests/ -v --cov=src
+```
 
-# Run specific test
-pytest tests/test_rwr.py -v
+## Step 5: Commit and Push
+```bash
+git add .
+git commit -m "fix(ci): [description of fix]"
+git push
 ```
 
 ## Post-Fix Checklist
-
 - [ ] All tests pass locally
-- [ ] Commit follows conventional format
-- [ ] Push triggers green CI
+- [ ] No deprecated script references
+- [ ] requirements.txt has valid version ranges
+- [ ] CI should turn green
+
+## Project Structure Reference
+```
+scripts/                    # 8 essential scripts
+results/tables/             # 4 primary result files
+data/processed/             # LCC-filtered networks and targets
+archive/                    # Deprecated files (don't use in tests)
+```

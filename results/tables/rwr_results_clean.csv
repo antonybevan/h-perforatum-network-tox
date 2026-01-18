@@ -1,5 +1,0 @@
-compound,network,targets,z_score,p_value,significant
-Hyperforin,STRING>=900,8,6.35,4.20e-10,Yes
-Hyperforin,STRING>=700,8,5.43,5.60e-08,Yes
-Quercetin,STRING>=900,63,4.98,4.29e-07,Yes
-Quercetin,STRING>=700,63,4.26,1.02e-05,Yes

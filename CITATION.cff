@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Network Pharmacology Analysis of Hypericum perforatum Hepatotoxicity"
+title: "Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of Hypericum perforatum"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -9,24 +9,29 @@ authors:
 repository-code: "https://github.com/antonybevan/h-perforatum-network-tox"
 url: "https://github.com/antonybevan/h-perforatum-network-tox"
 abstract: >-
-  Production-ready network pharmacology pipeline demonstrating Hyperforin's
-  significantly higher per-target hepatotoxic influence compared to Quercetin
-  using tissue-specific protein-protein interaction networks, Random Walk with
-  Restart, and degree-aware permutation testing.
+  Network pharmacology pipeline demonstrating that proximity does not imply
+  influence. Hyperforin (9 targets) exhibits 17-22× higher per-target DILI
+  influence than Quercetin (62 targets) in Hypericum perforatum, challenging
+  the assumption that more targets means greater toxicity risk.
 keywords:
   - network pharmacology
+  - tiered inference
+  - per-target network influence
+  - PTNI
   - hepatotoxicity
+  - drug-induced liver injury
+  - DILI
   - Hypericum perforatum
   - St. John's Wort
   - hyperforin
   - quercetin
+  - random walk with restart
+  - expression-weighted RWR
   - protein-protein interactions
-  - drug-induced liver injury
-  - DILI
   - systems biology
 license: MIT
-version: "1.0.0"
-date-released: "2025-12-24"
+version: "2.0.0"
+date-released: "2025-12-28"
 references:
   - type: article
     title: "Uncovering disease-disease relationships through the incomplete interactome"
@@ -81,3 +86,25 @@ references:
     volume: 82
     issue: 4
     doi: "10.1016/j.ajhg.2008.02.013"
+  - type: dataset
+    title: "STRING: functional protein association networks"
+    authors:
+      - family-names: "Szklarczyk"
+        given-names: "Damian"
+    url: "https://string-db.org"
+    version: "12.0"
+    year: 2023
+  - type: dataset
+    title: "GTEx: Genotype-Tissue Expression Portal"
+    authors:
+      - family-names: "GTEx Consortium"
+    url: "https://gtexportal.org"
+    version: "8"
+    year: 2020
+  - type: dataset
+    title: "DILIrank: Drug-Induced Liver Injury Ranking Dataset"
+    authors:
+      - family-names: "Chen"
+        given-names: "Minjun"
+    url: "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-dataset"
+    year: 2016

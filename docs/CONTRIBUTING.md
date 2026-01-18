@@ -18,50 +18,49 @@ pytest tests/ -v
 
 # Run with coverage
 pytest tests/ -v --cov=src
-
-# Run specific test file
-pytest tests/test_rwr.py -v
 ```
 
 ## Running the Pipeline
 
 ```bash
-# Full pipeline (data regeneration + validation)
-python scripts/run_complete_pipeline.py
+# Step 1: Data preprocessing
+python scripts/create_lcc_filtered_data.py
 
-# Skip data regeneration (faster)
-python scripts/run_complete_pipeline.py --skip-data
+# Step 2: Tier 2 analysis (Standard RWI)
+python scripts/run_standard_rwr_lcc_permutations.py
 
-# Quick mode (essential steps only)
-python scripts/run_complete_pipeline.py --quick
+# Step 3: Tier 3 analysis (Expression-Weighted EWI)
+python scripts/run_expression_weighted_rwr_permutations.py
+
+# Step 4: Negative control (optional)
+python scripts/run_chemical_similarity_control.py
 ```
 
-## For AI Agents (Jules/Antigravity)
+## For AI Agents
 
 If you are an autonomous agent working on this repository:
 
 1. **Setup**: Install packages from `requirements.txt`
 2. **Verify**: Run `pytest tests/ -v` - exit code 0 = success
 3. **Style**: Use `ruff check` for linting
-4. **Workflow**: See `.agent/workflows/jules-ci-cd.md` for CI/CD fixes
 
 ## Scientific Integrity Rules (DO NOT IGNORE)
 
 The following files are **READ-ONLY** unless explicitly instructed:
 
-1. **`docs/METHODOLOGY.md`**: Defines the scientific standard. Code must fit methodology, not vice versa.
-
-2. **`results/`**: Ground truth from verified experiments. Never overwrite without confirmation.
-
-3. **`data/processed/`**: Validated outputs. Use regeneration scripts, don't edit directly.
+1. **`docs/RESEARCH_SUMMARY.md`**: Defines the scientific standard
+2. **`results/tables/`**: Ground truth from verified experiments
+3. **`data/processed/`**: Validated outputs
 
 **Violation of these rules will result in reverted changes.**
 
-## Current Results (Verified 2025-12-24)
+## Current Results (Verified 2025-12-28)
 
-| Compound | RWR Z-Score | Significant | Per-Target |
-|----------|-------------|-------------|------------|
-| Hyperforin | +9.50 | Yes (p<0.0001) | 0.0287 |
-| Quercetin | +1.04 | No (p=0.15) | 0.00036 |
+| Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
+|--------|------------------------|------------------------|-------|
+| **RWI Z-score** | +10.27 | +4.42 | — |
+| **EWI Z-score** | +9.07 | +5.56 | — |
+| **PTNI (RWI)** | 0.01135 | 0.00315 | **3.6×** |
+| **PTNI (EWI)** | 0.0134 | 0.00392 | **3.4×** |
 
-**Key Finding:** Hyperforin is ~80x more influential per target than Quercetin.
+**Key Finding:** Hyperforin exhibit ~3.7-fold greater per-target influence efficiency than Quercetin (via bootstrap analysis).

@@ -1,36 +1,31 @@
 # Documentation
 
-This directory contains additional documentation for the H. perforatum network toxicology analysis.
+This directory contains core documentation for the H. perforatum network toxicology analysis.
 
-## Available Documentation
+## Primary Documents
 
-- **[README.md](../README.md)** - Quick start guide and project overview
-- **[METHODOLOGY.md](METHODOLOGY.md)** - Complete methodology (what/how/why)
-- **[RESULTS_GUIDE.md](../results/RESULTS_GUIDE.md)** - How to interpret result tables
+| Document | Purpose |
+|----------|---------|
+| [RESEARCH_SUMMARY.md](RESEARCH_SUMMARY.md) | Complete study overview with tiered inference framework |
+| [METHODOLOGY.md](METHODOLOGY.md) | Technical methodology details |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Development guidelines |
 
-## API Documentation
+## Quick Reference
 
-For package API documentation, see:
-```python
-from network_tox import core, analysis, utils
-help(core.network)
-help(analysis.rwr)
-```
+### Key Results
 
-## Data Documentation
+| Metric | Hyperforin (10 targets) | Quercetin (62 targets) | Ratio |
+|--------|------------------------|------------------------|-------|
+| **RWI Z** | +10.27 | +4.42 | — |
+| **EWI Z** | +9.07 | +5.56 | — |
+| **Efficiency Ratio** | — | — | **~3.7-fold** |
 
-- **[DATA_QUALITY.md](../data/raw/DATA_QUALITY.md)** - Data quality notes
-- **[BIAS_MITIGATION.md](../data/raw/BIAS_MITIGATION.md)** - Bias mitigation strategies
+### Core Claim
 
-## Additional Resources
+> *"Proximity does not imply influence; network position and propagation dynamics dominate over target count."*
 
-1. **STRING Database:** https://string-db.org/
-2. **GTEx Portal:** https://gtexportal.org/
-3. **DisGeNET:** https://www.disgenet.org/
+## External Resources
 
-## Publication
-
-Methods validated using:
-- Menche J, et al. (2015) *Science* 347:1257601
-- Guney E, et al. (2016) *Nat Commun* 7:10331
-- Kohler S, et al. (2008) *Am J Hum Genet* 82:949-958
+- **STRING Database:** https://string-db.org/
+- **GTEx Portal:** https://gtexportal.org/
+- **DILIrank:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5767899/

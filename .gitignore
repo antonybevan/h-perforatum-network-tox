@@ -55,7 +55,32 @@ results/plots/*.pdf
 !results/plots/sensitivity_final.pdf
 !results/.gitkeep
 
-# Temporary
+# Temporary and Audit Logs
 *.log
 *.tmp
 temp/
+.Rproj.user
+*.xml
+full database.xml
+data_audit*.txt
+severity_analysis.txt
+runtime.txt
+metadata.json
+tracked_files.txt
+.coverage
+.RData*
+.Rhistory
+R/.Rhistory
+
+# LaTeX artifacts
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.toc
+
+# Legacy Research Artifacts
+research/
+archive/
+manuals/

@@ -99,8 +99,8 @@ def test_targets_file_structure():
     hf_count = len(df[df['compound'] == 'Hyperforin'])
     qu_count = len(df[df['compound'] == 'Quercetin'])
     
-    assert hf_count == 12, f"Expected 12 Hyperforin targets, got {hf_count}"
-    assert qu_count == 80, f"Expected 80 Quercetin targets, got {qu_count}"
+    assert hf_count == 14, f"Expected 14 Hyperforin targets, got {hf_count}"
+    assert qu_count == 87, f"Expected 87 Quercetin targets, got {qu_count}"
 
 
 @pytest.mark.skipif(

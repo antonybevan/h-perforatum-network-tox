@@ -1,0 +1,90 @@
+\clearpage
+\section*{Figures}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_lollipop.pdf}
+\caption{\textbf{Network context: target count and physical proximity to DILI genes.}
+(\textbf{A}) Target count in the liver-expressed largest connected component.
+Quercetin: 62 targets; Hyperforin: 10 targets.
+(\textbf{B}) Shortest-path proximity ($d_c$) to 82 DILI-associated genes.
+Hyperforin is physically closer ($d_c = 1.30$) than Quercetin ($d_c = 1.68$).
+Z-scores represent deviation from degree-matched null expectation ($n = 1{,}000$ permutations).
+Quercetin: Z = $-$5.44 ($p < 0.001$); Hyperforin: Z = $-$3.86 ($p < 0.001$).
+Negative Z-scores indicate closer-than-random proximity.
+Network: STRING v12.0 (confidence $\geq$900), GTEx v8 (liver TPM $\geq$1).}
+\label{fig:fig1}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig2_dumbbell.pdf}
+\caption{\textbf{Instability of proximity Z-scores.}
+Dumbbell plot showing the dissociation between shortest-path proximity (left) and random walk influence (right) at STRING confidence $\geq$900.
+At this threshold, Quercetin appears more "significant" in Z-score but is physically more distant ($1.68$ vs $1.30$) from DILI genes.
+Hyperforin: proximity Z = $-$3.86, influence Z = +10.27 ($p < 0.001$).
+Quercetin: proximity Z = $-$5.44, influence Z = +4.42 ($p < 0.001$).
+Influence quantified by random walk with restart (RWR; $\alpha = 0.15$).
+$n = 1{,}000$ degree-matched permutations per compound.}
+\label{fig:fig2}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig3_ewi_waterfall.pdf}
+\caption{\textbf{Expression weighting refines influence propagation.}
+Waterfall decomposition of Z-score changes under expression-weighted influence (EWI).
+Initial Hyperforin advantage: $\Delta$Z = +5.85 (RWR).
+Hyperforin change: $-$1.20 (attenuation of signal through liver-active hubs).
+Quercetin change: +1.14 (gain from high-expression nodes like CFB).
+Residual Hyperforin advantage: $\Delta$Z = +3.51.
+Both compounds remain significant under EWI: Hyperforin Z = +9.07 ($p < 0.001$); Quercetin Z = +5.56 ($p < 0.001$).
+Expression weighting from GTEx v8 liver tissue.}
+\label{fig:fig3}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig4_ptni_phase.pdf}
+\caption{\textbf{Per-target network influence (PTNI) quantifies efficiency disparity.}
+Phase plot of total influence versus target count.
+Horizontal lines represent efficiency tiers (PTNI = constant).
+Hyperforin occupies a higher efficiency region despite fewer targets.
+PTNI values: Hyperforin = 0.1138 (RWR), 0.1330 (EWI); Quercetin = 0.0322 (RWR), 0.0493 (EWI).
+Efficiency difference: \textbf{3.7}$\times$ (based on bootstrap mean comparison).
+PTNI is an effect-size normalization (total steady-state mass on DILI genes); no independent permutation test was performed.}
+\label{fig:fig4}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/fig5_bootstrap.pdf}
+\caption{\textbf{Bootstrap sensitivity analysis excludes target-count confounding.}
+Density distribution of RWR influence scores from 100 random 10-target samples drawn from Quercetin's 62-target pool.
+Shaded region: 95\% confidence interval (0.0160--0.0542).
+Vertical line: Hyperforin observed influence (0.1138).
+Hyperforin exceeds the entire bootstrap distribution (3.7$\times$ fold vs.\ mean).
+This confirms that Hyperforin's advantage is not attributable to favorable target count.
+Bootstrap is a robustness control; it does not provide independent statistical evidence.}
+\label{fig:fig5}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.65\textwidth]{figures/fig6_chemsim.pdf}
+\caption{\textbf{Chemical similarity control excludes structural confounding.}
+Maximum Tanimoto similarity to DILIrank reference drugs.
+Reference set: 542 DILI-positive, 365 DILI-negative drugs.
+Hyperforin: max = 0.15 (DILI+), 0.20 (DILI$-$).
+Quercetin: max = 0.21 (DILI+), 0.22 (DILI$-$).
+Dashed line: 0.4 threshold for structural analog detection \citep{Maggiora2014}.
+Neither compound is a structural analog of known hepatotoxins.
+This orthogonal analysis excludes chemical class as an explanation for the observed network signal.
+Fingerprints: Morgan (ECFP4), radius 2, 2048 bits.}
+\label{fig:fig6}
+\end{figure}

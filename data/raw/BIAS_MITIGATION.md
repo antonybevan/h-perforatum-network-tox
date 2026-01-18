@@ -1,55 +1,45 @@
 # Bias Mitigation Guide
 
-> **Last Updated:** 2024-12-25  
-> **Version:** 2.0  
-> **Status:** ✅ Fully Implemented and Validated
+> **Last Updated:** 2025-12-28  
+> **Version:** 3.0 (Tiered Inference Framework)
 
 ---
 
 ## Executive Summary
 
-| Bias Type | Mitigation | Status | Result |
-|-----------|------------|--------|--------|
-| Target count asymmetry | Per-target normalization | ✅ Done | 78× difference persists |
-| Hub bias | Degree-aware permutation | ✅ Done | Z=9.50 vs Z=1.04 |
-| Sampling bias | Bootstrap sensitivity | ✅ Done | Hyperforin outside 95% CI |
-| Network threshold | Multi-threshold validation | ✅ Done | Consistent at ≥900 and ≥700 |
+| Bias Type | Mitigation | Result |
+|-----------|------------|--------|
+| Target count asymmetry | PTNI (Per-Target Network Influence) | 17–22× difference persists |
+| Hub bias | Degree-aware permutation (n=1000) | Both compounds significant |
+| Biological context | Expression-weighted EWI | Signal persists |
+| Network threshold | Multi-threshold validation | Consistent at ≥900 and ≥700 |
 
-**Conclusion:** All bias mitigation strategies confirm Hyperforin's significant DILI influence.
+**Conclusion:** All bias mitigation strategies confirm Hyperforin's dominant DILI influence.
 
 ---
 
 ## The Problem
 
-The hybrid data approach creates methodological asymmetry:
-
 | Compound | Raw Targets | LCC-Mapped | Source |
 |----------|-------------|------------|--------|
-| **Hyperforin** | 14 | **9** | Literature curation |
-| **Quercetin** | 122 | **62** | ChEMBL API (IC50 ≤ 10µM) |
-
-This reflects **data availability** for complex phytochemicals vs screening compounds.
+| **Hyperforin** | 12 | **9** | Literature curation |
+| **Quercetin** | 80 | **62** | ChEMBL + Literature |
 
 ---
 
 ## Implemented Solutions
 
-### 1. Per-Target Normalization ✅
+### 1. Per-Target Network Influence (PTNI) ✅
 
 **Problem:** Raw influence scores favor compounds with more targets.
 
-**Solution:** Normalize by target count.
+**Solution:** 
+$$\text{PTNI} = \frac{I}{|T|}$$
 
-```
-Per-Target Influence = Total RWR Score / Number of Targets
-```
-
-| Compound | Targets | Total Influence | Per-Target Influence |
-|----------|---------|-----------------|---------------------|
-| Hyperforin | 9 | 0.258 | **0.0287** |
-| Quercetin | 62 | 0.023 | 0.00037 |
-
-**Result:** Hyperforin has **78× higher per-target influence** than Quercetin.
+| Metric | Hyperforin PTNI | Quercetin PTNI | Ratio |
+|--------|-----------------|----------------|-------|
+| RWI | 0.01135 | 0.00052 | **21.9×** |
+| EWI | 0.0134 | 0.00080 | **16.9×** |
 
 ---
 
@@ -57,34 +47,29 @@ Per-Target Influence = Total RWR Score / Number of Targets
 
 **Problem:** Drug targets might preferentially hit network hubs.
 
-**Solution:** Null model matches degree distribution of actual targets.
+**Solution:** Null model matches degree distribution (±25%).
 
-| Compound | Observed Influence | Null Mean | Z-Score | Significant? |
-|----------|-------------------|-----------|---------|--------------|
-| Hyperforin | 0.258 | 0.073 | **+9.50** | ✅ Yes (p < 0.0001) |
-| Quercetin | 0.023 | 0.019 | +1.04 | ❌ No (p = 0.148) |
+| Compound | RWI Z-Score | EWI Z-Score | Significant |
+|----------|-------------|-------------|-------------|
+| Hyperforin | **+8.83** | **+7.99** | ✅ Yes |
+| Quercetin | +4.42 | +5.56 | ✅ Yes |
 
-**Script:** `scripts/run_full_validation.py`
+**Key insight:** Both are significant, but PTNI reveals that Hyperforin's efficiency is 17–22× higher.
 
 ---
 
-### 3. Bootstrap Sensitivity Analysis ✅
+### 3. Tiered Validation (RWI → EWI) ✅
 
-**Problem:** Target count difference (9 vs 62) might bias conclusions.
+**Problem:** Expression weighting might manufacture the signal.
 
-**Solution:** Bootstrap Quercetin's per-target influence:
-- 1000 bootstrap iterations
-- Compute 95% confidence interval
-- Check if Hyperforin falls within CI
+**Solution:** Show signal exists in standard RWR first.
 
-| Metric | Quercetin 95% CI | Hyperforin Observed |
-|--------|------------------|---------------------|
-| Per-target influence | [0.0035, 0.0877] | **0.2579** |
+| Tier | Purpose | Hyperforin Z |
+|------|---------|--------------|
+| RWI | Does signal exist without biology? | +8.83 ✅ |
+| EWI | Does signal persist under constraint? | +7.99 ✅ |
 
-**Result:** Hyperforin is **significantly outside** Quercetin's CI → Target count difference does not explain the result.
-
-**Script:** `scripts/run_bootstrap_sensitivity.py`  
-**Output:** `results/bootstrap_sensitivity.csv`
+**Result:** Signal exists in topology, persists under biological constraint.
 
 ---
 
@@ -92,49 +77,28 @@ Per-Target Influence = Total RWR Score / Number of Targets
 
 **Problem:** Results might depend on network construction threshold.
 
-**Solution:** Validate at multiple STRING confidence thresholds.
-
-| Threshold | Hyperforin Z | Quercetin Z | Consistent? |
-|-----------|--------------|-------------|-------------|
-| ≥900 (strict) | +9.50 | +1.04 | ✅ |
-| ≥700 (moderate) | +6.49 | +0.98 | ✅ |
-
-**Result:** Conclusions are robust across network densities.
-
-**Scripts:** 
-- `scripts/run_full_validation.py` (≥900)
-- `scripts/run_validation_700.py` (≥700)
-
----
-
-## Checklist
-
-- [x] Literature targets curated (Hyperforin: 9 high-confidence)
-- [x] Source tracking in `targets.csv`
-- [x] DATA_QUALITY.md created
-- [x] Per-target normalization implemented
-- [x] Degree-aware permutation testing (n=1000)
-- [x] Bootstrap sensitivity analysis (n=1000)
-- [x] Multi-threshold validation (≥900, ≥700)
-- [x] All results documented
+| Threshold | Hyperforin RWI Z | Quercetin RWI Z | Consistent? |
+|-----------|------------------|-----------------|-------------|
+| ≥900 | +8.83 | +4.42 | ✅ |
+| ≥700 | +8.76 | +5.16 | ✅ |
 
 ---
 
 ## Methods Section Text (Publication-Ready)
 
-> **Bias Mitigation:** To address methodological asymmetry between literature-curated (Hyperforin, n=9) and ChEMBL-derived (Quercetin, n=62) target sets, we implemented four bias mitigation strategies: (1) per-target normalization of influence scores, (2) degree-aware permutation testing (n=1,000) to control for network topology effects, (3) bootstrap sensitivity analysis (n=1,000) to validate robustness to target count differences, and (4) multi-threshold validation (STRING ≥900 and ≥700). Hyperforin demonstrated significantly elevated per-target DILI influence (78× higher, Z=+9.50, p<0.0001) that fell outside Quercetin's 95% bootstrap confidence interval [0.0035, 0.0877] and remained significant across all thresholds.
+> **Bias Mitigation:** To address methodological asymmetry between literature-curated (Hyperforin, n=9) and ChEMBL-derived (Quercetin, n=62) target sets, we implemented a tiered inference framework: (1) standard random walk influence (RWI) establishes the epistemic baseline, (2) expression-weighted influence (EWI) validates under biological constraint, (3) per-target network influence (PTNI) normalizes for target count. Hyperforin demonstrated 17–22× higher PTNI than Quercetin across both RWI (21.9×, Z=+8.83, p<10⁻¹⁶) and EWI (16.9×, Z=+7.99, p<10⁻¹⁵), confirming that network position dominates over target count.
 
 ---
 
 ## Results Summary
 
 ```
-✅ Hyperforin per-target influence: 0.0287 (78× higher)
-✅ Hyperforin Z-score: +9.50 (p < 0.0001)
-✅ Quercetin Z-score: +1.04 (p = 0.148, NS)
-✅ Bootstrap validation: Hyperforin outside 95% CI
-✅ Multi-threshold: Consistent at ≥900 and ≥700
-✅ All bias mitigation strategies CONFIRM the finding
+✅ PTNI Ratio (RWI): 21.9×
+✅ PTNI Ratio (EWI): 16.9×
+✅ Hyperforin RWI Z: +8.83 (p < 10⁻¹⁶)
+✅ Hyperforin EWI Z: +7.99 (p < 10⁻¹⁵)
+✅ Multi-threshold: Consistent
+✅ Tiered validation: Signal exists → Signal persists
 ```
 
 ---
@@ -144,4 +108,3 @@ Per-Target Influence = Total RWR Score / Number of Targets
 - [DATA_QUALITY.md](DATA_QUALITY.md) - Data source documentation
 - [RESULTS_GUIDE.md](../../results/RESULTS_GUIDE.md) - Result file descriptions
 - [METHODOLOGY.md](../../docs/METHODOLOGY.md) - Statistical methods
-- [RESEARCH_SUMMARY.md](../../docs/RESEARCH_SUMMARY.md) - Complete research summary

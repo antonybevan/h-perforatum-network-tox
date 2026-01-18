@@ -1,0 +1,908 @@
+name,ltkbid,category,dilirank,smiles
+Abacavir sulfate,LT00040,DILI_positive,vMOST-DILI-concern,C1CC1NC2=C3C(=NC(=N2)N)N(C=N3)C4CC(C=C4)CO.C1CC1NC2=C3C(=NC(=N2)N)N(C=N3)C4CC(C=C4)CO.OS(=O)(=O)O
+Abemaciclib,LT03619,DILI_positive,vLess-DILI-concern,CCN1CCN(CC1)CC2=CN=C(C=C2)NC3=NC=C(C(=N3)C4=CC5=C(C(=C4)F)N=C(N5C(C)C)C)F
+Abiraterone acetate,LT02339,DILI_positive,vMost-DILI-concern,CC(=O)OC1CCC2(C3CCC4(C(C3CC=C2C1)CC=C4C5=CN=CC=C5)C)C
+Acamprosate calcium,LT01141,DILI_positive,vLess-DILI-concern,CC(=O)NCCCS(=O)(=O)[O-].CC(=O)NCCCS(=O)(=O)[O-].[Ca+2]
+Acarbose,LT01034,DILI_positive,vMost-DILI-concern,CC1C(C(C(C(O1)OC2C(OC(C(C2O)O)OC(C(CO)O)C(C(C=O)O)O)CO)O)O)NC3C=C(C(C(C3O)O)O)CO
+Acebutolol hydrochloride,LT01035,DILI_positive,vLess-DILI-concern,CCCC(=O)NC1=CC(=C(C=C1)OCC(CNC(C)C)O)C(=O)C.Cl
+Aceclofenac,LT01853,DILI_positive,vLess-DILI-concern,C1=CC=C(C(=C1)CC(=O)OCC(=O)O)NC2=C(C=CC=C2Cl)Cl
+Acetaminophen,LT00004,DILI_positive,vMost-DILI-concern,CC(=O)NC1=CC=C(C=C1)O
+Acetazolamide,LT00498,DILI_positive,vMost-DILI-concern,CC(=O)NC1=NN=C(S1)S(=O)(=O)N
+Acitretin,LT01042,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C(=C1C=CC(=CC=CC(=CC(=O)O)C)C)C)C)OC
+Acyclovir,LT00041,DILI_positive,vLess-DILI-concern,C1=NC2=C(N1COCCO)N=C(NC2=O)N
+Adefovir dipivoxil,LT01155,DILI_positive,vLess-DILI-concern,CC(C)(C)C(=O)OCOP(=O)(COCCN1C=NC2=C(N=CN=C21)N)OCOC(=O)C(C)(C)C
+Alaproclate,LT02213,DILI_positive,vMost-DILI-concern,CC(C(=O)OC(C)(C)CC1=CC=C(C=C1)Cl)N
+Alatrofloxacin mesylate,LT00461,DILI_positive,vMost-DILI-concern,CC(C(=O)NC(C)C(=O)NC1C2C1CN(C2)C3=C(C=C4C(=O)C(=CN(C4=N3)C5=C(C=C(C=C5)F)F)C(=O)O)F)N.CS(=O)(=O)O
+Albendazole,LT00499,DILI_positive,vMost-DILI-concern,CCCSC1=CC2=C(C=C1)N=C(N2)NC(=O)OC
+Alclofenac,LT00692,DILI_positive,vMost-DILI-concern,C=CCOC1=C(C=C(C=C1)CC(=O)O)Cl
+Alendronate sodium,LT00980,DILI_positive,vLess-DILI-concern,C(CC(O)(P(=O)(O)O)P(=O)(O)[O-])CN.O.O.O.[Na+]
+Alfuzosin hydrochloride,LT01107,DILI_positive,vLess-DILI-concern,CN(CCCNC(=O)C1CCCO1)C2=NC3=CC(=C(C=C3C(=N2)N)OC)OC.Cl
+Aliskiren hemifumarate,LT01244,DILI_positive,vLess-DILI-concern,CC(C)C(CC1=CC(=C(C=C1)OC)OCCCOC)CC(C(CC(C(C)C)C(=O)NCC(C)(C)C(=O)N)O)N.CC(C)C(CC1=CC(=C(C=C1)OC)OCCCOC)CC(C(CC(C(C)C)C(=O)NCC(C)(C)C(=O)N)O)N.C(=CC(=O)O)C(=O)O
+Allopurinol,LT00043,DILI_positive,vMost-DILI-concern,C1=NNC2=C1C(=O)NC=N2
+Alosetron hydrochloride,LT01070,DILI_positive,vLess-DILI-concern,CC1=C(N=CN1)CN2CCC3=C(C2=O)C4=CC=CC=C4N3C.Cl
+Alpelisib,LT03621,DILI_positive,vLess-DILI-concern,CC1=C(SC(=N1)NC(=O)N2CCCC2C(=O)N)C3=CC(=NC=C3)C(C)(C)C(F)(F)F
+Alpidem,LT01060,DILI_positive,vMost-DILI-concern,CCCN(CCC)C(=O)CC1=C(N=C2N1C=C(C=C2)Cl)C3=CC=C(C=C3)Cl
+Alprazolam,LT00501,DILI_positive,vLess-DILI-concern,CC1=NN=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4
+Amiloride hydrochloride,LT02070,DILI_positive,vLess-DILI-concern,C1(=C(N=C(C(=N1)Cl)N)N)C(=O)N=C(N)N.O.O.Cl
+Amineptine,LT00045,DILI_positive,vMost-DILI-concern,C1CC2=CC=CC=C2C(C3=CC=CC=C31)NCCCCCCC(=O)O
+Aminosalicylic acid ,LT00505,DILI_positive,vMOST-DILI-concern,C1=CC(=C(C=C1N)O)C(=O)O
+Amiodarone hydrochloride,LT00046,DILI_positive,vMost-DILI-concern,CCCCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)I)OCCN(CC)CC)I.Cl
+Amisulpride,LT01793,DILI_positive,vLess-DILI-concern,CCN1CCCC1CNC(=O)C2=CC(=C(C=C2OC)N)S(=O)(=O)CC
+Amitriptyline hydrochloride,LT00047,DILI_positive,vLess-DILI-concern,CN(C)CCC=C1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+Amlodipine besylate,LT00175,DILI_positive,vLess-DILI-concern,CCOC(=O)C1=C(NC(=C(C1C2=CC=CC=C2Cl)C(=O)OC)C)COCCN.C1=CC=C(C=C1)S(=O)(=O)O
+Amoxicillin,LT00507,DILI_positive,vLess-DILI-concern,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C
+Amphetamine sulfate,LT02100,DILI_positive,vLess-DILI-concern,CC(CC1=CC=CC=C1)N.CC(CC1=CC=CC=C1)N.OS(=O)(=O)O
+Amphotericin B,LT00048,DILI_positive,vLess-DILI-concern,CC1C=CC=CC=CC=CC=CC=CC=CC(CC2C(C(CC(O2)(CC(CC(C(CCC(CC(CC(=O)OC(C(C1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O
+Ampicillin sodium,LT00049,DILI_positive,vLess-DILI-concern,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)[O-])C.[Na+]
+Anastrozole,LT00263,DILI_positive,vLess-DILI-concern,CC(C)(C#N)C1=CC(=CC(=C1)CN2C=NC=N2)C(C)(C)C#N
+Anidulafungin,LT01203,DILI_positive,vMost-DILI-concern,CCCCCOC1=CC=C(C=C1)C2=CC=C(C=C2)C3=CC=C(C=C3)C(=O)NC4CC(C(NC(=O)C5C(C(CN5C(=O)C(NC(=O)C(NC(=O)C6CC(CN6C(=O)C(NC4=O)C(C)O)O)C(C(C7=CC=C(C=C7)O)O)O)C(C)O)C)O)O)O
+Apixaban,LT02418,DILI_positive,vLess-DILI-concern,COC1=CC=C(C=C1)N2C3=C(CCN(C3=O)C4=CC=C(C=C4)N5CCCCC5=O)C(=N2)C(=O)N
+Aplaviroc,LT00693,DILI_positive,vMost-DILI-concern,CCCCN1C(=O)C(NC(=O)C12CCN(CC2)CC3=CC=C(C=C3)OC4=CC=C(C=C4)C(=O)O)C(C5CCCCC5)O
+Aripiprazole,LT01143,DILI_positive,vLess-DILI-concern,C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl
+Aripiprazole lauroxil,LT03624,DILI_positive,vLess-DILI-concern,CCCCCCCCCCCC(=O)OCN1C(=O)CCC2=C1C=C(C=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl
+Aspirin,LT00053,DILI_positive,vLess-DILI-concern,CC(=O)OC1=CC=CC=C1C(=O)O
+Atazanavir sulfate,LT01199,DILI_positive,vLess-DILI-concern,CC(C)(C)C(C(=O)NC(CC1=CC=CC=C1)C(CN(CC2=CC=C(C=C2)C3=CC=CC=N3)NC(=O)C(C(C)(C)C)NC(=O)OC)O)NC(=O)OC.OS(=O)(=O)O
+Atenolol,LT00277,DILI_positive,vLess-DILI-concern,CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O
+Atomoxetine hydrochloride,LT01139,DILI_positive,vMost-DILI-concern,CC1=CC=CC=C1OC(CCNC)C2=CC=CC=C2.Cl
+Atorvastatin calcium,LT00258,DILI_positive,vMost-DILI-concern,CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)[O-])O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4.CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)[O-])O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4.[Ca+2]
+Auranofin,LT02166,DILI_positive,vLess-DILI-concern,CCP(CC)CC.CC(=O)OCC1C(C(C(C(O1)[S-])OC(=O)C)OC(=O)C)OC(=O)C.[Au+]
+Azathioprine,LT00006,DILI_positive,vMost-DILI-concern,CN1C=NC(=C1SC2=NC=NC3=C2NC=N3)[N+](=O)[O-]
+Azithromycin,LT00265,DILI_positive,vLess-DILI-concern,CCC1C(C(C(N(CC(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)C)O)(C)O
+Baclofen,LT01113,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1C(CC(=O)O)CN)Cl
+Benazepril hydrochloride,LT01116,DILI_positive,vLess-DILI-concern,CCOC(=O)C(CCC1=CC=CC=C1)NC2CCC3=CC=CC=C3N(C2=O)CC(=O)O.Cl
+Bendazac,LT01117,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)CN2C3=CC=CC=C3C(=N2)OCC(=O)O
+Bendroflumethiazide,LT00825,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)CC2NC3=C(C=C(C(=C3)C(F)(F)F)S(=O)(=O)N)S(=O)(=O)N2
+Benoxaprofen,LT00513,DILI_positive,vMost-DILI-concern,CC(C1=CC2=C(C=C1)OC(=N2)C3=CC=C(C=C3)Cl)C(=O)O
+Benzarone,LT01120,DILI_positive,vMost-DILI-concern,CCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC=C(C=C3)O
+Benzbromarone,LT00278,DILI_positive,vMost-DILI-concern,CCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)Br)O)Br
+Benziodarone,LT01121,DILI_positive,vMost-DILI-concern,CCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)I)O)I
+Benzonatate,LT00800,DILI_positive,vLess-DILI-concern,CCCCNC1=CC=C(C=C1)C(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOC
+Bexarotene,LT01064,DILI_positive,vMost-DILI-concern,CC1=CC2=C(C=C1C(=C)C3=CC=C(C=C3)C(=O)O)C(CCC2(C)C)(C)C
+Bicalutamide,LT00056,DILI_positive,vMost-DILI-concern,CC(CS(=O)(=O)C1=CC=C(C=C1)F)(C(=O)NC2=CC(=C(C=C2)C#N)C(F)(F)F)O
+Bortezomib,LT01202,DILI_positive,vMost-DILI-concern,B(C(CC(C)C)NC(=O)C(CC1=CC=CC=C1)NC(=O)C2=NC=CN=C2)(O)O
+Bosentan,LT01140,DILI_positive,vMost-DILI-concern,CC(C)(C)C1=CC=C(C=C1)S(=O)(=O)NC2=C(C(=NC(=N2)C3=NC=CC=N3)OCCO)OC4=CC=CC=C4OC
+Bosutinib monohydrate,LT02349,DILI_positive,vMost-DILI-concern,CN1CCN(CC1)CCCOC2=C(C=C3C(=C2)N=CC(=C3NC4=CC(=C(C=C4Cl)Cl)OC)C#N)OC.O
+Bromfenac sodium,LT00519,DILI_positive,vMost-DILI-concern,C1=CC(=C(C(=C1)C(=O)C2=CC=C(C=C2)Br)N)CC(=O)[O-].C1=CC(=C(C(=C1)C(=O)C2=CC=C(C=C2)Br)N)CC(=O)[O-].O.O.O.[Na+].[Na+]
+Bromocriptine mesylate,LT00279,DILI_positive,vLess-DILI-concern,CC(C)CC1C(=O)N2CCCC2C3(N1C(=O)C(O3)(C(C)C)NC(=O)C4CN(C5CC6=C(NC7=CC=CC(=C67)C5=C4)Br)C)O.CS(=O)(=O)O
+Bupropion hydrochloride,LT00058,DILI_positive,vLess-DILI-concern,CC(C(=O)C1=CC(=CC=C1)Cl)NC(C)(C)C.Cl
+Busulfan,LT00280,DILI_positive,vMost-DILI-concern,CS(=O)(=O)OCCCCOS(=O)(=O)C
+Canagliflozin,LT02899,DILI_positive,vLess-DILI-concern,CC1=C(C=C(C=C1)C2C(C(C(C(O2)CO)O)O)O)CC3=CC=C(S3)C4=CC=C(C=C4)F
+Candesartan cilexetil,LT01022,DILI_positive,vLess-DILI-concern,CCOC1=NC2=CC=CC(=C2N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NNN=N5)C(=O)OC(C)OC(=O)OC6CCCCC6
+Capecitabine,LT02018,DILI_positive,vLess-DILI-concern,CCCCCOC(=O)NC1=NC(=O)N(C=C1F)C2C(C(C(O2)C)O)O
+Capmatinib hydrochloride,LT03646,DILI_positive,vLess-DILI-concern,CNC(=O)C1=C(C=C(C=C1)C2=NN3C(=CN=C3N=C2)CC4=CC5=C(C=C4)N=CC=C5)F.O.Cl.Cl
+Captopril,LT00059,DILI_positive,vLess-DILI-concern,CC(CS)C(=O)N1CCCC1C(=O)O
+Carbamazepine,LT00060,DILI_positive,vMost-DILI-concern,C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N
+Carbenicillin disodium,LT01159,DILI_positive,vLess-DILI-concern,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)C(=O)[O-])C(=O)[O-])C.[Na+].[Na+]
+Carboplatin,LT00061,DILI_positive,vLess-DILI-concern,C1CC(C1)(C(=O)[O-])C(=O)[O-].N.N.[Pt+2]
+Carfilzomib,LT02395,DILI_positive,vMost-DILI-concern,CC(C)CC(C(=O)C1(CO1)C)NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CC(C)C)NC(=O)C(CCC3=CC=CC=C3)NC(=O)CN4CCOCC4
+Carvedilol,LT00207,DILI_positive,vLess-DILI-concern,COC1=CC=CC=C1OCCNCC(COC2=CC=CC3=C2C4=CC=CC=C4N3)O
+Cefaclor,LT01166,DILI_positive,vLess-DILI-concern,C1C(=C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)O)Cl
+Cefadroxil hemihydrate,LT01167,DILI_positive,vLess-DILI-concern,CC1=C(N2C(C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)SC1)C(=O)O.CC1=C(N2C(C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)SC1)C(=O)O.O
+Cefazolin sodium,LT01171,DILI_positive,vLess-DILI-concern,CC1=NN=C(S1)SCC2=C(N3C(C(C3=O)NC(=O)CN4C=NN=N4)SC2)C(=O)[O-].[Na+]
+Cefdinir,LT01289,DILI_positive,vLess-DILI-concern,C=CC1=C(N2C(C(C2=O)NC(=O)C(=NO)C3=CSC(=N3)N)SC1)C(=O)O
+Cefditoren pivoxil,LT01087,DILI_positive,vLess-DILI-concern,CC1=C(SC=N1)C=CC2=C(N3C(C(C3=O)NC(=O)C(=NOC)C4=CSC(=N4)N)SC2)C(=O)OCOC(=O)C(C)(C)C
+Cefepime hydrochloride,LT01172,DILI_positive,vLess-DILI-concern,C[N+]1(CCCC1)CC2=C(N3C(C(C3=O)NC(=O)C(=NOC)C4=CSC(=N4)N)SC2)C(=O)O.O.Cl.[Cl-]
+Cefixime,LT01173,DILI_positive,vLess-DILI-concern,C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O
+Cefoperazone sodium,LT01176,DILI_positive,vLess-DILI-concern,CCN1CCN(C(=O)C1=O)C(=O)NC(C2=CC=C(C=C2)O)C(=O)NC3C4N(C3=O)C(=C(CS4)CSC5=NN=NN5C)C(=O)[O-].[Na+]
+Cefotaxime sodium,LT01177,DILI_positive,vLess-DILI-concern,CC(=O)OCC1=C(N2C(C(C2=O)NC(=O)C(=NOC)C3=CSC(=N3)N)SC1)C(=O)[O-].[Na+]
+Cefprozil,LT01182,DILI_positive,vLess-DILI-concern,CC=CC1=C(N2C(C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)SC1)C(=O)O
+Ceftaroline fosamil,LT02387,DILI_positive,vLess-DILI-concern,CCON=C(C1=NSC(=N1)NP(=O)(O)O)C(=O)NC2C3N(C2=O)C(=C(CS3)SC4=NC(=CS4)C5=CC=[N+](C=C5)C)C(=O)[O-]
+Ceftazidime,LT00062,DILI_positive,vLess-DILI-concern,CC(C)(C(=O)O)ON=C(C1=CSC(=N1)N)C(=O)NC2C3N(C2=O)C(=C(CS3)C[N+]4=CC=CC=C4)C(=O)[O-]
+Ceftriaxone sodium,LT01185,DILI_positive,vLess-DILI-concern,CN1C(=NC(=O)C(=O)[N-]1)SCC2=C(N3C(C(C3=O)NC(=O)C(=NOC)C4=CSC(=N4)N)SC2)C(=O)[O-].[Na+].[Na+]
+Cefuroxime sodium,LT01186,DILI_positive,vLess-DILI-concern,CON=C(C1=CC=CO1)C(=O)NC2C3N(C2=O)C(=C(CS3)COC(=O)N)C(=O)[O-].[Na+]
+Celecoxib,LT00252,DILI_positive,vLess-DILI-concern,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+Cephalexin,LT01189,DILI_positive,vLess-DILI-concern,CC1=C(N2C(C(C2=O)NC(=O)C(C3=CC=CC=C3)N)SC1)C(=O)O
+Ceritinib,LT03596,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1C2CCNCC2)OC(C)C)NC3=NC=C(C(=N3)NC4=CC=CC=C4S(=O)(=O)C(C)C)Cl
+Cetirizine hydrochloride,LT01190,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCOCC(=O)O)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl.Cl.Cl
+Chlorambucil,LT00286,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl
+Chlorcyclizine hydrochloride,LT00066,DILI_positive,vLess-DILI-concern,CN1CCN(CC1)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl.Cl
+Chlordiazepoxide hydrochloride,LT01198,DILI_positive,vLess-DILI-concern,CN=C1CN(C(=C2C=C(C=CC2=N1)Cl)C3=CC=CC=C3)O.Cl
+Chlormezanone,LT01201,DILI_positive,vMost-DILI-concern,CN1C(S(=O)(=O)CCC1=O)C2=CC=C(C=C2)Cl
+Chloroquine phosphate,LT01207,DILI_positive,vLess-DILI-concern,CCN(CC)CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl.OP(=O)(O)O.OP(=O)(O)O
+Chlorothiazide,LT01208,DILI_positive,vLess-DILI-concern,C1=C2C(=CC(=C1Cl)S(=O)(=O)N)S(=O)(=O)N=CN2
+Chlorpromazine hydrochloride,LT00068,DILI_positive,vLess-DILI-concern,CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl.Cl
+Chlorpropamide,LT00379,DILI_positive,vLess-DILI-concern,CCCNC(=O)NS(=O)(=O)C1=CC=C(C=C1)Cl
+Chlorzoxazone,LT00067,DILI_positive,vMost-DILI-concern,C1=CC2=C(C=C1Cl)NC(=O)O2
+Cimetidine,LT01218,DILI_positive,vLess-DILI-concern,CC1=C(N=CN1)CSCCNC(=NC)NC#N
+Cinchophen,LT01219,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2=NC3=CC=CC=C3C(=C2)C(=O)O
+Ciprofloxacin hydrochloride,LT00178,DILI_positive,vMost-DILI-concern,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O.O.Cl
+Cisplatin,LT00071,DILI_positive,vLess-DILI-concern,N.N.Cl[Pt]Cl
+Citalopram hydrobromide,LT00219,DILI_positive,vLess-DILI-concern,CN(C)CCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F.Br
+Cladribine,LT01224,DILI_positive,vLess-DILI-concern,C1C(C(OC1N2C=NC3=C(N=C(N=C32)Cl)N)CO)O
+Clarithromycin,LT00187,DILI_positive,vMost-DILI-concern,CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)OC)C)C)O)(C)O
+Clindamycin hydrochloride,LT01225,DILI_positive,vLess-DILI-concern,CCCC1CC(N(C1)C)C(=O)NC(C2C(C(C(C(O2)SC)O)O)O)C(C)Cl.Cl
+Clindamycin phosphate,LT02346,DILI_positive,vLess-DILI-concern,CCCC1CC(N(C1)C)C(=O)NC(C2C(C(C(C(O2)SC)OP(=O)(O)O)O)O)C(C)Cl
+Clofibrate,LT00011,DILI_positive,vLess-DILI-concern,CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl
+Clomacran,LT00694,DILI_positive,vMost-DILI-concern,CN(C)CCCC1C2=CC=CC=C2NC3=C1C=C(C=C3)Cl
+Clometacin,LT01228,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(N1CC(=O)O)C=C(C=C2)OC)C(=O)C3=CC=C(C=C3)Cl
+Clomiphene citrate,LT00233,DILI_positive,vLess-DILI-concern,CCN(CC)CCOC1=CC=C(C=C1)C(=C(C2=CC=CC=C2)Cl)C3=CC=CC=C3.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+Clomipramine hydrochloride,LT00185,DILI_positive,vMost-DILI-concern,CN(C)CCCN1C2=CC=CC=C2CCC3=C1C=C(C=C3)Cl.Cl
+Clonazepam,LT00532,DILI_positive,vLess-DILI-concern,C1C(=O)NC2=C(C=C(C=C2)[N+](=O)[O-])C(=N1)C3=CC=CC=C3Cl
+Clopidogrel bisulfate,LT01023,DILI_positive,vLess-DILI-concern,COC(=O)C(C1=CC=CC=C1Cl)N2CCC3=C(C2)C=CS3.OS(=O)(=O)O
+Clotrimazole,LT00248,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)C(C2=CC=CC=C2)(C3=CC=CC=C3Cl)N4C=CN=C4
+Cloxacillin sodium,LT01235,DILI_positive,vLess-DILI-concern,CC1=C(C(=NO1)C2=CC=CC=C2Cl)C(=O)NC3C4N(C3=O)C(C(S4)(C)C)C(=O)[O-].[Na+]
+Clozapine,LT00287,DILI_positive,vMost-DILI-concern,CN1CCN(CC1)C2=NC3=C(C=CC(=C3)Cl)NC4=CC=CC=C42
+Colestipol hydrochloride,LT00881,DILI_positive,vLess-DILI-concern,C(CNCCNCCNCCN)N.Cl
+Crizotinib,LT02436,DILI_positive,vMost-DILI-concern,CC(C1=C(C=CC(=C1Cl)F)Cl)OC2=C(N=CC(=C2)C3=CN(N=C3)C4CCNCC4)N
+Cromoglicate,LT02004,DILI_positive,vLess-DILI-concern,C1=CC2=C(C(=C1)OCC(COC3=CC=CC4=C3C(=O)C=C(O4)C(=O)O)O)C(=O)C=C(O2)C(=O)O
+Cyclobenzaprine hydrochloride,LT01249,DILI_positive,vLess-DILI-concern,CN(C)CCC=C1C2=CC=CC=C2C=CC3=CC=CC=C31.Cl
+Cyclofenil,LT01250,DILI_positive,vMost-DILI-concern,CC(=O)OC1=CC=C(C=C1)C(=C2CCCCC2)C3=CC=C(C=C3)OC(=O)C
+Cyclophosphamide,LT00013,DILI_positive,vLess-DILI-concern,C1CNP(=O)(OC1)N(CCCl)CCCl
+Cyclosporine,LT00380,DILI_positive,vMost-DILI-concern,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+Cyproheptadine hydrochloride,LT01255,DILI_positive,vLess-DILI-concern,CN1CCC(=C2C3=CC=CC=C3C=CC4=CC=CC=C42)CC1.Cl
+Cytarabine,LT00209,DILI_positive,vMost-DILI-concern,C1=CN(C(=O)N=C1N)C2C(C(C(O2)CO)O)O
+Dabigatran etexilate mesylate,LT02345,DILI_positive,vLess-DILI-concern,CCCCCCOC(=O)NC(=N)C1=CC=C(C=C1)NCC2=NC3=C(N2C)C=CC(=C3)C(=O)N(CCC(=O)OCC)C4=CC=CC=N4.CS(=O)(=O)O
+Dacarbazine,LT00288,DILI_positive,vMost-DILI-concern,CN(C)N=NC1=C(NC=N1)C(=O)N
+Dacomitinib,LT03652,DILI_positive,vLess-DILI-concern,COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)NC(=O)C=CCN4CCCCC4
+Dactinomycin,LT00079,DILI_positive,vMost-DILI-concern,CC1C(C(=O)NC(C(=O)N2CCCC2C(=O)N(CC(=O)N(C(C(=O)O1)C(C)C)C)C)C(C)C)NC(=O)C3=C4C(=C(C=C3)C)OC5=C(C(=O)C(=C(C5=N4)C(=O)NC6C(OC(=O)C(N(C(=O)CN(C(=O)C7CCCN7C(=O)C(NC6=O)C(C)C)C)C)C(C)C)C)N)C
+Dalteparin sodium,LT00961,DILI_positive,vLess-DILI-concern,C1N(CN(CN1CCO)CC[O-])CCO.[Na+]
+Danazol,LT00539,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2(C#C)O)CCC4=CC5=C(CC34C)C=NO5
+Dantrolene sodium,LT00080,DILI_positive,vMost-DILI-concern,C1C(=NC(=O)N1N=CC2=CC=C(O2)C3=CC=C(C=C3)[N+](=O)[O-])[O-].[Na+]
+Dapsone,LT00289,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1N)S(=O)(=O)C2=CC=C(C=C2)N
+Daptomycin,LT01200,DILI_positive,vLess-DILI-concern,CCCCCCCCCC(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CC(=O)N)C(=O)NC(CC(=O)O)C(=O)NC3C(OC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC3=O)CCCN)CC(=O)O)C)CC(=O)O)CO)C(C)CC(=O)O)CC(=O)C4=CC=CC=C4N)C
+Darunavir,LT01243,DILI_positive,vMost-DILI-concern,CC(C)CN(CC(C(CC1=CC=CC=C1)NC(=O)OC2COC3C2CCO3)O)S(=O)(=O)C4=CC=C(C=C4)N
+Dasatinib,LT01248,DILI_positive,vLess-DILI-concern,CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=CC(=NC(=N3)C)N4CCN(CC4)CCO
+Deferasirox,LT00563,DILI_positive,vMost-DILI-concern,C1=CC=C(C(=C1)C2=NN(C(=N2)C3=CC=CC=C3O)C4=CC=C(C=C4)C(=O)O)O
+Deferoxamine mesylate,LT00386,DILI_positive,vLess-DILI-concern,CC(=O)N(CCCCCNC(=O)CCC(=O)N(CCCCCNC(=O)CCC(=O)N(CCCCCN)O)O)O.CS(=O)(=O)O
+Desloratadine,LT01085,DILI_positive,vLess-DILI-concern,C1CC2=C(C=CC(=C2)Cl)C(=C3CCNCC3)C4=C1C=CC=N4
+Desvenlafaxine succinate,LT00573,DILI_positive,vLess-DILI-concern,CN(C)CC(C1=CC=C(C=C1)O)C2(CCCCC2)O.C(CC(=O)O)C(=O)O.O
+Dexlansoprazole,LT01266,DILI_positive,vLess-DILI-concern,CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F
+Dexmethylphenidate hydrochloride,LT02909,DILI_positive,vLess-DILI-concern,COC(=O)C(C1CCCCN1)C2=CC=CC=C2.Cl
+Diazepam,LT00230,DILI_positive,vLess-DILI-concern,CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3
+Diclofenac sodium,LT00084,DILI_positive,vMost-DILI-concern,C1=CC=C(C(=C1)CC(=O)[O-])NC2=C(C=CC=C2Cl)Cl.[Na+]
+Dicloxacillin sodium,LT02041,DILI_positive,vLess-DILI-concern,CC1=C(C(=NO1)C2=C(C=CC=C2Cl)Cl)C(=O)NC3C4N(C3=O)C(C(S4)(C)C)C(=O)[O-].[Na+]
+Didanosine,LT01285,DILI_positive,vMost-DILI-concern,C1CC(OC1CO)N2C=NC3=C2N=CNC3=O
+Diflunisal,LT00085,DILI_positive,vMost-DILI-concern,C1=CC(=C(C=C1C2=C(C=C(C=C2)F)F)C(=O)O)O
+Diltiazem hydrochloride,LT01292,DILI_positive,vMost-DILI-concern,CC(=O)OC1C(SC2=CC=CC=C2N(C1=O)CCN(C)C)C3=CC=C(C=C3)OC.Cl
+Dimethyl fumarate,LT02877,DILI_positive,vMost-DILI-concern,COC(=O)C=CC(=O)OC
+Disopyramide phosphate,LT01302,DILI_positive,vLess-DILI-concern,CC(C)N(CCC(C1=CC=CC=C1)(C2=CC=CC=N2)C(=O)N)C(C)C.OP(=O)(O)O
+Disulfiram,LT00295,DILI_positive,vMost-DILI-concern,CCN(CC)C(=S)SSC(=S)N(CC)CC
+Divalproex sodium,LT00684,DILI_positive,vMost-DILI-concern,CCCC(CCC)C(=O)O.CCCC(CCC)C(=O)[O-].[Na+]
+Docetaxel,LT01309,DILI_positive,vLess-DILI-concern,CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)OC(C)(C)C)O)O)OC(=O)C6=CC=CC=C6)(CO4)OC(=O)C)O)C)O
+Dofetilide,LT01040,DILI_positive,vLess-DILI-concern,CN(CCC1=CC=C(C=C1)NS(=O)(=O)C)CCOC2=CC=C(C=C2)NS(=O)(=O)C
+Dolutegravir sodium,LT02905,DILI_positive,vMost-DILI-concern,CC1CCOC2N1C(=O)C3=C(C(=O)C(=CN3C2)C(=O)NCC4=C(C=C(C=C4)F)F)[O-].[Na+]
+Donepezil hydrochloride,LT00052,DILI_positive,vLess-DILI-concern,COC1=C(C=C2C(=C1)CC(C2=O)CC3CCN(CC3)CC4=CC=CC=C4)OC.Cl
+Doxazosin mesylate,LT01313,DILI_positive,vLess-DILI-concern,COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCN(CC3)C(=O)C4COC5=CC=CC=C5O4)N)OC.CS(=O)(=O)O
+Doxepin hydrochloride,LT01314,DILI_positive,vLess-DILI-concern,CN(C)CCC=C1C2=CC=CC=C2COC3=CC=CC=C31.Cl
+Doxorubicin hydrochloride,LT00335,DILI_positive,vLess-DILI-concern,CC1C(C(CC(O1)OC2CC(CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(C(=O)CO)O)N)O.Cl
+Doxycycline,LT00393,DILI_positive,vLess-DILI-concern,CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O
+Dronedarone hydrochloride,LT00671,DILI_positive,vMost-DILI-concern,CCCCC1=C(C2=C(O1)C=CC(=C2)NS(=O)(=O)C)C(=O)C3=CC=C(C=C3)OCCCN(CCCC)CCCC.Cl
+Droxicam,LT01318,DILI_positive,vMost-DILI-concern,CN1C2=C(C3=CC=CC=C3S1(=O)=O)OC(=O)N(C2=O)C4=CC=CC=N4
+Duloxetine hydrochloride,LT02035,DILI_positive,vMost-DILI-concern,CNCCC(C1=CC=CS1)OC2=CC=CC3=CC=CC=C32.Cl
+Ebrotidine,LT01849,DILI_positive,vMost-DILI-concern,C1=CC(=CC=C1S(=O)(=O)NC=NCCSCC2=CSC(=N2)N=C(N)N)Br
+Efavirenz,LT01323,DILI_positive,vMost-DILI-concern,C1CC1C#CC2(C3=C(C=CC(=C3)Cl)NC(=O)O2)C(F)(F)F
+Eltrombopag olamine,LT00663,DILI_positive,vMost-DILI-concern,CC1=C(C=C(C=C1)N2C(=O)C(=C(N2)C)N=NC3=CC=CC(=C3O)C4=CC(=CC=C4)C(=O)O)C.C(CO)N.C(CO)N
+Enalapril maleate,LT00296,DILI_positive,vLess-DILI-concern,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CCCC2C(=O)O.C(=CC(=O)O)C(=O)O
+Enoxaparin sodium,LT00954,DILI_positive,vLess-DILI-concern,CC1C(C(OC(C1OC2CC(C(C(C2O)O)OC3C(C(C(C(O3)COS(=O)(=O)O)OC4C(C(C=C(O4)C(=O)[O-])O)O)O)NC(=O)C)C(=O)[O-])CO)OC5C(C(C(OC5C(=O)[O-])OC6C7COC(O7)C(C6O)NS(=O)(=O)[O-])O)O)NC(=O)C.[Na+].[Na+].[Na+].[Na+]
+Entacapone,LT01968,DILI_positive,vLess-DILI-concern,CCN(CC)C(=O)C(=CC1=CC(=C(C(=C1)O)O)[N+](=O)[O-])C#N
+Eplerenone,LT01149,DILI_positive,vLess-DILI-concern,CC12CCC(=O)C=C1CC(C3C24C(O4)CC5(C3CCC56CCC(=O)O6)C)C(=O)OC
+Erlotinib hydrochloride,LT01214,DILI_positive,vMost-DILI-concern,COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC.Cl
+Erythromycin estolate,LT00092,DILI_positive,vMost-DILI-concern,CCCCCCCCCCCCOS(=O)(=O)O.CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)OC(=O)CC)(C)O)C)C)O)(C)O
+Escitalopram oxalate,LT02929,DILI_positive,vLess-DILI-concern,CN(C)CCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F.C(=O)(C(=O)O)O
+Esomeprazole sodium,LT01589,DILI_positive,vLess-DILI-concern,CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C([N-]2)C=CC(=C3)OC.[Na+]
+Estradiol valerate,LT00016,DILI_positive,vLess-DILI-concern,CCCCC(=O)OC1CCC2C1(CCC3C2CCC4=C3C=CC(=C4)O)C
+Estramustine phosphate sodium,LT01342,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2OP(=O)([O-])[O-])CCC4=C3C=CC(=C4)OC(=O)N(CCCl)CCCl.[Na+].[Na+]
+Eszopiclone,LT01161,DILI_positive,vLess-DILI-concern,CN1CCN(CC1)C(=O)OC2C3=NC=CN=C3C(=O)N2C4=NC=C(C=C4)Cl
+Ethambutol hydrochloride,LT01345,DILI_positive,vMost-DILI-concern,CCC(CO)NCCNC(CC)CO.Cl.Cl
+Ethionamide,LT01348,DILI_positive,vLess-DILI-concern,CCC1=NC=CC(=C1)C(=S)N
+Etodolac,LT00240,DILI_positive,vMost-DILI-concern,CCC1=C2C(=CC=C1)C3=C(N2)C(OCC3)(CC)CC(=O)O
+Etoposide,LT00094,DILI_positive,vLess-DILI-concern,CC1OCC2C(O1)C(C(C(O2)OC3C4COC(=O)C4C(C5=CC6=C(C=C35)OCO6)C7=CC(=C(C(=C7)OC)O)OC)O)O
+Etravirine,LT00653,DILI_positive,vMost-DILI-concern,CC1=CC(=CC(=C1OC2=NC(=NC(=C2Br)N)NC3=CC=C(C=C3)C#N)C)C#N
+Everolimus,LT01267,DILI_positive,vLess-DILI-concern,CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)O)C(C)CC4CCC(C(C4)OC)OCCO)C)C)O)OC)C)C)C)OC
+Exemestane,LT00394,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2=O)CC(=C)C4=CC(=O)C=CC34C
+Exifone,LT01359,DILI_positive,vMost-DILI-concern,C1=CC(=C(C(=C1C(=O)C2=CC(=C(C(=C2)O)O)O)O)O)O
+Ezetimibe,LT01153,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1C2C(C(=O)N2C3=CC=C(C=C3)F)CCC(C4=CC=C(C=C4)F)O)O
+Falnidamol,LT01870,DILI_positive,vMost-DILI-concern,CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl
+Famotidine,LT00095,DILI_positive,vLess-DILI-concern,C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N
+Febuxostat,LT00554,DILI_positive,vMost-DILI-concern,CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O
+Felbamate,LT00097,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C(COC(=O)N)COC(=O)N
+Felodipine,LT00397,DILI_positive,vLess-DILI-concern,CCOC(=O)C1=C(NC(=C(C1C2=C(C(=CC=C2)Cl)Cl)C(=O)OC)C)C
+Fenclozic acid,LT01846,DILI_positive,vMost-DILI-concern,C1=CC(=CC=C1C2=NC(=CS2)CC(=O)O)Cl
+Fenofibrate,LT00098,DILI_positive,vLess-DILI-concern,CC(C)OC(=O)C(C)(C)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl
+Fenofibric acid,LT00670,DILI_positive,vLess-DILI-concern,CC(C)(C(=O)O)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl
+Fenoprofen calcium,LT00099,DILI_positive,vMost-DILI-concern,CC(C1=CC(=CC=C1)OC2=CC=CC=C2)C(=O)[O-].CC(C1=CC(=CC=C1)OC2=CC=CC=C2)C(=O)[O-].O.O.[Ca+2]
+Fialuridine,LT01371,DILI_positive,vMost-DILI-concern,C1=C(C(=O)NC(=O)N1C2C(C(C(O2)CO)O)F)I
+Fiduxosin,LT00701,DILI_positive,vMost-DILI-concern,COC1=CC=CC2=C1C3CN(CC3CO2)CCCCN4C(=O)C5=C(C6=NC(=CN=C6S5)C7=CC=CC=C7)NC4=O
+Finasteride,LT00167,DILI_positive,vLess-DILI-concern,CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C
+Fingolimod hydrochloride,LT02342,DILI_positive,vMost-DILI-concern,CCCCCCCCC1=CC=C(C=C1)CCC(CO)(CO)N.Cl
+Fipexide,LT01372,DILI_positive,vMost-DILI-concern,C1CN(CCN1CC2=CC3=C(C=C2)OCO3)C(=O)COC4=CC=C(C=C4)Cl
+Flavoxate hydrochloride,LT00857,DILI_positive,vLess-DILI-concern,CC1=C(OC2=C(C1=O)C=CC=C2C(=O)OCCN3CCCCC3)C4=CC=CC=C4.Cl
+Flecainide acetate,LT01375,DILI_positive,vLess-DILI-concern,CC(=O)O.C1CCNC(C1)CNC(=O)C2=C(C=CC(=C2)OCC(F)(F)F)OCC(F)(F)F
+Fluconazole,LT00179,DILI_positive,vMost-DILI-concern,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)(CN3C=NC=N3)O
+Fluorouracil,LT01029,DILI_positive,vLess-DILI-concern,C1=C(C(=O)NC(=O)N1)F
+Fluoxetine hydrochloride,LT00018,DILI_positive,vLess-DILI-concern,CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F.Cl
+Flurazepam hydrochloride,LT01394,DILI_positive,vLess-DILI-concern,CCN(CC)CCN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3F.Cl.Cl
+Flurbiprofen sodium,LT00298,DILI_positive,vLess-DILI-concern,CC(C1=CC(=C(C=C1)C2=CC=CC=C2)F)C(=O)[O-].[Na+]
+Flutamide,LT00101,DILI_positive,vMost-DILI-concern,CC(C)C(=O)NC1=CC(=C(C=C1)[N+](=O)[O-])C(F)(F)F
+Fluvastatin sodium,LT00172,DILI_positive,vLess-DILI-concern,CC(C)N1C2=CC=CC=C2C(=C1C=CC(CC(CC(=O)[O-])O)O)C3=CC=C(C=C3)F.[Na+]
+Fondaparinux sodium,LT01125,DILI_positive,vLess-DILI-concern,COC1C(C(C(C(O1)COS(=O)(=O)[O-])OC2C(C(C(C(O2)C(=O)[O-])OC3C(C(C(C(O3)COS(=O)(=O)[O-])OC4C(C(C(C(O4)C(=O)[O-])OC5C(C(C(C(O5)COS(=O)(=O)[O-])O)O)NS(=O)(=O)[O-])O)O)OS(=O)(=O)[O-])NS(=O)(=O)[O-])O)OS(=O)(=O)[O-])O)NS(=O)(=O)[O-].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+]
+Fosfomycin tromethamine,LT01398,DILI_positive,vLess-DILI-concern,CC1C(O1)P(=O)(O)O.C(C(CO)(CO)N)O
+Fosinopril sodium,LT01399,DILI_positive,vLess-DILI-concern,CCC(=O)OC(C(C)C)OP(=O)(CCCCC1=CC=CC=C1)CC(=O)N2CC(CC2C(=O)[O-])C3CCCCC3.[Na+]
+Fosphenytoin sodium,LT01400,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2(C(=O)N(C(=O)N2)COP(=O)([O-])[O-])C3=CC=CC=C3.[Na+].[Na+]
+Fospropofol disodium,LT00658,DILI_positive,vLess-DILI-concern,CC(C)C1=C(C(=CC=C1)C(C)C)OCOP(=O)([O-])[O-].[Na+].[Na+]
+Gabapentin,LT00300,DILI_positive,vLess-DILI-concern,C1CCC(CC1)(CC(=O)O)CN
+Gefitinib,LT00402,DILI_positive,vMost-DILI-concern,COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4
+Gemcitabine hydrochloride,LT01407,DILI_positive,vMost-DILI-concern,C1=CN(C(=O)N=C1N)C2C(C(C(O2)CO)O)(F)F.Cl
+Gemfibrozil,LT00020,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1)C)OCCCC(C)(C)C(=O)O
+Gemifloxacin mesylate,LT01084,DILI_positive,vLess-DILI-concern,CON=C1CN(CC1CN)C2=C(C=C3C(=O)C(=CN(C3=N2)C4CC4)C(=O)O)F.CS(=O)(=O)O
+Givosiran sodium,LT03686,DILI_positive,vLess-DILI-concern,CC1CC(CN1C(=O)CCCCCCCCCCC(=O)NC(COCCC(=O)NCCCNC(=O)CCCCOC2C(C(C(C(O2)CO)O)O)NC(=O)C)(COCCC(=O)NCCCNC(=O)CCCCOC3C(C(C(C(O3)CO)O)O)NC(=O)C)COCCC(=O)NCCCNC(=O)CCCCOC4C(C(C(C(O4)CO)O)O)NC(=O)C)O
+Glafenine,LT02092,DILI_positive,vMost-DILI-concern,C1=CC=C(C(=C1)C(=O)OCC(CO)O)NC2=C3C=CC(=CC3=NC=C2)Cl
+Glatiramer acetate,LT00985,DILI_positive,vLess-DILI-concern,CC(C(=O)O)N.CC(=O)O.C1=CC(=CC=C1CC(C(=O)O)N)O.C(CCN)CC(C(=O)O)N.C(CC(=O)O)C(C(=O)O)N
+Glimepiride,LT00173,DILI_positive,vLess-DILI-concern,CCC1=C(CN(C1=O)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCC(CC3)C)C
+Glipizide,LT00243,DILI_positive,vLess-DILI-concern,CC1=CN=C(C=N1)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCCCC3
+Glyburide,LT00302,DILI_positive,vLess-DILI-concern,COC1=C(C=C(C=C1)Cl)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCCCC3
+Griseofulvin,LT00558,DILI_positive,vMost-DILI-concern,CC1CC(=O)C=C(C12C(=O)C3=C(O2)C(=C(C=C3OC)OC)Cl)OC
+Haloperidol decanoate,LT02427,DILI_positive,vLess-DILI-concern,CCCCCCCCCC(=O)OC1(CCN(CC1)CCCC(=O)C2=CC=C(C=C2)F)C3=CC=C(C=C3)Cl
+Haloperidol lactate,LT00405,DILI_positive,vLess-DILI-concern,CC(C(=O)O)O.C1CN(CCC1(C2=CC=C(C=C2)Cl)O)CCCC(=O)C3=CC=C(C=C3)F
+Heparin sodium,LT01426,DILI_positive,vLess-DILI-concern,CC(=O)NC1C(C(C(OC1O)COS(=O)(=O)O)OC2C(C(C(C(O2)C(=O)O)OC3C(C(C(C(O3)CO)OC4C(C(C(C(O4)C(=O)O)O)O)OS(=O)(=O)O)OS(=O)(=O)O)NS(=O)(=O)O)O)OS(=O)(=O)O)O.[Na+]
+Hydralazine hydrochloride,LT00559,DILI_positive,vLess-DILI-concern,C1=CC=C2C(=C1)C=NN=C2NN.Cl
+Hydrochlorothiazide,LT01433,DILI_positive,vLess-DILI-concern,C1NC2=CC(=C(C=C2S(=O)(=O)N1)S(=O)(=O)N)Cl
+Hydroxychloroquine sulfate,LT02026,DILI_positive,vLess-DILI-concern,CCN(CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl)CCO.OS(=O)(=O)O
+Hydroxyurea,LT00106,DILI_positive,vMost-DILI-concern,C(=O)(N)NO
+Ibandronate sodium,LT01156,DILI_positive,vLess-DILI-concern,CCCCCN(C)CCC(O)(P(=O)(O)O)P(=O)(O)[O-].O.[Na+]
+Ibrutinib,LT02898,DILI_positive,vMost-DILI-concern,C=CC(=O)N1CCCC(C1)N2C3=NC=NC(=C3C(=N2)C4=CC=C(C=C4)OC5=CC=CC=C5)N
+Ibufenac,LT00560,DILI_positive,vMost-DILI-concern,CC(C)CC1=CC=C(C=C1)CC(=O)O
+Ibuprofen,LT00199,DILI_positive,vLess-DILI-concern,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+Idelalisib,LT03610,DILI_positive,vMost-DILI-concern,CCC(C1=NC2=C(C(=CC=C2)F)C(=O)N1C3=CC=CC=C3)NC4=NC=NC5=C4NC=N5
+Ifosfamide,LT00562,DILI_positive,vLess-DILI-concern,C1CN(P(=O)(OC1)NCCCl)CCCl
+Imatinib mesylate,LT00107,DILI_positive,vMost-DILI-concern,CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5.CS(=O)(=O)O
+Imipramine hydrochloride,LT00108,DILI_positive,vLess-DILI-concern,CN(C)CCCN1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+Inclisiran sodium,LT03691,DILI_positive,vLess-DILI-concern,CC(=O)NC1C(C(C(OC1OCCCCC(=O)NCCCNC(=O)CCOCC(COCCC(=O)NCCCNC(=O)CCCCOC2C(C(C(C(O2)CO)O)O)NC(=O)C)(COCCC(=O)NCCCNC(=O)CCCCOC3C(C(C(C(O3)CO)O)O)NC(=O)C)NC(=O)CCCCCCCCCCC(=O)N4CC(CC4COP(=O)(O)O)O)CO)O)O
+Indomethacin,LT00022,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(N1C(=O)C3=CC=C(C=C3)Cl)C=CC(=C2)OC)CC(=O)O
+Interferon alfa-2b,LT01306,DILI_positive,vMost-DILI-concern,CCCN(CCOC1=C(C=C(C=C1Cl)Cl)Cl)C(=O)N2C=CN=C2.C(S(=O)(=O)[O-])(I)I.[Na+]
+Iproniazid,LT00109,DILI_positive,vMost-DILI-concern,CC(C)NNC(=O)C1=CC=NC=C1
+Irbesartan,LT01005,DILI_positive,vLess-DILI-concern,CCCCC1=NC2(CCCC2)C(=O)N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NNN=N5
+Irinotecan hydrochloride,LT01466,DILI_positive,vLess-DILI-concern,CCC1=C2CN3C(=CC4=C(C3=O)COC(=O)C4(CC)O)C2=NC5=C1C=C(C=C5)OC(=O)N6CCC(CC6)N7CCCCC7.Cl
+Isaxonine,LT00696,DILI_positive,vMost-DILI-concern,CC(C)NC1=NC=CC=N1
+Isoniazid,LT00306,DILI_positive,vMost-DILI-concern,C1=CN=CC=C1C(=O)NN
+Isotretinoin,LT00234,DILI_positive,vMost-DILI-concern,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C
+Isradipine,LT01475,DILI_positive,vLess-DILI-concern,CC1=C(C(C(=C(N1)C)C(=O)OC(C)C)C2=CC=CC3=NON=C32)C(=O)OC
+Itraconazole,LT00182,DILI_positive,vMost-DILI-concern,CCC(C)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OCC5COC(O5)(CN6C=NC=N6)C7=C(C=C(C=C7)Cl)Cl
+Ivacaftor,LT02431,DILI_positive,vLess-DILI-concern,CC(C)(C)C1=CC(=C(C=C1NC(=O)C2=CNC3=CC=CC=C3C2=O)O)C(C)(C)C
+Ivermectin,LT00568,DILI_positive,vLess-DILI-concern,CCC(C)C1C(CCC2(O1)CC3CC(O2)CC=C(C(C(C=CC=C4COC5C4(C(C=C(C5O)C)C(=O)O3)O)C)OC6CC(C(C(O6)C)OC7CC(C(C(O7)C)O)OC)OC)C)C
+Ketamine hydrochloride,LT00859,DILI_positive,vLess-DILI-concern,CNC1(CCCCC1=O)C2=CC=CC=C2Cl.Cl
+Ketoconazole,LT00111,DILI_positive,vMost-DILI-concern,CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OCC3COC(O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl
+Ketoprofen,LT00023,DILI_positive,vLess-DILI-concern,CC(C1=CC(=CC=C1)C(=O)C2=CC=CC=C2)C(=O)O
+Ketorolac tromethamine,LT00204,DILI_positive,vLess-DILI-concern,C1CN2C(=CC=C2C(=O)C3=CC=CC=C3)C1C(=O)O.C(C(CO)(CO)N)O
+Labetalol hydrochloride,LT00112,DILI_positive,vMost-DILI-concern,CC(CCC1=CC=CC=C1)NCC(C2=CC(=C(C=C2)O)C(=O)N)O.Cl
+Lamivudine,LT00569,DILI_positive,vLess-DILI-concern,C1C(OC(S1)CO)N2C=CC(=NC2=O)N
+Lamotrigine,LT01481,DILI_positive,vMost-DILI-concern,C1=CC(=C(C(=C1)Cl)Cl)C2=C(N=C(N=N2)N)N
+Lansoprazole,LT00307,DILI_positive,vLess-DILI-concern,CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F
+Lapatinib ditosylate,LT02204,DILI_positive,vMost-DILI-concern,CC1=CC=C(C=C1)S(=O)(=O)O.CC1=CC=C(C=C1)S(=O)(=O)O.CS(=O)(=O)CCNCC1=CC=C(O1)C2=CC3=C(C=C2)N=CN=C3NC4=CC(=C(C=C4)OCC5=CC(=CC=C5)F)Cl.O
+Leflunomide,LT00113,DILI_positive,vMost-DILI-concern,CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F
+Lenalidomide,LT01238,DILI_positive,vLess-DILI-concern,C1CC(=O)NC(=O)C1N2CC3=C(C2=O)C=CC=C3N
+Letermovir,LT03701,DILI_positive,vLess-DILI-concern,COC1=C(C=C(C=C1)C(F)(F)F)N2C(C3=C(C(=CC=C3)F)N=C2N4CCN(CC4)C5=CC(=CC=C5)OC)CC(=O)O
+Letrozole,LT00572,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1C#N)C(C2=CC=C(C=C2)C#N)N3C=NC=N3
+Leuprolide acetate,LT02019,DILI_positive,vLess-DILI-concern,CCNC(=O)C1CCCN1C(=O)C(CCCN=C(N)N)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(CC2=CC=C(C=C2)O)NC(=O)C(CO)NC(=O)C(CC3=CNC4=CC=CC=C43)NC(=O)C(CC5=CN=CN5)NC(=O)C6CCC(=O)N6.CC(=O)O
+Levetiracetam,LT01059,DILI_positive,vLess-DILI-concern,CCC(C(=O)N)N1CCCC1=O
+Levocetirizine dihydrochloride,LT00600,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCOCC(=O)O)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl.Cl.Cl
+Levofloxacin,LT01488,DILI_positive,vMost-DILI-concern,CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O
+Levothyroxine sodium,LT01072,DILI_positive,vLess-DILI-concern,C1=C(C=C(C(=C1I)OC2=CC(=C(C(=C2)I)O)I)I)CC(C(=O)[O-])N.[Na+]
+Linagliptin,LT02445,DILI_positive,vLess-DILI-concern,CC#CCN1C2=C(N=C1N3CCCC(C3)N)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5C(=N4)C)C
+Linezolid,LT01077,DILI_positive,vLess-DILI-concern,CC(=O)NCC1CN(C(=O)O1)C2=CC(=C(C=C2)N3CCOCC3)F
+Liraglutide,LT01268,DILI_positive,vLess-DILI-concern,CCCCCCCCCCCCCCCC(=O)NC(CCC(=O)NCCCCC(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CC=CC=C1)C(=O)NC(C(C)CC)C(=O)NC(C)C(=O)NC(CC2=CNC3=CC=CC=C32)C(=O)NC(CC(C)C)C(=O)NC(C(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)O)NC(=O)C(C)NC(=O)C(C)NC(=O)C(CCC(=O)N)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(CO)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)C(C(C)O)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)C(CC6=CN=CN6)N)C(=O)O
+Lisinopril,LT01492,DILI_positive,vLess-DILI-concern,C1CC(N(C1)C(=O)C(CCCCN)NC(CCC2=CC=CC=C2)C(=O)O)C(=O)O
+Lomitapide mesylate,LT02398,DILI_positive,vMost-DILI-concern,CS(=O)(=O)O.C1CN(CCC1NC(=O)C2=CC=CC=C2C3=CC=C(C=C3)C(F)(F)F)CCCCC4(C5=CC=CC=C5C6=CC=CC=C64)C(=O)NCC(F)(F)F
+Lomustine,LT00575,DILI_positive,vLess-DILI-concern,C1CCC(CC1)NC(=O)N(CCCl)N=O
+Loracarbef,LT01497,DILI_positive,vLess-DILI-concern,C1CC(=C(N2C1C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)O)Cl
+Lorazepam,LT00181,DILI_positive,vLess-DILI-concern,C1=CC=C(C(=C1)C2=NC(C(=O)NC3=C2C=C(C=C3)Cl)O)Cl
+Losartan potassium,LT01499,DILI_positive,vLess-DILI-concern,CCCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NN=N[N-]4)CO)Cl.[K+]
+Lovastatin,LT00576,DILI_positive,vLess-DILI-concern,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C
+Lumiracoxib,LT00686,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1)NC2=C(C=CC=C2Cl)F)CC(=O)O
+Macitentan,LT02451,DILI_positive,vMost-DILI-concern,CCCNS(=O)(=O)NC1=C(C(=NC=N1)OCCOC2=NC=C(C=N2)Br)C3=CC=C(C=C3)Br
+Maraviroc,LT00640,DILI_positive,vMost-DILI-concern,CC1=NN=C(N1C2CC3CCC(C2)N3CCC(C4=CC=CC=C4)NC(=O)C5CCC(CC5)(F)F)C(C)C
+Mebanazine,LT01508,DILI_positive,vMost-DILI-concern,CC(C1=CC=CC=C1)NN
+Mebendazole,LT00308,DILI_positive,vLess-DILI-concern,COC(=O)NC1=NC2=C(N1)C=C(C=C2)C(=O)C3=CC=CC=C3
+Mefenamic acid,LT00116,DILI_positive,vMost-DILI-concern,CC1=C(C(=CC=C1)NC2=CC=CC=C2C(=O)O)C
+Mefloquine hydrochloride,LT01514,DILI_positive,vLess-DILI-concern,C1CCNC(C1)C(C2=CC(=NC3=C2C=CC=C3C(F)(F)F)C(F)(F)F)O.Cl
+Meloxicam,LT00117,DILI_positive,vLess-DILI-concern,CC1=CN=C(S1)NC(=O)C2=C(C3=CC=CC=C3S(=O)(=O)N2C)O
+Melphalan,LT01517,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1CC(C(=O)O)N)N(CCCl)CCCl
+Memantine hydrochloride,LT01908,DILI_positive,vLess-DILI-concern,CC12CC3CC(C1)(CC(C3)(C2)N)C.Cl
+Mepazine,LT02110,DILI_positive,vMost-DILI-concern,CN1CCCC(C1)CN2C3=CC=CC=C3SC4=CC=CC=C42
+Mepivacaine hydrochloride,LT00822,DILI_positive,vLess-DILI-concern,CC1=C(C(=CC=C1)C)NC(=O)C2CCCCN2C.Cl
+Mercaptopurine,LT00003,DILI_positive,vMost-DILI-concern,C1=NC2=C(N1)C(=S)N=CN2
+Meropenem,LT01525,DILI_positive,vLess-DILI-concern,CC1C2C(C(=O)N2C(=C1SC3CC(NC3)C(=O)N(C)C)C(=O)O)C(C)O
+Mesalamine,LT00414,DILI_positive,vLess-DILI-concern,C1=CC(=C(C=C1N)C(=O)O)O
+Metaxalone,LT00841,DILI_positive,vLess-DILI-concern,CC1=CC(=CC(=C1)OCC2CNC(=O)O2)C
+Metformin hydrochloride,LT00119,DILI_positive,vLess-DILI-concern,CN(C)C(=N)N=C(N)N.Cl
+Methazolamide,LT01532,DILI_positive,vLess-DILI-concern,CC(=O)N=C1N(N=C(S1)S(=O)(=O)N)C
+Methimazole,LT00580,DILI_positive,vMost-DILI-concern,CN1C=CNC1=S
+Methotrexate sodium,LT00026,DILI_positive,vMost-DILI-concern,CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)[O-])C(=O)[O-].[Na+].[Na+]
+Methoxsalen,LT01537,DILI_positive,vLess-DILI-concern,COC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2
+Methyldopa,LT00121,DILI_positive,vMost-DILI-concern,CC(CC1=CC(=C(C=C1)O)O)(C(=O)O)N
+Methylphenidate hydrochloride,LT01545,DILI_positive,vLess-DILI-concern,COC(=O)C(C1CCCCN1)C2=CC=CC=C2.Cl
+Methylprednisolone,LT00478,DILI_positive,vLess-DILI-concern,CC1CC2C3CCC(C3(CC(C2C4(C1=CC(=O)C=C4)C)O)C)(C(=O)CO)O
+Methyltestosterone,LT00222,DILI_positive,vLess-DILI-concern,CC12CCC(=O)C=C1CCC3C2CCC4(C3CCC4(C)O)C
+Metoclopramide hydrochloride,LT01549,DILI_positive,vLess-DILI-concern,CCN(CC)CCNC(=O)C1=CC(=C(C=C1OC)N)Cl.O.Cl
+Metoprolol tartrate,LT00309,DILI_positive,vLess-DILI-concern,CC(C)NCC(COC1=CC=C(C=C1)CCOC)O.CC(C)NCC(COC1=CC=C(C=C1)CCOC)O.C(C(C(=O)O)O)(C(=O)O)O
+Metronidazole,LT00584,DILI_positive,vLess-DILI-concern,CC1=NC=C(N1CCO)[N+](=O)[O-]
+Mexiletine hydrochloride,LT01553,DILI_positive,vMost-DILI-concern,CC1=C(C(=CC=C1)C)OCC(C)N.Cl
+Micafungin sodium,LT01187,DILI_positive,vMost-DILI-concern,CCCCCOC1=CC=C(C=C1)C2=CC(=NO2)C3=CC=C(C=C3)C(=O)NC4CC(C(NC(=O)C5C(C(CN5C(=O)C(NC(=O)C(NC(=O)C6CC(CN6C(=O)C(NC4=O)C(C)O)O)C(C(C7=CC(=C(C=C7)O)OS(=O)(=O)[O-])O)O)C(CC(=O)N)O)C)O)O)O.[Na+]
+Mifepristone,LT00184,DILI_positive,vLess-DILI-concern,CC#CC1(CCC2C1(CC(C3=C4CCC(=O)C=C4CCC23)C5=CC=C(C=C5)N(C)C)C)O
+Milnacipran hydrochloride,LT01263,DILI_positive,vMost-DILI-concern,CCN(CC)C(=O)C1(CC1CN)C2=CC=CC=C2.Cl
+Minocycline hydrochloride,LT00416,DILI_positive,vMost-DILI-concern,CN(C)C1C2CC3CC4=C(C=CC(=C4C(=C3C(=O)C2(C(=C(C1=O)C(=O)N)O)O)O)O)N(C)C.Cl
+Mirtazapine,LT01560,DILI_positive,vLess-DILI-concern,CN1CCN2C(C1)C3=CC=CC=C3CC4=C2N=CC=C4
+Mitomycin,LT00588,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)C2=C(C1=O)N3CC4C(C3(C2COC(=O)N)OC)N4)N
+Mitoxantrone hydrochloride,LT01565,DILI_positive,vLess-DILI-concern,C1=CC(=C2C(=C1NCCNCCO)C(=O)C3=C(C=CC(=C3C2=O)O)O)NCCNCCO.Cl.Cl
+Modafinil,LT00589,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)N
+Montelukast sodium,LT02007,DILI_positive,vLess-DILI-concern,CC(C)(C1=CC=CC=C1CCC(C2=CC=CC(=C2)C=CC3=NC4=C(C=CC(=C4)Cl)C=C3)SCC5(CC5)CC(=O)[O-])O.[Na+]
+Moxifloxacin hydrochloride,LT02008,DILI_positive,vLess-DILI-concern,COC1=C2C(=CC(=C1N3CC4CCCNC4C3)F)C(=O)C(=CN2C5CC5)C(=O)O.Cl
+Moxisylyte,LT01574,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C=C1OC(=O)C)C(C)C)OCCN(C)C
+Mycophenolate mofetil,LT01288,DILI_positive,vLess-DILI-concern,CC1=C2COC(=O)C2=C(C(=C1OC)CC=C(C)CCC(=O)OCCN3CCOCC3)O
+Nafcillin sodium,LT01583,DILI_positive,vLess-DILI-concern,CCOC1=C(C2=CC=CC=C2C=C1)C(=O)NC3C4N(C3=O)C(C(S4)(C)C)C(=O)[O-].[Na+]
+Nandrolone phenpropionate,LT02121,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2OC(=O)CCC4=CC=CC=C4)CCC5=CC(=O)CCC35
+Naproxen,LT00593,DILI_positive,vLess-DILI-concern,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+Nefazodone hydrochloride,LT00124,DILI_positive,vMost-DILI-concern,CCC1=NN(C(=O)N1CCOC2=CC=CC=C2)CCCN3CCN(CC3)C4=CC(=CC=C4)Cl.Cl
+Nelarabine,LT01233,DILI_positive,vLess-DILI-concern,COC1=NC(=NC2=C1N=CN2C3C(C(C(O3)CO)O)O)N
+Nelfinavir mesylate,LT01012,DILI_positive,vLess-DILI-concern,CC1=C(C=CC=C1O)C(=O)NC(CSC2=CC=CC=C2)C(CN3CC4CCCCC4CC3C(=O)NC(C)(C)C)O.CS(=O)(=O)O
+Nevirapine,LT00260,DILI_positive,vMost-DILI-concern,CC1=C2C(=NC=C1)N(C3=C(C=CC=N3)C(=O)N2)C4CC4
+Niacin,LT00312,DILI_positive,vMost-DILI-concern,C1=CC(=CN=C1)C(=O)O
+Nialamide,LT01594,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)CNC(=O)CCNNC(=O)C2=CC=NC=C2
+Nifedipine,LT00313,DILI_positive,vLess-DILI-concern,CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC
+Nilotinib hydrochloride,LT00607,DILI_positive,vMost-DILI-concern,CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)N3C=C(N=C3)C)NC4=NC=CC(=N4)C5=CN=CC=C5.Cl
+Nilutamide,LT01600,DILI_positive,vMost-DILI-concern,CC1(C(=O)N(C(=O)N1)C2=CC(=C(C=C2)[N+](=O)[O-])C(F)(F)F)C
+Nimesulide,LT00314,DILI_positive,vMost-DILI-concern,CS(=O)(=O)NC1=C(C=C(C=C1)[N+](=O)[O-])OC2=CC=CC=C2
+Nintedanib esylate,LT03718,DILI_positive,vMost-DILI-concern,CCS(=O)(=O)O.CN1CCN(CC1)CC(=O)N(C)C2=CC=C(C=C2)N=C(C3=CC=CC=C3)C4=C(NC5=C4C=CC(=C5)C(=O)OC)O
+Niperotidine,LT01602,DILI_positive,vMost-DILI-concern,CN(C)CC1=CC=C(O1)CSCCNC(=C[N+](=O)[O-])NCC2=CC3=C(C=C2)OCO3
+Nitrefazole,LT01854,DILI_positive,vMost-DILI-concern,CC1=NC(=CN1C2=CC=C(C=C2)[N+](=O)[O-])[N+](=O)[O-]
+Nitrofurantoin,LT00125,DILI_positive,vMost-DILI-concern,C1C(=O)NC(=O)N1N=CC2=CC=C(O2)[N+](=O)[O-]
+Nizatidine,LT00315,DILI_positive,vLess-DILI-concern,CNC(=C[N+](=O)[O-])NCCSCC1=CSC(=N1)CN(C)C
+Nomifensine,LT01611,DILI_positive,vMost-DILI-concern,CN1CC(C2=C(C1)C(=CC=C2)N)C3=CC=CC=C3
+Norfloxacin,LT01614,DILI_positive,vLess-DILI-concern,CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O
+Nortriptyline hydrochloride,LT01615,DILI_positive,vMost-DILI-concern,CNCCC=C1C2=CC=CC=C2CCC3=CC=CC=C31.Cl
+Obeticholic acid,LT03603,DILI_positive,vMost-DILI-concern,CCC1C2CC(CCC2(C3CCC4(C(C3C1O)CCC4C(C)CCC(=O)O)C)C)O
+Octreotide acetate,LT01618,DILI_positive,vLess-DILI-concern,CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCCN)CC2=CNC3=CC=CC=C32)CC4=CC=CC=C4)NC(=O)C(CC5=CC=CC=C5)N)C(=O)NC(CO)C(C)O)O.CC(=O)O.CC(=O)O
+Ofloxacin,LT01620,DILI_positive,vLess-DILI-concern,CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O
+Olanzapine,LT00259,DILI_positive,vLess-DILI-concern,CC1=CC2=C(S1)NC3=CC=CC=C3N=C2N4CCN(CC4)C
+Olaparib,LT03722,DILI_positive,vLess-DILI-concern,C1CC1C(=O)N2CCN(CC2)C(=O)C3=C(C=CC(=C3)CC4=NNC(=O)C5=CC=CC=C54)F
+Olmesartan medoxomil,LT01102,DILI_positive,vLess-DILI-concern,CCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)C(=O)OCC5=C(OC(=O)O5)C)C(C)(C)O
+Olsalazine sodium,LT00126,DILI_positive,vLess-DILI-concern,C1=CC(=C(C=C1N=NC2=CC(=C(C=C2)[O-])C(=O)O)C(=O)O)[O-].[Na+].[Na+]
+Omeprazole,LT00206,DILI_positive,vLess-DILI-concern,CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC
+Ondansetron hydrochloride,LT01619,DILI_positive,vLess-DILI-concern,CC1=NC=CN1CC2CCC3=C(C2=O)C4=CC=CC=C4N3C.Cl
+Orlistat,LT02216,DILI_positive,vMost-DILI-concern,CCCCCCCCCCCC(CC1C(C(=O)O1)CCCCCC)OC(=O)C(CC(C)C)NC=O
+Oseltamivir phosphate,LT02210,DILI_positive,vLess-DILI-concern,CCC(CC)OC1C=C(CC(C1NC(=O)C)N)C(=O)OCC.OP(=O)(O)O
+Osimertinib mesylate,LT03727,DILI_positive,vLess-DILI-concern,CN1C=C(C2=CC=CC=C21)C3=NC(=NC=C3)NC4=C(C=C(C(=C4)NC(=O)C=C)N(C)CCN(C)C)OC.CS(=O)(=O)O
+Oxacillin sodium,LT01624,DILI_positive,vLess-DILI-concern,CC1=C(C(=NO1)C2=CC=CC=C2)C(=O)NC3C4N(C3=O)C(C(S4)(C)C)C(=O)[O-].O.[Na+]
+Oxaliplatin,LT01181,DILI_positive,vMost-DILI-concern,C1CCC(C(C1)[NH-])[NH-].C(=O)(C(=O)O)O.[Pt+2]
+Oxandrolone,LT00845,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2(C)O)CCC4C3(COC(=O)C4)C
+Oxaprozin,LT00429,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)C2=C(OC(=N2)CCC(=O)O)C3=CC=CC=C3
+Oxcarbazepine,LT01056,DILI_positive,vLess-DILI-concern,C1C2=CC=CC=C2N(C3=CC=CC=C3C1=O)C(=O)N
+Oxybutynin chloride,LT02084,DILI_positive,vLess-DILI-concern,CCN(CC)CC#CCOC(=O)C(C1CCCCC1)(C2=CC=CC=C2)O.Cl
+Oxycodone hydrochloride,LT00979,DILI_positive,vLess-DILI-concern,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)OC)O4)O.Cl
+Oxymetholone,LT00235,DILI_positive,vMost-DILI-concern,CC12CCC3C(C1CCC2(C)O)CCC4C3(CC(=CO)C(=O)C4)C
+Oxyphenisatin,LT00690,DILI_positive,vMost-DILI-concern,C1=CC=C2C(=C1)C(C(=O)N2)(C3=CC=C(C=C3)O)C4=CC=C(C=C4)O
+Paclitaxel,LT00430,DILI_positive,vLess-DILI-concern,CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C
+Palbociclib,LT03594,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N(C2=NC(=NC=C12)NC3=NC=C(C=C3)N4CCNCC4)C5CCCC5)C(=O)C
+Paliperidone,LT01252,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCC(C2=N1)O)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+Pantoprazole sodium,LT00606,DILI_positive,vLess-DILI-concern,COC1=C(C(=NC=C1)CS(=O)C2=NC3=C([N-]2)C=CC(=C3)OC(F)F)OC.[Na+]
+Papaverine hydrochloride,LT01637,DILI_positive,vMost-DILI-concern,COC1=C(C=C(C=C1)CC2=NC=CC3=CC(=C(C=C32)OC)OC)OC.Cl
+Paroxetine hydrochloride,LT00128,DILI_positive,vLess-DILI-concern,C1CNCC(C1C2=CC=C(C=C2)F)COC3=CC4=C(C=C3)OCO4.Cl
+Pazopanib hydrochloride,LT00672,DILI_positive,vMost-DILI-concern,CC1=C(C=C(C=C1)NC2=NC=CC(=N2)N(C)C3=CC4=NN(C(=C4C=C3)C)C)S(=O)(=O)N.Cl
+Pemoline,LT00246,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2C(=O)N=C(O2)N
+Penicillamine,LT00488,DILI_positive,vLess-DILI-concern,CC(C)(C(C(=O)O)N)S
+Penicillin g benzathine,LT01646,DILI_positive,vLess-DILI-concern,CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C.CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C.C1=CC=C(C=C1)CNCCNCC2=CC=CC=C2.O.O.O.O
+Pentamidine isethionate,LT00129,DILI_positive,vLess-DILI-concern,C1=CC(=CC=C1C(=N)N)OCCCCCOC2=CC=C(C=C2)C(=N)N.C(CS(=O)(=O)O)O.C(CS(=O)(=O)O)O
+Pentostatin,LT01651,DILI_positive,vMost-DILI-concern,C1C(C(OC1N2C=NC3=C2NC=NCC3O)CO)O
+Perhexiline,LT00131,DILI_positive,vMost-DILI-concern,C1CCC(CC1)C(CC2CCCCN2)C3CCCCC3
+Perphenazine,LT01655,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)Cl)CCO
+Pexidartinib hydrochloride,LT03735,DILI_positive,vMost-DILI-concern,C1=CC(=NC=C1CC2=CNC3=C2C=C(C=N3)Cl)NCC4=CN=C(C=C4)C(F)(F)F.Cl
+Phenelzine sulfate,LT01657,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)CCNN.OS(=O)(=O)O
+Phenobarbital sodium,LT00030,DILI_positive,vLess-DILI-concern,CCC1(C(=O)NC(=NC1=O)[O-])C2=CC=CC=C2.[Na+]
+Phenoxypropazine,LT00703,DILI_positive,vMost-DILI-concern,CC(COC1=CC=CC=C1)NN
+Phenytoin,LT00032,DILI_positive,vMost-DILI-concern,C1=CC=C(C=C1)C2(C(=O)NC(=O)N2)C3=CC=CC=C3
+Pioglitazone hydrochloride,LT00134,DILI_positive,vLess-DILI-concern,CCC1=CN=C(C=C1)CCOC2=CC=C(C=C2)CC3C(=O)NC(=O)S3.Cl
+Pipamazine,LT00697,DILI_positive,vMost-DILI-concern,C1CN(CCC1C(=O)N)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)Cl
+Pirfenidone,LT03550,DILI_positive,vMost-DILI-concern,CC1=CN(C(=O)C=C1)C2=CC=CC=C2
+Piroxicam,LT01679,DILI_positive,vLess-DILI-concern,CN1C(=C(C2=CC=CC=C2S1(=O)=O)O)C(=O)NC3=CC=CC=N3
+Pirprofen,LT01680,DILI_positive,vMost-DILI-concern,CC(C1=CC(=C(C=C1)N2CC=CC2)Cl)C(=O)O
+Pomalidomide,LT02883,DILI_positive,vMost-DILI-concern,C1CC(=O)NC(=O)C1N2C(=O)C3=C(C2=O)C(=CC=C3)N
+Posaconazole,LT01254,DILI_positive,vMost-DILI-concern,CCC(C(C)O)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OCC5CC(OC5)(CN6C=NC=N6)C7=C(C=C(C=C7)F)F
+Pralnacasan,LT00698,DILI_positive,vMost-DILI-concern,CCOC1C(CC(=O)O1)NC(=O)C2CCCN3N2C(=O)C(CCC3=O)NC(=O)C4=NC=CC5=CC=CC=C54
+Prasugrel hydrochloride,LT00665,DILI_positive,vLess-DILI-concern,CC(=O)OC1=CC2=C(S1)CCN(C2)C(C3=CC=CC=C3F)C(=O)C4CC4.Cl
+Pravastatin sodium,LT00186,DILI_positive,vLess-DILI-concern,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC(CC(CC(=O)[O-])O)O)O.[Na+]
+Prednisolone,LT00612,DILI_positive,vLess-DILI-concern,CC12CC(C3C(C1CCC2(C(=O)CO)O)CCC4=CC(=O)C=CC34C)O
+Prednisone,LT00180,DILI_positive,vLess-DILI-concern,CC12CC(=O)C3C(C1CCC2(C(=O)CO)O)CCC4=CC(=O)C=CC34C
+Pregabalin,LT01154,DILI_positive,vLess-DILI-concern,CC(C)CC(CC(=O)O)CN
+Procainamide hydrochloride,LT01699,DILI_positive,vLess-DILI-concern,CCN(CC)CCNC(=O)C1=CC=C(C=C1)N.Cl
+Procarbazine hydrochloride,LT00614,DILI_positive,vLess-DILI-concern,CC(C)NC(=O)C1=CC=C(C=C1)CNNC.Cl
+Prochlorperazine maleate,LT00437,DILI_positive,vLess-DILI-concern,CN1CCN(CC1)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)Cl.C(=CC(=O)O)C(=O)O.C(=CC(=O)O)C(=O)O
+Progesterone,LT00192,DILI_positive,vLess-DILI-concern,CC(=O)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C
+Promethazine hydrochloride,LT00205,DILI_positive,vLess-DILI-concern,CC(CN1C2=CC=CC=C2SC3=CC=CC=C31)N(C)C.Cl
+Propafenone hydrochloride,LT01705,DILI_positive,vLess-DILI-concern,CCCNCC(COC1=CC=CC=C1C(=O)CCC2=CC=CC=C2)O.Cl
+Propofol,LT01708,DILI_positive,vLess-DILI-concern,CC(C)C1=C(C(=CC=C1)C(C)C)O
+Propoxyphene hydrochloride,LT00083,DILI_positive,vLess-DILI-concern,CCC(=O)OC(CC1=CC=CC=C1)(C2=CC=CC=C2)C(C)CN(C)C.Cl
+Propylthiouracil,LT00136,DILI_positive,vMost-DILI-concern,CCCC1=CC(=O)NC(=S)N1
+Pyrazinamide,LT00166,DILI_positive,vLess-DILI-concern,C1=CN=C(C=N1)C(=O)N
+Pyridostigmine bromide,LT02081,DILI_positive,vLess-DILI-concern,C[N+]1=CC=CC(=C1)OC(=O)N(C)C.[Br-]
+Pyrimethamine,LT01716,DILI_positive,vLess-DILI-concern,CCC1=C(C(=NC(=N1)N)N)C2=CC=C(C=C2)Cl
+Quetiapine fumarate,LT00267,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCOCCO)C2=NC3=CC=CC=C3SC4=CC=CC=C42.C1CN(CCN1CCOCCO)C2=NC3=CC=CC=C3SC4=CC=CC=C42.C(=CC(=O)O)C(=O)O
+Quinapril hydrochloride,LT01723,DILI_positive,vLess-DILI-concern,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CC3=CC=CC=C3CC2C(=O)O.Cl
+Quinidine gluconate,LT01725,DILI_positive,vLess-DILI-concern,COC1=CC2=C(C=CN=C2C=C1)C(C3CC4CCN3CC4C=C)O.C(C(C(C(C(C(=O)O)O)O)O)O)O
+Quinine sulfate,LT01923,DILI_positive,vLess-DILI-concern,COC1=CC2=C(C=CN=C2C=C1)C(C3CC4CCN3CC4C=C)O.COC1=CC2=C(C=CN=C2C=C1)C(C3CC4CCN3CC4C=C)O.OS(=O)(=O)O
+Rabeprazole sodium,LT00264,DILI_positive,vLess-DILI-concern,CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3[N-]2)OCCCOC.[Na+]
+Raloxifene hydrochloride,LT00183,DILI_positive,vLess-DILI-concern,C1CCN(CC1)CCOC2=CC=C(C=C2)C(=O)C3=C(SC4=C3C=CC(=C4)O)C5=CC=C(C=C5)O.Cl
+Raltegravir potassium,LT00642,DILI_positive,vMost-DILI-concern,CC1=NN=C(O1)C(=O)NC(C)(C)C2=NC(=C(C(=O)N2C)[O-])C(=O)NCC3=CC=C(C=C3)F.[K+]
+Ramipril,LT01726,DILI_positive,vLess-DILI-concern,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2C3CCCC3CC2C(=O)O
+Ranitidine hydrochloride,LT00138,DILI_positive,vLess-DILI-concern,CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C.Cl
+Regorafenib,LT02433,DILI_positive,vMost-DILI-concern,CNC(=O)C1=NC=CC(=C1)OC2=CC(=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)F
+Remdesivir,LT03819,DILI_positive,vLess-DILI-concern,CCC(CC)COC(=O)C(C)NP(=O)(OCC1C(C(C(O1)(C#N)C2=CC=C3N2N=CN=C3N)O)O)OC4=CC=CC=C4
+Remifentanil hydrochloride,LT00987,DILI_positive,vLess-DILI-concern,CCC(=O)N(C1=CC=CC=C1)C2(CCN(CC2)CCC(=O)OC)C(=O)OC.Cl
+Repaglinide,LT01002,DILI_positive,vLess-DILI-concern,CCOC1=C(C=CC(=C1)CC(=O)NC(CC(C)C)C2=CC=CC=C2N3CCCCC3)C(=O)O
+Ribavirin,LT01730,DILI_positive,vLess-DILI-concern,C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N
+Ribociclib succinate,LT03606,DILI_positive,vMost-DILI-concern,CN(C)C(=O)C1=CC2=CN=C(N=C2N1C3CCCC3)NC4=NC=C(C=C4)N5CCNCC5.C(CC(=O)O)C(=O)O
+Rifabutin,LT00139,DILI_positive,vLess-DILI-concern,CC1C=CC=C(C(=O)NC2=C(C3=C(C4=C(C(=C3O)C)OC(C4=O)(OC=CC(C(C(C(C(C(C1O)C)O)C)OC(=O)C)C)OC)C)C5=NC6(CCN(CC6)CC(C)C)N=C25)O)C
+Rifampin,LT00034,DILI_positive,vMost-DILI-concern,CC1C=CC=C(C(=O)NC2=C(C(=C3C(=C2O)C(=C(C4=C3C(=O)C(O4)(OC=CC(C(C(C(C(C(C1O)C)O)C)OC(=O)C)C)OC)C)C)O)O)C=NN5CCN(CC5)C)C
+Rilpivirine hydrochloride,LT02352,DILI_positive,vLess-DILI-concern,CC1=CC(=CC(=C1NC2=NC(=NC=C2)NC3=CC=C(C=C3)C#N)C)C=CC#N.Cl
+Riluzole,LT01731,DILI_positive,vMost-DILI-concern,C1=CC2=C(C=C1OC(F)(F)F)SC(=N2)N
+Risperidone,LT01735,DILI_positive,vLess-DILI-concern,CC1=C(C(=O)N2CCCCC2=N1)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F
+Ritonavir,LT01737,DILI_positive,vMost-DILI-concern,CC(C)C1=NC(=CS1)CN(C)C(=O)NC(C(C)C)C(=O)NC(CC2=CC=CC=C2)CC(C(CC3=CC=CC=C3)NC(=O)OCC4=CN=CS4)O
+Rivaroxaban,LT02390,DILI_positive,vLess-DILI-concern,C1COCC(=O)N1C2=CC=C(C=C2)N3CC(OC3=O)CNC(=O)C4=CC=C(S4)Cl
+Rivastigmine tartrate,LT01016,DILI_positive,vLess-DILI-concern,CCN(C)C(=O)OC1=CC=CC(=C1)C(C)N(C)C.C(C(C(=O)O)O)(C(=O)O)O
+Rizatriptan benzoate,LT01026,DILI_positive,vLess-DILI-concern,CN(C)CCC1=CNC2=C1C=C(C=C2)CN3C=NC=N3.C1=CC=C(C=C1)C(=O)O
+Ropinirole hydrochloride,LT00990,DILI_positive,vLess-DILI-concern,CCCN(CCC)CCC1=C2CC(=O)NC2=CC=C1.Cl
+Rosiglitazone maleate,LT00140,DILI_positive,vLess-DILI-concern,CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=CC(=O)O)C(=O)O
+Rosuvastatin calcium,LT01928,DILI_positive,vLess-DILI-concern,CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)[O-])O)O)C2=CC=C(C=C2)F)N(C)S(=O)(=O)C.CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)[O-])O)O)C2=CC=C(C=C2)F)N(C)S(=O)(=O)C.[Ca+2]
+Salsalate,LT01684,DILI_positive,vLess-DILI-concern,C1=CC=C(C(=C1)C(=O)OC2=CC=CC=C2C(=O)O)O
+Saquinavir mesylate,LT01746,DILI_positive,vLess-DILI-concern,CC(C)(C)NC(=O)C1CC2CCCCC2CN1CC(C(CC3=CC=CC=C3)NC(=O)C(CC(=O)N)NC(=O)C4=NC5=CC=CC=C5C=C4)O.CS(=O)(=O)O
+Saxagliptin hydrochloride,LT00667,DILI_positive,vLess-DILI-concern,C1C2CC2N(C1C#N)C(=O)C(C34CC5CC(C3)CC(C5)(C4)O)N.Cl
+Semaglutide,LT03759,DILI_positive,vLess-DILI-concern,CCC(C)C(C(=O)NC(C)C(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CC(C)C)C(=O)NC(C(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)O)NC(=O)C(CC3=CC=CC=C3)NC(=O)C(CCC(=O)O)NC(=O)C(CCCCNC(=O)COCCOCCNC(=O)COCCOCCNC(=O)CCC(C(=O)O)NC(=O)CCCCCCCCCCCCCCCCC(=O)O)NC(=O)C(C)NC(=O)C(C)NC(=O)C(CCC(=O)N)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(CO)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)C(C(C)O)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(C)(C)NC(=O)C(CC6=CN=CN6)N
+Sertraline hydrochloride,LT00625,DILI_positive,vLess-DILI-concern,CNC1CCC(C2=CC=CC=C12)C3=CC(=C(C=C3)Cl)Cl.Cl
+Sibutramine hydrochloride,LT00988,DILI_positive,vLess-DILI-concern,CC(C)CC(C1(CCC1)C2=CC=C(C=C2)Cl)N(C)C.Cl
+Sildenafil citrate,LT01033,DILI_positive,vLess-DILI-concern,CCCC1=NN(C2=C1N=C(NC2=O)C3=C(C=CC(=C3)S(=O)(=O)N4CCN(CC4)C)OCC)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+Simvastatin,LT00142,DILI_positive,vLess-DILI-concern,CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C
+Sirolimus,LT00443,DILI_positive,vLess-DILI-concern,CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)O)C(C)CC4CCC(C(C4)OC)O)C)C)O)OC)C)C)C)OC
+Sitagliptin phosphate,LT01251,DILI_positive,vLess-DILI-concern,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)CC(CC3=CC(=C(C=C3F)F)F)N.O.OP(=O)(O)O
+Sitaxsentan,LT02449,DILI_positive,vMost-DILI-concern,CC1=CC2=C(C=C1CC(=O)C3=C(C=CS3)S(=O)(=O)NC4=C(C(=NO4)C)Cl)OCO2
+Solifenacin succinate,LT01191,DILI_positive,vLess-DILI-concern,C1CN2CCC1C(C2)OC(=O)N3CCC4=CC=CC=C4C3C5=CC=CC=C5.C(CC(=O)O)C(=O)O
+Sorafenib tosylate,LT01241,DILI_positive,vMost-DILI-concern,CC1=CC=C(C=C1)S(=O)(=O)O.CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F
+Spironolactone,LT00143,DILI_positive,vLess-DILI-concern,CC(=O)SC1CC2=CC(=O)CCC2(C3C1C4CCC5(C4(CC3)C)CCC(=O)O5)C
+Stavudine,LT00144,DILI_positive,vMost-DILI-concern,CC1=CN(C(=O)NC1=O)C2C=CC(O2)CO
+Succimer,LT01766,DILI_positive,vLess-DILI-concern,C(C(C(=O)O)S)(C(=O)O)S
+suloctidil,LT01816,DILI_positive,vMost-DILI-concern,CCCCCCCCNC(C)C(C1=CC=C(C=C1)SC(C)C)O
+Sulfacarbamide,LT00699,DILI_positive,vMost-DILI-concern,C1=CC(=CC=C1N)S(=O)(=O)NC(=O)N
+Sulfadiazine,LT00146,DILI_positive,vLess-DILI-concern,C1=CN=C(N=C1)NS(=O)(=O)C2=CC=C(C=C2)N
+Sulfamethizole,LT01933,DILI_positive,vLess-DILI-concern,CC1=NN=C(S1)NS(=O)(=O)C2=CC=C(C=C2)N
+Sulfasalazine,LT00147,DILI_positive,vMost-DILI-concern,C1=CC=NC(=C1)NS(=O)(=O)C2=CC=C(C=C2)N=NC3=CC(=C(C=C3)O)C(=O)O
+Sulfathiazole,LT00632,DILI_positive,vMost-DILI-concern,C1=CC(=CC=C1N)S(=O)(=O)NC2=NC=CS2
+Sulindac,LT00148,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(C1=CC3=CC=C(C=C3)S(=O)C)C=CC(=C2)F)CC(=O)O
+Sunitinib malate,LT00565,DILI_positive,vMost-DILI-concern,CCN(CC)CCNC(=O)C1=C(NC(=C1C)C=C2C3=C(C=CC(=C3)F)NC2=O)C.C(C(C(=O)O)O)C(=O)O
+Tacrolimus,LT00448,DILI_positive,vLess-DILI-concern,CC1CC(C2C(CC(C(O2)(C(=O)C(=O)N3CCCCC3C(=O)OC(C(C(CC(=O)C(C=C(C1)C)CC=C)O)C)C(=CC4CCC(C(C4)OC)O)C)O)C)OC)OC
+Tadalafil,LT01129,DILI_positive,vLess-DILI-concern,CN1CC(=O)N2C(C1=O)CC3=C(C2C4=CC5=C(C=C4)OCO5)NC6=CC=CC=C36
+Tamoxifen citrate,LT00152,DILI_positive,vMost-DILI-concern,CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+Tamsulosin hydrochloride,LT00982,DILI_positive,vLess-DILI-concern,CCOC1=CC=CC=C1OCCNC(C)CC2=CC(=C(C=C2)OC)S(=O)(=O)N.Cl
+Tasosartan,LT00687,DILI_positive,vMost-DILI-concern,CC1=C2CCC(=O)N(C2=NC(=N1)C)CC3=CC=C(C=C3)C4=CC=CC=C4C5=NNN=N5
+Telithromycin,LT01944,DILI_positive,vMost-DILI-concern,CCC1C2(C(C(C(=O)C(CC(C(C(C(=O)C(C(=O)O1)C)C)OC3C(C(CC(O3)C)N(C)C)O)(C)OC)C)C)N(C(=O)O2)CCCCN4C=C(N=C4)C5=CN=CC=C5)C
+Telmisartan,LT02063,DILI_positive,vLess-DILI-concern,CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C
+Temozolomide,LT00153,DILI_positive,vLess-DILI-concern,CN1C(=O)N2C=NC(=C2N=N1)C(=O)N
+Teniposide,LT01786,DILI_positive,vLess-DILI-concern,COC1=CC(=CC(=C1O)OC)C2C3C(COC3=O)C(C4=CC5=C(C=C24)OCO5)OC6C(C(C7C(O6)COC(O7)C8=CC=CS8)O)O
+Tenofovir disoproxil fumarate,LT02224,DILI_positive,vLess-DILI-concern,CC(C)OC(=O)OCOP(=O)(COC(C)CN1C=NC2=C(N=CN=C21)N)OCOC(=O)OC(C)C.C(=CC(=O)O)C(=O)O
+Terbinafine hydrochloride,LT00634,DILI_positive,vMost-DILI-concern,CC(C)(C)C#CC=CCN(C)CC1=CC=CC2=CC=CC=C21.Cl
+Terbutaline sulfate,LT00877,DILI_positive,vLess-DILI-concern,CC(C)(C)NCC(C1=CC(=CC(=C1)O)O)O.CC(C)(C)NCC(C1=CC(=CC(=C1)O)O)O.OS(=O)(=O)O
+Teriflunomide,LT02397,DILI_positive,vMost-DILI-concern,CC(=C(C#N)C(=O)NC1=CC=C(C=C1)C(F)(F)F)O
+Teriparatide acetate,LT00932,DILI_positive,vLess-DILI-concern,CCC(C)C(C(=O)NC(CCC(=O)N)C(=O)NC(CC(C)C)C(=O)NC(CCSC)C(=O)NC(CC1=CNC=N1)C(=O)NC(CC(=O)N)C(=O)NC(CC(C)C)C(=O)NCC(=O)NC(CCCCN)C(=O)NC(CC2=CNC=N2)C(=O)NC(CC(C)C)C(=O)NC(CC(=O)N)C(=O)NC(CO)C(=O)NC(CCSC)C(=O)NC(CCC(=O)O)C(=O)NC(CCCNC(=N)N)C(=O)NC(C(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CC3=CNC4=CC=CC=C43)C(=O)NC(CC(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCCN)C(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CCC(=O)N)C(=O)NC(CC(=O)O)C(=O)NC(C(C)C)C(=O)NC(CC5=CNC=N5)C(=O)NC(CC(=O)N)C(=O)NC(CC6=CC=CC=C6)C(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CO)N.CC(=O)O.O
+Testosterone enanthate,LT00223,DILI_positive,vMost-DILI-concern,CCCCCCC(=O)OC1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C
+Tetrabamate,LT01858,DILI_positive,vMost-DILI-concern,CCCCCOC(CN1C(=O)C(C(=O)N(C1=O)CC(COCCCC)OC(=O)N)(CC)C2=CC=CC=C2)OC(=O)N.CCCCOCC(CN1C(=O)C(C(=O)NC1=O)(CC)C2=CC=CC=C2)OC(=O)N.CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2
+Thalidomide,LT00450,DILI_positive,vLess-DILI-concern,C1CC(=O)NC(=O)C1N2C(=O)C3=CC=CC=C3C2=O
+Thiabendazole,LT00635,DILI_positive,vMost-DILI-concern,C1=CC=C2C(=C1)NC(=N2)C3=CSC=N3
+Thioguanine,LT00452,DILI_positive,vLess-DILI-concern,C1=NC2=C(N1)C(=S)N=C(N2)N
+Thioridazine hydrochloride,LT00451,DILI_positive,vLess-DILI-concern,CN1CCCCC1CCN2C3=CC=CC=C3SC4=C2C=C(C=C4)SC.Cl
+Thiotepa,LT01804,DILI_positive,vLess-DILI-concern,C1CN1P(=S)(N2CC2)N3CC3
+Ticlopidine hydrochloride,LT00227,DILI_positive,vMost-DILI-concern,C1CN(CC2=C1SC=C2)CC3=CC=CC=C3Cl.Cl
+Ticrynafen,LT00636,DILI_positive,vMost-DILI-concern,C1=CSC(=C1)C(=O)C2=C(C(=C(C=C2)OCC(=O)O)Cl)Cl
+Tigecycline,LT01222,DILI_positive,vMost-DILI-concern,CC(C)(C)NCC(=O)NC1=CC(=C2CC3CC4C(C(=O)C(=C(C4(C(=O)C3=C(C2=C1O)O)O)O)C(=O)N)N(C)C)N(C)C
+Tilbroquinol,LT00691,DILI_positive,vMost-DILI-concern,CC1=CC(=C(C2=C1C=CC=N2)O)Br
+Tinidazole,LT00637,DILI_positive,vLess-DILI-concern,CCS(=O)(=O)CCN1C(=NC=C1[N+](=O)[O-])C
+Tipranavir,LT01220,DILI_positive,vMost-DILI-concern,CCCC1(CC(=C(C(=O)O1)C(CC)C2=CC(=CC=C2)NS(=O)(=O)C3=NC=C(C=C3)C(F)(F)F)O)CCC4=CC=CC=C4
+Tizanidine hydrochloride,LT00155,DILI_positive,vMost-DILI-concern,C1CN=C(N1)NC2=C(C=CC3=NSN=C32)Cl.Cl
+Tolazamide,LT00266,DILI_positive,vLess-DILI-concern,CC1=CC=C(C=C1)S(=O)(=O)NC(=O)NN2CCCCCC2
+Tolcapone,LT00156,DILI_positive,vMost-DILI-concern,CC1=CC=C(C=C1)C(=O)C2=CC(=C(C(=C2)O)O)[N+](=O)[O-]
+Tolmetin sodium,LT01820,DILI_positive,vLess-DILI-concern,CC1=CC=C(C=C1)C(=O)C2=CC=C(N2C)CC(=O)[O-].[Na+]
+Tolrestat,LT01822,DILI_positive,vMost-DILI-concern,CN(CC(=O)O)C(=S)C1=CC=CC2=C1C=CC(=C2C(F)(F)F)OC
+Tolterodine tartrate,LT01011,DILI_positive,vLess-DILI-concern,CC1=CC(=C(C=C1)O)C(CCN(C(C)C)C(C)C)C2=CC=CC=C2.C(C(C(=O)O)O)(C(=O)O)O
+Tolvaptan,LT00661,DILI_positive,vMost-DILI-concern,CC1=CC=CC=C1C(=O)NC2=CC(=C(C=C2)C(=O)N3CCCC(C4=C3C=CC(=C4)Cl)O)C
+Topiramate,LT00455,DILI_positive,vLess-DILI-concern,CC1(OC2COC3(C(C2O1)OC(O3)(C)C)COS(=O)(=O)N)C
+Tramadol hydrochloride,LT01827,DILI_positive,vLess-DILI-concern,CN(C)CC1CCCCC1(C2=CC(=CC=C2)OC)O.Cl
+Trametinib dimethyl sulfoxide,LT02903,DILI_positive,vLess-DILI-concern,CC1=C2C(=C(N(C1=O)C)NC3=C(C=C(C=C3)I)F)C(=O)N(C(=O)N2C4=CC=CC(=C4)NC(=O)C)C5CC5.CS(=O)C
+Trandolapril,LT01828,DILI_positive,vLess-DILI-concern,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2C3CCCCC3CC2C(=O)O
+Tranylcypromine sulfate,LT01829,DILI_positive,vLess-DILI-concern,C1C(C1N)C2=CC=CC=C2.C1C(C1N)C2=CC=CC=C2.OS(=O)(=O)O
+Trazodone hydrochloride,LT01830,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCCN2C(=O)N3C=CC=CC3=N2)C4=CC(=CC=C4)Cl.Cl
+Tretinoin,LT00338,DILI_positive,vLess-DILI-concern,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C
+Triacetyldiphenolisatin,LT00700,DILI_positive,vMost-DILI-concern,CC(=O)N1C2=CC=CC=C2C(C1=O)(C3=CC=C(C=C3)OC(=O)C)C4=CC=C(C=C4)OC(=O)C
+Triamterene,LT01833,DILI_positive,vLess-DILI-concern,C1=CC=C(C=C1)C2=NC3=C(N=C(N=C3N=C2N)N)N
+Trifluoperazine hydrochloride,LT00457,DILI_positive,vLess-DILI-concern,CN1CCN(CC1)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)C(F)(F)F.Cl.Cl
+Trimethoprim,LT01842,DILI_positive,vLess-DILI-concern,COC1=CC(=CC(=C1OC)OC)CC2=CN=C(N=C2N)N
+Triptorelin pamoate,LT00460,DILI_positive,vLess-DILI-concern,CC(C)CC(C(=O)NC(CCCN=C(N)N)C(=O)N1CCCC1C(=O)NCC(=O)N)NC(=O)C(CC2=CNC3=CC=CC=C32)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(CO)NC(=O)C(CC5=CNC6=CC=CC=C65)NC(=O)C(CC7=CN=CN7)NC(=O)C8CCC(=O)N8.C1=CC=C2C(=C1)C=C(C(=C2CC3=C(C(=CC4=CC=CC=C43)C(=O)O)O)O)C(=O)O
+Troglitazone,LT00168,DILI_positive,vMost-DILI-concern,CC1=C(C2=C(CCC(O2)(C)COC3=CC=C(C=C3)CC4C(=O)NC(=O)S4)C(=C1O)C)C
+Trovafloxacin mesylate,LT00645,DILI_positive,vMost-DILI-concern,CS(=O)(=O)O.C1C2C(C2N)CN1C3=C(C=C4C(=O)C(=CN(C4=N3)C5=C(C=C(C=C5)F)F)C(=O)O)F
+Ulipristal acetate,LT02443,DILI_positive,vLess-DILI-concern,CC(=O)C1(CCC2C1(CC(C3=C4CCC(=O)C=C4CCC23)C5=CC=C(C=C5)N(C)C)C)OC(=O)C
+Valaciclovir,LT01856,DILI_positive,vLess-DILI-concern,CC(C)C(C(=O)OCCOCN1C=NC2=C1N=C(NC2=O)N)N
+Valdecoxib,LT01971,DILI_positive,vLess-DILI-concern,CC1=C(C(=NO1)C2=CC=CC=C2)C3=CC=C(C=C3)S(=O)(=O)N
+Valproic acid,LT00160,DILI_positive,vMost-DILI-concern,CCCC(CCC)C(=O)O
+Valsartan,LT01857,DILI_positive,vLess-DILI-concern,CCCCC(=O)N(CC1=CC=C(C=C1)C2=CC=CC=C2C3=NNN=N3)C(C(C)C)C(=O)O
+Vancomycin hydrochloride,LT00161,DILI_positive,vLess-DILI-concern,CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)(C)N)O.Cl
+Varenicline tartrate,LT01242,DILI_positive,vLess-DILI-concern,C1C2CNCC1C3=CC4=NC=CN=C4C=C23.C(C(C(=O)O)O)(C(=O)O)O
+Vemurafenib,LT02435,DILI_positive,vLess-DILI-concern,CCCS(=O)(=O)NC1=C(C(=C(C=C1)F)C(=O)C2=CNC3=C2C=C(C=N3)C4=CC=C(C=C4)Cl)F
+Venetoclax,LT03786,DILI_positive,vLess-DILI-concern,CC1(CCC(=C(C1)C2=CC=C(C=C2)Cl)CN3CCN(CC3)C4=CC(=C(C=C4)C(=O)NS(=O)(=O)C5=CC(=C(C=C5)NCC6CCOCC6)[N+](=O)[O-])OC7=CN=C8C(=C7)C=CN8)C
+Venlafaxine hydrochloride,LT00174,DILI_positive,vLess-DILI-concern,CN(C)CC(C1=CC=C(C=C1)OC)C2(CCCCC2)O.Cl
+Verapamil hydrochloride,LT00332,DILI_positive,vLess-DILI-concern,CC(C)C(CCCN(C)CCC1=CC(=C(C=C1)OC)OC)(C#N)C2=CC(=C(C=C2)OC)OC.Cl
+Vinblastine sulfate,LT00177,DILI_positive,vLess-DILI-concern,CCC1(CC2CC(C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)C78CCN9C7C(C=CC9)(C(C(C8N6C)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O.OS(=O)(=O)O
+Vincristine sulfate,LT01862,DILI_positive,vLess-DILI-concern,CCC1(CC2CC(C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)C78CCN9C7C(C=CC9)(C(C(C8N6C=O)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O.OS(=O)(=O)O
+Vitamin A palmitate,LT00162,DILI_positive,vLess-DILI-concern,CCCCCCCCCCCCCCCC(=O)OCC=C(C)C=CC=C(C)C=CC1=C(CCCC1(C)C)C
+Voriconazole,LT01097,DILI_positive,vMost-DILI-concern,CC(C1=NC=NC=C1F)C(CN2C=NC=N2)(C3=C(C=C(C=C3)F)F)O
+Vortioxetine hydrobromide,LT02902,DILI_positive,vLess-DILI-concern,CC1=CC(=C(C=C1)SC2=CC=CC=C2N3CCNCC3)C.Br
+Warfarin sodium,LT00647,DILI_positive,vLess-DILI-concern,CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)[O-].[Na+]
+Xenazoic acid,LT01867,DILI_positive,vMost-DILI-concern,CCOC(C(=O)C1=CC=C(C=C1)C2=CC=CC=C2)NC3=CC=C(C=C3)C(=O)O
+Ximelagatran,LT02033,DILI_positive,vMost-DILI-concern,CCOC(=O)CNC(C1CCCCC1)C(=O)N2CCC2C(=O)NCC3=CC=C(C=C3)C(=NO)N
+Zafirlukast,LT01869,DILI_positive,vMost-DILI-concern,CC1=CC=CC=C1S(=O)(=O)NC(=O)C2=CC(=C(C=C2)CC3=CN(C4=C3C=C(C=C4)NC(=O)OC5CCCC5)C)OC
+Zanubrutinib,LT03600,DILI_positive,vMost-DILI-concern,C=CC(=O)N1CCC(CC1)C2CCNC3=C(C(=NN23)C4=CC=C(C=C4)OC5=CC=CC=C5)C(=O)N
+Zidovudine,LT00163,DILI_positive,vMost-DILI-concern,CC1=CN(C(=O)NC1=O)C2CC(C(O2)CO)N=[N+]=[N-]
+Zileuton,LT00649,DILI_positive,vMost-DILI-concern,CC(C1=CC2=CC=CC=C2S1)N(C(=O)N)O
+Zimelidine,LT01874,DILI_positive,vMost-DILI-concern,CN(C)CC=C(C1=CC=C(C=C1)Br)C2=CN=CC=C2
+Ziprasidone hydrochloride,LT01017,DILI_positive,vLess-DILI-concern,C1CN(CCN1CCC2=C(C=C3C(=C2)CC(=O)N3)Cl)C4=NSC5=CC=CC=C54.Cl
+Zoledronic acid,LT01088,DILI_positive,vLess-DILI-concern,C1=CN(C=N1)CC(O)(P(=O)(O)O)P(=O)(O)O
+Zonisamide,LT00165,DILI_positive,vLess-DILI-concern,C1=CC=C2C(=C1)C(=NO2)CS(=O)(=O)N
+Abaloparatide,LT03618,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CCC(=O)N)C(=O)NC(CC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(C)(C)C(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CC1=CN=CN1)C(=O)NC(C(C)O)C(=O)NC(C)C(=O)N)NC(=O)C(CO)NC(=O)C(CCCCN)NC(=O)CNC(=O)C(CCCCN)NC(=O)C(CC(=O)O)NC(=O)C(CC2=CN=CN2)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(CCC(=O)N)NC(=O)C(CC3=CN=CN3)NC(=O)C(CCC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(C)N
+Acetylcholine chloride,LT02096,DILI_negative,vNo-DILI-concern,CC(=O)OCC[N+](C)(C)C.[Cl-]
+Acetylcysteine,LT01041,DILI_negative,vNo-DILI-concern,CC(=O)NC(CS)C(=O)O
+Adenosine,LT01047,DILI_negative,vNo-DILI-concern,C1=NC(=C2C(=N1)N(C=N2)C3C(C(C(O3)CO)O)O)N
+Agalsidase beta,LT02385,DILI_negative,vNo-DILI-concern,CCCCCCCC(=O)NC(CN1CCCC1)C(C2=CC3=C(C=C2)OCCO3)O.CCCCCCCC(=O)NC(CN1CCCC1)C(C2=CC3=C(C=C2)OCCO3)O.C(C(C(=O)O)O)(C(=O)O)O
+Albuterol,LT01051,DILI_negative,vNo-DILI-concern,CC(C)(C)NCC(C1=CC(=C(C=C1)O)CO)O
+Alfentanil hydrochloride,LT00925,DILI_negative,vNo-DILI-concern,CCC(=O)N(C1=CC=CC=C1)C2(CCN(CC2)CCN3C(=O)N(N=N3)CC)COC.Cl
+Almotriptan malate,LT01053,DILI_negative,vNo-DILI-concern,CN(C)CCC1=CNC2=C1C=C(C=C2)CS(=O)(=O)N3CCCC3.C(C(C(=O)O)O)C(=O)O
+Alvimopan,LT01215,DILI_negative,vNo-DILI-concern,CC1CN(CCC1(C)C2=CC(=CC=C2)O)CC(CC3=CC=CC=C3)C(=O)NCC(=O)O
+Ambenonium chloride,LT01629,DILI_negative,vNo-DILI-concern,CC[N+](CC)(CCNC(=O)C(=O)NCC[N+](CC)(CC)CC1=CC=CC=C1Cl)CC2=CC=CC=C2Cl.[Cl-].[Cl-]
+Amifampridine,LT03376,DILI_negative,vNo-DILI-concern,C1=CN=CC(=C1N)N
+Amifostine,LT01067,DILI_negative,vNo-DILI-concern,C(CN)CNCCSP(=O)(O)O
+Amikacin sulfate,LT01068,DILI_negative,vNo-DILI-concern,C1C(C(C(C(C1NC(=O)C(CCN)O)OC2C(C(C(C(O2)CO)O)N)O)O)OC3C(C(C(C(O3)CN)O)O)O)N.OS(=O)(=O)O.OS(=O)(=O)O
+Aminocaproic acid,LT01071,DILI_negative,vNo-DILI-concern,C(CCC(=O)O)CCN
+Aminohippurate sodium,LT00054,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NCC(=O)[O-])N.[Na+]
+Aminophylline,LT00711,DILI_negative,vNo-DILI-concern,CN1C2=C(C(=O)N(C1=O)C)NC=N2.CN1C2=C(C(=O)N(C1=O)C)NC=N2.C(CN)N
+Ammonium chloride,LT02067,DILI_negative,vNo-DILI-concern,[NH4+].[Cl-]
+Angiotensin ii acetate,LT02229,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CC1=CN=CN1)C(=O)N2CCCC2C(=O)NC(CC3=CC=CC=C3)C(=O)O)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(C(C)C)NC(=O)C(CCCN=C(N)N)NC(=O)C(CC(=O)O)N.CC(=O)O
+Apalutamide,LT03622,DILI_negative,vNo-DILI-concern,CNC(=O)C1=C(C=C(C=C1)N2C(=S)N(C(=O)C23CCC3)C4=CC(=C(N=C4)C#N)C(F)(F)F)F
+Apomorphine hydrochloride,LT02217,DILI_negative,vNo-DILI-concern,CN1CCC2=C3C1CC4=C(C3=CC=C2)C(=C(C=C4)O)O.CN1CCC2=C3C1CC4=C(C3=CC=C2)C(=C(C=C4)O)O.O.Cl.Cl
+Apremilast,LT03623,DILI_negative,vNo-DILI-concern,CCOC1=C(C=CC(=C1)C(CS(=O)(=O)C)N2C(=O)C3=C(C2=O)C(=CC=C3)NC(=O)C)OC
+Argatroban,LT01030,DILI_negative,vNo-DILI-concern,CC1CCN(C(C1)C(=O)O)C(=O)C(CCCN=C(N)N)NS(=O)(=O)C2=CC=CC3=C2NCC(C3)C
+Arginine hydrochloride,LT02077,DILI_negative,vNo-DILI-concern,C(CC(C(=O)O)N)CN=C(N)N.Cl
+Argipressin,LT02331,DILI_negative,vNo-DILI-concern,C1CC(N(C1)C(=O)C2CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)N)C(=O)NC(CCCN=C(N)N)C(=O)NCC(=O)N
+Atracurium,LT00917,DILI_negative,vNo-DILI-Concern,C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC)CCC(=O)OCCCCCOC(=O)CC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C=C6)OC)OC)OC)OC)C
+Atropine,LT00511,DILI_negative,vNo-DILI-concern,CN1C2CCC1CC(C2)OC(=O)C(CO)C3=CC=CC=C3
+Avanafil,LT02440,DILI_negative,vNo-DILI-concern,COC1=C(C=C(C=C1)CNC2=NC(=NC=C2C(=O)NCC3=NC=CC=N3)N4CCCC4CO)Cl
+Avatrombopag maleate,LT03629,DILI_negative,vNo-DILI-concern,C1CCC(CC1)N2CCN(CC2)C3=C(N=C(S3)NC(=O)C4=CC(=C(N=C4)N5CCC(CC5)C(=O)O)Cl)C6=CC(=CS6)Cl.C(=CC(=O)O)C(=O)O
+Azilsartan kamedoxomil,LT03630,DILI_negative,vNo-DILI-concern,CCOC1=NC2=CC=CC(=C2N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NOC(=O)[N-]5)C(=O)OCC6=C(OC(=O)O6)C.[K+]
+Bacitracin,LT02059,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCCCCC(C(=O)NC(C(=O)N1)CCCN)NC(=O)C(C(C)CC)NC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C2CSC(=N2)C(C(C)CC)N)CC(=O)N)CC(=O)O)CC3=CN=CN3)CC4=CC=CC=C4
+Baloxavir marboxil,LT03631,DILI_negative,vNo-DILI-concern,COC(=O)OCOC1=C2C(=O)N3CCOCC3N(N2C=CC1=O)C4C5=C(CSC6=CC=CC=C46)C(=C(C=C5)F)F
+Bendamustine hydrochloride,LT00659,DILI_negative,vNo-DILI-concern,CN1C2=C(C=C(C=C2)N(CCCl)CCCl)N=C1CCCC(=O)O.Cl
+Benzphetamine hydrochloride,LT00832,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)N(C)CC2=CC=CC=C2.Cl
+Benztropine mesylate,LT01123,DILI_negative,vNo-DILI-concern,CN1C2CCC1CC(C2)OC(C3=CC=CC=C3)C4=CC=CC=C4.CS(=O)(=O)O
+Betaine,LT02189,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CC(=O)[O-]
+Bethanechol chloride,LT00730,DILI_negative,vNo-DILI-concern,CC(C[N+](C)(C)C)OC(=O)N.[Cl-]
+Betrixaban,LT03798,DILI_negative,vNo-DILI-concern,CN(C)C(=N)C1=CC=C(C=C1)C(=O)NC2=C(C=C(C=C2)OC)C(=O)NC3=NC=C(C=C3)Cl
+Biperiden hydrochloride,LT00817,DILI_negative,vNo-DILI-concern,C1CCN(CC1)CCC(C2CC3CC2C=C3)(C4=CC=CC=C4)O.Cl
+Bisacodyl,LT02190,DILI_negative,vNo-DILI-concern,CC(=O)OC1=CC=C(C=C1)C(C2=CC=C(C=C2)OC(=O)C)C3=CC=CC=N3
+Bivalirudin,LT01027,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)N1CCCC1C(=O)NC(CCC(=O)O)C(=O)NC(CCC(=O)O)C(=O)NC(CC2=CC=C(C=C2)O)C(=O)NC(CC(C)C)C(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(CC3=CC=CC=C3)NC(=O)C(CC(=O)O)NC(=O)CNC(=O)C(CC(=O)N)NC(=O)CNC(=O)CNC(=O)CNC(=O)CNC(=O)C4CCCN4C(=O)C(CCCNC(=N)N)NC(=O)C5CCCN5C(=O)C(CC6=CC=CC=C6)N
+Brexanolone,LT03639,DILI_negative,vNo-DILI-concern,CC(=O)C1CCC2C1(CCC3C2CCC4C3(CCC(C4)O)C)C
+Brexpiprazole,LT03640,DILI_negative,vNo-DILI-concern,C1CN(CCN1CCCCOC2=CC3=C(C=C2)C=CC(=O)N3)C4=C5C=CSC5=CC=C4
+Brilliant blue g,LT03868,DILI_negative,vNo-DILI-concern,CCN(CC1=CC(=CC=C1)S(=O)(=O)[O-])C2=CC(=C(C=C2)C(=C3C=CC(=[N+](CC)CC4=CC(=CC=C4)S(=O)(=O)[O-])C=C3C)C5=CC=C(C=C5)NC6=CC=C(C=C6)OCC)C.[Na+]
+Brivaracetam,LT03643,DILI_negative,vNo-DILI-concern,CCCC1CC(=O)N(C1)C(CC)C(=O)N
+Brompheniramine maleate,LT02076,DILI_negative,vNo-DILI-concern,CN(C)CCC(C1=CC=C(C=C1)Br)C2=CC=CC=N2.C(=CC(=O)O)C(=O)O
+Budesonide,LT01144,DILI_negative,vNo-DILI-concern,CCCC1OC2CC3C4CCC5=CC(=O)C=CC5(C4C(CC3(C2(O1)C(=O)CO)C)O)C
+Butorphanol tartrate,LT01151,DILI_negative,vNo-DILI-concern,C1CCC2(C3CC4=C(C2(C1)CCN3CC5CCC5)C=C(C=C4)O)O.C(C(C(=O)O)O)(C(=O)O)O
+Cabergoline,LT01152,DILI_negative,vNo-DILI-concern,CCNC(=O)N(CCCN(C)C)C(=O)C1CC2C(CC3=CNC4=CC=CC2=C34)N(C1)CC=C
+Caffeine citrate,LT01888,DILI_negative,vNo-DILI-concern,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+Calcitonin salmon,LT00878,DILI_negative,vNo-DILI-concern,CC(C)CC1C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)N1)CC(=O)N)CO)N)C(=O)NC(C(C)C)C(=O)NC(CC(C)C)C(=O)NCC(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CO)C(=O)NC(CCC(=O)N)C(=O)NC(CCC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CC2=CN=CN2)C(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CCC(=O)N)C(=O)NC(C(C)O)C(=O)NC(CC3=CC=C(C=C3)O)C(=O)N4CCCC4C(=O)NC(CCCNC(=N)N)C(=O)NC(C(C)O)C(=O)NC(CC(=O)N)C(=O)NC(C(C)O)C(=O)NCC(=O)NC(CO)C(=O)NCC(=O)NC(C(C)O)C(=O)N5CCCC5C(=O)N)C(C)O)CO
+Calcitriol,LT00899,DILI_negative,vNo-DILI-concern,CC(CCCC(C)(C)O)C1CCC2C1(CCCC2=CC=C3CC(CC(C3=C)O)O)C
+Calcium acetate,LT00947,DILI_negative,vNo-DILI-concern,CC(=O)[O-].CC(=O)[O-].[Ca+2]
+Cangrelor,LT02516,DILI_negative,vNo-DILI-concern,CSCCNC1=C2C(=NC(=N1)SCCC(F)(F)F)N(C=N2)C3C(C(C(O3)COP(=O)(O)OP(=O)(C(P(=O)(O)O)(Cl)Cl)O)O)O
+Carbinoxamine maleate,LT00759,DILI_negative,vNo-DILI-concern,CN(C)CCOC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2.C(=CC(=O)O)C(=O)O
+Carboprost tromethamine,LT00898,DILI_negative,vNo-DILI-concern,CCCCCC(C)(C=CC1C(CC(C1CC=CCCCC(=O)O)O)O)O.C(C(CO)(CO)N)O
+Carglumic acid,LT00675,DILI_negative,vNo-DILI-concern,C(CC(=O)O)C(C(=O)O)NC(=O)N
+Carisoprodol,LT02037,DILI_negative,vNo-DILI-concern,CCCC(C)(COC(=O)N)COC(=O)NC(C)C
+Casimersen,LT03648,DILI_negative,vNo-DILI-concern,CN(C)P(=O)(N1CCN(CC1)C(=O)OCCOCCOCCO)OCC2CNCC(O2)N3C=CC(=NC3=O)N
+Chloramphenicol,LT01196,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(C(CO)NC(=O)C(Cl)Cl)O)[N+](=O)[O-]
+Chlorpheniramine maleate,LT00009,DILI_negative,vNo-DILI-concern,CN(C)CCC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2.C(=CC(=O)O)C(=O)O
+Choline c-11,LT03899,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CCO
+Cinacalcet hydrochloride,LT01209,DILI_negative,vNo-DILI-concern,CC(C1=CC=CC2=CC=CC=C21)NCCCC3=CC(=CC=C3)C(F)(F)F.Cl
+Cisatracurium besylate,LT00978,DILI_negative,vNo-DILI-concern,C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC)CCC(=O)OCCCCCOC(=O)CC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C=C6)OC)OC)OC)OC)C.C1=CC=C(C=C1)S(=O)(=O)[O-].C1=CC=C(C=C1)S(=O)(=O)[O-]
+Clemastine fumarate,LT02222,DILI_negative,vNo-DILI-concern,CC(C1=CC=CC=C1)(C2=CC=C(C=C2)Cl)OCCC3CCCN3C.C(=CC(=O)O)C(=O)O
+Clevidipine,LT00644,DILI_negative,vNo-DILI-concern,CCCC(=O)OCOC(=O)C1=C(NC(=C(C1C2=C(C(=CC=C2)Cl)Cl)C(=O)OC)C)C
+Codeine sulfate,LT01269,DILI_negative,vNo-DILI-concern,CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(C=C4)O.CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(C=C4)O.O.O.O.OS(=O)(=O)O
+Colistimethate sodium,LT01275,DILI_negative,vNo-DILI-concern,CCC(C)CCCCC(=O)NCCC1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CC(C)C)CCN)CC(C)C)CCN)CCN)CCN)C(C)O
+Conivaptan hydrochloride,LT01210,DILI_negative,vNo-DILI-concern,CC1=NC2=C(N1)CCN(C3=CC=CC=C32)C(=O)C4=CC=C(C=C4)NC(=O)C5=CC=CC=C5C6=CC=CC=C6.Cl
+Copanlisib dihydrochloride,LT03651,DILI_negative,vNo-DILI-concern,COC1=C(C=CC2=C3NCCN3C(=NC(=O)C4=CN=C(N=C4)N)N=C21)OCCCN5CCOCC5.Cl.Cl
+Copper cu-64 dotatate,LT03900,DILI_negative,vNo-DILI-concern,CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCCN)CC2=CNC3=CC=CC=C32)CC4=CC=C(C=C4)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)CN6CCN(CCN(CCN(CC6)CC(=O)[O-])CC(=O)[O-])CC(=O)O)C(=O)NC(C(C)O)C(=O)O)O.[Cu+2]
+Corticorelin ovine triflutate,LT00438,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CO)C(=O)NC(CC(C)C)C(=O)NC(CC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(C(C)O)C(=O)NC(CC1=CC=CC=C1)C(=O)NC(CC2=CN=CN2)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCC(=O)O)C(=O)NC(C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CCSC)C(=O)NC(C(C)O)C(=O)NC(CCCCN)C(=O)NC(C)C(=O)NC(CC(=O)O)C(=O)NC(CCC(=O)N)C(=O)NC(CC(C)C)C(=O)NC(C)C(=O)NC(CCC(=O)N)C(=O)NC(CCC(=O)N)C(=O)NC(C)C(=O)NC(CC3=CN=CN3)C(=O)NC(CO)C(=O)NC(CC(=O)N)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCCN)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CC(=O)O)C(=O)NC(C(C)CC)C(=O)NC(C)C(=O)N)NC(=O)C4CCCN4C(=O)C5CCCN5C(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)N)NC(=O)C(CO)N
+Corticotropin,LT00077,DILI_negative,vNo-DILI-concern,CC(C)CC(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CC=CC=C1)C(=O)O)NC(=O)C2CCCN2C(=O)C(CC3=CC=CC=C3)NC(=O)C(C)NC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)C(CO)NC(=O)C(CCC(=O)O)NC(=O)C(CC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)CNC(=O)C(CC(=O)N)NC(=O)C4CCCN4C(=O)C(CC5=CC=C(C=C5)O)NC(=O)C(C(C)C)NC(=O)C(CCCCN)NC(=O)C(C(C)C)NC(=O)C6CCCN6C(=O)C(CCCNC(=N)N)NC(=O)C(CCCNC(=N)N)NC(=O)C(CCCCN)NC(=O)C(CCCCN)NC(=O)CNC(=O)C(C(C)C)NC(=O)C7CCCN7C(=O)C(CCCCN)NC(=O)CNC(=O)C(CC8=CNC9=CC=CC=C98)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC1=CC=CC=C1)NC(=O)C(CC1=CN=CN1)NC(=O)C(CCC(=O)O)NC(=O)C(CCSC)NC(=O)C(CO)NC(=O)C(CC1=CC=C(C=C1)O)NC(=O)C(CO)N
+Cortisone acetate,LT00734,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(=O)C3C2CCC4=CC(=O)CCC34C)C)O
+Cosyntropin,LT00855,DILI_negative,vNo-DILI-concern,CC(C)C(C(=O)NCC(=O)NC(CCCCN)C(=O)NC(CCCCN)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCNC(=N)N)C(=O)N1CCCC1C(=O)NC(C(C)C)C(=O)NC(CCCCN)C(=O)NC(C(C)C)C(=O)NC(CC2=CC=C(C=C2)O)C(=O)N3CCCC3C(=O)O)NC(=O)C4CCCN4C(=O)C(CCCCN)NC(=O)CNC(=O)C(CC5=CNC6=CC=CC=C65)NC(=O)C(CCCNC(=N)N)NC(=O)C(CC7=CC=CC=C7)NC(=O)C(CC8=CNC=N8)NC(=O)C(CCC(=O)O)NC(=O)C(CCSC)NC(=O)C(CO)NC(=O)C(CC9=CC=C(C=C9)O)NC(=O)C(CO)N
+Cupric chloride,LT00361,DILI_negative,vNo-DILI-concern,Cl[Cu]Cl
+Cyanocobalamin,LT02002,DILI_negative,vNo-DILI-concern,CC1=CC2=C(C=C1C)[N+](=CN2)C3C(C(C(O3)CO)OP(=O)(O)OC(C)CNC(=O)CCC4(C(C5C6(C(C(C(=N6)C(=C7C(C(C(=CC8=NC(=C(C4=N5)C)C(C8(C)C)CCC(=N)[O-])N7)CCC(=N)[O-])(C)CC(=O)N)C)CCC(=N)[O-])(C)CC(=O)N)C)CC(=O)N)C)O.[C]#N.[Co+2]
+Dalfampridine,LT03653,DILI_negative,vNo-DILI-concern,C1=CN=CC=C1N
+Dapagliflozin,LT02891,DILI_negative,vNo-DILI-concern,CCOC1=CC=C(C=C1)CC2=C(C=CC(=C2)C3C(C(C(C(O3)CO)O)O)O)Cl
+Darifenacin hydrobromide,LT01188,DILI_negative,vNo-DILI-concern,C1CN(CC1C(C2=CC=CC=C2)(C3=CC=CC=C3)C(=O)N)CCC4=CC5=C(C=C4)OCC5.Br
+Dasiglucagon hydrochloride,LT03655,DILI_negative,vNo-DILI-concern,CC(C)CC(C(=O)NC(CCC(=O)O)C(=O)NC(CO)C(=O)NC(C(C)O)C(=O)O)NC(=O)C(CC1=CNC2=CC=CC=C21)NC(=O)C(CCCCN)NC(=O)C(C(C)C)NC(=O)C(CC3=CC=CC=C3)NC(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)C(CCCNC(=N)N)NC(=O)C(C)NC(=O)C(C)(C)NC(=O)C(CC(=O)O)NC(=O)C(CC(C)C)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(CCCCN)NC(=O)C(CO)NC(=O)C(CC5=CC=C(C=C5)O)NC(=O)C(CC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)O)NC(=O)C(CC6=CC=CC=C6)NC(=O)C(C(C)O)NC(=O)CNC(=O)C(CCC(=O)N)NC(=O)C(CO)NC(=O)C(CC7=CNC=N7)N
+Daunorubicin hydrochloride,LT00540,DILI_negative,vNo-DILI-concern,CC1C(C(CC(O1)OC2CC(CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(C(=O)C)O)N)O.Cl
+Defibrotide sodium,LT01774,DILI_negative,vNo-DILI-concern,CC(C)C1=C(C=C(C(=C1)C2=NNC(=O)N2C3=CC4=C(C=C3)N(C=C4)C)O)OP(=O)(O)O
+Deflazacort,LT02726,DILI_negative,vNo-DILI-concern,CC1=NC2(C(O1)CC3C2(CC(C4C3CCC5=CC(=O)C=CC45C)O)C)C(=O)COC(=O)C
+Deoxycholic acid,LT03657,DILI_negative,vNo-DILI-concern,CC(CCC(=O)O)C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C
+Deutetrabenazine,LT03658,DILI_negative,vNo-DILI-concern,CC(C)CC1CN2CCC3=CC(=C(C=C3C2CC1=O)OC)OC
+Dexbrompheniramine maleate,LT00810,DILI_negative,vNo-DILI-concern,CN(C)CCC(C1=CC=C(C=C1)Br)C2=CC=CC=N2.C(=CC(=O)O)C(=O)O
+Dexchlorpheniramine maleate,LT00682,DILI_negative,vNo-DILI-concern,CN(C)CCC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2.C(=CC(=O)O)C(=O)O
+Dexpanthenol,LT01972,DILI_negative,vNo-DILI-concern,CC(C)(CO)C(C(=O)NCCCO)O
+Dextroamphetamine sulfate,LT00870,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)N.CC(CC1=CC=CC=C1)N.OS(=O)(=O)O
+Dextromethorphan polistirex,LT02056,DILI_negative,vNo-DILI-concern,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)OC.Br
+Dextrose,LT00327,DILI_negative,vNo-DILI-concern,C(C1C(C(C(C(O1)O)O)O)O)O
+Diatrizoate sodium,LT00774,DILI_negative,vNo-DILI-concern,CC(=O)NC1=C(C(=C(C(=C1I)C(=O)[O-])I)NC(=O)C)I.[Na+]
+Dichlorphenamide,LT00802,DILI_negative,vNo-DILI-concern,C1=C(C=C(C(=C1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+Dicyclomine hydrochloride,LT00737,DILI_negative,vNo-DILI-concern,CCN(CC)CCOC(=O)C1(CCCCC1)C2CCCCC2.Cl
+Diethylpropion hydrochloride,LT00806,DILI_negative,vNo-DILI-concern,CCN(CC)C(C)C(=O)C1=CC=CC=C1.Cl
+Difelikefalin acetate,LT03659,DILI_negative,vNo-DILI-concern,CC(C)CC(C(=O)NC(CCCCN)C(=O)N1CCC(CC1)(C(=O)O)N)NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CC3=CC=CC=C3)N.CC(=O)O
+Digoxin,LT00292,DILI_negative,vNo-DILI-concern,CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CC(C7(C6(CCC7C8=CC(=O)OC8)O)C)O)C)C)C)O)O
+Dihydroergotamine mesylate,LT02218,DILI_negative,vNo-DILI-concern,CC1(C(=O)N2C(C(=O)N3CCCC3C2(O1)O)CC4=CC=CC=C4)NC(=O)C5CC6C(CC7=CNC8=CC=CC6=C78)N(C5)C.CS(=O)(=O)O
+Dimenhydrinate,LT00545,DILI_negative,vNo-DILI-concern,CN1C2=C(C(=O)N(C1=O)C)NC(=N2)Cl.CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2
+Dimercaprol,LT00074,DILI_negative,vNo-DILI-concern,C(C(CS)S)O
+Diphenhydramine hydrochloride,LT00087,DILI_negative,vNo-DILI-concern,CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2.Cl
+Diphenoxylate,LT01623,DILI_negative,vNo-DILI-concern,CCOC(=O)C1(CCN(CC1)CCC(C#N)(C2=CC=CC=C2)C3=CC=CC=C3)C4=CC=CC=C4
+Dobutamine hydrochloride,LT01308,DILI_negative,vNo-DILI-concern,CC(CCC1=CC=C(C=C1)O)NCCC2=CC(=C(C=C2)O)O.Cl
+Dopamine hydrochloride,LT00015,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1CCN)O)O.Cl
+Doxapram hydrochloride,LT00547,DILI_negative,vNo-DILI-concern,CCN1CC(C(C1=O)(C2=CC=CC=C2)C3=CC=CC=C3)CCN4CCOCC4.O.Cl
+Doxylamine succinate,LT00727,DILI_negative,vNo-DILI-concern,CC(C1=CC=CC=C1)(C2=CC=CC=N2)OCCN(C)C.C(CC(=O)O)C(=O)O
+Droperidol,LT01317,DILI_negative,vNo-DILI-concern,C1CN(CC=C1N2C3=CC=CC=C3NC2=O)CCCC(=O)C4=CC=C(C=C4)F
+Droxidopa,LT01788,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1C(C(C(=O)O)N)O)O)O
+Dutasteride,LT01112,DILI_negative,vNo-DILI-concern,CC12CCC3C(C1CCC2C(=O)NC4=C(C=CC(=C4)C(F)(F)F)C(F)(F)F)CCC5C3(C=CC(=O)N5)C
+Dyphylline,LT00740,DILI_negative,vNo-DILI-concern,CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(CO)O
+Ecallantide,LT00683,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NCC(=O)NCC(=O)NC2CSSCC3C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N4CCCC4C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCC(=O)N5CCCC5C(=O)N3)CC(=O)O)CC(=O)O)C)CCCCN)CC6=CC=CC=C6)C)NC(=O)C(CC7=CC=CC=C7)NC(=O)C(CO)NC(=O)C(CC8=CN=CN8)NC(=O)C(CCSC)NC(=O)C(C)NC(=O)C(CCC(=O)O)N)C(=O)NC(C(C)O)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC(=O)O)C(=O)O)CCSC)CCCCN)CCCCN)NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC(=O)C(NC2=O)CCC(=O)O)CC(=O)N)CCC(=O)N)CC(=O)N)CCCNC(=N)N)CC9=CC=CC=C9)CCC(=O)O)CO)CC(C)C)CCC(=O)O)CCC(=O)O)C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CC1=CC=CC=C1)CCC(=O)O)CCC(=O)O)CCC(=O)N)CCCNC(=N)N)C(C)O)CC1=CC=CC=C1)C(C)CC)CC(=O)N)CC1=CC=CC=C1)CC1=CC=CC=C1)CC1=CNC2=CC=CC=C21)CCCNC(=N)N)CC1=CN=CN1)C)C)CCCNC(=N)N)CC1=CC=C(C=C1)O
+Edaravone,LT03663,DILI_negative,vNo-DILI-concern,CC1=NN(C(=O)C1)C2=CC=CC=C2
+Edrophonium chloride,LT02093,DILI_negative,vNo-DILI-concern,CC[N+](C)(C)C1=CC(=CC=C1)O.[Cl-]
+Eliglustat tartrate,LT03666,DILI_negative,vNo-DILI-concern,CCCCCCCC(=O)NC(CN1CCCC1)C(C2=CC3=C(C=C2)OCCO3)O.CCCCCCCC(=O)NC(CN1CCCC1)C(C2=CC3=C(C=C2)OCCO3)O.C(C(C(=O)O)O)(C(=O)O)O
+Empagliflozin,LT03667,DILI_negative,vNo-DILI-concern,C1COCC1OC2=CC=C(C=C2)CC3=C(C=CC(=C3)C4C(C(C(C(O4)CO)O)O)O)Cl
+Enzalutamide,LT02444,DILI_negative,vNo-DILI-concern,CC1(C(=O)N(C(=S)N1C2=CC(=C(C=C2)C(=O)NC)F)C3=CC(=C(C=C3)C#N)C(F)(F)F)C
+Ephedrine sulfate,LT01666,DILI_negative,vNo-DILI-concern,CC(C(C1=CC=CC=C1)O)NC.CC(C(C1=CC=CC=C1)O)NC.OS(=O)(=O)O
+Epinephrine,LT00742,DILI_negative,vNo-DILI-concern,CNCC(C1=CC(=C(C=C1)O)O)O
+Epoetin alfa,LT01316,DILI_negative,vNo-DILI-concern,CC1CC=CC=CC(C(CC(C(C(C(CC(=O)O1)O)OC)OC2C(C(C(C(O2)C)OC3CC(C(C(O3)C)O)(C)O)N(C)C)O)CCO)C)OC4CC(C(C(O4)C)O)(C)O
+Eptifibatide,LT00999,DILI_negative,vNo-DILI-concern,C1CC2C(=O)NC(CSSCCC(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)N2C1)CC3=CNC4=CC=CC=C43)CC(=O)O)CCCCN=C(N)N)C(=O)N
+Ergocalciferol,LT00194,DILI_negative,vNo-DILI-concern,CC(C)C(C)C=CC(C)C1CCC2C1(CCCC2=CC=C3CC(CCC3=C)O)C
+Ertugliflozin,LT03673,DILI_negative,vNo-DILI-concern,CCOC1=CC=C(C=C1)CC2=C(C=CC(=C2)C34C(C(C(C(O3)(CO4)CO)O)O)O)Cl
+Erythropoietin,LT02330,DILI_negative,vNo-DILI-concern,CC1CC=CC=CC(C(CC(C(C(C(CC(=O)O1)O)OC)OC2C(C(C(C(O2)C)OC3CC(C(C(O3)C)O)(C)O)N(C)C)O)CCO)C)OC4CC(C(C(O4)C)O)(C)O
+Esmolol hydrochloride,LT01333,DILI_negative,vNo-DILI-concern,CC(C)NCC(COC1=CC=C(C=C1)CCC(=O)OC)O.Cl
+Estazolam,LT01334,DILI_negative,vNo-DILI-concern,C1C2=NN=CN2C3=C(C=C(C=C3)Cl)C(=N1)C4=CC=CC=C4
+Etelcalcetide,LT03674,DILI_negative,vNo-DILI-concern,CC(C(=O)NC(CCCN=C(N)N)C(=O)N)NC(=O)C(CCCN=C(N)N)NC(=O)C(CCCN=C(N)N)NC(=O)C(CCCN=C(N)N)NC(=O)C(C)NC(=O)C(CSSCC(C(=O)O)N)NC(=O)C
+Ethanolamine oleate,LT00926,DILI_negative,vNo-DILI-concern,CCCCCCCCC=CCCCCCCCC(=O)O.C(CO)N
+Etidronate disodium,LT01355,DILI_negative,vNo-DILI-concern,CC(O)(P(=O)(O)[O-])P(=O)(O)[O-].[Na+].[Na+]
+Etomidate,LT01357,DILI_negative,vNo-DILI-concern,CCOC(=O)C1=CN=CN1C(C)C2=CC=CC=C2
+Exenatide synthetic,LT00537,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CC(C)C)C(=O)NC(CCCCN)C(=O)NC(CC(=O)N)C(=O)NCC(=O)NCC(=O)N3CCCC3C(=O)NC(CO)C(=O)NC(CO)C(=O)NCC(=O)NC(C)C(=O)N4CCCC4C(=O)N5CCCC5C(=O)N6CCCC6C(=O)NC(CO)C(=O)N)NC(=O)C(CC7=CC=CC=C7)NC(=O)C(CC(C)C)NC(=O)C(CCCNC(=N)N)NC(=O)C(C(C)C)NC(=O)C(C)NC(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)O)NC(=O)C(CCSC)NC(=O)C(CCC(=O)N)NC(=O)C(CCCCN)NC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)C(CC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)O)NC(=O)C(CC8=CC=CC=C8)NC(=O)C(C(C)O)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)CNC(=O)C(CC9=CNC=N9)N
+Fenoldopam mesylate,LT00944,DILI_negative,vNo-DILI-concern,CS(=O)(=O)O.C1CNCC(C2=CC(=C(C(=C21)Cl)O)O)C3=CC=C(C=C3)O
+Ferric maltol,LT03677,DILI_negative,vNo-DILI-concern,CC1=C(C(=O)C=CO1)[O-].CC1=C(C(=O)C=CO1)[O-].CC1=C(C(=O)C=CO1)[O-].[Fe+3]
+Ferumoxytol,LT00650,DILI_negative,vNo-DILI-concern,[O-2].[O-2].[O-2].[O-2].[Fe+2].[Fe+3].[Fe+3]
+Fesoterodine fumarate,LT00590,DILI_negative,vNo-DILI-concern,CC(C)C(=O)OC1=C(C=C(C=C1)CO)C(CCN(C(C)C)C(C)C)C2=CC=CC=C2.C(=CC(=O)O)C(=O)O
+Fexofenadine hydrochloride,LT01370,DILI_negative,vNo-DILI-concern,CC(C)(C1=CC=C(C=C1)C(CCCN2CCC(CC2)C(C3=CC=CC=C3)(C4=CC=CC=C4)O)O)C(=O)O.Cl
+Finerenone,LT03679,DILI_negative,vNo-DILI-concern,CCOC1=NC=C(C2=C1C(C(=C(N2)C)C(=O)N)C3=C(C=C(C=C3)C#N)OC)C
+Flibanserin,LT03680,DILI_negative,vNo-DILI-concern,C1CN(CCN1CCN2C3=CC=CC=C3NC2=O)C4=CC=CC(=C4)C(F)(F)F
+Florbetaben f-18,LT03903,DILI_negative,vNo-DILI-concern,CNC1=CC=C(C=C1)C=CC2=CC=C(C=C2)OCCOCCOCCF
+Florbetapir f-18,LT03904,DILI_negative,vNo-DILI-concern,CNC1=CC=C(C=C1)C=CC2=CN=C(C=C2)OCCOCCOCCF
+Flortaucipir f-18,LT03905,DILI_negative,vNo-DILI-concern,C1=CC2=C(C=C1C3=CN=C(C=C3)F)NC4=C2C=NC=C4
+Fluciclovine f-18,LT03906,DILI_negative,vNo-DILI-concern,C1C(CC1(C(=O)O)N)F
+Fludarabine phosphate,LT01382,DILI_negative,vNo-DILI-concern,C1=NC2=C(N=C(N=C2N1C3C(C(C(O3)COP(=O)(O)O)O)O)F)N
+Fludrocortisone acetate,LT00399,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(C3(C2CCC4=CC(=O)CCC43C)F)O)C)O
+Flumazenil,LT01384,DILI_negative,vNo-DILI-concern,CCOC(=O)C1=C2CN(C(=O)C3=C(N2C=N1)C=CC(=C3)F)C
+Fluorescein sodium,LT00894,DILI_negative,vNo-DILI-concern,C1=CC=C(C(=C1)C2=C3C=CC(=O)C=C3OC4=C2C=CC(=C4)[O-])C(=O)[O-].[Na+].[Na+]
+Fluorodopa f-18,LT03907,DILI_negative,vNo-DILI-concern,C1=C(C(=CC(=C1O)O)F)CC(C(=O)O)N
+Fluoroestradiol f-18,LT03908,DILI_negative,vNo-DILI-concern,CC12CCC3C(C1CC(C2O)F)CCC4=C3C=CC(=C4)O
+Flutemetamol f-18,LT03909,DILI_negative,vNo-DILI-concern,CNC1=C(C=C(C=C1)C2=NC3=C(S2)C=C(C=C3)O)F
+Folic acid,LT01580,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1C(=O)NC(CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N
+Fosdenopterin hydrobromide,LT03681,DILI_negative,vNo-DILI-concern,C1C2C(C(C3C(O2)NC4=C(N3)C(=O)NC(=N4)N)(O)O)OP(=O)(O1)O.O.O.Br
+Frovatriptan succinate,LT01054,DILI_negative,vNo-DILI-concern,CNC1CCC2=C(C1)C3=C(N2)C=CC(=C3)C(=O)N.C(CC(=O)O)C(=O)O.O
+Gabapentin enacarbil,LT03684,DILI_negative,vNo-DILI-concern,CC(C)C(=O)OC(C)OC(=O)NCC1(CCCCC1)CC(=O)O
+Gadobenate dimeglumine,LT01127,DILI_negative,vNo-DILI-concern,CNCC(C(C(C(CO)O)O)O)O.CNCC(C(C(C(CO)O)O)O)O.C1=CC=C(C=C1)COCC(C(=O)[O-])N(CCN(CCN(CC(=O)O)CC(=O)[O-])CC(=O)[O-])CC(=O)O.[Gd+3]
+Gadobutrol,LT02336,DILI_negative,vNo-DILI-concern,C1CN(CCN(CCN(CCN1CC(=O)[O-])CC(=O)[O-])C(CO)C(CO)O)CC(=O)[O-].[Gd+3]
+Gadofosveset trisodium,LT00528,DILI_negative,vNo-DILI-concern,C1CC(CCC1OP(=O)([O-])OCC(CN(CCN(CC(=O)[O-])CC(=O)[O-])CC(=O)[O-])N(CC(=O)[O-])CC(=O)[O-])(C2=CC=CC=C2)C3=CC=CC=C3.[Na+].[Na+].[Na+].[Gd+3]
+Gadopentetate dimeglumine,LT00935,DILI_negative,vNo-DILI-concern,CNCC(C(C(C(CO)O)O)O)O.CNCC(C(C(C(CO)O)O)O)O.C(CN(CC(=O)O)CC(=O)[O-])N(CCN(CC(=O)O)CC(=O)[O-])CC(=O)[O-].[Gd+3]
+Gadoterate meglumine,LT02876,DILI_negative,vNo-DILI-concern,CNCC(C(C(C(CO)O)O)O)O.C1CN(CCN(CCN(CCN1CC(=O)O)CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Gd+3]
+Gadoteridol,LT00952,DILI_negative,vNo-DILI-concern,CC(CN1CCN(CCN(CCN(CC1)CC(=O)[O-])CC(=O)[O-])CC(=O)[O-])O.[Gd+3]
+Gadoversetamide,LT01044,DILI_negative,vNo-DILI-concern,COCCNC(=O)CN(CCN(CCN(CC(=O)NCCOC)CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Gd+3]
+Gadoxetate disodium,LT02404,DILI_negative,vNo-DILI-concern,CCOC1=CC=C(C=C1)CC(CN(CCN(CC(=O)[O-])CC(=O)[O-])CC(=O)[O-])N(CC(=O)[O-])CC(=O)[O-].[Na+].[Na+].[Gd+3]
+Gallium dotatate ga-68,LT03901,DILI_negative,vNo-DILI-concern,CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCCN)CC2=CNC3=CC=CC=C32)CC4=CC=C(C=C4)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)CN6CCN(CCN(CCN(CC6)CC(=O)[O-])CC(=O)[O-])CC(=O)[O-])C(=O)NC(C(C)O)C(=O)O)O.[Ga+3]
+Gallium ga-68 edotreotide,LT03902,DILI_negative,vNo-DILI-concern,CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCCN)CC2=CNC3=CC=CC=C32)CC4=CC=C(C=C4)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)CN6CCN(CCN(CCN(CC6)CC(=O)[O-])CC(=O)[O-])CC(=O)[O-])C(=O)NC(CO)C(C)O)O.[Ga+3]
+Gallium ga-68 gozetotide,LT03910,DILI_negative,vNo-DILI-concern,[H+].C1=CC(=C(C=C1CCC(=O)NCCCCCC(=O)NCCCCC(C(=O)O)NC(=O)NC(CCC(=O)O)C(=O)O)CN(CCN(CC2=C(C=CC(=C2)CCC(=O)O)[O-])CC(=O)[O-])CC(=O)[O-])[O-].[Ga+3]
+Ganirelix acetate,LT00475,DILI_negative,vNo-DILI-concern,CCNC(=NCCCCC(C(=O)NC(CC(C)C)C(=O)NC(CCCCN=C(NCC)NCC)C(=O)N1CCCC1C(=O)NC(C)C(=O)N)NC(=O)C(CC2=CC=C(C=C2)O)NC(=O)C(CO)NC(=O)C(CC3=CN=CC=C3)NC(=O)C(CC4=CC=C(C=C4)Cl)NC(=O)C(CC5=CC6=CC=CC=C6C=C5)NC(=O)C)NCC.CC(=O)O.CC(=O)O
+Glycopyrrolate,LT00836,DILI_negative,vNo-DILI-concern,C[N+]1(CCC(C1)OC(=O)C(C2CCCC2)(C3=CC=CC=C3)O)C.[Br-]
+Guaifenesin,LT01100,DILI_negative,vNo-DILI-concern,COC1=CC=CC=C1OCC(CO)O
+Guanethidine monosulfate,LT00829,DILI_negative,vNo-DILI-concern,C1CCCN(CCC1)CCN=C(N)N.OS(=O)(=O)O
+Histamine phosphate,LT00706,DILI_negative,vNo-DILI-concern,C1=C(NC=N1)CCN.OP(=O)(O)O.OP(=O)(O)O
+Hydrocortisone acetate,LT00188,DILI_negative,vNo-DILI-concern,CC(=O)OCC(=O)C1(CCC2C1(CC(C3C2CCC4=CC(=O)CCC34C)O)C)O
+Hydroxyzine hydrochloride,LT01437,DILI_negative,vNo-DILI-concern,C1CN(CCN1CCOCCO)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl.Cl.Cl
+Ibutilide fumarate,LT00974,DILI_negative,vNo-DILI-concern,CCCCCCCN(CC)CCCC(C1=CC=C(C=C1)NS(=O)(=O)C)O.CCCCCCCN(CC)CCCC(C1=CC=C(C=C1)NS(=O)(=O)C)O.C(=CC(=O)O)C(=O)O
+Indocyanine green,LT00141,DILI_negative,vNo-DILI-concern,CC1(C(=[N+](C2=C1C3=CC=CC=C3C=C2)CCCCS(=O)(=O)[O-])C=CC=CC=CC=C4C(C5=C(N4CCCCS(=O)(=O)[O-])C=CC6=CC=CC=C65)(C)C)C.[Na+]
+Iodipamide sodium,LT01454,DILI_negative,vNo-DILI-concern,C1=C(C(=C(C(=C1I)NC(=O)CCCCC(=O)NC2=C(C=C(C(=C2I)C(=O)[O-])I)I)I)C(=O)[O-])I.[Na+].[Na+]
+Ioflupane i-123,LT03911,DILI_negative,vNo-DILI-concern,COC(=O)C1C2CCC(N2CCCF)CC1C3=CC=C(C=C3)I
+Iothalamate meglumine,LT00257,DILI_negative,vNo-DILI-concern,CC(=O)NC1=C(C(=C(C(=C1I)C(=O)O)I)C(=O)NC)I.CNCC(C(C(C(CO)O)O)O)O
+Ioversol,LT00419,DILI_negative,vNo-DILI-concern,C(CO)N(C1=C(C(=C(C(=C1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+Isoproterenol hydrochloride,LT00200,DILI_negative,vNo-DILI-concern,CC(C)NCC(C1=CC(=C(C=C1)O)O)O.Cl
+Isosorbide dinitrate,LT00818,DILI_negative,vNo-DILI-concern,C1C(C2C(O1)C(CO2)O[N+](=O)[O-])O[N+](=O)[O-]
+Isoxsuprine hydrochloride,LT02089,DILI_negative,vNo-DILI-concern,CC(COC1=CC=CC=C1)NC(C)C(C2=CC=C(C=C2)O)O.Cl
+Istradefylline,LT03695,DILI_negative,vNo-DILI-concern,CCN1C2=C(C(=O)N(C1=O)CC)N(C(=N2)C=CC3=CC(=C(C=C3)OC)OC)C
+Ivabradine hydrochloride,LT02665,DILI_negative,vNo-DILI-concern,CN(CCCN1CCC2=CC(=C(C=C2CC1=O)OC)OC)CC3CC4=CC(=C(C=C34)OC)OC.Cl
+Kanamycin,LT01477,DILI_negative,vNo-DILI-concern,C1C(C(C(C(C1N)OC2C(C(C(C(O2)CN)O)O)O)O)OC3C(C(C(C(O3)CO)O)N)O)N
+Lactitol,LT02745,DILI_negative,vNo-DILI-concern,C(C1C(C(C(C(O1)OC(C(CO)O)C(C(CO)O)O)O)O)O)O
+Lactulose,LT00886,DILI_negative,vNo-DILI-concern,C(C1C(C(C(C(O1)OC2C(OC(C2O)(CO)O)CO)O)O)O)O
+Lanthanum carbonate,LT00493,DILI_negative,vNo-DILI-concern,C(=O)([O-])[O-].C(=O)([O-])[O-].C(=O)([O-])[O-].[La+3].[La+3]
+Lasmiditan succinate,LT03699,DILI_negative,vNo-DILI-concern,CN1CCC(CC1)C(=O)C2=NC(=CC=C2)NC(=O)C3=C(C=C(C=C3F)F)F.CN1CCC(CC1)C(=O)C2=NC(=CC=C2)NC(=O)C3=C(C=C(C=C3F)F)F.C(CC(=O)O)C(=O)O
+Lemborexant,LT03700,DILI_negative,vNo-DILI-concern,CC1=NC(=NC=C1OCC2(CC2C(=O)NC3=NC=C(C=C3)F)C4=CC(=CC=C4)F)C
+Leucovorin calcium,LT02192,DILI_negative,vNo-DILI-concern,C1C(N(C2=C(N1)N=C(NC2=O)N)C=O)CNC3=CC=C(C=C3)C(=O)NC(CCC(=O)[O-])C(=O)[O-].[Ca+2]
+Levocarnitine,LT01486,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CC(CC(=O)[O-])O
+Levoleucovorin,LT02437,DILI_negative,vNo-DILI-concern,C1C(N(C2=C(N1)N=C(NC2=O)N)C=O)CNC3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O
+Levomefolate calcium,LT02442,DILI_negative,vNo-DILI-concern,CN1C(CNC2=C1C(=O)NC(=N2)N)CNC3=CC=C(C=C3)C(=O)NC(CCC(=O)[O-])C(=O)[O-].[Ca+2]
+Levonorgestrel,LT01489,DILI_negative,vNo-DILI-concern,CCC12CCC3C(C1CCC2(C#C)O)CCC4=CC(=O)CCC34
+Levorphanol tartrate,LT00752,DILI_negative,vNo-DILI-concern,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)O.C(C(C(=O)O)O)(C(=O)O)O
+Lidocaine,LT01905,DILI_negative,vNo-DILI-concern,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+Linaclotide,LT02412,DILI_negative,vNo-DILI-concern,CC1C(=O)NC2CSSCC3C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(NC(=O)CNC(=O)C(NC2=O)C(C)O)C(=O)NC(CC4=CC=C(C=C4)O)C(=O)O)C(=O)NC(CSSCC(C(=O)N3)N)C(=O)NC(C(=O)N5CCCC5C(=O)N1)CC(=O)N)CC6=CC=C(C=C6)O)CCC(=O)O
+Liothyronine sodium,LT00783,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(C(=O)[O-])N)I)I)O.[Na+]
+Lofexidine hydrochloride,LT01776,DILI_negative,vNo-DILI-concern,CC(C1=NCCN1)OC2=C(C=CC=C2Cl)Cl.Cl
+Loperamide hydrochloride,LT02087,DILI_negative,vNo-DILI-concern,CN(C)C(=O)C(CCN1CCC(CC1)(C2=CC=C(C=C2)Cl)O)(C3=CC=CC=C3)C4=CC=CC=C4.Cl
+Loratadine,LT01498,DILI_negative,vNo-DILI-concern,CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1
+Lubiprostone,LT01240,DILI_negative,vNo-DILI-concern,CCCCC(C1(CCC2C(O1)CC(=O)C2CCCCCCC(=O)O)O)(F)F
+Lurasidone hydrochloride,LT02411,DILI_negative,vNo-DILI-concern,C1CCC(C(C1)CN2CCN(CC2)C3=NSC4=CC=CC=C43)CN5C(=O)C6C7CCC(C7)C6C5=O.Cl
+Lusutrombopag,LT03708,DILI_negative,vNo-DILI-concern,CCCCCCOC(C)C1=CC=CC(=C1OC)C2=CSC(=N2)NC(=O)C3=CC(=C(C(=C3)Cl)C=C(C)C(=O)O)Cl
+Macimorelin acetate,LT03709,DILI_negative,vNo-DILI-concern,CC(=O)O.CC(C)(C(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CC3=CNC4=CC=CC=C43)NC=O)N
+Mannitol,LT00024,DILI_negative,vNo-DILI-concern,C(C(C(C(C(CO)O)O)O)O)O
+Maribavir,LT03558,DILI_negative,vNo-DILI-concern,CC(C)NC1=NC2=CC(=C(C=C2N1C3C(C(C(O3)CO)O)O)Cl)Cl
+Mecamylamine hydrochloride,LT00781,DILI_negative,vNo-DILI-concern,CC1(C2CCC(C2)C1(C)NC)C.Cl
+Meclizine hydrochloride,LT00792,DILI_negative,vNo-DILI-concern,CC1=CC(=CC=C1)CN2CCN(CC2)C(C3=CC=CC=C3)C4=CC=C(C=C4)Cl.O.Cl.Cl
+Mepenzolate bromide,LT00790,DILI_negative,vNo-DILI-concern,C[N+]1(CCCC(C1)OC(=O)C(C2=CC=CC=C2)(C3=CC=CC=C3)O)C.[Br-]
+Meperidine hydrochloride,LT00713,DILI_negative,vNo-DILI-concern,CCOC(=O)C1(CCN(CC1)C)C2=CC=CC=C2.Cl
+Meprobamate,LT01521,DILI_negative,vNo-DILI-concern,CCCC(C)(COC(=O)N)COC(=O)N
+Metaproterenol sulfate,LT02086,DILI_negative,vNo-DILI-concern,CC(C)NCC(C1=CC(=CC(=C1)O)O)O.CC(C)NCC(C1=CC(=CC(=C1)O)O)O.OS(=O)(=O)O
+Methamphetamine hydrochloride,LT00716,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)NC.Cl
+Methionine,LT01468,DILI_negative,vNo-DILI-concern,CSCCC(C(=O)O)N
+Methscopolamine bromide,LT01547,DILI_negative,vNo-DILI-concern,C[N+]1(C2CC(CC1C3C2O3)OC(=O)C(CO)C4=CC=CC=C4)C.[Br-]
+Methsuximide,LT00787,DILI_negative,vNo-DILI-concern,CC1(CC(=O)N(C1=O)C)C2=CC=CC=C2
+Methylergonovine maleate,LT02074,DILI_negative,vNo-DILI-concern,CCC(CO)NC(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)C.C(=CC(=O)O)C(=O)O
+Methylnaltrexone bromide,LT00570,DILI_negative,vNo-DILI-concern,C[N+]1(CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O)CC6CC6.[Br-]
+Methysergide maleate,LT02072,DILI_negative,vNo-DILI-concern,CCC(CO)NC(=O)C1CN(C2CC3=CN(C4=CC=CC(=C34)C2=C1)C)C.C(=CC(=O)O)C(=O)O
+Metyrapone,LT00838,DILI_negative,vNo-DILI-concern,CC(C)(C1=CN=CC=C1)C(=O)C2=CN=CC=C2
+Metyrosine,LT00895,DILI_negative,vNo-DILI-concern,CC(CC1=CC=C(C=C1)O)(C(=O)O)N
+Midazolam hydrochloride,LT01557,DILI_negative,vNo-DILI-concern,CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4F.Cl
+Midodrine hydrochloride,LT01558,DILI_negative,vNo-DILI-concern,COC1=CC(=C(C=C1)OC)C(CNC(=O)CN)O.Cl
+Migalastat hydrochloride,LT03712,DILI_negative,vNo-DILI-concern,C1C(C(C(C(N1)CO)O)O)O.Cl
+Miglitol,LT00992,DILI_negative,vNo-DILI-concern,C1C(C(C(C(N1CCO)CO)O)O)O
+Miglustat,LT01126,DILI_negative,vNo-DILI-concern,CCCCN1CC(C(C(C1CO)O)O)O
+Minoxidil,LT00587,DILI_negative,vNo-DILI-concern,C1CCN(CC1)C2=NC(=N)N(C(=C2)N)O
+Mitotane,LT01564,DILI_negative,vNo-DILI-concern,C1=CC=C(C(=C1)C(C2=CC=C(C=C2)Cl)C(Cl)Cl)Cl
+Mivacurium chloride,LT00950,DILI_negative,vNo-DILI-concern,C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C(=C3)OC)OC)OC)OC)OC)CCCOC(=O)CCC=CCCC(=O)OCCC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C(=C6)OC)OC)OC)OC)OC)C.[Cl-].[Cl-]
+Morphine sulfate,LT00905,DILI_negative,vNo-DILI-concern,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O.CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O.OS(=O)(=O)O
+Nabilone,LT00910,DILI_negative,vNo-DILI-concern,CCCCCCC(C)(C)C1=CC(=C2C3CC(=O)CCC3C(OC2=C1)(C)C)O
+Nalbuphine hydrochloride,LT01586,DILI_negative,vNo-DILI-concern,C1CC(C1)CN2CCC34C5C(CCC3(C2CC6=C4C(=C(C=C6)O)O5)O)O.Cl
+Naldemedine tosylate,LT03716,DILI_negative,vNo-DILI-concern,CC1=CC=C(C=C1)S(=O)(=O)O.CC(C)(C1=NC(=NO1)C2=CC=CC=C2)NC(=O)C3=C(C4C56CCN(C(C5(C3)O)CC7=C6C(=C(C=C7)O)O4)CC8CC8)O
+Naloxegol oxalate,LT03717,DILI_negative,vNo-DILI-concern,COCCOCCOCCOCCOCCOCCOCCOC1CCC2(C3CC4=C5C2(C1OC5=C(C=C4)O)CCN3CC=C)O.C(=O)(C(=O)O)O
+Naloxone hydrochloride,LT00592,DILI_negative,vNo-DILI-concern,C=CCN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O.Cl
+Neomycin sulfate,LT00595,DILI_negative,vNo-DILI-concern,C1C(C(C(C(C1N)OC2C(C(C(C(O2)CN)O)O)N)OC3C(C(C(O3)CO)OC4C(C(C(C(O4)CN)O)O)N)O)O)N.OS(=O)(=O)O
+Nesiritide,LT00465,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NCC(=O)NC(CSSCC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCNC(=N)N)CC(=O)O)CCSC)CCCCN)CCCNC(=N)N)CC2=CC=CC=C2)NC(=O)CNC(=O)C(CO)NC(=O)CNC(=O)C(CCC(=O)N)NC(=O)C(C(C)C)NC(=O)C(CCSC)NC(=O)C(CCCCN)NC(=O)C3CCCN3C(=O)C(CO)N)C(=O)NC(CCCCN)C(=O)NC(C(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC4=CNC=N4)C(=O)O)CC(C)C)CO)CO)CO)CO
+Nifurtimox,LT02164,DILI_negative,vNo-DILI-concern,CC1CS(=O)(=O)CCN1N=CC2=CC=C(O2)[N+](=O)[O-]
+Nitazoxanide,LT01184,DILI_negative,vNo-DILI-concern,CC(=O)OC1=CC=CC=C1C(=O)NC2=NC=C(S2)[N+](=O)[O-]
+Nitroglycerin,LT01608,DILI_negative,vNo-DILI-concern,C(C(CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-]
+Norepinephrine bitartrate,LT00738,DILI_negative,vNo-DILI-concern,C1=CC(=C(C=C1C(CN)O)O)O.C(C(C(=O)O)O)(C(=O)O)O.O
+Norethindrone acetate,LT02269,DILI_negative,vNo-DILI-concern,CC(=O)OC1(CCC2C1(CCC3C2CCC4=CC(=O)CCC34)C)C#C
+Nusinersen sodium,LT03720,DILI_negative,vNo-DILI-concern,CC1=CN(C(=O)NC1=O)C2C(C(C(O2)CO)OP(=S)(O)OCC3C(C(C(O3)N4C=C(C(=NC4=O)N)C)OCCOC)OP(=S)(O)OCC5C(C(C(O5)N6C=NC7=C(N=CN=C76)N)OCCOC)OP(=S)(O)OCC8C(C(C(O8)N9C=C(C(=NC9=O)N)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=NC1=O)N)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C(N=CN=C21)N)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C(N=CN=C21)N)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C(N=CN=C21)N)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C1N=C(NC2=O)N)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=NC1=O)N)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=C(C(=O)NC1=O)C)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C1N=C(NC2=O)N)OCCOC)OP(=S)(O)OCC1C(C(C(O1)N1C=NC2=C1N=C(NC2=O)N)OCCOC)O)OCCOC
+Nystatin,LT00602,DILI_negative,vNo-DILI-concern,CC1C=CC=CCCC=CC=CC=CC=CC(CC2C(C(CC(O2)(CC(C(CCC(CC(CC(CC(=O)OC(C(C1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O
+Opicapone,LT03725,DILI_negative,vNo-DILI-concern,CC1=C(C(=[N+](C(=C1Cl)C)[O-])Cl)C2=NOC(=N2)C3=CC(=C(C(=C3)O)O)[N+](=O)[O-]
+Orphenadrine hydrochloride,LT02085,DILI_negative,vNo-DILI-concern,CC1=CC=CC=C1C(C2=CC=CC=C2)OCCN(C)C.Cl
+Ospemifene,LT02880,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)C(=C(C2=CC=CC=C2)C3=CC=C(C=C3)OCCO)CCCl
+Oxymorphone hydrochloride,LT00808,DILI_negative,vNo-DILI-concern,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O.Cl
+Oxytocin,LT00827,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N1)CC2=CC=C(C=C2)O)N)C(=O)N3CCCC3C(=O)NC(CC(C)C)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+Pafolacianine sodium,LT03729,DILI_negative,vNo-DILI-concern,CC1(C2=C(C=CC(=C2)S(=O)(=O)[O-])[N+](=C1C=CC3=C(C(=CC=C4C(C5=C(N4CCCCS(=O)(=O)[O-])C=CC(=C5)S(=O)(=O)[O-])(C)C)CCC3)OC6=CC=C(C=C6)CC(C(=O)[O-])NC(=O)C7=CC=C(C=C7)NCC8=CN=C9C(=N8)C(=O)NC(=N9)N)CCCCS(=O)(=O)[O-])C.[Na+].[Na+].[Na+].[Na+]
+Pamabrom,LT02055,DILI_negative,vNo-DILI-concern,CC(C)(CO)N.CN1C2=C(C(=O)N(C1=O)C)NC(=N2)Br
+Pancuronium bromide,LT00867,DILI_negative,vNo-DILI-concern,CC(=O)OC1CC2CCC3C(C2(CC1[N+]4(CCCCC4)C)C)CCC5(C3CC(C5OC(=O)C)[N+]6(CCCCC6)C)C.[Br-].[Br-]
+Paromomycin sulfate,LT02061,DILI_negative,vNo-DILI-concern,C1C(C(C(C(C1N)OC2C(C(C(C(O2)CO)O)O)N)OC3C(C(C(O3)CO)OC4C(C(C(C(O4)CN)O)O)N)O)O)N.OS(=O)(=O)O
+Pegfilgrastim,LT01380,DILI_negative,vNo-DILI-concern,CC(C(C(=O)O)N)OC1C(C(C(C(O1)COC2(CC(C(C(O2)C(C(CO)O)O)NC(=O)CNC(=O)OCCOC)O)C(=O)O)O)O)NC(=O)C
+Penbutolol sulfate,LT01644,DILI_negative,vNo-DILI-concern,CC(C)(C)NCC(COC1=CC=CC=C1C2CCCC2)O.CC(C)(C)NCC(COC1=CC=CC=C1C2CCCC2)O.OS(=O)(=O)O
+Penicillin v potassium,LT01648,DILI_negative,vNo-DILI-concern,CC1(C(N2C(S1)C(C2=O)NC(=O)COC3=CC=CC=C3)C(=O)[O-])C.[K+]
+Pentagastrin,LT00869,DILI_negative,vNo-DILI-concern,CC(C)(C)OC(=O)NCCC(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CCSC)C(=O)NC(CC(=O)O)C(=O)NC(CC3=CC=CC=C3)C(=O)N
+Pentazocine lactate,LT01650,DILI_negative,vNo-DILI-concern,CC1C2CC3=C(C1(CCN2CC=C(C)C)C)C=C(C=C3)O.CC(C(=O)O)O
+Pentetate calcium trisodium yb-169,LT00879,DILI_negative,vNo-DILI-concern,C(CN(CC(=O)[O-])CC(=O)[O-])N(CCN(CC(=O)[O-])CC(=O)[O-])CC(=O)[O-].[Na+].[Na+].[Na+].[Ca+2].[Yb]
+Perampanel,LT02446,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)N2C=C(C=C(C2=O)C3=CC=CC=C3C#N)C4=CC=CC=N4
+Perflutren,LT01065,DILI_negative,vNo-DILI-concern,C(C(F)(F)F)(C(F)(F)F)(F)F
+Phendimetrazine tartrate,LT00826,DILI_negative,vNo-DILI-concern,CC1C(OCCN1C)C2=CC=CC=C2.C(C(C(=O)O)O)(C(=O)O)O
+Phenoxybenzamine hydrochloride,LT02082,DILI_negative,vNo-DILI-concern,CC(COC1=CC=CC=C1)N(CCCl)CC2=CC=CC=C2.Cl
+Phentolamine mesylate,LT00433,DILI_negative,vNo-DILI-concern,CC1=CC=C(C=C1)N(CC2=NCCN2)C3=CC(=CC=C3)O.CS(=O)(=O)O
+Physostigmine salicylate,LT00133,DILI_negative,vNo-DILI-concern,CC12CCN(C1N(C3=C2C=C(C=C3)OC(=O)NC)C)C.C1=CC=C(C(=C1)C(=O)O)O
+Phytonadione,LT00780,DILI_negative,vNo-DILI-concern,CC1=C(C(=O)C2=CC=CC=C2C1=O)CC=C(C)CCCC(C)CCCC(C)CCCC(C)C
+Piflufolastat f-18,LT03915,DILI_negative,vNo-DILI-concern,C1=CC(=NC=C1C(=O)NCCCCC(C(=O)O)NC(=O)NC(CCC(=O)O)C(=O)O)F
+Pimavanserin tartrate,LT03736,DILI_negative,vNo-DILI-concern,CC(C)COC1=CC=C(C=C1)CNC(=O)N(CC2=CC=C(C=C2)F)C3CCN(CC3)C.CC(C)COC1=CC=C(C=C1)CNC(=O)N(CC2=CC=C(C=C2)F)C3CCN(CC3)C.C(C(C(=O)O)O)(C(=O)O)O
+Pimozide,LT01672,DILI_negative,vNo-DILI-concern,C1CN(CCC1N2C3=CC=CC=C3NC2=O)CCCC(C4=CC=C(C=C4)F)C5=CC=C(C=C5)F
+Pindolol,LT01673,DILI_negative,vNo-DILI-concern,CC(C)NCC(COC1=CC=CC2=C1C=CN2)O
+Pitolisant hydrochloride,LT03737,DILI_negative,vNo-DILI-concern,C1CCN(CC1)CCCOCCCC2=CC=C(C=C2)Cl.Cl
+Plerixafor,LT02340,DILI_negative,vNo-DILI-concern,C1CNCCNCCCN(CCNC1)CC2=CC=C(C=C2)CN3CCCNCCNCCCNCC3
+Polidocanol,LT00486,DILI_negative,vNo-DILI-concern,CCCCCCCCCCCCOCCOCCOCCOCCOCCOCCOCCOCCOCCO
+Pramlintide acetate,LT00492,DILI_negative,vNo-DILI-concern,CCC(C)C(C(=O)NC(CC(C)C)C(=O)N1CCCC1C(=O)N2CCCC2C(=O)NC(C(C)O)C(=O)NC(CC(=O)N)C(=O)NC(C(C)C)C(=O)NCC(=O)NC(CO)C(=O)NC(CC(=O)N)C(=O)NC(C(C)O)C(=O)NC(CC3=CC=C(C=C3)O)C(=O)N)NC(=O)C4CCCN4C(=O)CNC(=O)C(CC5=CC=CC=C5)NC(=O)C(CC(=O)N)NC(=O)C(CC(=O)N)NC(=O)C(CO)NC(=O)C(CO)NC(=O)C(CC6=CNC=N6)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)NC(=O)C(CC7=CC=CC=C7)NC(=O)C(CC(=O)N)NC(=O)C(C)NC(=O)C(CC(C)C)NC(=O)C(CCCNC(=N)N)NC(=O)C(CCC(=O)N)NC(=O)C(C(C)O)NC(=O)C(C)NC(=O)C8CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N8)C(C)O)C)C(C)O)CC(=O)N)NC(=O)C(CCCCN)N.CC(=O)O
+Primaquine phosphate,LT00613,DILI_negative,vNo-DILI-concern,CC(CCCN)NC1=C2C(=CC(=C1)OC)C=CC=N2.OP(=O)(O)O.OP(=O)(O)O
+Primidone,LT00261,DILI_negative,vNo-DILI-concern,CCC1(C(=O)NCNC1=O)C2=CC=CC=C2
+Procyclidine hydrochloride,LT02219,DILI_negative,vNo-DILI-concern,C1CCC(CC1)C(CCN2CCCC2)(C3=CC=CC=C3)O.Cl
+Propantheline bromide,LT00753,DILI_negative,vNo-DILI-concern,CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-]
+Protirelin,LT00349,DILI_negative,vNo-DILI-concern,C1CC(N(C1)C(=O)C(CC2=CN=CN2)NC(=O)C3CCC(=O)N3)C(=O)N
+Protriptyline hydrochloride,LT00848,DILI_negative,vNo-DILI-concern,CNCCCC1C2=CC=CC=C2C=CC3=CC=CC=C13.Cl
+Prucalopride succinate,LT03197,DILI_negative,vNo-DILI-concern,COCCCN1CCC(CC1)NC(=O)C2=CC(=C(C3=C2OCC3)N)Cl.C(CC(=O)O)C(=O)O
+Pseudoephedrine hydrochloride,LT00137,DILI_negative,vNo-DILI-concern,CC(C(C1=CC=CC=C1)O)NC.Cl
+Pyrantel pamoate,LT01713,DILI_negative,vNo-DILI-concern,CN1CCCN=C1C=CC2=CC=CS2.C1=CC=C2C(=C1)C=C(C(=C2CC3=C(C(=CC4=CC=CC=C43)C(=O)O)O)O)C(=O)O
+Pyridoxine hydrochloride,LT01980,DILI_negative,vNo-DILI-concern,CC1=NC=C(C(=C1O)CO)CO.Cl
+Quazepam,LT01721,DILI_negative,vNo-DILI-concern,C1C(=S)N(C2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3F)CC(F)(F)F
+Ramelteon,LT01217,DILI_negative,vNo-DILI-concern,CCC(=O)NCCC1CCC2=C1C3=C(C=C2)OCC3
+Ranolazine,LT01192,DILI_negative,vNo-DILI-concern,CC1=C(C(=CC=C1)C)NC(=O)CN2CCN(CC2)CC(COC3=CC=CC=C3OC)O
+Regadenoson,LT00646,DILI_negative,vNo-DILI-concern,CNC(=O)C1=CN(N=C1)C2=NC(=C3C(=N2)N(C=N3)C4C(C(C(O4)CO)O)O)N
+Remimazolam besylate,LT03744,DILI_negative,vNo-DILI-concern,CC1=CN=C2N1C3=C(C=C(C=C3)Br)C(=NC2CCC(=O)OC)C4=CC=CC=N4.C1=CC=C(C=C1)S(=O)(=O)O
+Reserpine,LT01729,DILI_negative,vNo-DILI-concern,COC1C(CC2CN3CCC4=C(C3CC2C1C(=O)OC)NC5=C4C=CC(=C5)OC)OC(=O)C6=CC(=C(C(=C6)OC)OC)OC
+Riboflavin 5'-phosphate,LT01479,DILI_negative,vNo-DILI-concern,CC1=CC2=C(C=C1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(COP(=O)(O)O)O)O)O
+Rifamycin sodium,LT03745,DILI_negative,vNo-DILI-concern,CC1C=CC=C(C(=O)NC2=CC(=C3C(=C2O)C(=C(C4=C3C(=O)C(O4)(OC=CC(C(C(C(C(C(C1O)C)O)C)OC(=O)C)C)OC)C)C)O)[O-])C.[Na+]
+Rimantadine hydrochloride,LT00937,DILI_negative,vNo-DILI-concern,CC(C12CC3CC(C1)CC(C3)C2)N.Cl
+Rimegepant sulfate,LT03746,DILI_negative,vNo-DILI-concern,C1CC(C2=C(C=CC=N2)C(C1C3=C(C(=CC=C3)F)F)N)OC(=O)N4CCC(CC4)N5C6=C(NC5=O)N=CC=C6.C1CC(C2=C(C=CC=N2)C(C1C3=C(C(=CC=C3)F)F)N)OC(=O)N4CCC(CC4)N5C6=C(NC5=O)N=CC=C6.O.O.O.OS(=O)(=O)O
+Riociguat,LT02894,DILI_negative,vNo-DILI-concern,CN(C1=C(N=C(N=C1N)C2=NN(C3=C2C=CC=N3)CC4=CC=CC=C4F)N)C(=O)OC
+Risdiplam,LT03748,DILI_negative,vNo-DILI-concern,CC1=CC(=NN2C1=NC(=C2)C)C3=CC(=O)N4C=C(C=CC4=N3)N5CCNC6(C5)CC6
+Rocuronium bromide,LT00957,DILI_negative,vNo-DILI-concern,CC(=O)OC1C(CC2C1(CCC3C2CCC4C3(CC(C(C4)O)N5CCOCC5)C)C)[N+]6(CCCC6)CC=C.[Br-]
+Roflumilast,LT00619,DILI_negative,vNo-DILI-concern,C1CC1COC2=C(C=CC(=C2)C(=O)NC3=C(C=NC=C3Cl)Cl)OC(F)F
+Rolapitant hydrochloride,LT03749,DILI_negative,vNo-DILI-concern,CC(C1=CC(=CC(=C1)C(F)(F)F)C(F)(F)F)OCC2(CCC3(CCC(=O)N3)CN2)C4=CC=CC=C4.O.Cl
+Romidepsin,LT00669,DILI_negative,vNo-DILI-concern,CC=C1C(=O)NC(C(=O)OC2CC(=O)NC(C(=O)NC(CSSCCC=C2)C(=O)N1)C(C)C)C(C)C
+Rubidium chloride rb-82,LT00928,DILI_negative,vNo-DILI-concern,[Cl-].[Rb+]
+Safinamide mesylate,LT03752,DILI_negative,vNo-DILI-concern,CC(C(=O)N)NCC1=CC=C(C=C1)OCC2=CC(=CC=C2)F.CS(=O)(=O)O
+Sapropterin dihydrochloride,LT01262,DILI_negative,vNo-DILI-concern,CC(C(C1CNC2=C(N1)C(=O)NC(=N2)N)O)O.Cl.Cl
+Sarecycline hydrochloride,LT03753,DILI_negative,vNo-DILI-concern,CN(C)C1C2CC3CC4=C(C=CC(=C4C(=C3C(=O)C2(C(=C(C1=O)C(=O)N)O)O)O)O)CN(C)OC.Cl
+Scopolamine,LT01974,DILI_negative,vNo-DILI-concern,CN1C2CC(CC1C3C2O3)OC(=O)C(CO)C4=CC=CC=C4
+Selegiline hydrochloride,LT01749,DILI_negative,vNo-DILI-concern,CC(CC1=CC=CC=C1)N(C)CC#C.Cl
+Selexipag,LT03755,DILI_negative,vNo-DILI-concern,CC(C)N(CCCCOCC(=O)NS(=O)(=O)C)C1=CN=C(C(=N1)C2=CC=CC=C2)C3=CC=CC=C3
+Setmelanotide acetate,LT03760,DILI_negative,vNo-DILI-concern,CC1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)N1)NC(=O)C(CCCN=C(N)N)NC(=O)C)C(=O)N)CC2=CNC3=CC=CC=C32)CCCN=C(N)N)CC4=CC=CC=C4)CC5=CN=CN5.CC(=O)O.CC(=O)O.CC(=O)O
+Sevelamer hydrochloride,LT01039,DILI_negative,vNo-DILI-concern,C=CCN.C1C(O1)CCl.Cl
+Sincalide,LT00350,DILI_negative,vNo-DILI-concern,CSCCC(C(=O)NCC(=O)NC(CC1=CNC2=CC=CC=C21)C(=O)NC(CCSC)C(=O)NC(CC(=O)O)C(=O)NC(CC3=CC=CC=C3)C(=O)N)NC(=O)C(CC4=CC=C(C=C4)OS(=O)(=O)O)NC(=O)C(CC(=O)O)N
+Sodium bicarbonate,LT02337,DILI_negative,vNo-DILI-concern,C(=O)(O)[O-].[Na+]
+Sodium fluoride f-18,LT03914,DILI_negative,vNo-DILI-concern,[F-].[Na+]
+Sodium lactate,LT00330,DILI_negative,vNo-DILI-concern,CC(C(=O)[O-])O.[Na+]
+Sodium nitroprusside,LT00880,DILI_negative,vNo-DILI-concern,[C-]#N.[C-]#N.[C-]#N.[C-]#N.[C-]#N.N#[O+].[Na+].[Na+].[Fe+2]
+Sodium oxybate,LT00480,DILI_negative,vNo-DILI-concern,C(CC(=O)[O-])CO.[Na+]
+Sodium thiosulfate,LT00439,DILI_negative,vNo-DILI-concern,[O-]S(=O)(=S)[O-].[Na+].[Na+]
+Sodium zirconium cyclosilicate,LT03762,DILI_negative,vNo-DILI-concern,[O-][Si]1(O[Si](O[Si](O1)([O-])[O-])([O-])[O-])[O-].[Na+].[Na+].[Zr+4]
+Sofosbuvir,LT02901,DILI_negative,vNo-DILI-concern,CC(C)OC(=O)C(C)NP(=O)(OCC1C(C(C(O1)N2C=CC(=O)NC2=O)(C)F)O)OC3=CC=CC=C3
+Solriamfetol hydrochloride,LT03763,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)CC(COC(=O)N)N.Cl
+Sorbitol,LT02010,DILI_negative,vNo-DILI-concern,C(C(C(C(C(CO)O)O)O)O)O
+Sterile water,LT01294,DILI_negative,vNo-DILI-concern,O
+Stiripentol,LT02728,DILI_negative,vNo-DILI-concern,CC(C)(C)C(C=CC1=CC2=C(C=C1)OCO2)O
+Streptomycin sulfate,LT00145,DILI_negative,vNo-DILI-concern,CC1C(C(C(O1)OC2C(C(C(C(C2O)O)N=C(N)N)O)N=C(N)N)OC3C(C(C(C(O3)CO)O)O)NC)(C=O)O.CC1C(C(C(O1)OC2C(C(C(C(C2O)O)N=C(N)N)O)N=C(N)N)OC3C(C(C(C(O3)CO)O)O)NC)(C=O)O.OS(=O)(=O)O.OS(=O)(=O)O.OS(=O)(=O)O
+Succinylcholine chloride,LT00749,DILI_negative,vNo-DILI-concern,C[N+](C)(C)CCOC(=O)CCC(=O)OCC[N+](C)(C)C.[Cl-].[Cl-]
+Sufentanil citrate,LT00920,DILI_negative,vNo-DILI-concern,CCC(=O)N(C1=CC=CC=C1)C2(CCN(CC2)CCC3=CC=CS3)COC.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+Sugammadex sodium,LT03224,DILI_negative,vNo-DILI-concern,C(CSCC1C2C(C(C(O1)OC3C(OC(C(C3O)O)OC4C(OC(C(C4O)O)OC5C(OC(C(C5O)O)OC6C(OC(C(C6O)O)OC7C(OC(C(C7O)O)OC8C(OC(C(C8O)O)OC9C(OC(O2)C(C9O)O)CSCCC(=O)[O-])CSCCC(=O)[O-])CSCCC(=O)[O-])CSCCC(=O)[O-])CSCCC(=O)[O-])CSCCC(=O)[O-])CSCCC(=O)[O-])O)O)C(=O)[O-].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+]
+Suvorexant,LT03766,DILI_negative,vNo-DILI-concern,CC1CCN(CCN1C(=O)C2=C(C=CC(=C2)C)N3N=CC=N3)C4=NC5=C(O4)C=CC(=C5)Cl
+Tafamidis meglumine,LT03576,DILI_negative,vNo-DILI-concern,CNCC(C(C(C(CO)O)O)O)O.C1=CC2=C(C=C1C(=O)O)OC(=N2)C3=CC(=CC(=C3)Cl)Cl
+Tapentadol hydrochloride,LT00664,DILI_negative,vNo-DILI-concern,CCC(C1=CC(=CC=C1)O)C(C)CN(C)C.Cl
+Tecovirimat,LT03770,DILI_negative,vNo-DILI-concern,C1C2C1C3C=CC2C4C3C(=O)N(C4=O)NC(=O)C5=CC=C(C=C5)C(F)(F)F
+Temsirolimus,LT01261,DILI_negative,vNo-DILI-concern,CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)O)C(C)CC4CCC(C(C4)OC)OC(=O)C(C)(CO)CO)C)C)O)OC)C)C)C)OC
+Tenapanor hydrochloride,LT03773,DILI_negative,vNo-DILI-concern,CN1CC(C2=C(C1)C(=CC(=C2)Cl)Cl)C3=CC(=CC=C3)S(=O)(=O)NCCOCCOCCNC(=O)NCCCCNC(=O)NCCOCCOCCNS(=O)(=O)C4=CC=CC(=C4)C5CN(CC6=C5C=C(C=C6Cl)Cl)C.Cl.Cl
+Terazosin hydrochloride,LT01787,DILI_negative,vNo-DILI-concern,COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCN(CC3)C(=O)C4CCCO4)N)OC.O.O.Cl
+Theophylline sodium glycinate,LT00154,DILI_negative,vNo-DILI-concern,CN1C2=C(C(=O)N(C1=O)C)NC=N2.C(C(=O)[O-])N.[Na+]
+Thiamine hydrochloride,LT01981,DILI_negative,vNo-DILI-concern,CC1=C(SC=[N+]1CC2=CN=C(N=C2N)C)CCO.Cl.[Cl-]
+Thyrotropin alfa,LT00751,DILI_negative,vNo-DILI-concern,C1CC(N(C1)C(=O)C(CC2=CN=CN2)NC(=O)C3CCC(=O)N3)C(=O)N
+Ticagrelor,LT02413,DILI_negative,vNo-DILI-concern,CCCSC1=NC(=C2C(=N1)N(N=N2)C3CC(C(C3O)O)OCCO)NC4CC4C5=CC(=C(C=C5)F)F
+Tiludronate disodium,LT00998,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1SC(P(=O)(O)[O-])P(=O)(O)[O-])Cl.[Na+].[Na+]
+Tirofiban hydrochloride,LT01037,DILI_negative,vNo-DILI-concern,CCCCS(=O)(=O)NC(CC1=CC=C(C=C1)OCCCCC2CCNCC2)C(=O)O.Cl
+Topotecan hydrochloride,LT01824,DILI_negative,vNo-DILI-concern,CCC1(C2=C(COC1=O)C(=O)N3CC4=CC5=C(C=CC(=C5CN(C)C)O)N=C4C3=C2)O.Cl
+Tranexamic acid,LT00923,DILI_negative,vNo-DILI-concern,C1CC(CCC1CN)C(=O)O
+Trientine hydrochloride,LT00375,DILI_negative,vNo-DILI-concern,C(CNCCNCCN)N.Cl.Cl
+Triheptanoin,LT03777,DILI_negative,vNo-DILI-concern,CCCCCCC(=O)OCC(COC(=O)CCCCCC)OC(=O)CCCCCC
+Trihexyphenidyl hydrochloride,LT01839,DILI_negative,vNo-DILI-concern,C1CCC(CC1)C(CCN2CCCCC2)(C3=CC=CC=C3)O.Cl
+Triprolidine hydrochloride,LT00798,DILI_negative,vNo-DILI-concern,CC1=CC=C(C=C1)C(=CCN2CCCC2)C3=CC=CC=N3.Cl
+Trospium chloride,LT00516,DILI_negative,vNo-DILI-concern,C1CC[N+]2(C1)C3CCC2CC(C3)OC(=O)C(C4=CC=CC=C4)(C5=CC=CC=C5)O.[Cl-]
+Tyramine,LT02356,DILI_negative,vNo-DILI-concern,C1=CC(=CC=C1CCN)O
+Ubrogepant,LT03780,DILI_negative,vNo-DILI-concern,CC1C(CC(C(=O)N1CC(F)(F)F)NC(=O)C2=CC3=C(CC4(C3)C5=C(NC4=O)N=CC=C5)N=C2)C6=CC=CC=C6
+Umeclidinium bromide,LT03782,DILI_negative,vNo-DILI-concern,C1C[N+]2(CCC1(CC2)C(C3=CC=CC=C3)(C4=CC=CC=C4)O)CCOCC5=CC=CC=C5.[Br-]
+Uridine triacetate,LT03784,DILI_negative,vNo-DILI-concern,CC(=O)OCC1C(C(C(O1)N2C=CC(=O)NC2=O)OC(=O)C)OC(=O)C
+Urofollitropin,LT00929,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N1)CC2=CC=C(C=C2)O)N)C(=O)N3CCCC3C(=O)NC(CC(C)C)C(=O)NCC(=O)N)CC(=O)N)C(C)O
+Urokinase,LT01229,DILI_negative,vNo-DILI-concern,CC(C)OC(=O)NC1=CC2=C(C=C1)N=C(N2)C3=CSC=N3
+Vecuronium bromide,LT00916,DILI_negative,vNo-DILI-concern,CC(=O)OC1CC2CCC3C(C2(CC1N4CCCCC4)C)CCC5(C3CC(C5OC(=O)C)[N+]6(CCCCC6)C)C.[Br-]
+Vericiguat,LT03787,DILI_negative,vNo-DILI-concern,COC(=O)NC1=C(N=C(N=C1N)C2=NN(C3=C2C=C(C=N3)F)CC4=CC=CC=C4F)N
+Vibegron,LT03788,DILI_negative,vNo-DILI-concern,C1CC(NC1CC2=CC=C(C=C2)NC(=O)C3CCC4=NC=CC(=O)N34)C(C5=CC=CC=C5)O
+Vilazodone hydrochloride,LT02391,DILI_negative,vNo-DILI-concern,C1CN(CCN1CCCCC2=CNC3=C2C=C(C=C3)C#N)C4=CC5=C(C=C4)OC(=C5)C(=O)N.Cl
+Viloxazine hydrochloride,LT01861,DILI_negative,vNo-DILI-concern,CCOC1=CC=CC=C1OCC2CNCCO2.Cl
+Viltolarsen,LT03789,DILI_negative,vNo-DILI-concern,CC1=CN(C(=O)NC1=O)C2CN(CC(O2)COP(=O)(N3CC(OC(C3)N4C=C(C(=O)NC4=O)C)COP(=O)(N5CC(OC(C5)N6C=NC7=C6N=C(NC7=O)N)COP(=O)(N8CC(OC(C8)N9C=C(C(=O)NC9=O)C)COP(=O)(N1CC(OC(C1)N1C=NC2=C1N=C(NC2=O)N)COP(=O)(N1CC(OC(C1)N1C=NC2=C1N=C(NC2=O)N)COP(=O)(N1CC(OC(C1)N1C=NC2=C(N=CN=C21)N)COP(=O)(N1CC(OC(C1)N1C=NC2=C(N=CN=C21)N)COP(=O)(N1CC(OC(C1)N1C=NC2=C1N=C(NC2=O)N)COP(=O)(N1CC(OC(C1)N1C=C(C(=O)NC1=O)C)COP(=O)(N1CC(OC(C1)N1C=CC(=NC1=O)N)COP(=O)(N1CC(OC(C1)N1C=C(C(=O)NC1=O)C)COP(=O)(N1CC(OC(C1)N1C=C(C(=O)NC1=O)C)COP(=O)(N1CC(OC(C1)N1C=NC2=C1N=C(NC2=O)N)COP(=O)(N1CC(OC(C1)N1C=NC2=C1N=C(NC2=O)N)COP(=O)(N1CC(OC(C1)N1C=CC(=NC1=O)N)COP(=O)(N1CC(OC(C1)N1C=CC(=NC1=O)N)COP(=O)(N1CC(OC(C1)N1C=C(C(=O)NC1=O)C)COP(=O)(N1CC(OC(C1)N1C=CC(=NC1=O)N)COP(=O)(N1CC(OC(C1)N1C=CC(=NC1=O)N)CO)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)N(C)C)P(=O)(N(C)C)OCC1CNCC(O1)N1C=CC(=NC1=O)N
+Vitamin C,LT02009,DILI_negative,vNo-DILI-concern,C(C(C1C(=C(C(=O)O1)O)O)O)O
+Vitamin E,LT01516,DILI_negative,vNo-DILI-concern,CC1=C(C2=C(CCC(O2)(C)CCCC(C)CCCC(C)CCCC(C)C)C(=C1O)C)C
+Voclosporin,LT03563,DILI_negative,vNo-DILI-concern,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC=C)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+Vorapaxar sulfate,LT03790,DILI_negative,vNo-DILI-concern,CCOC(=O)NC1CCC2C(C1)CC3C(C2C=CC4=NC=C(C=C4)C5=CC(=CC=C5)F)C(OC3=O)C.OS(=O)(=O)O
+Vorinostat,LT00462,DILI_negative,vNo-DILI-concern,C1=CC=C(C=C1)NC(=O)CCCCCCC(=O)NO
+Vosoritide,LT03791,DILI_negative,vNo-DILI-concern,CCC(C)C1C(=O)NCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NCC(=O)NC(CSSCC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCNC(=N)N)CC(=O)O)CC(C)C)CCCCN)CC(C)C)CC2=CC=CC=C2)NC(=O)CNC(=O)C(CCCCN)NC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)CNC(=O)C(CCCCN)NC(=O)C(CCCCN)NC(=O)C(CC(=O)N)NC(=O)C(C)NC(=O)CNC(=O)C(CCCCN)NC(=O)C(CC3=CC=C(C=C3)O)NC(=O)C(CCCCN)NC(=O)C(CCCNC(=N)N)NC(=O)C(C)NC(=O)C(CC(=O)N)NC(=O)C4CCCN4C(=O)C(CC5=CN=CN5)NC(=O)C(CCC(=O)O)NC(=O)C(CCC(=O)N)NC(=O)CNC(=O)C6CCCN6)C(=O)O)CC(C)C)CO)CCSC)CO
+Voxelotor,LT03792,DILI_negative,vNo-DILI-concern,CC(C)N1C(=CC=N1)C2=C(C=CC=N2)COC3=CC=CC(=C3C=O)O
+Zaleplon,LT00648,DILI_negative,vNo-DILI-concern,CCN(C1=CC=CC(=C1)C2=CC=NC3=C(C=NN23)C#N)C(=O)C

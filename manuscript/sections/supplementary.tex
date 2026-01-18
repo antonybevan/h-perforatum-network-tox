@@ -1,0 +1,246 @@
+\clearpage
+\section*{Supplementary Tables}
+
+% Table S1: Hyperforin Targets with Sources
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S1. Hyperforin target genes and literature sources.}
+All 14 raw targets with UniProt IDs, gene symbols, and primary literature sources.
+Targets marked with * are present in the liver-expressed LCC (STRING $\geq$900, GTEx TPM $\geq$1).}
+\label{tab:S1}
+\vspace{0.5em}
+\small
+\begin{tabular}{llll}
+\toprule
+\textbf{UniProt} & \textbf{Gene} & \textbf{In LCC} & \textbf{Source} \\
+\midrule
+O75469 & NR1I2 (PXR) & Yes* & Moore et al. 2000; Watkins et al. 2001 \\
+P08684 & CYP3A4 & Yes* & Moore et al. 2000 \\
+P11712 & CYP2C9 & Yes* & Obach 2000 \\
+P20813 & CYP2B6 & Yes* & Komoroski et al. 2004 \\
+P08183 & ABCB1 & Yes* & Hennessy et al. 2002 \\
+Q9UNQ0 & ABCG2 & Yes* & Assefa et al. 2004 \\
+O15440 & ABCC2 & Yes* & Wang et al. 2004 \\
+P31749 & AKT1 & Yes* & Quiney et al. 2006 \\
+P08253 & MMP2 & Yes* & Quiney et al. 2006 \\
+P14780 & MMP9 & Yes* & Quiney et al. 2006 \\
+Q9Y210 & TRPC6 & No & Leuner et al. 2007 \\
+P15692 & VEGFA & No & Quiney et al. 2006 \\
+Q13794 & PMAIP1 & No & Hostanska et al. 2003 \\
+Q12879 & GRIN1 & No & Kumar et al. 2006 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S2: Quercetin Targets Summary
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S2. Quercetin target curation summary.}
+Target counts at each processing stage.}
+\label{tab:S2}
+\vspace{0.5em}
+\begin{tabular}{lr}
+\toprule
+\textbf{Stage} & \textbf{Count} \\
+\midrule
+Raw targets (ChEMBL v31, CHEMBL159) & 122 \\
+Excluded: non-human (mouse, rat, bacterial, viral) & 10 \\
+Excluded: no UniProt mapping & 25 \\
+Processed targets & 87 \\
+Excluded: not liver-expressed (TPM $<$ 1) & 20 \\
+Excluded: not in STRING LCC & 5 \\
+Final targets in LCC & 62 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S3: DILI Genes Summary
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S3. DILI gene set curation.}
+Genes associated with drug-induced liver injury from DisGeNET (UMLS C0860207).}
+\label{tab:S3}
+\vspace{0.5em}
+\begin{tabular}{lr}
+\toprule
+\textbf{Stage} & \textbf{Count} \\
+\midrule
+Raw DILI genes (DisGeNET) & 127 \\
+In STRING $\geq$700 liver LCC & 84 \\
+In STRING $\geq$900 liver LCC & 82 \\
+Excluded: miRNAs (not in PPI network) & 21 \\
+Excluded: cytokines (not in LCC) & 12 \\
+Excluded: other & 12 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S4: Five Overlapping Targets
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S4. Genes targeted by both compounds.}
+Five genes present in both Hyperforin and Quercetin target sets.}
+\label{tab:S4}
+\vspace{0.5em}
+\begin{tabular}{lll}
+\toprule
+\textbf{Gene} & \textbf{Protein} & \textbf{Function} \\
+\midrule
+ABCG2 & BCRP & Efflux transporter \\
+AKT1 & Protein kinase B & Cell survival signaling \\
+CYP3A4 & Cytochrome P450 3A4 & Drug metabolism \\
+MMP2 & Matrix metalloproteinase-2 & Extracellular matrix remodeling \\
+MMP9 & Matrix metalloproteinase-9 & Extracellular matrix remodeling \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S5: Direct DILI Gene Connectivity
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S5. Direct DILI gene connectivity.}
+Hyperforin targets with first-order (distance = 1) connections to DILI genes in the STRING network ($\geq$900).
+DILI neighbors are genes present in the 82-gene DILI set.}
+\label{tab:S5}
+\vspace{0.5em}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcl}
+\toprule
+\textbf{Target} & \textbf{DILI Neighbors} & \textbf{N} & \textbf{Function} \\
+\midrule
+CYP3A4 & NR1I2, CYP2E1, UGT1A9, GSTM1, GSTP1 & 5 & Xenobiotic metabolism \\
+AKT1 & MAP3K5, NFE2L2, CTNNB1, IGF1 & 4 & Stress response \\
+MMP9 & LCN2, SPP1, MMP2 & 3 & Inflammation/ECM \\
+ABCB1 & ABCC2, NR1I2 & 2 & Drug transport \\
+CYP2C9 & CYP2E1, NR1I2 & 2 & Xenobiotic metabolism \\
+CYP2B6 & NR1I2 & 1 & Xenobiotic metabolism \\
+NR1I2 & CYP2E1, ABCC2 & 2 & Master regulator \\
+ABCG2 & ABCC2 & 1 & Drug transport \\
+ABCC2 & NR1I2, ABCB1 & 2 & Drug transport \\
+MMP2 & MMP9, SPP1 & 2 & ECM remodeling \\
+\midrule
+\textbf{Total unique} & & \textbf{12} & \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+% Table S6: Quercetin Direct DILI Connectivity
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S6. Quercetin direct DILI gene connectivity summary.}
+Summary statistics for first-order DILI connections across Quercetin's 62 targets.}
+\label{tab:S6}
+\vspace{0.5em}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total targets in LCC & 62 \\
+Targets with $\geq$1 direct DILI neighbor & 18 \\
+Total direct DILI connections & 31 \\
+Mean DILI neighbors per target & 0.50 \\
+\addlinespace
+\textit{Hyperforin comparison:} & \\
+Hyperforin targets with $\geq$1 DILI neighbor & 10/10 (100\%) \\
+Mean DILI neighbors per Hyperforin target & 2.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S7: Full Quercetin Target List
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S7. Quercetin target genes in the liver-expressed network.}
+All 62 Quercetin targets in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
+Sorted by descending liver expression.}
+\label{tab:S7}
+\vspace{0.5em}
+\scriptsize
+\begin{tabular}{lrlrlrlr}
+\toprule
+\textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} & \textbf{Gene} & \textbf{TPM} \\
+\midrule
+CFB & 1115 & CYP3A4 & 335 & FN1 & 229 & ALDH2 & 183 \\
+ANPEP & 160 & PPIA & 112 & SERPINA5 & 104 & CYP1A2 & 72 \\
+CA2 & 64 & APP & 63 & PYGL & 55 & HDAC6 & 45 \\
+ESRRA & 42 & MAOA & 35 & AKR1C2 & 33 & AKT1 & 33 \\
+CTSH & 28 & XDH & 26 & CHRNA4 & 25 & PIK3R1 & 24 \\
+PIM1 & 24 & LDLR & 23 & EGFR & 17 & ELOVL1 & 18 \\
+PKN1 & 16 & GSK3A & 13 & YES1 & 13 & MET & 12 \\
+DAPK1 & 12 & BACE1 & 11 & CSNK2A1 & 10 & FSTL1 & 9 \\
+SIRT6 & 8 & GSK3B & 7 & CDK7 & 7 & CAV2 & 7 \\
+PTPN2 & 6 & CYP1A1 & 5 & PRMT7 & 5 & MMP2 & 5 \\
+AKR1B1 & 5 & PDE6D & 5 & PTK2 & 4 & ABCG2 & 4 \\
+IQGAP1 & 4 & ADRB2 & 3 & BRAF & 4 & KDR & 3 \\
+SRC & 3 & ALOX5 & 3 & CYP1B1 & 3 & TLR4 & 3 \\
+NUAK1 & 3 & AXL & 2 & ADA & 2 & LCK & 2 \\
+ABCC1 & 2 & PLK1 & 1 & ACHE & 1 & MMP9 & 1 \\
+SYK & 1 & PDZK1IP1 & 1 & & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S8: DILI Gene List
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S8. DILI gene set (82 genes).}
+Genes in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
+Source: DisGeNET (UMLS C0860207). Sorted alphabetically.}
+\label{tab:S8}
+\vspace{0.5em}
+\scriptsize
+\begin{tabular}{llllllll}
+\toprule
+\multicolumn{8}{c}{\textbf{82 DILI-Associated Genes}} \\
+\midrule
+ABCB1 & AHR & ALB & ALDOB & AMBP & APOA1 & APOE & APOH \\
+ARG1 & ARNT & ATG5 & BAX & BTD & C3 & CAT & CCL2 \\
+CLU & COL3A1 & CTNNB1 & CXCL1 & CXCL10 & CYP2A6 & CYP2C19 & CYP2C9 \\
+CYP2E1 & DGAT2 & ENO1 & FGA & FLT1 & FMO3 & GADD45A & GC \\
+GCLC & GPT & GSN & GSTM1 & GSTM2 & GSTP1 & HLA-A & HLA-B \\
+HLA-DQB1 & HLA-DRB1 & HMGB1 & HMOX1 & HPD & HPX & IGF1 & IL18 \\
+IL1R2 & KRT18 & LCN2 & LGALS3 & MAP3K5 & MED1 & MMP2 & MTHFR \\
+NAT2 & NFE2L2 & NR1H3 & NR1H4 & NR1I2 & NR1I3 & PLAT & PLG \\
+PNP & POLG & PON1 & PPARA & PRKDC & PTGS2 & RBP1 & SLPI \\
+SNX18 & SOD1 & SOD3 & SPP1 & TALDO1 & TBXA2R & TCTN1 & TF \\
+TTR & UGT1A9 & & & & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table S9: Permutation Test Summary
+\begin{table}[ht]
+\centering
+\caption{\textbf{Table S9. Null distribution parameters from permutation testing.}
+Null distribution parameters (mean and standard deviation) from $n = 1{,}000$ degree-matched permutations.
+Note the tightening of the Quercetin null distribution as the number of targets increases, which drives the inflation of proximity Z-scores.}
+\label{tab:S9}
+\vspace{0.5em}
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Metric} & \textbf{Compound} & \textbf{$\mu_{null}$} & \textbf{$\sigma_{null}$} & \textbf{$x_{obs}$} & \textbf{Z-score} \\
+\midrule
+\multicolumn{6}{l}{\textit{Shortest-path proximity (at $\geq$900)}} \\
+\addlinespace
+& Hyperforin (10) & 2.21 & 0.235 & 1.30 & $-$3.86 \\
+& Quercetin (62) & 2.17 & 0.091 & 1.68 & $-$5.44 \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Random walk influence (at $\geq$900)}} \\
+\addlinespace
+& Hyperforin (10) & 0.0142 & 0.0097 & 0.1138 & +10.27 \\
+& Quercetin (62) & 0.0147 & 0.0040 & 0.0322 & +4.42 \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Expression-weighted influence (at $\geq$900)}} \\
+\addlinespace
+& Hyperforin (10) & 0.0198 & 0.0125 & 0.1330 & +9.07$^*$ \\
+& Quercetin (62) & 0.0208 & 0.0051 & 0.0493 & +5.56$^*$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+$^\dagger$Estimated from EWI pipeline outputs.\\
+$^*$Significance remains high despite tissue-specific attenuation.
+\end{minipage}
+\end{table}

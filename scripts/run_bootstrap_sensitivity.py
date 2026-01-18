@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
 """
-Bootstrap Sensitivity Analysis Script.
+Bootstrap Sensitivity Analysis.
 
-Implements METHODOLOGY.md Section 4.1.
+Samples N random targets from Quercetin (matching Hyperforin count)
+to test if Hyperforin's influence advantage is due to target count.
 """
 
 import pandas as pd
@@ -11,117 +13,135 @@ from pathlib import Path
 import sys
 from tqdm import tqdm
 
-# Add src to path
 sys.path.append('src')
-
 from network_tox.analysis.rwr import run_rwr
 
 DATA_DIR = Path('data')
 RESULTS_DIR = Path('results')
+
+# Configuration
 N_BOOTSTRAP = 100
-SAMPLE_SIZE = 9
-HYPERFORIN_OBSERVED = 0.2579  # From final_statistics.csv (corrected DILI data)
-
-def load_network():
-    """Load network."""
-    net_path = DATA_DIR / 'processed/network_900.parquet'
-    if net_path.exists():
-        print(f"Loading network from {net_path}...")
-        df = pd.read_parquet(net_path)
-        if 'protein1' in df.columns:
-            G = nx.from_pandas_edgelist(df, 'protein1', 'protein2')
-        else:
-             G = nx.from_pandas_edgelist(df, 'source', 'target')
-        return G
-    else:
-        raise FileNotFoundError(f"{net_path} missing")
-
-def load_quercetin_targets():
-    """Load Quercetin targets."""
-    targets_path = DATA_DIR / 'processed/targets.csv'  # Unfiltered targets
-    if targets_path.exists():
-        df = pd.read_csv(targets_path)
-        return list(set(df[df['compound'] == 'Quercetin']['gene_name']))
-    else:
-        # Fallback to raw if processed missing (unlikely given ls output)
-        # targets_df = pd.read_csv(DATA_DIR / 'raw/targets_raw.csv')
-        # We need mapping... assuming processed is better.
-        raise FileNotFoundError(f"{targets_path} missing")
-
-def load_dili_genes(G):
-    """Load DILI genes and filter to network."""
-    dili_path = DATA_DIR / 'processed/dili_900_lcc.csv'
-    if dili_path.exists():
-        dili_df = pd.read_csv(dili_path)
-        if 'protein_id' in dili_df.columns:
-             col = 'protein_id'
-        elif 'gene_name' in dili_df.columns:
-             col = 'gene_name'
-        else:
-             col = 'gene_symbol'
-        dili_genes = set(dili_df[col])
-        return [g for g in dili_genes if g in G]
-    else:
-        raise FileNotFoundError(f"{dili_path} missing")
+RANDOM_SEED = 42
 
 def main():
-    print("--- Starting Bootstrap Sensitivity Analysis ---")
-
-    # 1. Load Data
-    G = load_network()
-    print(f"Network Nodes: {G.number_of_nodes()}")
-
-    q_targets = load_quercetin_targets()
-    valid_q_targets = [t for t in q_targets if t in G]
-    print(f"Quercetin Targets in Network: {len(valid_q_targets)} (Total: {len(q_targets)})")
-
-    dili_genes = load_dili_genes(G)
-    print(f"DILI Genes in Network: {len(dili_genes)}")
-
-    if len(valid_q_targets) < SAMPLE_SIZE:
-        print(f"Error: Not enough Quercetin targets ({len(valid_q_targets)}) to sample {SAMPLE_SIZE}.")
-        return
-
-    # 2. Bootstrap Loop
-    bootstrap_results = []
-
+    print("=" * 70)
+    print(" BOOTSTRAP SENSITIVITY ANALYSIS")
+    print("=" * 70)
+    print()
+    
+    np.random.seed(RANDOM_SEED)
+    
+    # Load LCC-filtered targets
+    targets_df = pd.read_csv(DATA_DIR / 'processed' / 'targets_lcc.csv')
+    hyp_targets = list(targets_df[targets_df['compound'] == 'Hyperforin']['gene_symbol'])
+    quer_targets = list(targets_df[targets_df['compound'] == 'Quercetin']['gene_symbol'])
+    
+    SAMPLE_SIZE = len(hyp_targets)  # Dynamic - now 10
+    
+    print(f"Configuration:")
+    print(f"  Bootstrap iterations: {N_BOOTSTRAP}")
+    print(f"  Sample size: {SAMPLE_SIZE} (matching Hyperforin)")
+    print(f"  Random seed: {RANDOM_SEED}")
+    print()
+    
+    # Load network
+    net_df = pd.read_parquet(DATA_DIR / 'processed' / 'network_900_liver_lcc.parquet')
+    if 'gene1' in net_df.columns:
+        G = nx.from_pandas_edgelist(net_df, 'gene1', 'gene2')
+    else:
+        G = nx.from_pandas_edgelist(net_df, 'protein1', 'protein2')
+    
+    print(f"Network: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    
+    # Load DILI genes
+    dili_df = pd.read_csv(DATA_DIR / 'processed' / 'dili_900_lcc.csv')
+    dili_genes = [g for g in dili_df['gene_name'] if g in G]
+    print(f"DILI genes in network: {len(dili_genes)}")
+    
+    # Filter targets to network
+    hyp_in_net = [t for t in hyp_targets if t in G]
+    quer_in_net = [t for t in quer_targets if t in G]
+    
+    print(f"Hyperforin targets in network: {len(hyp_in_net)}")
+    print(f"Quercetin targets in network: {len(quer_in_net)}")
+    print()
+    
+    # Calculate Hyperforin observed influence
+    hyp_scores = run_rwr(G, hyp_in_net, restart_prob=0.15)
+    hyp_influence = sum(hyp_scores.get(d, 0) for d in dili_genes)
+    print(f"Hyperforin observed influence: {hyp_influence:.6f}")
+    print()
+    
+    # Bootstrap loop
     print(f"Running {N_BOOTSTRAP} bootstrap iterations...")
-    for i in tqdm(range(N_BOOTSTRAP)):
-        # Sample targets
-        sample = np.random.choice(valid_q_targets, size=SAMPLE_SIZE, replace=False)
-
-        # Calculate RWR
-        scores = run_rwr(G, sample, restart_prob=0.7)
+    bootstrap_results = []
+    
+    for i in tqdm(range(N_BOOTSTRAP), desc="Bootstrap"):
+        # Sample SAMPLE_SIZE targets from Quercetin
+        sample = np.random.choice(quer_in_net, size=SAMPLE_SIZE, replace=False)
+        
+        # Calculate RWR influence
+        scores = run_rwr(G, list(sample), restart_prob=0.15)
         influence = sum(scores.get(d, 0) for d in dili_genes)
-
+        
         bootstrap_results.append({
             'iteration': i,
             'quercetin_sampled_influence': influence
         })
-
-    # 3. Analyze Results
+    
+    # Analyze results
     res_df = pd.DataFrame(bootstrap_results)
-
-    # Calculate CI
+    
+    mean_influence = res_df['quercetin_sampled_influence'].mean()
+    std_influence = res_df['quercetin_sampled_influence'].std()
     ci_lower = res_df['quercetin_sampled_influence'].quantile(0.025)
     ci_upper = res_df['quercetin_sampled_influence'].quantile(0.975)
-
-    print("\n--- Summary ---")
-    print(f"95% CI for Quercetin ({SAMPLE_SIZE} targets): [{ci_lower:.4f}, {ci_upper:.4f}]")
-    print(f"Hyperforin Observed Influence: {HYPERFORIN_OBSERVED:.4f}")
-
-    bias_conclusion = "Significant Bias"
-    if ci_lower <= HYPERFORIN_OBSERVED <= ci_upper:
-        bias_conclusion = "Bias Negligible"
-    elif HYPERFORIN_OBSERVED > ci_upper:
-        bias_conclusion = "Hyperforin > Quercetin (Robust to count)"
-
-    print(f"Conclusion: {bias_conclusion}")
-
-    # 4. Save
+    
+    print()
+    print("=" * 70)
+    print(" RESULTS")
+    print("=" * 70)
+    print()
+    print(f"Quercetin bootstrap ({SAMPLE_SIZE} targets):")
+    print(f"  Mean:   {mean_influence:.6f}")
+    print(f"  Std:    {std_influence:.6f}")
+    print(f"  95% CI: [{ci_lower:.6f}, {ci_upper:.6f}]")
+    print()
+    print(f"Hyperforin observed: {hyp_influence:.6f}")
+    print()
+    
+    if hyp_influence > ci_upper:
+        conclusion = "ROBUST - Hyperforin exceeds Quercetin 95% CI"
+        ratio = hyp_influence / mean_influence
+        print(f"Conclusion: {conclusion}")
+        print(f"Hyperforin is {ratio:.1f}× the bootstrap mean")
+    elif hyp_influence < ci_lower:
+        print("Conclusion: Quercetin exceeds Hyperforin")
+    else:
+        print("Conclusion: No significant difference")
+    
+    # Save results
     out_path = RESULTS_DIR / 'bootstrap_sensitivity.csv'
     res_df.to_csv(out_path, index=False)
-    print(f"Results saved to {out_path}")
+    print()
+    print(f"Results saved to: {out_path}")
+    
+    # Save summary with clear publication-ready column names
+    summary = pd.DataFrame([{
+        'compound': 'Hyperforin',
+        'metric': 'RWI_bootstrap',
+        'observed_influence': hyp_influence,
+        'bootstrap_mean': mean_influence,
+        'bootstrap_std': std_influence,
+        'ci_95_lower': ci_lower,
+        'ci_95_upper': ci_upper,
+        'sample_size': SAMPLE_SIZE,
+        'n_bootstrap': N_BOOTSTRAP,
+        'exceeds_ci': hyp_influence > ci_upper,
+        'fold_vs_mean': round(hyp_influence / mean_influence, 2)
+    }])
+    summary.to_csv(RESULTS_DIR / 'tables' / 'bootstrap_summary.csv', index=False)
+    print(f"Summary saved to: results/tables/bootstrap_summary.csv")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

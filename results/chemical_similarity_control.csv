@@ -1,0 +1,1815 @@
+test_compound,reference_drug,reference_ltkbid,reference_dilirank,reference_category,tanimoto_similarity
+Hyperforin,Abacavir sulfate,LT00040,vMOST-DILI-concern,DILI_positive,0.06060606060606061
+Hyperforin,Abemaciclib,LT03619,vLess-DILI-concern,DILI_positive,0.09345794392523364
+Hyperforin,Abiraterone acetate,LT02339,vMost-DILI-concern,DILI_positive,0.10204081632653061
+Hyperforin,Acamprosate calcium,LT01141,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Acarbose,LT01034,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Acebutolol hydrochloride,LT01035,vLess-DILI-concern,DILI_positive,0.12087912087912088
+Hyperforin,Aceclofenac,LT01853,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Hyperforin,Acetaminophen,LT00004,vMost-DILI-concern,DILI_positive,0.1044776119402985
+Hyperforin,Acetazolamide,LT00498,vMost-DILI-concern,DILI_positive,0.07894736842105263
+Hyperforin,Acitretin,LT01042,vMost-DILI-concern,DILI_positive,0.07954545454545454
+Hyperforin,Acyclovir,LT00041,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Hyperforin,Adefovir dipivoxil,LT01155,vLess-DILI-concern,DILI_positive,0.0707070707070707
+Hyperforin,Alaproclate,LT02213,vMost-DILI-concern,DILI_positive,0.10126582278481013
+Hyperforin,Alatrofloxacin mesylate,LT00461,vMost-DILI-concern,DILI_positive,0.09649122807017543
+Hyperforin,Albendazole,LT00499,vMost-DILI-concern,DILI_positive,0.06666666666666667
+Hyperforin,Alclofenac,LT00692,vMost-DILI-concern,DILI_positive,0.07317073170731707
+Hyperforin,Alendronate sodium,LT00980,vLess-DILI-concern,DILI_positive,0.03896103896103896
+Hyperforin,Alfuzosin hydrochloride,LT01107,vLess-DILI-concern,DILI_positive,0.0761904761904762
+Hyperforin,Aliskiren hemifumarate,LT01244,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Hyperforin,Allopurinol,LT00043,vMost-DILI-concern,DILI_positive,0.05405405405405406
+Hyperforin,Alosetron hydrochloride,LT01070,vLess-DILI-concern,DILI_positive,0.07368421052631578
+Hyperforin,Alpelisib,LT03621,vLess-DILI-concern,DILI_positive,0.07476635514018691
+Hyperforin,Alpidem,LT01060,vMost-DILI-concern,DILI_positive,0.06521739130434782
+Hyperforin,Alprazolam,LT00501,vLess-DILI-concern,DILI_positive,0.03260869565217391
+Hyperforin,Amiloride hydrochloride,LT02070,vLess-DILI-concern,DILI_positive,0.05063291139240506
+Hyperforin,Amineptine,LT00045,vMost-DILI-concern,DILI_positive,0.08536585365853659
+Hyperforin,Aminosalicylic acid ,LT00505,vMOST-DILI-concern,DILI_positive,0.07042253521126761
+Hyperforin,Amiodarone hydrochloride,LT00046,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Hyperforin,Amisulpride,LT01793,vLess-DILI-concern,DILI_positive,0.10526315789473684
+Hyperforin,Amitriptyline hydrochloride,LT00047,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Amlodipine besylate,LT00175,vLess-DILI-concern,DILI_positive,0.0761904761904762
+Hyperforin,Amoxicillin,LT00507,vLess-DILI-concern,DILI_positive,0.12222222222222222
+Hyperforin,Amphetamine sulfate,LT02100,vLess-DILI-concern,DILI_positive,0.09722222222222222
+Hyperforin,Amphotericin B,LT00048,vLess-DILI-concern,DILI_positive,0.1092436974789916
+Hyperforin,Ampicillin sodium,LT00049,vLess-DILI-concern,DILI_positive,0.10869565217391304
+Hyperforin,Anastrozole,LT00263,vLess-DILI-concern,DILI_positive,0.03529411764705882
+Hyperforin,Anidulafungin,LT01203,vMost-DILI-concern,DILI_positive,0.1
+Hyperforin,Apixaban,LT02418,vLess-DILI-concern,DILI_positive,0.08247422680412371
+Hyperforin,Aplaviroc,LT00693,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Hyperforin,Aripiprazole,LT01143,vLess-DILI-concern,DILI_positive,0.08
+Hyperforin,Aripiprazole lauroxil,LT03624,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Hyperforin,Aspirin,LT00053,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Atazanavir sulfate,LT01199,vLess-DILI-concern,DILI_positive,0.07079646017699115
+Hyperforin,Atenolol,LT00277,vLess-DILI-concern,DILI_positive,0.12345679012345678
+Hyperforin,Atomoxetine hydrochloride,LT01139,vMost-DILI-concern,DILI_positive,0.04819277108433735
+Hyperforin,Atorvastatin calcium,LT00258,vMost-DILI-concern,DILI_positive,0.08571428571428572
+Hyperforin,Auranofin,LT02166,vLess-DILI-concern,DILI_positive,0.08536585365853659
+Hyperforin,Azathioprine,LT00006,vMost-DILI-concern,DILI_positive,0.054945054945054944
+Hyperforin,Azithromycin,LT00265,vLess-DILI-concern,DILI_positive,0.10743801652892562
+Hyperforin,Baclofen,LT01113,vLess-DILI-concern,DILI_positive,0.0945945945945946
+Hyperforin,Benazepril hydrochloride,LT01116,vLess-DILI-concern,DILI_positive,0.10101010101010101
+Hyperforin,Bendazac,LT01117,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Bendroflumethiazide,LT00825,vLess-DILI-concern,DILI_positive,0.06315789473684211
+Hyperforin,Benoxaprofen,LT00513,vMost-DILI-concern,DILI_positive,0.09302325581395349
+Hyperforin,Benzarone,LT01120,vMost-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Benzbromarone,LT00278,vMost-DILI-concern,DILI_positive,0.08235294117647059
+Hyperforin,Benziodarone,LT01121,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Benzonatate,LT00800,vLess-DILI-concern,DILI_positive,0.08235294117647059
+Hyperforin,Bexarotene,LT01064,vMost-DILI-concern,DILI_positive,0.11392405063291139
+Hyperforin,Bicalutamide,LT00056,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Bortezomib,LT01202,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Bosentan,LT01140,vMost-DILI-concern,DILI_positive,0.056074766355140186
+Hyperforin,Bosutinib monohydrate,LT02349,vMost-DILI-concern,DILI_positive,0.03636363636363636
+Hyperforin,Bromfenac sodium,LT00519,vMost-DILI-concern,DILI_positive,0.07058823529411765
+Hyperforin,Bromocriptine mesylate,LT00279,vLess-DILI-concern,DILI_positive,0.09923664122137404
+Hyperforin,Bupropion hydrochloride,LT00058,vLess-DILI-concern,DILI_positive,0.0875
+Hyperforin,Busulfan,LT00280,vMost-DILI-concern,DILI_positive,0.045454545454545456
+Hyperforin,Canagliflozin,LT02899,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Candesartan cilexetil,LT01022,vLess-DILI-concern,DILI_positive,0.08264462809917356
+Hyperforin,Capecitabine,LT02018,vLess-DILI-concern,DILI_positive,0.10309278350515463
+Hyperforin,Capmatinib hydrochloride,LT03646,vLess-DILI-concern,DILI_positive,0.05504587155963303
+Hyperforin,Captopril,LT00059,vLess-DILI-concern,DILI_positive,0.11842105263157894
+Hyperforin,Carbamazepine,LT00060,vMost-DILI-concern,DILI_positive,0.0547945205479452
+Hyperforin,Carbenicillin disodium,LT01159,vLess-DILI-concern,DILI_positive,0.10869565217391304
+Hyperforin,Carboplatin,LT00061,vLess-DILI-concern,DILI_positive,0.07575757575757576
+Hyperforin,Carfilzomib,LT02395,vMost-DILI-concern,DILI_positive,0.1262135922330097
+Hyperforin,Carvedilol,LT00207,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Cefaclor,LT01166,vLess-DILI-concern,DILI_positive,0.09782608695652174
+Hyperforin,Cefadroxil hemihydrate,LT01167,vLess-DILI-concern,DILI_positive,0.11827956989247312
+Hyperforin,Cefazolin sodium,LT01171,vLess-DILI-concern,DILI_positive,0.10091743119266056
+Hyperforin,Cefdinir,LT01289,vLess-DILI-concern,DILI_positive,0.08737864077669903
+Hyperforin,Cefditoren pivoxil,LT01087,vLess-DILI-concern,DILI_positive,0.08870967741935484
+Hyperforin,Cefepime hydrochloride,LT01172,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Cefixime,LT01173,vLess-DILI-concern,DILI_positive,0.09259259259259259
+Hyperforin,Cefoperazone sodium,LT01176,vLess-DILI-concern,DILI_positive,0.0967741935483871
+Hyperforin,Cefotaxime sodium,LT01177,vLess-DILI-concern,DILI_positive,0.1
+Hyperforin,Cefprozil,LT01182,vLess-DILI-concern,DILI_positive,0.125
+Hyperforin,Ceftaroline fosamil,LT02387,vLess-DILI-concern,DILI_positive,0.07633587786259542
+Hyperforin,Ceftazidime,LT00062,vLess-DILI-concern,DILI_positive,0.08547008547008547
+Hyperforin,Ceftriaxone sodium,LT01185,vLess-DILI-concern,DILI_positive,0.08264462809917356
+Hyperforin,Cefuroxime sodium,LT01186,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Celecoxib,LT00252,vLess-DILI-concern,DILI_positive,0.03296703296703297
+Hyperforin,Cephalexin,LT01189,vLess-DILI-concern,DILI_positive,0.10989010989010989
+Hyperforin,Ceritinib,LT03596,vMost-DILI-concern,DILI_positive,0.08108108108108109
+Hyperforin,Cetirizine hydrochloride,LT01190,vLess-DILI-concern,DILI_positive,0.07777777777777778
+Hyperforin,Chlorambucil,LT00286,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Chlorcyclizine hydrochloride,LT00066,vLess-DILI-concern,DILI_positive,0.05
+Hyperforin,Chlordiazepoxide hydrochloride,LT01198,vLess-DILI-concern,DILI_positive,0.054945054945054944
+Hyperforin,Chlormezanone,LT01201,vMost-DILI-concern,DILI_positive,0.075
+Hyperforin,Chloroquine phosphate,LT01207,vLess-DILI-concern,DILI_positive,0.07216494845360824
+Hyperforin,Chlorothiazide,LT01208,vLess-DILI-concern,DILI_positive,0.03529411764705882
+Hyperforin,Chlorpromazine hydrochloride,LT00068,vLess-DILI-concern,DILI_positive,0.03333333333333333
+Hyperforin,Chlorpropamide,LT00379,vLess-DILI-concern,DILI_positive,0.075
+Hyperforin,Chlorzoxazone,LT00067,vMost-DILI-concern,DILI_positive,0.039473684210526314
+Hyperforin,Cimetidine,LT01218,vLess-DILI-concern,DILI_positive,0.043010752688172046
+Hyperforin,Cinchophen,LT01219,vMost-DILI-concern,DILI_positive,0.05128205128205128
+Hyperforin,Ciprofloxacin hydrochloride,LT00178,vMost-DILI-concern,DILI_positive,0.07368421052631578
+Hyperforin,Cisplatin,LT00071,vLess-DILI-concern,DILI_positive,0.0
+Hyperforin,Citalopram hydrobromide,LT00219,vLess-DILI-concern,DILI_positive,0.07368421052631578
+Hyperforin,Cladribine,LT01224,vLess-DILI-concern,DILI_positive,0.06521739130434782
+Hyperforin,Clarithromycin,LT00187,vMost-DILI-concern,DILI_positive,0.11403508771929824
+Hyperforin,Clindamycin hydrochloride,LT01225,vLess-DILI-concern,DILI_positive,0.1134020618556701
+Hyperforin,Clindamycin phosphate,LT02346,vLess-DILI-concern,DILI_positive,0.10576923076923077
+Hyperforin,Clofibrate,LT00011,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Clomacran,LT00694,vMost-DILI-concern,DILI_positive,0.05747126436781609
+Hyperforin,Clometacin,LT01228,vMost-DILI-concern,DILI_positive,0.06593406593406594
+Hyperforin,Clomiphene citrate,LT00233,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Clomipramine hydrochloride,LT00185,vMost-DILI-concern,DILI_positive,0.0449438202247191
+Hyperforin,Clonazepam,LT00532,vLess-DILI-concern,DILI_positive,0.06593406593406594
+Hyperforin,Clopidogrel bisulfate,LT01023,vLess-DILI-concern,DILI_positive,0.07291666666666667
+Hyperforin,Clotrimazole,LT00248,vLess-DILI-concern,DILI_positive,0.011764705882352941
+Hyperforin,Cloxacillin sodium,LT01235,vLess-DILI-concern,DILI_positive,0.08571428571428572
+Hyperforin,Clozapine,LT00287,vMost-DILI-concern,DILI_positive,0.04395604395604396
+Hyperforin,Colestipol hydrochloride,LT00881,vLess-DILI-concern,DILI_positive,0.015384615384615385
+Hyperforin,Crizotinib,LT02436,vMost-DILI-concern,DILI_positive,0.07547169811320754
+Hyperforin,Cromoglicate,LT02004,vLess-DILI-concern,DILI_positive,0.10843373493975904
+Hyperforin,Cyclobenzaprine hydrochloride,LT01249,vLess-DILI-concern,DILI_positive,0.07792207792207792
+Hyperforin,Cyclofenil,LT01250,vMost-DILI-concern,DILI_positive,0.10666666666666667
+Hyperforin,Cyclophosphamide,LT00013,vLess-DILI-concern,DILI_positive,0.05194805194805195
+Hyperforin,Cyclosporine,LT00380,vMost-DILI-concern,DILI_positive,0.09401709401709402
+Hyperforin,Cyproheptadine hydrochloride,LT01255,vLess-DILI-concern,DILI_positive,0.0379746835443038
+Hyperforin,Cytarabine,LT00209,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Dabigatran etexilate mesylate,LT02345,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Hyperforin,Dacarbazine,LT00288,vMost-DILI-concern,DILI_positive,0.0625
+Hyperforin,Dacomitinib,LT03652,vLess-DILI-concern,DILI_positive,0.08035714285714286
+Hyperforin,Dactinomycin,LT00079,vMost-DILI-concern,DILI_positive,0.08270676691729323
+Hyperforin,Dalteparin sodium,LT00961,vLess-DILI-concern,DILI_positive,0.04285714285714286
+Hyperforin,Danazol,LT00539,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Dantrolene sodium,LT00080,vMost-DILI-concern,DILI_positive,0.06315789473684211
+Hyperforin,Dapsone,LT00289,vLess-DILI-concern,DILI_positive,0.029411764705882353
+Hyperforin,Daptomycin,LT01200,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Darunavir,LT01243,vMost-DILI-concern,DILI_positive,0.08928571428571429
+Hyperforin,Dasatinib,LT01248,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Deferasirox,LT00563,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Hyperforin,Deferoxamine mesylate,LT00386,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Hyperforin,Desloratadine,LT01085,vLess-DILI-concern,DILI_positive,0.02197802197802198
+Hyperforin,Desvenlafaxine succinate,LT00573,vLess-DILI-concern,DILI_positive,0.11904761904761904
+Hyperforin,Dexlansoprazole,LT01266,vLess-DILI-concern,DILI_positive,0.04040404040404041
+Hyperforin,Dexmethylphenidate hydrochloride,LT02909,vLess-DILI-concern,DILI_positive,0.0963855421686747
+Hyperforin,Diazepam,LT00230,vLess-DILI-concern,DILI_positive,0.05747126436781609
+Hyperforin,Diclofenac sodium,LT00084,vMost-DILI-concern,DILI_positive,0.07407407407407407
+Hyperforin,Dicloxacillin sodium,LT02041,vLess-DILI-concern,DILI_positive,0.08737864077669903
+Hyperforin,Didanosine,LT01285,vMost-DILI-concern,DILI_positive,0.07954545454545454
+Hyperforin,Diflunisal,LT00085,vMost-DILI-concern,DILI_positive,0.0625
+Hyperforin,Diltiazem hydrochloride,LT01292,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Dimethyl fumarate,LT02877,vMost-DILI-concern,DILI_positive,0.08064516129032258
+Hyperforin,Disopyramide phosphate,LT01302,vLess-DILI-concern,DILI_positive,0.08791208791208792
+Hyperforin,Disulfiram,LT00295,vMost-DILI-concern,DILI_positive,0.04477611940298507
+Hyperforin,Divalproex sodium,LT00684,vMost-DILI-concern,DILI_positive,0.08571428571428572
+Hyperforin,Docetaxel,LT01309,vLess-DILI-concern,DILI_positive,0.12598425196850394
+Hyperforin,Dofetilide,LT01040,vLess-DILI-concern,DILI_positive,0.04597701149425287
+Hyperforin,Dolutegravir sodium,LT02905,vMost-DILI-concern,DILI_positive,0.09345794392523364
+Hyperforin,Donepezil hydrochloride,LT00052,vLess-DILI-concern,DILI_positive,0.0851063829787234
+Hyperforin,Doxazosin mesylate,LT01313,vLess-DILI-concern,DILI_positive,0.07407407407407407
+Hyperforin,Doxepin hydrochloride,LT01314,vLess-DILI-concern,DILI_positive,0.08433734939759036
+Hyperforin,Doxorubicin hydrochloride,LT00335,vLess-DILI-concern,DILI_positive,0.13513513513513514
+Hyperforin,Doxycycline,LT00393,vLess-DILI-concern,DILI_positive,0.14583333333333334
+Hyperforin,Dronedarone hydrochloride,LT00671,vMost-DILI-concern,DILI_positive,0.056074766355140186
+Hyperforin,Droxicam,LT01318,vMost-DILI-concern,DILI_positive,0.0425531914893617
+Hyperforin,Duloxetine hydrochloride,LT02035,vMost-DILI-concern,DILI_positive,0.04395604395604396
+Hyperforin,Ebrotidine,LT01849,vMost-DILI-concern,DILI_positive,0.04854368932038835
+Hyperforin,Efavirenz,LT01323,vMost-DILI-concern,DILI_positive,0.07777777777777778
+Hyperforin,Eltrombopag olamine,LT00663,vMost-DILI-concern,DILI_positive,0.08411214953271028
+Hyperforin,Enalapril maleate,LT00296,vLess-DILI-concern,DILI_positive,0.11224489795918367
+Hyperforin,Enoxaparin sodium,LT00954,vLess-DILI-concern,DILI_positive,0.0851063829787234
+Hyperforin,Entacapone,LT01968,vLess-DILI-concern,DILI_positive,0.0898876404494382
+Hyperforin,Eplerenone,LT01149,vLess-DILI-concern,DILI_positive,0.13131313131313133
+Hyperforin,Erlotinib hydrochloride,LT01214,vMost-DILI-concern,DILI_positive,0.04081632653061224
+Hyperforin,Erythromycin estolate,LT00092,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Hyperforin,Escitalopram oxalate,LT02929,vLess-DILI-concern,DILI_positive,0.10309278350515463
+Hyperforin,Esomeprazole sodium,LT01589,vLess-DILI-concern,DILI_positive,0.04081632653061224
+Hyperforin,Estradiol valerate,LT00016,vLess-DILI-concern,DILI_positive,0.11458333333333333
+Hyperforin,Estramustine phosphate sodium,LT01342,vMost-DILI-concern,DILI_positive,0.09433962264150944
+Hyperforin,Eszopiclone,LT01161,vLess-DILI-concern,DILI_positive,0.08247422680412371
+Hyperforin,Ethambutol hydrochloride,LT01345,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Hyperforin,Ethionamide,LT01348,vLess-DILI-concern,DILI_positive,0.05194805194805195
+Hyperforin,Etodolac,LT00240,vMost-DILI-concern,DILI_positive,0.11235955056179775
+Hyperforin,Etoposide,LT00094,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Etravirine,LT00653,vMost-DILI-concern,DILI_positive,0.0425531914893617
+Hyperforin,Everolimus,LT01267,vLess-DILI-concern,DILI_positive,0.10344827586206896
+Hyperforin,Exemestane,LT00394,vMost-DILI-concern,DILI_positive,0.09195402298850575
+Hyperforin,Exifone,LT01359,vMost-DILI-concern,DILI_positive,0.0684931506849315
+Hyperforin,Ezetimibe,LT01153,vLess-DILI-concern,DILI_positive,0.10227272727272728
+Hyperforin,Falnidamol,LT01870,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Hyperforin,Famotidine,LT00095,vLess-DILI-concern,DILI_positive,0.043478260869565216
+Hyperforin,Febuxostat,LT00554,vMost-DILI-concern,DILI_positive,0.10869565217391304
+Hyperforin,Felbamate,LT00097,vMost-DILI-concern,DILI_positive,0.09722222222222222
+Hyperforin,Felodipine,LT00397,vLess-DILI-concern,DILI_positive,0.10465116279069768
+Hyperforin,Fenclozic acid,LT01846,vMost-DILI-concern,DILI_positive,0.075
+Hyperforin,Fenofibrate,LT00098,vLess-DILI-concern,DILI_positive,0.08536585365853659
+Hyperforin,Fenofibric acid,LT00670,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Hyperforin,Fenoprofen calcium,LT00099,vMost-DILI-concern,DILI_positive,0.0875
+Hyperforin,Fialuridine,LT01371,vMost-DILI-concern,DILI_positive,0.10588235294117647
+Hyperforin,Fiduxosin,LT00701,vMost-DILI-concern,DILI_positive,0.06504065040650407
+Hyperforin,Finasteride,LT00167,vLess-DILI-concern,DILI_positive,0.10638297872340426
+Hyperforin,Fingolimod hydrochloride,LT02342,vMost-DILI-concern,DILI_positive,0.06329113924050633
+Hyperforin,Fipexide,LT01372,vMost-DILI-concern,DILI_positive,0.07526881720430108
+Hyperforin,Flavoxate hydrochloride,LT00857,vLess-DILI-concern,DILI_positive,0.10309278350515463
+Hyperforin,Flecainide acetate,LT01375,vLess-DILI-concern,DILI_positive,0.09183673469387756
+Hyperforin,Fluconazole,LT00179,vMost-DILI-concern,DILI_positive,0.047058823529411764
+Hyperforin,Fluorouracil,LT01029,vLess-DILI-concern,DILI_positive,0.04285714285714286
+Hyperforin,Fluoxetine hydrochloride,LT00018,vLess-DILI-concern,DILI_positive,0.04597701149425287
+Hyperforin,Flurazepam hydrochloride,LT01394,vLess-DILI-concern,DILI_positive,0.06060606060606061
+Hyperforin,Flurbiprofen sodium,LT00298,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Flutamide,LT00101,vMost-DILI-concern,DILI_positive,0.10975609756097561
+Hyperforin,Fluvastatin sodium,LT00172,vLess-DILI-concern,DILI_positive,0.10204081632653061
+Hyperforin,Fondaparinux sodium,LT01125,vLess-DILI-concern,DILI_positive,0.06306306306306306
+Hyperforin,Fosfomycin tromethamine,LT01398,vLess-DILI-concern,DILI_positive,0.06756756756756757
+Hyperforin,Fosinopril sodium,LT01399,vLess-DILI-concern,DILI_positive,0.08928571428571429
+Hyperforin,Fosphenytoin sodium,LT01400,vMost-DILI-concern,DILI_positive,0.05952380952380952
+Hyperforin,Fospropofol disodium,LT00658,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Gabapentin,LT00300,vLess-DILI-concern,DILI_positive,0.08571428571428572
+Hyperforin,Gefitinib,LT00402,vMost-DILI-concern,DILI_positive,0.03636363636363636
+Hyperforin,Gemcitabine hydrochloride,LT01407,vMost-DILI-concern,DILI_positive,0.10465116279069768
+Hyperforin,Gemfibrozil,LT00020,vMost-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Gemifloxacin mesylate,LT01084,vLess-DILI-concern,DILI_positive,0.09009009009009009
+Hyperforin,Givosiran sodium,LT03686,vLess-DILI-concern,DILI_positive,0.07563025210084033
+Hyperforin,Glafenine,LT02092,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Glatiramer acetate,LT00985,vLess-DILI-concern,DILI_positive,0.11494252873563218
+Hyperforin,Glimepiride,LT00173,vLess-DILI-concern,DILI_positive,0.0970873786407767
+Hyperforin,Glipizide,LT00243,vLess-DILI-concern,DILI_positive,0.09183673469387756
+Hyperforin,Glyburide,LT00302,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Griseofulvin,LT00558,vMost-DILI-concern,DILI_positive,0.10112359550561797
+Hyperforin,Haloperidol decanoate,LT02427,vLess-DILI-concern,DILI_positive,0.09
+Hyperforin,Haloperidol lactate,LT00405,vLess-DILI-concern,DILI_positive,0.11702127659574468
+Hyperforin,Heparin sodium,LT01426,vLess-DILI-concern,DILI_positive,0.08849557522123894
+Hyperforin,Hydralazine hydrochloride,LT00559,vLess-DILI-concern,DILI_positive,0.012658227848101266
+Hyperforin,Hydrochlorothiazide,LT01433,vLess-DILI-concern,DILI_positive,0.060240963855421686
+Hyperforin,Hydroxychloroquine sulfate,LT02026,vLess-DILI-concern,DILI_positive,0.06930693069306931
+Hyperforin,Hydroxyurea,LT00106,vMost-DILI-concern,DILI_positive,0.04918032786885246
+Hyperforin,Ibandronate sodium,LT01156,vLess-DILI-concern,DILI_positive,0.047619047619047616
+Hyperforin,Ibrutinib,LT02898,vMost-DILI-concern,DILI_positive,0.06481481481481481
+Hyperforin,Ibufenac,LT00560,vMost-DILI-concern,DILI_positive,0.11594202898550725
+Hyperforin,Ibuprofen,LT00199,vLess-DILI-concern,DILI_positive,0.12857142857142856
+Hyperforin,Idelalisib,LT03610,vMost-DILI-concern,DILI_positive,0.06542056074766354
+Hyperforin,Ifosfamide,LT00562,vLess-DILI-concern,DILI_positive,0.037037037037037035
+Hyperforin,Imatinib mesylate,LT00107,vMost-DILI-concern,DILI_positive,0.06956521739130435
+Hyperforin,Imipramine hydrochloride,LT00108,vLess-DILI-concern,DILI_positive,0.05
+Hyperforin,Inclisiran sodium,LT03691,vLess-DILI-concern,DILI_positive,0.07086614173228346
+Hyperforin,Indomethacin,LT00022,vMost-DILI-concern,DILI_positive,0.06451612903225806
+Hyperforin,Interferon alfa-2b,LT01306,vMost-DILI-concern,DILI_positive,0.0891089108910891
+Hyperforin,Iproniazid,LT00109,vMost-DILI-concern,DILI_positive,0.0958904109589041
+Hyperforin,Irbesartan,LT01005,vLess-DILI-concern,DILI_positive,0.06796116504854369
+Hyperforin,Irinotecan hydrochloride,LT01466,vLess-DILI-concern,DILI_positive,0.09917355371900827
+Hyperforin,Isaxonine,LT00696,vMost-DILI-concern,DILI_positive,0.07462686567164178
+Hyperforin,Isoniazid,LT00306,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Isotretinoin,LT00234,vMost-DILI-concern,DILI_positive,0.13414634146341464
+Hyperforin,Isradipine,LT01475,vLess-DILI-concern,DILI_positive,0.09782608695652174
+Hyperforin,Itraconazole,LT00182,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Ivacaftor,LT02431,vLess-DILI-concern,DILI_positive,0.07608695652173914
+Hyperforin,Ivermectin,LT00568,vLess-DILI-concern,DILI_positive,0.09285714285714286
+Hyperforin,Ketamine hydrochloride,LT00859,vLess-DILI-concern,DILI_positive,0.07407407407407407
+Hyperforin,Ketoconazole,LT00111,vMost-DILI-concern,DILI_positive,0.08928571428571429
+Hyperforin,Ketoprofen,LT00023,vLess-DILI-concern,DILI_positive,0.10810810810810811
+Hyperforin,Ketorolac tromethamine,LT00204,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Labetalol hydrochloride,LT00112,vMost-DILI-concern,DILI_positive,0.0989010989010989
+Hyperforin,Lamivudine,LT00569,vLess-DILI-concern,DILI_positive,0.09411764705882353
+Hyperforin,Lamotrigine,LT01481,vMost-DILI-concern,DILI_positive,0.024691358024691357
+Hyperforin,Lansoprazole,LT00307,vLess-DILI-concern,DILI_positive,0.04040404040404041
+Hyperforin,Lapatinib ditosylate,LT02204,vMost-DILI-concern,DILI_positive,0.03731343283582089
+Hyperforin,Leflunomide,LT00113,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Hyperforin,Lenalidomide,LT01238,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Hyperforin,Letermovir,LT03701,vLess-DILI-concern,DILI_positive,0.07079646017699115
+Hyperforin,Letrozole,LT00572,vLess-DILI-concern,DILI_positive,0.024691358024691357
+Hyperforin,Leuprolide acetate,LT02019,vLess-DILI-concern,DILI_positive,0.0915032679738562
+Hyperforin,Levetiracetam,LT01059,vLess-DILI-concern,DILI_positive,0.1388888888888889
+Hyperforin,Levocetirizine dihydrochloride,LT00600,vLess-DILI-concern,DILI_positive,0.07777777777777778
+Hyperforin,Levofloxacin,LT01488,vMost-DILI-concern,DILI_positive,0.08247422680412371
+Hyperforin,Levothyroxine sodium,LT01072,vLess-DILI-concern,DILI_positive,0.10843373493975904
+Hyperforin,Linagliptin,LT02445,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Linezolid,LT01077,vLess-DILI-concern,DILI_positive,0.10638297872340426
+Hyperforin,Liraglutide,LT01268,vLess-DILI-concern,DILI_positive,0.06629834254143646
+Hyperforin,Lisinopril,LT01492,vLess-DILI-concern,DILI_positive,0.09375
+Hyperforin,Lomitapide mesylate,LT02398,vMost-DILI-concern,DILI_positive,0.08849557522123894
+Hyperforin,Lomustine,LT00575,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Loracarbef,LT01497,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Lorazepam,LT00181,vLess-DILI-concern,DILI_positive,0.08139534883720931
+Hyperforin,Losartan potassium,LT01499,vLess-DILI-concern,DILI_positive,0.038461538461538464
+Hyperforin,Lovastatin,LT00576,vLess-DILI-concern,DILI_positive,0.12
+Hyperforin,Lumiracoxib,LT00686,vMost-DILI-concern,DILI_positive,0.07954545454545454
+Hyperforin,Macitentan,LT02451,vMost-DILI-concern,DILI_positive,0.05
+Hyperforin,Maraviroc,LT00640,vMost-DILI-concern,DILI_positive,0.10576923076923077
+Hyperforin,Mebanazine,LT01508,vMost-DILI-concern,DILI_positive,0.057971014492753624
+Hyperforin,Mebendazole,LT00308,vLess-DILI-concern,DILI_positive,0.056179775280898875
+Hyperforin,Mefenamic acid,LT00116,vMost-DILI-concern,DILI_positive,0.0641025641025641
+Hyperforin,Mefloquine hydrochloride,LT01514,vLess-DILI-concern,DILI_positive,0.08602150537634409
+Hyperforin,Meloxicam,LT00117,vLess-DILI-concern,DILI_positive,0.06382978723404255
+Hyperforin,Melphalan,LT01517,vLess-DILI-concern,DILI_positive,0.08860759493670886
+Hyperforin,Memantine hydrochloride,LT01908,vLess-DILI-concern,DILI_positive,0.08823529411764706
+Hyperforin,Mepazine,LT02110,vMost-DILI-concern,DILI_positive,0.05952380952380952
+Hyperforin,Mepivacaine hydrochloride,LT00822,vLess-DILI-concern,DILI_positive,0.0975609756097561
+Hyperforin,Mercaptopurine,LT00003,vMost-DILI-concern,DILI_positive,0.0136986301369863
+Hyperforin,Meropenem,LT01525,vLess-DILI-concern,DILI_positive,0.11702127659574468
+Hyperforin,Mesalamine,LT00414,vLess-DILI-concern,DILI_positive,0.07042253521126761
+Hyperforin,Metaxalone,LT00841,vLess-DILI-concern,DILI_positive,0.0875
+Hyperforin,Metformin hydrochloride,LT00119,vLess-DILI-concern,DILI_positive,0.043478260869565216
+Hyperforin,Methazolamide,LT01532,vLess-DILI-concern,DILI_positive,0.08974358974358974
+Hyperforin,Methimazole,LT00580,vMost-DILI-concern,DILI_positive,0.02857142857142857
+Hyperforin,Methotrexate sodium,LT00026,vMost-DILI-concern,DILI_positive,0.07547169811320754
+Hyperforin,Methoxsalen,LT01537,vLess-DILI-concern,DILI_positive,0.04938271604938271
+Hyperforin,Methyldopa,LT00121,vMost-DILI-concern,DILI_positive,0.09210526315789473
+Hyperforin,Methylphenidate hydrochloride,LT01545,vLess-DILI-concern,DILI_positive,0.0963855421686747
+Hyperforin,Methylprednisolone,LT00478,vLess-DILI-concern,DILI_positive,0.15053763440860216
+Hyperforin,Methyltestosterone,LT00222,vLess-DILI-concern,DILI_positive,0.12195121951219512
+Hyperforin,Metoclopramide hydrochloride,LT01549,vLess-DILI-concern,DILI_positive,0.06593406593406594
+Hyperforin,Metoprolol tartrate,LT00309,vLess-DILI-concern,DILI_positive,0.11494252873563218
+Hyperforin,Metronidazole,LT00584,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Hyperforin,Mexiletine hydrochloride,LT01553,vMost-DILI-concern,DILI_positive,0.0821917808219178
+Hyperforin,Micafungin sodium,LT01187,vMost-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Mifepristone,LT00184,vLess-DILI-concern,DILI_positive,0.0970873786407767
+Hyperforin,Milnacipran hydrochloride,LT01263,vMost-DILI-concern,DILI_positive,0.13924050632911392
+Hyperforin,Minocycline hydrochloride,LT00416,vMost-DILI-concern,DILI_positive,0.13131313131313133
+Hyperforin,Mirtazapine,LT01560,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Hyperforin,Mitomycin,LT00588,vLess-DILI-concern,DILI_positive,0.13043478260869565
+Hyperforin,Mitoxantrone hydrochloride,LT01565,vLess-DILI-concern,DILI_positive,0.075
+Hyperforin,Modafinil,LT00589,vLess-DILI-concern,DILI_positive,0.08108108108108109
+Hyperforin,Montelukast sodium,LT02007,vLess-DILI-concern,DILI_positive,0.12280701754385964
+Hyperforin,Moxifloxacin hydrochloride,LT02008,vLess-DILI-concern,DILI_positive,0.08490566037735849
+Hyperforin,Moxisylyte,LT01574,vMost-DILI-concern,DILI_positive,0.10843373493975904
+Hyperforin,Mycophenolate mofetil,LT01288,vLess-DILI-concern,DILI_positive,0.14
+Hyperforin,Nafcillin sodium,LT01583,vLess-DILI-concern,DILI_positive,0.09900990099009901
+Hyperforin,Nandrolone phenpropionate,LT02121,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Hyperforin,Naproxen,LT00593,vLess-DILI-concern,DILI_positive,0.10666666666666667
+Hyperforin,Nefazodone hydrochloride,LT00124,vMost-DILI-concern,DILI_positive,0.05660377358490566
+Hyperforin,Nelarabine,LT01233,vLess-DILI-concern,DILI_positive,0.07608695652173914
+Hyperforin,Nelfinavir mesylate,LT01012,vLess-DILI-concern,DILI_positive,0.09482758620689655
+Hyperforin,Nevirapine,LT00260,vMost-DILI-concern,DILI_positive,0.08045977011494253
+Hyperforin,Niacin,LT00312,vMost-DILI-concern,DILI_positive,0.056338028169014086
+Hyperforin,Nialamide,LT01594,vMost-DILI-concern,DILI_positive,0.05747126436781609
+Hyperforin,Nifedipine,LT00313,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Nilotinib hydrochloride,LT00607,vMost-DILI-concern,DILI_positive,0.05042016806722689
+Hyperforin,Nilutamide,LT01600,vMost-DILI-concern,DILI_positive,0.08045977011494253
+Hyperforin,Nimesulide,LT00314,vMost-DILI-concern,DILI_positive,0.045454545454545456
+Hyperforin,Nintedanib esylate,LT03718,vMost-DILI-concern,DILI_positive,0.06779661016949153
+Hyperforin,Niperotidine,LT01602,vMost-DILI-concern,DILI_positive,0.0761904761904762
+Hyperforin,Nitrefazole,LT01854,vMost-DILI-concern,DILI_positive,0.0625
+Hyperforin,Nitrofurantoin,LT00125,vMost-DILI-concern,DILI_positive,0.06976744186046512
+Hyperforin,Nizatidine,LT00315,vLess-DILI-concern,DILI_positive,0.061855670103092786
+Hyperforin,Nomifensine,LT01611,vMost-DILI-concern,DILI_positive,0.04819277108433735
+Hyperforin,Norfloxacin,LT01614,vLess-DILI-concern,DILI_positive,0.0989010989010989
+Hyperforin,Nortriptyline hydrochloride,LT01615,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Obeticholic acid,LT03603,vMost-DILI-concern,DILI_positive,0.13186813186813187
+Hyperforin,Octreotide acetate,LT01618,vLess-DILI-concern,DILI_positive,0.09848484848484848
+Hyperforin,Ofloxacin,LT01620,vLess-DILI-concern,DILI_positive,0.08247422680412371
+Hyperforin,Olanzapine,LT00259,vLess-DILI-concern,DILI_positive,0.043478260869565216
+Hyperforin,Olaparib,LT03722,vLess-DILI-concern,DILI_positive,0.08
+Hyperforin,Olmesartan medoxomil,LT01102,vLess-DILI-concern,DILI_positive,0.058333333333333334
+Hyperforin,Olsalazine sodium,LT00126,vLess-DILI-concern,DILI_positive,0.05333333333333334
+Hyperforin,Omeprazole,LT00206,vLess-DILI-concern,DILI_positive,0.04081632653061224
+Hyperforin,Ondansetron hydrochloride,LT01619,vLess-DILI-concern,DILI_positive,0.0967741935483871
+Hyperforin,Orlistat,LT02216,vMost-DILI-concern,DILI_positive,0.12631578947368421
+Hyperforin,Oseltamivir phosphate,LT02210,vLess-DILI-concern,DILI_positive,0.10989010989010989
+Hyperforin,Osimertinib mesylate,LT03727,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Hyperforin,Oxacillin sodium,LT01624,vLess-DILI-concern,DILI_positive,0.08823529411764706
+Hyperforin,Oxaliplatin,LT01181,vMost-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Oxandrolone,LT00845,vMost-DILI-concern,DILI_positive,0.10714285714285714
+Hyperforin,Oxaprozin,LT00429,vLess-DILI-concern,DILI_positive,0.06172839506172839
+Hyperforin,Oxcarbazepine,LT01056,vLess-DILI-concern,DILI_positive,0.08974358974358974
+Hyperforin,Oxybutynin chloride,LT02084,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Oxycodone hydrochloride,LT00979,vLess-DILI-concern,DILI_positive,0.08163265306122448
+Hyperforin,Oxymetholone,LT00235,vMost-DILI-concern,DILI_positive,0.11627906976744186
+Hyperforin,Oxyphenisatin,LT00690,vMost-DILI-concern,DILI_positive,0.07894736842105263
+Hyperforin,Paclitaxel,LT00430,vLess-DILI-concern,DILI_positive,0.12
+Hyperforin,Palbociclib,LT03594,vLess-DILI-concern,DILI_positive,0.11538461538461539
+Hyperforin,Paliperidone,LT01252,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Pantoprazole sodium,LT00606,vLess-DILI-concern,DILI_positive,0.0594059405940594
+Hyperforin,Papaverine hydrochloride,LT01637,vMost-DILI-concern,DILI_positive,0.03488372093023256
+Hyperforin,Paroxetine hydrochloride,LT00128,vLess-DILI-concern,DILI_positive,0.06315789473684211
+Hyperforin,Pazopanib hydrochloride,LT00672,vMost-DILI-concern,DILI_positive,0.037037037037037035
+Hyperforin,Pemoline,LT00246,vMost-DILI-concern,DILI_positive,0.05263157894736842
+Hyperforin,Penicillamine,LT00488,vLess-DILI-concern,DILI_positive,0.07462686567164178
+Hyperforin,Penicillin g benzathine,LT01646,vLess-DILI-concern,DILI_positive,0.11702127659574468
+Hyperforin,Pentamidine isethionate,LT00129,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Hyperforin,Pentostatin,LT01651,vMost-DILI-concern,DILI_positive,0.06521739130434782
+Hyperforin,Perhexiline,LT00131,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Perphenazine,LT01655,vLess-DILI-concern,DILI_positive,0.043478260869565216
+Hyperforin,Pexidartinib hydrochloride,LT03735,vMost-DILI-concern,DILI_positive,0.039603960396039604
+Hyperforin,Phenelzine sulfate,LT01657,vLess-DILI-concern,DILI_positive,0.05333333333333334
+Hyperforin,Phenobarbital sodium,LT00030,vLess-DILI-concern,DILI_positive,0.0875
+Hyperforin,Phenoxypropazine,LT00703,vMost-DILI-concern,DILI_positive,0.0821917808219178
+Hyperforin,Phenytoin,LT00032,vMost-DILI-concern,DILI_positive,0.05555555555555555
+Hyperforin,Pioglitazone hydrochloride,LT00134,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Pipamazine,LT00697,vMost-DILI-concern,DILI_positive,0.07291666666666667
+Hyperforin,Pirfenidone,LT03550,vMost-DILI-concern,DILI_positive,0.05405405405405406
+Hyperforin,Piroxicam,LT01679,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Hyperforin,Pirprofen,LT01680,vMost-DILI-concern,DILI_positive,0.11392405063291139
+Hyperforin,Pomalidomide,LT02883,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Posaconazole,LT01254,vMost-DILI-concern,DILI_positive,0.10655737704918032
+Hyperforin,Pralnacasan,LT00698,vMost-DILI-concern,DILI_positive,0.07692307692307693
+Hyperforin,Prasugrel hydrochloride,LT00665,vLess-DILI-concern,DILI_positive,0.09
+Hyperforin,Pravastatin sodium,LT00186,vLess-DILI-concern,DILI_positive,0.11764705882352941
+Hyperforin,Prednisolone,LT00612,vLess-DILI-concern,DILI_positive,0.15384615384615385
+Hyperforin,Prednisone,LT00180,vLess-DILI-concern,DILI_positive,0.13043478260869565
+Hyperforin,Pregabalin,LT01154,vLess-DILI-concern,DILI_positive,0.11764705882352941
+Hyperforin,Procainamide hydrochloride,LT01699,vLess-DILI-concern,DILI_positive,0.075
+Hyperforin,Procarbazine hydrochloride,LT00614,vLess-DILI-concern,DILI_positive,0.1038961038961039
+Hyperforin,Prochlorperazine maleate,LT00437,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Progesterone,LT00192,vLess-DILI-concern,DILI_positive,0.14285714285714285
+Hyperforin,Promethazine hydrochloride,LT00205,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Hyperforin,Propafenone hydrochloride,LT01705,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Propofol,LT01708,vLess-DILI-concern,DILI_positive,0.09230769230769231
+Hyperforin,Propoxyphene hydrochloride,LT00083,vLess-DILI-concern,DILI_positive,0.09195402298850575
+Hyperforin,Propylthiouracil,LT00136,vMost-DILI-concern,DILI_positive,0.06756756756756757
+Hyperforin,Pyrazinamide,LT00166,vLess-DILI-concern,DILI_positive,0.056338028169014086
+Hyperforin,Pyridostigmine bromide,LT02081,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Hyperforin,Pyrimethamine,LT01716,vLess-DILI-concern,DILI_positive,0.037037037037037035
+Hyperforin,Quetiapine fumarate,LT00267,vLess-DILI-concern,DILI_positive,0.07
+Hyperforin,Quinapril hydrochloride,LT01723,vLess-DILI-concern,DILI_positive,0.10309278350515463
+Hyperforin,Quinidine gluconate,LT01725,vLess-DILI-concern,DILI_positive,0.10714285714285714
+Hyperforin,Quinine sulfate,LT01923,vLess-DILI-concern,DILI_positive,0.08653846153846154
+Hyperforin,Rabeprazole sodium,LT00264,vLess-DILI-concern,DILI_positive,0.04
+Hyperforin,Raloxifene hydrochloride,LT00183,vLess-DILI-concern,DILI_positive,0.0707070707070707
+Hyperforin,Raltegravir potassium,LT00642,vMost-DILI-concern,DILI_positive,0.07547169811320754
+Hyperforin,Ramipril,LT01726,vLess-DILI-concern,DILI_positive,0.10204081632653061
+Hyperforin,Ranitidine hydrochloride,LT00138,vLess-DILI-concern,DILI_positive,0.06382978723404255
+Hyperforin,Regorafenib,LT02433,vMost-DILI-concern,DILI_positive,0.05714285714285714
+Hyperforin,Remdesivir,LT03819,vLess-DILI-concern,DILI_positive,0.10743801652892562
+Hyperforin,Remifentanil hydrochloride,LT00987,vLess-DILI-concern,DILI_positive,0.09782608695652174
+Hyperforin,Repaglinide,LT01002,vLess-DILI-concern,DILI_positive,0.08823529411764706
+Hyperforin,Ribavirin,LT01730,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Ribociclib succinate,LT03606,vMost-DILI-concern,DILI_positive,0.10091743119266056
+Hyperforin,Rifabutin,LT00139,vLess-DILI-concern,DILI_positive,0.13740458015267176
+Hyperforin,Rifampin,LT00034,vMost-DILI-concern,DILI_positive,0.11538461538461539
+Hyperforin,Rilpivirine hydrochloride,LT02352,vLess-DILI-concern,DILI_positive,0.04081632653061224
+Hyperforin,Riluzole,LT01731,vMost-DILI-concern,DILI_positive,0.011904761904761904
+Hyperforin,Risperidone,LT01735,vLess-DILI-concern,DILI_positive,0.06481481481481481
+Hyperforin,Ritonavir,LT01737,vMost-DILI-concern,DILI_positive,0.06557377049180328
+Hyperforin,Rivaroxaban,LT02390,vLess-DILI-concern,DILI_positive,0.09183673469387756
+Hyperforin,Rivastigmine tartrate,LT01016,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Rizatriptan benzoate,LT01026,vLess-DILI-concern,DILI_positive,0.06862745098039216
+Hyperforin,Ropinirole hydrochloride,LT00990,vLess-DILI-concern,DILI_positive,0.0963855421686747
+Hyperforin,Rosiglitazone maleate,LT00140,vLess-DILI-concern,DILI_positive,0.10101010101010101
+Hyperforin,Rosuvastatin calcium,LT01928,vLess-DILI-concern,DILI_positive,0.0970873786407767
+Hyperforin,Salsalate,LT01684,vLess-DILI-concern,DILI_positive,0.06578947368421052
+Hyperforin,Saquinavir mesylate,LT01746,vLess-DILI-concern,DILI_positive,0.088
+Hyperforin,Saxagliptin hydrochloride,LT00667,vLess-DILI-concern,DILI_positive,0.10112359550561797
+Hyperforin,Semaglutide,LT03759,vLess-DILI-concern,DILI_positive,0.06060606060606061
+Hyperforin,Sertraline hydrochloride,LT00625,vLess-DILI-concern,DILI_positive,0.05952380952380952
+Hyperforin,Sibutramine hydrochloride,LT00988,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Sildenafil citrate,LT01033,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Hyperforin,Simvastatin,LT00142,vLess-DILI-concern,DILI_positive,0.09900990099009901
+Hyperforin,Sirolimus,LT00443,vLess-DILI-concern,DILI_positive,0.1079136690647482
+Hyperforin,Sitagliptin phosphate,LT01251,vLess-DILI-concern,DILI_positive,0.09
+Hyperforin,Sitaxsentan,LT02449,vMost-DILI-concern,DILI_positive,0.08823529411764706
+Hyperforin,Solifenacin succinate,LT01191,vLess-DILI-concern,DILI_positive,0.07216494845360824
+Hyperforin,Sorafenib tosylate,LT01241,vMost-DILI-concern,DILI_positive,0.05405405405405406
+Hyperforin,Spironolactone,LT00143,vLess-DILI-concern,DILI_positive,0.1276595744680851
+Hyperforin,Stavudine,LT00144,vMost-DILI-concern,DILI_positive,0.08536585365853659
+Hyperforin,Succimer,LT01766,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,suloctidil,LT01816,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Sulfacarbamide,LT00699,vMost-DILI-concern,DILI_positive,0.05405405405405406
+Hyperforin,Sulfadiazine,LT00146,vLess-DILI-concern,DILI_positive,0.05194805194805195
+Hyperforin,Sulfamethizole,LT01933,vLess-DILI-concern,DILI_positive,0.03614457831325301
+Hyperforin,Sulfasalazine,LT00147,vMost-DILI-concern,DILI_positive,0.05319148936170213
+Hyperforin,Sulfathiazole,LT00632,vMost-DILI-concern,DILI_positive,0.036585365853658534
+Hyperforin,Sulindac,LT00148,vMost-DILI-concern,DILI_positive,0.08888888888888889
+Hyperforin,Sunitinib malate,LT00565,vMost-DILI-concern,DILI_positive,0.0990990990990991
+Hyperforin,Tacrolimus,LT00448,vLess-DILI-concern,DILI_positive,0.11023622047244094
+Hyperforin,Tadalafil,LT01129,vLess-DILI-concern,DILI_positive,0.06862745098039216
+Hyperforin,Tamoxifen citrate,LT00152,vMost-DILI-concern,DILI_positive,0.06315789473684211
+Hyperforin,Tamsulosin hydrochloride,LT00982,vLess-DILI-concern,DILI_positive,0.061224489795918366
+Hyperforin,Tasosartan,LT00687,vMost-DILI-concern,DILI_positive,0.07
+Hyperforin,Telithromycin,LT01944,vMost-DILI-concern,DILI_positive,0.1044776119402985
+Hyperforin,Telmisartan,LT02063,vLess-DILI-concern,DILI_positive,0.05504587155963303
+Hyperforin,Temozolomide,LT00153,vLess-DILI-concern,DILI_positive,0.075
+Hyperforin,Teniposide,LT01786,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Tenofovir disoproxil fumarate,LT02224,vLess-DILI-concern,DILI_positive,0.09615384615384616
+Hyperforin,Terbinafine hydrochloride,LT00634,vMost-DILI-concern,DILI_positive,0.056179775280898875
+Hyperforin,Terbutaline sulfate,LT00877,vLess-DILI-concern,DILI_positive,0.08974358974358974
+Hyperforin,Teriflunomide,LT02397,vMost-DILI-concern,DILI_positive,0.07317073170731707
+Hyperforin,Teriparatide acetate,LT00932,vLess-DILI-concern,DILI_positive,0.07017543859649122
+Hyperforin,Testosterone enanthate,LT00223,vMost-DILI-concern,DILI_positive,0.125
+Hyperforin,Tetrabamate,LT01858,vMost-DILI-concern,DILI_positive,0.10810810810810811
+Hyperforin,Thalidomide,LT00450,vLess-DILI-concern,DILI_positive,0.09210526315789473
+Hyperforin,Thiabendazole,LT00635,vMost-DILI-concern,DILI_positive,0.012048192771084338
+Hyperforin,Thioguanine,LT00452,vLess-DILI-concern,DILI_positive,0.012658227848101266
+Hyperforin,Thioridazine hydrochloride,LT00451,vLess-DILI-concern,DILI_positive,0.05154639175257732
+Hyperforin,Thiotepa,LT01804,vLess-DILI-concern,DILI_positive,0.015625
+Hyperforin,Ticlopidine hydrochloride,LT00227,vMost-DILI-concern,DILI_positive,0.046511627906976744
+Hyperforin,Ticrynafen,LT00636,vMost-DILI-concern,DILI_positive,0.08235294117647059
+Hyperforin,Tigecycline,LT01222,vMost-DILI-concern,DILI_positive,0.125
+Hyperforin,Tilbroquinol,LT00691,vMost-DILI-concern,DILI_positive,0.05063291139240506
+Hyperforin,Tinidazole,LT00637,vLess-DILI-concern,DILI_positive,0.047619047619047616
+Hyperforin,Tipranavir,LT01220,vMost-DILI-concern,DILI_positive,0.09482758620689655
+Hyperforin,Tizanidine hydrochloride,LT00155,vMost-DILI-concern,DILI_positive,0.045454545454545456
+Hyperforin,Tolazamide,LT00266,vLess-DILI-concern,DILI_positive,0.07407407407407407
+Hyperforin,Tolcapone,LT00156,vMost-DILI-concern,DILI_positive,0.07407407407407407
+Hyperforin,Tolmetin sodium,LT01820,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Tolrestat,LT01822,vMost-DILI-concern,DILI_positive,0.06451612903225806
+Hyperforin,Tolterodine tartrate,LT01011,vLess-DILI-concern,DILI_positive,0.10227272727272728
+Hyperforin,Tolvaptan,LT00661,vMost-DILI-concern,DILI_positive,0.1
+Hyperforin,Topiramate,LT00455,vLess-DILI-concern,DILI_positive,0.09302325581395349
+Hyperforin,Tramadol hydrochloride,LT01827,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Hyperforin,Trametinib dimethyl sulfoxide,LT02903,vLess-DILI-concern,DILI_positive,0.0782608695652174
+Hyperforin,Trandolapril,LT01828,vLess-DILI-concern,DILI_positive,0.10204081632653061
+Hyperforin,Tranylcypromine sulfate,LT01829,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Trazodone hydrochloride,LT01830,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Tretinoin,LT00338,vLess-DILI-concern,DILI_positive,0.13414634146341464
+Hyperforin,Triacetyldiphenolisatin,LT00700,vMost-DILI-concern,DILI_positive,0.10843373493975904
+Hyperforin,Triamterene,LT01833,vLess-DILI-concern,DILI_positive,0.025
+Hyperforin,Trifluoperazine hydrochloride,LT00457,vLess-DILI-concern,DILI_positive,0.042105263157894736
+Hyperforin,Trimethoprim,LT01842,vLess-DILI-concern,DILI_positive,0.047619047619047616
+Hyperforin,Triptorelin pamoate,LT00460,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Troglitazone,LT00168,vMost-DILI-concern,DILI_positive,0.12244897959183673
+Hyperforin,Trovafloxacin mesylate,LT00645,vMost-DILI-concern,DILI_positive,0.08653846153846154
+Hyperforin,Ulipristal acetate,LT02443,vLess-DILI-concern,DILI_positive,0.11650485436893204
+Hyperforin,Valaciclovir,LT01856,vLess-DILI-concern,DILI_positive,0.10752688172043011
+Hyperforin,Valdecoxib,LT01971,vLess-DILI-concern,DILI_positive,0.03488372093023256
+Hyperforin,Valproic acid,LT00160,vMost-DILI-concern,DILI_positive,0.09375
+Hyperforin,Valsartan,LT01857,vLess-DILI-concern,DILI_positive,0.07920792079207921
+Hyperforin,Vancomycin hydrochloride,LT00161,vLess-DILI-concern,DILI_positive,0.09467455621301775
+Hyperforin,Varenicline tartrate,LT01242,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Vemurafenib,LT02435,vLess-DILI-concern,DILI_positive,0.0660377358490566
+Hyperforin,Venetoclax,LT03786,vLess-DILI-concern,DILI_positive,0.08108108108108109
+Hyperforin,Venlafaxine hydrochloride,LT00174,vLess-DILI-concern,DILI_positive,0.08433734939759036
+Hyperforin,Verapamil hydrochloride,LT00332,vLess-DILI-concern,DILI_positive,0.0625
+Hyperforin,Vinblastine sulfate,LT00177,vLess-DILI-concern,DILI_positive,0.09219858156028368
+Hyperforin,Vincristine sulfate,LT01862,vLess-DILI-concern,DILI_positive,0.10714285714285714
+Hyperforin,Vitamin A palmitate,LT00162,vLess-DILI-concern,DILI_positive,0.1368421052631579
+Hyperforin,Voriconazole,LT01097,vMost-DILI-concern,DILI_positive,0.08421052631578947
+Hyperforin,Vortioxetine hydrobromide,LT02902,vLess-DILI-concern,DILI_positive,0.03409090909090909
+Hyperforin,Warfarin sodium,LT00647,vLess-DILI-concern,DILI_positive,0.11904761904761904
+Hyperforin,Xenazoic acid,LT01867,vMost-DILI-concern,DILI_positive,0.08235294117647059
+Hyperforin,Ximelagatran,LT02033,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Hyperforin,Zafirlukast,LT01869,vMost-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Zanubrutinib,LT03600,vMost-DILI-concern,DILI_positive,0.06542056074766354
+Hyperforin,Zidovudine,LT00163,vMost-DILI-concern,DILI_positive,0.08695652173913043
+Hyperforin,Zileuton,LT00649,vMost-DILI-concern,DILI_positive,0.08641975308641975
+Hyperforin,Zimelidine,LT01874,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Hyperforin,Ziprasidone hydrochloride,LT01017,vLess-DILI-concern,DILI_positive,0.0784313725490196
+Hyperforin,Zoledronic acid,LT01088,vLess-DILI-concern,DILI_positive,0.038461538461538464
+Hyperforin,Zonisamide,LT00165,vLess-DILI-concern,DILI_positive,0.0379746835443038
+Hyperforin,Abaloparatide,LT03618,vNo-DILI-concern,DILI_negative,0.06369426751592357
+Hyperforin,Acetylcholine chloride,LT02096,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Acetylcysteine,LT01041,vNo-DILI-concern,DILI_negative,0.10294117647058823
+Hyperforin,Adenosine,LT01047,vNo-DILI-concern,DILI_negative,0.056818181818181816
+Hyperforin,Agalsidase beta,LT02385,vNo-DILI-concern,DILI_negative,0.07766990291262135
+Hyperforin,Albuterol,LT01051,vNo-DILI-concern,DILI_negative,0.0875
+Hyperforin,Alfentanil hydrochloride,LT00925,vNo-DILI-concern,DILI_negative,0.10204081632653061
+Hyperforin,Almotriptan malate,LT01053,vNo-DILI-concern,DILI_negative,0.09803921568627451
+Hyperforin,Alvimopan,LT01215,vNo-DILI-concern,DILI_negative,0.13131313131313133
+Hyperforin,Ambenonium chloride,LT01629,vNo-DILI-concern,DILI_negative,0.08536585365853659
+Hyperforin,Amifampridine,LT03376,vNo-DILI-concern,DILI_negative,0.014492753623188406
+Hyperforin,Amifostine,LT01067,vNo-DILI-concern,DILI_negative,0.039473684210526314
+Hyperforin,Amikacin sulfate,LT01068,vNo-DILI-concern,DILI_negative,0.07476635514018691
+Hyperforin,Aminocaproic acid,LT01071,vNo-DILI-concern,DILI_negative,0.05970149253731343
+Hyperforin,Aminohippurate sodium,LT00054,vNo-DILI-concern,DILI_negative,0.06578947368421052
+Hyperforin,Aminophylline,LT00711,vNo-DILI-concern,DILI_negative,0.0625
+Hyperforin,Ammonium chloride,LT02067,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Angiotensin ii acetate,LT02229,vNo-DILI-concern,DILI_negative,0.09154929577464789
+Hyperforin,Apalutamide,LT03622,vNo-DILI-concern,DILI_negative,0.09174311926605505
+Hyperforin,Apomorphine hydrochloride,LT02217,vNo-DILI-concern,DILI_negative,0.07954545454545454
+Hyperforin,Apremilast,LT03623,vNo-DILI-concern,DILI_negative,0.08653846153846154
+Hyperforin,Argatroban,LT01030,vNo-DILI-concern,DILI_negative,0.08849557522123894
+Hyperforin,Arginine hydrochloride,LT02077,vNo-DILI-concern,DILI_negative,0.06756756756756757
+Hyperforin,Argipressin,LT02331,vNo-DILI-concern,DILI_negative,0.07246376811594203
+Hyperforin,Atracurium,LT00917,vNo-DILI-Concern,DILI_negative,0.09375
+Hyperforin,Atropine,LT00511,vNo-DILI-concern,DILI_negative,0.10843373493975904
+Hyperforin,Avanafil,LT02440,vNo-DILI-concern,DILI_negative,0.07894736842105263
+Hyperforin,Avatrombopag maleate,LT03629,vNo-DILI-concern,DILI_negative,0.05785123966942149
+Hyperforin,Azilsartan kamedoxomil,LT03630,vNo-DILI-concern,DILI_negative,0.06722689075630252
+Hyperforin,Bacitracin,LT02059,vNo-DILI-concern,DILI_negative,0.07272727272727272
+Hyperforin,Baloxavir marboxil,LT03631,vNo-DILI-concern,DILI_negative,0.09090909090909091
+Hyperforin,Bendamustine hydrochloride,LT00659,vNo-DILI-concern,DILI_negative,0.06382978723404255
+Hyperforin,Benzphetamine hydrochloride,LT00832,vNo-DILI-concern,DILI_negative,0.06756756756756757
+Hyperforin,Benztropine mesylate,LT01123,vNo-DILI-concern,DILI_negative,0.08433734939759036
+Hyperforin,Betaine,LT02189,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Bethanechol chloride,LT00730,vNo-DILI-concern,DILI_negative,0.1
+Hyperforin,Betrixaban,LT03798,vNo-DILI-concern,DILI_negative,0.07
+Hyperforin,Biperiden hydrochloride,LT00817,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Hyperforin,Bisacodyl,LT02190,vNo-DILI-concern,DILI_negative,0.10126582278481013
+Hyperforin,Bivalirudin,LT01027,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Brexanolone,LT03639,vNo-DILI-concern,DILI_negative,0.125
+Hyperforin,Brexpiprazole,LT03640,vNo-DILI-concern,DILI_negative,0.04807692307692308
+Hyperforin,Brilliant blue g,LT03868,vNo-DILI-concern,DILI_negative,0.03937007874015748
+Hyperforin,Brivaracetam,LT03643,vNo-DILI-concern,DILI_negative,0.14473684210526316
+Hyperforin,Brompheniramine maleate,LT02076,vNo-DILI-concern,DILI_negative,0.0898876404494382
+Hyperforin,Budesonide,LT01144,vNo-DILI-concern,DILI_negative,0.13592233009708737
+Hyperforin,Butorphanol tartrate,LT01151,vNo-DILI-concern,DILI_negative,0.10204081632653061
+Hyperforin,Cabergoline,LT01152,vNo-DILI-concern,DILI_negative,0.07894736842105263
+Hyperforin,Caffeine citrate,LT01888,vNo-DILI-concern,DILI_negative,0.08139534883720931
+Hyperforin,Calcitonin salmon,LT00878,vNo-DILI-concern,DILI_negative,0.0707070707070707
+Hyperforin,Calcitriol,LT00899,vNo-DILI-concern,DILI_negative,0.1326530612244898
+Hyperforin,Calcium acetate,LT00947,vNo-DILI-concern,DILI_negative,0.08620689655172414
+Hyperforin,Cangrelor,LT02516,vNo-DILI-concern,DILI_negative,0.056
+Hyperforin,Carbinoxamine maleate,LT00759,vNo-DILI-concern,DILI_negative,0.08602150537634409
+Hyperforin,Carboprost tromethamine,LT00898,vNo-DILI-concern,DILI_negative,0.11224489795918367
+Hyperforin,Carglumic acid,LT00675,vNo-DILI-concern,DILI_negative,0.06944444444444445
+Hyperforin,Carisoprodol,LT02037,vNo-DILI-concern,DILI_negative,0.0875
+Hyperforin,Casimersen,LT03648,vNo-DILI-concern,DILI_negative,0.07758620689655173
+Hyperforin,Chloramphenicol,LT01196,vNo-DILI-concern,DILI_negative,0.08433734939759036
+Hyperforin,Chlorpheniramine maleate,LT00009,vNo-DILI-concern,DILI_negative,0.0898876404494382
+Hyperforin,Choline c-11,LT03899,vNo-DILI-concern,DILI_negative,0.047619047619047616
+Hyperforin,Cinacalcet hydrochloride,LT01209,vNo-DILI-concern,DILI_negative,0.053763440860215055
+Hyperforin,Cisatracurium besylate,LT00978,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Clemastine fumarate,LT02222,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Hyperforin,Clevidipine,LT00644,vNo-DILI-concern,DILI_negative,0.0967741935483871
+Hyperforin,Codeine sulfate,LT01269,vNo-DILI-concern,DILI_negative,0.07920792079207921
+Hyperforin,Colistimethate sodium,LT01275,vNo-DILI-concern,DILI_negative,0.10204081632653061
+Hyperforin,Conivaptan hydrochloride,LT01210,vNo-DILI-concern,DILI_negative,0.05660377358490566
+Hyperforin,Copanlisib dihydrochloride,LT03651,vNo-DILI-concern,DILI_negative,0.05982905982905983
+Hyperforin,Copper cu-64 dotatate,LT03900,vNo-DILI-concern,DILI_negative,0.08441558441558442
+Hyperforin,Corticorelin ovine triflutate,LT00438,vNo-DILI-concern,DILI_negative,0.06741573033707865
+Hyperforin,Corticotropin,LT00077,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Hyperforin,Cortisone acetate,LT00734,vNo-DILI-concern,DILI_negative,0.1368421052631579
+Hyperforin,Cosyntropin,LT00855,vNo-DILI-concern,DILI_negative,0.07514450867052024
+Hyperforin,Cupric chloride,LT00361,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Cyanocobalamin,LT02002,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Dalfampridine,LT03653,vNo-DILI-concern,DILI_negative,0.015151515151515152
+Hyperforin,Dapagliflozin,LT02891,vNo-DILI-concern,DILI_negative,0.07368421052631578
+Hyperforin,Darifenacin hydrobromide,LT01188,vNo-DILI-concern,DILI_negative,0.07
+Hyperforin,Dasiglucagon hydrochloride,LT03655,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Hyperforin,Daunorubicin hydrochloride,LT00540,vNo-DILI-concern,DILI_negative,0.12844036697247707
+Hyperforin,Defibrotide sodium,LT01774,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Hyperforin,Deflazacort,LT02726,vNo-DILI-concern,DILI_negative,0.1346153846153846
+Hyperforin,Deoxycholic acid,LT03657,vNo-DILI-concern,DILI_negative,0.13186813186813187
+Hyperforin,Deutetrabenazine,LT03658,vNo-DILI-concern,DILI_negative,0.10227272727272728
+Hyperforin,Dexbrompheniramine maleate,LT00810,vNo-DILI-concern,DILI_negative,0.0898876404494382
+Hyperforin,Dexchlorpheniramine maleate,LT00682,vNo-DILI-concern,DILI_negative,0.0898876404494382
+Hyperforin,Dexpanthenol,LT01972,vNo-DILI-concern,DILI_negative,0.08
+Hyperforin,Dextroamphetamine sulfate,LT00870,vNo-DILI-concern,DILI_negative,0.09722222222222222
+Hyperforin,Dextromethorphan polistirex,LT02056,vNo-DILI-concern,DILI_negative,0.05434782608695652
+Hyperforin,Dextrose,LT00327,vNo-DILI-concern,DILI_negative,0.05970149253731343
+Hyperforin,Diatrizoate sodium,LT00774,vNo-DILI-concern,DILI_negative,0.0821917808219178
+Hyperforin,Dichlorphenamide,LT00802,vNo-DILI-concern,DILI_negative,0.04054054054054054
+Hyperforin,Dicyclomine hydrochloride,LT00737,vNo-DILI-concern,DILI_negative,0.0975609756097561
+Hyperforin,Diethylpropion hydrochloride,LT00806,vNo-DILI-concern,DILI_negative,0.1095890410958904
+Hyperforin,Difelikefalin acetate,LT03659,vNo-DILI-concern,DILI_negative,0.11538461538461539
+Hyperforin,Digoxin,LT00292,vNo-DILI-concern,DILI_negative,0.0990990990990991
+Hyperforin,Dihydroergotamine mesylate,LT02218,vNo-DILI-concern,DILI_negative,0.10236220472440945
+Hyperforin,Dimenhydrinate,LT00545,vNo-DILI-concern,DILI_negative,0.061224489795918366
+Hyperforin,Dimercaprol,LT00074,vNo-DILI-concern,DILI_negative,0.046875
+Hyperforin,Diphenhydramine hydrochloride,LT00087,vNo-DILI-concern,DILI_negative,0.05263157894736842
+Hyperforin,Diphenoxylate,LT01623,vNo-DILI-concern,DILI_negative,0.0967741935483871
+Hyperforin,Dobutamine hydrochloride,LT01308,vNo-DILI-concern,DILI_negative,0.08536585365853659
+Hyperforin,Dopamine hydrochloride,LT00015,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Hyperforin,Doxapram hydrochloride,LT00547,vNo-DILI-concern,DILI_negative,0.11235955056179775
+Hyperforin,Doxylamine succinate,LT00727,vNo-DILI-concern,DILI_negative,0.06741573033707865
+Hyperforin,Droperidol,LT01317,vNo-DILI-concern,DILI_negative,0.08080808080808081
+Hyperforin,Droxidopa,LT01788,vNo-DILI-concern,DILI_negative,0.0945945945945946
+Hyperforin,Dutasteride,LT01112,vNo-DILI-concern,DILI_negative,0.11428571428571428
+Hyperforin,Dyphylline,LT00740,vNo-DILI-concern,DILI_negative,0.0975609756097561
+Hyperforin,Ecallantide,LT00683,vNo-DILI-concern,DILI_negative,0.06374501992031872
+Hyperforin,Edaravone,LT03663,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Hyperforin,Edrophonium chloride,LT02093,vNo-DILI-concern,DILI_negative,0.06756756756756757
+Hyperforin,Eliglustat tartrate,LT03666,vNo-DILI-concern,DILI_negative,0.07766990291262135
+Hyperforin,Empagliflozin,LT03667,vNo-DILI-concern,DILI_negative,0.06862745098039216
+Hyperforin,Enzalutamide,LT02444,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Ephedrine sulfate,LT01666,vNo-DILI-concern,DILI_negative,0.08
+Hyperforin,Epinephrine,LT00742,vNo-DILI-concern,DILI_negative,0.08108108108108109
+Hyperforin,Epoetin alfa,LT01316,vNo-DILI-concern,DILI_negative,0.10743801652892562
+Hyperforin,Eptifibatide,LT00999,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Hyperforin,Ergocalciferol,LT00194,vNo-DILI-concern,DILI_negative,0.11578947368421053
+Hyperforin,Ertugliflozin,LT03673,vNo-DILI-concern,DILI_negative,0.10309278350515463
+Hyperforin,Erythropoietin,LT02330,vNo-DILI-concern,DILI_negative,0.10743801652892562
+Hyperforin,Esmolol hydrochloride,LT01333,vNo-DILI-concern,DILI_negative,0.11904761904761904
+Hyperforin,Estazolam,LT01334,vNo-DILI-concern,DILI_negative,0.021739130434782608
+Hyperforin,Etelcalcetide,LT03674,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Ethanolamine oleate,LT00926,vNo-DILI-concern,DILI_negative,0.09210526315789473
+Hyperforin,Etidronate disodium,LT01355,vNo-DILI-concern,DILI_negative,0.04477611940298507
+Hyperforin,Etomidate,LT01357,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Exenatide synthetic,LT00537,vNo-DILI-concern,DILI_negative,0.06403940886699508
+Hyperforin,Fenoldopam mesylate,LT00944,vNo-DILI-concern,DILI_negative,0.08791208791208792
+Hyperforin,Ferric maltol,LT03677,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Hyperforin,Ferumoxytol,LT00650,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Fesoterodine fumarate,LT00590,vNo-DILI-concern,DILI_negative,0.10526315789473684
+Hyperforin,Fexofenadine hydrochloride,LT01370,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Hyperforin,Finerenone,LT03679,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Flibanserin,LT03680,vNo-DILI-concern,DILI_negative,0.052083333333333336
+Hyperforin,Florbetaben f-18,LT03903,vNo-DILI-concern,DILI_negative,0.060240963855421686
+Hyperforin,Florbetapir f-18,LT03904,vNo-DILI-concern,DILI_negative,0.05747126436781609
+Hyperforin,Flortaucipir f-18,LT03905,vNo-DILI-concern,DILI_negative,0.023255813953488372
+Hyperforin,Fluciclovine f-18,LT03906,vNo-DILI-concern,DILI_negative,0.140625
+Hyperforin,Fludarabine phosphate,LT01382,vNo-DILI-concern,DILI_negative,0.061224489795918366
+Hyperforin,Fludrocortisone acetate,LT00399,vNo-DILI-concern,DILI_negative,0.15789473684210525
+Hyperforin,Flumazenil,LT01384,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Hyperforin,Fluorescein sodium,LT00894,vNo-DILI-concern,DILI_negative,0.06521739130434782
+Hyperforin,Fluorodopa f-18,LT03907,vNo-DILI-concern,DILI_negative,0.10810810810810811
+Hyperforin,Fluoroestradiol f-18,LT03908,vNo-DILI-concern,DILI_negative,0.11627906976744186
+Hyperforin,Flutemetamol f-18,LT03909,vNo-DILI-concern,DILI_negative,0.0449438202247191
+Hyperforin,Folic acid,LT01580,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Hyperforin,Fosdenopterin hydrobromide,LT03681,vNo-DILI-concern,DILI_negative,0.07
+Hyperforin,Frovatriptan succinate,LT01054,vNo-DILI-concern,DILI_negative,0.11956521739130435
+Hyperforin,Gabapentin enacarbil,LT03684,vNo-DILI-concern,DILI_negative,0.12345679012345678
+Hyperforin,Gadobenate dimeglumine,LT01127,vNo-DILI-concern,DILI_negative,0.08490566037735849
+Hyperforin,Gadobutrol,LT02336,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Hyperforin,Gadofosveset trisodium,LT00528,vNo-DILI-concern,DILI_negative,0.10891089108910891
+Hyperforin,Gadopentetate dimeglumine,LT00935,vNo-DILI-concern,DILI_negative,0.08235294117647059
+Hyperforin,Gadoterate meglumine,LT02876,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Gadoteridol,LT00952,vNo-DILI-concern,DILI_negative,0.1111111111111111
+Hyperforin,Gadoversetamide,LT01044,vNo-DILI-concern,DILI_negative,0.06172839506172839
+Hyperforin,Gadoxetate disodium,LT02404,vNo-DILI-concern,DILI_negative,0.08888888888888889
+Hyperforin,Gallium dotatate ga-68,LT03901,vNo-DILI-concern,DILI_negative,0.08609271523178808
+Hyperforin,Gallium ga-68 edotreotide,LT03902,vNo-DILI-concern,DILI_negative,0.08609271523178808
+Hyperforin,Gallium ga-68 gozetotide,LT03910,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Hyperforin,Ganirelix acetate,LT00475,vNo-DILI-concern,DILI_negative,0.07947019867549669
+Hyperforin,Glycopyrrolate,LT00836,vNo-DILI-concern,DILI_negative,0.07954545454545454
+Hyperforin,Guaifenesin,LT01100,vNo-DILI-concern,DILI_negative,0.08
+Hyperforin,Guanethidine monosulfate,LT00829,vNo-DILI-concern,DILI_negative,0.05194805194805195
+Hyperforin,Histamine phosphate,LT00706,vNo-DILI-concern,DILI_negative,0.05194805194805195
+Hyperforin,Hydrocortisone acetate,LT00188,vNo-DILI-concern,DILI_negative,0.1595744680851064
+Hyperforin,Hydroxyzine hydrochloride,LT01437,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Hyperforin,Ibutilide fumarate,LT00974,vNo-DILI-concern,DILI_negative,0.0851063829787234
+Hyperforin,Indocyanine green,LT00141,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Iodipamide sodium,LT01454,vNo-DILI-concern,DILI_negative,0.06097560975609756
+Hyperforin,Ioflupane i-123,LT03911,vNo-DILI-concern,DILI_negative,0.0967741935483871
+Hyperforin,Iothalamate meglumine,LT00257,vNo-DILI-concern,DILI_negative,0.10112359550561797
+Hyperforin,Ioversol,LT00419,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Hyperforin,Isoproterenol hydrochloride,LT00200,vNo-DILI-concern,DILI_negative,0.10666666666666667
+Hyperforin,Isosorbide dinitrate,LT00818,vNo-DILI-concern,DILI_negative,0.056338028169014086
+Hyperforin,Isoxsuprine hydrochloride,LT02089,vNo-DILI-concern,DILI_negative,0.0963855421686747
+Hyperforin,Istradefylline,LT03695,vNo-DILI-concern,DILI_negative,0.08602150537634409
+Hyperforin,Ivabradine hydrochloride,LT02665,vNo-DILI-concern,DILI_negative,0.07216494845360824
+Hyperforin,Kanamycin,LT01477,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Hyperforin,Lactitol,LT02745,vNo-DILI-concern,DILI_negative,0.075
+Hyperforin,Lactulose,LT00886,vNo-DILI-concern,DILI_negative,0.07317073170731707
+Hyperforin,Lanthanum carbonate,LT00493,vNo-DILI-concern,DILI_negative,0.05172413793103448
+Hyperforin,Lasmiditan succinate,LT03699,vNo-DILI-concern,DILI_negative,0.08163265306122448
+Hyperforin,Lemborexant,LT03700,vNo-DILI-concern,DILI_negative,0.09803921568627451
+Hyperforin,Leucovorin calcium,LT02192,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Hyperforin,Levocarnitine,LT01486,vNo-DILI-concern,DILI_negative,0.1044776119402985
+Hyperforin,Levoleucovorin,LT02437,vNo-DILI-concern,DILI_negative,0.09090909090909091
+Hyperforin,Levomefolate calcium,LT02442,vNo-DILI-concern,DILI_negative,0.09090909090909091
+Hyperforin,Levonorgestrel,LT01489,vNo-DILI-concern,DILI_negative,0.09782608695652174
+Hyperforin,Levorphanol tartrate,LT00752,vNo-DILI-concern,DILI_negative,0.10752688172043011
+Hyperforin,Lidocaine,LT01905,vNo-DILI-concern,DILI_negative,0.07792207792207792
+Hyperforin,Linaclotide,LT02412,vNo-DILI-concern,DILI_negative,0.08904109589041095
+Hyperforin,Liothyronine sodium,LT00783,vNo-DILI-concern,DILI_negative,0.09195402298850575
+Hyperforin,Lofexidine hydrochloride,LT01776,vNo-DILI-concern,DILI_negative,0.07317073170731707
+Hyperforin,Loperamide hydrochloride,LT02087,vNo-DILI-concern,DILI_negative,0.0967741935483871
+Hyperforin,Loratadine,LT01498,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Hyperforin,Lubiprostone,LT01240,vNo-DILI-concern,DILI_negative,0.12903225806451613
+Hyperforin,Lurasidone hydrochloride,LT02411,vNo-DILI-concern,DILI_negative,0.07
+Hyperforin,Lusutrombopag,LT03708,vNo-DILI-concern,DILI_negative,0.09482758620689655
+Hyperforin,Macimorelin acetate,LT03709,vNo-DILI-concern,DILI_negative,0.10204081632653061
+Hyperforin,Mannitol,LT00024,vNo-DILI-concern,DILI_negative,0.06557377049180328
+Hyperforin,Maribavir,LT03558,vNo-DILI-concern,DILI_negative,0.08695652173913043
+Hyperforin,Mecamylamine hydrochloride,LT00781,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Meclizine hydrochloride,LT00792,vNo-DILI-concern,DILI_negative,0.05434782608695652
+Hyperforin,Mepenzolate bromide,LT00790,vNo-DILI-concern,DILI_negative,0.08235294117647059
+Hyperforin,Meperidine hydrochloride,LT00713,vNo-DILI-concern,DILI_negative,0.09876543209876543
+Hyperforin,Meprobamate,LT01521,vNo-DILI-concern,DILI_negative,0.06944444444444445
+Hyperforin,Metaproterenol sulfate,LT02086,vNo-DILI-concern,DILI_negative,0.12
+Hyperforin,Methamphetamine hydrochloride,LT00716,vNo-DILI-concern,DILI_negative,0.07042253521126761
+Hyperforin,Methionine,LT01468,vNo-DILI-concern,DILI_negative,0.08695652173913043
+Hyperforin,Methscopolamine bromide,LT01547,vNo-DILI-concern,DILI_negative,0.10227272727272728
+Hyperforin,Methsuximide,LT00787,vNo-DILI-concern,DILI_negative,0.1095890410958904
+Hyperforin,Methylergonovine maleate,LT02074,vNo-DILI-concern,DILI_negative,0.09345794392523364
+Hyperforin,Methylnaltrexone bromide,LT00570,vNo-DILI-concern,DILI_negative,0.1
+Hyperforin,Methysergide maleate,LT02072,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Metyrapone,LT00838,vNo-DILI-concern,DILI_negative,0.0641025641025641
+Hyperforin,Metyrosine,LT00895,vNo-DILI-concern,DILI_negative,0.0958904109589041
+Hyperforin,Midazolam hydrochloride,LT01557,vNo-DILI-concern,DILI_negative,0.030927835051546393
+Hyperforin,Midodrine hydrochloride,LT01558,vNo-DILI-concern,DILI_negative,0.08139534883720931
+Hyperforin,Migalastat hydrochloride,LT03712,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Hyperforin,Miglitol,LT00992,vNo-DILI-concern,DILI_negative,0.0684931506849315
+Hyperforin,Miglustat,LT01126,vNo-DILI-concern,DILI_negative,0.07894736842105263
+Hyperforin,Minoxidil,LT00587,vNo-DILI-concern,DILI_negative,0.05
+Hyperforin,Mitotane,LT01564,vNo-DILI-concern,DILI_negative,0.025974025974025976
+Hyperforin,Mivacurium chloride,LT00950,vNo-DILI-concern,DILI_negative,0.1111111111111111
+Hyperforin,Morphine sulfate,LT00905,vNo-DILI-concern,DILI_negative,0.09375
+Hyperforin,Nabilone,LT00910,vNo-DILI-concern,DILI_negative,0.11578947368421053
+Hyperforin,Nalbuphine hydrochloride,LT01586,vNo-DILI-concern,DILI_negative,0.08
+Hyperforin,Naldemedine tosylate,LT03716,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Hyperforin,Naloxegol oxalate,LT03717,vNo-DILI-concern,DILI_negative,0.09821428571428571
+Hyperforin,Naloxone hydrochloride,LT00592,vNo-DILI-concern,DILI_negative,0.10101010101010101
+Hyperforin,Neomycin sulfate,LT00595,vNo-DILI-concern,DILI_negative,0.07526881720430108
+Hyperforin,Nesiritide,LT00465,vNo-DILI-concern,DILI_negative,0.06132075471698113
+Hyperforin,Nifurtimox,LT02164,vNo-DILI-concern,DILI_negative,0.06521739130434782
+Hyperforin,Nitazoxanide,LT01184,vNo-DILI-concern,DILI_negative,0.06521739130434782
+Hyperforin,Nitroglycerin,LT01608,vNo-DILI-concern,DILI_negative,0.057971014492753624
+Hyperforin,Norepinephrine bitartrate,LT00738,vNo-DILI-concern,DILI_negative,0.08974358974358974
+Hyperforin,Norethindrone acetate,LT02269,vNo-DILI-concern,DILI_negative,0.11827956989247312
+Hyperforin,Nusinersen sodium,LT03720,vNo-DILI-concern,DILI_negative,0.05755395683453238
+Hyperforin,Nystatin,LT00602,vNo-DILI-concern,DILI_negative,0.0975609756097561
+Hyperforin,Opicapone,LT03725,vNo-DILI-concern,DILI_negative,0.061224489795918366
+Hyperforin,Orphenadrine hydrochloride,LT02085,vNo-DILI-concern,DILI_negative,0.04819277108433735
+Hyperforin,Ospemifene,LT02880,vNo-DILI-concern,DILI_negative,0.03529411764705882
+Hyperforin,Oxymorphone hydrochloride,LT00808,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Hyperforin,Oxytocin,LT00827,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Pafolacianine sodium,LT03729,vNo-DILI-concern,DILI_negative,0.08383233532934131
+Hyperforin,Pamabrom,LT02055,vNo-DILI-concern,DILI_negative,0.07058823529411765
+Hyperforin,Pancuronium bromide,LT00867,vNo-DILI-concern,DILI_negative,0.10309278350515463
+Hyperforin,Paromomycin sulfate,LT02061,vNo-DILI-concern,DILI_negative,0.07446808510638298
+Hyperforin,Pegfilgrastim,LT01380,vNo-DILI-concern,DILI_negative,0.10655737704918032
+Hyperforin,Penbutolol sulfate,LT01644,vNo-DILI-concern,DILI_negative,0.1
+Hyperforin,Penicillin v potassium,LT01648,vNo-DILI-concern,DILI_negative,0.10752688172043011
+Hyperforin,Pentagastrin,LT00869,vNo-DILI-concern,DILI_negative,0.09322033898305085
+Hyperforin,Pentazocine lactate,LT01650,vNo-DILI-concern,DILI_negative,0.20224719101123595
+Hyperforin,Pentetate calcium trisodium yb-169,LT00879,vNo-DILI-concern,DILI_negative,0.057971014492753624
+Hyperforin,Perampanel,LT02446,vNo-DILI-concern,DILI_negative,0.043010752688172046
+Hyperforin,Perflutren,LT01065,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Phendimetrazine tartrate,LT00826,vNo-DILI-concern,DILI_negative,0.0975609756097561
+Hyperforin,Phenoxybenzamine hydrochloride,LT02082,vNo-DILI-concern,DILI_negative,0.07228915662650602
+Hyperforin,Phentolamine mesylate,LT00433,vNo-DILI-concern,DILI_negative,0.07526881720430108
+Hyperforin,Physostigmine salicylate,LT00133,vNo-DILI-concern,DILI_negative,0.1
+Hyperforin,Phytonadione,LT00780,vNo-DILI-concern,DILI_negative,0.2
+Hyperforin,Piflufolastat f-18,LT03915,vNo-DILI-concern,DILI_negative,0.06315789473684211
+Hyperforin,Pimavanserin tartrate,LT03736,vNo-DILI-concern,DILI_negative,0.10784313725490197
+Hyperforin,Pimozide,LT01672,vNo-DILI-concern,DILI_negative,0.07291666666666667
+Hyperforin,Pindolol,LT01673,vNo-DILI-concern,DILI_negative,0.09411764705882353
+Hyperforin,Pitolisant hydrochloride,LT03737,vNo-DILI-concern,DILI_negative,0.03529411764705882
+Hyperforin,Plerixafor,LT02340,vNo-DILI-concern,DILI_negative,0.03896103896103896
+Hyperforin,Polidocanol,LT00486,vNo-DILI-concern,DILI_negative,0.04225352112676056
+Hyperforin,Pramlintide acetate,LT00492,vNo-DILI-concern,DILI_negative,0.06787330316742081
+Hyperforin,Primaquine phosphate,LT00613,vNo-DILI-concern,DILI_negative,0.07291666666666667
+Hyperforin,Primidone,LT00261,vNo-DILI-concern,DILI_negative,0.125
+Hyperforin,Procyclidine hydrochloride,LT02219,vNo-DILI-concern,DILI_negative,0.05952380952380952
+Hyperforin,Propantheline bromide,LT00753,vNo-DILI-concern,DILI_negative,0.10588235294117647
+Hyperforin,Protirelin,LT00349,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Protriptyline hydrochloride,LT00848,vNo-DILI-concern,DILI_negative,0.05063291139240506
+Hyperforin,Prucalopride succinate,LT03197,vNo-DILI-concern,DILI_negative,0.07547169811320754
+Hyperforin,Pseudoephedrine hydrochloride,LT00137,vNo-DILI-concern,DILI_negative,0.06944444444444445
+Hyperforin,Pyrantel pamoate,LT01713,vNo-DILI-concern,DILI_negative,0.1
+Hyperforin,Pyridoxine hydrochloride,LT01980,vNo-DILI-concern,DILI_negative,0.0821917808219178
+Hyperforin,Quazepam,LT01721,vNo-DILI-concern,DILI_negative,0.041666666666666664
+Hyperforin,Ramelteon,LT01217,vNo-DILI-concern,DILI_negative,0.08888888888888889
+Hyperforin,Ranolazine,LT01192,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Hyperforin,Regadenoson,LT00646,vNo-DILI-concern,DILI_negative,0.08653846153846154
+Hyperforin,Remimazolam besylate,LT03744,vNo-DILI-concern,DILI_negative,0.06086956521739131
+Hyperforin,Reserpine,LT01729,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Hyperforin,Riboflavin 5'-phosphate,LT01479,vNo-DILI-concern,DILI_negative,0.09183673469387756
+Hyperforin,Rifamycin sodium,LT03745,vNo-DILI-concern,DILI_negative,0.10743801652892562
+Hyperforin,Rimantadine hydrochloride,LT00937,vNo-DILI-concern,DILI_negative,0.10606060606060606
+Hyperforin,Rimegepant sulfate,LT03746,vNo-DILI-concern,DILI_negative,0.058823529411764705
+Hyperforin,Riociguat,LT02894,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Hyperforin,Risdiplam,LT03748,vNo-DILI-concern,DILI_negative,0.05660377358490566
+Hyperforin,Rocuronium bromide,LT00957,vNo-DILI-concern,DILI_negative,0.12727272727272726
+Hyperforin,Roflumilast,LT00619,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Rolapitant hydrochloride,LT03749,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Romidepsin,LT00669,vNo-DILI-concern,DILI_negative,0.10784313725490197
+Hyperforin,Rubidium chloride rb-82,LT00928,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Safinamide mesylate,LT03752,vNo-DILI-concern,DILI_negative,0.08602150537634409
+Hyperforin,Sapropterin dihydrochloride,LT01262,vNo-DILI-concern,DILI_negative,0.10714285714285714
+Hyperforin,Sarecycline hydrochloride,LT03753,vNo-DILI-concern,DILI_negative,0.14423076923076922
+Hyperforin,Scopolamine,LT01974,vNo-DILI-concern,DILI_negative,0.10465116279069768
+Hyperforin,Selegiline hydrochloride,LT01749,vNo-DILI-concern,DILI_negative,0.0641025641025641
+Hyperforin,Selexipag,LT03755,vNo-DILI-concern,DILI_negative,0.08080808080808081
+Hyperforin,Setmelanotide acetate,LT03760,vNo-DILI-concern,DILI_negative,0.08571428571428572
+Hyperforin,Sevelamer hydrochloride,LT01039,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Hyperforin,Sincalide,LT00350,vNo-DILI-concern,DILI_negative,0.07936507936507936
+Hyperforin,Sodium bicarbonate,LT02337,vNo-DILI-concern,DILI_negative,0.05084745762711865
+Hyperforin,Sodium fluoride f-18,LT03914,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Sodium lactate,LT00330,vNo-DILI-concern,DILI_negative,0.09836065573770492
+Hyperforin,Sodium nitroprusside,LT00880,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Sodium oxybate,LT00480,vNo-DILI-concern,DILI_negative,0.06060606060606061
+Hyperforin,Sodium thiosulfate,LT00439,vNo-DILI-concern,DILI_negative,0.03278688524590164
+Hyperforin,Sodium zirconium cyclosilicate,LT03762,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Sofosbuvir,LT02901,vNo-DILI-concern,DILI_negative,0.11926605504587157
+Hyperforin,Solriamfetol hydrochloride,LT03763,vNo-DILI-concern,DILI_negative,0.09210526315789473
+Hyperforin,Sorbitol,LT02010,vNo-DILI-concern,DILI_negative,0.06557377049180328
+Hyperforin,Sterile water,LT01294,vNo-DILI-concern,DILI_negative,0.0
+Hyperforin,Stiripentol,LT02728,vNo-DILI-concern,DILI_negative,0.0875
+Hyperforin,Streptomycin sulfate,LT00145,vNo-DILI-concern,DILI_negative,0.10377358490566038
+Hyperforin,Succinylcholine chloride,LT00749,vNo-DILI-concern,DILI_negative,0.07246376811594203
+Hyperforin,Sufentanil citrate,LT00920,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Sugammadex sodium,LT03224,vNo-DILI-concern,DILI_negative,0.075
+Hyperforin,Suvorexant,LT03766,vNo-DILI-concern,DILI_negative,0.06542056074766354
+Hyperforin,Tafamidis meglumine,LT03576,vNo-DILI-concern,DILI_negative,0.09183673469387756
+Hyperforin,Tapentadol hydrochloride,LT00664,vNo-DILI-concern,DILI_negative,0.0875
+Hyperforin,Tecovirimat,LT03770,vNo-DILI-concern,DILI_negative,0.08139534883720931
+Hyperforin,Temsirolimus,LT01261,vNo-DILI-concern,DILI_negative,0.10810810810810811
+Hyperforin,Tenapanor hydrochloride,LT03773,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Hyperforin,Terazosin hydrochloride,LT01787,vNo-DILI-concern,DILI_negative,0.06930693069306931
+Hyperforin,Theophylline sodium glycinate,LT00154,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Thiamine hydrochloride,LT01981,vNo-DILI-concern,DILI_negative,0.054945054945054944
+Hyperforin,Thyrotropin alfa,LT00751,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Ticagrelor,LT02413,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Hyperforin,Tiludronate disodium,LT00998,vNo-DILI-concern,DILI_negative,0.05194805194805195
+Hyperforin,Tirofiban hydrochloride,LT01037,vNo-DILI-concern,DILI_negative,0.09
+Hyperforin,Topotecan hydrochloride,LT01824,vNo-DILI-concern,DILI_negative,0.102803738317757
+Hyperforin,Tranexamic acid,LT00923,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Hyperforin,Trientine hydrochloride,LT00375,vNo-DILI-concern,DILI_negative,0.015384615384615385
+Hyperforin,Triheptanoin,LT03777,vNo-DILI-concern,DILI_negative,0.0945945945945946
+Hyperforin,Trihexyphenidyl hydrochloride,LT01839,vNo-DILI-concern,DILI_negative,0.05952380952380952
+Hyperforin,Triprolidine hydrochloride,LT00798,vNo-DILI-concern,DILI_negative,0.08045977011494253
+Hyperforin,Trospium chloride,LT00516,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Hyperforin,Tyramine,LT02356,vNo-DILI-concern,DILI_negative,0.058823529411764705
+Hyperforin,Ubrogepant,LT03780,vNo-DILI-concern,DILI_negative,0.11206896551724138
+Hyperforin,Umeclidinium bromide,LT03782,vNo-DILI-concern,DILI_negative,0.056818181818181816
+Hyperforin,Uridine triacetate,LT03784,vNo-DILI-concern,DILI_negative,0.10227272727272728
+Hyperforin,Urofollitropin,LT00929,vNo-DILI-concern,DILI_negative,0.08955223880597014
+Hyperforin,Urokinase,LT01229,vNo-DILI-concern,DILI_negative,0.07368421052631578
+Hyperforin,Vecuronium bromide,LT00916,vNo-DILI-concern,DILI_negative,0.09615384615384616
+Hyperforin,Vericiguat,LT03787,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Hyperforin,Vibegron,LT03788,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Hyperforin,Vilazodone hydrochloride,LT02391,vNo-DILI-concern,DILI_negative,0.06306306306306306
+Hyperforin,Viloxazine hydrochloride,LT01861,vNo-DILI-concern,DILI_negative,0.058823529411764705
+Hyperforin,Viltolarsen,LT03789,vNo-DILI-concern,DILI_negative,0.05755395683453238
+Hyperforin,Vitamin C,LT02009,vNo-DILI-concern,DILI_negative,0.11267605633802817
+Hyperforin,Vitamin E,LT01516,vNo-DILI-concern,DILI_negative,0.1566265060240964
+Hyperforin,Voclosporin,LT03563,vNo-DILI-concern,DILI_negative,0.09166666666666666
+Hyperforin,Vorapaxar sulfate,LT03790,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Hyperforin,Vorinostat,LT00462,vNo-DILI-concern,DILI_negative,0.06578947368421052
+Hyperforin,Vosoritide,LT03791,vNo-DILI-concern,DILI_negative,0.06726457399103139
+Hyperforin,Voxelotor,LT03792,vNo-DILI-concern,DILI_negative,0.10638297872340426
+Hyperforin,Zaleplon,LT00648,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Quercetin,Abacavir sulfate,LT00040,vMOST-DILI-concern,DILI_positive,0.0625
+Quercetin,Abemaciclib,LT03619,vLess-DILI-concern,DILI_positive,0.05434782608695652
+Quercetin,Abiraterone acetate,LT02339,vMost-DILI-concern,DILI_positive,0.07317073170731707
+Quercetin,Acamprosate calcium,LT01141,vLess-DILI-concern,DILI_positive,0.03571428571428571
+Quercetin,Acarbose,LT01034,vMost-DILI-concern,DILI_positive,0.05263157894736842
+Quercetin,Acebutolol hydrochloride,LT01035,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Quercetin,Aceclofenac,LT01853,vLess-DILI-concern,DILI_positive,0.07462686567164178
+Quercetin,Acetaminophen,LT00004,vMost-DILI-concern,DILI_positive,0.14893617021276595
+Quercetin,Acetazolamide,LT00498,vMost-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Acitretin,LT01042,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Acyclovir,LT00041,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Quercetin,Adefovir dipivoxil,LT01155,vLess-DILI-concern,DILI_positive,0.06172839506172839
+Quercetin,Alaproclate,LT02213,vMost-DILI-concern,DILI_positive,0.08064516129032258
+Quercetin,Alatrofloxacin mesylate,LT00461,vMost-DILI-concern,DILI_positive,0.08247422680412371
+Quercetin,Albendazole,LT00499,vMost-DILI-concern,DILI_positive,0.08571428571428572
+Quercetin,Alclofenac,LT00692,vMost-DILI-concern,DILI_positive,0.0967741935483871
+Quercetin,Alendronate sodium,LT00980,vLess-DILI-concern,DILI_positive,0.034482758620689655
+Quercetin,Alfuzosin hydrochloride,LT01107,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Aliskiren hemifumarate,LT01244,vLess-DILI-concern,DILI_positive,0.061855670103092786
+Quercetin,Allopurinol,LT00043,vMost-DILI-concern,DILI_positive,0.07407407407407407
+Quercetin,Alosetron hydrochloride,LT01070,vLess-DILI-concern,DILI_positive,0.06493506493506493
+Quercetin,Alpelisib,LT03621,vLess-DILI-concern,DILI_positive,0.07954545454545454
+Quercetin,Alpidem,LT01060,vMost-DILI-concern,DILI_positive,0.11428571428571428
+Quercetin,Alprazolam,LT00501,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Amiloride hydrochloride,LT02070,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Amineptine,LT00045,vMost-DILI-concern,DILI_positive,0.078125
+Quercetin,Aminosalicylic acid ,LT00505,vMOST-DILI-concern,DILI_positive,0.19148936170212766
+Quercetin,Amiodarone hydrochloride,LT00046,vMost-DILI-concern,DILI_positive,0.11392405063291139
+Quercetin,Amisulpride,LT01793,vLess-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Amitriptyline hydrochloride,LT00047,vLess-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Amlodipine besylate,LT00175,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Amoxicillin,LT00507,vLess-DILI-concern,DILI_positive,0.125
+Quercetin,Amphetamine sulfate,LT02100,vLess-DILI-concern,DILI_positive,0.09259259259259259
+Quercetin,Amphotericin B,LT00048,vLess-DILI-concern,DILI_positive,0.05660377358490566
+Quercetin,Ampicillin sodium,LT00049,vLess-DILI-concern,DILI_positive,0.09333333333333334
+Quercetin,Anastrozole,LT00263,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Anidulafungin,LT01203,vMost-DILI-concern,DILI_positive,0.08849557522123894
+Quercetin,Apixaban,LT02418,vLess-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Aplaviroc,LT00693,vMost-DILI-concern,DILI_positive,0.06382978723404255
+Quercetin,Aripiprazole,LT01143,vLess-DILI-concern,DILI_positive,0.07317073170731707
+Quercetin,Aripiprazole lauroxil,LT03624,vLess-DILI-concern,DILI_positive,0.07291666666666667
+Quercetin,Aspirin,LT00053,vLess-DILI-concern,DILI_positive,0.09433962264150944
+Quercetin,Atazanavir sulfate,LT01199,vLess-DILI-concern,DILI_positive,0.07446808510638298
+Quercetin,Atenolol,LT00277,vLess-DILI-concern,DILI_positive,0.07575757575757576
+Quercetin,Atomoxetine hydrochloride,LT01139,vMost-DILI-concern,DILI_positive,0.046875
+Quercetin,Atorvastatin calcium,LT00258,vMost-DILI-concern,DILI_positive,0.08045977011494253
+Quercetin,Auranofin,LT02166,vLess-DILI-concern,DILI_positive,0.045454545454545456
+Quercetin,Azathioprine,LT00006,vMost-DILI-concern,DILI_positive,0.07042253521126761
+Quercetin,Azithromycin,LT00265,vLess-DILI-concern,DILI_positive,0.045871559633027525
+Quercetin,Baclofen,LT01113,vLess-DILI-concern,DILI_positive,0.08928571428571429
+Quercetin,Benazepril hydrochloride,LT01116,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Quercetin,Bendazac,LT01117,vMost-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Bendroflumethiazide,LT00825,vLess-DILI-concern,DILI_positive,0.08
+Quercetin,Benoxaprofen,LT00513,vMost-DILI-concern,DILI_positive,0.1746031746031746
+Quercetin,Benzarone,LT01120,vMost-DILI-concern,DILI_positive,0.1724137931034483
+Quercetin,Benzbromarone,LT00278,vMost-DILI-concern,DILI_positive,0.18032786885245902
+Quercetin,Benziodarone,LT01121,vMost-DILI-concern,DILI_positive,0.18333333333333332
+Quercetin,Benzonatate,LT00800,vLess-DILI-concern,DILI_positive,0.07462686567164178
+Quercetin,Bexarotene,LT01064,vMost-DILI-concern,DILI_positive,0.0967741935483871
+Quercetin,Bicalutamide,LT00056,vMost-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Bortezomib,LT01202,vMost-DILI-concern,DILI_positive,0.06329113924050633
+Quercetin,Bosentan,LT01140,vMost-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Bosutinib monohydrate,LT02349,vMost-DILI-concern,DILI_positive,0.03296703296703297
+Quercetin,Bromfenac sodium,LT00519,vMost-DILI-concern,DILI_positive,0.07575757575757576
+Quercetin,Bromocriptine mesylate,LT00279,vLess-DILI-concern,DILI_positive,0.0782608695652174
+Quercetin,Bupropion hydrochloride,LT00058,vLess-DILI-concern,DILI_positive,0.11666666666666667
+Quercetin,Busulfan,LT00280,vMost-DILI-concern,DILI_positive,0.020833333333333332
+Quercetin,Canagliflozin,LT02899,vLess-DILI-concern,DILI_positive,0.1038961038961039
+Quercetin,Candesartan cilexetil,LT01022,vLess-DILI-concern,DILI_positive,0.07766990291262135
+Quercetin,Capecitabine,LT02018,vLess-DILI-concern,DILI_positive,0.07407407407407407
+Quercetin,Capmatinib hydrochloride,LT03646,vLess-DILI-concern,DILI_positive,0.09195402298850575
+Quercetin,Captopril,LT00059,vLess-DILI-concern,DILI_positive,0.031746031746031744
+Quercetin,Carbamazepine,LT00060,vMost-DILI-concern,DILI_positive,0.11764705882352941
+Quercetin,Carbenicillin disodium,LT01159,vLess-DILI-concern,DILI_positive,0.09333333333333334
+Quercetin,Carboplatin,LT00061,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Carfilzomib,LT02395,vMost-DILI-concern,DILI_positive,0.07865168539325842
+Quercetin,Carvedilol,LT00207,vLess-DILI-concern,DILI_positive,0.06493506493506493
+Quercetin,Cefaclor,LT01166,vLess-DILI-concern,DILI_positive,0.0945945945945946
+Quercetin,Cefadroxil hemihydrate,LT01167,vLess-DILI-concern,DILI_positive,0.12
+Quercetin,Cefazolin sodium,LT01171,vLess-DILI-concern,DILI_positive,0.06382978723404255
+Quercetin,Cefdinir,LT01289,vLess-DILI-concern,DILI_positive,0.05747126436781609
+Quercetin,Cefditoren pivoxil,LT01087,vLess-DILI-concern,DILI_positive,0.05504587155963303
+Quercetin,Cefepime hydrochloride,LT01172,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Cefixime,LT01173,vLess-DILI-concern,DILI_positive,0.053763440860215055
+Quercetin,Cefoperazone sodium,LT01176,vLess-DILI-concern,DILI_positive,0.08411214953271028
+Quercetin,Cefotaxime sodium,LT01177,vLess-DILI-concern,DILI_positive,0.06315789473684211
+Quercetin,Cefprozil,LT01182,vLess-DILI-concern,DILI_positive,0.11392405063291139
+Quercetin,Ceftaroline fosamil,LT02387,vLess-DILI-concern,DILI_positive,0.06140350877192982
+Quercetin,Ceftazidime,LT00062,vLess-DILI-concern,DILI_positive,0.049019607843137254
+Quercetin,Ceftriaxone sodium,LT01185,vLess-DILI-concern,DILI_positive,0.05714285714285714
+Quercetin,Cefuroxime sodium,LT01186,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Quercetin,Celecoxib,LT00252,vLess-DILI-concern,DILI_positive,0.12121212121212122
+Quercetin,Cephalexin,LT01189,vLess-DILI-concern,DILI_positive,0.0945945945945946
+Quercetin,Ceritinib,LT03596,vMost-DILI-concern,DILI_positive,0.05263157894736842
+Quercetin,Cetirizine hydrochloride,LT01190,vLess-DILI-concern,DILI_positive,0.06944444444444445
+Quercetin,Chlorambucil,LT00286,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Chlorcyclizine hydrochloride,LT00066,vLess-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Chlordiazepoxide hydrochloride,LT01198,vLess-DILI-concern,DILI_positive,0.08571428571428572
+Quercetin,Chlormezanone,LT01201,vMost-DILI-concern,DILI_positive,0.08196721311475409
+Quercetin,Chloroquine phosphate,LT01207,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Chlorothiazide,LT01208,vLess-DILI-concern,DILI_positive,0.07936507936507936
+Quercetin,Chlorpromazine hydrochloride,LT00068,vLess-DILI-concern,DILI_positive,0.057971014492753624
+Quercetin,Chlorpropamide,LT00379,vLess-DILI-concern,DILI_positive,0.08196721311475409
+Quercetin,Chlorzoxazone,LT00067,vMost-DILI-concern,DILI_positive,0.18
+Quercetin,Cimetidine,LT01218,vLess-DILI-concern,DILI_positive,0.0547945205479452
+Quercetin,Cinchophen,LT01219,vMost-DILI-concern,DILI_positive,0.12727272727272726
+Quercetin,Ciprofloxacin hydrochloride,LT00178,vMost-DILI-concern,DILI_positive,0.09333333333333334
+Quercetin,Cisplatin,LT00071,vLess-DILI-concern,DILI_positive,0.0
+Quercetin,Citalopram hydrobromide,LT00219,vLess-DILI-concern,DILI_positive,0.06493506493506493
+Quercetin,Cladribine,LT01224,vLess-DILI-concern,DILI_positive,0.0684931506849315
+Quercetin,Clarithromycin,LT00187,vMost-DILI-concern,DILI_positive,0.049019607843137254
+Quercetin,Clindamycin hydrochloride,LT01225,vLess-DILI-concern,DILI_positive,0.03529411764705882
+Quercetin,Clindamycin phosphate,LT02346,vLess-DILI-concern,DILI_positive,0.03260869565217391
+Quercetin,Clofibrate,LT00011,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Clomacran,LT00694,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Quercetin,Clometacin,LT01228,vMost-DILI-concern,DILI_positive,0.08450704225352113
+Quercetin,Clomiphene citrate,LT00233,vLess-DILI-concern,DILI_positive,0.06493506493506493
+Quercetin,Clomipramine hydrochloride,LT00185,vMost-DILI-concern,DILI_positive,0.057971014492753624
+Quercetin,Clonazepam,LT00532,vLess-DILI-concern,DILI_positive,0.1
+Quercetin,Clopidogrel bisulfate,LT01023,vLess-DILI-concern,DILI_positive,0.07792207792207792
+Quercetin,Clotrimazole,LT00248,vLess-DILI-concern,DILI_positive,0.047619047619047616
+Quercetin,Cloxacillin sodium,LT01235,vLess-DILI-concern,DILI_positive,0.08045977011494253
+Quercetin,Clozapine,LT00287,vMost-DILI-concern,DILI_positive,0.056338028169014086
+Quercetin,Colestipol hydrochloride,LT00881,vLess-DILI-concern,DILI_positive,0.022222222222222223
+Quercetin,Crizotinib,LT02436,vMost-DILI-concern,DILI_positive,0.056179775280898875
+Quercetin,Cromoglicate,LT02004,vLess-DILI-concern,DILI_positive,0.18032786885245902
+Quercetin,Cyclobenzaprine hydrochloride,LT01249,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Cyclofenil,LT01250,vMost-DILI-concern,DILI_positive,0.08620689655172414
+Quercetin,Cyclophosphamide,LT00013,vLess-DILI-concern,DILI_positive,0.03389830508474576
+Quercetin,Cyclosporine,LT00380,vMost-DILI-concern,DILI_positive,0.04854368932038835
+Quercetin,Cyproheptadine hydrochloride,LT01255,vLess-DILI-concern,DILI_positive,0.05084745762711865
+Quercetin,Cytarabine,LT00209,vMost-DILI-concern,DILI_positive,0.109375
+Quercetin,Dabigatran etexilate mesylate,LT02345,vLess-DILI-concern,DILI_positive,0.06306306306306306
+Quercetin,Dacarbazine,LT00288,vMost-DILI-concern,DILI_positive,0.06557377049180328
+Quercetin,Dacomitinib,LT03652,vLess-DILI-concern,DILI_positive,0.07446808510638298
+Quercetin,Dactinomycin,LT00079,vMost-DILI-concern,DILI_positive,0.08771929824561403
+Quercetin,Dalteparin sodium,LT00961,vLess-DILI-concern,DILI_positive,0.019230769230769232
+Quercetin,Danazol,LT00539,vMost-DILI-concern,DILI_positive,0.04938271604938271
+Quercetin,Dantrolene sodium,LT00080,vMost-DILI-concern,DILI_positive,0.15714285714285714
+Quercetin,Dapsone,LT00289,vLess-DILI-concern,DILI_positive,0.08695652173913043
+Quercetin,Daptomycin,LT01200,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Darunavir,LT01243,vMost-DILI-concern,DILI_positive,0.07368421052631578
+Quercetin,Dasatinib,LT01248,vLess-DILI-concern,DILI_positive,0.06451612903225806
+Quercetin,Deferasirox,LT00563,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Deferoxamine mesylate,LT00386,vLess-DILI-concern,DILI_positive,0.028169014084507043
+Quercetin,Desloratadine,LT01085,vLess-DILI-concern,DILI_positive,0.057971014492753624
+Quercetin,Desvenlafaxine succinate,LT00573,vLess-DILI-concern,DILI_positive,0.1044776119402985
+Quercetin,Dexlansoprazole,LT01266,vLess-DILI-concern,DILI_positive,0.05063291139240506
+Quercetin,Dexmethylphenidate hydrochloride,LT02909,vLess-DILI-concern,DILI_positive,0.109375
+Quercetin,Diazepam,LT00230,vLess-DILI-concern,DILI_positive,0.1076923076923077
+Quercetin,Diclofenac sodium,LT00084,vMost-DILI-concern,DILI_positive,0.08064516129032258
+Quercetin,Dicloxacillin sodium,LT02041,vLess-DILI-concern,DILI_positive,0.08235294117647059
+Quercetin,Didanosine,LT01285,vMost-DILI-concern,DILI_positive,0.08695652173913043
+Quercetin,Diflunisal,LT00085,vMost-DILI-concern,DILI_positive,0.2037037037037037
+Quercetin,Diltiazem hydrochloride,LT01292,vMost-DILI-concern,DILI_positive,0.07317073170731707
+Quercetin,Dimethyl fumarate,LT02877,vMost-DILI-concern,DILI_positive,0.044444444444444446
+Quercetin,Disopyramide phosphate,LT01302,vLess-DILI-concern,DILI_positive,0.06756756756756757
+Quercetin,Disulfiram,LT00295,vMost-DILI-concern,DILI_positive,0.02040816326530612
+Quercetin,Divalproex sodium,LT00684,vMost-DILI-concern,DILI_positive,0.05660377358490566
+Quercetin,Docetaxel,LT01309,vLess-DILI-concern,DILI_positive,0.0603448275862069
+Quercetin,Dofetilide,LT01040,vLess-DILI-concern,DILI_positive,0.05970149253731343
+Quercetin,Dolutegravir sodium,LT02905,vMost-DILI-concern,DILI_positive,0.11494252873563218
+Quercetin,Donepezil hydrochloride,LT00052,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Quercetin,Doxazosin mesylate,LT01313,vLess-DILI-concern,DILI_positive,0.07865168539325842
+Quercetin,Doxepin hydrochloride,LT01314,vLess-DILI-concern,DILI_positive,0.06060606060606061
+Quercetin,Doxorubicin hydrochloride,LT00335,vLess-DILI-concern,DILI_positive,0.09278350515463918
+Quercetin,Doxycycline,LT00393,vLess-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Dronedarone hydrochloride,LT00671,vMost-DILI-concern,DILI_positive,0.10714285714285714
+Quercetin,Droxicam,LT01318,vMost-DILI-concern,DILI_positive,0.11428571428571428
+Quercetin,Duloxetine hydrochloride,LT02035,vMost-DILI-concern,DILI_positive,0.041666666666666664
+Quercetin,Ebrotidine,LT01849,vMost-DILI-concern,DILI_positive,0.060240963855421686
+Quercetin,Efavirenz,LT01323,vMost-DILI-concern,DILI_positive,0.1
+Quercetin,Eltrombopag olamine,LT00663,vMost-DILI-concern,DILI_positive,0.11627906976744186
+Quercetin,Enalapril maleate,LT00296,vLess-DILI-concern,DILI_positive,0.05952380952380952
+Quercetin,Enoxaparin sodium,LT00954,vLess-DILI-concern,DILI_positive,0.047244094488188976
+Quercetin,Entacapone,LT01968,vLess-DILI-concern,DILI_positive,0.1323529411764706
+Quercetin,Eplerenone,LT01149,vLess-DILI-concern,DILI_positive,0.08235294117647059
+Quercetin,Erlotinib hydrochloride,LT01214,vMost-DILI-concern,DILI_positive,0.05128205128205128
+Quercetin,Erythromycin estolate,LT00092,vMost-DILI-concern,DILI_positive,0.04
+Quercetin,Escitalopram oxalate,LT02929,vLess-DILI-concern,DILI_positive,0.0875
+Quercetin,Esomeprazole sodium,LT01589,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Quercetin,Estradiol valerate,LT00016,vLess-DILI-concern,DILI_positive,0.10126582278481013
+Quercetin,Estramustine phosphate sodium,LT01342,vMost-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Eszopiclone,LT01161,vLess-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Ethambutol hydrochloride,LT01345,vMost-DILI-concern,DILI_positive,0.0196078431372549
+Quercetin,Ethionamide,LT01348,vLess-DILI-concern,DILI_positive,0.08928571428571429
+Quercetin,Etodolac,LT00240,vMost-DILI-concern,DILI_positive,0.0821917808219178
+Quercetin,Etoposide,LT00094,vLess-DILI-concern,DILI_positive,0.0989010989010989
+Quercetin,Etravirine,LT00653,vMost-DILI-concern,DILI_positive,0.05405405405405406
+Quercetin,Everolimus,LT01267,vLess-DILI-concern,DILI_positive,0.04477611940298507
+Quercetin,Exemestane,LT00394,vMost-DILI-concern,DILI_positive,0.056338028169014086
+Quercetin,Exifone,LT01359,vMost-DILI-concern,DILI_positive,0.20833333333333334
+Quercetin,Ezetimibe,LT01153,vLess-DILI-concern,DILI_positive,0.11594202898550725
+Quercetin,Falnidamol,LT01870,vMost-DILI-concern,DILI_positive,0.047619047619047616
+Quercetin,Famotidine,LT00095,vLess-DILI-concern,DILI_positive,0.07042253521126761
+Quercetin,Febuxostat,LT00554,vMost-DILI-concern,DILI_positive,0.10810810810810811
+Quercetin,Felbamate,LT00097,vMost-DILI-concern,DILI_positive,0.09259259259259259
+Quercetin,Felodipine,LT00397,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Fenclozic acid,LT01846,vMost-DILI-concern,DILI_positive,0.11864406779661017
+Quercetin,Fenofibrate,LT00098,vLess-DILI-concern,DILI_positive,0.078125
+Quercetin,Fenofibric acid,LT00670,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Fenoprofen calcium,LT00099,vMost-DILI-concern,DILI_positive,0.09836065573770492
+Quercetin,Fialuridine,LT01371,vMost-DILI-concern,DILI_positive,0.08823529411764706
+Quercetin,Fiduxosin,LT00701,vMost-DILI-concern,DILI_positive,0.0673076923076923
+Quercetin,Finasteride,LT00167,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Quercetin,Fingolimod hydrochloride,LT02342,vMost-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Fipexide,LT01372,vMost-DILI-concern,DILI_positive,0.0958904109589041
+Quercetin,Flavoxate hydrochloride,LT00857,vLess-DILI-concern,DILI_positive,0.14473684210526316
+Quercetin,Flecainide acetate,LT01375,vLess-DILI-concern,DILI_positive,0.0875
+Quercetin,Fluconazole,LT00179,vMost-DILI-concern,DILI_positive,0.078125
+Quercetin,Fluorouracil,LT01029,vLess-DILI-concern,DILI_positive,0.08163265306122448
+Quercetin,Fluoxetine hydrochloride,LT00018,vLess-DILI-concern,DILI_positive,0.04411764705882353
+Quercetin,Flurazepam hydrochloride,LT01394,vLess-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Flurbiprofen sodium,LT00298,vLess-DILI-concern,DILI_positive,0.11475409836065574
+Quercetin,Flutamide,LT00101,vMost-DILI-concern,DILI_positive,0.109375
+Quercetin,Fluvastatin sodium,LT00172,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Quercetin,Fondaparinux sodium,LT01125,vLess-DILI-concern,DILI_positive,0.031578947368421054
+Quercetin,Fosfomycin tromethamine,LT01398,vLess-DILI-concern,DILI_positive,0.05357142857142857
+Quercetin,Fosinopril sodium,LT01399,vLess-DILI-concern,DILI_positive,0.05154639175257732
+Quercetin,Fosphenytoin sodium,LT01400,vMost-DILI-concern,DILI_positive,0.078125
+Quercetin,Fospropofol disodium,LT00658,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Gabapentin,LT00300,vLess-DILI-concern,DILI_positive,0.037037037037037035
+Quercetin,Gefitinib,LT00402,vMost-DILI-concern,DILI_positive,0.056179775280898875
+Quercetin,Gemcitabine hydrochloride,LT01407,vMost-DILI-concern,DILI_positive,0.10294117647058823
+Quercetin,Gemfibrozil,LT00020,vMost-DILI-concern,DILI_positive,0.11475409836065574
+Quercetin,Gemifloxacin mesylate,LT01084,vLess-DILI-concern,DILI_positive,0.07446808510638298
+Quercetin,Givosiran sodium,LT03686,vLess-DILI-concern,DILI_positive,0.038461538461538464
+Quercetin,Glafenine,LT02092,vMost-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Glatiramer acetate,LT00985,vLess-DILI-concern,DILI_positive,0.1
+Quercetin,Glimepiride,LT00173,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Glipizide,LT00243,vLess-DILI-concern,DILI_positive,0.06097560975609756
+Quercetin,Glyburide,LT00302,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Quercetin,Griseofulvin,LT00558,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Haloperidol decanoate,LT02427,vLess-DILI-concern,DILI_positive,0.05952380952380952
+Quercetin,Haloperidol lactate,LT00405,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Heparin sodium,LT01426,vLess-DILI-concern,DILI_positive,0.04040404040404041
+Quercetin,Hydralazine hydrochloride,LT00559,vLess-DILI-concern,DILI_positive,0.05263157894736842
+Quercetin,Hydrochlorothiazide,LT01433,vLess-DILI-concern,DILI_positive,0.07936507936507936
+Quercetin,Hydroxychloroquine sulfate,LT02026,vLess-DILI-concern,DILI_positive,0.07317073170731707
+Quercetin,Hydroxyurea,LT00106,vMost-DILI-concern,DILI_positive,0.047619047619047616
+Quercetin,Ibandronate sodium,LT01156,vLess-DILI-concern,DILI_positive,0.046153846153846156
+Quercetin,Ibrutinib,LT02898,vMost-DILI-concern,DILI_positive,0.09195402298850575
+Quercetin,Ibufenac,LT00560,vMost-DILI-concern,DILI_positive,0.09615384615384616
+Quercetin,Ibuprofen,LT00199,vLess-DILI-concern,DILI_positive,0.09259259259259259
+Quercetin,Idelalisib,LT03610,vMost-DILI-concern,DILI_positive,0.06818181818181818
+Quercetin,Ifosfamide,LT00562,vLess-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Imatinib mesylate,LT00107,vMost-DILI-concern,DILI_positive,0.07291666666666667
+Quercetin,Imipramine hydrochloride,LT00108,vLess-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Inclisiran sodium,LT03691,vLess-DILI-concern,DILI_positive,0.03571428571428571
+Quercetin,Indomethacin,LT00022,vMost-DILI-concern,DILI_positive,0.0821917808219178
+Quercetin,Interferon alfa-2b,LT01306,vMost-DILI-concern,DILI_positive,0.058823529411764705
+Quercetin,Iproniazid,LT00109,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Irbesartan,LT01005,vLess-DILI-concern,DILI_positive,0.0975609756097561
+Quercetin,Irinotecan hydrochloride,LT01466,vLess-DILI-concern,DILI_positive,0.0761904761904762
+Quercetin,Isaxonine,LT00696,vMost-DILI-concern,DILI_positive,0.04
+Quercetin,Isoniazid,LT00306,vMost-DILI-concern,DILI_positive,0.1
+Quercetin,Isotretinoin,LT00234,vMost-DILI-concern,DILI_positive,0.04285714285714286
+Quercetin,Isradipine,LT01475,vLess-DILI-concern,DILI_positive,0.08
+Quercetin,Itraconazole,LT00182,vMost-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Ivacaftor,LT02431,vLess-DILI-concern,DILI_positive,0.14492753623188406
+Quercetin,Ivermectin,LT00568,vLess-DILI-concern,DILI_positive,0.047244094488188976
+Quercetin,Ketamine hydrochloride,LT00859,vLess-DILI-concern,DILI_positive,0.08064516129032258
+Quercetin,Ketoconazole,LT00111,vMost-DILI-concern,DILI_positive,0.07368421052631578
+Quercetin,Ketoprofen,LT00023,vLess-DILI-concern,DILI_positive,0.10714285714285714
+Quercetin,Ketorolac tromethamine,LT00204,vLess-DILI-concern,DILI_positive,0.07042253521126761
+Quercetin,Labetalol hydrochloride,LT00112,vMost-DILI-concern,DILI_positive,0.1267605633802817
+Quercetin,Lamivudine,LT00569,vLess-DILI-concern,DILI_positive,0.10606060606060606
+Quercetin,Lamotrigine,LT01481,vMost-DILI-concern,DILI_positive,0.05
+Quercetin,Lansoprazole,LT00307,vLess-DILI-concern,DILI_positive,0.05063291139240506
+Quercetin,Lapatinib ditosylate,LT02204,vMost-DILI-concern,DILI_positive,0.10185185185185185
+Quercetin,Leflunomide,LT00113,vMost-DILI-concern,DILI_positive,0.09375
+Quercetin,Lenalidomide,LT01238,vLess-DILI-concern,DILI_positive,0.07352941176470588
+Quercetin,Letermovir,LT03701,vLess-DILI-concern,DILI_positive,0.07446808510638298
+Quercetin,Letrozole,LT00572,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Leuprolide acetate,LT02019,vLess-DILI-concern,DILI_positive,0.06521739130434782
+Quercetin,Levetiracetam,LT01059,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Levocetirizine dihydrochloride,LT00600,vLess-DILI-concern,DILI_positive,0.06944444444444445
+Quercetin,Levofloxacin,LT01488,vMost-DILI-concern,DILI_positive,0.1038961038961039
+Quercetin,Levothyroxine sodium,LT01072,vLess-DILI-concern,DILI_positive,0.1076923076923077
+Quercetin,Linagliptin,LT02445,vLess-DILI-concern,DILI_positive,0.06382978723404255
+Quercetin,Linezolid,LT01077,vLess-DILI-concern,DILI_positive,0.12
+Quercetin,Liraglutide,LT01268,vLess-DILI-concern,DILI_positive,0.054878048780487805
+Quercetin,Lisinopril,LT01492,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Lomitapide mesylate,LT02398,vMost-DILI-concern,DILI_positive,0.07291666666666667
+Quercetin,Lomustine,LT00575,vLess-DILI-concern,DILI_positive,0.03225806451612903
+Quercetin,Loracarbef,LT01497,vLess-DILI-concern,DILI_positive,0.0958904109589041
+Quercetin,Lorazepam,LT00181,vLess-DILI-concern,DILI_positive,0.10606060606060606
+Quercetin,Losartan potassium,LT01499,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Quercetin,Lovastatin,LT00576,vLess-DILI-concern,DILI_positive,0.06976744186046512
+Quercetin,Lumiracoxib,LT00686,vMost-DILI-concern,DILI_positive,0.08695652173913043
+Quercetin,Macitentan,LT02451,vMost-DILI-concern,DILI_positive,0.0759493670886076
+Quercetin,Maraviroc,LT00640,vMost-DILI-concern,DILI_positive,0.05555555555555555
+Quercetin,Mebanazine,LT01508,vMost-DILI-concern,DILI_positive,0.06
+Quercetin,Mebendazole,LT00308,vLess-DILI-concern,DILI_positive,0.08823529411764706
+Quercetin,Mefenamic acid,LT00116,vMost-DILI-concern,DILI_positive,0.08620689655172414
+Quercetin,Mefloquine hydrochloride,LT01514,vLess-DILI-concern,DILI_positive,0.08
+Quercetin,Meloxicam,LT00117,vLess-DILI-concern,DILI_positive,0.0958904109589041
+Quercetin,Melphalan,LT01517,vLess-DILI-concern,DILI_positive,0.08196721311475409
+Quercetin,Memantine hydrochloride,LT01908,vLess-DILI-concern,DILI_positive,0.0
+Quercetin,Mepazine,LT02110,vMost-DILI-concern,DILI_positive,0.045454545454545456
+Quercetin,Mepivacaine hydrochloride,LT00822,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Mercaptopurine,LT00003,vMost-DILI-concern,DILI_positive,0.038461538461538464
+Quercetin,Meropenem,LT01525,vLess-DILI-concern,DILI_positive,0.04938271604938271
+Quercetin,Mesalamine,LT00414,vLess-DILI-concern,DILI_positive,0.19148936170212766
+Quercetin,Metaxalone,LT00841,vLess-DILI-concern,DILI_positive,0.09836065573770492
+Quercetin,Metformin hydrochloride,LT00119,vLess-DILI-concern,DILI_positive,0.0196078431372549
+Quercetin,Methazolamide,LT01532,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Methimazole,LT00580,vMost-DILI-concern,DILI_positive,0.061224489795918366
+Quercetin,Methotrexate sodium,LT00026,vMost-DILI-concern,DILI_positive,0.056179775280898875
+Quercetin,Methoxsalen,LT01537,vLess-DILI-concern,DILI_positive,0.16071428571428573
+Quercetin,Methyldopa,LT00121,vMost-DILI-concern,DILI_positive,0.21153846153846154
+Quercetin,Methylphenidate hydrochloride,LT01545,vLess-DILI-concern,DILI_positive,0.109375
+Quercetin,Methylprednisolone,LT00478,vLess-DILI-concern,DILI_positive,0.0875
+Quercetin,Methyltestosterone,LT00222,vLess-DILI-concern,DILI_positive,0.07462686567164178
+Quercetin,Metoclopramide hydrochloride,LT01549,vLess-DILI-concern,DILI_positive,0.06944444444444445
+Quercetin,Metoprolol tartrate,LT00309,vLess-DILI-concern,DILI_positive,0.06944444444444445
+Quercetin,Metronidazole,LT00584,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Mexiletine hydrochloride,LT01553,vMost-DILI-concern,DILI_positive,0.05357142857142857
+Quercetin,Micafungin sodium,LT01187,vMost-DILI-concern,DILI_positive,0.09929078014184398
+Quercetin,Mifepristone,LT00184,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Milnacipran hydrochloride,LT01263,vMost-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Minocycline hydrochloride,LT00416,vMost-DILI-concern,DILI_positive,0.12195121951219512
+Quercetin,Mirtazapine,LT01560,vLess-DILI-concern,DILI_positive,0.043478260869565216
+Quercetin,Mitomycin,LT00588,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Mitoxantrone hydrochloride,LT01565,vLess-DILI-concern,DILI_positive,0.17857142857142858
+Quercetin,Modafinil,LT00589,vLess-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Montelukast sodium,LT02007,vLess-DILI-concern,DILI_positive,0.06930693069306931
+Quercetin,Moxifloxacin hydrochloride,LT02008,vLess-DILI-concern,DILI_positive,0.07954545454545454
+Quercetin,Moxisylyte,LT01574,vMost-DILI-concern,DILI_positive,0.07462686567164178
+Quercetin,Mycophenolate mofetil,LT01288,vLess-DILI-concern,DILI_positive,0.09302325581395349
+Quercetin,Nafcillin sodium,LT01583,vLess-DILI-concern,DILI_positive,0.07058823529411765
+Quercetin,Nandrolone phenpropionate,LT02121,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Naproxen,LT00593,vLess-DILI-concern,DILI_positive,0.10526315789473684
+Quercetin,Nefazodone hydrochloride,LT00124,vMost-DILI-concern,DILI_positive,0.06976744186046512
+Quercetin,Nelarabine,LT01233,vLess-DILI-concern,DILI_positive,0.05333333333333334
+Quercetin,Nelfinavir mesylate,LT01012,vLess-DILI-concern,DILI_positive,0.07
+Quercetin,Nevirapine,LT00260,vMost-DILI-concern,DILI_positive,0.07246376811594203
+Quercetin,Niacin,LT00312,vMost-DILI-concern,DILI_positive,0.1
+Quercetin,Nialamide,LT01594,vMost-DILI-concern,DILI_positive,0.1076923076923077
+Quercetin,Nifedipine,LT00313,vLess-DILI-concern,DILI_positive,0.09230769230769231
+Quercetin,Nilotinib hydrochloride,LT00607,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Nilutamide,LT01600,vMost-DILI-concern,DILI_positive,0.1044776119402985
+Quercetin,Nimesulide,LT00314,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Quercetin,Nintedanib esylate,LT03718,vMost-DILI-concern,DILI_positive,0.10416666666666667
+Quercetin,Niperotidine,LT01602,vMost-DILI-concern,DILI_positive,0.09411764705882353
+Quercetin,Nitrefazole,LT01854,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Nitrofurantoin,LT00125,vMost-DILI-concern,DILI_positive,0.14285714285714285
+Quercetin,Nizatidine,LT00315,vLess-DILI-concern,DILI_positive,0.05063291139240506
+Quercetin,Nomifensine,LT01611,vMost-DILI-concern,DILI_positive,0.046875
+Quercetin,Norfloxacin,LT01614,vLess-DILI-concern,DILI_positive,0.0958904109589041
+Quercetin,Nortriptyline hydrochloride,LT01615,vMost-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Obeticholic acid,LT03603,vMost-DILI-concern,DILI_positive,0.0375
+Quercetin,Octreotide acetate,LT01618,vLess-DILI-concern,DILI_positive,0.059322033898305086
+Quercetin,Ofloxacin,LT01620,vLess-DILI-concern,DILI_positive,0.1038961038961039
+Quercetin,Olanzapine,LT00259,vLess-DILI-concern,DILI_positive,0.05555555555555555
+Quercetin,Olaparib,LT03722,vLess-DILI-concern,DILI_positive,0.08641975308641975
+Quercetin,Olmesartan medoxomil,LT01102,vLess-DILI-concern,DILI_positive,0.12631578947368421
+Quercetin,Olsalazine sodium,LT00126,vLess-DILI-concern,DILI_positive,0.1346153846153846
+Quercetin,Omeprazole,LT00206,vLess-DILI-concern,DILI_positive,0.06493506493506493
+Quercetin,Ondansetron hydrochloride,LT01619,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Quercetin,Orlistat,LT02216,vMost-DILI-concern,DILI_positive,0.06097560975609756
+Quercetin,Oseltamivir phosphate,LT02210,vLess-DILI-concern,DILI_positive,0.05194805194805195
+Quercetin,Osimertinib mesylate,LT03727,vLess-DILI-concern,DILI_positive,0.08
+Quercetin,Oxacillin sodium,LT01624,vLess-DILI-concern,DILI_positive,0.0963855421686747
+Quercetin,Oxaliplatin,LT01181,vMost-DILI-concern,DILI_positive,0.041666666666666664
+Quercetin,Oxandrolone,LT00845,vMost-DILI-concern,DILI_positive,0.07352941176470588
+Quercetin,Oxaprozin,LT00429,vLess-DILI-concern,DILI_positive,0.15789473684210525
+Quercetin,Oxcarbazepine,LT01056,vLess-DILI-concern,DILI_positive,0.1016949152542373
+Quercetin,Oxybutynin chloride,LT02084,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Oxycodone hydrochloride,LT00979,vLess-DILI-concern,DILI_positive,0.10256410256410256
+Quercetin,Oxymetholone,LT00235,vMost-DILI-concern,DILI_positive,0.05555555555555555
+Quercetin,Oxyphenisatin,LT00690,vMost-DILI-concern,DILI_positive,0.16981132075471697
+Quercetin,Paclitaxel,LT00430,vLess-DILI-concern,DILI_positive,0.061946902654867256
+Quercetin,Palbociclib,LT03594,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Paliperidone,LT01252,vLess-DILI-concern,DILI_positive,0.10227272727272728
+Quercetin,Pantoprazole sodium,LT00606,vLess-DILI-concern,DILI_positive,0.07407407407407407
+Quercetin,Papaverine hydrochloride,LT01637,vMost-DILI-concern,DILI_positive,0.06153846153846154
+Quercetin,Paroxetine hydrochloride,LT00128,vLess-DILI-concern,DILI_positive,0.06578947368421052
+Quercetin,Pazopanib hydrochloride,LT00672,vMost-DILI-concern,DILI_positive,0.06976744186046512
+Quercetin,Pemoline,LT00246,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Penicillamine,LT00488,vLess-DILI-concern,DILI_positive,0.04
+Quercetin,Penicillin g benzathine,LT01646,vLess-DILI-concern,DILI_positive,0.08974358974358974
+Quercetin,Pentamidine isethionate,LT00129,vLess-DILI-concern,DILI_positive,0.078125
+Quercetin,Pentostatin,LT01651,vMost-DILI-concern,DILI_positive,0.0684931506849315
+Quercetin,Perhexiline,LT00131,vMost-DILI-concern,DILI_positive,0.0
+Quercetin,Perphenazine,LT01655,vLess-DILI-concern,DILI_positive,0.07042253521126761
+Quercetin,Pexidartinib hydrochloride,LT03735,vMost-DILI-concern,DILI_positive,0.0625
+Quercetin,Phenelzine sulfate,LT01657,vLess-DILI-concern,DILI_positive,0.09259259259259259
+Quercetin,Phenobarbital sodium,LT00030,vLess-DILI-concern,DILI_positive,0.08064516129032258
+Quercetin,Phenoxypropazine,LT00703,vMost-DILI-concern,DILI_positive,0.05357142857142857
+Quercetin,Phenytoin,LT00032,vMost-DILI-concern,DILI_positive,0.09803921568627451
+Quercetin,Pioglitazone hydrochloride,LT00134,vLess-DILI-concern,DILI_positive,0.08108108108108109
+Quercetin,Pipamazine,LT00697,vMost-DILI-concern,DILI_positive,0.07792207792207792
+Quercetin,Pirfenidone,LT03550,vMost-DILI-concern,DILI_positive,0.09433962264150944
+Quercetin,Piroxicam,LT01679,vLess-DILI-concern,DILI_positive,0.10144927536231885
+Quercetin,Pirprofen,LT01680,vMost-DILI-concern,DILI_positive,0.0967741935483871
+Quercetin,Pomalidomide,LT02883,vMost-DILI-concern,DILI_positive,0.07575757575757576
+Quercetin,Posaconazole,LT01254,vMost-DILI-concern,DILI_positive,0.07476635514018691
+Quercetin,Pralnacasan,LT00698,vMost-DILI-concern,DILI_positive,0.08163265306122448
+Quercetin,Prasugrel hydrochloride,LT00665,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Quercetin,Pravastatin sodium,LT00186,vLess-DILI-concern,DILI_positive,0.044444444444444446
+Quercetin,Prednisolone,LT00612,vLess-DILI-concern,DILI_positive,0.08974358974358974
+Quercetin,Prednisone,LT00180,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Quercetin,Pregabalin,LT01154,vLess-DILI-concern,DILI_positive,0.037037037037037035
+Quercetin,Procainamide hydrochloride,LT01699,vLess-DILI-concern,DILI_positive,0.08196721311475409
+Quercetin,Procarbazine hydrochloride,LT00614,vLess-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Prochlorperazine maleate,LT00437,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Progesterone,LT00192,vLess-DILI-concern,DILI_positive,0.08571428571428572
+Quercetin,Promethazine hydrochloride,LT00205,vLess-DILI-concern,DILI_positive,0.04918032786885246
+Quercetin,Propafenone hydrochloride,LT01705,vLess-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Propofol,LT01708,vLess-DILI-concern,DILI_positive,0.13333333333333333
+Quercetin,Propoxyphene hydrochloride,LT00083,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Propylthiouracil,LT00136,vMost-DILI-concern,DILI_positive,0.09259259259259259
+Quercetin,Pyrazinamide,LT00166,vLess-DILI-concern,DILI_positive,0.0784313725490196
+Quercetin,Pyridostigmine bromide,LT02081,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Pyrimethamine,LT01716,vLess-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Quetiapine fumarate,LT00267,vLess-DILI-concern,DILI_positive,0.06097560975609756
+Quercetin,Quinapril hydrochloride,LT01723,vLess-DILI-concern,DILI_positive,0.06097560975609756
+Quercetin,Quinidine gluconate,LT01725,vLess-DILI-concern,DILI_positive,0.061224489795918366
+Quercetin,Quinine sulfate,LT01923,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Rabeprazole sodium,LT00264,vLess-DILI-concern,DILI_positive,0.05
+Quercetin,Raloxifene hydrochloride,LT00183,vLess-DILI-concern,DILI_positive,0.13157894736842105
+Quercetin,Raltegravir potassium,LT00642,vMost-DILI-concern,DILI_positive,0.09302325581395349
+Quercetin,Ramipril,LT01726,vLess-DILI-concern,DILI_positive,0.060240963855421686
+Quercetin,Ranitidine hydrochloride,LT00138,vLess-DILI-concern,DILI_positive,0.0958904109589041
+Quercetin,Regorafenib,LT02433,vMost-DILI-concern,DILI_positive,0.07058823529411765
+Quercetin,Remdesivir,LT03819,vLess-DILI-concern,DILI_positive,0.05555555555555555
+Quercetin,Remifentanil hydrochloride,LT00987,vLess-DILI-concern,DILI_positive,0.06578947368421052
+Quercetin,Repaglinide,LT01002,vLess-DILI-concern,DILI_positive,0.07058823529411765
+Quercetin,Ribavirin,LT01730,vLess-DILI-concern,DILI_positive,0.07575757575757576
+Quercetin,Ribociclib succinate,LT03606,vMost-DILI-concern,DILI_positive,0.06382978723404255
+Quercetin,Rifabutin,LT00139,vLess-DILI-concern,DILI_positive,0.075
+Quercetin,Rifampin,LT00034,vMost-DILI-concern,DILI_positive,0.07758620689655173
+Quercetin,Rilpivirine hydrochloride,LT02352,vLess-DILI-concern,DILI_positive,0.05128205128205128
+Quercetin,Riluzole,LT01731,vMost-DILI-concern,DILI_positive,0.06557377049180328
+Quercetin,Risperidone,LT01735,vLess-DILI-concern,DILI_positive,0.09195402298850575
+Quercetin,Ritonavir,LT01737,vMost-DILI-concern,DILI_positive,0.0784313725490196
+Quercetin,Rivaroxaban,LT02390,vLess-DILI-concern,DILI_positive,0.10126582278481013
+Quercetin,Rivastigmine tartrate,LT01016,vLess-DILI-concern,DILI_positive,0.08571428571428572
+Quercetin,Rizatriptan benzoate,LT01026,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Quercetin,Ropinirole hydrochloride,LT00990,vLess-DILI-concern,DILI_positive,0.07575757575757576
+Quercetin,Rosiglitazone maleate,LT00140,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Quercetin,Rosuvastatin calcium,LT01928,vLess-DILI-concern,DILI_positive,0.08139534883720931
+Quercetin,Salsalate,LT01684,vLess-DILI-concern,DILI_positive,0.12962962962962962
+Quercetin,Saquinavir mesylate,LT01746,vLess-DILI-concern,DILI_positive,0.04504504504504504
+Quercetin,Saxagliptin hydrochloride,LT00667,vLess-DILI-concern,DILI_positive,0.04
+Quercetin,Semaglutide,LT03759,vLess-DILI-concern,DILI_positive,0.049723756906077346
+Quercetin,Sertraline hydrochloride,LT00625,vLess-DILI-concern,DILI_positive,0.06153846153846154
+Quercetin,Sibutramine hydrochloride,LT00988,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Sildenafil citrate,LT01033,vLess-DILI-concern,DILI_positive,0.09090909090909091
+Quercetin,Simvastatin,LT00142,vLess-DILI-concern,DILI_positive,0.07058823529411765
+Quercetin,Sirolimus,LT00443,vLess-DILI-concern,DILI_positive,0.046875
+Quercetin,Sitagliptin phosphate,LT01251,vLess-DILI-concern,DILI_positive,0.07228915662650602
+Quercetin,Sitaxsentan,LT02449,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Solifenacin succinate,LT01191,vLess-DILI-concern,DILI_positive,0.06329113924050633
+Quercetin,Sorafenib tosylate,LT01241,vMost-DILI-concern,DILI_positive,0.06593406593406594
+Quercetin,Spironolactone,LT00143,vLess-DILI-concern,DILI_positive,0.075
+Quercetin,Stavudine,LT00144,vMost-DILI-concern,DILI_positive,0.09523809523809523
+Quercetin,Succimer,LT01766,vLess-DILI-concern,DILI_positive,0.046511627906976744
+Quercetin,suloctidil,LT01816,vMost-DILI-concern,DILI_positive,0.06060606060606061
+Quercetin,Sulfacarbamide,LT00699,vMost-DILI-concern,DILI_positive,0.09433962264150944
+Quercetin,Sulfadiazine,LT00146,vLess-DILI-concern,DILI_positive,0.07017543859649122
+Quercetin,Sulfamethizole,LT01933,vLess-DILI-concern,DILI_positive,0.06451612903225806
+Quercetin,Sulfasalazine,LT00147,vMost-DILI-concern,DILI_positive,0.16176470588235295
+Quercetin,Sulfathiazole,LT00632,vMost-DILI-concern,DILI_positive,0.08333333333333333
+Quercetin,Sulindac,LT00148,vMost-DILI-concern,DILI_positive,0.09859154929577464
+Quercetin,Sunitinib malate,LT00565,vMost-DILI-concern,DILI_positive,0.07368421052631578
+Quercetin,Tacrolimus,LT00448,vLess-DILI-concern,DILI_positive,0.05217391304347826
+Quercetin,Tadalafil,LT01129,vLess-DILI-concern,DILI_positive,0.08536585365853659
+Quercetin,Tamoxifen citrate,LT00152,vMost-DILI-concern,DILI_positive,0.06578947368421052
+Quercetin,Tamsulosin hydrochloride,LT00982,vLess-DILI-concern,DILI_positive,0.07692307692307693
+Quercetin,Tasosartan,LT00687,vMost-DILI-concern,DILI_positive,0.10126582278481013
+Quercetin,Telithromycin,LT01944,vMost-DILI-concern,DILI_positive,0.0847457627118644
+Quercetin,Telmisartan,LT02063,vLess-DILI-concern,DILI_positive,0.09195402298850575
+Quercetin,Temozolomide,LT00153,vLess-DILI-concern,DILI_positive,0.08196721311475409
+Quercetin,Teniposide,LT01786,vLess-DILI-concern,DILI_positive,0.1
+Quercetin,Tenofovir disoproxil fumarate,LT02224,vLess-DILI-concern,DILI_positive,0.044444444444444446
+Quercetin,Terbinafine hydrochloride,LT00634,vMost-DILI-concern,DILI_positive,0.04225352112676056
+Quercetin,Terbutaline sulfate,LT00877,vLess-DILI-concern,DILI_positive,0.14035087719298245
+Quercetin,Teriflunomide,LT02397,vMost-DILI-concern,DILI_positive,0.0967741935483871
+Quercetin,Teriparatide acetate,LT00932,vLess-DILI-concern,DILI_positive,0.04487179487179487
+Quercetin,Testosterone enanthate,LT00223,vMost-DILI-concern,DILI_positive,0.060240963855421686
+Quercetin,Tetrabamate,LT01858,vMost-DILI-concern,DILI_positive,0.061855670103092786
+Quercetin,Thalidomide,LT00450,vLess-DILI-concern,DILI_positive,0.08620689655172414
+Quercetin,Thiabendazole,LT00635,vMost-DILI-concern,DILI_positive,0.06666666666666667
+Quercetin,Thioguanine,LT00452,vLess-DILI-concern,DILI_positive,0.034482758620689655
+Quercetin,Thioridazine hydrochloride,LT00451,vLess-DILI-concern,DILI_positive,0.05128205128205128
+Quercetin,Thiotepa,LT01804,vLess-DILI-concern,DILI_positive,0.0
+Quercetin,Ticlopidine hydrochloride,LT00227,vMost-DILI-concern,DILI_positive,0.04477611940298507
+Quercetin,Ticrynafen,LT00636,vMost-DILI-concern,DILI_positive,0.07462686567164178
+Quercetin,Tigecycline,LT01222,vMost-DILI-concern,DILI_positive,0.09278350515463918
+Quercetin,Tilbroquinol,LT00691,vMost-DILI-concern,DILI_positive,0.125
+Quercetin,Tinidazole,LT00637,vLess-DILI-concern,DILI_positive,0.0625
+Quercetin,Tipranavir,LT01220,vMost-DILI-concern,DILI_positive,0.09183673469387756
+Quercetin,Tizanidine hydrochloride,LT00155,vMost-DILI-concern,DILI_positive,0.043478260869565216
+Quercetin,Tolazamide,LT00266,vLess-DILI-concern,DILI_positive,0.08064516129032258
+Quercetin,Tolcapone,LT00156,vMost-DILI-concern,DILI_positive,0.17543859649122806
+Quercetin,Tolmetin sodium,LT01820,vLess-DILI-concern,DILI_positive,0.07936507936507936
+Quercetin,Tolrestat,LT01822,vMost-DILI-concern,DILI_positive,0.06756756756756757
+Quercetin,Tolterodine tartrate,LT01011,vLess-DILI-concern,DILI_positive,0.1323529411764706
+Quercetin,Tolvaptan,LT00661,vMost-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Topiramate,LT00455,vLess-DILI-concern,DILI_positive,0.04225352112676056
+Quercetin,Tramadol hydrochloride,LT01827,vLess-DILI-concern,DILI_positive,0.07042253521126761
+Quercetin,Trametinib dimethyl sulfoxide,LT02903,vLess-DILI-concern,DILI_positive,0.09473684210526316
+Quercetin,Trandolapril,LT01828,vLess-DILI-concern,DILI_positive,0.060240963855421686
+Quercetin,Tranylcypromine sulfate,LT01829,vLess-DILI-concern,DILI_positive,0.09433962264150944
+Quercetin,Trazodone hydrochloride,LT01830,vLess-DILI-concern,DILI_positive,0.07894736842105263
+Quercetin,Tretinoin,LT00338,vLess-DILI-concern,DILI_positive,0.04285714285714286
+Quercetin,Triacetyldiphenolisatin,LT00700,vMost-DILI-concern,DILI_positive,0.09090909090909091
+Quercetin,Triamterene,LT01833,vLess-DILI-concern,DILI_positive,0.06896551724137931
+Quercetin,Trifluoperazine hydrochloride,LT00457,vLess-DILI-concern,DILI_positive,0.05333333333333334
+Quercetin,Trimethoprim,LT01842,vLess-DILI-concern,DILI_positive,0.046153846153846156
+Quercetin,Triptorelin pamoate,LT00460,vLess-DILI-concern,DILI_positive,0.0728476821192053
+Quercetin,Troglitazone,LT00168,vMost-DILI-concern,DILI_positive,0.1111111111111111
+Quercetin,Trovafloxacin mesylate,LT00645,vMost-DILI-concern,DILI_positive,0.09411764705882353
+Quercetin,Ulipristal acetate,LT02443,vLess-DILI-concern,DILI_positive,0.06741573033707865
+Quercetin,Valaciclovir,LT01856,vLess-DILI-concern,DILI_positive,0.07792207792207792
+Quercetin,Valdecoxib,LT01971,vLess-DILI-concern,DILI_positive,0.13114754098360656
+Quercetin,Valproic acid,LT00160,vMost-DILI-concern,DILI_positive,0.06382978723404255
+Quercetin,Valsartan,LT01857,vLess-DILI-concern,DILI_positive,0.09876543209876543
+Quercetin,Vancomycin hydrochloride,LT00161,vLess-DILI-concern,DILI_positive,0.1
+Quercetin,Varenicline tartrate,LT01242,vLess-DILI-concern,DILI_positive,0.07936507936507936
+Quercetin,Vemurafenib,LT02435,vLess-DILI-concern,DILI_positive,0.09411764705882353
+Quercetin,Venetoclax,LT03786,vLess-DILI-concern,DILI_positive,0.09375
+Quercetin,Venlafaxine hydrochloride,LT00174,vLess-DILI-concern,DILI_positive,0.06060606060606061
+Quercetin,Verapamil hydrochloride,LT00332,vLess-DILI-concern,DILI_positive,0.05128205128205128
+Quercetin,Vinblastine sulfate,LT00177,vLess-DILI-concern,DILI_positive,0.06349206349206349
+Quercetin,Vincristine sulfate,LT01862,vLess-DILI-concern,DILI_positive,0.0546875
+Quercetin,Vitamin A palmitate,LT00162,vLess-DILI-concern,DILI_positive,0.03529411764705882
+Quercetin,Voriconazole,LT01097,vMost-DILI-concern,DILI_positive,0.0641025641025641
+Quercetin,Vortioxetine hydrobromide,LT02902,vLess-DILI-concern,DILI_positive,0.05970149253731343
+Quercetin,Warfarin sodium,LT00647,vLess-DILI-concern,DILI_positive,0.13846153846153847
+Quercetin,Xenazoic acid,LT01867,vMost-DILI-concern,DILI_positive,0.125
+Quercetin,Ximelagatran,LT02033,vMost-DILI-concern,DILI_positive,0.05434782608695652
+Quercetin,Zafirlukast,LT01869,vMost-DILI-concern,DILI_positive,0.06060606060606061
+Quercetin,Zanubrutinib,LT03600,vMost-DILI-concern,DILI_positive,0.08045977011494253
+Quercetin,Zidovudine,LT00163,vMost-DILI-concern,DILI_positive,0.08108108108108109
+Quercetin,Zileuton,LT00649,vMost-DILI-concern,DILI_positive,0.11475409836065574
+Quercetin,Zimelidine,LT01874,vMost-DILI-concern,DILI_positive,0.06060606060606061
+Quercetin,Ziprasidone hydrochloride,LT01017,vLess-DILI-concern,DILI_positive,0.07142857142857142
+Quercetin,Zoledronic acid,LT01088,vLess-DILI-concern,DILI_positive,0.05172413793103448
+Quercetin,Zonisamide,LT00165,vLess-DILI-concern,DILI_positive,0.12727272727272726
+Quercetin,Abaloparatide,LT03618,vNo-DILI-concern,DILI_negative,0.035211267605633804
+Quercetin,Acetylcholine chloride,LT02096,vNo-DILI-concern,DILI_negative,0.038461538461538464
+Quercetin,Acetylcysteine,LT01041,vNo-DILI-concern,DILI_negative,0.03773584905660377
+Quercetin,Adenosine,LT01047,vNo-DILI-concern,DILI_negative,0.057971014492753624
+Quercetin,Agalsidase beta,LT02385,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Quercetin,Albuterol,LT01051,vNo-DILI-concern,DILI_negative,0.13559322033898305
+Quercetin,Alfentanil hydrochloride,LT00925,vNo-DILI-concern,DILI_negative,0.07317073170731707
+Quercetin,Almotriptan malate,LT01053,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Alvimopan,LT01215,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Quercetin,Ambenonium chloride,LT01629,vNo-DILI-concern,DILI_negative,0.078125
+Quercetin,Amifampridine,LT03376,vNo-DILI-concern,DILI_negative,0.06382978723404255
+Quercetin,Amifostine,LT01067,vNo-DILI-concern,DILI_negative,0.03508771929824561
+Quercetin,Amikacin sulfate,LT01068,vNo-DILI-concern,DILI_negative,0.03260869565217391
+Quercetin,Aminocaproic acid,LT01071,vNo-DILI-concern,DILI_negative,0.04081632653061224
+Quercetin,Aminohippurate sodium,LT00054,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Aminophylline,LT00711,vNo-DILI-concern,DILI_negative,0.06557377049180328
+Quercetin,Ammonium chloride,LT02067,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Angiotensin ii acetate,LT02229,vNo-DILI-concern,DILI_negative,0.0546875
+Quercetin,Apalutamide,LT03622,vNo-DILI-concern,DILI_negative,0.08791208791208792
+Quercetin,Apomorphine hydrochloride,LT02217,vNo-DILI-concern,DILI_negative,0.11940298507462686
+Quercetin,Apremilast,LT03623,vNo-DILI-concern,DILI_negative,0.09411764705882353
+Quercetin,Argatroban,LT01030,vNo-DILI-concern,DILI_negative,0.05102040816326531
+Quercetin,Arginine hydrochloride,LT02077,vNo-DILI-concern,DILI_negative,0.03508771929824561
+Quercetin,Argipressin,LT02331,vNo-DILI-concern,DILI_negative,0.07563025210084033
+Quercetin,Atracurium,LT00917,vNo-DILI-Concern,DILI_negative,0.0759493670886076
+Quercetin,Atropine,LT00511,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Quercetin,Avanafil,LT02440,vNo-DILI-concern,DILI_negative,0.061855670103092786
+Quercetin,Avatrombopag maleate,LT03629,vNo-DILI-concern,DILI_negative,0.04854368932038835
+Quercetin,Azilsartan kamedoxomil,LT03630,vNo-DILI-concern,DILI_negative,0.11458333333333333
+Quercetin,Bacitracin,LT02059,vNo-DILI-concern,DILI_negative,0.039735099337748346
+Quercetin,Baloxavir marboxil,LT03631,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Bendamustine hydrochloride,LT00659,vNo-DILI-concern,DILI_negative,0.08108108108108109
+Quercetin,Benzphetamine hydrochloride,LT00832,vNo-DILI-concern,DILI_negative,0.07272727272727272
+Quercetin,Benztropine mesylate,LT01123,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Betaine,LT02189,vNo-DILI-concern,DILI_negative,0.0425531914893617
+Quercetin,Bethanechol chloride,LT00730,vNo-DILI-concern,DILI_negative,0.03636363636363636
+Quercetin,Betrixaban,LT03798,vNo-DILI-concern,DILI_negative,0.0875
+Quercetin,Biperiden hydrochloride,LT00817,vNo-DILI-concern,DILI_negative,0.056338028169014086
+Quercetin,Bisacodyl,LT02190,vNo-DILI-concern,DILI_negative,0.09836065573770492
+Quercetin,Bivalirudin,LT01027,vNo-DILI-concern,DILI_negative,0.06015037593984962
+Quercetin,Brexanolone,LT03639,vNo-DILI-concern,DILI_negative,0.04477611940298507
+Quercetin,Brexpiprazole,LT03640,vNo-DILI-concern,DILI_negative,0.07228915662650602
+Quercetin,Brilliant blue g,LT03868,vNo-DILI-concern,DILI_negative,0.05660377358490566
+Quercetin,Brivaracetam,LT03643,vNo-DILI-concern,DILI_negative,0.08064516129032258
+Quercetin,Brompheniramine maleate,LT02076,vNo-DILI-concern,DILI_negative,0.08450704225352113
+Quercetin,Budesonide,LT01144,vNo-DILI-concern,DILI_negative,0.06593406593406594
+Quercetin,Butorphanol tartrate,LT01151,vNo-DILI-concern,DILI_negative,0.1
+Quercetin,Cabergoline,LT01152,vNo-DILI-concern,DILI_negative,0.061855670103092786
+Quercetin,Caffeine citrate,LT01888,vNo-DILI-concern,DILI_negative,0.07352941176470588
+Quercetin,Calcitonin salmon,LT00878,vNo-DILI-concern,DILI_negative,0.06077348066298342
+Quercetin,Calcitriol,LT00899,vNo-DILI-concern,DILI_negative,0.03409090909090909
+Quercetin,Calcium acetate,LT00947,vNo-DILI-concern,DILI_negative,0.04878048780487805
+Quercetin,Cangrelor,LT02516,vNo-DILI-concern,DILI_negative,0.05660377358490566
+Quercetin,Carbinoxamine maleate,LT00759,vNo-DILI-concern,DILI_negative,0.08
+Quercetin,Carboprost tromethamine,LT00898,vNo-DILI-concern,DILI_negative,0.022988505747126436
+Quercetin,Carglumic acid,LT00675,vNo-DILI-concern,DILI_negative,0.03636363636363636
+Quercetin,Carisoprodol,LT02037,vNo-DILI-concern,DILI_negative,0.046875
+Quercetin,Casimersen,LT03648,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Quercetin,Chloramphenicol,LT01196,vNo-DILI-concern,DILI_negative,0.09375
+Quercetin,Chlorpheniramine maleate,LT00009,vNo-DILI-concern,DILI_negative,0.08450704225352113
+Quercetin,Choline c-11,LT03899,vNo-DILI-concern,DILI_negative,0.022222222222222223
+Quercetin,Cinacalcet hydrochloride,LT01209,vNo-DILI-concern,DILI_negative,0.05405405405405406
+Quercetin,Cisatracurium besylate,LT00978,vNo-DILI-concern,DILI_negative,0.06593406593406594
+Quercetin,Clemastine fumarate,LT02222,vNo-DILI-concern,DILI_negative,0.0641025641025641
+Quercetin,Clevidipine,LT00644,vNo-DILI-concern,DILI_negative,0.06493506493506493
+Quercetin,Codeine sulfate,LT01269,vNo-DILI-concern,DILI_negative,0.07228915662650602
+Quercetin,Colistimethate sodium,LT01275,vNo-DILI-concern,DILI_negative,0.047619047619047616
+Quercetin,Conivaptan hydrochloride,LT01210,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Copanlisib dihydrochloride,LT03651,vNo-DILI-concern,DILI_negative,0.061224489795918366
+Quercetin,Copper cu-64 dotatate,LT03900,vNo-DILI-concern,DILI_negative,0.072992700729927
+Quercetin,Corticorelin ovine triflutate,LT00438,vNo-DILI-concern,DILI_negative,0.030303030303030304
+Quercetin,Corticotropin,LT00077,vNo-DILI-concern,DILI_negative,0.05172413793103448
+Quercetin,Cortisone acetate,LT00734,vNo-DILI-concern,DILI_negative,0.08641975308641975
+Quercetin,Cosyntropin,LT00855,vNo-DILI-concern,DILI_negative,0.05732484076433121
+Quercetin,Cupric chloride,LT00361,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Cyanocobalamin,LT02002,vNo-DILI-concern,DILI_negative,0.04430379746835443
+Quercetin,Dalfampridine,LT03653,vNo-DILI-concern,DILI_negative,0.06818181818181818
+Quercetin,Dapagliflozin,LT02891,vNo-DILI-concern,DILI_negative,0.07894736842105263
+Quercetin,Darifenacin hydrobromide,LT01188,vNo-DILI-concern,DILI_negative,0.0875
+Quercetin,Dasiglucagon hydrochloride,LT03655,vNo-DILI-concern,DILI_negative,0.05063291139240506
+Quercetin,Daunorubicin hydrochloride,LT00540,vNo-DILI-concern,DILI_negative,0.09574468085106383
+Quercetin,Defibrotide sodium,LT01774,vNo-DILI-concern,DILI_negative,0.10843373493975904
+Quercetin,Deflazacort,LT02726,vNo-DILI-concern,DILI_negative,0.06521739130434782
+Quercetin,Deoxycholic acid,LT03657,vNo-DILI-concern,DILI_negative,0.0375
+Quercetin,Deutetrabenazine,LT03658,vNo-DILI-concern,DILI_negative,0.06944444444444445
+Quercetin,Dexbrompheniramine maleate,LT00810,vNo-DILI-concern,DILI_negative,0.08450704225352113
+Quercetin,Dexchlorpheniramine maleate,LT00682,vNo-DILI-concern,DILI_negative,0.08450704225352113
+Quercetin,Dexpanthenol,LT01972,vNo-DILI-concern,DILI_negative,0.03389830508474576
+Quercetin,Dextroamphetamine sulfate,LT00870,vNo-DILI-concern,DILI_negative,0.09259259259259259
+Quercetin,Dextromethorphan polistirex,LT02056,vNo-DILI-concern,DILI_negative,0.0547945205479452
+Quercetin,Dextrose,LT00327,vNo-DILI-concern,DILI_negative,0.04081632653061224
+Quercetin,Diatrizoate sodium,LT00774,vNo-DILI-concern,DILI_negative,0.05357142857142857
+Quercetin,Dichlorphenamide,LT00802,vNo-DILI-concern,DILI_negative,0.09615384615384616
+Quercetin,Dicyclomine hydrochloride,LT00737,vNo-DILI-concern,DILI_negative,0.029411764705882353
+Quercetin,Diethylpropion hydrochloride,LT00806,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Difelikefalin acetate,LT03659,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Quercetin,Digoxin,LT00292,vNo-DILI-concern,DILI_negative,0.0625
+Quercetin,Dihydroergotamine mesylate,LT02218,vNo-DILI-concern,DILI_negative,0.08108108108108109
+Quercetin,Dimenhydrinate,LT00545,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Dimercaprol,LT00074,vNo-DILI-concern,DILI_negative,0.021739130434782608
+Quercetin,Diphenhydramine hydrochloride,LT00087,vNo-DILI-concern,DILI_negative,0.05263157894736842
+Quercetin,Diphenoxylate,LT01623,vNo-DILI-concern,DILI_negative,0.06493506493506493
+Quercetin,Dobutamine hydrochloride,LT01308,vNo-DILI-concern,DILI_negative,0.1896551724137931
+Quercetin,Dopamine hydrochloride,LT00015,vNo-DILI-concern,DILI_negative,0.21739130434782608
+Quercetin,Doxapram hydrochloride,LT00547,vNo-DILI-concern,DILI_negative,0.0821917808219178
+Quercetin,Doxylamine succinate,LT00727,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Quercetin,Droperidol,LT01317,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Quercetin,Droxidopa,LT01788,vNo-DILI-concern,DILI_negative,0.22
+Quercetin,Dutasteride,LT01112,vNo-DILI-concern,DILI_negative,0.07777777777777778
+Quercetin,Dyphylline,LT00740,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Ecallantide,LT00683,vNo-DILI-concern,DILI_negative,0.037815126050420166
+Quercetin,Edaravone,LT03663,vNo-DILI-concern,DILI_negative,0.09090909090909091
+Quercetin,Edrophonium chloride,LT02093,vNo-DILI-concern,DILI_negative,0.1568627450980392
+Quercetin,Eliglustat tartrate,LT03666,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Quercetin,Empagliflozin,LT03667,vNo-DILI-concern,DILI_negative,0.07228915662650602
+Quercetin,Enzalutamide,LT02444,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Quercetin,Ephedrine sulfate,LT01666,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Epinephrine,LT00742,vNo-DILI-concern,DILI_negative,0.2
+Quercetin,Epoetin alfa,LT01316,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Quercetin,Eptifibatide,LT00999,vNo-DILI-concern,DILI_negative,0.059322033898305086
+Quercetin,Ergocalciferol,LT00194,vNo-DILI-concern,DILI_negative,0.023809523809523808
+Quercetin,Ertugliflozin,LT03673,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Quercetin,Erythropoietin,LT02330,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Quercetin,Esmolol hydrochloride,LT01333,vNo-DILI-concern,DILI_negative,0.07246376811594203
+Quercetin,Estazolam,LT01334,vNo-DILI-concern,DILI_negative,0.07246376811594203
+Quercetin,Etelcalcetide,LT03674,vNo-DILI-concern,DILI_negative,0.024390243902439025
+Quercetin,Ethanolamine oleate,LT00926,vNo-DILI-concern,DILI_negative,0.03278688524590164
+Quercetin,Etidronate disodium,LT01355,vNo-DILI-concern,DILI_negative,0.041666666666666664
+Quercetin,Etomidate,LT01357,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Quercetin,Exenatide synthetic,LT00537,vNo-DILI-concern,DILI_negative,0.037037037037037035
+Quercetin,Fenoldopam mesylate,LT00944,vNo-DILI-concern,DILI_negative,0.14492753623188406
+Quercetin,Ferric maltol,LT03677,vNo-DILI-concern,DILI_negative,0.12
+Quercetin,Ferumoxytol,LT00650,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Fesoterodine fumarate,LT00590,vNo-DILI-concern,DILI_negative,0.0759493670886076
+Quercetin,Fexofenadine hydrochloride,LT01370,vNo-DILI-concern,DILI_negative,0.07792207792207792
+Quercetin,Finerenone,LT03679,vNo-DILI-concern,DILI_negative,0.07058823529411765
+Quercetin,Flibanserin,LT03680,vNo-DILI-concern,DILI_negative,0.08
+Quercetin,Florbetaben f-18,LT03903,vNo-DILI-concern,DILI_negative,0.046153846153846156
+Quercetin,Florbetapir f-18,LT03904,vNo-DILI-concern,DILI_negative,0.043478260869565216
+Quercetin,Flortaucipir f-18,LT03905,vNo-DILI-concern,DILI_negative,0.0967741935483871
+Quercetin,Fluciclovine f-18,LT03906,vNo-DILI-concern,DILI_negative,0.06
+Quercetin,Fludarabine phosphate,LT01382,vNo-DILI-concern,DILI_negative,0.06329113924050633
+Quercetin,Fludrocortisone acetate,LT00399,vNo-DILI-concern,DILI_negative,0.08433734939759036
+Quercetin,Flumazenil,LT01384,vNo-DILI-concern,DILI_negative,0.09210526315789473
+Quercetin,Fluorescein sodium,LT00894,vNo-DILI-concern,DILI_negative,0.14705882352941177
+Quercetin,Fluorodopa f-18,LT03907,vNo-DILI-concern,DILI_negative,0.14814814814814814
+Quercetin,Fluoroestradiol f-18,LT03908,vNo-DILI-concern,DILI_negative,0.10144927536231885
+Quercetin,Flutemetamol f-18,LT03909,vNo-DILI-concern,DILI_negative,0.140625
+Quercetin,Folic acid,LT01580,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Fosdenopterin hydrobromide,LT03681,vNo-DILI-concern,DILI_negative,0.06097560975609756
+Quercetin,Frovatriptan succinate,LT01054,vNo-DILI-concern,DILI_negative,0.07792207792207792
+Quercetin,Gabapentin enacarbil,LT03684,vNo-DILI-concern,DILI_negative,0.04411764705882353
+Quercetin,Gadobenate dimeglumine,LT01127,vNo-DILI-concern,DILI_negative,0.06741573033707865
+Quercetin,Gadobutrol,LT02336,vNo-DILI-concern,DILI_negative,0.03225806451612903
+Quercetin,Gadofosveset trisodium,LT00528,vNo-DILI-concern,DILI_negative,0.05747126436781609
+Quercetin,Gadopentetate dimeglumine,LT00935,vNo-DILI-concern,DILI_negative,0.02857142857142857
+Quercetin,Gadoterate meglumine,LT02876,vNo-DILI-concern,DILI_negative,0.02857142857142857
+Quercetin,Gadoteridol,LT00952,vNo-DILI-concern,DILI_negative,0.034482758620689655
+Quercetin,Gadoversetamide,LT01044,vNo-DILI-concern,DILI_negative,0.03125
+Quercetin,Gadoxetate disodium,LT02404,vNo-DILI-concern,DILI_negative,0.0684931506849315
+Quercetin,Gallium dotatate ga-68,LT03901,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Quercetin,Gallium ga-68 edotreotide,LT03902,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Quercetin,Gallium ga-68 gozetotide,LT03910,vNo-DILI-concern,DILI_negative,0.06382978723404255
+Quercetin,Ganirelix acetate,LT00475,vNo-DILI-concern,DILI_negative,0.06716417910447761
+Quercetin,Glycopyrrolate,LT00836,vNo-DILI-concern,DILI_negative,0.07142857142857142
+Quercetin,Guaifenesin,LT01100,vNo-DILI-concern,DILI_negative,0.07017543859649122
+Quercetin,Guanethidine monosulfate,LT00829,vNo-DILI-concern,DILI_negative,0.03389830508474576
+Quercetin,Histamine phosphate,LT00706,vNo-DILI-concern,DILI_negative,0.07017543859649122
+Quercetin,Hydrocortisone acetate,LT00188,vNo-DILI-concern,DILI_negative,0.09876543209876543
+Quercetin,Hydroxyzine hydrochloride,LT01437,vNo-DILI-concern,DILI_negative,0.056338028169014086
+Quercetin,Ibutilide fumarate,LT00974,vNo-DILI-concern,DILI_negative,0.06493506493506493
+Quercetin,Indocyanine green,LT00141,vNo-DILI-concern,DILI_negative,0.05434782608695652
+Quercetin,Iodipamide sodium,LT01454,vNo-DILI-concern,DILI_negative,0.08064516129032258
+Quercetin,Ioflupane i-123,LT03911,vNo-DILI-concern,DILI_negative,0.06493506493506493
+Quercetin,Iothalamate meglumine,LT00257,vNo-DILI-concern,DILI_negative,0.04
+Quercetin,Ioversol,LT00419,vNo-DILI-concern,DILI_negative,0.04285714285714286
+Quercetin,Isoproterenol hydrochloride,LT00200,vNo-DILI-concern,DILI_negative,0.18867924528301888
+Quercetin,Isosorbide dinitrate,LT00818,vNo-DILI-concern,DILI_negative,0.03773584905660377
+Quercetin,Isoxsuprine hydrochloride,LT02089,vNo-DILI-concern,DILI_negative,0.09230769230769231
+Quercetin,Istradefylline,LT03695,vNo-DILI-concern,DILI_negative,0.08
+Quercetin,Ivabradine hydrochloride,LT02665,vNo-DILI-concern,DILI_negative,0.06329113924050633
+Quercetin,Kanamycin,LT01477,vNo-DILI-concern,DILI_negative,0.028169014084507043
+Quercetin,Lactitol,LT02745,vNo-DILI-concern,DILI_negative,0.03125
+Quercetin,Lactulose,LT00886,vNo-DILI-concern,DILI_negative,0.046153846153846156
+Quercetin,Lanthanum carbonate,LT00493,vNo-DILI-concern,DILI_negative,0.05128205128205128
+Quercetin,Lasmiditan succinate,LT03699,vNo-DILI-concern,DILI_negative,0.10256410256410256
+Quercetin,Lemborexant,LT03700,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Leucovorin calcium,LT02192,vNo-DILI-concern,DILI_negative,0.07368421052631578
+Quercetin,Levocarnitine,LT01486,vNo-DILI-concern,DILI_negative,0.038461538461538464
+Quercetin,Levoleucovorin,LT02437,vNo-DILI-concern,DILI_negative,0.07526881720430108
+Quercetin,Levomefolate calcium,LT02442,vNo-DILI-concern,DILI_negative,0.07526881720430108
+Quercetin,Levonorgestrel,LT01489,vNo-DILI-concern,DILI_negative,0.06578947368421052
+Quercetin,Levorphanol tartrate,LT00752,vNo-DILI-concern,DILI_negative,0.10666666666666667
+Quercetin,Lidocaine,LT01905,vNo-DILI-concern,DILI_negative,0.08620689655172414
+Quercetin,Linaclotide,LT02412,vNo-DILI-concern,DILI_negative,0.06923076923076923
+Quercetin,Liothyronine sodium,LT00783,vNo-DILI-concern,DILI_negative,0.13636363636363635
+Quercetin,Lofexidine hydrochloride,LT01776,vNo-DILI-concern,DILI_negative,0.046153846153846156
+Quercetin,Loperamide hydrochloride,LT02087,vNo-DILI-concern,DILI_negative,0.06493506493506493
+Quercetin,Loratadine,LT01498,vNo-DILI-concern,DILI_negative,0.0759493670886076
+Quercetin,Lubiprostone,LT01240,vNo-DILI-concern,DILI_negative,0.0625
+Quercetin,Lurasidone hydrochloride,LT02411,vNo-DILI-concern,DILI_negative,0.06097560975609756
+Quercetin,Lusutrombopag,LT03708,vNo-DILI-concern,DILI_negative,0.0594059405940594
+Quercetin,Macimorelin acetate,LT03709,vNo-DILI-concern,DILI_negative,0.08641975308641975
+Quercetin,Mannitol,LT00024,vNo-DILI-concern,DILI_negative,0.022727272727272728
+Quercetin,Maribavir,LT03558,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Quercetin,Mecamylamine hydrochloride,LT00781,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Meclizine hydrochloride,LT00792,vNo-DILI-concern,DILI_negative,0.0547945205479452
+Quercetin,Mepenzolate bromide,LT00790,vNo-DILI-concern,DILI_negative,0.07462686567164178
+Quercetin,Meperidine hydrochloride,LT00713,vNo-DILI-concern,DILI_negative,0.09523809523809523
+Quercetin,Meprobamate,LT01521,vNo-DILI-concern,DILI_negative,0.05555555555555555
+Quercetin,Metaproterenol sulfate,LT02086,vNo-DILI-concern,DILI_negative,0.14285714285714285
+Quercetin,Methamphetamine hydrochloride,LT00716,vNo-DILI-concern,DILI_negative,0.05660377358490566
+Quercetin,Methionine,LT01468,vNo-DILI-concern,DILI_negative,0.03773584905660377
+Quercetin,Methscopolamine bromide,LT01547,vNo-DILI-concern,DILI_negative,0.08450704225352113
+Quercetin,Methsuximide,LT00787,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Methylergonovine maleate,LT02074,vNo-DILI-concern,DILI_negative,0.06593406593406594
+Quercetin,Methylnaltrexone bromide,LT00570,vNo-DILI-concern,DILI_negative,0.13924050632911392
+Quercetin,Methysergide maleate,LT02072,vNo-DILI-concern,DILI_negative,0.06741573033707865
+Quercetin,Metyrapone,LT00838,vNo-DILI-concern,DILI_negative,0.08620689655172414
+Quercetin,Metyrosine,LT00895,vNo-DILI-concern,DILI_negative,0.1320754716981132
+Quercetin,Midazolam hydrochloride,LT01557,vNo-DILI-concern,DILI_negative,0.05263157894736842
+Quercetin,Midodrine hydrochloride,LT01558,vNo-DILI-concern,DILI_negative,0.08955223880597014
+Quercetin,Migalastat hydrochloride,LT03712,vNo-DILI-concern,DILI_negative,0.018518518518518517
+Quercetin,Miglitol,LT00992,vNo-DILI-concern,DILI_negative,0.017543859649122806
+Quercetin,Miglustat,LT01126,vNo-DILI-concern,DILI_negative,0.01639344262295082
+Quercetin,Minoxidil,LT00587,vNo-DILI-concern,DILI_negative,0.06666666666666667
+Quercetin,Mitotane,LT01564,vNo-DILI-concern,DILI_negative,0.09259259259259259
+Quercetin,Mivacurium chloride,LT00950,vNo-DILI-concern,DILI_negative,0.058823529411764705
+Quercetin,Morphine sulfate,LT00905,vNo-DILI-concern,DILI_negative,0.11842105263157894
+Quercetin,Nabilone,LT00910,vNo-DILI-concern,DILI_negative,0.11688311688311688
+Quercetin,Nalbuphine hydrochloride,LT01586,vNo-DILI-concern,DILI_negative,0.11392405063291139
+Quercetin,Naldemedine tosylate,LT03716,vNo-DILI-concern,DILI_negative,0.09734513274336283
+Quercetin,Naloxegol oxalate,LT03717,vNo-DILI-concern,DILI_negative,0.10752688172043011
+Quercetin,Naloxone hydrochloride,LT00592,vNo-DILI-concern,DILI_negative,0.14102564102564102
+Quercetin,Neomycin sulfate,LT00595,vNo-DILI-concern,DILI_negative,0.03896103896103896
+Quercetin,Nesiritide,LT00465,vNo-DILI-concern,DILI_negative,0.03535353535353535
+Quercetin,Nifurtimox,LT02164,vNo-DILI-concern,DILI_negative,0.09859154929577464
+Quercetin,Nitazoxanide,LT01184,vNo-DILI-concern,DILI_negative,0.09859154929577464
+Quercetin,Nitroglycerin,LT01608,vNo-DILI-concern,DILI_negative,0.019230769230769232
+Quercetin,Norepinephrine bitartrate,LT00738,vNo-DILI-concern,DILI_negative,0.2037037037037037
+Quercetin,Norethindrone acetate,LT02269,vNo-DILI-concern,DILI_negative,0.06329113924050633
+Quercetin,Nusinersen sodium,LT03720,vNo-DILI-concern,DILI_negative,0.049586776859504134
+Quercetin,Nystatin,LT00602,vNo-DILI-concern,DILI_negative,0.05504587155963303
+Quercetin,Opicapone,LT03725,vNo-DILI-concern,DILI_negative,0.16666666666666666
+Quercetin,Orphenadrine hydrochloride,LT02085,vNo-DILI-concern,DILI_negative,0.046875
+Quercetin,Ospemifene,LT02880,vNo-DILI-concern,DILI_negative,0.07936507936507936
+Quercetin,Oxymorphone hydrochloride,LT00808,vNo-DILI-concern,DILI_negative,0.1527777777777778
+Quercetin,Oxytocin,LT00827,vNo-DILI-concern,DILI_negative,0.07563025210084033
+Quercetin,Pafolacianine sodium,LT03729,vNo-DILI-concern,DILI_negative,0.045454545454545456
+Quercetin,Pamabrom,LT02055,vNo-DILI-concern,DILI_negative,0.07575757575757576
+Quercetin,Pancuronium bromide,LT00867,vNo-DILI-concern,DILI_negative,0.023529411764705882
+Quercetin,Paromomycin sulfate,LT02061,vNo-DILI-concern,DILI_negative,0.038461538461538464
+Quercetin,Pegfilgrastim,LT01380,vNo-DILI-concern,DILI_negative,0.026785714285714284
+Quercetin,Penbutolol sulfate,LT01644,vNo-DILI-concern,DILI_negative,0.06756756756756757
+Quercetin,Penicillin v potassium,LT01648,vNo-DILI-concern,DILI_negative,0.07792207792207792
+Quercetin,Pentagastrin,LT00869,vNo-DILI-concern,DILI_negative,0.06862745098039216
+Quercetin,Pentazocine lactate,LT01650,vNo-DILI-concern,DILI_negative,0.10126582278481013
+Quercetin,Pentetate calcium trisodium yb-169,LT00879,vNo-DILI-concern,DILI_negative,0.0392156862745098
+Quercetin,Perampanel,LT02446,vNo-DILI-concern,DILI_negative,0.1
+Quercetin,Perflutren,LT01065,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Phendimetrazine tartrate,LT00826,vNo-DILI-concern,DILI_negative,0.1111111111111111
+Quercetin,Phenoxybenzamine hydrochloride,LT02082,vNo-DILI-concern,DILI_negative,0.045454545454545456
+Quercetin,Phentolamine mesylate,LT00433,vNo-DILI-concern,DILI_negative,0.1111111111111111
+Quercetin,Physostigmine salicylate,LT00133,vNo-DILI-concern,DILI_negative,0.1111111111111111
+Quercetin,Phytonadione,LT00780,vNo-DILI-concern,DILI_negative,0.08571428571428572
+Quercetin,Piflufolastat f-18,LT03915,vNo-DILI-concern,DILI_negative,0.06578947368421052
+Quercetin,Pimavanserin tartrate,LT03736,vNo-DILI-concern,DILI_negative,0.056818181818181816
+Quercetin,Pimozide,LT01672,vNo-DILI-concern,DILI_negative,0.0641025641025641
+Quercetin,Pindolol,LT01673,vNo-DILI-concern,DILI_negative,0.057971014492753624
+Quercetin,Pitolisant hydrochloride,LT03737,vNo-DILI-concern,DILI_negative,0.046153846153846156
+Quercetin,Plerixafor,LT02340,vNo-DILI-concern,DILI_negative,0.05263157894736842
+Quercetin,Polidocanol,LT00486,vNo-DILI-concern,DILI_negative,0.018867924528301886
+Quercetin,Pramlintide acetate,LT00492,vNo-DILI-concern,DILI_negative,0.043478260869565216
+Quercetin,Primaquine phosphate,LT00613,vNo-DILI-concern,DILI_negative,0.07792207792207792
+Quercetin,Primidone,LT00261,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Procyclidine hydrochloride,LT02219,vNo-DILI-concern,DILI_negative,0.06153846153846154
+Quercetin,Propantheline bromide,LT00753,vNo-DILI-concern,DILI_negative,0.08823529411764706
+Quercetin,Protirelin,LT00349,vNo-DILI-concern,DILI_negative,0.05813953488372093
+Quercetin,Protriptyline hydrochloride,LT00848,vNo-DILI-concern,DILI_negative,0.05
+Quercetin,Prucalopride succinate,LT03197,vNo-DILI-concern,DILI_negative,0.06818181818181818
+Quercetin,Pseudoephedrine hydrochloride,LT00137,vNo-DILI-concern,DILI_negative,0.07547169811320754
+Quercetin,Pyrantel pamoate,LT01713,vNo-DILI-concern,DILI_negative,0.0975609756097561
+Quercetin,Pyridoxine hydrochloride,LT01980,vNo-DILI-concern,DILI_negative,0.09259259259259259
+Quercetin,Quazepam,LT01721,vNo-DILI-concern,DILI_negative,0.05263157894736842
+Quercetin,Ramelteon,LT01217,vNo-DILI-concern,DILI_negative,0.08333333333333333
+Quercetin,Ranolazine,LT01192,vNo-DILI-concern,DILI_negative,0.0641025641025641
+Quercetin,Regadenoson,LT00646,vNo-DILI-concern,DILI_negative,0.06896551724137931
+Quercetin,Remimazolam besylate,LT03744,vNo-DILI-concern,DILI_negative,0.0625
+Quercetin,Reserpine,LT01729,vNo-DILI-concern,DILI_negative,0.06
+Quercetin,Riboflavin 5'-phosphate,LT01479,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Quercetin,Rifamycin sodium,LT03745,vNo-DILI-concern,DILI_negative,0.09615384615384616
+Quercetin,Rimantadine hydrochloride,LT00937,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Rimegepant sulfate,LT03746,vNo-DILI-concern,DILI_negative,0.06
+Quercetin,Riociguat,LT02894,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Risdiplam,LT03748,vNo-DILI-concern,DILI_negative,0.08235294117647059
+Quercetin,Rocuronium bromide,LT00957,vNo-DILI-concern,DILI_negative,0.04
+Quercetin,Roflumilast,LT00619,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Rolapitant hydrochloride,LT03749,vNo-DILI-concern,DILI_negative,0.07058823529411765
+Quercetin,Romidepsin,LT00669,vNo-DILI-concern,DILI_negative,0.056818181818181816
+Quercetin,Rubidium chloride rb-82,LT00928,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Safinamide mesylate,LT03752,vNo-DILI-concern,DILI_negative,0.0945945945945946
+Quercetin,Sapropterin dihydrochloride,LT01262,vNo-DILI-concern,DILI_negative,0.07352941176470588
+Quercetin,Sarecycline hydrochloride,LT03753,vNo-DILI-concern,DILI_negative,0.11235955056179775
+Quercetin,Scopolamine,LT01974,vNo-DILI-concern,DILI_negative,0.08695652173913043
+Quercetin,Selegiline hydrochloride,LT01749,vNo-DILI-concern,DILI_negative,0.06779661016949153
+Quercetin,Selexipag,LT03755,vNo-DILI-concern,DILI_negative,0.07407407407407407
+Quercetin,Setmelanotide acetate,LT03760,vNo-DILI-concern,DILI_negative,0.056
+Quercetin,Sevelamer hydrochloride,LT01039,vNo-DILI-concern,DILI_negative,0.01818181818181818
+Quercetin,Sincalide,LT00350,vNo-DILI-concern,DILI_negative,0.06422018348623854
+Quercetin,Sodium bicarbonate,LT02337,vNo-DILI-concern,DILI_negative,0.05
+Quercetin,Sodium fluoride f-18,LT03914,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Sodium lactate,LT00330,vNo-DILI-concern,DILI_negative,0.044444444444444446
+Quercetin,Sodium nitroprusside,LT00880,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Sodium oxybate,LT00480,vNo-DILI-concern,DILI_negative,0.041666666666666664
+Quercetin,Sodium thiosulfate,LT00439,vNo-DILI-concern,DILI_negative,0.023809523809523808
+Quercetin,Sodium zirconium cyclosilicate,LT03762,vNo-DILI-concern,DILI_negative,0.023255813953488372
+Quercetin,Sofosbuvir,LT02901,vNo-DILI-concern,DILI_negative,0.07368421052631578
+Quercetin,Solriamfetol hydrochloride,LT03763,vNo-DILI-concern,DILI_negative,0.08620689655172414
+Quercetin,Sorbitol,LT02010,vNo-DILI-concern,DILI_negative,0.022727272727272728
+Quercetin,Sterile water,LT01294,vNo-DILI-concern,DILI_negative,0.0
+Quercetin,Stiripentol,LT02728,vNo-DILI-concern,DILI_negative,0.09836065573770492
+Quercetin,Streptomycin sulfate,LT00145,vNo-DILI-concern,DILI_negative,0.043010752688172046
+Quercetin,Succinylcholine chloride,LT00749,vNo-DILI-concern,DILI_negative,0.038461538461538464
+Quercetin,Sufentanil citrate,LT00920,vNo-DILI-concern,DILI_negative,0.06741573033707865
+Quercetin,Sugammadex sodium,LT03224,vNo-DILI-concern,DILI_negative,0.047619047619047616
+Quercetin,Suvorexant,LT03766,vNo-DILI-concern,DILI_negative,0.10588235294117647
+Quercetin,Tafamidis meglumine,LT03576,vNo-DILI-concern,DILI_negative,0.12987012987012986
+Quercetin,Tapentadol hydrochloride,LT00664,vNo-DILI-concern,DILI_negative,0.11666666666666667
+Quercetin,Tecovirimat,LT03770,vNo-DILI-concern,DILI_negative,0.08955223880597014
+Quercetin,Temsirolimus,LT01261,vNo-DILI-concern,DILI_negative,0.043478260869565216
+Quercetin,Tenapanor hydrochloride,LT03773,vNo-DILI-concern,DILI_negative,0.07526881720430108
+Quercetin,Terazosin hydrochloride,LT01787,vNo-DILI-concern,DILI_negative,0.07317073170731707
+Quercetin,Theophylline sodium glycinate,LT00154,vNo-DILI-concern,DILI_negative,0.07575757575757576
+Quercetin,Thiamine hydrochloride,LT01981,vNo-DILI-concern,DILI_negative,0.0410958904109589
+Quercetin,Thyrotropin alfa,LT00751,vNo-DILI-concern,DILI_negative,0.05813953488372093
+Quercetin,Ticagrelor,LT02413,vNo-DILI-concern,DILI_negative,0.061224489795918366
+Quercetin,Tiludronate disodium,LT00998,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Tirofiban hydrochloride,LT01037,vNo-DILI-concern,DILI_negative,0.05952380952380952
+Quercetin,Topotecan hydrochloride,LT01824,vNo-DILI-concern,DILI_negative,0.12643678160919541
+Quercetin,Tranexamic acid,LT00923,vNo-DILI-concern,DILI_negative,0.038461538461538464
+Quercetin,Trientine hydrochloride,LT00375,vNo-DILI-concern,DILI_negative,0.022222222222222223
+Quercetin,Triheptanoin,LT03777,vNo-DILI-concern,DILI_negative,0.03389830508474576
+Quercetin,Trihexyphenidyl hydrochloride,LT01839,vNo-DILI-concern,DILI_negative,0.06153846153846154
+Quercetin,Triprolidine hydrochloride,LT00798,vNo-DILI-concern,DILI_negative,0.05714285714285714
+Quercetin,Trospium chloride,LT00516,vNo-DILI-concern,DILI_negative,0.07352941176470588
+Quercetin,Tyramine,LT02356,vNo-DILI-concern,DILI_negative,0.13043478260869565
+Quercetin,Ubrogepant,LT03780,vNo-DILI-concern,DILI_negative,0.06862745098039216
+Quercetin,Umeclidinium bromide,LT03782,vNo-DILI-concern,DILI_negative,0.07352941176470588
+Quercetin,Uridine triacetate,LT03784,vNo-DILI-concern,DILI_negative,0.1
+Quercetin,Urofollitropin,LT00929,vNo-DILI-concern,DILI_negative,0.07692307692307693
+Quercetin,Urokinase,LT01229,vNo-DILI-concern,DILI_negative,0.09333333333333334
+Quercetin,Vecuronium bromide,LT00916,vNo-DILI-concern,DILI_negative,0.021739130434782608
+Quercetin,Vericiguat,LT03787,vNo-DILI-concern,DILI_negative,0.06976744186046512
+Quercetin,Vibegron,LT03788,vNo-DILI-concern,DILI_negative,0.09195402298850575
+Quercetin,Vilazodone hydrochloride,LT02391,vNo-DILI-concern,DILI_negative,0.10112359550561797
+Quercetin,Viloxazine hydrochloride,LT01861,vNo-DILI-concern,DILI_negative,0.06060606060606061
+Quercetin,Viltolarsen,LT03789,vNo-DILI-concern,DILI_negative,0.058333333333333334
+Quercetin,Vitamin C,LT02009,vNo-DILI-concern,DILI_negative,0.11320754716981132
+Quercetin,Vitamin E,LT01516,vNo-DILI-concern,DILI_negative,0.07042253521126761
+Quercetin,Voclosporin,LT03563,vNo-DILI-concern,DILI_negative,0.04716981132075472
+Quercetin,Vorapaxar sulfate,LT03790,vNo-DILI-concern,DILI_negative,0.1
+Quercetin,Vorinostat,LT00462,vNo-DILI-concern,DILI_negative,0.08928571428571429
+Quercetin,Vosoritide,LT03791,vNo-DILI-concern,DILI_negative,0.0430622009569378
+Quercetin,Voxelotor,LT03792,vNo-DILI-concern,DILI_negative,0.13513513513513514
+Quercetin,Zaleplon,LT00648,vNo-DILI-concern,DILI_negative,0.08974358974358974
