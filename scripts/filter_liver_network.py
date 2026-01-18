@@ -59,7 +59,7 @@ def main():
                        help='Input network parquet file')
     parser.add_argument('--output', type=str, required=True,
                        help='Output filtered network parquet file')
-    parser.add_argument('--liver', type=str, default='data/processed/liver_proteome.csv',
+    parser.add_argument('--liver', type=str, default=str(Path('data') / 'processed' / 'liver_proteome.csv'),
                        help='Liver genes CSV file')
     
     args = parser.parse_args()

@@ -23,7 +23,7 @@ NETWORK_THRESHOLDS = [700, 900]
 np.random.seed(RANDOM_SEED)
 
 DATA_DIR = Path('data')
-RESULTS_DIR = Path('results/tables')
+RESULTS_DIR = Path('results') / 'tables'
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
