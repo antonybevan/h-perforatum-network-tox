@@ -1,8 +1,4 @@
-"""
-Extended tests for RWR (Random Walk with Restart) module.
-Targets: src/network_tox/analysis/rwr.py
-Goal: Increase coverage from 14% to 80%+
-"""
+"""Tests for RWR module."""
 
 import pytest
 import networkx as nx
@@ -17,7 +13,6 @@ from src.network_tox.analysis.rwr import run_rwr
 
 
 class TestRunRWR:
-    """Test suite for run_rwr function."""
     
     def test_rwr_empty_graph(self):
         """Test RWR on empty graph returns empty dict."""

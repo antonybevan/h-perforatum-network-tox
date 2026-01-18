@@ -21,13 +21,9 @@ except ImportError:
     RDKIT_AVAILABLE = False
 
 
-# ==============================================================================
-# FINGERPRINT TESTS
-# ==============================================================================
 
 @pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
 class TestFingerprints:
-    """Test fingerprint generation."""
     
     def test_fingerprint_from_valid_smiles(self):
         """Test fingerprint generation from valid SMILES."""
@@ -56,9 +52,6 @@ class TestFingerprints:
         assert fp is not None
 
 
-# ==============================================================================
-# TANIMOTO SIMILARITY TESTS
-# ==============================================================================
 
 @pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
 class TestTanimotoSimilarity:
@@ -120,9 +113,6 @@ class TestTanimotoSimilarity:
                 assert 0 <= sim <= 1.0
 
 
-# ==============================================================================
-# CACHE TESTS
-# ==============================================================================
 
 class TestSMILESCache:
     """Test SMILES caching functionality."""
@@ -168,9 +158,6 @@ class TestSMILESCache:
             assert loaded_cache["InvalidDrug"] == ""
 
 
-# ==============================================================================
-# RESULTS VALIDATION TESTS
-# ==============================================================================
 
 class TestResultsValidation:
     """Test that results files exist and have correct structure."""

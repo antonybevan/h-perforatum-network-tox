@@ -1,8 +1,4 @@
-"""
-Unit tests for core functionality - CI compatible.
-Tests run without requiring src/ package installation.
-Includes LFS pointer detection for CI robustness.
-"""
+"""Tests for core functionality."""
 
 import pytest
 import pandas as pd
@@ -51,7 +47,7 @@ def skip_reason(filepath: str) -> str:
     return ""
 
 
-# === Basic Package Tests ===
+# Basic Package Tests
 
 def test_basic_imports():
     """Test that required packages are installed."""
@@ -77,7 +73,7 @@ def test_networkx_basics():
     assert G.number_of_edges() == 2
 
 
-# === Data Integration Tests ===
+# Data Integration Tests
 
 TARGETS_FILE = 'data/processed/targets.csv'
 LIVER_FILE = 'data/processed/liver_proteome.csv'
