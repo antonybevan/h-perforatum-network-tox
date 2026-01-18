@@ -22,7 +22,7 @@
 | STRING | v12.0 | `string_links.txt.gz` | Human PPI network |
 | STRING | v12.0 | `string_info.txt.gz` | Protein ID to gene mapping |
 | GTEx | v8 (2017-06-05) | `GTEx_*_gene_median_tpm.gct` | Tissue expression |
-| ChEMBL | API (v36) | via API | Quercetin bioactivity |
+| ChEMBL | API (2024) | via API | Quercetin bioactivity |
 | DisGeNET | Curated | `curated_gene_disease_associations.tsv` | DILI genes |
 
 ---
@@ -40,8 +40,8 @@
 | Literature_Quiney2006_Blood | 2 |
 | Literature_Moore2000_DrugMetabDispos | 1 |
 | Literature_Leuner2007_NatMed | 1 |
-| Literature_BCRP_Inhibition | 1 |
 | Literature_Hennessy2002_BrJClinPharmacol | 1 |
+| Literature_BCRP_Inhibition | 1 |
 | Literature_Kumar2006_EurJPharmacol | 1 |
 | Literature_ABC_Transporter_Modulation | 1 |
 
@@ -488,6 +488,13 @@ Analysis scripts detect columns dynamically.
 
 ---
 
+## Reproducibility: Complete Command Sequence
+
+```bash
+# 1. Regenerate targets from raw (creates targets.csv)
+python scripts/regenerate_targets.py
+
+# 2. Create LCC-filtered files (creates targets_lcc.csv, network_*_lcc.parquet)
 python scripts/create_lcc_filtered_data.py
 
 # 3. Validate data integrity (27 checks)
@@ -591,7 +598,7 @@ python scripts/run_expression_weighted_rwr_permutations.py
 
 **Conclusion:** Hyperforin's advantage is ROBUST - not explained by target count.
 
-**Script:** `scripts/run_pipeline.py` (which encapsulates bootstrap stages)
+**Script:** `scripts/run_bootstrap_sensitivity.py`
 
 ---
 
