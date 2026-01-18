@@ -2,25 +2,7 @@
 Expression-Weighted Random Walk with Restart (RWR)
 
 Implements tissue-constrained influence propagation using transition-matrix
-weighting, where expression values modify the adjacency matrix itself.
-
-Mathematical formulation:
-    A'_ij = A_ij * e_i           (weight by source expression)
-    W'_ij = A'_ij / Σ_k A'_kj    (column-normalize)
-    p^(∞) = (1-α) * W' * p^(∞) + α * s_uniform
-
-Where:
-    e_i = normalized liver expression of protein i (TPM scaled to [0,1])
-    s_uniform = uniform restart vector over target nodes
-
-Biological interpretation:
-    - Highly expressed proteins become preferred conduits for signal propagation
-    - Non-expressed proteins become dead ends
-    - Walk is constrained to liver-relevant biology
-
-References:
-    - Guney et al. (2016) Network-based in silico drug efficacy screening
-    - Vanunu et al. (2010) Associating genes and protein complexes with disease
+weighting based on protein expression.
 """
 
 import numpy as np
@@ -109,24 +91,7 @@ def create_expression_weighted_transition_matrix(
     nodes: List[str]
 ) -> sparse.spmatrix:
     """
-    Create expression-weighted transition matrix for RWR.
-    
-    This is the CORRECT implementation of expression-weighted RWR:
-        1. Weight adjacency by source node expression: A'_ij = A_ij * e_i
-        2. Column-normalize: W'_ij = A'_ij / Σ_k A'_kj
-    
-    Biological interpretation:
-        - Highly expressed proteins become preferred conduits
-        - Low/non-expressed proteins become dead ends
-        - Walk is constrained to liver-active biology
-    
-    Args:
-        adj_matrix: Adjacency matrix (n x n, undirected)
-        expression: Dictionary mapping node -> TPM value
-        nodes: List of nodes (defines row/column indexing)
-        
-    Returns:
-        Column-normalized transition matrix W' (sparse)
+    Create transition matrix weighted by source node expression.
     """
     n = len(nodes)
     
@@ -153,51 +118,21 @@ def run_expression_weighted_rwr(
     expression: Dict[str, float],
     restart_prob: float = 0.15,
     tol: float = 1e-6,
-    max_iter: int = 100,
-    transform: str = "log1p"  # Kept for backwards compatibility, now unused
+    max_iter: int = 100
 ) -> Dict[str, float]:
     """
     Run expression-weighted Random Walk with Restart.
-    
-    Uses TRANSITION-MATRIX WEIGHTING (the correct, reviewer-proof approach):
-        1. Weight adjacency by expression: A'_ij = A_ij * e_i
-        2. Column-normalize: W'_ij = A'_ij / Σ_k A'_kj
-        3. Use uniform restart vector over targets
-        4. Iterate: p^(t+1) = (1-α) * W' * p^t + α * s_uniform
-    
-    This is NOT restart-vector weighting. Expression modifies the transition
-    probabilities themselves, forcing walks to flow through liver-expressed proteins.
-    
-    Biological interpretation:
-        - Highly expressed targets become preferred conduits for signal
-        - Non-expressed proteins become dead ends
-        - Network propagation is constrained to liver-active biology
-        - Standard RWR math, just biology-aware transition matrix
-    
-    Args:
-        G: NetworkX graph (undirected PPI network)
-        seeds: List of seed nodes (drug targets)
-        expression: Dictionary mapping node -> TPM value
-        restart_prob: Restart probability α (default 0.15)
-        tol: Convergence tolerance (L1 difference)
-        max_iter: Maximum iterations
-        transform: Deprecated (kept for backwards compatibility)
-        
-    Returns:
-        Dictionary of {node: steady-state probability}
     """
     if len(G) == 0:
         return {}
     
-    # Create node indexing
+    # Create indexing
     nodes = list(G.nodes())
     node_idx = {n: i for i, n in enumerate(nodes)}
     n = len(nodes)
     
-    # Create adjacency matrix
     adj = nx.adjacency_matrix(G, nodelist=nodes).astype(float)
     
-    # Create EXPRESSION-WEIGHTED TRANSITION MATRIX (the key change)
     W_prime = create_expression_weighted_transition_matrix(
         adj_matrix=adj,
         expression=expression,

@@ -24,10 +24,7 @@ N_BOOTSTRAP = 100
 RANDOM_SEED = 42
 
 def main():
-    print("=" * 70)
-    print(" BOOTSTRAP SENSITIVITY ANALYSIS")
-    print("=" * 70)
-    print()
+    print("Bootstrap Sensitivity Analysis")
     
     np.random.seed(RANDOM_SEED)
     
@@ -97,11 +94,7 @@ def main():
     ci_lower = res_df['quercetin_sampled_influence'].quantile(0.025)
     ci_upper = res_df['quercetin_sampled_influence'].quantile(0.975)
     
-    print()
-    print("=" * 70)
-    print(" RESULTS")
-    print("=" * 70)
-    print()
+    print("\nResults:")
     print(f"Quercetin bootstrap ({SAMPLE_SIZE} targets):")
     print(f"  Mean:   {mean_influence:.6f}")
     print(f"  Std:    {std_influence:.6f}")

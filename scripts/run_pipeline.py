@@ -1,30 +1,14 @@
 #!/usr/bin/env python3
 """
-Master Pipeline: Complete Reproducible Analysis
+H. perforatum Network Toxicology Pipeline
 
-This script orchestrates the entire H. perforatum network toxicology analysis
-from raw data to final results, ensuring 100% reproducibility.
+Orchestrates the analysis from raw data to final results.
 
 Usage:
     python scripts/run_pipeline.py              # Run all steps
     python scripts/run_pipeline.py --step 3     # Run from step 3 onwards
     python scripts/run_pipeline.py --only 5     # Run only step 5
     python scripts/run_pipeline.py --validate   # Run validation only
-    
-Pipeline Steps:
-    1. Extract STRING networks (700 & 900 thresholds)
-    2. Regenerate targets from raw data
-    3. Regenerate DILI genes from DisGeNET
-    4. Create LCC-filtered data
-    5. Validate data integrity (27 checks)
-    6. Run Standard RWR permutation analysis
-    7. Run Expression-weighted RWR permutation analysis
-    8. Run Shortest Path permutation analysis
-    9. Run Bootstrap sensitivity analysis
-    10. Run Chemical Similarity control
-    11. Generate DATA_FLOW.md documentation
-
-Author: Network Toxicology Pipeline v2.0
 """
 
 import subprocess
@@ -139,10 +123,10 @@ def print_header(text, char='='):
 
 
 def print_step(step_info, status='RUNNING'):
-    """Print step information."""
-    icons = {'RUNNING': '🔄', 'DONE': '✅', 'SKIP': '⏭️', 'FAIL': '❌'}
-    icon = icons.get(status, '•')
-    print(f"\n{icon} Step {step_info['step']}: {step_info['name']}")
+    """Print step info."""
+    icons = {'RUNNING': '...', 'DONE': 'OK', 'SKIP': 'SKIP', 'FAIL': 'FAIL'}
+    icon = icons.get(status, '-')
+    print(f"\n[{icon}] Step {step_info['step']}: {step_info['name']}")
     print(f"   {step_info['description']}")
 
 
@@ -204,20 +188,19 @@ def check_outputs_exist(outputs):
 def run_pipeline(start_step=1, only_step=None, validate_only=False):
     """Run the complete pipeline."""
     
-    print_header("H. PERFORATUM NETWORK TOXICOLOGY PIPELINE v2.0")
+    print_header("NETWORK TOXICOLOGY PIPELINE")
     print(f"\nStarted: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"Python: {sys.version.split()[0]}")
     print(f"Working directory: {Path.cwd()}")
     
     if validate_only:
-        print("\n⚠️  VALIDATION MODE: Running data integrity checks only")
+        print("\nVAL MODE: Running data integrity checks only")
         start_step = 5
         only_step = 5
     
     if only_step:
-        print(f"\n⚠️  SINGLE STEP MODE: Running step {only_step} only")
+        print(f"\nSINGLE STEP MODE: Running step {only_step} only")
     elif start_step > 1:
-        print(f"\n⚠️  RESUME MODE: Starting from step {start_step}")
+        print(f"\nRESUME MODE: Starting from step {start_step}")
     
     # Track results
     results = []
@@ -272,20 +255,19 @@ def run_pipeline(start_step=1, only_step=None, validate_only=False):
             print_step(step_info, 'FAIL')
             results.append({'step': step_num, 'status': 'FAILED', 'time': elapsed})
             
-            # Stop if required step fails
             if step_info.get('required'):
-                print("\n❌ PIPELINE HALTED: Required step failed")
+                print("\nHALTED: Required step failed")
                 break
     
     # Summary
     total_time = time.time() - start_time
     print_header("PIPELINE SUMMARY")
     
-    print("\nStep Results:")
+    print("\nResults:")
     for r in results:
-        status_icon = {'SUCCESS': '✅', 'FAILED': '❌', 'SKIPPED': '⏭️'}[r['status']]
+        status_icon = {'SUCCESS': 'OK  ', 'FAILED': 'FAIL', 'SKIPPED': 'SKIP'}[r['status']]
         step_name = next(s['name'] for s in PIPELINE_STEPS if s['step'] == r['step'])
-        print(f"  {status_icon} Step {r['step']}: {step_name} ({r['time']:.1f}s)")
+        print(f"  [{status_icon}] Step {r['step']}: {step_name} ({r['time']:.1f}s)")
     
     failed = [r for r in results if r['status'] == 'FAILED']
     
@@ -293,10 +275,10 @@ def run_pipeline(start_step=1, only_step=None, validate_only=False):
     print(f"Completed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
     if failed:
-        print(f"\n❌ PIPELINE FAILED: {len(failed)} step(s) failed")
+        print(f"\nFAILED: {len(failed)} step(s) failed")
         return 1
     else:
-        print("\n✅ PIPELINE COMPLETED SUCCESSFULLY")
+        print("\nCOMPLETED SUCCESSFULLY")
         return 0
 
 

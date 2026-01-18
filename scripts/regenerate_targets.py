@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 """
-Regenerate targets.csv from raw data with documented filtering.
-
-Filters applied:
-1. Must have UniProt -> Gene mapping
-2. Must be human (exclude mouse, rat, bacterial, viral proteins)
-3. Standardize gene names
-
-Output: data/processed/targets.csv
+Regenerate targets.csv from raw data.
 """
 
 import pandas as pd
@@ -81,9 +74,7 @@ def is_non_human(protein_id: str, gene: str) -> bool:
 
 
 def main():
-    print("=" * 80)
-    print("REGENERATING targets.csv FROM RAW DATA")
-    print("=" * 80)
+    print("Regenerating targets from raw data")
     
     # Load raw targets
     raw_file = DATA_DIR / 'raw' / 'targets_raw.csv'

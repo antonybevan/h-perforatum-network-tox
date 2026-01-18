@@ -1,15 +1,8 @@
 #!/usr/bin/env python3
 """
-Expression-Weighted RWR with Degree-Matched Permutation Testing
+Expression-Weighted RWR with Permutation Testing
 
-Rigorous statistical validation using:
-- Liver LCC networks (filtered to TPM >= 1)
-- Transition-matrix weighting (tissue-aware RWR)
-- Degree-matched null distributions
-- FDR correction
-
-USES: targets_lcc.csv (10 Hyperforin, 62 Quercetin)
-NETWORKS: network_700_liver_lcc.parquet, network_900_liver_lcc.parquet
+Validates influence results against degree-matched null distributions.
 """
 
 import sys
@@ -131,12 +124,10 @@ def run_permutation_test(G, observed_targets, dili_genes, expression, n_perm, de
 
 
 def main():
-    print("=" * 80)
-    print(" EXPRESSION-WEIGHTED RWR: DEGREE-MATCHED PERMUTATION TESTING")
-    print("=" * 80)
+    print("Expression-Weighted RWR Permutation Testing")
     
-    # Load GTEx liver expression
-    print("\n[1/6] Loading GTEx liver expression...")
+    # Load expression
+    print("\nLoading liver expression...")
     if not GTEX_FILE.exists():
         print(f"ERROR: GTEx file not found: {GTEX_FILE}")
         print("Download from: https://gtexportal.org/home/datasets")
@@ -147,14 +138,12 @@ def main():
     
     all_results = []
     
-    # Test both network thresholds
+    # Test thresholds
     for network_threshold in [700, 900]:
-        print(f"\n{'=' * 80}")
-        print(f" NETWORK THRESHOLD: ≥{network_threshold}")
-        print(f"{'=' * 80}")
+        print(f"\n--- Network Threshold: ≥{network_threshold} ---")
         
-        # Load LIVER LCC network (not full network!)
-        print(f"\n[2/6] Loading Liver LCC network (≥{network_threshold})...")
+        # Load network
+        print(f"Loading network (≥{network_threshold})...")
         network_file = DATA_DIR / 'processed' / f'network_{network_threshold}_liver_lcc.parquet'
         
         if not network_file.exists():
@@ -178,7 +167,7 @@ def main():
         print(f"  Network: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
         
         # Load DILI genes
-        print(f"\n[3/6] Loading DILI genes...")
+        print("Loading DILI genes...")
         dili_genes = load_dili_genes(network_threshold)
         dili_in_network = [g for g in dili_genes if g in G]
         print(f"  DILI genes in network: {len(dili_in_network)}/{len(dili_genes)}")
@@ -187,7 +176,7 @@ def main():
         compounds = ['Hyperforin', 'Quercetin']
         
         for compound in compounds:
-            print(f"\n[4/6] Processing {compound}...")
+            print(f"\nProcessing {compound}...")
             
             # Load targets
             targets = load_targets(compound)
@@ -205,8 +194,8 @@ def main():
             print(f"  Targets with expression data: {len(targets_with_expression)}/{len(targets_in_network)}")
             print(f"  Mean target liver TPM: {mean_tpm:.2f}")
             
-            # Run permutation test
-            print(f"\n[5/6] Running permutation test (n={N_PERMUTATIONS})...")
+            # Run permutations
+            print(f"Running permutations (n={N_PERMUTATIONS})...")
             observed, null_dist, z, p = run_permutation_test(
                 G, targets_in_network, dili_in_network, expression,
                 n_perm=N_PERMUTATIONS,
@@ -236,8 +225,7 @@ def main():
             print(f"    Z-score:            {z:.4f}")
             print(f"    P-value:            {p:.4e}")
     
-    # Convert to DataFrame
-    print(f"\n[6/6] Finalizing results...")
+    # Save
     results_df = pd.DataFrame(all_results)
     
     # Apply FDR correction (within each network threshold)
@@ -255,10 +243,8 @@ def main():
     results_df.to_csv(output_file, index=False)
     print(f"\nResults saved: {output_file}")
     
-    # Print summary
-    print("\n" + "=" * 80)
-    print(" RESULTS SUMMARY")
-    print("=" * 80)
+    # Summary
+    print("\nSummary:")
     
     if not results_df.empty:
         print("\n" + results_df.to_string(index=False, float_format=lambda x: f"{x:.6f}"))

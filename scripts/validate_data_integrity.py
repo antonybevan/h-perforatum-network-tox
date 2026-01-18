@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-Comprehensive Data Integrity Validation
+Data Integrity Validation
 
-This script verifies 100% traceability of all data transformations.
-Any discrepancy will be flagged as an error.
+Verifies traceability of data transformations.
 """
 
 import pandas as pd
@@ -17,14 +16,14 @@ WARNINGS = []
 
 def error(msg):
     ERRORS.append(msg)
-    print(f"❌ ERROR: {msg}")
+    print(f"ERROR: {msg}")
 
 def warning(msg):
     WARNINGS.append(msg)
-    print(f"⚠️ WARNING: {msg}")
+    print(f"WARNING: {msg}")
 
 def ok(msg):
-    print(f"✅ {msg}")
+    print(f"OK: {msg}")
 
 def section(title):
     print(f"\n{'='*60}")
@@ -61,7 +60,7 @@ for line in mapping_lines:
 ok(f"Loaded all files successfully")
 
 # ============================================================
-section("1. TARGETS VALIDATION")
+section("TARGETS VALIDATION")
 # ============================================================
 
 # Check raw counts
@@ -125,7 +124,7 @@ else:
     ok("All LCC genes are in processed")
 
 # ============================================================
-section("2. FILTERING LOGIC VALIDATION")
+section("FILTERING LOGIC VALIDATION")
 # ============================================================
 
 # Trace exactly what was lost
@@ -151,7 +150,7 @@ for pid in SHOULD_BE_INCLUDED:
 ok("ABCB1 and VEGFA correctly included in processed")
 
 # ============================================================
-section("3. LCC FILTERING VALIDATION")
+section("LCC FILTERING VALIDATION")
 # ============================================================
 
 # Build LCC network
@@ -185,7 +184,7 @@ for gene in hyp_excluded:
 ok("All excluded Hyperforin targets correctly not in liver LCC")
 
 # ============================================================
-section("4. DILI VALIDATION")
+section("DILI VALIDATION")
 # ============================================================
 
 if len(dili_raw) != 127:
@@ -218,7 +217,7 @@ for gene in dili_900_genes:
 ok("All DILI LCC genes are in respective networks")
 
 # ============================================================
-section("5. NETWORK VALIDATION")
+section("NETWORK VALIDATION")
 # ============================================================
 
 if len(n700) != 236712:
@@ -249,7 +248,7 @@ else:
     ok("900 LCC is strict subset of 700 LCC")
 
 # ============================================================
-section("6. LIVER PROTEOME VALIDATION")
+section("LIVER PROTEOME VALIDATION")
 # ============================================================
 
 if len(liver) != 13496:
@@ -271,14 +270,12 @@ section("FINAL SUMMARY")
 
 print()
 if ERRORS:
-    print(f"❌ FAILED: {len(ERRORS)} errors found")
+    print(f"\nFAILED: {len(ERRORS)} errors found")
     for e in ERRORS:
         print(f"   - {e}")
     sys.exit(1)
 else:
-    print(f"✅ ALL CHECKS PASSED")
+    print(f"\nALL CHECKS PASSED")
     if WARNINGS:
         print(f"   ({len(WARNINGS)} warnings)")
-    print()
-    print("Data integrity verified. 100% traceability confirmed.")
     sys.exit(0)

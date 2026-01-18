@@ -1,22 +1,7 @@
 #!/usr/bin/env python3
 """
 Chemical Similarity Negative Control Analysis
-EXHAUSTIVE FDA DILIrank 2.0 Analysis
-
-Methodology:
-    1. Load FDA DILIrank 2.0 (1,336 drugs)
-    2. Algorithmic filter:
-       - DILI-positive: vMost-DILI-concern OR vLess-DILI-concern (568 drugs)
-       - DILI-negative: vNo-DILI-concern (414 drugs)
-    3. Retrieve SMILES from PubChem REST API (ALL drugs, no sampling)
-    4. Generate ECFP4 fingerprints (RDKit)
-    5. Calculate Tanimoto similarity
-
-Reference:
-    Chen et al. (2016) Drug Discovery Today 21(4):648-653
-    https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-dataset
-
-Author: Network Pharmacology Analysis Pipeline
+FDA DILIrank 2.0 Analysis
 """
 
 import sys
@@ -276,12 +261,8 @@ def calculate_tanimoto(fp1, fp2) -> Optional[float]:
 # =============================================================================
 
 def main():
-    """Run exhaustive chemical similarity analysis."""
-    
-    print("=" * 80)
-    print("CHEMICAL SIMILARITY NEGATIVE CONTROL ANALYSIS")
-    print("EXHAUSTIVE FDA DILIrank 2.0 (No Sampling)")
-    print("=" * 80)
+    """Run chemical similarity analysis."""
+    print("Chemical Similarity Analysis (FDA DILIrank 2.0)")
     
     # Validate dependencies
     if not check_rdkit():
@@ -289,12 +270,9 @@ def main():
         sys.exit(1)
     
     print("\n[OK] RDKit available")
-    print("[OK] Requests library available")
     
     # Load DILIrank
-    print("\n" + "-" * 40)
-    print("[1/5] Loading FDA DILIrank 2.0...")
-    print("-" * 40)
+    print("\nLoading DILIrank 2.0...")
     
     dilirank_df = load_dilirank_dataset()
     
