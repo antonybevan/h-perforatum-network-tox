@@ -1,9 +1,7 @@
-% ============================================================================
-% Cover Letter for Computational Toxicology - Revised Professional Version
-% ============================================================================
+% Cover Letter for Computational Toxicology
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{charter} % Professional font
+\usepackage{charter}
 \usepackage{hyperref}
 \usepackage{setspace}
 
@@ -11,48 +9,38 @@
 
 \begin{document}
 
-% --- Header / Contact Info ---
 \begin{flushright}
     \textbf{Antony Bevan} \\
     Department of Pharmacognosy \\
     Madurai Medical College \\
     Madurai 625020, India \\
-    Email: \url{antonybevan04@gmail.com} \\
+    \url{antonybevan04@gmail.com} \\
     \medskip
     \today
 \end{flushright}
 
 \bigskip
 
-% --- Recipient ---
 \noindent
-To the Editor-in-Chief \\
-\textit{Computational Toxicology} \\
-Elsevier Editorial Office
+Editor-in-Chief \\
+\textit{Computational Toxicology}
 
 \bigskip
-
-\noindent
-\textbf{Subject: Submission of Original Research Article}
-
-\medskip
 
 \noindent
 Dear Editor,
 
 \onehalfspacing
 
-I am pleased to submit our manuscript, ``\textbf{Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum}},'' for consideration as an Original Research Article in \textit{Computational Toxicology}.
+We request consideration of the enclosed manuscript, ``Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum},'' for publication in \textit{Computational Toxicology}.
 
-In this study, we address a critical methodological vulnerability in network-based toxicology: the sensitivity of proximity Z-scores to target-set size. Using \textit{H. perforatum} as a model, we demonstrate that traditional proximity-based rankings are fundamentally confounded by the law of large numbers, which leads to unstable, threshold-dependent significance assessments when comparing compounds with asymmetric target profiles.
+The manuscript compares proximity-based and influence-based network metrics for toxicity prediction. Using Hyperforin and Quercetin as test compounds, we show that proximity Z-scores can produce misleading rankings when target set sizes differ substantially. Specifically, Quercetin (62 targets) ranks as more significant than Hyperforin (10 targets) by proximity, despite Hyperforin being closer to DILI genes and being the known hepatotoxic agent in this system.
 
-To resolve this, we provide a robust framework based on random walk influence propagation and quantify \textbf{perturbation efficiency} as a normalized metric for comparative assessment. Our results show that influence-based metrics remain stable across network construction parameters and correctly identify the high-leverage modulation of the PXR axis by hyperforin, where proximity measures fail. 
+The effect arises from the law of large numbers: larger target sets yield tighter null distributions, which inflate Z-scores independently of actual topological proximity. Random walk influence metrics do not exhibit this behavior and rank Hyperforin consistently across thresholds.
 
-We believe this work is particularly relevant to the readers of \textit{Computational Toxicology} as it identifies a systematic artifact in current prioritization workflows and provides a validated, reproducible alternative for comparative risk assessment. 
+Bootstrap resampling and chemical similarity controls are included to address potential confounders. All code and data are available at \url{https://github.com/antonybevan/h-perforatum-network-tox}.
 
-This manuscript is original and is not under consideration elsewhere. All code and curated data have been made available via a public repository (\url{https://github.com/antonybevan/h-perforatum-network-tox}) to ensure complete transparency and reproducibility.
-
-Thank you for your time and for considering our work.
+The manuscript is not under consideration elsewhere.
 
 \bigskip
 
@@ -65,3 +53,4 @@ Sincerely,
 Antony Bevan
 
 \end{document}
+

@@ -82,14 +82,14 @@ source("R/fig3_ewi_waterfall.R")
 ---
 ## Citation
 
-If you use this framework or the *H. perforatum* target sets, please cite our study:
+If you use this framework or the *H. perforatum* target sets, please cite:
 
 ```bibtex
-@article{bevan2026network,
+@article{bevan2025network,
   title={Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of Hypericum perforatum},
   author={Bevan, Antony},
-  year={2026},
-  journal={Computational Toxicology}
+  year={2025},
+  note={Manuscript under review}
 }
 ```
 
