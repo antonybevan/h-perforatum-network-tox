@@ -3,7 +3,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/main.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
+[![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
 [![Tests](https://img.shields.io/badge/tests-68%20passed-success.svg)](tests/)
 [![Manuscript](https://img.shields.io/badge/manuscript-PDF-red.svg)](manuscript/main.pdf)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
