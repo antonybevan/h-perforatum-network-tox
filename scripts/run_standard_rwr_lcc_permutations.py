@@ -222,9 +222,9 @@ def main():
     if not results_df.empty:
         print("\n" + results_df.to_string(index=False, float_format=lambda x: f"{x:.6f}"))
         
-        # PTNI comparison
+        # Efficiency comparison
         print("\n" + "-" * 80)
-        print(" PTNI COMPARISON (Standard RWR)")
+        print(" EFFICIENCY COMPARISON (Standard RWR)")
         print("-" * 80)
         
         for threshold in [700, 900]:
@@ -233,16 +233,17 @@ def main():
             quer = subset[subset['compound'] == 'Quercetin']
             
             if not hyp.empty and not quer.empty:
-                # Correct PTNI: The influence mass I is already per-target normalized
+                # Efficiency: The influence mass I is already per-target normalized
                 # because the restart vector is defined as (1/|T|).
-                ptni_hyp = hyp.iloc[0]['observed_influence']
-                ptni_quer = quer.iloc[0]['observed_influence']
-                ratio = ptni_hyp / ptni_quer if ptni_quer > 0 else float('inf')
+                eff_hyp = hyp.iloc[0]['observed_influence']
+                eff_quer = quer.iloc[0]['observed_influence']
+                ratio = eff_hyp / eff_quer if eff_quer > 0 else float('inf')
                 
                 print(f"\nSTRING ≥{threshold}:")
-                print(f"  PTNI Hyperforin: {ptni_hyp:.6f}")
-                print(f"  PTNI Quercetin:  {ptni_quer:.6f}")
-                print(f"  PTNI Ratio:      {ratio:.1f}× (Note: Bootstrap ratio is 3.7×)")
+                print(f"  Efficiency Hyperforin: {eff_hyp:.6f}")
+                print(f"  Efficiency Quercetin:  {eff_quer:.6f}")
+                print(f"  Efficiency Ratio:      {ratio:.1f}× (Note: Bootstrap ratio is 3.7×)")
+
     
     print("\n" + "=" * 80)
     print(" COMPLETED")

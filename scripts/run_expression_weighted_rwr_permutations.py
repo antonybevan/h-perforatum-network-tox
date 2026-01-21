@@ -277,14 +277,15 @@ def main():
                 hyp_tpm = hyp.iloc[0]['mean_target_tpm']
                 quer_tpm = quer.iloc[0]['mean_target_tpm']
                 
-                ptni_hyp = hyp_inf
-                ptni_quer = quer_inf
-                ratio = ptni_hyp / ptni_quer if ptni_quer > 0 else float('inf')
+                eff_hyp = hyp_inf
+                eff_quer = quer_inf
+                ratio = eff_hyp / eff_quer if eff_quer > 0 else float('inf')
                 
                 print(f"\nSTRING ≥{threshold}:")
-                print(f"  PTNI Hyperforin: {ptni_hyp:.6f} (TPM={hyp_tpm:.1f})")
-                print(f"  PTNI Quercetin:  {ptni_quer:.6f} (TPM={quer_tpm:.1f})")
-                print(f"  PTNI Ratio:      {ratio:.1f}× Hyperforin advantage")
+                print(f"  Efficiency Hyperforin: {eff_hyp:.6f} (TPM={hyp_tpm:.1f})")
+                print(f"  Efficiency Quercetin:  {eff_quer:.6f} (TPM={quer_tpm:.1f})")
+                print(f"  Efficiency Ratio:      {ratio:.1f}× Hyperforin advantage")
+
     
     print("\n" + "=" * 80)
     print(" COMPLETED")

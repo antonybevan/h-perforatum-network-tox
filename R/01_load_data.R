@@ -114,15 +114,15 @@ master_summary <- tibble(
     ewr_900 %>% filter(compound == "Hyperforin") %>% pull(observed_influence),
     ewr_900 %>% filter(compound == "Quercetin") %>% pull(observed_influence)
   ),
-  PTNI_RWI = RWI_Influence / Targets,
-  PTNI_EWI = EWI_Influence / Targets
+  Efficiency_RWR = RWI_Influence / Targets,
+  Efficiency_EWI = EWI_Influence / Targets
 )
 
 # --- Validate Key Results ---
 message("\n--- Validating Key Results ---")
 stopifnot(master_summary$RWI_Z[1] > master_summary$RWI_Z[2])  # Hyperforin > Quercetin
 stopifnot(master_summary$EWI_Z[1] > master_summary$EWI_Z[2])
-stopifnot(master_summary$PTNI_RWI[1] > master_summary$PTNI_RWI[2])
+stopifnot(master_summary$Efficiency_RWR[1] > master_summary$Efficiency_RWR[2])
 message("✓ Hyperforin dominates across all metrics")
 
 # --- Print Summary ---
