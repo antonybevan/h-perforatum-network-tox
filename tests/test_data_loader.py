@@ -85,12 +85,12 @@ NETWORK_FILE = 'data/processed/network_900.parquet'
     reason=skip_reason(TARGETS_FILE) or "Data not available"
 )
 def test_targets_file_structure():
-    """Test targets.csv structure."""
+    """Test targets_lcc.csv structure (LCC-filtered targets)."""
     df = pd.read_csv(TARGETS_FILE)
     
     assert 'compound' in df.columns
-    assert 'protein_id' in df.columns
-    assert 'gene_name' in df.columns
+    assert 'gene_symbol' in df.columns
+    assert 'in_lcc_900' in df.columns
     
     hf_count = len(df[df['compound'] == 'Hyperforin'])
     qu_count = len(df[df['compound'] == 'Quercetin'])
