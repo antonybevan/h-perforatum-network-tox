@@ -30,7 +30,7 @@ phase_data <- bind_rows(
   )
 ) %>%
   mutate(
-    PTNI = Influence,
+    Efficiency = Influence,
     Method = factor(Method, levels = c("RWR", "EWI"))
   )
 
@@ -69,7 +69,7 @@ p <- ggplot() +
   geom_text(
     data = iso_labels,
     aes(x = x, y = y, label = sprintf("%.3f", PTNI)),
-    hjust = -0.05, size = 2.5, color = "#808080", family = "Arial", fontface = "italic"
+    hjust = -0.05, size = 2.5, color = "#808080", family = "sans", fontface = "italic"
   ) +
   
   # Data points (compounds)
@@ -83,8 +83,8 @@ p <- ggplot() +
   geom_text_repel(
     data = phase_data,
     aes(x = Targets, y = Influence, 
-        label = paste0(Compound, "\n(PTNI = ", sprintf("%.4f", PTNI), ")")),
-    size = 3.0, fontface = "bold", family = "Arial",
+        label = paste0(Compound, "\n(Efficiency = ", sprintf("%.4f", Efficiency), ")")),
+    size = 3.0, fontface = "bold", family = "sans",
     box.padding = 0.8, point.padding = 0.4,
     force = 3, max.overlaps = Inf, seed = 42,
     segment.color = "#888888", segment.size = 0.3,
@@ -108,17 +108,17 @@ p <- ggplot() +
   ) +
   
   labs(
-    title = "Per-target network influence (PTNI) quantifies efficiency disparity",
-    subtitle = "PTNI reframes polypharmacology as efficiency, not coverage",
+    title = "Average network influence quantifies perturbation efficiency",
+    subtitle = "Normalization reframes polypharmacology as efficiency, not coverage",
     x = "Target count",
     y = "Total influence",
     caption = str_wrap(
-      "PTNI is an effect-size normalization (total steady-state mass on DILI genes); no independent permutation test was performed. Horizontal lines represent efficiency tiers (PTNI = constant). Hyperforin occupies a higher efficiency region despite fewer targets. Data: STRING v12.0 (\u2265900), n = 1,000 permutations.",
+      "Average influence represents an effect-size normalization (total steady-state mass on DILI genes); no independent permutation test was performed. Horizontal lines represent efficiency tiers (Average Influence = constant). Hyperforin occupies a higher efficiency region despite fewer targets. Data: STRING v12.0 (\u2265900), n = 1,000 permutations.",
       width = 120
     )
   ) +
   
-  theme_classic(base_size = 11, base_family = "Arial") +
+  theme_classic(base_size = 11, base_family = "sans") +
   theme(
     # Axes
     axis.line = element_line(color = "black", linewidth = 0.6),
