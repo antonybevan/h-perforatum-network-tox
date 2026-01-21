@@ -31,9 +31,9 @@ waterfall_data <- tibble(
     "Quercetin\nexpression effect",
     "EWI\nadvantage"
   )),
-  Value = c(rwr_gap, hyp_change, -quer_change, ewi_gap),
+  Value = c(rwr_gap, hyp_change, quer_change, ewi_gap),
   Type = c("total", "change", "change", "total"),
-  ymin = c(0, rwr_gap + hyp_change, rwr_gap + hyp_change - quer_change, 0),
+  ymin = c(0, rwr_gap + hyp_change, rwr_gap + hyp_change + quer_change, 0),
   ymax = c(rwr_gap, rwr_gap, rwr_gap + hyp_change, ewi_gap)
 )
 
@@ -49,7 +49,7 @@ waterfall_data <- waterfall_data %>%
     ymax = case_when(
       Step == "RWR\nadvantage" ~ rwr_gap,
       Step == "Hyperforin\nexpression effect" ~ rwr_gap,
-      Step == "Quercetin\nexpression effect" ~ rwr_gap + hyp_change - quer_change,
+      Step == "Quercetin\nexpression effect" ~ rwr_gap + hyp_change + quer_change,
       Step == "EWI\nadvantage" ~ ewi_gap
     ),
     Fill = case_when(
