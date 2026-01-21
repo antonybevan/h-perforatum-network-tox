@@ -27,7 +27,7 @@ def get_degree_matched_random(G, targets, n_sample, seed=None):
     nodes = list(G.nodes())
     
     for deg in target_degrees[:n_sample]:
-        tol = max(1, int(deg * 0.15))
+        tol = max(1, int(deg * 0.25))
         candidates = [n for n in nodes 
                      if abs(degrees[n] - deg) <= tol 
                      and n not in targets 

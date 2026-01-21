@@ -100,11 +100,12 @@ p <- ggplot(waterfall_data, aes(x = Step)) +
   
   labs(
     title = "Expression weighting attenuates but does not reverse the advantage",
-    subtitle = "Gap: +5.8 (RWR) → +3.5 (EWI)",
+    subtitle = sprintf("Gap: %+.1f (RWR) → %+.1f (EWI)", rwr_gap, ewi_gap),
     x = NULL,
     y = "Z-score gap contribution",
     caption = str_wrap(
-      "[CONSTRAINT ANALYSIS] The RWR advantage (+5.8) is partitioned under expression-weighted influence propagation: (1) Hyperforin's change under expression weighting (−1.2); (2) Quercetin's gain (+1.1, driven by CFB at 1115 TPM). Residual advantage (+3.5) remains significant (both p < 10⁻⁸). GTEx v8 liver expression (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations.",
+      sprintf("[CONSTRAINT ANALYSIS] The RWR advantage (%+.1f) is partitioned under expression-weighted influence propagation: (1) Hyperforin's change under expression weighting (%+.1f); (2) Quercetin's gain (%+.1f, driven by CFB at 1115 TPM). Residual advantage (%+.1f) remains significant (both p < 10⁻⁸). GTEx v8 liver expression (TPM ≥1). STRING v12.0 (≥900), n = 1,000 degree-matched permutations.", 
+              rwr_gap, hyp_change, quer_change, ewi_gap),
       width = 110
     )
   ) +

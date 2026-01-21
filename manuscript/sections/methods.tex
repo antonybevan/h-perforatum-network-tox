@@ -23,7 +23,7 @@ Raw DILI gene count: 127 genes.
 \subsubsection{Hyperforin targets}
 Hyperforin targets were curated from primary literature sources \citep{Moore2000, Watkins2001}.
 Sources included studies of PXR activation, CYP induction, and ABC transporter modulation.
-Raw target count: 14 proteins (Table~S1).
+Raw target count: 14 proteins (Table~\ref{tab:S1}).
 
 \subsubsection{Quercetin targets}
 Quercetin targets were retrieved programmatically from ChEMBL v31 \citep{Mendez2019} via REST API.
@@ -114,7 +114,7 @@ Random seed: 42.
     \text{PTNI} = I
 \end{equation}
 where $I$ is the total steady-state probability mass on DILI genes from a uniform restart vector.
-Because the restart vector is defined as $1/|T|$ for $i \in T$ (Eq. 72), the resulting mass $I$ is inherently the average influence per target.
+Because the restart vector is defined as $1/|T|$ for $i \in T$ (Eq. 75), the resulting mass $I$ is inherently the average influence per target.
 This normalization (hereafter termed per-target network influence, PTNI) serves as an effect-size adjustment that allows for direct comparison of perturbation efficiency between compounds with asymmetric target sets.
 PTNI was not subjected to independent permutation testing.
 

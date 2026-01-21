@@ -1,0 +1,59 @@
+% Cover Letter for Computational Toxicology
+% Prepared for manuscript submission
+
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\signature{Antony Bevan\\
+Department of Pharmacognosy\\
+Madurai Medical College\\
+Madurai, India\\
+\texttt{antonybevan04@gmail.com}}
+
+\address{Antony Bevan\\
+Department of Pharmacognosy\\
+Madurai Medical College\\
+Madurai 625020, India}
+
+\begin{document}
+
+\begin{letter}{Editor-in-Chief\\
+\textit{Computational Toxicology}\\
+Elsevier}
+
+\opening{Dear Editor,}
+
+We are pleased to submit our manuscript entitled ``\textbf{Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum}}'' for consideration as an Original Research Article in \textit{Computational Toxicology}.
+
+\textbf{Summary.} This work addresses a critical methodological problem in network-based toxicology: the instability of proximity Z-scores when comparing compounds with asymmetric target set sizes. Using \textit{Hypericum perforatum} as a controlled case study, we demonstrate that proximity Z-scores can yield misleading rankings due to sample-size-dependent null distribution tightening (the law of large numbers). We show that random walk--based influence propagation provides a more robust framework, and introduce per-target network influence (PTNI) as an effect-size metric for comparative toxicological assessment.
+
+\textbf{Key Findings.}
+\begin{itemize}
+    \item Proximity Z-scores are threshold-dependent and reverse compound rankings between STRING confidence levels.
+    \item Influence-based metrics (RWR, EWI) remain stable across network construction parameters.
+    \item Hyperforin targets achieve 3.7-fold greater DILI-directed perturbation efficiency than Quercetin targets, consistent with clinical hepatotoxicity profiles.
+    \item Bootstrap sensitivity analysis excludes target-count confounding as an explanation.
+\end{itemize}
+
+\textbf{Relevance to Computational Toxicology.} Our work directly addresses the journal's focus on computational approaches for toxicological evaluation by:
+\begin{enumerate}
+    \item Identifying a systematic artifact in widely-used network proximity metrics.
+    \item Providing a validated alternative framework (influence propagation + PTNI).
+    \item Demonstrating practical robustness across multiple validation approaches.
+    \item Contributing reproducible code and data for the community.
+\end{enumerate}
+
+\textbf{Reproducibility.} All code and data are publicly available at: \url{https://github.com/antonybevan/h-perforatum-network-tox}. Random seeds are fixed (seed=42) throughout, and all software versions are documented.
+
+\textbf{Declarations.} This manuscript has not been published and is not under consideration elsewhere. The author declares no competing interests. No external funding was received. AI-assisted tools were used to support code development; the author takes full responsibility for all content.
+
+We believe this work will be of significant interest to the readers of \textit{Computational Toxicology} as it provides both a methodological advance and a reproducible template for network-based risk assessment.
+
+Thank you for considering our submission. We look forward to your response.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

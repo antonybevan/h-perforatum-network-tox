@@ -98,8 +98,8 @@ def create_expression_weighted_transition_matrix(
     # Normalize expression to [0, 1]
     expr_normalized = normalize_expression_values(expression, nodes, method="log_minmax")
     
-    # Weight each ROW by source node expression: A'_ij = A_ij * e_i
-    # This makes highly-expressed nodes better signal transmitters
+    # Weight each ROW by destination node expression: A'_ij = e_i * A_ij
+    # This attracts signal to highly-expressed proteins (destination-node weighting)
     expr_diag = sparse.diags(expr_normalized)
     weighted_adj = expr_diag.dot(adj_matrix)
     

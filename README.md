@@ -1,77 +1,97 @@
-# Comparative Analysis of Network-Based Measures for the Assessment of Drug-Induced Liver Injury
+# Comparative Analysis of Network-Based Measures for DILI Assessment
+## Case Study: *Hypericum perforatum* (St. John's Wort)
 
-[![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Manuscript](https://img.shields.io/badge/manuscript-PDF-red.svg)](manuscript/main.pdf)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey)](https://github.com/antonybevan/h-perforatum-network-tox)
-[![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
 
-Reproducible analysis evaluating the robustness of network proximity and influence metrics for toxicological prioritization.
+This repository contains the complete, reproducible analysis pipeline for evaluating the robustness of network proximity and influence metrics in the context of Drug-Induced Liver Injury (DILI). 
 
 ---
 
-## Overview
+## 🔬 Scientific Context
 
-This repository contains the complete analysis pipeline for our comparative study of drug-induced liver injury (DILI) network influence. Using *H. perforatum* (St. John's Wort) as a controlled model system, we evaluate the stability of network prioritization across different metric classes.
+Network-based drug prioritization often relies on **proximity Z-scores**, which we demonstrate are fundamentally confounded by the **Law of Large Numbers**. As target set size increases, the null distribution shrinks, artificially inflating significance despite greater physical distances.
 
-| Compound | Target Count (LCC) | Influence Z-score | Per-Target Influence (PTNI) |
-|----------|--------------------|-------------------|-----------------------------|
-| **Hyperforin** | 10 | Z = +10.27 | 0.1138 |
-| **Quercetin** | 62 | Z = +4.42 | 0.0322 |
+We resolve this "inferential instability" using **Random Walk with Restart (RWR)** influence propagation and introduce **Per-Target Network Influence (PTNI)** as a metric for perturbation efficiency.
 
-**Key Result:** Influence-based metrics resolve the "inferential instability" seen in proximity Z-scores. Hyperforin achieves ~3.7-fold greater per-target influence efficiency on DILI effector genes compared to Quercetin.
+### Key Results (STRING ≥900 Liver LCC)
 
-## Reproducing the Analysis
+| Compound | Targets | Proximity ($d_c$) | Proximity Z | Influence Z (RWR) | PTNI Efficiency | 
+|----------|---------|-------------------|-------------|-------------------|-----------------|
+| **Hyperforin** | 10 | **1.30** | -3.86 | **+10.12** | **0.1138** |
+| **Quercetin** | 62 | 1.68 | **-5.44** | +4.55 | 0.0322 |
 
-To run the scientific audit benchmark (validated production script):
+> [!IMPORTANT]
+> **Hyperforin** achieves ~**3.7x** more DILI-directed influence per-target than Quercetin, correctly identifying it as the higher-leverage modulator despite a 6-fold smaller target set.
 
+---
+
+## 🚀 Quick Start (Reproducibility)
+
+### 1. Environment Setup
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Clone the repository
+git clone https://github.com/antonybevan/h-perforatum-network-tox
+cd h-perforatum-network-tox
 
-# Run production benchmark
+# Install dependencies (Python & R required)
+pip install -r requirements.txt
+```
+
+### 2. Run Analysis Pipeline
+Execute the end-to-end Python analysis (Network construction, Permutations, Bootstrap):
+```bash
 python scripts/run_pipeline.py
 ```
 
-## Repository Structure
-
-```
-├── src/ecnp/            # Core ECNP Package source
-├── scripts/production/  # Verified production scripts
-├── data/production/     # Validated datasets
-├── tests/               # Unit tests
-├── archive/             # Legacy research artifacts
-├── manuals/             # User documentation
-└── requirements.txt     # Dependency lock
+### 3. Generate Publication Figures
+Generate the figures for the manuscript using R:
+```r
+source("R/fig2_dumbbell.R")
+source("R/fig3_ewi_waterfall.R")
 ```
 
-## Data Sources
+---
 
-| Source | Version | Description |
-|--------|---------|-------------|
-| [STRING](https://string-db.org) | v12.0 | Protein interactions (score ≥900) |
-| [GTEx](https://gtexportal.org) | v8 | Liver expression (TPM ≥1) |
-| [DILIrank](https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb) | 2.0 | Hepatotoxicity associations |
-| [ChEMBL](https://www.ebi.ac.uk/chembl/) | 33 | Drug-target binding |
+## 📂 Repository Structure
 
-## Documentation
+```text
+├── src/network_tox/     # Core analytical modules (RWR, EWI, Permutation)
+├── scripts/             # Production execution scripts
+├── R/                  # Publication-tier plotting scripts
+├── data/               # Curated target and DILI gene sets
+├── results/            # Computed Z-scores and consolidated tables
+├── manuscript/         # LaTeX source and final PDF
+└── tests/              # Validation suite for core algorithms
+```
 
-- [Research Summary](docs/RESEARCH_SUMMARY.md) — Complete study overview
-- [Methodology](docs/METHODOLOGY.md) — Statistical methods
-- [Results Guide](results/RESULTS_GUIDE.md) — Interpreting outputs
+---
 
-## Citation
+## 🛠 Methodology Summary
+
+1.  **Network Construction**: STRING v12.0 PPI (Confidence ≥700/900), filtered for liver-expressed genes (GTEx v8, TPM ≥1).
+2.  **Permutation Testing**: 1,000 degree-matched permutations per compound to control for node degree bias.
+3.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to exclude target-count effects.
+4.  **Expression Weighting**: Destination-node transition weighting based on tissue-specific protein abundance.
+
+---
+## 📖 Citation
+
+If you use this framework or the *H. perforatum* target sets, please cite our study:
 
 ```bibtex
 @article{bevan2026network,
   title={Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of Hypericum perforatum},
   author={Bevan, Antony},
   year={2026},
-  journal={In preparation (Computational Toxicology)}
+  journal={Computational Toxicology}
 }
 ```
 
-## License
+---
 
-MIT License. See [LICENSE](LICENSE).
+## ⚖️ License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.

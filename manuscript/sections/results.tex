@@ -4,8 +4,8 @@
 
 We first established network context by quantifying target count and shortest-path proximity to 82 DILI-associated genes (Figure~\ref{fig:fig1}).
 Quercetin engages 62 targets in the liver-expressed largest connected component; Hyperforin engages 10.
-At STRING confidence $\geq$900, Hyperforin targets are physically closer to DILI genes ($d_c = 1.30$) than Quercetin targets ($d_c = 1.68$).
-However, the proximity Z-scores yield the opposite ranking: Quercetin achieves $Z = -5.44$ ($p < 0.001$), while Hyperforin achieves $Z = -3.86$ ($p < 0.001$).
+At STRING confidence $\geq$900, Hyperforin targets are physically closer to DILI genes ($d_c = 1.30$) than Quercetin targets ($d_c = 1.68$; Table~\ref{tab:main_results}).
+However, the proximity Z-scores yield the opposite ranking: Quercetin achieves $Z = -5.44$ ($p < 0.001$), while Hyperforin achieves $Z = -3.86$ ($p < 0.001$). All reported associations survived Benjamini--Hochberg FDR correction ($q < 0.05$).
 
 This discrepancy highlights a fundamental confounder in proximity Z-scores: the law of large numbers.
 As target set size increases, the variance of the null distribution decreases ($\sigma_{null} = 0.09$ for Quercetin vs $0.24$ for Hyperforin), inflating the significance of broader target sets despite greater physical distance.
@@ -14,7 +14,7 @@ This statistical artifact suggests that Quercetin poses greater risk, whereas th
 \subsection{Influence-based rankings are stable and resolve the confound}
 
 Random walk with restart (RWR) stabilizes this ranking by integrating over all paths (Figure~\ref{fig:fig2}).
-Hyperforin achieves influence $Z = +10.27$ ($p < 0.001$); Quercetin achieves $Z = +4.42$ ($p < 0.001$).
+Hyperforin achieves influence $Z = +10.12$ ($p < 0.001$); Quercetin achieves $Z = +4.55$ ($p < 0.001$; Table~\ref{tab:main_results}).
 Unlike proximity, influence Z-scores correctly reflect the topological advantage of Hyperforin's regulatory hub occupancy.
 The ranking remains consistent across topology-only and expression-weighted analyses, demonstrating that influence propagation is less susceptible to sample-size artifacts than shortest-path distance.
 
@@ -22,13 +22,13 @@ The ranking remains consistent across topology-only and expression-weighted anal
 
 To assess whether the RWR signal persists under tissue-specific constraint, we applied expression-weighted influence propagation (EWI), weighting transitions by destination-node liver expression (Figure~\ref{fig:fig3}).
 
-The Z-score differential narrows but remains substantial under expression weighting: Hyperforin $Z = +9.07$ ($p < 0.001$); Quercetin $Z = +5.56$ ($p < 0.001$).
+The Z-score differential narrows but remains substantial under expression weighting: Hyperforin $Z = +8.98$ ($p < 0.001$); Quercetin $Z = +5.79$ ($p < 0.001$).
 Hyperforin's advantage is driven primarily by the PXR--CYP master regulatory axis, which remains highly active in liver tissue (e.g., CYP3A4 at 335 TPM).
 Quercetin's influence is moderated by its broad, diffuse target profile, which includes several high-expression nodes (e.g., CFB at 1{,}115 TPM) that do not converge on a DILI effector hub.
 
 \subsection{Normalizing for target count confirms Hyperforin's topological advantage}
 
-To resolve the target-count paradox, we computed per-target network influence (PTNI), reframing polypharmacology as an efficiency problem rather than a coverage problem (Figure~\ref{fig:fig4}).
+To resolve the target-count paradox, we computed per-target network influence (PTNI), reframing polypharmacology as an efficiency problem rather than a coverage problem (Figure~\ref{fig:fig4}; Table~\ref{tab:ptni}).
 
 \begin{center}
 \begin{tabular}{@{}llcccc@{}}
@@ -45,7 +45,7 @@ Quercetin & 62 & 0.0322 & 0.0493 & --- & --- \\
 
 \small $^*$Eff. Ratio: observed PTNI ratio. $^\dagger$Rob. Ratio: observed influence / size-matched bootstrap mean (N=10).
 
-Each Hyperforin target contributes 3.7$\times$ more DILI-directed influence than each Quercetin target (calculated as the ratio of observed influence to the size-matched bootstrap mean). 
+Each Hyperforin target contributes 3.7$\times$ more DILI-directed influence than each Quercetin target (robust ratio).
 This disparity indicates that Hyperforin's target positions are substantially higher leverage than those of Quercetin, achieving greater perturbation efficiency despite a 6-fold smaller target set.
 
 \subsection{Bootstrap resampling excludes target-selection bias}
@@ -53,7 +53,7 @@ This disparity indicates that Hyperforin's target positions are substantially hi
 To rule out the possibility that Hyperforin's advantage arises from favorable target selection rather than strategic network positioning, we performed bootstrap sensitivity analysis (Figure~\ref{fig:fig5}).
 100 random 10-target subsets were sampled without replacement from Quercetin's 62-target pool and scored by RWR.
 
-Hyperforin's observed influence (0.1138) exceeds the entire bootstrap distribution from Quercetin (mean = 0.0308, 95\% CI = [0.0160, 0.0542]).
+Hyperforin's observed influence (0.1138) exceeds the entire bootstrap distribution from Quercetin (mean = 0.0308, 95\% CI = [0.0160, 0.0542]; Table~\ref{tab:bootstrap}).
 The fold difference between Hyperforin and the bootstrap mean is 3.7$\times$.
 This confirms that Hyperforin's advantage is not an artifact of target count; even when sampling equalized subsets from Quercetin's pool, no configuration matches Hyperforin's influence.
 

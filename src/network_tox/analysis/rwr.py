@@ -4,7 +4,7 @@ import numpy as np
 import networkx as nx
 from scipy import sparse
 
-def run_rwr(G, seeds, restart_prob=0.7, tol=1e-6, max_iter=100):
+def run_rwr(G, seeds, restart_prob=0.15, tol=1e-6, max_iter=100):
     """
     Run Random Walk with Restart using scipy.sparse.
 

@@ -23,8 +23,8 @@ Network: STRING v12.0 (confidence $\geq$900), GTEx v8 (liver TPM $\geq$1).}
 \caption{\textbf{Instability of proximity Z-scores.}
 Dumbbell plot showing the dissociation between shortest-path proximity (left) and random walk influence (right) at STRING confidence $\geq$900.
 At this threshold, Quercetin appears more "significant" in Z-score but is physically more distant ($1.68$ vs $1.30$) from DILI genes.
-Hyperforin: proximity Z = $-$3.86, influence Z = +10.27 ($p < 0.001$).
-Quercetin: proximity Z = $-$5.44, influence Z = +4.42 ($p < 0.001$).
+Hyperforin: proximity Z = $-$3.86, influence Z = +10.12 ($p < 0.001$).
+Quercetin: proximity Z = $-$5.44, influence Z = +4.55 ($p < 0.001$).
 Influence quantified by random walk with restart (RWR; $\alpha = 0.15$).
 $n = 1{,}000$ degree-matched permutations per compound.}
 \label{fig:fig2}
@@ -36,11 +36,11 @@ $n = 1{,}000$ degree-matched permutations per compound.}
 \includegraphics[width=0.9\textwidth]{figures/fig3_ewi_waterfall.pdf}
 \caption{\textbf{Expression weighting refines influence propagation.}
 Waterfall decomposition of Z-score changes under expression-weighted influence (EWI).
-Initial Hyperforin advantage: $\Delta$Z = +5.85 (RWR).
-Hyperforin change: $-$1.20 (attenuation of signal through liver-active hubs).
-Quercetin change: +1.14 (gain from high-expression nodes like CFB).
-Residual Hyperforin advantage: $\Delta$Z = +3.51.
-Both compounds remain significant under EWI: Hyperforin Z = +9.07 ($p < 0.001$); Quercetin Z = +5.56 ($p < 0.001$).
+Initial Hyperforin advantage: $\Delta$Z = +5.57 (RWR).
+Hyperforin change: $-$1.14 (attenuation of signal through liver-active hubs).
+Quercetin change: +1.24 (gain from high-expression nodes like CFB).
+Residual Hyperforin advantage: $\Delta$Z = +3.19.
+Both compounds remain significant under EWI: Hyperforin Z = +8.98 ($p < 0.001$); Quercetin Z = +5.79 ($p < 0.001$).
 Expression weighting from GTEx v8 liver tissue.}
 \label{fig:fig3}
 \end{figure}
