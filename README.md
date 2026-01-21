@@ -16,17 +16,17 @@ This repository contains the complete, reproducible analysis pipeline for evalua
 
 Network-based drug prioritization often relies on proximity Z-scores, which we demonstrate are fundamentally confounded by the Law of Large Numbers. As target set size increases, the null distribution shrinks, artificially inflating significance despite greater physical distances.
 
-We resolve this "inferential instability" using Random Walk with Restart (RWR) influence propagation and introduce Per-Target Network Influence (PTNI) as a metric for perturbation efficiency.
+We resolve this "inferential instability" using Random Walk with Restart (RWR) influence propagation and quantify **perturbation efficiency** as a normalized metric for comparative assessment.
 
 ### Key Results (STRING >=900 Liver LCC)
 
-| Compound | Targets | Proximity ($d_c$) | Proximity Z | Influence Z (RWR) | PTNI Efficiency | 
-|----------|---------|-------------------|-------------|-------------------|-----------------|
+| Compound | Targets | Proximity ($d_c$) | Proximity Z | Influence Z (RWR) | Efficiency (Avg Inf) | 
+|----------|---------|-------------------|-------------|-------------------|----------------------|
 | **Hyperforin** | 10 | **1.30** | -3.86 | **+10.12** | **0.1138** |
 | **Quercetin** | 62 | 1.68 | **-5.44** | +4.55 | 0.0322 |
 
 > [!IMPORTANT]
-> **Hyperforin** achieves ~3.7x more DILI-directed influence per-target than Quercetin, correctly identifying it as the higher-leverage modulator despite a 6-fold smaller target set.
+> **Hyperforin** achieves ~3.7x more DILI-directed influence per-target than Quercetin, correctly identifying it as the higher-leverage modulator despite a 6-fold smaller target set. This advantage persists in expression-weighted (EWI) and bootstrap sensitivity analyses.
 
 ---
 
@@ -73,10 +73,11 @@ source("R/fig3_ewi_waterfall.R")
 
 ## Methodology Summary
 
-1.  **Network Construction**: STRING v12.0 PPI (Confidence >=700/900), filtered for liver-expressed genes (GTEx v8, TPM >=1).
+1.  **Network Construction**: STRING v12.0 PPI (Confidence ≥700/900), filtered for liver-expressed genes (GTEx v8, TPM ≥1).
 2.  **Permutation Testing**: 1,000 degree-matched permutations per compound to control for node degree bias.
-3.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to exclude target-count effects in both standard (RWR) and expression-weighted (EWI) configurations.
-4.  **Expression Weighting**: Destination-node transition weighting based on tissue-specific protein abundance.
+3.  **Perturbation Efficiency**: Normalization of the steady-state influence mass to the total target count $|T|$, enabling direct comparison across asymmetric target sets.
+4.  **Expression Weighting (EWI)**: Destination-node transition weighting based on tissue-specific protein abundance (log-transformed and normalized GTEx liver TPM).
+5.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to empirically validate that Hyperforin's advantage is not a target-count artifact.
 
 ---
 ## Citation
