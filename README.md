@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/tests.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
 [![Tests](https://img.shields.io/badge/tests-68%20passed-success.svg)](tests/)
-[![Manuscript](https://img.shields.io/badge/manuscript-PDF-red.svg)](manuscript/main.pdf)
+[![Platform: Linux | macOS | Windows](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
 This repository contains the complete, reproducible analysis pipeline for evaluating the robustness of network proximity and influence metrics in the context of Drug-Induced Liver Injury (DILI). 
