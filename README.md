@@ -73,7 +73,7 @@ source("R/fig3_ewi_waterfall.R")
 
 1.  **Network Construction**: STRING v12.0 PPI (Confidence ≥700/900), filtered for liver-expressed genes (GTEx v8, TPM ≥1).
 2.  **Permutation Testing**: 1,000 degree-matched permutations per compound to control for node degree bias.
-3.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to exclude target-count effects.
+3.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to exclude target-count effects in both standard (RWR) and expression-weighted (EWI) configurations.
 4.  **Expression Weighting**: Destination-node transition weighting based on tissue-specific protein abundance.
 
 ---

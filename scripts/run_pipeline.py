@@ -98,13 +98,20 @@ PIPELINE_STEPS = [
     },
     {
         'step': 10,
+        'name': 'EWI Bootstrap Sensitivity Analysis',
+        'script': 'run_ewi_bootstrap_sensitivity.py',
+        'description': 'Test robustness of expression-weighted results',
+        'outputs': [RESULTS_DIR / 'tables' / 'ewi_bootstrap_summary.csv'],
+    },
+    {
+        'step': 11,
         'name': 'Chemical Similarity Control',
         'script': 'run_chemical_similarity_control.py',
         'description': 'Tanimoto similarity vs FDA DILIrank hepatotoxins',
         'outputs': [RESULTS_DIR / 'tables' / 'chemical_similarity_summary.csv'],
     },
     {
-        'step': 11,
+        'step': 12,
         'name': 'Generate Documentation',
         'script': 'generate_dataflow.py',
         'description': 'Auto-generate DATA_FLOW.md with complete traceability',
