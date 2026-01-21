@@ -108,15 +108,9 @@ Attracting signal to highly-expressed nodes constrains RWR propagation to biolog
 All other RWR parameters were identical.
 Random seed: 42.
 
-\subsection{Influence normalization to average perturbation efficiency}
+\subsection{Quantifying perturbation efficiency}
 
-\begin{equation}
-    \text{PTNI} = I
-\end{equation}
-where $I$ is the total steady-state probability mass on DILI genes from a uniform restart vector.
-Because the restart vector is defined as $1/|T|$ for $i \in T$ (Eq. 75), the resulting mass $I$ is inherently the average influence per target.
-This normalization (hereafter termed per-target network influence, PTNI) serves as an effect-size adjustment that allows for direct comparison of perturbation efficiency between compounds with asymmetric target sets.
-PTNI was not subjected to independent permutation testing.
+By defining the restart vector as $\mathbf{p}_0(i) = 1/|T|$ (Eq. 75), the total steady-state probability mass $\mathbf{p}$ is inherently partitioned among the target set. Consequently, the summed influence $I$ on the DILI module (Eq. 81) represents the average perturbation efficiency per target. This normalization serves as an effect-size adjustment that allows for a direct comparison of the per-unit impact of compounds with asymmetric target sets. Hereafter, we refer to this as the perturbation efficiency.
 
 \subsection{Bootstrap sensitivity analysis}
 

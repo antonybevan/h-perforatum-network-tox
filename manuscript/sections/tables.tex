@@ -14,7 +14,7 @@ Network: STRING v12.0 LCC (confidence $\geq$900) filtered to liver-expressed gen
 \small
 \begin{tabular}{@{}llccccc@{}}
 \toprule
-\textbf{Metric} & \textbf{Compound} & \textbf{Targets} & \textbf{Observed} & \textbf{Z} & \textbf{$p$} & \textbf{PTNI} \\
+\textbf{Metric} & \textbf{Compound} & \textbf{Targets} & \textbf{Observed} & \textbf{Z} & \textbf{$p$} & \textbf{Efficiency} \\
 \midrule
 \multicolumn{7}{@{}l}{\textit{Tier 1: Shortest-path proximity}} \\[0.3em]
 & Hyperforin & 10 & $d_c = 1.30$ & $-$3.86 & $<0.001$$^*$ & --- \\
@@ -34,7 +34,7 @@ Network: STRING v12.0 LCC (confidence $\geq$900) filtered to liver-expressed gen
 \begin{minipage}{\linewidth}
 \footnotesize
 $^*$At permutation floor ($<$1/1,000).\\
-PTNI = per-target network influence; RWR = random walk with restart; EWI = expression-weighted influence; $d_c$ = mean minimum shortest-path distance; DILI = drug-induced liver injury. All associations survived Benjamini--Hochberg FDR correction ($q < 0.05$).
+Efficiency = average influence per target; RWR = random walk with restart; EWI = expression-weighted influence; $d_c$ = mean minimum shortest-path distance; DILI = drug-induced liver injury. All associations survived Benjamini--Hochberg FDR correction ($q < 0.05$).
 \end{minipage}
 \end{table}
 
@@ -43,14 +43,14 @@ PTNI = per-target network influence; RWR = random walk with restart; EWI = expre
 % ============================================================================
 \begin{table}[ht]
 \centering
-\caption{\textbf{Per-target influence efficiency.}
-PTNI quantifies average influence per target, reframing polypharmacology as an efficiency problem.
+\caption{\textbf{Average influence efficiency.}
+Normalization to the total seeding mass quantifies the average influence per target.
 Hyperforin targets are ~3.7-fold more efficient at perturbing the DILI module than Quercetin targets.}
 \label{tab:ptni}
 \vspace{0.5em}
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Analysis} & \textbf{Hyperforin PTNI} & \textbf{Quercetin PTNI} & \textbf{Efficiency Ratio}$^*$ & \textbf{Robust Ratio}$^\dagger$ \\
+\textbf{Analysis} & \textbf{Hyp. Eff.} & \textbf{Quer. Eff.} & \textbf{Eff. Ratio}$^*$ & \textbf{Rob. Ratio}$^\dagger$ \\
 \midrule
 RWR (topology-only) & 0.1138 & 0.0322 & \textbf{3.5}$\times$ & \textbf{3.7}$\times$ \\
 EWI (expression-weighted) & 0.1330 & 0.0493 & \textbf{2.7}$\times$ & \textbf{2.8}$\times$ \\
@@ -60,7 +60,7 @@ EWI (expression-weighted) & 0.1330 & 0.0493 & \textbf{2.7}$\times$ & \textbf{2.8
 \vspace{0.3em}
 \begin{minipage}{\linewidth}
 \footnotesize
-$^*$Efficiency Ratio = Observed PTNI ratio. $^\dagger$Robust Ratio = Observed influence / size-matched Bootstrap Mean (N=10). PTNI = per-target network influence; RWR = random walk with restart; EWI = expression-weighted influence.
+$^*$Efficiency Ratio = Observed average influence ratio. $^\dagger$Robust Ratio = Observed influence / size-matched Bootstrap Mean (N=10). RWR = random walk with restart; EWI = expression-weighted influence.
 \end{minipage}
 \end{table}
 

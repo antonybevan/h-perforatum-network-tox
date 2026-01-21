@@ -28,12 +28,12 @@ Quercetin's influence is moderated by its broad, diffuse target profile, which i
 
 \subsection{Normalizing for target count confirms Hyperforin's topological advantage}
 
-To resolve the target-count paradox, we computed per-target network influence (PTNI), reframing polypharmacology as an efficiency problem rather than a coverage problem (Figure~\ref{fig:fig4}; Table~\ref{tab:ptni}).
+To resolve the target-count paradox, we compared the average network influence of each individual target, reframing polypharmacology as an efficiency problem rather than a coverage problem (Figure~\ref{fig:fig4}; Table~\ref{tab:ptni}).
 
 \begin{center}
 \begin{tabular}{@{}llcccc@{}}
 \toprule
-\textbf{Compound} & \textbf{Targets} & \textbf{PTNI (RWR)} & \textbf{PTNI (EWI)} & \textbf{Eff. Ratio}$^*$ & \textbf{Rob. Ratio}$^\dagger$ \\
+\textbf{Compound} & \textbf{Targets} & \textbf{Eff. (RWR)} & \textbf{Eff. (EWI)} & \textbf{Eff. Ratio}$^*$ & \textbf{Rob. Ratio}$^\dagger$ \\
 \midrule
 Hyperforin & 10 & 0.1138 & 0.1330 & --- & --- \\
 Quercetin & 62 & 0.0322 & 0.0493 & --- & --- \\
@@ -43,7 +43,7 @@ Quercetin & 62 & 0.0322 & 0.0493 & --- & --- \\
 \end{center}
 \vspace{0.5em}
 
-\small $^*$Eff. Ratio: observed PTNI ratio. $^\dagger$Rob. Ratio: observed influence / size-matched bootstrap mean (N=10).
+\small $^*$Eff. Ratio: observed average influence ratio. $^\dagger$Rob. Ratio: observed influence / size-matched bootstrap mean (N=10).
 
 Each Hyperforin target contributes 3.7$\times$ more DILI-directed influence than each Quercetin target (robust ratio).
 This disparity indicates that Hyperforin's target positions are substantially higher leverage than those of Quercetin, achieving greater perturbation efficiency despite a 6-fold smaller target set.
