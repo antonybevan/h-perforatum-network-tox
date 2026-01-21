@@ -75,7 +75,7 @@ def test_networkx_basics():
 
 # Data Integration Tests
 
-TARGETS_FILE = 'data/processed/targets.csv'
+TARGETS_FILE = 'data/processed/targets_lcc.csv'  # LCC-filtered targets
 LIVER_FILE = 'data/processed/liver_proteome.csv'
 NETWORK_FILE = 'data/processed/network_900.parquet'
 
