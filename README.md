@@ -3,6 +3,8 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/antonybevan/h-perforatum-network-tox/actions/workflows/main.yml/badge.svg)](https://github.com/antonybevan/h-perforatum-network-tox/actions)
+[![Tests](https://img.shields.io/badge/tests-68%20passed-success.svg)](tests/)
 [![Manuscript](https://img.shields.io/badge/manuscript-PDF-red.svg)](manuscript/main.pdf)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
@@ -10,13 +12,13 @@ This repository contains the complete, reproducible analysis pipeline for evalua
 
 ---
 
-## 🔬 Scientific Context
+## Scientific Context
 
-Network-based drug prioritization often relies on **proximity Z-scores**, which we demonstrate are fundamentally confounded by the **Law of Large Numbers**. As target set size increases, the null distribution shrinks, artificially inflating significance despite greater physical distances.
+Network-based drug prioritization often relies on proximity Z-scores, which we demonstrate are fundamentally confounded by the Law of Large Numbers. As target set size increases, the null distribution shrinks, artificially inflating significance despite greater physical distances.
 
-We resolve this "inferential instability" using **Random Walk with Restart (RWR)** influence propagation and introduce **Per-Target Network Influence (PTNI)** as a metric for perturbation efficiency.
+We resolve this "inferential instability" using Random Walk with Restart (RWR) influence propagation and introduce Per-Target Network Influence (PTNI) as a metric for perturbation efficiency.
 
-### Key Results (STRING ≥900 Liver LCC)
+### Key Results (STRING >=900 Liver LCC)
 
 | Compound | Targets | Proximity ($d_c$) | Proximity Z | Influence Z (RWR) | PTNI Efficiency | 
 |----------|---------|-------------------|-------------|-------------------|-----------------|
@@ -24,11 +26,11 @@ We resolve this "inferential instability" using **Random Walk with Restart (RWR)
 | **Quercetin** | 62 | 1.68 | **-5.44** | +4.55 | 0.0322 |
 
 > [!IMPORTANT]
-> **Hyperforin** achieves ~**3.7x** more DILI-directed influence per-target than Quercetin, correctly identifying it as the higher-leverage modulator despite a 6-fold smaller target set.
+> **Hyperforin** achieves ~3.7x more DILI-directed influence per-target than Quercetin, correctly identifying it as the higher-leverage modulator despite a 6-fold smaller target set.
 
 ---
 
-## 🚀 Quick Start (Reproducibility)
+## Quick Start (Reproducibility)
 
 ### 1. Environment Setup
 ```bash
@@ -55,7 +57,7 @@ source("R/fig3_ewi_waterfall.R")
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── src/network_tox/     # Core analytical modules (RWR, EWI, Permutation)
@@ -64,20 +66,20 @@ source("R/fig3_ewi_waterfall.R")
 ├── data/               # Curated target and DILI gene sets
 ├── results/            # Computed Z-scores and consolidated tables
 ├── manuscript/         # LaTeX source and final PDF
-└── tests/              # Validation suite for core algorithms
+├── tests/              # Validation suite for core algorithms
 ```
 
 ---
 
-## 🛠 Methodology Summary
+## Methodology Summary
 
-1.  **Network Construction**: STRING v12.0 PPI (Confidence ≥700/900), filtered for liver-expressed genes (GTEx v8, TPM ≥1).
+1.  **Network Construction**: STRING v12.0 PPI (Confidence >=700/900), filtered for liver-expressed genes (GTEx v8, TPM >=1).
 2.  **Permutation Testing**: 1,000 degree-matched permutations per compound to control for node degree bias.
 3.  **Bootstrap Sensitivity**: Sampling random 10-target subsets from the Quercetin pool to exclude target-count effects in both standard (RWR) and expression-weighted (EWI) configurations.
 4.  **Expression Weighting**: Destination-node transition weighting based on tissue-specific protein abundance.
 
 ---
-## 📖 Citation
+## Citation
 
 If you use this framework or the *H. perforatum* target sets, please cite our study:
 
@@ -92,6 +94,6 @@ If you use this framework or the *H. perforatum* target sets, please cite our st
 
 ---
 
-## ⚖️ License
+## License
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
