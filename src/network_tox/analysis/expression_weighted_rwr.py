@@ -67,7 +67,8 @@ def normalize_expression_values(
     
     if method == "log_minmax":
         # Log-transform then min-max normalize
-        expr_values = np.log1p(expr_values)
+        # Use log2(x+1) to match methodology strictly
+        expr_values = np.log2(expr_values + 1)
     
     # Min-max normalize to [0, 1]
     # Add small epsilon to avoid perfect zeros (makes non-expressed nodes dead ends)

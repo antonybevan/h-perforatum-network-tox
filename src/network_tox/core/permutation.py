@@ -51,8 +51,60 @@ def calculate_z_score(obs, null_dist):
 
 
 def calculate_p_value(z_score, tail='two'):
-    """Calculate p-value from Z-score."""
+    """
+    Calculate p-value from Z-score (Gaussian approximation).
+
+    Note: For permutation tests, empirical p-value is preferred.
+    Use calculate_empirical_p_value instead.
+    """
     if tail == 'two':
         return 2 * (1 - stats.norm.cdf(abs(z_score)))
     else:  # one-tailed
         return 1 - stats.norm.cdf(z_score)
+
+
+def calculate_empirical_p_value(observed, null_distribution, tail='one_greater'):
+    """
+    Calculate empirical p-value from null distribution.
+
+    Args:
+        observed: Observed value
+        null_distribution: List or array of null values
+        tail: Test direction
+              'one_greater' (default): P = (sum(null >= obs) + 1) / (N + 1)
+              'one_less': P = (sum(null <= obs) + 1) / (N + 1)
+              'two': P = 2 * min(P_less, P_greater)
+
+    Returns:
+        Empirical p-value
+
+    Note: We use the (r+1)/(n+1) formula to avoid p=0.
+    """
+    null_dist = np.array(null_distribution)
+    n = len(null_dist)
+
+    if n == 0:
+        return np.nan
+
+    if tail == 'one_greater':
+        # Count how many null values are >= observed
+        r = np.sum(null_dist >= observed)
+        return (r + 1) / (n + 1)
+
+    elif tail == 'one_less':
+        # Count how many null values are <= observed
+        r = np.sum(null_dist <= observed)
+        return (r + 1) / (n + 1)
+
+    elif tail == 'two':
+        # Two-tailed: 2 * min(P_less, P_greater)
+        r_greater = np.sum(null_dist >= observed)
+        p_greater = (r_greater + 1) / (n + 1)
+
+        r_less = np.sum(null_dist <= observed)
+        p_less = (r_less + 1) / (n + 1)
+
+        return 2 * min(p_less, p_greater)
+
+    else:
+        raise ValueError(f"Unknown tail option: {tail}")

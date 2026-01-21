@@ -12,6 +12,12 @@ import networkx as nx
 from pathlib import Path
 from tqdm import tqdm
 from statsmodels.stats.multitest import multipletests
+import sys
+project_root = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(project_root / 'src'))
+
+from network_tox.core.permutation import calculate_empirical_p_value
+
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -95,7 +101,7 @@ def run_permutation_test(G, targets, disease_genes, n_permutations, compound_nam
     z_score = (observed - null_mean) / null_std if null_std > 0 else 0
     
     # P-value (one-tailed, testing if closer than random)
-    p_value = np.mean(null_distribution <= observed)
+    p_value = calculate_empirical_p_value(observed, null_distribution, tail='one_less')
     
     return {
         'observed': observed,

@@ -23,7 +23,7 @@ from network_tox.analysis.expression_weighted_rwr import (
 from network_tox.core.permutation import (
     get_degree_matched_random,
     calculate_z_score,
-    calculate_p_value
+    calculate_empirical_p_value
 )
 
 # Configuration
@@ -115,7 +115,7 @@ def run_permutation_test(G, observed_targets, dili_genes, expression, n_perm, de
     # Calculate statistics
     if len(null_distribution) > 0:
         z_score = calculate_z_score(observed_influence, null_distribution)
-        p_value = calculate_p_value(z_score, tail='one')  # One-tailed: greater than null
+        p_value = calculate_empirical_p_value(observed_influence, null_distribution, tail='one_greater')
     else:
         z_score = np.nan
         p_value = np.nan
