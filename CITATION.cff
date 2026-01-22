@@ -1,0 +1,109 @@
+cff-version: 1.2.0
+title: "Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of Hypericum perforatum"
+message: "If you use this research code or data, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Bevan"
+    given-names: "Antony"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Replace with actual ORCID
+repository-code: "https://github.com/antonybevan/h-perforatum-network-tox"
+url: "https://github.com/antonybevan/h-perforatum-network-tox"
+abstract: >-
+  Network pharmacology pipeline demonstrating that proximity does not imply
+  influence. Hyperforin (10 targets) exhibits ~3.7× higher perturbation efficiency
+  than Quercetin (62 targets) in Hypericum perforatum, challenging
+  the assumption that more targets means greater toxicity risk.
+keywords:
+  - network pharmacology
+  - tiered inference
+  - perturbation efficiency
+  - hepatotoxicity
+  - drug-induced liver injury
+  - DILI
+  - Hypericum perforatum
+  - St. John's Wort
+  - hyperforin
+  - quercetin
+  - random walk with restart
+  - expression-weighted RWR
+  - protein-protein interactions
+  - systems biology
+license: CC-BY-4.0
+version: "2.0.0"
+date-released: "2025-12-28"
+references:
+  - type: article
+    title: "Uncovering disease-disease relationships through the incomplete interactome"
+    authors:
+      - family-names: "Menche"
+        given-names: "Jörg"
+      - family-names: "Sharma"
+        given-names: "Amitabh"
+      - family-names: "Kitsak"
+        given-names: "Maksim"
+      - family-names: "Ghiassian"
+        given-names: "Susan Dina"
+      - family-names: "Vidal"
+        given-names: "Marc"
+      - family-names: "Loscalzo"
+        given-names: "Joseph"
+      - family-names: "Barabási"
+        given-names: "Albert-László"
+    journal: "Science"
+    year: 2015
+    volume: 347
+    issue: 6224
+    doi: "10.1126/science.1257601"
+  - type: article
+    title: "Network-based in silico drug efficacy screening"
+    authors:
+      - family-names: "Guney"
+        given-names: "Emre"
+      - family-names: "Menche"
+        given-names: "Jörg"
+      - family-names: "Vidal"
+        given-names: "Marc"
+      - family-names: "Barabási"
+        given-names: "Albert-László"
+    journal: "Nature Communications"
+    year: 2016
+    volume: 7
+    doi: "10.1038/ncomms10331"
+  - type: article
+    title: "Walking the interactome for prioritization of candidate disease genes"
+    authors:
+      - family-names: "Kohler"
+        given-names: "Sebastian"
+      - family-names: "Bauer"
+        given-names: "Sebastian"
+      - family-names: "Horn"
+        given-names: "Denise"
+      - family-names: "Robinson"
+        given-names: "Peter N."
+    journal: "American Journal of Human Genetics"
+    year: 2008
+    volume: 82
+    issue: 4
+    doi: "10.1016/j.ajhg.2008.02.013"
+  - type: dataset
+    title: "STRING: functional protein association networks"
+    authors:
+      - family-names: "Szklarczyk"
+        given-names: "Damian"
+    url: "https://string-db.org"
+    version: "12.0"
+    year: 2023
+  - type: dataset
+    title: "GTEx: Genotype-Tissue Expression Portal"
+    authors:
+      - family-names: "GTEx Consortium"
+    url: "https://gtexportal.org"
+    version: "8"
+    year: 2020
+  - type: dataset
+    title: "DILIrank: Drug-Induced Liver Injury Ranking Dataset"
+    authors:
+      - family-names: "Chen"
+        given-names: "Minjun"
+    url: "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-dataset"
+    year: 2016

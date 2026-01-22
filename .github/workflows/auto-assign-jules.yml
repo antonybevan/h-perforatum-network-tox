@@ -1,0 +1,49 @@
+name: Auto-assign Jules on Failure
+
+on:
+  workflow_run:
+    workflows: ["Tests"]
+    types: [completed]
+
+jobs:
+  notify-jules:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    
+    steps:
+      - name: Create Issue for Jules
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.payload.workflow_run.html_url}`;
+            const branch = context.payload.workflow_run.head_branch;
+            const commitSha = context.payload.workflow_run.head_sha.substring(0, 7);
+            
+            const issueBody = `## CI Failure Detected
+            
+            **Branch:** \`${branch}\`
+            **Commit:** \`${commitSha}\`
+            **Workflow Run:** [View Logs](${runUrl})
+            
+            ---
+            
+            @jules Please investigate and fix this CI failure.
+            
+            **Reference:** See \`.agent/workflows/jules-ci-cd.md\` for common fixes.
+            
+            ### Common Issues:
+            1. Invalid package versions in requirements.txt
+            2. Git LFS files not downloading (missing \`lfs: true\`)
+            3. Unicode encoding errors on Windows
+            4. Missing test data files
+            `;
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[CI] Tests failed on ${branch} (${commitSha})`,
+              body: issueBody,
+              labels: ['ci-failure', 'jules-auto']
+            });
