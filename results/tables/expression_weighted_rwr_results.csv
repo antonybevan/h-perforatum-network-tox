@@ -1,0 +1,3 @@
+compound,n_targets,mean_target_tpm,influence_standard,influence_weighted,per_target_standard,per_target_weighted
+Hyperforin,10,104.72,0.11381,0.132974,0.11381,0.132974
+Quercetin,62,49.53,0.032171,0.049344,0.032171,0.049344

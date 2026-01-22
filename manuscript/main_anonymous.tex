@@ -1,0 +1,61 @@
+% ============================================================================
+% main_anonymous.tex - Nature-style manuscript (ANONYMOUS VERSION)
+% Network Toxicology of Hypericum perforatum
+% ============================================================================
+\pdfminorversion=7
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{multirow}
+
+% --- Nature formatting ---
+\doublespacing
+\linenumbers
+
+% --- Title and Authors (ANONYMIZED) ---
+\title{\textbf{Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum}}}
+
+\author{
+  Anonymous Author(s) \\[1em]
+  \small \textit{Author information removed for double-blind review}
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% --- Abstract ---
+\input{sections/abstract}
+
+% --- Main Text ---
+\input{sections/introduction}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/methods}
+\input{sections/declarations_anonymous}
+
+% --- Bibliography ---
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% --- Figures & Tables ---
+\input{sections/tables}
+\input{sections/figures}
+\input{sections/supplementary}
+
+\end{document}

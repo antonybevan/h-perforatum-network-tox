@@ -1,0 +1,50 @@
+\section{Discussion}
+
+\subsection{Robustness and the Z-score confound}
+
+The central finding of this study is the inherent instability of network proximity Z-scores when comparing compounds with asymmetric target set sizes.
+While proximity is often used for prioritization, we demonstrate that its significance rankings are fundamentally confounded by the law of large numbers.
+As the number of targets increases, the variance of the null distribution ($\sigma_{null}$) decreases, making even modest topological distances appear highly significant.
+This is clearly observed in our comparison: at STRING $\geq$900, Quercetin (62 targets) achieves a more significant proximity Z-score than Hyperforin (10 targets) despite being physically more distant ($d_c = 1.68$ vs $1.30$).
+This statistical artifact disappears when considering influence-based metrics, which correctly identify Hyperforin as the high-leverage modulator.
+
+Critically, the proximity Z-score ranking is threshold-dependent.
+At $\geq$700, Hyperforin is physically closer and more significant; at $\geq$900, the physical advantage persists, but the significance ranking reverses due to the tighter Quercetin null.
+This instability indicates that proximity Z-scores are unreliable for comparative prioritization.
+In contrast, influence-based rankings (RWR and EWI) remain stable across multiple STRING confidence tiers, correctly prioritizing the regulatory hub modulator (Hyperforin) in all configurations.
+
+The mechanistic explanation for this robustness is that RWR integrates over \textit{all} paths, capturing how signals amplify through hubs like PXR and AKT1.
+Shortest-path proximity, by contrast, is a descriptive metric for minimum reachability; treating it as an inferential surrogate for functional impact conflates topological context with biological consequence.
+
+\subsection{Expression weighting as a biological constraint}
+
+Expression-weighted influence (EWI) constrains signal propagation to liver-active nodes.
+By attracting signal to highly expressed proteins (destination-node weighting), we ensure that the network propagation reflects tissue-specific biology.
+Under this constraint, the Hyperforin advantage persists, demonstrating that its topological efficiency is not an artifact of an unconstrained PPI network but is supported by the expression profile of the liver.
+Attenuation of signal is expected when walks are constrained to active pathways; the fact that the ranking remains stable provides positive evidence for the biological relevance of the PXR axis.
+
+\subsection{Perturbation efficiency vs. topological coverage}
+
+By normalizing total influence for target set size (where the restart vector is already $|T|$-weighted), we provide a more balanced comparison of perturbation efficiency.
+Our results show that a single Hyperforin target exerts ~3.7-fold more influence on the DILI module than a Quercetin target.
+
+This efficiency claim is further validated by bootstrap sensitivity analysis.
+Even when sampling size-matched 10-target subsets from Quercetin's pool, none reached the influence level achieved by Hyperforin.
+This demonstrates that the advantage is not due to target count, but to the strategic network position of Hyperforin's targets—specifically their convergence on the PXR master regulator and downstream CYP effectors.
+
+\subsection{Mechanistic context: The PXR axis}
+
+The stability of the influence ranking aligns with the well-characterized PXR--CYP master regulatory axis.
+Hyperforin's primary target, NR1I2 (PXR), induces the expression of major xenobiotic metabolism enzymes including CYP3A4 and CYP2C9 \citep{Moore2000, Watkins2001}.
+In our network analysis, these effectors are part of the target set and the DILI module, creating a high-connectivity hub structure that enables efficient propagation.
+Quercetin's 62 targets, while numerous, are distributed across redundant or peripheral pathways that do not converge on a regulatory bottleneck. Furthermore, clinical evidence indicates that Quercetin is not associated with hepatotoxicity and may exhibit hepatoprotective properties \citep{Boots2008, LiverToxQuercetin}.
+Recent experimental studies have corroborated that St.\ John's wort exacerbates hepatotoxicity through precisely this PXR-mediated bioactivation mechanism \citep{Chen2022}.
+
+\subsection{Limitations and Conclusions}
+
+While our findings favor influence-based metrics, we acknowledge that network influence is a measure of topological reach and perturbation potential, not a direct surrogate for actual toxicological outcomes. This model is dose-independent and does not account for pharmacokinetics, binding affinity, or saturation kinetics. A high influence score indicates that a compound's targets are strategically positioned to modulate a disease module—representing a measure of systemic susceptibility—but the actual biological effect depends on the molecular mechanism of action (e.g., agonism vs. antagonism) and the kinetic context. In this study, we utilized \textit{H. perforatum} as a known toxicological model to validate the \textit{reliability} of the metrics themselves; the biological ground truth (Hyperforin-mediated PXR activation) allowed us to confirm that influence propagation correctly identifies high-leverage perturbations where proximity metrics fail. Future work integrating kinetic modeling or structural binding energy will be required to translate topological susceptibility into definitive risk predictions.
+
+The methodological conclusion remains: proximity Z-scores are susceptible to sample-size confounding and should be used descriptively rather than for comparative inference.
+Influence-based propagation provides a more stable framework that survives robustness checks and aligns better with mechanistic reality.
+
+In conclusion, we provide a methodological template for identifying and resolving metric artifacts in network toxicology. By shifting the focus from topological coverage to perturbation efficiency, and from significance-driven Z-scores to robustness-checked influence, we enable more precise risk attribution in complex polypharmacological systems. Furthermore, this work provides a foundation for developing network models with improved mechanistic interpretability. By integrating signed edge weights and transcriptometric data, future iterations of this framework could investigate phenotype-specific associations, potentially linking topological influence on specific biological sub-modules to discrete clinical outcomes such as cholestasis or steatosis.

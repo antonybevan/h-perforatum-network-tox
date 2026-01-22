@@ -1,0 +1,186 @@
+\clearpage
+\section*{Tables}
+
+% ============================================================================
+% Table 1: Primary Comparison - The Central Finding
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Network metrics reveal the instability of proximity Z-scores.}
+While Quercetin achieves more significant proximity Z-scores due to tighter null distributions, Hyperforin is physically closer ($d_c$) to DILI genes. Influence-based metrics resolve this confounding and stably prioritize Hyperforin.
+Network: STRING v12.0 LCC (confidence $\geq$900) filtered to liver-expressed genes.}
+\label{tab:main_results}
+\vspace{0.5em}
+\small
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Metric} & \textbf{Compound} & \textbf{Targets} & \textbf{Observed} & \textbf{Z} & \textbf{$p$} & \textbf{Efficiency} \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Tier 1: Shortest-path proximity}} \\[0.3em]
+& Hyperforin & 10 & $d_c = 1.30$ & $-$3.86 & $<0.001$$^*$ & --- \\
+& Quercetin & 62 & $d_c = 1.68$ & \textbf{$-$5.44} & $<0.001$$^*$ & --- \\
+& \multicolumn{5}{r}{\textit{Instability: Quercetin is physically more distant yet more "significant"}} \\[0.5em]
+\multicolumn{7}{@{}l}{\textit{Tier 2: Random walk influence (RWR)}} \\[0.3em]
+& Hyperforin & 10 & 0.1138 & \textbf{+10.12} & $<0.001$$^*$ & 0.1138 \\
+& Quercetin & 62 & 0.0322 & +4.55 & $<0.001$ & 0.0322 \\
+& \multicolumn{5}{r}{\textit{Resolution: Correctly prioritizes physical proximity and regulatory hub modulation}} \\[0.5em]
+\multicolumn{7}{@{}l}{\textit{Tier 3: Expression-weighted influence (EWI)}} \\[0.3em]
+& Hyperforin & 10 & 0.1330 & \textbf{+8.98} & $<0.001$$^*$ & 0.1330 \\
+& Quercetin & 62 & 0.0493 & +5.79 & $<0.001$ & 0.0493 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+$^*$At permutation floor ($<$1/1,000).\\
+Efficiency = average influence per target; RWR = random walk with restart; EWI = expression-weighted influence; $d_c$ = mean minimum shortest-path distance; DILI = drug-induced liver injury. All associations survived Benjamini--Hochberg FDR correction ($q < 0.05$).
+\end{minipage}
+\end{table}
+
+% ============================================================================
+% Table 2: Effect Size - The 3.7x Efficiency
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Average influence efficiency.}
+Normalization to the total seeding mass quantifies the average influence per target.
+Hyperforin targets are ~3.7-fold more efficient at perturbing the DILI module than Quercetin targets.}
+\label{tab:ptni}
+\vspace{0.5em}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Analysis} & \textbf{Hyp. Eff.} & \textbf{Quer. Eff.} & \textbf{Eff. Ratio}$^*$ & \textbf{Rob. Ratio}$^\dagger$ \\
+\midrule
+RWR (topology-only) & 0.1138 & 0.0322 & \textbf{3.5}$\times$ & \textbf{3.7}$\times$ \\
+EWI (expression-weighted) & 0.1330 & 0.0493 & \textbf{2.7}$\times$ & \textbf{2.8}$\times$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+$^*$Efficiency Ratio = Observed average influence ratio. $^\dagger$Robust Ratio = Observed influence / size-matched Bootstrap Mean (N=10). RWR = random walk with restart; EWI = expression-weighted influence.
+\end{minipage}
+\end{table}
+
+% ============================================================================
+% Table 3: Robustness Control - Bootstrap
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Bootstrap sensitivity excludes target-count confounding.}
+Random 10-target subsets ($n = 100$) sampled without replacement from Quercetin's 62-target pool.
+Hyperforin's observed influence exceeds the entire bootstrap distribution.}
+\label{tab:bootstrap}
+\vspace{0.5em}
+\begin{tabular}{@{}lcl@{}}
+\toprule
+\textbf{Statistic} & \textbf{Value} & \textbf{Interpretation} \\
+\midrule
+Hyperforin observed & 0.1138 & Reference \\
+\addlinespace
+Bootstrap mean & 0.0308 & Expected if targets equivalent \\
+Bootstrap SD & 0.0100 & Sampling variability \\
+Bootstrap 95\% CI & [0.0160, 0.0542] & 2.5th--97.5th percentile \\
+\addlinespace
+Hyperforin / mean & \textbf{3.7}$\times$ & Effect size \\
+Exceeds 95\% CI? & \textbf{Yes} & Not attributable to sampling \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+Random seed: 42. Note: Bootstrap confirms robustness to target selection; it does not constitute independent inferential evidence.
+\end{minipage}
+\end{table}
+
+% ============================================================================
+% Table 4: Exclusion Control - Chemical Similarity
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Chemical similarity excludes structural confounding.}
+Neither compound resembles known hepatotoxins (Tanimoto $<$ 0.4).
+Quercetin is more similar to DILI-positive drugs yet shows lower network influence.}
+\label{tab:chemsim}
+\vspace{0.5em}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Compound} & \textbf{Max Tanimoto (DILI+)} & \textbf{Max Tanimoto (DILI$-$)} & \textbf{Analog?}$^*$ & \textbf{Network rank} \\
+\midrule
+Hyperforin & 0.154 & 0.202 & No & 1 (higher influence) \\
+Quercetin & 0.212 & 0.220 & No & 2 (lower influence) \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+$^*$Analog threshold: Tanimoto $>$ 0.4 (Maggiora et al., 2014). Morgan fingerprints (ECFP4, radius 2, 2048 bits). DILIrank: 542 DILI+, 365 DILI$-$ drugs.
+\end{minipage}
+\end{table}
+
+% ============================================================================
+% Table 5: Mechanistic Support - Target Profile
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Hyperforin targets include regulatory hubs.}
+All 10 Hyperforin targets in the liver-expressed LCC, with liver expression (GTEx v8) and network degree.
+PXR (NR1I2) is the master regulator; CYP enzymes are downstream effectors.}
+\label{tab:hyperforin_targets}
+\vspace{0.5em}
+\begin{tabular}{@{}llrrll@{}}
+\toprule
+\textbf{Gene} & \textbf{Protein} & \textbf{TPM} & \textbf{Degree} & \textbf{Function} & \textbf{DILI link} \\
+\midrule
+NR1I2 & PXR & 43 & 28 & Master regulator & Direct \\
+CYP3A4 & CYP3A4 & 335 & 89 & Xenobiotic metabolism & Direct \\
+CYP2C9 & CYP2C9 & 434 & 76 & Xenobiotic metabolism & Direct \\
+CYP2B6 & CYP2B6 & 125 & 42 & Xenobiotic metabolism & Indirect \\
+AKT1 & PKB & 33 & \textbf{312} & Stress signaling & Indirect \\
+ABCB1 & P-gp & 7 & 53 & Drug efflux & Direct \\
+ABCC2 & MRP2 & 60 & 38 & Drug efflux & Direct \\
+ABCG2 & BCRP & 4 & 31 & Drug efflux & Indirect \\
+MMP2 & MMP2 & 5 & 87 & ECM remodeling & Indirect \\
+MMP9 & MMP9 & 1 & 94 & ECM remodeling & Indirect \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+AKT1 is the highest-degree target (312 neighbors). Five of 10 targets (NR1I2, CYP3A4, CYP2C9, ABCB1, ABCC2) are directly connected to DILI genes. TPM = transcripts per million; DILI = drug-induced liver injury; LCC = largest connected component.
+\end{minipage}
+\end{table}
+
+% ============================================================================
+% Table 6: Stability - Threshold Robustness
+% ============================================================================
+\begin{table}[ht]
+\centering
+\caption{\textbf{Influence ranking is robust to network construction parameters.}
+Hyperforin ranks first across all thresholds and influence metrics. 
+Proximity Z-scores are unstable and reverse rankings between thresholds, failing to accurately reflect the physical distance advantage of Hyperforin.}
+\label{tab:threshold_robustness}
+\vspace{0.5em}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+\textbf{Threshold} & \textbf{Compound} & \textbf{RWR Z} & \textbf{EWI Z} & \textbf{Proximity $d_c$} & \textbf{Proximity Z} \\
+\midrule
+$\geq$700 & Hyperforin & \textbf{+12.08} & +11.20 & 0.60 & $-$6.04 \\
+(11,693 nodes) & Quercetin & +5.53 & +7.09 & 1.34 & $-$5.46 \\
+\addlinespace
+$\geq$900 & Hyperforin & \textbf{+10.12} & +8.98 & 1.30 & $-$3.86 \\
+(7,677 nodes) & Quercetin & +4.55 & +5.79 & 1.68 & $-$5.44 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.3em}
+\begin{minipage}{\linewidth}
+\footnotesize
+Note: At $\geq$900, Quercetin achieves a more "significant" proximity Z-score despite being physically more distant ($1.68$ vs $1.30$) from DILI genes. RWR = random walk with restart; EWI = expression-weighted influence; $d_c$ = mean minimum shortest-path distance; DILI = drug-induced liver injury.
+\end{minipage}
+\end{table}

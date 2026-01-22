@@ -1,0 +1,42 @@
+% Cover Letter for Computational Toxicology
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{charter}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\pagestyle{empty}
+
+\begin{document}
+
+
+
+\bigskip
+
+\noindent
+Editor-in-Chief \\
+\textit{Computational Toxicology}
+
+\bigskip
+
+\noindent
+Dear Editor,
+
+\onehalfspacing
+
+We request consideration of the enclosed manuscript, ``Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum},'' for publication in \textit{Computational Toxicology}.
+
+The manuscript compares proximity-based and influence-based network metrics for toxicity prediction. Using Hyperforin and Quercetin as test compounds, we show that proximity Z-scores can produce misleading rankings when target set sizes differ substantially. Specifically, Quercetin (62 targets) ranks as more significant than Hyperforin (10 targets) by proximity, despite Hyperforin being closer to DILI genes and being the known hepatotoxic agent in this system.
+
+The effect arises from the law of large numbers: larger target sets yield tighter null distributions, which inflate Z-scores independently of actual topological proximity. Random walk influence metrics do not exhibit this behavior and rank Hyperforin consistently across thresholds.
+
+Bootstrap resampling and chemical similarity controls are included to address potential confounders. All code and data are available at \url{https://github.com/antonybevan/h-perforatum-network-tox}.
+
+The manuscript is not under consideration elsewhere.
+
+\bigskip
+
+
+
+\end{document}
+

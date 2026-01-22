@@ -1,0 +1,3 @@
+compound,n_dili_positive_refs,n_dili_negative_refs,mean_sim_DILI_positive,max_sim_DILI_positive,std_sim_DILI_positive,mean_sim_DILI_negative,max_sim_DILI_negative,std_sim_DILI_negative,structural_analog_to_hepatotoxins
+Hyperforin,542,365,0.0794202973020594,0.15384615384615385,0.026160860234629525,0.08106724111929861,0.20224719101123595,0.028252780410995756,No
+Quercetin,542,365,0.07832665961292806,0.21153846153846154,0.030632595005618744,0.06969130512192939,0.22,0.03428765777232909,No
