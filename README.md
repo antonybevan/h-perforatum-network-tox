@@ -88,7 +88,7 @@ If you use this framework or the data sets, please cite:
   title={Perturbation efficiency resolves target-count bias in network proximity metrics: A controlled audit},
   author={Bevan, Antony},
   year={2026},
-  journal={Scientific Reports (under review)},
+  journal={(under review)},
   url={https://github.com/antonybevan/h-perforatum-network-tox}
 }
 ```
