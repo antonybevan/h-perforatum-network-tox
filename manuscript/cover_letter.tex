@@ -36,16 +36,16 @@ Dear Editor,
 
 We are pleased to submit our manuscript, \textbf{``Systematic bias in network proximity Z-scores: A comparative robustness audit using \textit{Hypericum perforatum} constituents,''} for consideration as a Research Article in \textit{Scientific Reports}.
 
-Our study identifies a fundamental statistical artifact in network-based drug prioritization. While proximity-based Z-scores are widely used to assess the association between compounds and diseases, we demonstrate that these metrics are systematically biased by target set size (the Law of Large Numbers). This confounding effect can lead to misleading biological rankings, particularly when comparing compounds with asymmetric polypharmacology—a scenario common in the study of natural products and drug repurposing.
+Our study identifies a fundamental statistical artifact in network-based drug prioritization. While proximity-based Z-scores are widely used to assess the association between compounds and diseases, we demonstrate through a systematic audit that these metrics are confounded by the Law of Large Numbers. This bias leads to deterministic significance inflation for compounds with broad polypharmacology, independent of actual topological reachability.
 
-Using the human liver interactome and constituents from \textit{Hypericum perforatum} (St. John’s Wort) as a model system, we show that:
+We address this by utilizing the human liver interactome and constituents from \textit{Hypericum perforatum} (St. John’s Wort) as a controlled model system. This system provides a sharp stress test for network medicine: the constituents exhibit extreme target-set asymmetry (10 vs.\ 62 targets), and the established proximity paradigm yields the biologically incorrect ranking. Our results show that:
 \begin{itemize}
-    \item Conventional proximity Z-scores fail a basic robustness audit, reversing rankings based on arbitrary network construction thresholds.
-    \item Random walk--based influence propagation provides a stable, theoretically consistent framework that correctly identifies high-leverage perturbations that distance-based metrics miss.
-    \item Our newly introduced metric, \textit{perturbation efficiency}, enables unbiased comparison across compounds with vastly different target set sizes.
+    \item Proximity-based prioritization is unstable across network construction parameters, yielding reversed rankings in asymmetric regimes.
+    \item Random walk--based influence propagation provides a stable framework that capturing signal amplification through regulatory hubs like the PXR axis.
+    \item Applying \textit{perturbation efficiency}—a per-target normalization of influence—resolves the size-dependence and correctly identifies high-leverage perturbations that distance metrics miss.
 \end{itemize}
 
-We believe this work is well-suited for the multidisciplinary readership of \textit{Scientific Reports}, as it provides both a critical methodological warning for network medicine and a reproducible template for identifying and correcting statistical artifacts in complex biological datasets. 
+We believe this work is well-suited for \textit{Scientific Reports} as it provides a critical methodological resolution to a previously unrecognized artifact in network medicine. By identifying the boundary conditions for current proximity-based standards, we provide a reproducible template for correcting bias in complex pharmacological datasets—a finding with significant implications for the thousands of drug-disease associations previously computed using uncorrected Z-scores.
 
 In line with the journal's commitment to Open Science, the complete end-to-end analytical pipeline, curated datasets, and reproducibility scripts are available at: \\ \url{https://github.com/antonybevan/h-perforatum-network-tox}.
 
