@@ -1,5 +1,4 @@
-% Cover Letter for Scientific Reports
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{charter}
 \usepackage{hyperref}
@@ -9,13 +8,24 @@
 
 \begin{document}
 
-
+\noindent
+\textbf{Antony Bevan} \\
+Department of Pharmacognosy \\
+Madurai Medical College \\
+Madurai, Tamil Nadu, India \\
+Email: \href{mailto:antonybevan04@gmail.com}{antonybevan04@gmail.com}
 
 \bigskip
 
 \noindent
-Editor-in-Chief \\
-\textit{Scientific Reports}
+January 23, 2026
+
+\bigskip
+
+\noindent
+Editor-in-Chief, \\
+\textit{Scientific Reports} \\
+Nature Portfolio
 
 \bigskip
 
@@ -24,19 +34,32 @@ Dear Editor,
 
 \onehalfspacing
 
-We request consideration of the enclosed manuscript, ``Systematic bias in network proximity Z-scores: A comparative robustness audit using \textit{Hypericum perforatum} constituents,'' for publication in \textit{Scientific Reports}.
+We are pleased to submit our manuscript, \textbf{``Systematic bias in network proximity Z-scores: A comparative robustness audit using \textit{Hypericum perforatum} constituents,''} for consideration as a Research Article in \textit{Scientific Reports}.
 
-The manuscript compares proximity-based and influence-based network metrics for toxicity prediction. Using Hyperforin and Quercetin as test compounds, we show that proximity Z-scores can produce misleading rankings when target set sizes differ substantially. Specifically, Quercetin (62 targets) ranks as more significant than Hyperforin (10 targets) by proximity, despite Hyperforin being closer to DILI genes and being the known hepatotoxic agent in this system.
+Our study identifies a fundamental statistical artifact in network-based drug prioritization. While proximity-based Z-scores are widely used to assess the association between compounds and diseases, we demonstrate that these metrics are systematically biased by target set size (the Law of Large Numbers). This confounding effect can lead to misleading biological rankings, particularly when comparing compounds with asymmetric polypharmacology—a scenario common in the study of natural products and drug repurposing.
 
-The effect arises from the law of large numbers: larger target sets yield tighter null distributions, which inflate Z-scores independently of actual topological proximity. Random walk influence metrics do not exhibit this behavior and rank Hyperforin consistently across thresholds.
+Using the human liver interactome and constituents from \textit{Hypericum perforatum} (St. John’s Wort) as a model system, we show that:
+\begin{itemize}
+    \item Conventional proximity Z-scores fail a basic robustness audit, reversing rankings based on arbitrary network construction thresholds.
+    \item Random walk--based influence propagation provides a stable, theoretically consistent framework that correctly identifies high-leverage perturbations that distance-based metrics miss.
+    \item Our newly introduced metric, \textit{perturbation efficiency}, enables unbiased comparison across compounds with vastly different target set sizes.
+\end{itemize}
 
-Bootstrap resampling and chemical similarity controls are included to address potential confounders. All code and data are available at \url{https://github.com/antonybevan/h-perforatum-network-tox}.
+We believe this work is well-suited for the multidisciplinary readership of \textit{Scientific Reports}, as it provides both a critical methodological warning for network medicine and a reproducible template for identifying and correcting statistical artifacts in complex biological datasets. 
 
-The manuscript is not under consideration elsewhere.
+In line with the journal's commitment to Open Science, the complete end-to-end analytical pipeline, curated datasets, and reproducibility scripts are available at: \\ \url{https://github.com/antonybevan/h-perforatum-network-tox}.
+
+This manuscript has not been published and is not under consideration for publication elsewhere. All authors have approved the final version and agree to the submission.
 
 \bigskip
 
+\noindent
+Sincerely,
 
+\vspace{1em}
+
+\noindent
+\textbf{Antony Bevan} \\
+Corresponding Author
 
 \end{document}
-
