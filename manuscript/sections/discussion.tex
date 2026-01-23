@@ -9,6 +9,14 @@ Influence-based metrics (RWR and EWI) appear less sensitive to this particular a
 The mechanistic explanation for this robustness is that RWR integrates over \textit{all} paths, capturing how signals amplify through hubs like PXR and AKT1.
 Shortest-path proximity, by contrast, is a descriptive metric for minimum reachability; treating it as an inferential surrogate for functional impact conflates topological context with biological consequence.
 
+\subsection{Relationship to prior work}
+
+Our findings do not contradict the foundational work of Guney et al.\ (2016), but rather identify a specific failure mode that their study design did not stress-test. Guney et al.\ evaluated network proximity as a classifier for drug-disease associations across 238 drugs with a mean of 3.5 targets per drug---a relatively homogeneous dataset. They reported that proximity is ``not biased with respect to the number of targets a drug has'' and found that the closest-distance measure ($d_c$) outperformed a diffusion kernel measure ($d_k$) for binary classification \citep{Guney2016}.
+
+Our study addresses a fundamentally different question: \textit{comparative ranking} of two compounds with highly asymmetric target counts (10 vs.\ 62). In this regime, the variance-shrinkage artifact becomes a first-order problem. Guney's kernel benchmark ($d_k$) is related to but distinct from random walk with restart; $d_k$ sums contributions from all weighted paths, whereas RWR iteratively propagates probability mass with a restart factor that anchors the walk to seed nodes. More critically, neither $d_c$ nor $d_k$ provides a principled normalization for target set size.
+
+The core innovation of this study is \textit{perturbation efficiency}: the average influence exerted per target. This metric is not proposed by Guney et al.\ and resolves the target-count paradox regardless of whether the underlying propagation method is shortest-path, kernel, or random walk. By framing polypharmacology as an efficiency problem rather than a coverage problem, we provide a bias-corrected comparative framework that survives robustness checks where raw Z-scores fail.
+
 \subsection{Expression weighting as a biological constraint}
 
 Expression-weighted influence (EWI) constrains signal propagation to liver-active nodes.
