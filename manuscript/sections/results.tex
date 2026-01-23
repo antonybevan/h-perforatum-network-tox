@@ -7,9 +7,7 @@ Quercetin engages 62 targets in the liver-expressed largest connected component;
 At STRING confidence $\geq$900, Hyperforin targets are physically closer to DILI genes ($d_c = 1.30$) than Quercetin targets ($d_c = 1.68$; Table~\ref{tab:main_results}).
 However, the proximity Z-scores yield the opposite ranking: Quercetin achieves $Z = -5.44$ ($p < 0.001$), while Hyperforin achieves $Z = -3.86$ ($p < 0.001$). All reported associations survived Benjamini--Hochberg FDR correction ($q < 0.05$).
 
-This discrepancy highlights a fundamental confounder in proximity Z-scores: the law of large numbers.
-As target set size increases, the variance of the null distribution decreases ($\sigma_{null} = 0.09$ for Quercetin vs $0.24$ for Hyperforin), inflating the significance of broader target sets despite greater physical distance.
-This statistical artifact suggests that Quercetin poses greater risk, whereas the physical topology favors Hyperforin. This effect occurs independently of network construction parameters and represents a fundamental statistical property of averaged distributions: larger samples inherently produce more precise (narrower) null distributions, artificially inflating Z-score magnitude regardless of actual topological proximity.
+This statistical artifact suggests that Quercetin poses greater risk, whereas the physical topology favors Hyperforin. This effect occurs independently of network construction parameters and represents a fundamental statistical property of averaged distributions: larger samples inherently produce more precise (narrower) null distributions, artificially inflating Z-score magnitude regardless of actual topological proximity. This is a manifestation of the Law of Large Numbers (LLN).
 
 \subsection{Influence-based rankings are stable and resolve the confound}
 
