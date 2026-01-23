@@ -1,10 +1,14 @@
 \clearpage
 \section*{Supplementary Tables}
 
+% Reset table counter and change format to S1, S2...
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+
 % Table S1: Hyperforin Targets with Sources
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S1. Hyperforin target genes and literature sources.}
+\caption{\textbf{Hyperforin target genes and literature sources.}
 All 14 raw targets with UniProt IDs, gene symbols, and primary literature sources.
 Targets marked with * are present in the liver-expressed LCC (STRING $\geq$900, GTEx TPM $\geq$1).}
 \label{tab:S1}
@@ -35,7 +39,7 @@ Q12879 & GRIN1 & No & \citep{Kumar2006} \\
 % Table S2: Quercetin Targets Summary
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S2. Quercetin target curation summary.}
+\caption{\textbf{Quercetin target curation summary.}
 Target counts at each processing stage.}
 \label{tab:S2}
 \vspace{0.5em}
@@ -57,7 +61,7 @@ Final targets in LCC & 62 \\
 % Table S3: DILI Genes Summary
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S3. DILI gene set curation.}
+\caption{\textbf{DILI gene set curation.}
 Genes associated with drug-induced liver injury from DisGeNET (UMLS C0860207).}
 \label{tab:S3}
 \vspace{0.5em}
@@ -78,7 +82,7 @@ Excluded: other & 12 \\
 % Table S4: Five Overlapping Targets
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S4. Genes targeted by both compounds.}
+\caption{\textbf{Genes targeted by both compounds.}
 Five genes present in both Hyperforin and Quercetin target sets.}
 \label{tab:S4}
 \vspace{0.5em}
@@ -98,7 +102,7 @@ MMP9 & Matrix metalloproteinase-9 & Extracellular matrix remodeling \\
 % Table S5: Direct DILI Gene Connectivity
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S5. Direct DILI gene connectivity.}
+\caption{\textbf{Direct DILI gene connectivity.}
 Hyperforin targets with first-order (distance = 1) connections to DILI genes in the STRING network ($\geq$900).
 DILI neighbors are genes present in the 82-gene DILI set.}
 \label{tab:S5}
@@ -127,7 +131,7 @@ MMP2 & MMP9, SPP1 & 2 & ECM remodeling \\
 % Table S6: Quercetin Direct DILI Connectivity
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S6. Quercetin direct DILI gene connectivity summary.}
+\caption{\textbf{Quercetin direct DILI gene connectivity summary.}
 Summary statistics for first-order DILI connections across Quercetin's 62 targets.}
 \label{tab:S6}
 \vspace{0.5em}
@@ -150,7 +154,7 @@ Mean DILI neighbors per Hyperforin target & 2.4 \\
 % Table S7: Full Quercetin Target List
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S7. Quercetin target genes in the liver-expressed network.}
+\caption{\textbf{Quercetin target genes in the liver-expressed network.}
 All 62 Quercetin targets in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
 Sorted by descending liver expression.}
 \label{tab:S7}
@@ -183,7 +187,7 @@ SYK & 1 & PDZK1IP1 & 1 & & & & \\
 % Table S8: DILI Gene List
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S8. DILI gene set (82 genes).}
+\caption{\textbf{DILI gene set (82 genes).}
 Genes in STRING v12.0 LCC (confidence $\geq$900) with liver TPM $\geq$1 (GTEx v8).
 Source: DisGeNET (UMLS C0860207). Sorted alphabetically.}
 \label{tab:S8}
@@ -211,7 +215,7 @@ TTR & UGT1A9 & & & & & & \\
 % Table S9: Permutation Test Summary
 \begin{table}[ht]
 \centering
-\caption{\textbf{Table S9. Null distribution parameters from permutation testing.}
+\caption{\textbf{Null distribution parameters from permutation testing.}
 Null distribution parameters (mean and standard deviation) from $n = 1{,}000$ degree-matched permutations.
 Note the tightening of the Quercetin null distribution as the number of targets increases, which drives the inflation of proximity Z-scores.}
 \label{tab:S9}
