@@ -1,17 +1,10 @@
 \section{Discussion}
 
-\subsection{Robustness and the Z-score confound}
+\subsection{Ranking stability and the Z-score confound}
 
-The central finding of this study is the inherent instability of network proximity Z-scores when comparing compounds with asymmetric target set sizes.
-While proximity is often used for prioritization, we demonstrate that its significance rankings are fundamentally confounded by the law of large numbers.
-As the number of targets increases, the variance of the null distribution ($\sigma_{null}$) decreases, making even modest topological distances appear highly significant.
-This is clearly observed in our comparison: at STRING $\geq$900, Quercetin (62 targets) achieves a more significant proximity Z-score than Hyperforin (10 targets) despite being physically more distant ($d_c = 1.68$ vs $1.30$).
-This statistical artifact disappears when considering influence-based metrics, which correctly identify Hyperforin as the high-leverage modulator.
+The results of this study highlight a potential limitation in the use of network proximity Z-scores when comparing compounds with asymmetric target set sizes. While proximity is a standard prioritization criterion, our analysis demonstrates that its significance rankings can be influenced by the target count rather than topological distance alone. As the number of targets increases, the variance of the null distribution decreases, which can lead to inflated significance levels for compounds with broad polypharmacology. In our controlled comparison, this effect causes a reversal of proximity-based rankings between network thresholds, failing to accurately reflect the physical distance advantage of a high-leverage modulator.
 
-Critically, the proximity Z-score ranking is threshold-dependent.
-At $\geq$700, Hyperforin is physically closer and more significant; at $\geq$900, the physical advantage persists, but the significance ranking reverses due to the tighter Quercetin null.
-This instability indicates that proximity Z-scores are unreliable for comparative prioritization.
-In contrast, influence-based rankings (RWR and EWI) remain stable across multiple STRING confidence tiers, correctly prioritizing the regulatory hub modulator (Hyperforin) in all configurations.
+Influence-based metrics (RWR and EWI) appear less sensitive to this particular artifact. By integrating over the entire network topology, these methods capture signal propagation through regulatory hubs, providing rankings that remain stable across different network construction parameters. This relative stability suggests that influence-based propagation may offer a more robust framework for comparative network medicine, particularly in the presence of incomplete or asymmetric pharmacological data.
 
 The mechanistic explanation for this robustness is that RWR integrates over \textit{all} paths, capturing how signals amplify through hubs like PXR and AKT1.
 Shortest-path proximity, by contrast, is a descriptive metric for minimum reachability; treating it as an inferential surrogate for functional impact conflates topological context with biological consequence.

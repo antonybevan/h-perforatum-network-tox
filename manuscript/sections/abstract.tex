@@ -1,17 +1,8 @@
 \section*{Abstract}
 
-Network proximity is widely used to prioritize compound--disease associations, yet proximity Z-scores are sensitive to target set size, network density, and network construction parameters.
-While often interpreted as functional indicators, these metrics are susceptible to inferential instability, where ranking significance is driven by target-count-dependent null distributions rather than physical reachability.
+Network-based metrics are widely used to identify associations between compounds and diseases, assuming that proximity within a protein--protein interaction network reflects functional relevance. However, these metrics are often reported as Z-scores, which we demonstrate are fundamentally sensitive to the number of targets a compound possesses. This dependency introduces a systematic bias where compounds with broad polypharmacology appear statistically significant due to null distribution tightening (the Law of Large Numbers) rather than physical network reachability.
 
-Here, we systematically evaluate the robustness of proximity-based and influence-based metrics using a liver-expressed human protein--protein interaction network.
-Using two constituents of \textit{Hypericum perforatum} as a controlled comparison, we show that proximity-based rankings are unstable and threshold-dependent. 
-Although Quercetin (62 targets) achieves higher proximity Z-scores than Hyperforin (10 targets) in high-confidence networks, this significance is an artifact of the law of large numbers acting on the null distribution. 
-In physical distance space, Hyperforin is closer to drug-induced liver injury (DILI) genes, a ranking that is stably captured by random walk--based influence propagation.
-
-We quantify this disparity by calculating the average influence per target, revealing that Hyperforin achieves ~3.7-fold greater efficiency in DILI-module perturbation than Quercetin.
-This efficiency advantage remains robust across topology-only and expression-weighted analyses, as well as bootstrap resampling and chemical similarity controls.
-Our results demonstrate that proximity Z-scores may lead to misleading prioritizations when target set sizes differ, and that influence-based propagation provides a more robust and theoretically consistent framework for network toxicology.
-More broadly, this work provides a methodological template for identifying and correcting metric artifacts in polypharmacological risk assessment.
+Here, we systematically evaluate this bias using the human liver interactome and a controlled comparison of two constituents from \textit{Hypericum perforatum}. We show that conventional proximity Z-scores yield unstable rankings that reverse depending on network construction parameters. While a compound with many targets may achieve a higher Z-score, it can remain physically more distant from the disease module than a compound with fewer, high-leverage targets. We resolve this by utilizing random walk--based influence propagation and introducing a size-normalized metric: perturbation efficiency. Our results show that influence-base rankings are stable across varied network thresholds and correctly identify high-leverage modulators that proximity metrics miss. This study provides a methodological template for identifying and correcting statistical artifacts in network medicine, enabling more reliable risk assessment in complex biological systems.
 
 \vspace{0.5em}
 \noindent\textbf{Keywords:} network propagation, proximity metrics, metric robustness, drug-induced liver injury, polypharmacology, Z-score confounding, perturbation efficiency.
