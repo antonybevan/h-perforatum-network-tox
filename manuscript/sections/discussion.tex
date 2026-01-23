@@ -40,11 +40,27 @@ In our network analysis, these effectors are part of the target set and the DILI
 Quercetin's 62 targets, while numerous, are distributed across redundant or peripheral pathways that do not converge on a regulatory bottleneck. Furthermore, clinical evidence indicates that Quercetin is not associated with hepatotoxicity and may exhibit hepatoprotective properties \citep{Boots2008, LiverToxQuercetin}.
 Recent experimental studies have corroborated that St.\ John's wort exacerbates hepatotoxicity through precisely this PXR-mediated bioactivation mechanism \citep{Chen2022}.
 
-\subsection{Limitations and Conclusions}
+\subsection{Limitations}
 
-While our findings favor influence-based metrics, we acknowledge that network influence is a measure of topological reach and perturbation potential, not a direct surrogate for actual toxicological outcomes. This model is dose-independent and does not account for pharmacokinetics, binding affinity, or saturation kinetics. A high influence score indicates that a compound's targets are strategically positioned to modulate a disease module—representing a measure of systemic susceptibility—but the actual biological effect depends on the molecular mechanism of action (e.g., agonism vs. antagonism) and the kinetic context. In this study, we utilized \textit{H. perforatum} as a known toxicological model to validate the \textit{reliability} of the metrics themselves; the biological ground truth (Hyperforin-mediated PXR activation) allowed us to confirm that influence propagation correctly identifies high-leverage perturbations where proximity metrics fail. Future work integrating kinetic modeling or structural binding energy will be required to translate topological susceptibility into definitive risk predictions.
+Several limitations warrant consideration.
+First, network influence is a measure of topological reach and perturbation potential, not a direct surrogate for toxicological outcomes.
+This model is dose-independent and does not account for pharmacokinetics, binding affinity, or saturation kinetics.
+A high influence score indicates that a compound's targets are strategically positioned to modulate a disease module, but the actual biological effect depends on the molecular mechanism of action (e.g., agonism vs. antagonism) and the kinetic context.
 
-The methodological conclusion remains: proximity Z-scores are susceptible to sample-size confounding and should be used descriptively rather than for comparative inference.
-Influence-based propagation provides a more stable framework that survives robustness checks and aligns better with mechanistic reality.
+Second, while we demonstrate that proximity Z-scores are confounded by target set size, influence-based Z-scores are not entirely immune to this effect.
+As the number of seed nodes increases, the variance of the null distribution for influence sums also decreases, though less severely than for distance-based metrics.
+Critically, our core claims do not rest on absolute Z-score comparisons.
+We demonstrate that influence-based \textit{rankings} are stable across network thresholds, while proximity rankings are not.
+We further resolve the size-dependence by introducing perturbation efficiency (influence per target), which explicitly normalizes for target count and provides a bias-corrected comparative metric.
 
-In conclusion, we provide a methodological template for identifying and resolving metric artifacts in network toxicology. By shifting the focus from topological coverage to perturbation efficiency, and from significance-driven Z-scores to robustness-checked influence, we enable more precise risk attribution in complex polypharmacological systems. Furthermore, this work provides a foundation for developing network models with improved mechanistic interpretability. By integrating signed edge weights and transcriptometric data, future iterations of this framework could investigate phenotype-specific associations, potentially linking topological influence on specific biological sub-modules to discrete clinical outcomes such as cholestasis or steatosis.
+Third, our case study is limited to a single botanical with two contrasting constituents.
+While this provides a controlled minimal model, generalization to larger compound libraries will require further validation.
+
+\subsection{Conclusions}
+
+In this study, we utilized \textit{H. perforatum} as a known toxicological model to validate the \textit{reliability} of network metrics; the biological ground truth (Hyperforin-mediated PXR activation) allowed us to confirm that influence propagation correctly identifies high-leverage perturbations where proximity metrics fail.
+The methodological conclusion is that proximity Z-scores are susceptible to sample-size confounding and should be used descriptively rather than for comparative inference across compounds with differing target counts.
+Influence-based propagation, combined with per-target normalization, provides a more stable framework that survives robustness checks and aligns better with mechanistic reality.
+
+More broadly, this work provides a methodological template for identifying and resolving metric artifacts in network toxicology.
+By integrating signed edge weights and transcriptometric data, future iterations of this framework could investigate phenotype-specific associations, linking topological influence on specific biological sub-modules to discrete clinical outcomes.
