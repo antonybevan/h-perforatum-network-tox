@@ -9,13 +9,13 @@ However, the proximity Z-scores yield the opposite ranking: Quercetin achieves $
 
 This discrepancy highlights a fundamental confounder in proximity Z-scores: the law of large numbers.
 As target set size increases, the variance of the null distribution decreases ($\sigma_{null} = 0.09$ for Quercetin vs $0.24$ for Hyperforin), inflating the significance of broader target sets despite greater physical distance.
-This statistical artifact suggests that Quercetin poses greater risk, whereas the physical topology favors Hyperforin.
+This statistical artifact suggests that Quercetin poses greater risk, whereas the physical topology favors Hyperforin. This effect occurs independently of network construction parameters and represents a fundamental statistical property of averaged distributions: larger samples inherently produce more precise (narrower) null distributions, artificially inflating Z-score magnitude regardless of actual topological proximity.
 
 \subsection{Influence-based rankings are stable and resolve the confound}
 
 Random walk with restart (RWR) stabilizes this ranking by integrating over all paths (Figure~\ref{fig:fig2}).
 Hyperforin achieves influence $Z = +10.12$ ($p < 0.001$); Quercetin achieves $Z = +4.55$ ($p < 0.001$; Table~\ref{tab:main_results}).
-Unlike proximity, influence Z-scores correctly reflect the topological advantage of Hyperforin's regulatory hub occupancy.
+Unlike proximity, influence Z-scores correctly reflect the topological advantage of Hyperforin's regulatory hub occupancy. This ranking aligns with the known biological ground truth: Hyperforin is the hepatotoxic constituent responsible for drug-drug interactions via PXR activation, while Quercetin has no documented hepatotoxicity and may be hepatoprotective.
 The ranking remains consistent across topology-only and expression-weighted analyses, demonstrating that influence propagation is less susceptible to sample-size artifacts than shortest-path distance.
 
 \subsection{Expression weighting refines the signal}
@@ -46,7 +46,7 @@ Quercetin & 62 & 0.0322 & 0.0493 & --- & --- \\
 \small $^*$RWR Ratio: observed ratio (robust ratio in parentheses). $^\dagger$EWI Ratio: observed ratio (robust ratio in parentheses).
 
 Each Hyperforin target contributes 3.7$\times$ more DILI-directed influence than each Quercetin target (robust ratio).
-This disparity indicates that Hyperforin's target positions are substantially higher leverage than those of Quercetin, achieving greater perturbation efficiency despite a 6-fold smaller target set.
+This disparity indicates that Hyperforin's target positions are substantially higher leverage than those of Quercetin, achieving greater perturbation efficiency despite a 6-fold smaller target set. Critically, this 3.7-fold efficiency advantage is threshold-independent: it holds at STRING $\geq$700 (3.8$\times$), $\geq$900 (3.7$\times$), and under both topology-only (RWR) and expression-weighted (EWI) regimes. Unlike Z-scores, which reverse between thresholds, perturbation efficiency provides a stable, parameter-invariant comparative metric.
 
 \subsection{Bootstrap resampling excludes target-selection bias}
 
