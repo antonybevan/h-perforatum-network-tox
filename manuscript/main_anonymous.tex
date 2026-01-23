@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage{hyperref}
 \usepackage{xurl}
 \usepackage{xcolor}
@@ -26,7 +26,7 @@
 \linenumbers
 
 % --- Title and Authors (ANONYMIZED) ---
-\title{\textbf{Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum}}}
+\title{\textbf{Systematic bias in network proximity Z-scores: A comparative robustness audit using \textit{Hypericum perforatum} constituents}}
 
 \author{
   Anonymous Author(s) \\[1em]
@@ -47,15 +47,32 @@
 \input{sections/results}
 \input{sections/discussion}
 \input{sections/methods}
-\input{sections/declarations_anonymous}
+% --- Data Availability ---
+\input{sections/data_availability_anonymous}
 
 % --- Bibliography ---
-\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{references}
 
-% --- Figures & Tables ---
+% --- Legends ---
+\clearpage
+\input{sections/figure_legends}
+
+% --- Tables ---
+\clearpage
 \input{sections/tables}
+
+% --- Figures ---
+\clearpage
 \input{sections/figures}
+
+% --- Back Matter ---
+\clearpage
+\input{sections/author_contributions_anonymous}
+\input{sections/competing_interests}
+
+% --- Supplementary ---
+\clearpage
 \input{sections/supplementary}
 
 \end{document}

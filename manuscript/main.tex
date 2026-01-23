@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage{hyperref}
 \usepackage{xurl}
 \usepackage{xcolor}
@@ -26,7 +26,7 @@
 \linenumbers
 
 % --- Title and Authors ---
-\title{\textbf{Comparative analysis of network-based measures for the assessment of drug-induced liver injury: A case study of \textit{Hypericum perforatum}}}
+\title{\textbf{Systematic bias in network proximity Z-scores: A comparative robustness audit using \textit{Hypericum perforatum} constituents}}
 
 \author{
   Antony Bevan$^{1,*}$ \\[1em]
@@ -49,9 +49,16 @@
 \input{sections/discussion}
 \input{sections/methods}
 
+% --- Data Availability ---
+\input{sections/data_availability}
+
 % --- References ---
-\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{references}
+
+% --- Legends ---
+\clearpage
+\input{sections/figure_legends}
 
 % --- Tables ---
 \clearpage
@@ -61,9 +68,10 @@
 \clearpage
 \input{sections/figures}
 
-% --- Declarations ---
+% --- Back Matter ---
 \clearpage
-\input{sections/declarations}
+\input{sections/author_contributions}
+\input{sections/competing_interests}
 
 % --- Supplementary ---
 \clearpage
