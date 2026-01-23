@@ -34,25 +34,39 @@ Dear Editor,
 
 \onehalfspacing
 
-We are pleased to submit our manuscript, \textbf{``Perturbation efficiency resolves target-count bias in network proximity metrics: A controlled audit,''} for consideration as a Research Article in \textit{Scientific Reports}.
-
-Our study identifies a fundamental statistical artifact in network-based drug prioritization. While proximity-based Z-scores are widely used to assess the association between compounds and diseases, we demonstrate through a systematic audit that these metrics are confounded by the Law of Large Numbers. This bias leads to deterministic significance inflation for compounds with broad polypharmacology, independent of actual topological reachability.
-
-We address this by utilizing the human liver interactome and constituents from \textit{Hypericum perforatum} (St. John’s Wort) as a controlled model system. This system provides a sharp stress test for network medicine: the constituents exhibit extreme target-set asymmetry (10 vs.\ 62 targets), and the established proximity paradigm yields the biologically incorrect ranking. Our results show that:
-\begin{itemize}
-    \item Proximity-based prioritization is unstable across network construction parameters, yielding reversed rankings in asymmetric regimes.
-    \item Random walk--based influence propagation provides a stable framework that capturing signal amplification through regulatory hubs like the PXR axis.
-    \item Applying \textit{perturbation efficiency}—a per-target normalization of influence—resolves the size-dependence and correctly identifies high-leverage perturbations that distance metrics miss.
-\end{itemize}
-
-We believe this work is well-suited for \textit{Scientific Reports} as it provides a critical methodological resolution to a previously unrecognized artifact in network medicine. By identifying the boundary conditions for current proximity-based standards, we provide a reproducible template for correcting bias in complex pharmacological datasets—a finding with significant implications for the thousands of drug-disease associations previously computed using uncorrected Z-scores.
-
-In line with the journal's commitment to Open Science, the complete end-to-end analytical pipeline, curated datasets, and reproducibility scripts are available at: \\ \url{https://github.com/antonybevan/h-perforatum-network-tox}.
-
-This manuscript has not been published and is not under consideration for publication elsewhere. All authors have approved the final version and agree to the submission.
+We are excited to submit our manuscript, \textbf{``Perturbation efficiency resolves target-count bias in network proximity metrics: A controlled audit,''} for your consideration as a Research Article in \textit{Scientific Reports}.
 
 \bigskip
+\noindent \textbf{Why this matters:}
+Network-based drug repurposing relies heavily on proximity Z-scores to rank potential candidates. Our study reveals a critical flaw in this standard approach: it is statistically biased by the Law of Large Numbers. Put simply, compounds with many targets (promiscuous drugs) achieve "significant" Z-scores purely by chance, regardless of their actual biological relevance.
 
+We demonstrate this using \textit{Hypericum perforatum} (St. John’s Wort) and liver toxicity as a test case. The current standard methods incorrectly flag Quercetin (62 targets) as the primary driver of toxicity because of its high target count. In reality, Hyperforin (10 targets) is the true culprit. Our work not only exposes this bias but provides a solution: \textbf{perturbation efficiency}. This new metric corrects for target size and accurately identifies the true signal.
+
+\bigskip
+\noindent \textbf{Relevance to \textit{Scientific Reports}:}
+This finding has broad implications. Thousands of drug-disease associations predicted by Z-scores may be artifacts of this size bias. By providing a reproducible method to correct it, we offer a more robust standard for the network medicine community.
+
+\bigskip
+\noindent \textbf{Reviewer Suggestions:}
+\textit{Please consider the following experts who are well-versed in network medicine and systems pharmacology:}
+\begin{itemize}
+    \item \textbf{Feixiong Cheng}, Cleveland Clinic (Genomic Medicine Institute) -- Email: chengf@ccf.org \\ \textit{Reason: Expert in network-based drug repurposing and interactome medicine.}
+    \item \textbf{Minjun Chen}, National Center for Toxicological Research (FDA) -- Email: minjun.chen@fda.hhs.gov \\ \textit{Reason: Creator of DILIrank; expert in predictive liver toxicology.}
+    \item \textbf{Albert-László Barabási}, Northeastern University (Center for Complex Network Research) -- Email: alb@neu.edu \\ \textit{Reason: Pioneer of network medicine and proximity methodology.}
+\end{itemize}
+
+\bigskip
+\noindent \textbf{Excluded Reviewers:}
+\textit{We kindly request to exclude the following due to potential conflict of interest:}
+\begin{itemize}
+    \item (None)
+\end{itemize}
+
+In line with Open Science principles, our entire pipeline is available at: \\ \url{https://github.com/antonybevan/h-perforatum-network-tox}.
+
+The manuscript is original, not under consideration elsewhere, and approved by all authors.
+
+\bigskip
 \noindent
 Sincerely,
 
