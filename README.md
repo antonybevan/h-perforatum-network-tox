@@ -1,4 +1,4 @@
-# Systematic bias in network proximity Z-scores: A comparative robustness audit using *Hypericum perforatum* constituents
+# Perturbation efficiency resolves target-count bias in network proximity metrics: A controlled audit
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -7,15 +7,15 @@
 [![Platform: Linux | macOS | Windows](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)](https://github.com/antonybevan/h-perforatum-network-tox)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
-This repository contains the complete, reproducible research pipeline, data, and manuscript source for our study evaluating the robustness of network proximity and influence metrics. We demonstrate a fundamental statistical artifact in proximity Z-scores and provide a methodological framework for identifying and correcting such biases in network medicine.
+This repository contains the complete, reproducible research pipeline, data, and manuscript source for our study identifying and resolving systematic bias in network medicine metrics. Through a controlled audit using the human liver interactome, we demonstrate that proximity-based Z-scores are confounded by target set size and provide **perturbation efficiency** as a stable, resolution-focused alternative.
 
 ---
 
 ## Scientific Context
 
-Network-based drug prioritization often relies on proximity Z-scores, which we demonstrate are fundamentally confounded by the Law of Large Numbers. As target set size increases, the null distribution shrinks, artificially inflating significance despite greater physical distances. This study uses the human liver interactome and constituents from *Hypericum perforatum* (Hyperforin and Quercetin) as a proof-of-concept for a comparative robustness audit.
+Network-based drug prioritization typically assumes that topological proximity reflects functional relevance. However, we demonstrate that the standard proximity Z-score is fundamentally confounded by the **Law of Large Numbers (LLN)**: as target set size increases, the null distribution variance decreases, leading to deterministic significance inflation.
 
-We resolve this systematic bias using Random Walk with Restart (RWR) influence propagation and introduction of **perturbation efficiency** as a size-normalized metric for unbiased comparative assessment.
+Using *Hypericum perforatum* (St. John's Wort) as a controlled model system, we pair a known biological ground truth (Hyperforin-mediated hepatotoxicity) with extreme target-count asymmetry (10 vs 62 targets). This study provides a methodological audit of this bias and proof-of-concept for its resolution via **perturbation efficiency**—a size-normalized influence metric.
 
 ### Key Results (STRING >=900 Liver LCC)
 
@@ -25,7 +25,7 @@ We resolve this systematic bias using Random Walk with Restart (RWR) influence p
 | **Quercetin** | 62 | 1.68 | **-5.44** | +4.55 | 0.0322 |
 
 > [!IMPORTANT]
-> **Hyperforin** achieves ~3.7x more directed influence per-target than Quercetin, correctly identifying it as the high-leverage modulator despite a 6-fold smaller target set. This relative stability persists across varying network thresholds and in expression-weighted (EWI) analyses.
+> **Hyperforin** achieves ~3.7x more directed influence per-target than Quercetin, correctly identifying the high-leverage modulator where proximity metrics fail. This stability is maintained across varying network thresholds (≥700 and ≥900) and expression-weighted environments.
 
 ---
 
@@ -49,7 +49,7 @@ python scripts/run_pipeline.py
 
 ### 3. Generate Publication Figures
 Generate the figures for the manuscript using R:
-```r
+```bash
 source("R/fig2_dumbbell.R")
 source("R/fig3_ewi_waterfall.R")
 ```
@@ -84,8 +84,8 @@ source("R/fig3_ewi_waterfall.R")
 If you use this framework or the data sets, please cite:
 
 ```bibtex
-@article{bevan2026systematic,
-  title={Systematic bias in network proximity Z-scores: A comparative robustness audit using Hypericum perforatum constituents},
+@article{bevan2026perturbation,
+  title={Perturbation efficiency resolves target-count bias in network proximity metrics: A controlled audit},
   author={Bevan, Antony},
   year={2026},
   journal={Scientific Reports (under review)},
